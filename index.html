@@ -36,65 +36,63 @@
                         </div>
                 </div>
                 <script>
-                // 💡 トークン生成プロキシのベースURL
-const PROXY_TOKEN_URL_BASE = "https://xeroxapp032.vercel.app/projects/"; 
-const originalFetch = window.fetch;
+                
+    // 💡 プロキシ設定
+    const PROXY_TOKEN_URL_BASE = "https://xeroxapp032.vercel.app/projects/"; 
+    const originalFetch = window.fetch;
 
-async function getProjectDataViaProxy(projectId) {
-    // 1. 🔑 Step A: プロキシから、トークン付きのデータ取得プロキシURLを含むJSONを取得
-    console.log(`Step A: トークン情報を含むJSONを ${PROXY_TOKEN_URL_BASE}${projectId} 経由で取得...`);
-    
-    // プロキシのトークン情報取得エンドポイントにアクセス
-    const tokenResponse = await originalFetch(`${PROXY_TOKEN_URL_BASE}${projectId}`);
-    const tokenData = await tokenResponse.json(); 
-    
-    // JSONから最終的なデータ取得URL (data_url) を抽出
-    const finalDataProxyUrl = tokenData.data_url; 
-    
-    if (!finalDataProxyUrl) {
-         throw new Error("プロキシから 'data_url' を取得できませんでした。");
-    }
-    
-    // 2. 📦 Step B: 最終的なデータ取得プロキシURLにアクセスし、プロジェクトデータを取得
-    console.log("Step B: データ取得プロキシURLへリクエストを転送...");
-
-    // finalDataProxyUrl は既にトークンを含み、かつエンコードされた Scratch URL を含んでいます。
-    const response = await originalFetch(finalDataProxyUrl);
-    const data = await response.text();
-    
-    // 3. 🎯 Step C: 応答を元の fetch の結果と同じ形式で返す
-    if (!response.ok) {
-        throw new Error(`Proxy failed (Stage 2): ${data}`);
-    }
-
-    // プロキシからの応答テキストを Blob/Responseに変換して返す
-    return new Response(data, {
-        status: response.status,
-        headers: { 'Content-Type': 'application/json' }
-    });
-}
-
-// 💡 Step 2: グローバルの fetch 関数を上書き（フック）する
-window.fetch = function(resource, options) {
-    const url = resource.toString();
-    
-    // ターゲットURL: projects.scratch.mit.edu/ID (トークンなし)
-    if (url.includes('projects.scratch.mit.edu/') && !url.includes('token=')) {
-        const parts = url.split('?');
-        const projectId = parts[0].split('/').pop();
+    async function getProjectDataViaProxy(projectId) {
+        // ... (この関数の中身は変更なし) ...
+        console.log(`Step A: トークン情報を含むJSONを ${PROXY_TOKEN_URL_BASE}${projectId} 経由で取得...`);
         
-        if (projectId && /^\d+$/.test(projectId)) {
-            console.log(`🔥 プロジェクトID ${projectId} のデータ取得をプロキシ経由にフックしました！`);
-            
-            // 新しい二段階処理の関数を呼び出す
-            return getProjectDataViaProxy(projectId);
+        const tokenResponse = await originalFetch(`${PROXY_TOKEN_URL_BASE}${projectId}`);
+        const tokenData = await tokenResponse.json(); 
+        console.log(`tokenData:`, tokenData); // Pythonのprintの代わりにconsole.logを使用
+        
+        const finalDataProxyUrl = tokenData.data_url; 
+        console.log(`finalDataProxyUrl:`, finalDataProxyUrl); // Pythonのprintの代わりにconsole.logを使用
+        
+        if (!finalDataProxyUrl) {
+             throw new Error("プロキシから 'data_url' を取得できませんでした。プロキシサーバーを確認してください。");
         }
+        
+        console.log("Step B: データ取得プロキシURLへリクエストを転送...");
+
+        const response = await originalFetch(finalDataProxyUrl);
+        const data = await response.text();
+
+        // 応答を元の fetch の結果と同じ形式で返す
+        return new Response(data, {
+            status: response.status,
+            headers: { 'Content-Type': 'application/json' }
+        });
     }
 
-    // それ以外の全てのリクエストは元の fetch を使う
-    return originalFetch(resource, options);
-};
-        </script>
+    // 💡 Step 2: グローバルの fetch 関数を上書き（フック）する
+    window.fetch = function(resource, options) {
+        const url = resource.toString();
+        
+        // 【⭐ 修正点: トークンの有無にかかわらず全てをフックする】
+        // ターゲットURL: projects.scratch.mit.edu/ID を検出
+        if (url.includes('projects.scratch.mit.edu/')) {
+            // URLからプロジェクトIDを抽出する (正規表現でトークンやクエリを無視)
+            const match = url.match(/projects\.scratch\.mit\.edu\/(\d+)/);
+            
+            if (match && match[1]) {
+                const projectId = match[1];
+                console.log(`🔥 プロジェクトID ${projectId} のデータ取得リクエストをプロキシ経由にフックしました！`);
+                
+                // プロキシ関数を呼び出す
+                return getProjectDataViaProxy(projectId);
+            }
+        }
+
+        // それ以外の全てのリクエストは元の fetch を使う
+        return originalFetch(resource, options);
+    };
+    
+</script>
+        
                 <script>
                         (function() {
         document.querySelector('#splash-content').style.display = 'block';
