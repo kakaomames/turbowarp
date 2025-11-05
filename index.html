@@ -5,7 +5,7 @@
                 <meta name="viewport" content="width=device-width,initial-scale=1">
                 <meta name="google" value="notranslate">
                 <meta name="description" content="TurboWarp is a Scratch mod with a compiler to run projects faster, dark mode for your eyes, a bunch of addons to improve the editor, and more."/>
-                <title>TurboWarp - Run Scratch projects faster</title>
+                <title>TurboWarp</title>
                 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
                 <link rel="manifest" href="manifest.webmanifest">
                 <style>
@@ -35,6 +35,60 @@
                                 <div id="splash-spinner"></div>
                         </div>
                 </div>
+                <script>
+    // 💡 Step 1: プロキシ関数を定義
+    async function fetchProjectDataViaProxy(projectId, projectToken) {
+        // ... (以前提示したプロキシ経由の fetch ロジック全体を貼り付け)
+        // (省略)
+        const BASE_URL = "https://xeroxapp032.vercel.app/run?cmd=curl%20";
+        if (projectToken && projectToken !== "N/A") {
+            const projectDataUrl = `https://projects.scratch.mit.edu/${projectId}?token=${projectToken}`;
+            const encodedProjectDataUrl = encodeURIComponent(projectDataUrl);
+            const DATA_URL = `${BASE_URL}${encodedProjectDataUrl}`;
+            
+            // プロキシURLへのfetchを実行
+            const response = await fetch(DATA_URL);
+            const data = await response.text();
+
+            if (!response.ok) {
+                throw new Error(`Proxy failed: ${data}`);
+            }
+
+            // プロキシからの応答テキストを Blob/Responseに変換して返す
+            return new Response(data, {
+                status: response.status,
+                headers: { 'Content-Type': 'application/json' }
+            });
+        }
+        throw new Error("Token not available.");
+    }
+
+    // 💡 Step 2: グローバルの fetch 関数を上書き（フック）する
+    const originalFetch = window.fetch;
+
+    window.fetch = function(resource, options) {
+        // リクエストURLを文字列として取得
+        const url = resource.toString();
+        
+        // 置き換えたい「Scratchプロジェクト本体」のデータ取得URLを検出する
+        if (url.includes('projects.scratch.mit.edu/') && url.includes('token=')) {
+            console.log("🔥 プロジェクトデータ取得をプロキシ経由にフックしました！");
+            
+            // URLからIDとトークンを解析する (シンプル化のため、クエリパラメータを直接渡す)
+            const parts = url.split('?');
+            const projectId = parts[0].split('/').pop();
+            const tokenMatch = url.match(/token=([^&]*)/);
+            const token = tokenMatch ? tokenMatch[1] : '';
+
+            // あなたのプロキシ経由関数を呼び出す
+            return fetchProjectDataViaProxy(projectId, token);
+        }
+
+        // それ以外の全てのリクエスト（サムネイル、CSS、他のAPIなど）は元の fetch を使う
+        return originalFetch(resource, options);
+    };
+
+</script>
                 <script>
                         (function() {
         document.querySelector('#splash-content').style.display = 'block';
