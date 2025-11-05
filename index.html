@@ -36,48 +36,53 @@
                         </div>
                 </div>
 
-        <script>
+<script>
     // 💡 プロキシ設定
-    const PROXY_TOKEN_URL_BASE = "https://xeroxapp032.vercel.app/projects/"; 
-    const PROXY_DOWNLOAD_BASE = "https://xeroxapp032.vercel.app/dl?data_url="; // 👈 修正: 新しいベースURL
+    // Step 1: プロジェクト情報とダウンロードURLを取得するためのベース
+    const PROXY_INFO_URL_BASE = "https://xeroxapp032.vercel.app/projects/"; 
     const originalFetch = window.fetch;
 
     async function getProjectDataViaProxy(projectId) {
-        // 1. 🔑 Step A: プロキシから、トークン情報を含むJSONを取得
-        console.log(`Step A: トークン情報を含むJSONを ${PROXY_TOKEN_URL_BASE}${projectId} 経由で取得...`);
+        // 1. 🔑 Step A: プロキシから、ダウンロードURLを含むJSONを取得
+        console.log(`Step A: ダウンロード情報を含むJSONを ${PROXY_INFO_URL_BASE}${projectId} 経由で取得...`);
         
-        const tokenResponse = await originalFetch(`${PROXY_TOKEN_URL_BASE}${projectId}`);
+        // プロキシサーバーの /projects/ID にアクセス
+        const tokenResponse = await originalFetch(`${PROXY_INFO_URL_BASE}${projectId}`);
+        
         const tokenData = await tokenResponse.json(); 
         console.log(`tokenData:`, tokenData); 
         
-        // 💡 修正: tokenData.data_url が Scratchのトークン付きURLであると想定
-        const scratchTokenUrl = tokenData.data_url; 
-        console.log(`scratchTokenUrl (from proxy):`, scratchTokenUrl);
+        // JSONから最終的なデータダウンロードURL (data_url) を抽出
+        // この値は既に「https://xeroxapp032.vercel.app/dl?data_url=...」の形になっている！
+        const finalDownloadUrl = tokenData.data_url; 
+        console.log(`finalDownloadUrl (from proxy):`, finalDownloadUrl); 
         
-        if (!scratchTokenUrl || !scratchTokenUrl.includes('projects.scratch.mit.edu')) {
-             throw new Error("プロキシから有効な 'data_url' (Scratch URL) を取得できませんでした。プロキシサーバーを確認してください。");
+        if (!finalDownloadUrl || !finalDownloadUrl.includes('/dl?data_url=')) {
+             // サーバーが想定外の値を返した場合
+             throw new Error("プロキシから有効な 'data_url' (ダウンロードURL) を取得できませんでした。");
         }
         
-        // 2. 📦 Step B: 最終的なプロキシダウンロードURLを構築し、アクセスする
-        // PROXY_DOWNLOAD_BASE + Scratchのトークン付きURL
-        const finalDownloadUrl = PROXY_DOWNLOAD_BASE + encodeURIComponent(scratchTokenUrl);
-        console.log(`Step B: 最終的なダウンロードURLへリクエストを転送: ${finalDownloadUrl}`);
+        // 2. 📦 Step B: 最終的なダウンロードプロキシURLにアクセスし、プロジェクトデータを取得
+        // ⭐ これが /dl?data_url=... へのリクエストに相当します
+        console.log("Step B: 最終ダウンロードURLへリクエストを転送...");
 
         const response = await originalFetch(finalDownloadUrl);
         const data = await response.text();
 
         // 3. 🎯 Step C: 応答を元の fetch の結果と同じ形式で返す
         if (!response.ok) {
-            throw new Error(`Proxy failed (Stage 2): ${data}`);
+            // プロキシがエラーレスポンスを返した場合
+            throw new Error(`Proxy failed (Stage 2 - Download): ${data}`);
         }
 
+        // 応答テキストを Response に変換して返す
         return new Response(data, {
             status: response.status,
             headers: { 'Content-Type': 'application/json' }
         });
     }
 
-    // 💡 Step 2: グローバルの fetch 関数を上書き（フック）する (条件は前回の修正済み)
+    // 💡 Step 2: グローバルの fetch 関数を上書き（フック）する (条件はそのまま)
     window.fetch = function(resource, options) {
         const url = resource.toString();
         
@@ -89,14 +94,15 @@
                 const projectId = match[1];
                 console.log(`🔥 プロジェクトID ${projectId} のデータ取得リクエストをプロキシ経由にフックしました！`);
                 
-                return getProjectDataViaProxy(projectId);
+                // 2段階処理を実行
+                return getProjectDataViaProxy(projectId); 
             }
         }
 
         // それ以外の全てのリクエストは元の fetch を使う
         return originalFetch(resource, options);
     };
-    
+
 </script>
                 <script>
                         (function() {
