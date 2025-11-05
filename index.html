@@ -35,54 +35,60 @@
                                 <div id="splash-spinner"></div>
                         </div>
                 </div>
-                <script>
-                
+
+        <script>
     // 💡 プロキシ設定
     const PROXY_TOKEN_URL_BASE = "https://xeroxapp032.vercel.app/projects/"; 
+    const PROXY_DOWNLOAD_BASE = "https://xeroxapp032.vercel.app/dl?data_url="; // 👈 修正: 新しいベースURL
     const originalFetch = window.fetch;
 
     async function getProjectDataViaProxy(projectId) {
-        // ... (この関数の中身は変更なし) ...
+        // 1. 🔑 Step A: プロキシから、トークン情報を含むJSONを取得
         console.log(`Step A: トークン情報を含むJSONを ${PROXY_TOKEN_URL_BASE}${projectId} 経由で取得...`);
         
         const tokenResponse = await originalFetch(`${PROXY_TOKEN_URL_BASE}${projectId}`);
         const tokenData = await tokenResponse.json(); 
-        console.log(`tokenData:`, tokenData); // Pythonのprintの代わりにconsole.logを使用
+        console.log(`tokenData:`, tokenData); 
         
-        const finalDataProxyUrl = tokenData.data_url; 
-        console.log(`finalDataProxyUrl:`, finalDataProxyUrl); // Pythonのprintの代わりにconsole.logを使用
+        // 💡 修正: tokenData.data_url が Scratchのトークン付きURLであると想定
+        const scratchTokenUrl = tokenData.data_url; 
+        console.log(`scratchTokenUrl (from proxy):`, scratchTokenUrl);
         
-        if (!finalDataProxyUrl) {
-             throw new Error("プロキシから 'data_url' を取得できませんでした。プロキシサーバーを確認してください。");
+        if (!scratchTokenUrl || !scratchTokenUrl.includes('projects.scratch.mit.edu')) {
+             throw new Error("プロキシから有効な 'data_url' (Scratch URL) を取得できませんでした。プロキシサーバーを確認してください。");
         }
         
-        console.log("Step B: データ取得プロキシURLへリクエストを転送...");
+        // 2. 📦 Step B: 最終的なプロキシダウンロードURLを構築し、アクセスする
+        // PROXY_DOWNLOAD_BASE + Scratchのトークン付きURL
+        const finalDownloadUrl = PROXY_DOWNLOAD_BASE + encodeURIComponent(scratchTokenUrl);
+        console.log(`Step B: 最終的なダウンロードURLへリクエストを転送: ${finalDownloadUrl}`);
 
-        const response = await originalFetch(finalDataProxyUrl);
+        const response = await originalFetch(finalDownloadUrl);
         const data = await response.text();
 
-        // 応答を元の fetch の結果と同じ形式で返す
+        // 3. 🎯 Step C: 応答を元の fetch の結果と同じ形式で返す
+        if (!response.ok) {
+            throw new Error(`Proxy failed (Stage 2): ${data}`);
+        }
+
         return new Response(data, {
             status: response.status,
             headers: { 'Content-Type': 'application/json' }
         });
     }
 
-    // 💡 Step 2: グローバルの fetch 関数を上書き（フック）する
+    // 💡 Step 2: グローバルの fetch 関数を上書き（フック）する (条件は前回の修正済み)
     window.fetch = function(resource, options) {
         const url = resource.toString();
         
-        // 【⭐ 修正点: トークンの有無にかかわらず全てをフックする】
         // ターゲットURL: projects.scratch.mit.edu/ID を検出
         if (url.includes('projects.scratch.mit.edu/')) {
-            // URLからプロジェクトIDを抽出する (正規表現でトークンやクエリを無視)
             const match = url.match(/projects\.scratch\.mit\.edu\/(\d+)/);
             
             if (match && match[1]) {
                 const projectId = match[1];
                 console.log(`🔥 プロジェクトID ${projectId} のデータ取得リクエストをプロキシ経由にフックしました！`);
                 
-                // プロキシ関数を呼び出す
                 return getProjectDataViaProxy(projectId);
             }
         }
@@ -92,7 +98,6 @@
     };
     
 </script>
-        
                 <script>
                         (function() {
         document.querySelector('#splash-content').style.display = 'block';
