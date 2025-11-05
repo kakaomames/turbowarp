@@ -36,59 +36,65 @@
                         </div>
                 </div>
                 <script>
-    // 💡 Step 1: プロキシ関数を定義
-    async function fetchProjectDataViaProxy(projectId, projectToken) {
-        // ... (以前提示したプロキシ経由の fetch ロジック全体を貼り付け)
-        // (省略)
-        const BASE_URL = "https://xeroxapp032.vercel.app/run?cmd=curl%20";
-        if (projectToken && projectToken !== "N/A") {
-            const projectDataUrl = `https://projects.scratch.mit.edu/${projectId}?token=${projectToken}`;
-            const encodedProjectDataUrl = encodeURIComponent(projectDataUrl);
-            const DATA_URL = `${BASE_URL}${encodedProjectDataUrl}`;
-            
-            // プロキシURLへのfetchを実行
-            const response = await fetch(DATA_URL);
-            const data = await response.text();
+                // 💡 トークン生成プロキシのベースURL
+const PROXY_TOKEN_URL_BASE = "https://xeroxapp032.vercel.app/projects/"; 
+const originalFetch = window.fetch;
 
-            if (!response.ok) {
-                throw new Error(`Proxy failed: ${data}`);
-            }
+async function getProjectDataViaProxy(projectId) {
+    // 1. 🔑 Step A: プロキシから、トークン付きのデータ取得プロキシURLを含むJSONを取得
+    console.log(`Step A: トークン情報を含むJSONを ${PROXY_TOKEN_URL_BASE}${projectId} 経由で取得...`);
+    
+    // プロキシのトークン情報取得エンドポイントにアクセス
+    const tokenResponse = await originalFetch(`${PROXY_TOKEN_URL_BASE}${projectId}`);
+    const tokenData = await tokenResponse.json(); 
+    
+    // JSONから最終的なデータ取得URL (data_url) を抽出
+    const finalDataProxyUrl = tokenData.data_url; 
+    
+    if (!finalDataProxyUrl) {
+         throw new Error("プロキシから 'data_url' を取得できませんでした。");
+    }
+    
+    // 2. 📦 Step B: 最終的なデータ取得プロキシURLにアクセスし、プロジェクトデータを取得
+    console.log("Step B: データ取得プロキシURLへリクエストを転送...");
 
-            // プロキシからの応答テキストを Blob/Responseに変換して返す
-            return new Response(data, {
-                status: response.status,
-                headers: { 'Content-Type': 'application/json' }
-            });
-        }
-        throw new Error("Token not available.");
+    // finalDataProxyUrl は既にトークンを含み、かつエンコードされた Scratch URL を含んでいます。
+    const response = await originalFetch(finalDataProxyUrl);
+    const data = await response.text();
+    
+    // 3. 🎯 Step C: 応答を元の fetch の結果と同じ形式で返す
+    if (!response.ok) {
+        throw new Error(`Proxy failed (Stage 2): ${data}`);
     }
 
-    // 💡 Step 2: グローバルの fetch 関数を上書き（フック）する
-    const originalFetch = window.fetch;
+    // プロキシからの応答テキストを Blob/Responseに変換して返す
+    return new Response(data, {
+        status: response.status,
+        headers: { 'Content-Type': 'application/json' }
+    });
+}
 
-    window.fetch = function(resource, options) {
-        // リクエストURLを文字列として取得
-        const url = resource.toString();
+// 💡 Step 2: グローバルの fetch 関数を上書き（フック）する
+window.fetch = function(resource, options) {
+    const url = resource.toString();
+    
+    // ターゲットURL: projects.scratch.mit.edu/ID (トークンなし)
+    if (url.includes('projects.scratch.mit.edu/') && !url.includes('token=')) {
+        const parts = url.split('?');
+        const projectId = parts[0].split('/').pop();
         
-        // 置き換えたい「Scratchプロジェクト本体」のデータ取得URLを検出する
-        if (url.includes('projects.scratch.mit.edu/') && url.includes('token=')) {
-            console.log("🔥 プロジェクトデータ取得をプロキシ経由にフックしました！");
+        if (projectId && /^\d+$/.test(projectId)) {
+            console.log(`🔥 プロジェクトID ${projectId} のデータ取得をプロキシ経由にフックしました！`);
             
-            // URLからIDとトークンを解析する (シンプル化のため、クエリパラメータを直接渡す)
-            const parts = url.split('?');
-            const projectId = parts[0].split('/').pop();
-            const tokenMatch = url.match(/token=([^&]*)/);
-            const token = tokenMatch ? tokenMatch[1] : '';
-
-            // あなたのプロキシ経由関数を呼び出す
-            return fetchProjectDataViaProxy(projectId, token);
+            // 新しい二段階処理の関数を呼び出す
+            return getProjectDataViaProxy(projectId);
         }
+    }
 
-        // それ以外の全てのリクエスト（サムネイル、CSS、他のAPIなど）は元の fetch を使う
-        return originalFetch(resource, options);
-    };
-
-</script>
+    // それ以外の全てのリクエストは元の fetch を使う
+    return originalFetch(resource, options);
+};
+        </script>
                 <script>
                         (function() {
         document.querySelector('#splash-content').style.display = 'block';
