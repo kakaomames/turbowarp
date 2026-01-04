@@ -26,7 +26,26 @@
         100% { transform: rotate(360deg); }
       }</style>
         </head>
-        <body>
+        <body><script>
+                // Service Workerの登録
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    const swPath = './sw.js'; // カカオマメ隊員の作ったsw.jsのパス
+    console.log(`sw_register_start:${swPath}`);
+
+    navigator.serviceWorker.register(swPath)
+      .then((registration) => {
+        // 登録成功！
+        console.log(`sw_register_success: scope:${registration.scope}`);
+      })
+      .catch((error) => {
+        // 登録失敗...（パスが間違っているか、HTTPSじゃない場合に起きます）
+        console.error(`sw_register_failed:${error}`);
+      });
+  });
+} else {
+  console.log("sw_not_supported: このブラウザはSWに対応していません😢");
+}</script>
                 <div id="splash" aria-hidden="true">
                         <noscript>
                                 <h1>Enable JavaScript</h1>
