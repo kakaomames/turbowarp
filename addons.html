@@ -1,6 +1,24 @@
 <!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Addon Settings - TurboWarp</title><style>body[splash-theme="dark"]:not(.tw-loaded) {
         background: #111;
-      }</style></head><body><script>(function() {
+      }</style></head><body><script>// Service Workerの登録
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    const swPath = './sw.js'; // カカオマメ隊員の作ったsw.jsのパス
+    console.log(`sw_register_start:${swPath}`);
+
+    navigator.serviceWorker.register(swPath)
+      .then((registration) => {
+        // 登録成功！
+        console.log(`sw_register_success: scope:${registration.scope}`);
+      })
+      .catch((error) => {
+        // 登録失敗...（パスが間違っているか、HTTPSじゃない場合に起きます）
+        console.error(`sw_register_failed:${error}`);
+      });
+  });
+} else {
+  console.log("sw_not_supported: このブラウザはSWに対応していません😢");
+}</script><script>(function() {
         try {var localTheme = localStorage.getItem('tw:theme');} catch (e) {}
         if (localTheme ? localTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.body.setAttribute('splash-theme', 'dark');
       })();</script><div id="app"></div><script src="js/vendors~addon-settings~credits~editor~embed~fullscreen~player.3e609736d74b93411c51.js"></script><script src="js/addon-settings~addons~editor~fullscreen~player.1af613e0edbf7211ac43.js"></script><script src="js/addon-settings.97df712938ad681d1e10.js"></script></body></html>
