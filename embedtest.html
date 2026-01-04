@@ -10,6 +10,25 @@
     </style>
   </head>
   <body>
+    <script>// Service Workerの登録
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    const swPath = './sw.js'; // カカオマメ隊員の作ったsw.jsのパス
+    console.log(`sw_register_start:${swPath}`);
+
+    navigator.serviceWorker.register(swPath)
+      .then((registration) => {
+        // 登録成功！
+        console.log(`sw_register_success: scope:${registration.scope}`);
+      })
+      .catch((error) => {
+        // 登録失敗...（パスが間違っているか、HTTPSじゃない場合に起きます）
+        console.error(`sw_register_failed:${error}`);
+      });
+  });
+} else {
+  console.log("sw_not_supported: このブラウザはSWに対応していません😢");
+}</script>
     <iframe src="embed.html?addons=pause,gamepad&settings-button&fullscreen-background=black#443603478" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
   </body>
 </html>
