@@ -1,27 +1,30 @@
-name: Search for TurboWarp URL
+name: Format JS and Search URL
 
 on:
-  # 手動でGitHubの「Actions」タブから実行できるようにします
-  workflow_dispatch:
-  # コードがpushされたときにも自動実行したい場合はコメントアウトを解除してください
-  # push:
-  #   branches: [ main, master ]
+  workflow_dispatch: # GitHubのブラウザ画面から手動で実行できるようにします
 
 jobs:
-  grep-search:
+  format-and-grep:
     runs-on: ubuntu-latest
     steps:
-      # 1. リポジトリのコードをチェックアウト（取得）
+      # 1. リポジトリのコードをチェックアウト
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. すべてのファイルから対象のURLを検索
+      # 2. Prettierを使って、すべての .js ファイルを改行・整形する
+      - name: Format JavaScript files
+        run: |
+          echo "=== MinifyされたJSファイルを整形中... ==="
+          # npx prettier を使って、リポジトリ内のすべての .js ファイルを上書き整形します
+          # (--write: ファイルを上書き, --log-level=warn: ログを静かにする)
+          npx prettier --write "**/*.js" --log-level=warn || true
+
+      # 3. 整形されたコードから、行番号付きでURLを検索する
       - name: Search for specific URL
         run: |
-          echo "=== 検索を開始します ==="
+          echo "=== 整形後のファイルから検索を開始します ==="
           
-          # -r: 再帰的検索, -n: 行番号を表示
-          # 末尾の || true により、URLが見つからなくてもビルドがエラー（赤）になりません
+          # 整形されたおかげで、URLがある「正確な行（前後のコード）」がログにきれいに表示されます
           grep -rn "https://extensions\.turbowarp\.org/generated-metadata/extensions-v0\.json" . || true
           
           echo "=== 検索が完了しました ==="
