@@ -41,7 +41,8 @@ jobs:
           
           TARGET_URL="https://extensions.turbowarp.org"
           NEW_PATH="."
-          
+          TU="https://packager.turbowarp.org/"
+          NU="https://kakaomames.github.io/Scratch-packager/"
           # リポジトリ内のすべての .js ファイルに対して置換を実行
           find . -name "*.js" -exec sed -i "s|$TARGET_URL|$NEW_PATH|g" {} +
 
