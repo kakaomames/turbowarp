@@ -2006,7 +2006,7 @@ void main() {
         const url = new URL(location.href);
         url.searchParams.set(
           "project_url",
-          "https://extensions.turbowarp.org/samples/Simple3D%20template.sb3"
+          "./samples/Simple3D%20template.sb3"
         );
         // Exempted from Scratch.openWindow as it is in response to a user gesture and it does not
         // bring in third-party websites at all.
@@ -3720,7 +3720,7 @@ void main() {
       arguments: {
         TEXURL: {
           type: ArgumentType.STRING,
-          defaultValue: "https://extensions.turbowarp.org/dango.png",
+          defaultValue: "./dango.png",
         },
       },
       def: function ({ TEXURL }, { target }) {
@@ -5213,7 +5213,7 @@ void main() {
     color1: "#5CB1D6",
     color2: "#47A8D1",
     color3: "#2E8EB8",
-    docsURI: "https://extensions.turbowarp.org/Xeltalliv/simple3D",
+    docsURI: "./Xeltalliv/simple3D",
     blocks: definitions,
     menus: {
       fonts: {
@@ -5551,7 +5551,7 @@ void main() {
       );
       if (
         runtime.extensionManager.isExtensionURLLoaded(
-          "https://extensions.turbowarp.org/Xeltalliv/simple3D.js"
+          "./Xeltalliv/simple3D.js"
         )
       ) {
         alert(

@@ -347,7 +347,7 @@
               URL: {
                 type: Scratch.ArgumentType.STRING,
                 defaultValue:
-                  "https://extensions.turbowarp.org/Skyhigh173/json.js",
+                  "./Skyhigh173/json.js",
               },
             },
           },

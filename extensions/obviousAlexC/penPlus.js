@@ -1763,7 +1763,7 @@
             arguments: {
               dataURI: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/dango.png",
+                defaultValue: "./dango.png",
               },
               name: {
                 type: Scratch.ArgumentType.STRING,

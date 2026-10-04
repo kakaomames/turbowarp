@@ -101,7 +101,7 @@
         color1: "#6b56ff",
         color2: "#604de6",
         color3: "#5645cc",
-        docsURI: "https://extensions.turbowarp.org/Lily/Skins",
+        docsURI: "./Lily/Skins",
         blocks: [
           {
             opcode: "registerSVGSkin",
@@ -142,7 +142,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/dango.png",
+                defaultValue: "./dango.png",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,

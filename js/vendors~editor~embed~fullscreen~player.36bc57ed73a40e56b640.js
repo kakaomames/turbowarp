@@ -173553,10 +173553,10 @@ License: MIT
     },
     function (e, t) {
       const i = new Map();
-      (i.set("text", "https://extensions.turbowarp.org/lab/text.js"),
+      (i.set("text", "./lab/text.js"),
         i.set(
           "audiostr",
-          "https://extensions.turbowarp.org/turboloader/audiostream.js",
+          "./turboloader/audiostream.js",
         ),
         (e.exports = i));
     },

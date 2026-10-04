@@ -92,7 +92,7 @@
         name: Scratch.translate("Webhooks"),
         color1: "#C73A63",
         menuIconURI: icon,
-        docsURI: "https://extensions.turbowarp.org/CubesterYT/Webhooks",
+        docsURI: "./CubesterYT/Webhooks",
 
         blocks: [
           "---",

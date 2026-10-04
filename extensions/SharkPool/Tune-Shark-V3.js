@@ -167,7 +167,7 @@
       return {
         id: "SPtuneShark3",
         name: Scratch.translate("Tune Shark V3"),
-        docsURI: "https://extensions.turbowarp.org/SharkPool/Tune-Shark-V3",
+        docsURI: "./SharkPool/Tune-Shark-V3",
         color1: "#666666",
         menuIconURI,
         blockIconURI,
@@ -180,7 +180,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/meow.mp3",
+                defaultValue: "./meow.mp3",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,

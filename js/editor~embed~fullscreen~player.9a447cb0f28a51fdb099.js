@@ -3192,7 +3192,7 @@
             defaultMessage: "TurboWarp Extension Gallery",
             id: "tw.extensionGallery.name",
           }),
-          href: "https://extensions.turbowarp.org/",
+          href: "./",
           extensionId: "gallery",
           iconURL: fe.a,
           description: o.a.createElement(r.b, {
@@ -3207,7 +3207,7 @@
             defaultMessage: "TurboWarp Extension Gallery",
             id: "tw.extensionGallery.name",
           }),
-          href: "https://extensions.turbowarp.org/",
+          href: "./",
           extensionId: "gallery",
           iconURL: fe.a,
           description: o.a.createElement(r.b, {
@@ -3223,7 +3223,7 @@
             defaultMessage: "TurboWarp Extension Gallery",
             id: "tw.extensionGallery.name",
           }),
-          href: "https://extensions.turbowarp.org/",
+          href: "./",
           extensionId: "gallery",
           iconURL: fe.a,
           description: o.a.createElement(r.b, {
@@ -25580,7 +25580,7 @@
           ev.add(e);
         },
         nv = (e) =>
-          e.startsWith("https://extensions.turbowarp.org/") ||
+          e.startsWith("./") ||
           e.startsWith("http://localhost:8000/") ||
           ev.has(e),
         av = new Set(),
@@ -25931,7 +25931,7 @@
                       value: e.url,
                       onChange: e.onChangeURL,
                       onKeyDown: e.onKeyDown,
-                      placeholder: "https://extensions.turbowarp.org/...",
+                      placeholder: "./...",
                       autoFocus: !0,
                     }),
                   )

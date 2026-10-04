@@ -445,7 +445,7 @@
             arguments: {
               url: {
                 type: ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/hello.txt",
+                defaultValue: "./hello.txt",
               },
             },
             text: Scratch.translate("send request to [url]"),

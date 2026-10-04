@@ -1067,7 +1067,7 @@
             arguments: {
               url: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/hello.txt",
+                defaultValue: "./hello.txt",
               },
             },
           },
@@ -1086,7 +1086,7 @@
               },
               url: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/hello.txt",
+                defaultValue: "./hello.txt",
               },
               data: {
                 type: Scratch.ArgumentType.STRING,

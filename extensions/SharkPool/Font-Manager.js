@@ -118,7 +118,7 @@
               },
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/Lobster.woff2",
+                defaultValue: "./Lobster.woff2",
               },
               BACKUP: {
                 type: Scratch.ArgumentType.STRING,

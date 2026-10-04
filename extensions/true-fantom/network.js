@@ -282,7 +282,7 @@
             arguments: {
               USER_URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org",
+                defaultValue: ".",
               },
             },
           },
@@ -295,7 +295,7 @@
             arguments: {
               USER_URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org",
+                defaultValue: ".",
               },
               WIDTH: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -322,7 +322,7 @@
             arguments: {
               USER_URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org",
+                defaultValue: ".",
               },
             },
           },

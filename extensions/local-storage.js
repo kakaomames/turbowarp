@@ -147,7 +147,7 @@
       return {
         id: "localstorage",
         name: Scratch.translate("Local Storage"),
-        docsURI: "https://extensions.turbowarp.org/local-storage",
+        docsURI: "./local-storage",
         blocks: [
           {
             blockType: Scratch.BlockType.LABEL,

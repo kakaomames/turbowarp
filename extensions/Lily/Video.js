@@ -187,7 +187,7 @@
         id: "lmsVideo",
         color1: "#557882",
         name: Scratch.translate("Video"),
-        docsURI: "https://extensions.turbowarp.org/Lily/Video",
+        docsURI: "./Lily/Video",
         blocks: [
           {
             blockType: Scratch.BlockType.XML,
@@ -200,7 +200,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/dango.mp4",
+                defaultValue: "./dango.mp4",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,

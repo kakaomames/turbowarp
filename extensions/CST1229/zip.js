@@ -81,7 +81,7 @@
       return {
         id: "cst1229zip",
         name: Scratch.translate("Zip"),
-        docsURI: "https://extensions.turbowarp.org/CST1229/zip",
+        docsURI: "./CST1229/zip",
 
         blockIconURI: extIcon,
 
@@ -116,7 +116,7 @@
               DATA: {
                 type: Scratch.ArgumentType.STRING,
                 // defaultValue: "http:/localhost:8000/hello.zip",
-                defaultValue: "https://extensions.turbowarp.org/hello.zip",
+                defaultValue: "./hello.zip",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,
@@ -155,7 +155,7 @@
               DATA: {
                 type: Scratch.ArgumentType.STRING,
                 // defaultValue: "http:/localhost:8000/hello.zip",
-                defaultValue: "https://extensions.turbowarp.org/hello.zip",
+                defaultValue: "./hello.zip",
               },
             },
           },

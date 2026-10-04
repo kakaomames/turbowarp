@@ -13216,7 +13216,7 @@
           default: "Physics",
           description: "Label for the Griffpatch extension category",
         }),
-        docsURI: "https://extensions.turbowarp.org/box2d",
+        docsURI: "./box2d",
         menuIconURI: menuIconURI,
         blockIconURI: blockIconURI,
         blocks: [

@@ -174,7 +174,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/hello.html",
+                defaultValue: "./hello.html",
               },
             },
           },
