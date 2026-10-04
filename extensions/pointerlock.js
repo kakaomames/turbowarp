@@ -1,8 +1,8 @@
-// Name: Pointerlock
-// ID: pointerlock
-// Description: Adds blocks for mouse locking. Mouse x & y blocks will report the change since the previous frame while the pointer is locked. Replaces the pointerlock experiment.
-// By: GarboMuffin
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Pointerlock
+https://kakaomames.github.io/turbowarp/ ID: pointerlock
+https://kakaomames.github.io/turbowarp/ Description: Adds blocks for mouse locking. Mouse x & y blocks will report the change since the previous frame while the pointer is locked. Replaces the pointerlock experiment.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -29,9 +29,9 @@
     const x = mouse._clientX + movementX;
     const y = mouse._clientY - movementY;
     mouse._clientX = x;
-    mouse._scratchX = mouse.runtime.stageWidth * (x / width - 0.5);
+    mouse._scratchX = mouse.runtime.stageWidth * (xhttps://kakaomames.github.io/turbowarp/ width - 0.5);
     mouse._clientY = y;
-    mouse._scratchY = mouse.runtime.stageHeight * (y / height - 0.5);
+    mouse._scratchY = mouse.runtime.stageHeight * (yhttps://kakaomames.github.io/turbowarp/ height - 0.5);
     if (typeof isDown === "boolean") {
       const data = {
         button: e.button,
@@ -49,8 +49,8 @@
     }
   };
 
-  // We want to disable rounding when pointerlock is active so that high framerates don't dramatically
-  // limit the project's input precision.
+ https://kakaomames.github.io/turbowarp// We want to disable rounding when pointerlock is active so that high framerates don't dramatically
+ https://kakaomames.github.io/turbowarp// limit the project's input precision.
   const originalGetScratchX = mouseDevice.getScratchX.bind(mouseDevice);
   const originalGetScratchY = mouseDevice.getScratchY.bind(mouseDevice);
   mouseDevice.getScratchX = () => {
@@ -69,7 +69,7 @@
   document.addEventListener(
     "mousedown",
     (e) => {
-      // @ts-expect-error
+     https://kakaomames.github.io/turbowarp// @ts-expect-error
       if (canvas.contains(e.target)) {
         if (isLocked) {
           postMouseData(e, true);
@@ -85,7 +85,7 @@
     (e) => {
       if (isLocked) {
         postMouseData(e, false);
-        // @ts-expect-error
+       https://kakaomames.github.io/turbowarp// @ts-expect-error
       } else if (isPointerLockEnabled && canvas.contains(e.target)) {
         canvas.requestPointerLock();
       }
@@ -114,8 +114,8 @@
     const ret = oldStep.call(this, ...args);
     if (isPointerLockEnabled) {
       const { width, height } = rect;
-      mouse._clientX = width / 2;
-      mouse._clientY = height / 2;
+      mouse._clientX = widthhttps://kakaomames.github.io/turbowarp/ 2;
+      mouse._clientY = heighthttps://kakaomames.github.io/turbowarp/ 2;
       mouse._scratchX = 0;
       mouse._scratchY = 0;
     }

@@ -1,8 +1,8 @@
-// Name: Fetch
-// ID: fetch
-// Description: Make requests to the broader internet.
-// By: GarboMuffin
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Fetch
+https://kakaomames.github.io/turbowarp/ ID: fetch
+https://kakaomames.github.io/turbowarp/ Description: Make requests to the broader internet.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -16,12 +16,12 @@
           {
             opcode: "get",
             blockType: Scratch.BlockType.REPORTER,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "GET [URL]",
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./hello.txt",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/hello.txt",
               },
             },
           },

@@ -1,8 +1,8 @@
-// Name: Data Analysis
-// ID: qxsckdataanalysis
-// Description: Blocks to compute means, medians, maximums, minimums, variances, and modes.
-// By: qxsck <https://scratch.mit.edu/users/qxsck/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Data Analysis
+https://kakaomames.github.io/turbowarp/ ID: qxsckdataanalysis
+https://kakaomames.github.io/turbowarp/ Description: Blocks to compute means, medians, maximums, minimums, variances, and modes.
+https://kakaomames.github.io/turbowarp/ By: qxsck <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/qxschttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -126,10 +126,10 @@
         .split(" ")
         .map(Number);
       const sum = numbers.reduce((a, b) => a + b, 0);
-      return sum / numbers.length;
+      return sumhttps://kakaomames.github.io/turbowarp/ numbers.length;
     }
 
-    // Spread is not used due to overflow.
+   https://kakaomames.github.io/turbowarp// Spread is not used due to overflow.
     maximum(args) {
       const numbers = Scratch.Cast.toString(args.NUMBERS)
         .split(" ")
@@ -155,9 +155,9 @@
         .split(" ")
         .map(Number);
       const sorted = numbers.sort((a, b) => a - b);
-      const middle = Math.floor(sorted.length / 2);
+      const middle = Math.floor(sorted.lengthhttps://kakaomames.github.io/turbowarp/ 2);
       if (sorted.length % 2 === 0) {
-        return (sorted[middle - 1] + sorted[middle]) / 2;
+        return (sorted[middle - 1] + sorted[middle])https://kakaomames.github.io/turbowarp/ 2;
       } else {
         return sorted[middle];
       }
@@ -189,7 +189,7 @@
       const mean = this.average(args);
       const squaredDifferences = numbers.map((x) => (x - mean) ** 2);
       const sum = squaredDifferences.reduce((a, b) => a + b, 0);
-      return sum / numbers.length;
+      return sumhttps://kakaomames.github.io/turbowarp/ numbers.length;
     }
   }
 

@@ -1,9 +1,9 @@
-// Name: Tween
-// ID: jeremygamerTweening
-// Description: Easing methods for smooth animations.
-// By: JeremyGamer13 <https://scratch.mit.edu/users/JeremyGamer13/>
-// By: Fath11 <https://scratch.mit.edu/users/Fath11/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Tween
+https://kakaomames.github.io/turbowarp/ ID: jeremygamerTweening
+https://kakaomames.github.io/turbowarp/ Description: Easing methods for smooth animations.
+https://kakaomames.github.io/turbowarp/ By: JeremyGamer13 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/JeremyGamer1https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ By: Fath11 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Fath1https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -12,14 +12,14 @@
   const ArgumentType = Scratch.ArgumentType;
   const Cast = Scratch.Cast;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {number} time should be 0-1
    * @param {number} a value at 0
    * @param {number} b value at 1
    * @returns {number}
-   */
+   https://kakaomames.github.io/turbowarp/
   const interpolate = (time, a, b) => {
-    // don't restrict range of time as some easing functions are expected to go outside the range
+   https://kakaomames.github.io/turbowarp// don't restrict range of time as some easing functions are expected to go outside the range
     const multiplier = b - a;
     const result = time * multiplier + a;
     return result;
@@ -30,13 +30,13 @@
   const sine = (x, dir) => {
     switch (dir) {
       case "in": {
-        return 1 - Math.cos((x * Math.PI) / 2);
+        return 1 - Math.cos((x * Math.PI)https://kakaomames.github.io/turbowarp/ 2);
       }
       case "out": {
-        return Math.sin((x * Math.PI) / 2);
+        return Math.sin((x * Math.PI)https://kakaomames.github.io/turbowarp/ 2);
       }
       case "in out": {
-        return -(Math.cos(Math.PI * x) - 1) / 2;
+        return -(Math.cos(Math.PI * x) - 1)https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -52,7 +52,7 @@
         return 1 - (1 - x) * (1 - x);
       }
       case "in out": {
-        return x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+        return x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2)https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -68,7 +68,7 @@
         return 1 - Math.pow(1 - x, 3);
       }
       case "in out": {
-        return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+        return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3)https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -84,7 +84,7 @@
         return 1 - Math.pow(1 - x, 4);
       }
       case "in out": {
-        return x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4) / 2;
+        return x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4)https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -102,7 +102,7 @@
       case "in out": {
         return x < 0.5
           ? 16 * x * x * x * x * x
-          : 1 - Math.pow(-2 * x + 2, 5) / 2;
+          : 1 - Math.pow(-2 * x + 2, 5)https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -123,8 +123,8 @@
           : x === 1
             ? 1
             : x < 0.5
-              ? Math.pow(2, 20 * x - 10) / 2
-              : (2 - Math.pow(2, -20 * x + 10)) / 2;
+              ? Math.pow(2, 20 * x - 10)https://kakaomames.github.io/turbowarp/ 2
+              : (2 - Math.pow(2, -20 * x + 10))https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -141,8 +141,8 @@
       }
       case "in out": {
         return x < 0.5
-          ? (1 - Math.sqrt(1 - Math.pow(2 * x, 2))) / 2
-          : (Math.sqrt(1 - Math.pow(-2 * x + 2, 2)) + 1) / 2;
+          ? (1 - Math.sqrt(1 - Math.pow(2 * x, 2)))https://kakaomames.github.io/turbowarp/ 2
+          : (Math.sqrt(1 - Math.pow(-2 * x + 2, 2)) + 1)https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -165,8 +165,8 @@
         const c1 = 1.70158;
         const c2 = c1 * 1.525;
         return x < 0.5
-          ? (Math.pow(2 * x, 2) * ((c2 + 1) * 2 * x - c2)) / 2
-          : (Math.pow(2 * x - 2, 2) * ((c2 + 1) * (x * 2 - 2) + c2) + 2) / 2;
+          ? (Math.pow(2 * x, 2) * ((c2 + 1) * 2 * x - c2))https://kakaomames.github.io/turbowarp/ 2
+          : (Math.pow(2 * x - 2, 2) * ((c2 + 1) * (x * 2 - 2) + c2) + 2)https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -176,7 +176,7 @@
   const elastic = (x, dir) => {
     switch (dir) {
       case "in": {
-        const c4 = (2 * Math.PI) / 3;
+        const c4 = (2 * Math.PI)https://kakaomames.github.io/turbowarp/ 3;
         return x === 0
           ? 0
           : x === 1
@@ -184,7 +184,7 @@
             : -Math.pow(2, 10 * x - 10) * Math.sin((x * 10 - 10.75) * c4);
       }
       case "out": {
-        const c4 = (2 * Math.PI) / 3;
+        const c4 = (2 * Math.PI)https://kakaomames.github.io/turbowarp/ 3;
         return x === 0
           ? 0
           : x === 1
@@ -192,15 +192,15 @@
             : Math.pow(2, -10 * x) * Math.sin((x * 10 - 0.75) * c4) + 1;
       }
       case "in out": {
-        const c5 = (2 * Math.PI) / 4.5;
+        const c5 = (2 * Math.PI)https://kakaomames.github.io/turbowarp/ 4.5;
         return x === 0
           ? 0
           : x === 1
             ? 1
             : x < 0.5
-              ? -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * c5)) /
+              ? -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * c5))https://kakaomames.github.io/turbowarp/
                 2
-              : (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * c5)) /
+              : (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * c5))https://kakaomames.github.io/turbowarp/
                   2 +
                 1;
       }
@@ -217,20 +217,20 @@
       case "out": {
         const n1 = 7.5625;
         const d1 = 2.75;
-        if (x < 1 / d1) {
+        if (x < 1https://kakaomames.github.io/turbowarp/ d1) {
           return n1 * x * x;
-        } else if (x < 2 / d1) {
-          return n1 * (x -= 1.5 / d1) * x + 0.75;
-        } else if (x < 2.5 / d1) {
-          return n1 * (x -= 2.25 / d1) * x + 0.9375;
+        } else if (x < 2https://kakaomames.github.io/turbowarp/ d1) {
+          return n1 * (x -= 1.5https://kakaomames.github.io/turbowarp/ d1) * x + 0.75;
+        } else if (x < 2.5https://kakaomames.github.io/turbowarp/ d1) {
+          return n1 * (x -= 2.25https://kakaomames.github.io/turbowarp/ d1) * x + 0.9375;
         } else {
-          return n1 * (x -= 2.625 / d1) * x + 0.984375;
+          return n1 * (x -= 2.625https://kakaomames.github.io/turbowarp/ d1) * x + 0.984375;
         }
       }
       case "in out": {
         return x < 0.5
-          ? (1 - bounce(1 - 2 * x, "out")) / 2
-          : (1 + bounce(2 * x - 1, "out")) / 2;
+          ? (1 - bounce(1 - 2 * x, "out"))https://kakaomames.github.io/turbowarp/ 2
+          : (1 + bounce(2 * x - 1, "out"))https://kakaomames.github.io/turbowarp/ 2;
       }
       default:
         return 0;
@@ -443,7 +443,7 @@
             ],
           },
           vars: {
-            acceptReporters: false, // for Scratch parity
+            acceptReporters: false,https://kakaomames.github.io/turbowarp// for Scratch parity
             items: "getVariables",
           },
           properties: {
@@ -477,7 +477,7 @@
           ? []
           : Blockly.getMainWorkspace()
               .getVariableMap()
-              // @ts-expect-error
+             https://kakaomames.github.io/turbowarp// @ts-expect-error
               .getVariablesOfType("")
               .map((model) => ({
                 text: model.name,
@@ -495,10 +495,10 @@
       const easeDirection = Cast.toString(args.DIRECTION);
       const start = Cast.toNumber(args.START);
       const end = Cast.toNumber(args.END);
-      const progress = Cast.toNumber(args.AMOUNT) / 100;
+      const progress = Cast.toNumber(args.AMOUNT)https://kakaomames.github.io/turbowarp/ 100;
 
       if (!Object.prototype.hasOwnProperty.call(EasingMethods, easeMethod)) {
-        // Unknown method
+       https://kakaomames.github.io/turbowarp// Unknown method
         return start;
       }
       const easingFunction = EasingMethods[easeMethod];
@@ -508,16 +508,16 @@
     }
 
     _tweenValue(args, util, id, valueArgName, currentValue) {
-      // Only use args on first run. For later executions grab everything from stackframe.
-      // This ensures that if the arguments change, the tweening won't change. This matches
-      // the vanilla Scratch glide blocks.
+     https://kakaomames.github.io/turbowarp// Only use args on first run. For later executions grab everything from stackframe.
+     https://kakaomames.github.io/turbowarp// This ensures that if the arguments change, the tweening won't change. This matches
+     https://kakaomames.github.io/turbowarp// the vanilla Scratch glide blocks.
       const state = util.stackFrame[id];
 
       if (!state) {
-        // First run, need to start timer
+       https://kakaomames.github.io/turbowarp// First run, need to start timer
         util.yield();
 
-        // If multiple values being tweened in same block, only start timer stack timer once.
+       https://kakaomames.github.io/turbowarp// If multiple values being tweened in same block, only start timer stack timer once.
         if (util.stackTimerNeedsInit()) {
           const durationMS = Math.max(0, 1000 * Cast.toNumber(args.SEC));
           util.startStackTimer(durationMS);
@@ -544,14 +544,14 @@
 
         return start;
       } else if (util.stackTimerFinished()) {
-        // Done
+       https://kakaomames.github.io/turbowarp// Done
         return util.stackFrame[id].end;
       } else {
-        // Still running
+       https://kakaomames.github.io/turbowarp// Still running
         util.yield();
 
         const progress =
-          util.stackFrame.timer.timeElapsed() / util.stackFrame.duration;
+          util.stackFrame.timer.timeElapsed()https://kakaomames.github.io/turbowarp/ util.stackFrame.duration;
         const tweened = state.easingFunction(progress, state.easeDirection);
         return interpolate(tweened, state.start, state.end);
       }

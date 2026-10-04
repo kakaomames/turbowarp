@@ -1,13 +1,13 @@
-// Name: Video Sprites
-// ID: videoSprites
-// Description: Replace sprites with a live video feed. Compatible with Scratch Lab's Video Sprites experiment.
-// By: Staevski_G <https://scratch.mit.edu/users/Gogoi-does-things/>
-// License: MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Video Sprites
+https://kakaomames.github.io/turbowarp/ ID: videoSprites
+https://kakaomames.github.io/turbowarp/ Description: Replace sprites with a live video feed. Compatible with Scratch Lab's Video Sprites experiment.
+https://kakaomames.github.io/turbowarp/ By: Staevski_G <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Gogoi-does-thinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MPL-2.0
 
 (function (Scratch) {
   "use strict";
 
-  /*
+ https://kakaomames.github.io/turbowarp/*
 
     FYI on the architecture here - we know that the Scratch Lab version of this does the swapping on the
     GPU which is a much faster approach. We unfortunately don't have a ton of control over render internals
@@ -16,7 +16,7 @@
     Instead, we're doing the swapping on with a CPU canvas and uploading that to the GPU as needed.
     It's not ideal, but... it seems to work good enough.
 
-  */
+  https://kakaomames.github.io/turbowarp/
 
   if (!Scratch.extensions.unsandboxed) {
     throw new Error("Video Sprites must run unsandboxed.");
@@ -43,40 +43,40 @@
   const MAX_ZOOM = 2000;
   const DEFAULT_ZOOM = 100;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {number} zoom
    * @returns {number}
-   */
+   https://kakaomames.github.io/turbowarp/
   const clampZoom = (zoom) => {
     if (zoom < MIN_ZOOM) return MIN_ZOOM;
     if (zoom > MAX_ZOOM) return MAX_ZOOM;
     return zoom;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @typedef {"mask"|"color"} VideoSpriteMode
-   */
+   https://kakaomames.github.io/turbowarp/
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @typedef CustomState
    * @property {number} zoom
    * @property {VideoSpriteSkin|null} skin
    * @property {VideoSpriteMode} mode
    * @property {[number, number, number]|null} maskColor All in 0-255
-   */
+   https://kakaomames.github.io/turbowarp/
 
   const CUSTOM_STATE_KEY = Symbol();
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {import("scratch-vm").Target} target
    * @returns {CustomState|null}
-   */
+   https://kakaomames.github.io/turbowarp/
   const getState = (target) => target[CUSTOM_STATE_KEY] || null;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {import("scratch-vm").Target} target
    * @returns {CustomState}
-   */
+   https://kakaomames.github.io/turbowarp/
   const getOrCreateState = (target) => {
     let state = target[CUSTOM_STATE_KEY];
     if (!state) {
@@ -91,10 +91,10 @@
     return state;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {import("scratch-vm").Target} target
    * @param {number} zoom
-   */
+   https://kakaomames.github.io/turbowarp/
   const setZoom = (target, zoom) => {
     const clamped = clampZoom(zoom);
     const state = getOrCreateState(target);
@@ -108,13 +108,13 @@
     }
   };
 
-  /**
-   * Get cropped/scaled video frame, zoomed around the center.
+ https://kakaomames.github.io/turbowarp/**
+   * Get croppehttps://kakaomames.github.io/turbowarp/scaled video frame, zoomed around the center.
    * @param {number} width
    * @param {number} height
    * @param {number} zoom
    * @returns {boolean} true if a frame was drawn
-   */
+   https://kakaomames.github.io/turbowarp/
   const sampleVideoToWorkCanvas = (width, height, zoom) => {
     const videoCanvas = videoDevice.getFrame({
       format: "canvas",
@@ -126,12 +126,12 @@
 
     const videoWidth = videoCanvas.width;
     const videoHeight = videoCanvas.height;
-    const upscaleFactor = Math.min(videoWidth / width, videoHeight / height);
-    const zoomFactor = zoom / 100;
-    const cropWidth = (width * upscaleFactor) / zoomFactor;
-    const cropHeight = (height * upscaleFactor) / zoomFactor;
-    const cropX = (videoWidth - cropWidth) / 2;
-    const cropY = (videoHeight - cropHeight) / 2;
+    const upscaleFactor = Math.min(videoWidthhttps://kakaomames.github.io/turbowarp/ width, videoHeighthttps://kakaomames.github.io/turbowarp/ height);
+    const zoomFactor = zoomhttps://kakaomames.github.io/turbowarp/ 100;
+    const cropWidth = (width * upscaleFactor)https://kakaomames.github.io/turbowarp/ zoomFactor;
+    const cropHeight = (height * upscaleFactor)https://kakaomames.github.io/turbowarp/ zoomFactor;
+    const cropX = (videoWidth - cropWidth)https://kakaomames.github.io/turbowarp/ 2;
+    const cropY = (videoHeight - cropHeight)https://kakaomames.github.io/turbowarp/ 2;
 
     workContext.clearRect(0, 0, width, height);
     workContext.drawImage(
@@ -148,7 +148,7 @@
     return true;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {number} r1 from 0-255
    * @param {number} g1 from 0-255
    * @param {number} b1 from 0-255
@@ -156,7 +156,7 @@
    * @param {number} g2 from 0-255
    * @param {number} b2 from 0-255
    * @returns {boolean} true if matching
-   */
+   https://kakaomames.github.io/turbowarp/
   const colorMatches = (r1, g1, b1, r2, g2, b2) => {
     const tolerance = 1;
     return (
@@ -166,30 +166,30 @@
     );
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * A skin for replacing all or parts (based on color) of a skin.
    *
    * The idea is that we wrap the original skin as much as possible, but returning a new WebGL texture
    * that we generate with colors swapped.
-   */
+   https://kakaomames.github.io/turbowarp/
   class VideoSpriteSkin extends Skin {
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {number} id
      * @param {import('scratch-vm').Target} target
-     */
+     https://kakaomames.github.io/turbowarp/
     constructor(id, target) {
       super(id, renderer);
 
-      // Don't set private = true because we make all touching operations occur against the parent skin, not us
-      // Thus, the private video data is not visible to the project.
+     https://kakaomames.github.io/turbowarp// Don't set private = true because we make all touching operations occur against the parent skin, not us
+     https://kakaomames.github.io/turbowarp// Thus, the private video data is not visible to the project.
 
-      /** @type {import('scratch-vm').Target} */
+     https://kakaomames.github.io/turbowarp/** @type {import('scratch-vm').Target} https://kakaomames.github.io/turbowarp/
       this.target = target;
 
-      /**
+     https://kakaomames.github.io/turbowarp/**
        * Cached image data to reduce unnecessary allocations
        * @type {Uint8ClampedArray|null}
-       */
+       https://kakaomames.github.io/turbowarp/
       this._outData = null;
     }
 
@@ -327,7 +327,7 @@
         });
       }
 
-      // Use direct WebGL as setTexture would update silhouette based on this texture, which we don't want.
+     https://kakaomames.github.io/turbowarp// Use direct WebGL as setTexture would update silhouette based on this texture, which we don't want.
       gl.bindTexture(gl.TEXTURE_2D, this._texture);
       gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
       gl.texImage2D(
@@ -344,9 +344,9 @@
     }
   }
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {import("scratch-vm").Target} target
-   */
+   https://kakaomames.github.io/turbowarp/
   const attach = (target) => {
     const state = getOrCreateState(target);
     if (!state.skin) {
@@ -360,9 +360,9 @@
     runtime.requestRedraw();
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {import("scratch-vm").Target} target
-   */
+   https://kakaomames.github.io/turbowarp/
   const detach = (target) => {
     const state = getState(target);
     if (!state || !state.skin) {
@@ -408,7 +408,7 @@
 
   runtime.on("AFTER_EXECUTE", () => {
     for (let i = 0; i < renderer._allSkins.length; i++) {
-      // The skin existing is the source-of-truth for whether we are using video mode on a given target.
+     https://kakaomames.github.io/turbowarp// The skin existing is the source-of-truth for whether we are using video mode on a given target.
 
       const skin = renderer._allSkins[i];
       if (!(skin instanceof VideoSpriteSkin)) {
@@ -417,13 +417,13 @@
 
       const target = skin.target;
 
-      // If another script override the costume, switch it back to the video sprite one.
+     https://kakaomames.github.io/turbowarp// If another script override the costume, switch it back to the video sprite one.
       const drawable = renderer._allDrawables[target.drawableID];
       if (drawable && drawable.skin !== skin) {
         renderer.updateDrawableSkinId(target.drawableID, skin.id);
       }
 
-      // Always have to assume the webcam image might have changed.
+     https://kakaomames.github.io/turbowarp// Always have to assume the webcam image might have changed.
       skin.emitWasAltered();
     }
   });
@@ -431,7 +431,7 @@
   runtime.on("PROJECT_STOP_ALL", stopAllFills);
   runtime.on("PROJECT_LOADED", stopAllFills);
 
-  // targetWasCreated runs before the clone's Drawable is set up, so we have to patch makeClone.
+ https://kakaomames.github.io/turbowarp// targetWasCreated runs before the clone's Drawable is set up, so we have to patch makeClone.
   const originalMakeClone = RenderedTarget.prototype.makeClone;
   RenderedTarget.prototype.makeClone = function () {
     const newClone = originalMakeClone.call(this);

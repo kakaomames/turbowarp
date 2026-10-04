@@ -1,11 +1,11 @@
-// Name: Pen Plus V5 (Old)
-// ID: betterpen
-// Description: Replaced by Pen Plus V7.
-// By: ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>
-// License: MIT AND BSD-3-Clause
+https://kakaomames.github.io/turbowarp/ Name: Pen Plus V5 (Old)
+https://kakaomames.github.io/turbowarp/ ID: betterpen
+https://kakaomames.github.io/turbowarp/ Description: Replaced by Pen Plus V7.
+https://kakaomames.github.io/turbowarp/ By: ObviousAlexC <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/pinksheep291https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND BSD-3-Clause
 
-/* eslint-disable no-empty-pattern */
-/* eslint-disable no-prototype-builtins */
+/* eslint-disable no-empty-pattern https://kakaomames.github.io/turbowarp/
+/* eslint-disable no-prototype-builtins https://kakaomames.github.io/turbowarp/
 /*
 Pen+ Version 5
 Author ObviousAlexC
@@ -23,7 +23,7 @@ Learned that javascript had C++ like conditional assignments
 Depracated spacial transformation block
 Added spacial changing block
 Other various small fixes
-*/
+https://kakaomames.github.io/turbowarp/
 (function (Scratch) {
   "use strict";
 
@@ -36,13 +36,13 @@ Other various small fixes
   const canvas = runtime.renderer.canvas;
   const gl = runtime.renderer._gl;
 
-  const EXAMPLE_IMAGE = "./dango.png";
+  const EXAMPLE_IMAGE = "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/dango.png";
 
   const blankImage =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAABRJREFUGFdj/P///38GBgYGRhgDAFfVB/vDfnUlAAAAAElFTkSuQmCC";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAABRJREFUGFdhttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/38GBgYGRhgDAFfVhttps://kakaomames.github.io/turbowarp/vDfnUlAAAAAElFTkSuQmCC";
 
-  // TODO: see how these differ from Scratch, if at all
-  // Note to Garbo or any code checker it does it uses bilinear filtering!
+ https://kakaomames.github.io/turbowarp// TODO: see how these differ from Scratch, if at all
+ https://kakaomames.github.io/turbowarp// Note to Garbo or any code checker it does it uses bilinear filtering!
   gl.enable(gl.BLEND);
   gl.blendEquation(gl.FUNC_ADD);
   gl.blendFunc(gl.ONE_MINUS_CONSTANT_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
@@ -66,8 +66,8 @@ Other various small fixes
   var stampOffset = [0, 0];
 
   const m4 = (function () {
-    /*!
-     * 4x4 matrix operation code is from https://webglfundamentals.org/webgl/resources/m4.js
+   https://kakaomames.github.io/turbowarp/*!
+     * 4x4 matrix operation code is from httpshttps://kakaomames.github.io/turbowarp//webglfundamentals.orhttps://kakaomames.github.io/turbowarp/webghttps://kakaomames.github.io/turbowarp/resourcehttps://kakaomames.github.io/turbowarp/m4.js
      * We have made some changes:
      *  - Fixed type errors
      *  - Changed code formatting
@@ -84,7 +84,7 @@ Other various small fixes
      * notice, this list of conditions and the following disclaimer.
      *     * Redistributions in binary form must reproduce the above
      * copyright notice, this list of conditions and the following disclaimer
-     * in the documentation and/or other materials provided with the
+     * in the documentation anhttps://kakaomames.github.io/turbowarp/or other materials provided with the
      * distribution.
      *     * Neither the name of GFXFundamentals. nor the names of his
      * contributors may be used to endorse or promote products derived from
@@ -101,40 +101,40 @@ Other various small fixes
      * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
      * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
      * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-     */
+     https://kakaomames.github.io/turbowarp/
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * An array or typed array with 3 values.
      * @typedef {number[]|Float32Array} Vector3
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * An array or typed array with 4 values.
      * @typedef {number[]|Float32Array} Vector4
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * An array or typed array with 16 values.
      * @typedef {number[]|Float32Array} Matrix4
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
 
     let MatType = Float32Array;
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Sets the type this library creates for a Mat4
      * @param {Float32ArrayConstructor} Ctor the constructor for the type. Either `Float32Array` or `Array`
      * @return {Float32ArrayConstructor} previous constructor for Mat4
-     */
+     https://kakaomames.github.io/turbowarp/
     function setDefaultType(Ctor) {
       const OldType = MatType;
       MatType = Ctor;
       return OldType;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Takes two 4-by-4 matrices, a and b, and computes the product in the order
      * that pre-composes b with a.  In other words, the matrix returned will
      * transform by b first and then a.  Note this is subtly different from just
@@ -144,7 +144,7 @@ Other various small fixes
      * @param {Matrix4} b A matrix.
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
-     */
+     https://kakaomames.github.io/turbowarp/
     function multiply(a, b, dst) {
       dst = dst || new MatType(16);
       var b00 = b[0 * 4 + 0];
@@ -198,14 +198,14 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * adds 2 vectors3s
      * @param {Vector3} a a
      * @param {Vector3} b b
      * @param {Vector3} [dst] optional vector3 to store result
      * @return {Vector3} dst or new Vector3 if not provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function addVectors(a, b, dst) {
       dst = dst || new MatType(3);
       dst[0] = a[0] + b[0];
@@ -214,14 +214,14 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * subtracts 2 vectors3s
      * @param {Vector3} a a
      * @param {Vector3} b b
      * @param {Vector3} [dst] optional vector3 to store result
      * @return {Vector3} dst or new Vector3 if not provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function subtractVectors(a, b, dst) {
       dst = dst || new MatType(3);
       dst[0] = a[0] - b[0];
@@ -230,14 +230,14 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * scale vectors3
      * @param {Vector3} v vector
      * @param {Number} s scale
      * @param {Vector3} [dst] optional vector3 to store result
      * @return {Vector3} dst or new Vector3 if not provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function scaleVector(v, s, dst) {
       dst = dst || new MatType(3);
       dst[0] = v[0] * s;
@@ -246,51 +246,51 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * normalizes a vector.
      * @param {Vector3} v vector to normalize
      * @param {Vector3} [dst] optional vector3 to store result
      * @return {Vector3} dst or new Vector3 if not provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function normalize(v, dst) {
       dst = dst || new MatType(3);
       var length = Math.sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
-      // make sure we don't divide by 0.
+     https://kakaomames.github.io/turbowarp// make sure we don't divide by 0.
       if (length > 0.00001) {
-        dst[0] = v[0] / length;
-        dst[1] = v[1] / length;
-        dst[2] = v[2] / length;
+        dst[0] = v[0]https://kakaomames.github.io/turbowarp/ length;
+        dst[1] = v[1]https://kakaomames.github.io/turbowarp/ length;
+        dst[2] = v[2]https://kakaomames.github.io/turbowarp/ length;
       }
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes the length of a vector
      * @param {Vector3} v vector to take length of
      * @return {number} length of vector
-     */
+     https://kakaomames.github.io/turbowarp/
     function length(v) {
       return Math.sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes the length squared of a vector
      * @param {Vector3} v vector to take length of
      * @return {number} length sqaured of vector
-     */
+     https://kakaomames.github.io/turbowarp/
     function lengthSq(v) {
       return v[0] * v[0] + v[1] * v[1] + v[2] * v[2];
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes the cross product of 2 vectors3s
      * @param {Vector3} a a
      * @param {Vector3} b b
      * @param {Vector3} [dst] optional vector3 to store result
      * @return {Vector3} dst or new Vector3 if not provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function cross(a, b, dst) {
       dst = dst || new MatType(3);
       dst[0] = a[1] * b[2] - a[2] * b[1];
@@ -299,24 +299,24 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes the dot product of two vectors; assumes both vectors have
      * three entries.
      * @param {Vector3} a Operand vector.
      * @param {Vector3} b Operand vector.
      * @return {number} dot product
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function dot(a, b) {
       return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes the distance squared between 2 points
      * @param {Vector3} a
      * @param {Vector3} b
      * @return {number} distance squared between a and b
-     */
+     https://kakaomames.github.io/turbowarp/
     function distanceSq(a, b) {
       const dx = a[0] - b[0];
       const dy = a[1] - b[1];
@@ -324,22 +324,22 @@ Other various small fixes
       return dx * dx + dy * dy + dz * dz;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes the distance between 2 points
      * @param {Vector3} a
      * @param {Vector3} b
      * @return {number} distance between a and b
-     */
+     https://kakaomames.github.io/turbowarp/
     function distance(a, b) {
       return Math.sqrt(distanceSq(a, b));
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Makes an identity matrix.
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function identity(dst) {
       dst = dst || new MatType(16);
 
@@ -363,13 +363,13 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Transposes a matrix.
      * @param {Matrix4} m matrix to transpose.
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function transpose(m, dst) {
       dst = dst || new MatType(16);
 
@@ -393,7 +393,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Creates a lookAt matrix.
      * This is a world matrix for a camera. In other words it will transform
      * from the origin to a place and orientation in the world. For a view
@@ -404,7 +404,7 @@ Other various small fixes
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function lookAt(cameraPosition, target, up, dst) {
       dst = dst || new MatType(16);
       var zAxis = normalize(subtractVectors(cameraPosition, target));
@@ -431,7 +431,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes a 4-by-4 perspective transformation matrix given the angular height
      * of the frustum, the aspect ratio, and the near and far clipping planes.  The
      * arguments define a frustum extending in the negative z direction.  The given
@@ -443,19 +443,19 @@ Other various small fixes
      * We assume a unit box extending from -1 to 1 in the x and y dimensions and
      * from -1 to 1 in the z dimension.
      * @param {number} fieldOfViewInRadians field of view in y axis.
-     * @param {number} aspect aspect of viewport (width / height)
+     * @param {number} aspect aspect of viewport (widthhttps://kakaomames.github.io/turbowarp/ height)
      * @param {number} near near Z clipping plane
      * @param {number} far far Z clipping plane
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function perspective(fieldOfViewInRadians, aspect, near, far, dst) {
       dst = dst || new MatType(16);
       var f = Math.tan(Math.PI * 0.5 - 0.5 * fieldOfViewInRadians);
-      var rangeInv = 1.0 / (near - far);
+      var rangeInv = 1.0https://kakaomames.github.io/turbowarp/ (near - far);
 
-      dst[0] = f / aspect;
+      dst[0] = fhttps://kakaomames.github.io/turbowarp/ aspect;
       dst[1] = 0;
       dst[2] = 0;
       dst[3] = 0;
@@ -475,7 +475,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes a 4-by-4 orthographic projection matrix given the coordinates of the
      * planes defining the axis-aligned, box-shaped viewing volume.  The matrix
      * generated sends that box to the unit box.  Note that although left and right
@@ -492,31 +492,31 @@ Other various small fixes
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function orthographic(left, right, bottom, top, near, far, dst) {
       dst = dst || new MatType(16);
 
-      dst[0] = 2 / (right - left);
+      dst[0] = 2https://kakaomames.github.io/turbowarp/ (right - left);
       dst[1] = 0;
       dst[2] = 0;
       dst[3] = 0;
       dst[4] = 0;
-      dst[5] = 2 / (top - bottom);
+      dst[5] = 2https://kakaomames.github.io/turbowarp/ (top - bottom);
       dst[6] = 0;
       dst[7] = 0;
       dst[8] = 0;
       dst[9] = 0;
-      dst[10] = 2 / (near - far);
+      dst[10] = 2https://kakaomames.github.io/turbowarp/ (near - far);
       dst[11] = 0;
-      dst[12] = (left + right) / (left - right);
-      dst[13] = (bottom + top) / (bottom - top);
-      dst[14] = (near + far) / (near - far);
+      dst[12] = (left + right)https://kakaomames.github.io/turbowarp/ (left - right);
+      dst[13] = (bottom + top)https://kakaomames.github.io/turbowarp/ (bottom - top);
+      dst[14] = (near + far)https://kakaomames.github.io/turbowarp/ (near - far);
       dst[15] = 1;
 
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes a 4-by-4 perspective transformation matrix given the left, right,
      * top, bottom, near and far clipping planes. The arguments define a frustum
      * extending in the negative z direction. The arguments near and far are the
@@ -534,7 +534,7 @@ Other various small fixes
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function frustum(left, right, bottom, top, near, far, dst) {
       dst = dst || new MatType(16);
 
@@ -542,27 +542,27 @@ Other various small fixes
       var dy = top - bottom;
       var dz = far - near;
 
-      dst[0] = (2 * near) / dx;
+      dst[0] = (2 * near)https://kakaomames.github.io/turbowarp/ dx;
       dst[1] = 0;
       dst[2] = 0;
       dst[3] = 0;
       dst[4] = 0;
-      dst[5] = (2 * near) / dy;
+      dst[5] = (2 * near)https://kakaomames.github.io/turbowarp/ dy;
       dst[6] = 0;
       dst[7] = 0;
-      dst[8] = (left + right) / dx;
-      dst[9] = (top + bottom) / dy;
-      dst[10] = -(far + near) / dz;
+      dst[8] = (left + right)https://kakaomames.github.io/turbowarp/ dx;
+      dst[9] = (top + bottom)https://kakaomames.github.io/turbowarp/ dy;
+      dst[10] = -(far + near)https://kakaomames.github.io/turbowarp/ dz;
       dst[11] = -1;
       dst[12] = 0;
       dst[13] = 0;
-      dst[14] = (-2 * near * far) / dz;
+      dst[14] = (-2 * near * far)https://kakaomames.github.io/turbowarp/ dz;
       dst[15] = 0;
 
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Makes a translation matrix
      * @param {number} tx x translation.
      * @param {number} ty y translation.
@@ -570,7 +570,7 @@ Other various small fixes
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function translation(tx, ty, tz, dst) {
       dst = dst || new MatType(16);
 
@@ -594,7 +594,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Multiply by translation matrix.
      * @param {Matrix4} m matrix to multiply
      * @param {number} tx x translation.
@@ -603,10 +603,10 @@ Other various small fixes
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function translate(m, tx, ty, tz, dst) {
-      // This is the optimized version of
-      // return multiply(m, translation(tx, ty, tz), dst);
+     https://kakaomames.github.io/turbowarp// This is the optimized version of
+     https://kakaomames.github.io/turbowarp// return multiply(m, translation(tx, ty, tz), dst);
       dst = dst || new MatType(16);
 
       var m00 = m[0];
@@ -649,13 +649,13 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Makes an x rotation matrix
      * @param {number} angleInRadians amount to rotate
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function xRotation(angleInRadians, dst) {
       dst = dst || new MatType(16);
       var c = Math.cos(angleInRadians);
@@ -681,17 +681,17 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Multiply by an x rotation matrix
      * @param {Matrix4} m matrix to multiply
      * @param {number} angleInRadians amount to rotate
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function xRotate(m, angleInRadians, dst) {
-      // this is the optimized version of
-      // return multiply(m, xRotation(angleInRadians), dst);
+     https://kakaomames.github.io/turbowarp// this is the optimized version of
+     https://kakaomames.github.io/turbowarp// return multiply(m, xRotation(angleInRadians), dst);
       dst = dst || new MatType(16);
 
       var m10 = m[4];
@@ -728,13 +728,13 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Makes an y rotation matrix
      * @param {number} angleInRadians amount to rotate
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function yRotation(angleInRadians, dst) {
       dst = dst || new MatType(16);
       var c = Math.cos(angleInRadians);
@@ -760,17 +760,17 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Multiply by an y rotation matrix
      * @param {Matrix4} m matrix to multiply
      * @param {number} angleInRadians amount to rotate
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function yRotate(m, angleInRadians, dst) {
-      // this is the optimized version of
-      // return multiply(m, yRotation(angleInRadians), dst);
+     https://kakaomames.github.io/turbowarp// this is the optimized version of
+     https://kakaomames.github.io/turbowarp// return multiply(m, yRotation(angleInRadians), dst);
       dst = dst || new MatType(16);
 
       var m00 = m[0 * 4 + 0];
@@ -807,13 +807,13 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Makes an z rotation matrix
      * @param {number} angleInRadians amount to rotate
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function zRotation(angleInRadians, dst) {
       dst = dst || new MatType(16);
       var c = Math.cos(angleInRadians);
@@ -839,17 +839,17 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Multiply by an z rotation matrix
      * @param {Matrix4} m matrix to multiply
      * @param {number} angleInRadians amount to rotate
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function zRotate(m, angleInRadians, dst) {
-      // This is the optimized version of
-      // return multiply(m, zRotation(angleInRadians), dst);
+     https://kakaomames.github.io/turbowarp// This is the optimized version of
+     https://kakaomames.github.io/turbowarp// return multiply(m, zRotation(angleInRadians), dst);
       dst = dst || new MatType(16);
 
       var m00 = m[0 * 4 + 0];
@@ -886,14 +886,14 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Makes an rotation matrix around an arbitrary axis
      * @param {Vector3} axis axis to rotate around
      * @param {number} angleInRadians amount to rotate
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function axisRotation(axis, angleInRadians, dst) {
       dst = dst || new MatType(16);
 
@@ -901,9 +901,9 @@ Other various small fixes
       var y = axis[1];
       var z = axis[2];
       var n = Math.sqrt(x * x + y * y + z * z);
-      x /= n;
-      y /= n;
-      z /= n;
+      xhttps://kakaomames.github.io/turbowarp/= n;
+      yhttps://kakaomames.github.io/turbowarp/= n;
+      zhttps://kakaomames.github.io/turbowarp/= n;
       var xx = x * x;
       var yy = y * y;
       var zz = z * z;
@@ -931,7 +931,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Multiply by an axis rotation matrix
      * @param {Matrix4} m matrix to multiply
      * @param {Vector3} axis axis to rotate around
@@ -939,19 +939,19 @@ Other various small fixes
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function axisRotate(m, axis, angleInRadians, dst) {
-      // This is the optimized version of
-      // return multiply(m, axisRotation(axis, angleInRadians), dst);
+     https://kakaomames.github.io/turbowarp// This is the optimized version of
+     https://kakaomames.github.io/turbowarp// return multiply(m, axisRotation(axis, angleInRadians), dst);
       dst = dst || new MatType(16);
 
       var x = axis[0];
       var y = axis[1];
       var z = axis[2];
       var n = Math.sqrt(x * x + y * y + z * z);
-      x /= n;
-      y /= n;
-      z /= n;
+      xhttps://kakaomames.github.io/turbowarp/= n;
+      yhttps://kakaomames.github.io/turbowarp/= n;
+      zhttps://kakaomames.github.io/turbowarp/= n;
       var xx = x * x;
       var yy = y * y;
       var zz = z * z;
@@ -1005,7 +1005,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Makes a scale matrix
      * @param {number} sx x scale.
      * @param {number} sy y scale.
@@ -1013,7 +1013,7 @@ Other various small fixes
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function scaling(sx, sy, sz, dst) {
       dst = dst || new MatType(16);
 
@@ -1037,7 +1037,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Multiply by a scaling matrix
      * @param {Matrix4} m matrix to multiply
      * @param {number} sx x scale.
@@ -1046,10 +1046,10 @@ Other various small fixes
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function scale(m, sx, sy, sz, dst) {
-      // This is the optimized version of
-      // return multiply(m, scaling(sx, sy, sz), dst);
+     https://kakaomames.github.io/turbowarp// This is the optimized version of
+     https://kakaomames.github.io/turbowarp// return multiply(m, scaling(sx, sy, sz), dst);
       dst = dst || new MatType(16);
 
       dst[0] = sx * m[0 * 4 + 0];
@@ -1075,14 +1075,14 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * creates a matrix from translation, quaternion, scale
      * @param {Number[]} translation [x, y, z] translation
      * @param {Number[]} quaternion [x, y, z, z] quaternion rotation
      * @param {Number[]} scale [x, y, z] scale
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
-     */
+     https://kakaomames.github.io/turbowarp/
     function compose(translation, quaternion, scale, dst) {
       dst = dst || new MatType(16);
 
@@ -1135,9 +1135,9 @@ Other various small fixes
     }
 
     function quatFromRotationMatrix(m, dst) {
-      // http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm
+     https://kakaomames.github.io/turbowarp// httphttps://kakaomames.github.io/turbowarp//www.euclideanspace.cohttps://kakaomames.github.io/turbowarp/mathhttps://kakaomames.github.io/turbowarp/geometrhttps://kakaomames.github.io/turbowarp/rotationhttps://kakaomames.github.io/turbowarp/conversionhttps://kakaomames.github.io/turbowarp/matrixToQuaterniohttps://kakaomames.github.io/turbowarp/index.htm
 
-      // assumes the upper 3x3 of m is a pure rotation matrix (i.e, unscaled)
+     https://kakaomames.github.io/turbowarp// assumes the upper 3x3 of m is a pure rotation matrix (i.e, unscaled)
       const m11 = m[0];
       const m12 = m[4];
       const m13 = m[8];
@@ -1151,28 +1151,28 @@ Other various small fixes
       const trace = m11 + m22 + m33;
 
       if (trace > 0) {
-        const s = 0.5 / Math.sqrt(trace + 1);
-        dst[3] = 0.25 / s;
+        const s = 0.5https://kakaomames.github.io/turbowarp/ Math.sqrt(trace + 1);
+        dst[3] = 0.25https://kakaomames.github.io/turbowarp/ s;
         dst[0] = (m32 - m23) * s;
         dst[1] = (m13 - m31) * s;
         dst[2] = (m21 - m12) * s;
       } else if (m11 > m22 && m11 > m33) {
         const s = 2 * Math.sqrt(1 + m11 - m22 - m33);
-        dst[3] = (m32 - m23) / s;
+        dst[3] = (m32 - m23)https://kakaomames.github.io/turbowarp/ s;
         dst[0] = 0.25 * s;
-        dst[1] = (m12 + m21) / s;
-        dst[2] = (m13 + m31) / s;
+        dst[1] = (m12 + m21)https://kakaomames.github.io/turbowarp/ s;
+        dst[2] = (m13 + m31)https://kakaomames.github.io/turbowarp/ s;
       } else if (m22 > m33) {
         const s = 2 * Math.sqrt(1 + m22 - m11 - m33);
-        dst[3] = (m13 - m31) / s;
-        dst[0] = (m12 + m21) / s;
+        dst[3] = (m13 - m31)https://kakaomames.github.io/turbowarp/ s;
+        dst[0] = (m12 + m21)https://kakaomames.github.io/turbowarp/ s;
         dst[1] = 0.25 * s;
-        dst[2] = (m23 + m32) / s;
+        dst[2] = (m23 + m32)https://kakaomames.github.io/turbowarp/ s;
       } else {
         const s = 2 * Math.sqrt(1 + m33 - m11 - m22);
-        dst[3] = (m21 - m12) / s;
-        dst[0] = (m13 + m31) / s;
-        dst[1] = (m23 + m32) / s;
+        dst[3] = (m21 - m12)https://kakaomames.github.io/turbowarp/ s;
+        dst[0] = (m13 + m31)https://kakaomames.github.io/turbowarp/ s;
+        dst[1] = (m23 + m32)https://kakaomames.github.io/turbowarp/ s;
         dst[2] = 0.25 * s;
       }
     }
@@ -1182,7 +1182,7 @@ Other various small fixes
       const sy = length(mat.slice(4, 7));
       const sz = length(mat.slice(8, 11));
 
-      // if determinate is negative, we need to invert one scale
+     https://kakaomames.github.io/turbowarp// if determinate is negative, we need to invert one scale
       const det = determinate(mat);
       if (det < 0) {
         sx = -sx;
@@ -1192,12 +1192,12 @@ Other various small fixes
       translation[1] = mat[13];
       translation[2] = mat[14];
 
-      // scale the rotation part
+     https://kakaomames.github.io/turbowarp// scale the rotation part
       const matrix = copy(mat);
 
-      const invSX = 1 / sx;
-      const invSY = 1 / sy;
-      const invSZ = 1 / sz;
+      const invSX = 1https://kakaomames.github.io/turbowarp/ sx;
+      const invSY = 1https://kakaomames.github.io/turbowarp/ sy;
+      const invSZ = 1https://kakaomames.github.io/turbowarp/ sz;
 
       matrix[0] *= invSX;
       matrix[1] *= invSX;
@@ -1269,16 +1269,16 @@ Other various small fixes
         tmp_11 * m21 -
         (tmp_4 * m01 + tmp_9 * m11 + tmp_10 * m21);
 
-      return 1.0 / (m00 * t0 + m10 * t1 + m20 * t2 + m30 * t3);
+      return 1.0https://kakaomames.github.io/turbowarp/ (m00 * t0 + m10 * t1 + m20 * t2 + m30 * t3);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Computes the inverse of a matrix.
      * @param {Matrix4} m matrix to compute inverse of
      * @param {Matrix4} [dst] optional matrix to store result
      * @return {Matrix4} dst or a new matrix if none provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function inverse(m, dst) {
       dst = dst || new MatType(16);
       var m00 = m[0 * 4 + 0];
@@ -1343,7 +1343,7 @@ Other various small fixes
         tmp_11 * m21 -
         (tmp_4 * m01 + tmp_9 * m11 + tmp_10 * m21);
 
-      var d = 1.0 / (m00 * t0 + m10 * t1 + m20 * t2 + m30 * t3);
+      var d = 1.0https://kakaomames.github.io/turbowarp/ (m00 * t0 + m10 * t1 + m20 * t2 + m30 * t3);
 
       dst[0] = d * t0;
       dst[1] = d * t1;
@@ -1425,7 +1425,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Takes a  matrix and a vector with 4 entries, transforms that vector by
      * the matrix, and returns the result as a vector with 4 entries.
      * @param {Matrix4} m The matrix.
@@ -1433,7 +1433,7 @@ Other various small fixes
      * @param {Vector4} dst optional vector4 to store result
      * @return {Vector4} dst or new Vector4 if not provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function transformVector(m, v, dst) {
       dst = dst || new MatType(4);
       for (var i = 0; i < 4; ++i) {
@@ -1445,7 +1445,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Takes a 4-by-4 matrix and a vector with 3 entries,
      * interprets the vector as a point, transforms that point by the matrix, and
      * returns the result as a vector with 3 entries.
@@ -1454,7 +1454,7 @@ Other various small fixes
      * @param {Vector4} dst optional vector4 to store result
      * @return {Vector4} dst or new Vector4 if not provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function transformPoint(m, v, dst) {
       dst = dst || new MatType(3);
       var v0 = v[0];
@@ -1470,25 +1470,25 @@ Other various small fixes
         (v0 * m[0 * 4 + 0] +
           v1 * m[1 * 4 + 0] +
           v2 * m[2 * 4 + 0] +
-          m[3 * 4 + 0]) /
+          m[3 * 4 + 0])https://kakaomames.github.io/turbowarp/
         d;
       dst[1] =
         (v0 * m[0 * 4 + 1] +
           v1 * m[1 * 4 + 1] +
           v2 * m[2 * 4 + 1] +
-          m[3 * 4 + 1]) /
+          m[3 * 4 + 1])https://kakaomames.github.io/turbowarp/
         d;
       dst[2] =
         (v0 * m[0 * 4 + 2] +
           v1 * m[1 * 4 + 2] +
           v2 * m[2 * 4 + 2] +
-          m[3 * 4 + 2]) /
+          m[3 * 4 + 2])https://kakaomames.github.io/turbowarp/
         d;
 
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Takes a 4-by-4 matrix and a vector with 3 entries, interprets the vector as a
      * direction, transforms that direction by the matrix, and returns the result;
      * assumes the transformation of 3-dimensional space represented by the matrix
@@ -1500,7 +1500,7 @@ Other various small fixes
      * @param {Vector4} dst optional vector4 to store result
      * @return {Vector4} dst or new Vector4 if not provided
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function transformDirection(m, v, dst) {
       dst = dst || new MatType(3);
 
@@ -1515,7 +1515,7 @@ Other various small fixes
       return dst;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Takes a 4-by-4 matrix m and a vector v with 3 entries, interprets the vector
      * as a normal to a surface, and computes a vector which is normal upon
      * transforming that surface by the matrix. The effect of this function is the
@@ -1529,7 +1529,7 @@ Other various small fixes
      * @param {Vector3} [dst] The direction.
      * @return {Vector3} The transformed direction.
      * @memberOf module:webgl-3d-math
-     */
+     https://kakaomames.github.io/turbowarp/
     function transformNormal(m, v, dst) {
       dst = dst || new MatType(3);
       var mi = inverse(m);
@@ -1679,11 +1679,11 @@ Other various small fixes
   var tricolorBuffer = gl.createBuffer();
   var triZBuffer = gl.createBuffer();
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} code
    * @param {number} type
    * @returns {WebGLShader}
-   */
+   https://kakaomames.github.io/turbowarp/
   const compileShader = (code, type) => {
     const shader = gl.createShader(type);
     gl.shaderSource(shader, code);
@@ -1695,11 +1695,11 @@ Other various small fixes
     return shader;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {WebGLShader} vertexShader
    * @param {WebGLShader} fragmentShader
    * @returns {WebGLProgram}
-   */
+   https://kakaomames.github.io/turbowarp/
   const createProgram = (vertexShader, fragmentShader) => {
     const program = gl.createProgram();
     gl.attachShader(program, vertexShader);
@@ -1721,22 +1721,22 @@ Other various small fixes
   const fragmentShader = compileShader(fragmentShaderCode, gl.FRAGMENT_SHADER);
   const program = createProgram(vertexShader, fragmentShader);
 
-  // look up where the vertex data needs to go.
+ https://kakaomames.github.io/turbowarp// look up where the vertex data needs to go.
   const positionLocation = gl.getAttribLocation(program, "a_position");
   const texcoordLocation = gl.getAttribLocation(program, "a_texcoord");
   const zLocation = gl.getAttribLocation(program, "a_zOffset");
   const colorLocation = gl.getAttribLocation(program, "aVertexColor");
 
-  // lookup uniforms
+ https://kakaomames.github.io/turbowarp// lookup uniforms
   const matrixLocation = gl.getUniformLocation(program, "u_matrix");
   const textureLocation = gl.getUniformLocation(program, "u_texture");
 
-  //cool drawing functions
+ https://kakaomames.github.io/turbowarp//cool drawing functions
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {number} deg
    * @returns {number}
-   */
+   https://kakaomames.github.io/turbowarp/
   function degreesToRadians(deg) {
     return deg * 0.0174533;
   }
@@ -1744,7 +1744,7 @@ Other various small fixes
   function loadImageAndCreateTextureInfo(url, clamp) {
     const texture = gl.createTexture();
     gl.bindTexture(gl.TEXTURE_2D, texture);
-    // Fill the texture with a 1x1 blue pixel.
+   https://kakaomames.github.io/turbowarp// Fill the texture with a 1x1 blue pixel.
     gl.texImage2D(
       gl.TEXTURE_2D,
       0,
@@ -1757,7 +1757,7 @@ Other various small fixes
       new Uint8Array([0, 0, 255, 255])
     );
 
-    // Let's assume all images are not a power of 2
+   https://kakaomames.github.io/turbowarp// Let's assume all images are not a power of 2
     if (clamp) {
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
@@ -1768,7 +1768,7 @@ Other various small fixes
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
 
     const textureInfo = {
-      // we don't know the size until it loads
+     https://kakaomames.github.io/turbowarp// we don't know the size until it loads
       width: 1,
       height: 1,
       texture,
@@ -1778,8 +1778,8 @@ Other various small fixes
       if (!allowed) {
         return;
       }
-      // Permission is checked earlier.
-      // eslint-disable-next-line extension/check-can-fetch
+     https://kakaomames.github.io/turbowarp// Permission is checked earlier.
+     https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
       const image = new Image();
       image.onload = function () {
         textureInfo.width = image.width;
@@ -1805,7 +1805,7 @@ Other various small fixes
   function drawImage(tex, texWidth, texHeight, dstX, dstY, stampRotation) {
     gl.bindTexture(gl.TEXTURE_2D, tex);
 
-    // Tell WebGL to use our shader program pair
+   https://kakaomames.github.io/turbowarp// Tell WebGL to use our shader program pair
     gl.useProgram(program);
 
     gl.bindBuffer(gl.ARRAY_BUFFER, quadZPositionBuffer);
@@ -1821,7 +1821,7 @@ Other various small fixes
       new Float32Array(quadColors),
       gl.STATIC_DRAW
     );
-    // Setup the attributes to pull data from our buffers
+   https://kakaomames.github.io/turbowarp// Setup the attributes to pull data from our buffers
     gl.bindBuffer(gl.ARRAY_BUFFER, quadPositionBuffer);
     gl.enableVertexAttribArray(positionLocation);
     gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
@@ -1835,7 +1835,7 @@ Other various small fixes
     gl.enableVertexAttribArray(colorLocation);
     gl.vertexAttribPointer(colorLocation, 4, gl.FLOAT, false, 0, 0);
 
-    // this matrix will convert from pixels to clip space
+   https://kakaomames.github.io/turbowarp// this matrix will convert from pixels to clip space
     var matrix = m4.orthographic(
       0,
       gl.canvas.width,
@@ -1847,32 +1847,32 @@ Other various small fixes
     if (coordinateSpace == "Canvas") {
       matrix = m4.translate(matrix, dstX, dstY, 0);
     } else {
-      var scalemultiplyer = canvas.width / runtime.stageWidth;
+      var scalemultiplyer = canvas.widthhttps://kakaomames.github.io/turbowarp/ runtime.stageWidth;
       matrix = m4.translate(
         matrix,
-        (runtime.stageWidth / 2) * scalemultiplyer,
-        (runtime.stageHeight / 2) * scalemultiplyer,
+        (runtime.stageWidthhttps://kakaomames.github.io/turbowarp/ 2) * scalemultiplyer,
+        (runtime.stageHeighthttps://kakaomames.github.io/turbowarp/ 2) * scalemultiplyer,
         0
       );
       matrix = m4.translate(matrix, dstX, -dstY, 0);
     }
 
-    // this matrix will translate our quad to dstX, dstY
+   https://kakaomames.github.io/turbowarp// this matrix will translate our quad to dstX, dstY
 
     matrix = m4.zRotate(matrix, degreesToRadians(stampRotation));
 
-    // this matrix will scale our 1 unit quad
-    // from 1 unit to texWidth, texHeight units
+   https://kakaomames.github.io/turbowarp// this matrix will scale our 1 unit quad
+   https://kakaomames.github.io/turbowarp// from 1 unit to texWidth, texHeight units
     matrix = m4.scale(matrix, texWidth, texHeight, 1);
     matrix = m4.translate(matrix, stampOffset[0], stampOffset[1], 0);
 
-    // Set the matrix.
+   https://kakaomames.github.io/turbowarp// Set the matrix.
     gl.uniformMatrix4fv(matrixLocation, false, matrix);
 
-    // Tell the shader to get the texture from texture unit 0
+   https://kakaomames.github.io/turbowarp// Tell the shader to get the texture from texture unit 0
     gl.uniform1i(textureLocation, 0);
 
-    // draw the quad (2 triangles, 6 vertices)
+   https://kakaomames.github.io/turbowarp// draw the quad (2 triangles, 6 vertices)
     gl.drawArrays(gl.TRIANGLES, 0, 6);
   }
 
@@ -1907,24 +1907,24 @@ Other various small fixes
       gl.STATIC_DRAW
     );
 
-    // Tell WebGL to use our shader program pair
+   https://kakaomames.github.io/turbowarp// Tell WebGL to use our shader program pair
     gl.useProgram(program);
 
-    // Setup the attributes to pull data from our buffers
+   https://kakaomames.github.io/turbowarp// Setup the attributes to pull data from our buffers
     gl.bindBuffer(gl.ARRAY_BUFFER, triPosBuffer);
     gl.enableVertexAttribArray(positionLocation);
     gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
     gl.bindBuffer(gl.ARRAY_BUFFER, triUVBuffer);
-    gl.enableVertexAttribArray(texcoordLocation); //
+    gl.enableVertexAttribArray(texcoordLocation);https://kakaomames.github.io/turbowarp//
     gl.vertexAttribPointer(texcoordLocation, 2, gl.FLOAT, false, 0, 0);
     gl.bindBuffer(gl.ARRAY_BUFFER, triZBuffer);
-    gl.enableVertexAttribArray(zLocation); //
+    gl.enableVertexAttribArray(zLocation);https://kakaomames.github.io/turbowarp//
     gl.vertexAttribPointer(zLocation, 1, gl.FLOAT, false, 0, 0);
     gl.bindBuffer(gl.ARRAY_BUFFER, tricolorBuffer);
-    gl.enableVertexAttribArray(colorLocation); //
+    gl.enableVertexAttribArray(colorLocation);https://kakaomames.github.io/turbowarp//
     gl.vertexAttribPointer(colorLocation, 4, gl.FLOAT, false, 0, 0);
 
-    // this matrix will convert from pixels to clip space
+   https://kakaomames.github.io/turbowarp// this matrix will convert from pixels to clip space
     var matrix = m4.orthographic(
       0,
       gl.canvas.width,
@@ -1934,34 +1934,34 @@ Other various small fixes
       1
     );
 
-    // this matrix will translate our quad to dstX, dstY
+   https://kakaomames.github.io/turbowarp// this matrix will translate our quad to dstX, dstY
 
-    // this matrix will scale our 1 unit quad
-    // from 1 unit to texWidth, texHeight units
+   https://kakaomames.github.io/turbowarp// this matrix will scale our 1 unit quad
+   https://kakaomames.github.io/turbowarp// from 1 unit to texWidth, texHeight units
 
     if (coordinateSpace == "Scratch") {
-      var scalemultiplyer = canvas.width / runtime.stageWidth;
+      var scalemultiplyer = canvas.widthhttps://kakaomames.github.io/turbowarp/ runtime.stageWidth;
       matrix = m4.translate(
         matrix,
-        (runtime.stageWidth / 2) * scalemultiplyer,
-        (runtime.stageHeight / 2) * scalemultiplyer,
+        (runtime.stageWidthhttps://kakaomames.github.io/turbowarp/ 2) * scalemultiplyer,
+        (runtime.stageHeighthttps://kakaomames.github.io/turbowarp/ 2) * scalemultiplyer,
         0
       );
     }
 
-    // Set the matrix.
+   https://kakaomames.github.io/turbowarp// Set the matrix.
     gl.uniformMatrix4fv(matrixLocation, false, matrix);
 
-    // Tell the shader to get the texture from texture unit 0
+   https://kakaomames.github.io/turbowarp// Tell the shader to get the texture from texture unit 0
     gl.uniform1i(textureLocation, 0);
 
-    // draw the quad (2 triangles, 6 vertices)
+   https://kakaomames.github.io/turbowarp// draw the quad (2 triangles, 6 vertices)
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   }
 
   function hexToRgb(hex) {
     if (typeof hex === "string") {
-      const splitHex = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+      const splitHex =https://kakaomames.github.io/turbowarp/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})https://kakaomames.github.io/turbowarp/i.exec(hex);
       return {
         r: parseInt(splitHex[1], 16),
         g: parseInt(splitHex[2], 16),
@@ -1969,8 +1969,8 @@ Other various small fixes
       };
     }
     return {
-      r: Math.floor(hex / 65536),
-      g: Math.floor(hex / 256) % 256,
+      r: Math.floor(hexhttps://kakaomames.github.io/turbowarp/ 65536),
+      g: Math.floor(hexhttps://kakaomames.github.io/turbowarp/ 256) % 256,
       b: hex % 256,
     };
   }
@@ -1987,7 +1987,7 @@ Other various small fixes
     }
   }
 
-  //Split Blocks Function
+ https://kakaomames.github.io/turbowarp//Split Blocks Function
   function splitBlockCatagories(Catagories) {
     let returnedArray = [];
     Catagories.forEach((Catagory) => {
@@ -2004,17 +2004,17 @@ Other various small fixes
   }
 
   const BlankIcon =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABZCAYAAAC+PDOsAAAAAXNSR0IArs4c6QAAAihJREFUeF7t3VtuwyAQBdB4Cd1S19XPrqtb6hJakcQOJtjmMQPzuPwgJGuAoyt+LMFye7S/Z792SzLGsFMggKbIcUmAdwLHyd2gP36+b7+fX2lpYBNgb4kOyGsDNoFs5iy+JzqGDmNg02JnE41k0yKHaqfQSDYd+CU0sGmwi6CB3Y9dDA3sPuwqaGC3Y1dDA7sNuwka2PXYzdDArsPuggZ2OXY3NLDLsEmggX2NTQYN7HNsUmhgH2OTQwM7j80CDex3bDZoYO+xWaGB/cJmhwb2A3sINLAHQnvHHpbo9bTy+nd9OLTXZE+B9og9Ddob9lRoT9jTob1gi4D2gC0G2jq2KGjL2OKgrWKLhLaILRbaGrZoaEvY4qGtYKuAtoCtBlo7tipozdjqoLViq4TWiK0WWhu2amhN2OqhtWCbgNaAbQZaOrYpaMnY5qClYpuElohtFloatmloSdjmoaVgu4CWgO0Geja2K+iZ2O6gZ2G7hJ6B7RZ6NLZr6JHY7qFHYQM6SA+4ixXQT2hubEBH0JzYgE6gubABnYHmwAb0ATQ1NqBPoCmxAX0BTYUN6AJoCmxAF0L3YgO6AroHG9CV0K3YgG6AbsEGdCN0LTagO6BrsAHdCV2KDWgC6BJsQBNBX2EDmhD6DBvQxNBH2Bt0+CB905BhDW5KJjdWLgE6tN1zqG40mDcaY79BM8/ttvwKvUu1Ww2+jW9HR26Ks2es+ZZko3Ic4PuO/gGXQ1VnDpD+gwAAAABJRU5ErkJggg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABZCAYAAAC+PDOsAAAAAXNSR0IArs4c6QAAAihJREFUeF7t3VtuwyAQBdB4Cd1S19XPrqtb6hJakcQOJtjmMQPzuPwgJGuAoyt+LMFye7https://kakaomames.github.io/turbowarp/Z792SzLGsFMggKbIcUmAdwLHyd2gP36+b7+fX2lpYBNgb4kOyGsDNoFs5iy+JzqGDmNg02JnE41k0yKHaqfQSDYd+CU0sGmwi6CB3Y9dDA3sPuwqaGC3Y1dDA7sNuwka2PXYzdDArsPuggZ2OXY3NLDLsEmggX2NTQYN7HNsUmhgH2OTQwM7j80CDex3bDZoYO+xWaGhttps://kakaomames.github.io/turbowarp/cJmhwb2A3sINLAHQnvHHpbo9bTy+nd9OLTXZE+B9og9Ddob9lRoT9jTob1gi4D2gC0G2jq2KGjL2OKgrWKLhLaILRbaGrZoaEvY4qGtYKuAtoCtBlo7tipozdjqoLViq4TWiK0WWhu2amhN2OqhtWCbgNaAbQZaOrYpaMnY5qClYpuElohtFloatmloSdjmoaVgu4CWgO0Geja2K+iZ2O6gZ2G7hJ6B7RZ6NLZr6JHY7qFHYQM6SA+4ixXQT2hubEBH0JzYgE6gubABnYHmwAb0ATQ1NqBPoCmxAX0BTYUN6AJoCmxAF0L3YgO6AroHG9CV0K3YgG6AbsEGdCN0LTagO6BrsAHdCV2KDWgC6BJsQBNBX2EDmhD6DBvQxNBH2Bt0+CB905BhDW5KJjdWLgE6tN1zqG40mDcaY79BMhttps://kakaomames.github.io/turbowarp/ttvwKvUu1Ww2+jW9HR26Ks2es+ZZko3Ic4Puhttps://kakaomames.github.io/turbowarp/gGXQ1VnDpD+gwAAAABJRU5ErkJggg==";
   const CoordsIcon =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABgCAYAAADmbacFAAAAAXNSR0IArs4c6QAAA2xJREFUeF7tncFxwyAQRe0S0pKLSDWZHDKpJkWkpZSQDJKxkAwsYtfMRn65OaBl+U8fMLLx+bT++72+PG/+X3oZ64fy3DVSeWMzx68WxUsFi72WYEjXSOXHV3dHD4PYk2Av35+3y34ubxKMWeSP16Wp96/0Gql8R4rPUXUCkUKI3b7CKLnidwUhXrTAWENal0tOew7lN72UQJTH/tQNadAII1c+lwEic6v1g9gOTeldX4cEiCEgSgPLeg55yuGn1uleR4SY9xNyrSWGperNNwYEbhBHAA2INlcAQYQQVzC15WvLKie/lL1f0jJJV5BoHSG7grlhiCPkCZuhyQmIkAauEGFohibZDcwTIoBYYQwIXCEC6QXR7gZcIULQLF/LS9YwH7DX1CR+WqnfEey+7hb7EXtNPI8wxTA/G+h5Zy09gZPKjbvx/8P1gljeUa81SLcxeGa94/7QgIjNBMFr+0hS+Y50j1vVAsRx1RnYM0AMFPsRqyYn6R8nDRzhhCUgAOFEASdp4AhAOFHASRo4AhBOFHCSBo4AhBMFnKSBIwDhRAEnaeAIQDhRwEkaOAIQThRwkgaOAIQTBZykgSMA4UQBJ2ngCEA4UcBJGjgCEE4UcJIGjgCEEwWcpIEjAOFEASdp4AhAOFHASRo4AhBOFHCSBo4AhBMF7NJoPfU5Ww9H2IDIfYM2RN5+ybP4TVtA6EHkzyW5Pxqp+t1zQFiAKB82HF1RPkTmCgwQjwIR4kpHdC91zoCwABFi1F0hntgDiEeCiHe8dJLP6YQj9BymCOqDxHCEEYkJRunOz7WxOf0TEJYgSnPFto3MEayAsAPRPkQBwlb1TDR5rigcSIwj7NnUYRQOIwbESBCV47kBYQuiyw23fZDKr27ldhBtUz9WtPp5uHNftzuyt3/2nHJ5LPlsetPtBhxhAyBG6XYDIOxAqNwACEsQDRt7teZYNelhSA99mhY8gLAAoXQDQ5Mewry/JD8qFVvCEaJEYoXahweahiUcIWrcXGGBkT6n3vFLxTiiWWux4vYzS9l30KUogBD1HVMBEGN0FlsBhCjRmAqAGKOz2EoLCDEIFVQKTJN6EYQqNBc3KfBzeYv1yh8wa4pEJbUCEQaOUEupDxBgAEKvozoCINQS6gOshiZ9OCIoFZgna2UQLu9X4LYf9Qeqxh17SNwkIgAAAABJRU5ErkJggg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABgCAYAAADmbacFAAAAAXNSR0IArs4c6QAAA2xJREFUeF7tncFxwyAQRe0S0pKLSDWZHDKpJkWkpZSQDJKxkAwsYtfMRn65OaBl+U8fMLLx+bT++72+Phttps://kakaomames.github.io/turbowarp/+X3oZ64fy3DVSeWMzx68WxUsFi72WYEjXSOXHV3dHD4PYk2Av35+3y34ubxKMWeSP16Wp9https://kakaomames.github.io/turbowarp/0Gql8R4rPUXUCkUKI3b7CKLnidwUhXrTAWENal0tOew7lN72UQJThttps://kakaomames.github.io/turbowarp/tQNadAII1c+lwEic6v1g9gOTeldX4cEiCEgSgPLeg55yuGn1uleR4SY9xNyrSWGperNNwYEbhBHAA2INlcAQYQQVzC15WvLKihttps://kakaomames.github.io/turbowarp/lL1f0jJJV5BoHSG7grlhiCPkCZuhyQmIkAauEGFohibZDcwTIoBYYQwIXCEC6QXR7gZcIULQLhttps://kakaomames.github.io/turbowarp/LS9YwH7DX1CR+WqnfEey+7hb7EXtNPI8wxThttps://kakaomames.github.io/turbowarp/G+h5Zy09gZPKjbvhttps://kakaomames.github.io/turbowarp/8P1gljeUa81SLcxeGa9https://kakaomames.github.io/turbowarp/7QgIjNBMFr+0hS+Y50j1vVAsRx1RnYM0AMFPsRqyYn6R8nDRzhhCUgAOFEASdp4AhAOFHASRo4AhBOFHCSBo4AhBMFnKSBIwDhRAEnaeAIQDhRwEkaOAIQThRwkgaOAIQTBZykgSMA4UQBJ2ngCEA4UcBJGjgCEE4UcJIGjgCEEwWcpIEjAOFEASdp4AhAOFHASRo4AhBOFHCSBo4AhBMF7NJoPfU5Ww9H2IDIfYM2RN5+ybP4TVtA6EHkzyW5Pxqp+t1zQFiAKB82HF1RPkTmCgwQjwIR4kpHdC91zoCwABFi1F0hntgDiEeCiHe8dJLP6YQj9BymCOqDxHCEEYkJRunOz7WxOf0TEJYgSnPFto3MEayAsAPRPkQBwlb1TDR5rigcSIwj7NnUYRQOIwbESBCV47kBYQuiyw23fZDKr27ldhBtUz9WtPp5uHNftzuythttps://kakaomames.github.io/turbowarp/2nHJ5LPlsetPtBhxhAyBG6XYDIOxAqNwACEsQDRt7teZYNelhSA99mhY8gLAAoXQDQ5Mewrhttps://kakaomames.github.io/turbowarp/JD8qFVvCEaJEYoXahweahiUcIWrcXGGBkT6n3vFLxTiiWWux4vYzS9l30KUogBD1HVMBEGN0FlsBhCjRmAqAGKOz2EoLCDEIFVQKTJN6EYQqNBc3KfBzeYv1yh8wa4pEJbUCEQaOUEupDxBgAEKvozoCINQS6gOshiZ9OCIoFZgna2UQLu9X4LYf9Qeqxh17SNwkIgAAAABJRU5ErkJggg==";
   const SpriteIcon =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABeCAYAAADc6BHlAAAAAXNSR0IArs4c6QAABItJREFUeF7tncuN2zAQhu0SctmCAuSQDnLZAlLCAjkG2BJSwF62gxwWSEG5pIQEFJYKRQ5f8+BzfLSoMfV/8yIl2/db+PrrvXUHxti3/LGJobeUndR5Sx9zRUmJWTquVCyF8a4UKOzj89Pt5em5VMxj3Idf34Pxfz5+y9nYHoQV4PR+I777ioGABM+pHQGyNYRqABjhfTAAiG0hRAH4ns8hvIIIc0RRcZUQ307Fi4btIiELQFJ8hXALevNLK9pC/N0h+CF/Amgp/s4QFECudxY+DtaAHt6/axQoAGEPz5kP1gE9vR+IguXb0tEBGCZLQ7gAGMH7jeI7Lc6GBOBB0AjIFRKJ404UKAAJgXM2dwLQdfUbA7ETAKPBAWGUIgwUYpfTUilpmCJccPsyFixTA+kOgCC8D2RKEN0AQMI//n7L1ebz+MvDpyUiostK2Be/RnhIdQDGNNHQFAC38C6MSEQMDyLYDZXqhCTFT4CYD4BUO+oCoKacXKHwomFoCOAdMe4oaCm+hTMLBPFbkj3EnwkCFJ5sWxM9xTcQZoiCWH5kgdAbwAwQsgAoRdkCkC66FUV5uIKcmhDpIa0RvH+GWpDzCDSEUbx/9DSUA3BuVbthnmtTR/J+IApKrjmX1diO10wG/ApT7psxvfP/SgDstdR8Me82IABzHTWOx+btkCHKRIpAKIA0PwoAyHIARQG0BXBJU6OIP3InxB0BQZ3oDSFx54w7JaNqxZIAKkXvemtzKQAp4b/8/BH10NfPX1PeK6XR8ZmSxo+C3CoFQeKnRI8pHoEhppOYYfuwlzQAX3iM6BAMAISIViJG3y/o/88fVDxuUlPJpMR35yANYloALcS3IDwIrJqxGgO8VywKXABcaScVfVIQpgTQWnzJSJAGYObOGgW9xJeC0AIAKwQLoEXaKeiOyPqRDRR2LZdNOmxr2tv7JaKgFYBLFGAXaL29f3YAJAijeD8AgeTEpJML048/DHXPYGAApC2dHgCCLWv7Rqo2jJJ+uNNQTwBBSoIiykJRAMh8U3ha0f1lY6tX+5lpSdGOjD6xUFjMsCQMBYCRlH7OCUUB0MXEWFAAGNWYzzkgaAQwq1phbigAXNvTIxbhGJNmAFxxYxG3LQDJNBR7OgKCoAAqclfJ0MyjKUHtccaTsgjp5JILYx4jloasoKn/T7CRwOX9pE0kZmFLzYm0o66gPgAzMfen/A2EnQGc+0ec7WgOgA/B8RZyBiEbKHVdxnFdoiACgawf2QCjsDWm2CH4RRhKRQAEsn5kAzWqMY69bNhxpaMeEGYFcNYCC3VWCDMDWALC7ACmh7ACAJuFWOpCakUsUZhXAhBEQ019yG1FWFvcEFYDAEYDsvtytbk+2ef93aO17/35XZG2RYOQFzDCacU3+wtWtyIQVgcQcwIjJuba2SFgJjGCZ/ecAysEBYBDyQZBAeAABB0XtjtSAHgALBAUAA0AGYICoAMgQVAAPADQEBQAHwAMhLsC4AVQBMHdslAA/ACyEBwAGgEy+h9WwcWav2GnESBIwIcAfJRGgKz+YST4u67/APKrBHxjStmdAAAAAElFTkSuQmCC";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABeCAYAAADc6BHlAAAAAXNSR0IArs4c6QAABItJREFUeF7tncuN2zAQhu0SctmCAuSQDnLZAlLCAjkG2BJSwF62gxwWSEG5pIQEFJYKRQ5f8+BzfLSoMfhttps://kakaomames.github.io/turbowarp/8yIlhttps://kakaomames.github.io/turbowarp/db+PrrvXUHxtihttps://kakaomames.github.io/turbowarp/LGJobeUndR5Sx9zRUmJWTquVCyF8a4UKOzj89Pt5em5VMxj3Idf34Pxfz5+y9nYHoQV4PR+I777ioGABM+pHQGyNYRqABjhfTAAiG0hRAH4ns8hvIIIc0RRcZUQ307Fi4btIiELQFJ8hXALevNLK9phttps://kakaomames.github.io/turbowarp/N0h+Chttps://kakaomames.github.io/turbowarp/Amghttps://kakaomames.github.io/turbowarp/s4QFECudxY+DtaAHthttps://kakaomames.github.io/turbowarp/axQoAGEPz5kP1gE9vR+IguXb0tEBGCZLQ7gAGMH7jeI7Lc6GBOBB0AjIFRKJ404UKAAJgXM2dwLQdfUbA7ETAKPBAWGUIgwUYpfTUilpmCJccPsyFixTA+kOgCC8D2RKEN0AQMhttps://kakaomames.github.io/turbowarp//n7L1ebz+MvDpyUiostK2Bhttps://kakaomames.github.io/turbowarp/RnhIdQDGNNHQFAC38C6MSEQMDyLYDZXqhCTFT4CYD4BUO+oCoKacXKHwomFoCOAdMe4oaCm+hTMLBPFbkj3EnwkCFJ5sWxM9xTcQZoiCWH5kgdAbwAwQsgAoRdkCkC66FUV5uIKcmhDpIa0RvH+GWpDzCDSEUbhttps://kakaomames.github.io/turbowarp/9DSUA3BuVbthnmtThttps://kakaomames.github.io/turbowarp/J+IApKrjmX1diO10whttps://kakaomames.github.io/turbowarp/ApT7psxvfhttps://kakaomames.github.io/turbowarp/SgDstdR8Me82IABzHTWOx+btkCHKRIpAKIA0PwoAyHIARQG0BXBJU6OIP3InxB0BQZ3oDSFx54w7JaNqxZIAKkXvemtzKQAp4https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/BH10NfPX1PeK6XR8ZmSxo+C3CoFQeKnRI8pHoEhppOYYfuwlzQAX3iM6BAMAISIViJG3https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/88fVDxuUlPJpMR35yANYloALcS3IDwIrJqxGgO8VywKXABcaScVfVIQpgTQWnzJSJAGYObOGgW9xJeC0AIAKwQLoEXaKeiOyPqRDRR2LZdNOmxr2tv7JaKgFYBLFGAXaL29f3YAJAijeD8AgeTEpJML04https://kakaomames.github.io/turbowarp/DHXPYGAApC2dHgCCLWv7Rqo2jJJ+uNNQTwBBSoIiykJRAMh8U3ha0f1lY6tX+5lpSdGOjD6xUFjMsCQMBYCRlH7OCUUB0MXEWFAAGNWYzzkgaAQwq1phbigAXNvTIxbhGJNmAFxxYxG3LQDJNBR7OgKCoAAqclfJ0MyjKUHtccaTsgjp5JILYx4jloasoKhttps://kakaomames.github.io/turbowarp/T7CRwOX9pE0kZmFLzYm0o66gPgAzMfehttps://kakaomames.github.io/turbowarp/A2EnQGc+0ec7WgOghttps://kakaomames.github.io/turbowarp/B8RZyBiEbKHVdxnFdoiACgawf2QCjsDWm2CH4RRhKRQAEsn5kAzWqMY69bNhxpaMeEGYFcNYCC3VWCDMDWALC7ACmh7ACAJuFWOpCakUsUZhXAhBEQ019yG1FWFvcEFYDAEYDsvtytbk+2ef93aO1https://kakaomames.github.io/turbowarp/35XZG2RYOQFzDCacU3+wtWtyIQVgcQcwIjJuba2SFgJjGChttps://kakaomames.github.io/turbowarp/ecAysEBYBDyQZBAeAABB0XtjtSAHgALBAUAA0AGYICoAMgQVAAPADQEBQAHwAMhLsC4AVQBMHdslAhttps://kakaomames.github.io/turbowarp/ACyEBwAGgEy+h9WwcWav2GnESBIwIcAfJRGgKz+YST4u6https://kakaomames.github.io/turbowarp/APKrBHxjStmdAAAAAElFTkSuQmCC";
   const ColorIcon =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAYAAACq0qNuAAAAAXNSR0IArs4c6QAABTFJREFUeF7t3b2KFEEUBeAecBVkk8nERBSMBEGMTDcxN/IhfATDRdinMDSaV5gn8REEo40MlBqoobrmVtWtqvtzWnYzd3tmer46ffrOr7tlOz9/mbu6Y27nuhniTnKBe+Gg7ivKzmhhlxbH/X577UAT+smnD81EP3r9vLnN/d2huc2yLOYO1jdYBOdA54Ic+PwyjYUw87C6IRJ8BDuFHIFPL19ZBHUX9RtYluUCfRY84s3Cx+spLICqjeaVq4FLw3ssgAa8OrgWvOUCSMOv0KUqpTSWSFVN6fqJChLzEruivMu10QOWNny4DS18CXjTlEtONZwBv1I/U3ZTF/ZIuRe8dPpn4N2Srn1yrR0JUtUzCu+ObtXx1CJI4I/AQ6B7wkvUTi88DLo3/Cz+MLzFuNiaOizGydY+ZLXD9mRvmE4wCOgIiS+MmixT1kaI6EjwRO00XZsboKKjwffiP8C3Srzj7z1934I/TzEove75yJWzBlx8FjwiOmLVECfbom8N/pz26xfPlj/vX3IW3HQbhHGS8ciWNC7Br9DTK0daAET4xx/fnbh+33xN2S6cu+HDtaHgI8FH8Kg9Al9Me35YeS8AAnwOnhrV8KnEs+HjjXgtgCf8/d1htz/eVt+Y1QPfje6J7wVfS3neCiX8PPHD8B4LYA3fA97qehI+jI+zPxb1YwU/Al7o+rO3GrzF9GMBP4uejZYk/HTNlI4SrfRrwkuA1+omTfwJXqJmrBZAA14SvFY3pvDS9SMJrwVOpP5kHuHVakYz/VLw2ujUUwhu8BLj5yy8BXip51fwmv3eGk9HTsCj8JbgpZ6HgR/p/154L3Cq56Hge+unB94bPZ/nIeG5C8CBRwAvJd58omn1ffr3WvfX4JHAqRNsSDw0fC39FDwi+KbhqQXI4ZHR81l+M4mn6ifCo4P/F4lPF+Dq+5ee04X7tumLIptMfBC8un663Pz4dsI8/vrpjsrZgU3DB/D4E+Hjv9EXYJPwKXgJHj39m4On0ANynvj0cEdM/2bgS+C1xOddi7QAOXzYV/VXnzgnn9XEknR56bK1xCOmP4HfwT1X00p5CsqFRzn5QsL3gPdUDXW0eNUPHPwIeuvk2qo2D/wifNhZy1ehRsFnE+/R//lb+Vxec50Fl4S36v8SvNlkI4U+WzXW3Z/WTLhts/fVSIJrJF67fprw0j2vAa4NL10/1Fu1Vd+0qomuUTVa9ZOnPa8asZ7XBrdKvFT9sOFH68YK3AN+tH7UPxFijW5VNbP1w4U/1w039R7gnonvqZ+eD5+x4T3BUeBb9dML38RHQPesGqp+wu/S539S9P3xNnzSezVBdn2yGwUcLfFU/Yx8sjtez+odZmjoiImPcIe3n89rQaWdmuPzo+iEv3/zqnR0uf6+94UQq51N4E+f/s5rhg2Pio8In6a99n+PtL4oaHWiRUs+GjwXnZP4B/iOfpKGh8VHSnwPOjfxF1MOSuWgwPei98LDJR8BfgR9Ch5h0vGGz9C7PDlTDTnbx1961o4n/Ax61wpl+quvhPLC94KfRZ+BX/W9V+14wEugz8K741vDS6FLwLviW8JLokvBX8z5VtVjAS8NHrFGpprag2jTk642vBa6dOLJ5GumXwueABe3kk58ejRcfAup9NgpDW8BrlU1VA2pLYAUvCW4JfzF5CP1qHcWvgAuXitUGjWrhpX+mUUYga9gm4BbJ776fA+1QpzzAQe+Ae3mYJ340iha/Trw2vw6+Df3++2+AwSc1iJA3VeonWmkl7sgm7hP/wDwgcxktVR5CQAAAABJRU5ErkJggg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAYAAACq0qNuAAAAAXNSR0IArs4c6QAABTFJREFUeF7t3b2KFEEUBeAecBVkk8nERBSMBEGMTDcxhttps://kakaomames.github.io/turbowarp/IhfATDRdinMDSaV5gn8REEo40MlBqoobrmVtWtqvtzWnYzd3tmer46ffrOr7tlOzhttps://kakaomames.github.io/turbowarp/mbu6Y27nuhniTnKBe+Gg7ivKzmhhlxbhttps://kakaomames.github.io/turbowarp/X577UAT+smnD81EP3r9vLnhttps://kakaomames.github.io/turbowarp/d2huc2yLOYO1jdYBOdA54Ic+PwyjYUw87C6IRJ8BDuFHIFPL19ZBHUX9RtYluUCfRY84s3Cx+spLICqjeaVq4FLw3ssgAa8OrgWvOUCSMOv0KUqpTSWSFVN6fqJChLzEruivMu10QOWNny4DS18CXjTlEtONZwBv1https://kakaomames.github.io/turbowarp/U3ZThttps://kakaomames.github.io/turbowarp/ZIuRe8dPpn4N2Srn1yrR0JUtUzCu+ObtXx1CJI4https://kakaomames.github.io/turbowarp/AQ6B7wkvUTi88DLohttps://kakaomames.github.io/turbowarp/Cz+MLzFuNiaOizGydY+ZLXD9mRvmE4wCOgIiS+MmixT1kaI6EjwRO00XZsboKKjwffiP8C3Srzj7z1934https://kakaomames.github.io/turbowarp/TzEove75yJWzBlx8FjwiOmLVECfbom8https://kakaomames.github.io/turbowarp/pz26xfPlhttps://kakaomames.github.io/turbowarp/vX3IW3HQbhHGS8ciWNC7Br9DTK0daAET4xhttps://kakaomames.github.io/turbowarp/fnbh+33xN2S6cu+HDtaHgI8FH8Kg9Al9Me35YeS8AAnwOnhrV8KnEs+HjjXgtgCfhttps://kakaomames.github.io/turbowarp/d1hthttps://kakaomames.github.io/turbowarp/eVt+Y1QPfje6J7wVfS3neCiX8PPHD8B4LYA3fA97qehI+jI+zPxb1Ywhttps://kakaomames.github.io/turbowarp/Al7o+rO3GrzF9GMBP4uejZYhttps://kakaomames.github.io/turbowarp/HTNlI4SrfRrwkuA1+omTfwJXqJmrBZAA14SvFY3pvDS9SMJrwVOpP5kHuHVakYhttps://kakaomames.github.io/turbowarp/VLw2ujUUwhu8BLj5yy8BXip51fwmv3eGk9HTsCj8JbgpZ6Hghttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/154L3Cq56Hge+unB94bPhttps://kakaomames.github.io/turbowarp/nIeG5C8CBRwAvJd58omn1ffr3WvfX4JHAqRNsSDw0fC39FDwi+KbhqQXI4ZHR81l+M4mn6ifCo4https://kakaomames.github.io/turbowarp/F4lPF+Dq+5ee04X7tumLIptMfBC8un663Pz4dsIhttps://kakaomames.github.io/turbowarp/vrpjsrZgU3Dhttps://kakaomames.github.io/turbowarp/D4E+Hjv9EXYJPwKXgJHj39m4On0ANynvj0cEdhttps://kakaomames.github.io/turbowarp/2bgS+C1xOddi7QAOXzYhttps://kakaomames.github.io/turbowarp/VXnzgnn9XEknR56bK1xCOmP4HfwT1X00p5CsqFRzn5QsL3gPdUDXW0eNUPHPwIeuvk2qo2https://kakaomames.github.io/turbowarp/wifNhZy1ehRsFnEhttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp//lb+Vxec50Fl4S36v8SvNlkI4U+WzXW3https://kakaomames.github.io/turbowarp/WTLhthttps://kakaomames.github.io/turbowarp/fVSIJrJF67fprw0j2vAa4NL1https://kakaomames.github.io/turbowarp/1Fu1Vd+0qomuUTVa9ZOnPa8asZ7XBrdKvFT9sOFH68YK3AN+tH7UPxFijW5VNbP1w4https://kakaomames.github.io/turbowarp/1w039R7gnonvqZ+eD5+x4T3BUeBb9dML38RHQPesGqp+whttps://kakaomames.github.io/turbowarp/S539S9P3xNnzSezVBdn2yGwUcLfFhttps://kakaomames.github.io/turbowarp/Yx8sjtez+odZmjoiImPcIe3n89rQaWdmuPzo+iEvhttps://kakaomames.github.io/turbowarp/zqnR0uf6+94UQq51N4E+https://kakaomames.github.io/turbowarp/s5rhg2Pio8In6a99n+PtL4oaHWiRUs+GjwXnZP4https://kakaomames.github.io/turbowarp/iOfpKGh8VHSnwPOjfxF1MOSuWgwPei98LDJR8BfgR9Ch5h0vGGz9C7PDlTDTnbx1961o4https://kakaomames.github.io/turbowarp/Ax61wpl+quvhPLC94KfRZ+Bhttps://kakaomames.github.io/turbowarp/W9V+14wEugz8K741vDS6FLwLviW8JLokvBX8z5VtVjAS8NHrFGpprag2jTk642vBa6dOLJ5GumXwueABe3kk58ejRcfAup9NgpDW8BrlU1VA2pLYAUvCW4JfzF5CP1qHcWvgAuXitUGjWrhpX+mUUYga9gm4BbJ776fA+1QpzzAQe+Ae3mYJ340ihhttps://kakaomames.github.io/turbowarp/Trw2vw6+Df3++2+AwSc1iJA3VeonWmkl7sgm7hhttps://kakaomames.github.io/turbowarp/wDwgcxktVR5CQAAAABJRU5ErkJggg==";
   const LineStyleIcon =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAAAXNSR0IArs4c6QAAAkxJREFUeF7t2m1OBCEMBmDnCF7Jc/nTc3klj7CG0TFIgLbsQD9498cmm2kUn22BgscLXpTAowg40ufzDa+mQIl2BR6Aa2fNifb6+fEv4uvt/fwMuDpcFS2FAk6YaVc44ISZBrjBTMvLNE1xmON+IJtzWplp17oAuAE0rKqDaLvDicsznx53LdWn0HbNuKfRAFfZmlwbXKqr2rFUyXaKQkPGZRnHzbS/45FNj5Sax0Vcj+ilWj2E/MXpPSP9IsM9nVU9vahw3UNIzuRPpVxEuFtWzd3guptb6cq5S6ne0hFQmRZtO7IULcoGeDlaBDgVNO9wamie4VTRvMKpo3mEM4HmDc4Mmic4U2he4MyhuYEr/9Uqb4vu7D+57ZZ7OC0013CaaG7g0kDzctVG8wKXxlk7Blc9hFX95cVkzMFJMSbGbGIQeUalkrRQitQKawFu+sUKhTDyXBuOc0egPcaqq+agOGhmFzAtOJNtlKRkNeDco2mUQQi01XBh0FbChUJbBRcObQVcSLTZcGHRZsKFRpsFFx5tBtwWaFPgLF6sSFopbuzdLdejBefhjI2LtizjoqFNgbN4sSLJJG7s3aVq8mKFiyGJG4UrL1ZGf45krKZiR/7g2m3UjLI3BVUORgrn8mJlxjcggWtubiOumhQ2F871xQqFMPKcA7dNGyUBpOCA1tDswQGtk4ItOKARdVuDAxpjsivhgMZAK3f7QGOi5XBAE6BdcEATorHgdmynOI5pcUAPypEqYppwyLS+5rUdwRmbMOvyfdz2p7oSu299qhZaTMEypAAAAABJRU5ErkJggg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAAAXNSR0IArs4c6QAAAkxJREFUeF7t2m1OBCEMBmDnCF7Jhttps://kakaomames.github.io/turbowarp/nTc3klj7CG0TFIgLbsQD9498cmm2kUn22BgscLXpTAowg40ufzDa+mQIl2BR6Aa2fNifb6+fEv4uvhttps://kakaomames.github.io/turbowarp/fwMuDpcFS2FAk6YaVc44ISZBrjBTMvLNE1xmON+IJtzWplp17oAuAE0rKqDaLvDicsznx53LdWn0HbNuKfRAFfZmlwbXKqr2rFUyXaKQkPGZRnHzbhttps://kakaomames.github.io/turbowarp/45FNj5Sax0Vcj+ilWj2https://kakaomames.github.io/turbowarp/MXpPSP9IsM9nVU9vahw3UNIzuRPpVxEuFtWzd3guptb6cq5S6ne0hFQmRZtO7IULcoGeDlaBDgVNO9wamie4VTRvMKpo3mEM4HmDc4Mmic4U2he4MyhuYEhttps://kakaomames.github.io/turbowarp/9Uqb4vu7D+57ZZ7OC0013CaaG7g0kDzctVG8wKXxlk7Blc9hFX95cVkzMFJMSbGbGIQeUalkrRQitQKawFu+sUKhTDyXBuOc0egPcaqq+agOGhmFzAtOJNtlKRkNeDco2mUQQi01XBh0FbChUJbBRcObQVcSLTZcGHRZsKFRpsFFx5tBtwWaFPgLF6sSFopbuzdLdejBefhjI2LtizjoqFNgbN4sSLJJG7s3aVq8mKFiyGJG4UrL1ZGf45krKZihttps://kakaomames.github.io/turbowarp/7g2m3UjLI3BVUORgrn8mJlxjcggWtubiOumhQ2F871xQqFMPKcA7dNGyUBpOCA1tDswQGtk4ItOKARdVuDAxpjsivhgMZAK3f7QGOi5XBAE6BdcEATorHgdmynOI5pcUAPypEqYppwyLS+5rUdwRmbMOvyfdz2p7oSu299qhZaTMEypAAAAABJRU5ErkJggg==";
 
-  //Block Catagories in pen+ version 5.0
+ https://kakaomames.github.io/turbowarp//Block Catagories in pen+ version 5.0
   const UtilityBlocks = {
     blocks: [
       {
@@ -2140,7 +2140,7 @@ Other various small fixes
   };
 
   const StampBlocks = {
-    icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABYCAYAAAAORCLFAAAAAXNSR0IArs4c6QAAArZJREFUeF7tnDFSwzAQRe2SgoIr0XCTlJyAkhNQ5iY0XImCghLGmcijmBjLWe3qJ35UDCPtrv7T1yrG0HfxXz/xKVdn7FfPME6ITngNEHJJw/QJS9R13QmEu92TcQ/5TP/ev28HhCqERKAFjHBHqEMYYNwyiPFYugYQExghmzUkSd4fAHG+twFipudnx1OIRiFJcMTyDQ8QOGJ5l7QcwdHUUv0sNyAA4aoAnyMW5KVZ06xdHWgOTo8wS1gnACDq6GiOAgizhHUCAKKOjuYogDBLWCcAIOroaI4CCLOEdQIAoo6O5ig3D8KsUHyAkKcPIUmmr9LEa2nKGKJRSJIVMhweDt6/7f6d8vW8XxFydqjU2qWKSc5ZAnEphQlAqbVLFQOIS7dY/XlFR5MlbeYKqU0oVYy3IwaAgCjbxjiiTCf3UYBwl7gsASDKdHIfBQh3icsSAKJMJ/dRkSCGxcjcGmUKOSIGhPteL0sAiDKdXEeNbwN6PWuafKDjaJrBCQjXfV4ePASE6mMOpWYNiPJN6zoSEK7ylgcHRLlWriPdr66pesXf1Mn1CM+rKyDKjIQjynRyHxUGQvEKq3I0hTXqM8eThAYSReQvoEX0CBwxf7qFHkuKz5zmHNHkX75FuWHm9uTeBI8Jzmqe/7CJ+PnqNwIiX/Kof/qmKYRoALkSld6jtbqpH0CcQGgpinU11zR/+un+BAQQYlHmMEYQQIiFML0wAKKN/mPW5ApAAKKxAiLpcQQgRBQQKQNHAEJEAZEycAQgRBQQKQNHAEJEAZEycAQgRBQQKQNHAEJEAZEycAQgRBQQKQNHqIIQqWuzZfx5i2OzSjReOCAaA0jpRxAPH68iJW2rjM/Hl8OCAdGYOyAaA0jpAQEIEQVEysARqiCGurg5xdJJbji5NcWWQLapAhJ/qAKWrv8Fl7tFSQcWbxYAAAAASUVORK5CYII=",
+    icon: "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABYCAYAAAAORCLFAAAAAXNSR0IArs4c6QAAArZJREFUeF7tnDFSwzAQRe2SgoIr0XCTlJyAkhNQ5iY0XImCghLGmcijmBjLWe3qJ35UDCPtrv7T1yrG0HfxXhttps://kakaomames.github.io/turbowarp/xKVdn7FfPME6ITngNEHJJhttps://kakaomames.github.io/turbowarp/QJS9R13QmEu92Tchttps://kakaomames.github.io/turbowarp/5Thttps://kakaomames.github.io/turbowarp/ev28HhCqERKAFjHBHqEMYYNwyiPFYugYQExghmzUkSd4fAHG+twFipudnx1OIRiFJcMTyDQ8QOGJ5l7QcwdHUUv0sNyAA4aoAnyMW5KVZ06xdHWgOTo8wS1gnACDq6GiOAgizhHUCAKKOjuYogDBLWCcAIOroaI4CCLOEdQIAoo6O5ig3D8KsUHyAkKcPIUmmr9LEa2nKGKJRSJIVMhweDthttps://kakaomames.github.io/turbowarp/7f6d8vW8XxFydqjU2qWKSc5ZAnEphQlAqbVLFQOIS7dhttps://kakaomames.github.io/turbowarp/XlFR5MlbeYKqU0oVYy3IwaAgCjbxjiiTCf3UYBwl7gsASDKdHIfBQh3icsSAKJMhttps://kakaomames.github.io/turbowarp/dRkSCGxcjcGmUKOSIGhPteL0sAiDKdXEeNbwN6PWuafKDjaJrBCQjXfV4ePASE6mMOpWYNiPJN6zoSEK7ylgcHRLlWriPdr66pesXf1Mn1CM+rKyDKjIQjynRyHxUGQvEKq3I0hTXqM8eThAYSReQvoEX0CBwxf7qFHkuKz5zmHNHkX75FuWHm9uTeBI8Jzmqhttps://kakaomames.github.io/turbowarp/7CJ+PnqNwIihttps://kakaomames.github.io/turbowarp/Kohttps://kakaomames.github.io/turbowarp/qmKYRoALkSld6jtbqpH0CcQGgpinU11zhttps://kakaomames.github.io/turbowarp/+un+BAQQYlHmMEYQQIiFML0wAKKhttps://kakaomames.github.io/turbowarp/mPW5ApAAKKxAiLpcQQgRBQQKQNHAEJEAZEycAQgRBQQKQNHAEJEAZEycAQgRBQQKQNHAEJEAZEycAQgRBQQKQNHqIIQqWuzZfx5i2OzSjReOCAaA0jpRxAPH68iJW2rjhttps://kakaomames.github.io/turbowarp/Hl8OCAdGYOyAaA0jpAQEIEQVEysARqiCGurg5xdJJbji5NcWWQLapAhhttps://kakaomames.github.io/turbowarp/qAKWrv8Fl7tFSQcWbxYAAAAASUVORK5CYII=",
     blocks: [
       {
         opcode: "pendrawspritefromurl",
@@ -2235,7 +2235,7 @@ Other various small fixes
   };
 
   const TriangleBlocks = {
-    icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABiCAYAAACrpQYOAAAAAXNSR0IArs4c6QAABGtJREFUeF7tncGxEzEMhpMZrhwogAYog2a4UAJHSuBCM5TxGqAADlyZgXGIg+Pd9UqyJP82yuXNvHi9sj7/siUnm+sF//X7buIV31S5heiDyxDyCNHtFZNAHlgNYWkYqCAeEF5/+XAD8PPj13K2odq9nCIChBip7oU3EFkNueuVVYEo8Y0aMohX795efrz/tORaAQuiVkPyfgUi/QvRflFsQBvIoRoyiPS3UMUyMAKEaP7qXwQJ4s23z5dfL983o02hKb9WUwUSiEdYooCoQhTSOERyQRrADUSCkF5nilhtrUAB8aQGKoiVYAQIUSDRvwgBxEYNHEWsoooAoT+5RT3CgNjLpDkjmr0ONRpEM5PmgEhtZ4YBAaJXDStUZ0eCUFXD7DACBDf+GbUfDiJn0r3jKzPxGdeKUSB2c4ceGHVJpIAxaoys4Ywy8qmuxLL4oHEDxBRnFiNAqKvhKBOfKUQFCA05KvThDcJEDa3a1CwHSAFCYTZrdDEEhNaWtXRA6yBpBlV4gjALS5SyOTqMAKERVxT68AJhqgaKItAPkNxBaFVaJZMQOa9wBTESAnp11gOESblboogdGB7jJ5nqYcjuR+xJ1hk1QgxR1iDg1IAaotxAUJM4yif8NISClldYghBtWb1AoG1nA8Q/eVn64lTEljcXHf54KgJJFVYgRGGJmiGfTi9mA4T1IkCAfBXMAoRYDaMUgRCiAsQ9jI0OT2YgqHlDHc69F+vy/iNhaIPoCksjQ1MGMuoL9SYgpGoAA5HM0fbP4X5O80bdakAAMWrhNgGBcO7ATCWemo+ozqqDmB3CqOqsFgjYcreSMrT8ZL5GwB3+9AAYoQoN0kuqIcHwfCyRGYjyASYas5PSh0Uy6JXk9YJoPm2M4jzNNhYgvLazAYIwEzxUoQLi6LFvhDGqNrFShIcqekCQHvum6umTzixBWMPoBkF9yJUHkP8RBPtpYyuAsFSFVBEB4u/MkvpvMy+lHbEf+7aKIqxUIQEhfuybNQzrNaK0X/sASQyiPPzxdEALpqcd2rkFF8SydSWJWjXPLQKEhMD9mlEgQg070LRgcBQRIJBAHGXSHQqf9tJc6tdYuKmKUPmExpHHPXc7Z9SltvTCCBAVGWQQpmpIfpAO/mx2S97vsaVHFRRFBIjidytacF1A9HyM8mxm9szCs7657/faIoVxpghzNawUmjJ0SR2KBMJSDYuDIJfKWyBc1LAiCEmpPEAobV/rtYi7VhyBcFPDqorgqiJAGClCFYT1Ip190Ltl5G5RPQ+XqCFqTxFRZdUkS/yBkQCh7PS97ihnFjWIUIMRmDMYAcLI8XW3IhCrfA/Oycfk27RglIpg5Q4oO53Z7DiqQ21AULesszmAPG2FDan+ONrOZhAsNSBlw1QHCP1Lvoxjxx6MAEF2dbuhKghqWApFbKFwQOyVP5Ii2GEpQPSDqGBcA8SA0JRvWa4VTyBSA2p44kpRabybbma2owaRBvcIT1YOi37bHthN6MJp7h64/gHORJl+nCcCdQAAAABJRU5ErkJggg==",
+    icon: "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABiCAYAAACrpQYOAAAAAXNSR0IArs4c6QAABGtJREFUeF7tncGxEzEMhpMZrhwogAYog2a4UAJHSuBCM5TxGqAADlyZgXGIg+Pd9UqyJP82yuXNvHi9sjhttps://kakaomames.github.io/turbowarp/siUnm+shttps://kakaomames.github.io/turbowarp//X7buIV31S5heiDyxDyCNHtFZNAHlgNYWkYqCAeEFhttps://kakaomames.github.io/turbowarp/+XAD8PPj13K2odq9nCIChBip7oU3EFkNueuVVYEo8Y0aMohX795efrhttps://kakaomames.github.io/turbowarp/tORaAQuiVkPyfgUhttps://kakaomames.github.io/turbowarp/QvRflFsQBvIoRoyiPS3UMUyMAKEaP7qXwQJ4s23z5dfL983o02hKb9WUwUSiEdYooCoQhTSOERyQRrADUSCkF5nilhtrUAB8aQGKoiVYAQIUSDRvwgBxEYNHEWsoooAoT+5RT3CgNjLpDkjmr0ONRpEM5PmgEhtZ4YBAaJXDStUZ0eCUFXD7DACBDf+GbUfDiJn0r3jKzPxGdeKUSB2c4ceGHVJpIAxaoys4Ywy8qmuxLL4oHEDxBRnFiNAqKvhKBOfKUQFCA05KvThDcJEDa3a1CwHSAFCYTZrdDEEhNaWtXRA6yBpBlV4gjALS5SyOTqMAKERVxT68AJhqgaKItAPkNxBaFVaJZMQOa9wBTESAnp11gOESblboogdGB7jJ5nqYcjuR+xJ1hk1QgxR1iDg1IAaotxAUJM4yif8NISClldYghBtWb1AoG1nA8https://kakaomames.github.io/turbowarp/eVn64lTEljcXHf54KgJJFVYgRGGJmiGfTi9mA4T1IkCAfBXMAoRYDaMUgRCiAsQ9jI0OT2YgqHlDHc69F+vhttps://kakaomames.github.io/turbowarp/iNhaIPoCksjQ1MGMuoL9SYgpGoAA5HM0fbP4X5O80bdakAAMWrhNgGBcO7ATCWemo+ozqqDmB3CqOqsFgjYcreSMrT8ZL5GwB3+9AAYoQoN0kuqIcHwfCyRGYjyASYas5PSh0Uy6JXk9YJoPm2M4jzNNhYgvLazAYIwEzxUoQLi6LFvhDGqNrFShIcqekCQHvum6umTzixBWMPoBkF9yJUHkP8RBPtpYyuAsFSFVBEB4https://kakaomames.github.io/turbowarp/MkvpvMy+lHbEf+7aKIqxUIQEhfuybNQzrNaK0https://kakaomames.github.io/turbowarp/sASQyiPPzxdEALpqcd2rkFF8SydSWJWjXPLQKEhMD9mlEgQg070LRgcBQRIJBAHGXSHQqf9tJc6tdYuKmKUPmExpHHPXc7Z9SltvTCCBAVGWQQpmpIfpAhttps://kakaomames.github.io/turbowarp/mx2S97vsaVHFRRFBIjidytacF1A9HyM8mxm9szCs765https://kakaomames.github.io/turbowarp/faIoVxpghzNawUmjJ0SR2KBMJSDYuDIJfKWyBc1LAiCEmpPEAobhttps://kakaomames.github.io/turbowarp/rtYi7VhyBcFPDqorgqiJAGClCFYT1Ip190Ltl5G5RPQ+XqCFqTxFRZdUkhttps://kakaomames.github.io/turbowarp/yBkQCh7PS97ihnFjWIUIMRmDMYAcLI8XW3IhCrfhttps://kakaomames.github.io/turbowarp/Oycfk27RglIpg5Q4oO53Z7DiqQ21AULesszmAPG2FDan+ONrOZhAsNSBlw1QHCP1Lvoxjxx6MAEF2dbuhKghqWApFbKFwQOyVP5Ii2GEpQPSDqGBcA8SA0JRvWa4VTyBSA2p44kpRabybbma2owaRBvcIT1YOi37bHthN6MJp7h6https://kakaomames.github.io/turbowarp/gHORJl+nCcCdQAAAABJRU5ErkJggg==",
     blocks: [
       {
         opcode: "pendrawtexturedtrifromurl",
@@ -2294,7 +2294,7 @@ Other various small fixes
   };
 
   const LineBlocks = {
-    icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAAAXNSR0IArs4c6QAAAclJREFUeF7t3EFuxCAMBdDmCL1Sz9XlnGuu1CO0IjNIFIUEiAF/+7OIhORI6MU2ysbbB9eVwG8WsIX9/uAqCuRoMXAjXDlrdrTP5+NfxM/X974n3DHcIVoIJVxjpsVwwjVmGuE6My0t09Di2ONekMWelmdavBcI14HGW7UTzTtcc3mm7dFrqd5C85pxt9E8womgeYMTQ/MEJ4rmBU4czQPcEDTrcMPQLMMNRbMKNxzNItwUNGtw09AswU1FswI3Hc0C3BI0dLhlaMhwS9FQ4ZajIcKpQEODU4OGBKcKDQVOHRoCnEo07XBq0TTDqUbTCqceTSMcBJo2OBg0TXBQaFrg4NA0wEGirYaDRVsJB422Cg4ebQWcCbTZcGbQZsKZQpsFZw5tBpxJtNFwZtFGwplGGwVnHm0EnAs0aTg3aJJwrtCk4NyhScC5RLsL5xbtDpxrtF4492g9cEQLao0jgoj2RmuBI1qCVgtHtAytBo5oB2hXcEQroJ3BEe0ErQRHtAu0IziiVaDlcESrREvhiNaAFuGI1ohWBReHaTb+nnUcBeuVMAatmHFEK3/MIhzRzisgDt7bs67jlwyrvgRPm04szPG8TjOs4v0Dp6EsWljkur0AAAAASUVORK5CYII=",
+    icon: "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAAAXNSR0IArs4c6QAAAclJREFUeF7t3EFuxCAMBdDmCL1Sz9XlnGuu1CO0IjNIFIUEiAhttps://kakaomames.github.io/turbowarp/+7OIhORI6MU2ysbbB9eVwG8WsIXhttps://kakaomames.github.io/turbowarp/uAqCuRoMXAjXDlrdrTP5+Nfxhttps://kakaomames.github.io/turbowarp/X974n3DHcIVoIJVxjpsVwwjVmGuE6My0t09Di2ONekMWelmdavBcI14HGW7UTzTtcc3mm7dFrqd5C85pxt9E8womgeYMThttps://kakaomames.github.io/turbowarp/MEJ4rmBU4czQPcEDTrcMPQLMMNRbMKNxzNItwUNGtw09AswU1FswI3Hc0C3BI0dLhlaMhwS9FQ4ZajIcKpQEODU4OGBKcKDQVOHRoCnEo07XBq0TTDqUbTCqceTSMcBJo2OBg0TXBQaFrg4NA0wEGirYaDRVsJB422Cg4ebQWcCbTZcGbQZsKZQpsFZw5tBpxJtNFwZtFGwplGGwVnHm0EnAs0aTg3aJJwrtCk4NyhScC5RLsL5xbtDpxrtF4492g9cEQLao0jgoj2RmuBI1qCVgtHtAytBo5oB2hXcEQroJ3BEe0ErQRHtAu0IziiVaDlcESrREvhiNaAFuGI1ohWBReHaTb+nnUcBeuVMAatmHFEKhttps://kakaomames.github.io/turbowarp/MIhzRzisgDt7bs67jlwyrvgRPm04szPG8TjOs4v0Dp6EsWljkur0AAAAASUVORK5CYII=",
     blocks: [
       {
         opcode: "drawLine",
@@ -2356,7 +2356,7 @@ Other various small fixes
   };
 
   const DepracatedBlocks = {
-    icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAAAXNSR0IArs4c6QAAAphJREFUeF7t20lywyAQBdB4lQvlFjlvbpELZZUUqqKMCFM3PXzA3liyLQTPH4Fk+fH2fPwmy2Hxka2fulp0iTj5mxHpdLyqS4C53nz//Lgl6ufr+3S8pksVLqgdjFdES02acIfiVdFIcIfhNdFyuLA+vMHGoy3JIB01SRtuNjchtz2fbpAL2ACQ1ebSPI1V0KKA7LbWJrjsAhcCnGpj68xgqmBwwOm29U6ppncACCjSph7cblMVETTKFRCxHTomULQNI4mLbRXdsTGgeN0pcKt2W3E0SldNA6JSEaUEqtWVmriVuq0aGjdxK+Cpos3CoR7z1NEk4NDwTNCk4FDwzNAk4bzxTNGk4bzwzNE04KzxXNC04Kzw3NA04bTxXNG04bTw3NEs4KTxINCs4KTwYNAs4WbxoNCs4bh4cGgecFS860pMfgtavDwTnr3uqOJej0vrzlkeThEimlfiInQXr/WNeCUt1skrcVN43mjeiWPhIaChwA0NGJ4DQemQ4d1VSalDSRtK4kiDBAqed+JIaDGeCHiecCw0FDwvuC5aTNVrAvwcmobR4iaIeNaJo6Dd/meGhmcJx0Ebnq5YDxhWcDNokHgWcBJocHjacJJoUHiacBpoMHhacJpoEHgacBZo7njScJZorniScB5obnhScJ5oLngScAho5nizcEhopngzcIhoZnhcOGQ0EzwO3Apo6nhUuJXQVPEocCuiqeGNwq2MpoI3ArcDmjheD24nNFG8FtyOaGJ4Nbid0UTwSnAnoE3j5XAnoU3hpXAnorHxoH8tL93Qp/gaKTgBjrSBYsURih626MJZ31oAoNfEix5NuAPRuse8LtzBaE28FC588Ipn4dE7JQPoWapVqLr8m44k1Tgd7Za83OUPGEk0ZW66HHQAAAAASUVORK5CYII=",
+    icon: "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABOCAYAAACOqiAdAAAAAXNSR0IArs4c6QAAAphJREFUeF7t20lywyAQBdB4lQvlFjlvbpELZZUUqqKMCFM3PXzA3liyLQTPH4Fk+fH2fPwmy2Hxka2fulp0iTj5mxHpdLyqS4C53nhttps://kakaomames.github.io/turbowarp//Lgl6ufr+3S8pksVLqgdjFdES02acIfiVdFIcIfhNdFyuLA+vMHGoy3JIB01SRtuNjchtz2fbpAL2ACQ1ebSPI1V0KKA7LbWJrjsAhcCnGpj68xgqmBwwOm29U6ppncACCjSph7cblMVETTKFRCxHTomULQNI4mLbRXdsTGgeN0pcKt2W3E0SldNA6JSEaUEqtWVmriVuq0aGjdxK+Cpos3CoR7z1NEk4NDwTNCk4FDwzNAk4bzxTNGk4bzwzNE04KzxXNC04Kzw3NA04bTxXNG04bTw3NEs4KTxINCs4KTwYNAs4WbxoNCs4bh4cGgecFS860pMfgtavDwTnr3uqOJej0vrzlkeThEimlfiInQXhttps://kakaomames.github.io/turbowarp/WNeCUt1skrcVN43mjeiWPhIaChwA0NGJ4DQemQ4d1VSalDSRtK4kiDBAqed+JIaDGeCHiecCw0FDwvuC5aTNVrAvwcmobR4iaIeNaJo6Dhttps://kakaomames.github.io/turbowarp/meGhmcJx0Ebnq5YDxhWcDNokHgWcBJocHjacJJoUHiacBpoMHhacJpoEHgacBZo7njScJZorniScB5obnhScJ5oLngScAho5nizcEhopngzcIhoZnhcOGQ0EzwO3Apo6nhUuJXQVPEocCuiqeGNwq2MpoI3ArcDmjheD24nNFG8FtyOaGJ4Nbid0UTwSnAnoE3j5XAnoU3hpXAnorHxoH8tL93Qhttps://kakaomames.github.io/turbowarp/gaKTgBjrSBYsURih626MJZ31oAoNfEix5NuAPRuse8LtzBaE28FC588Ipn4dE7JQPoWapVqLr8m44k1Tgd7Za83OUPGEk0ZW66HHQAAAAASUVORK5CYII=",
     blocks: [
       {
         opcode: "settargetsw",
@@ -2407,7 +2407,7 @@ Other various small fixes
     ],
   };
 
-  //Stamps
+ https://kakaomames.github.io/turbowarp//Stamps
 
   class PenPlus {
     getInfo() {
@@ -2418,9 +2418,9 @@ Other various small fixes
         color2: "#0b7f58",
         color3: "#096647",
         docsURI:
-          "https://www.youtube.com/playlist?list=PLdR2VVCBIN3CceUdgKWOUxFEEbLqWgCC9",
+          "httpshttps://kakaomames.github.io/turbowarp//www.youtube.cohttps://kakaomames.github.io/turbowarp/playlist?list=PLdR2VVCBIN3CceUdgKWOUxFEEbLqWgCC9",
         menuIconURI:
-          "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzNy44NjkyMSIgaGVpZ2h0PSI0OC44NTI3MiIgdmlld0JveD0iMCwwLDM3Ljg2OTIxLDQ4Ljg1MjcyIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgY3g9IjIzNy41NDM0IiBjeT0iMTg0LjAwNTYiIHI9IjkuOTg1NDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjY2ZkNWU5Ii8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyMy4zMDE4MSwtMTYzLjc2MzA5KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0yMjUuMTYzNTYsMTkzLjIwMDIxYzAuNTYxNTMsLTEuMTA3NDYgMi4yMzQwNCwtMy4yODU4MyAyLjIzNDA0LC0zLjI4NTgzYzAsMCAwLjU5NDQyLDEuODIzOTEgMS4yMjQ0OSwyLjU5NTc1YzAuNjMyMTIsMC43NzQzNSAyLjA4ODc4LDEuNDc0ODQgMi4wODg3OCwxLjQ3NDg0YzAsMCAtMi4xOTQ0NiwxLjI4MTQxIC0zLjMyNDIxLDEuNzI2OTVjLTEuMTEwMzIsMC40Mzc4NyAtMy4zOTcsMC45MjM2NyAtMy4zOTcsMC45MjM2N2MwLDAgMC41OTk3NCwtMi4zMDI5OSAxLjE3MzksLTMuNDM1Mzh6IiBmaWxsPSIjNGM5N2ZmIiBzdHJva2U9IiM1NzVlNzUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48cGF0aCBkPSJNMjI3LjYxMTMxLDE4OS4yOTIwM2wxNC45NTE1NCwtMTUuMjcxOTNjMCwwIDIuMjA2LDAuODk1MDUgMi45NTc3NiwxLjYzMDQ3YzAuODY4OCwwLjg0OTkxIDEuOTU0ODksMy4xNzUzOCAxLjk1NDg5LDMuMTc1MzhsLTE2LjEyNjMxLDE1LjE2NTE0YzAsMCAtMi4wMDYzOSwtMS4xMjc4NiAtMi42MDkyMSwtMS44ODU2OGMtMC42NDA4MiwtMC44MDU2IC0xLjEyODY4LC0yLjgxMzM3IC0xLjEyODY4LC0yLjgxMzM3eiIgZmlsbD0idXJsKCNjb2xvci0xKSIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTIzNy43NTY5OSwxNzIuOTUyMTNjMCwwIDAuOTg2MTksMS4wNTA2MiAyLjM5NjA4LC0wLjI3MDcyYzEuODAzLC0xLjY4OTc3IDQuMjMxMDUsLTUuOTAxNDcgNS40NDc0MywtNi41ODcwN2MxLjM3NDgsLTAuNzc0ODkgMy45MDQxNCwwLjIzNjM5IDMuOTA0MTQsMC4yMzYzOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMzYuMDc5ODEsMTcyLjMxMTM1YzAsLTAuNjkwMzYgMC41NTk2NCwtMS4yNSAxLjI1LC0xLjI1YzAuNjkwMzYsMCAxLjI1LDAuNTU5NjQgMS4yNSwxLjI1YzAsMC42OTAzNiAtMC41NTk2NCwxLjI1IC0xLjI1LDEuMjVjLTAuNjkwMzYsMCAtMS4yNSwtMC41NTk2NCAtMS4yNSwtMS4yNXoiIGZpbGw9IiM1NzVlNzUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTI1MC45OTk3OSwxNjQuNzI4NzdjMCwwIDEuOTEzOTYsLTEuMDUxOTMgNC4yMDAwOSwxLjMyMzU4YzIuNDI2ODUsMi41MjE3MyAwLjYwNTc2LDQuNDQzNDQgMC42MDU3Niw0LjQ0MzQ0bC04LjMzMDE0LDguMjIzMzVjMCwwIC0wLjc1MDQsLTIuMDcxMTIgLTEuNTYyNDksLTIuNzk0OTRjLTAuODI1MjQsLTAuNzM1NTUgLTMuMzUwMTYsLTEuNTgzNzMgLTMuMzUwMTYsLTEuNTgzNzN6IiBmaWxsPSIjNGM5N2ZmIiBzdHJva2U9IiM1NzVlNzUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48dGV4dCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzkuODkzMzcsMjAxLjcxMTE4KSBzY2FsZSgwLjg3MjM3LDAuODcyMzcpIiBmb250LXNpemU9IjQwIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmaWxsPSIjZThlYmY0IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0iU2FucyBTZXJpZiIgZm9udC13ZWlnaHQ9Im5vcm1hbCIgdGV4dC1hbmNob3I9InN0YXJ0IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHRzcGFuIHg9IjAiIGR5PSIwIj4rPC90c3Bhbj48L3RleHQ+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTYuNjk4MTkxNTI3MDE2NDYyOjE2LjIzNjkxNDk5OTk5OTk4Mi0tPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzNy44NjkyMSIgaGVpZ2h0PSI0OC44NTI3MiIgdmlld0JveD0iMCwwLDM3Ljg2OTIxLDQ4Ljg1MjcyIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgY3g9IjIzNy41NDM0IiBjeT0iMTg0LjAwNTYiIHI9IjkuOTg1NDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjY2ZkNWU5Ii8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyMy4zMDE4MSwtMTYzLjc2MzA5KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0yMjUuMTYzNTYsMTkzLjIwMDIxYzAuNTYxNTMsLTEuMTA3NDYgMi4yMzQwNCwtMy4yODU4MyAyLjIzNDA0LC0zLjI4NTgzYzAsMCAwLjU5NDQyLDEuODIzOTEgMS4yMjQ0OSwyLjU5NTc1YzAuNjMyMTIsMC43NzQzNSAyLjA4ODc4LDEuNDc0ODQgMi4wODg3OCwxLjQ3NDg0YzAsMCAtMi4xOTQ0NiwxLjI4MTQxIC0zLjMyNDIxLDEuNzI2OTVjLTEuMTEwMzIsMC40Mzc4NyAtMy4zOTcsMC45MjM2NyAtMy4zOTcsMC45MjM2N2MwLDAgMC41OTk3NCwtMi4zMDI5OSAxLjE3MzksLTMuNDM1Mzh6IiBmaWxsPSIjNGM5N2ZmIiBzdHJva2U9IiM1NzVlNzUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48cGF0aCBkPSJNMjI3LjYxMTMxLDE4OS4yOTIwM2wxNC45NTE1NCwtMTUuMjcxOTNjMCwwIDIuMjA2LDAuODk1MDUgMi45NTc3NiwxLjYzMDQ3YzAuODY4OCwwLjg0OTkxIDEuOTU0ODksMy4xNzUzOCAxLjk1NDg5LDMuMTc1MzhsLTE2LjEyNjMxLDE1LjE2NTE0YzAsMCAtMi4wMDYzOSwtMS4xMjc4NiAtMi42MDkyMSwtMS44ODU2OGMtMC42NDA4MiwtMC44MDU2IC0xLjEyODY4LC0yLjgxMzM3IC0xLjEyODY4LC0yLjgxMzM3eiIgZmlsbD0idXJsKCNjb2xvci0xKSIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTIzNy43NTY5OSwxNzIuOTUyMTNjMCwwIDAuOTg2MTksMS4wNTA2MiAyLjM5NjA4LC0wLjI3MDcyYzEuODAzLC0xLjY4OTc3IDQuMjMxMDUsLTUuOTAxNDcgNS40NDc0MywtNi41ODcwN2MxLjM3NDgsLTAuNzc0ODkgMy45MDQxNCwwLjIzNjM5IDMuOTA0MTQsMC4yMzYzOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMzYuMDc5ODEsMTcyLjMxMTM1YzAsLTAuNjkwMzYgMC41NTk2NCwtMS4yNSAxLjI1LC0xLjI1YzAuNjkwMzYsMCAxLjI1LDAuNTU5NjQgMS4yNSwxLjI1YzAsMC42OTAzNiAtMC41NTk2NCwxLjI1IC0xLjI1LDEuMjVjLTAuNjkwMzYsMCAtMS4yNSwtMC41NTk2NCAtMS4yNSwtMS4yNXoiIGZpbGw9IiM1NzVlNzUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1saW5lY2FwPSJidXR0Ii8+PHBhdGggZD0iTTI1MC45OTk3OSwxNjQuNzI4NzdjMCwwIDEuOTEzOTYsLTEuMDUxOTMgNC4yMDAwOSwxLjMyMzU4YzIuNDI2ODUsMi41MjE3MyAwLjYwNTc2LDQuNDQzNDQgMC42MDU3Niw0LjQ0MzQ0bC04LjMzMDE0LDguMjIzMzVjMCwwIC0wLjc1MDQsLTIuMDcxMTIgLTEuNTYyNDksLTIuNzk0OTRjLTAuODI1MjQsLTAuNzM1NTUgLTMuMzUwMTYsLTEuNTgzNzMgLTMuMzUwMTYsLTEuNTgzNzN6IiBmaWxsPSIjNGM5N2ZmIiBzdHJva2U9IiM1NzVlNzUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48dGV4dCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzkuODkzMzcsMjAxLjcxMTE4KSBzY2FsZSgwLjg3MjM3LDAuODcyMzcpIiBmb250LXNpemU9IjQwIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmaWxsPSIjZThlYmY0IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0iU2FucyBTZXJpZiIgZm9udC13ZWlnaHQ9Im5vcm1hbCIgdGV4dC1hbmNob3I9InN0YXJ0IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHRzcGFuIHg9IjAiIGR5PSIwIj4rPC90c3Bhbj48L3RleHQ+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTYuNjk4MTkxNTI3MDE2NDYyOjE2LjIzNjkxNDk5OTk5OTk4Mi0tPg==",
         blocks: splitBlockCatagories([
           UtilityBlocks,
           StampBlocks,
@@ -2502,14 +2502,14 @@ Other various small fixes
     }
 
     hsvtoSColor({ H, S, V }) {
-      // Formula taken from https://www.rapidtables.com/convert/color/hsv-to-rgb.html and converted into javascipt by OAC
-      S = S / 100;
-      V = V / 100;
+     https://kakaomames.github.io/turbowarp// Formula taken from httpshttps://kakaomames.github.io/turbowarp//www.rapidtables.cohttps://kakaomames.github.io/turbowarp/converhttps://kakaomames.github.io/turbowarp/colohttps://kakaomames.github.io/turbowarp/hsv-to-rgb.html and converted into javascipt by OAC
+      S = Shttps://kakaomames.github.io/turbowarp/ 100;
+      V = Vhttps://kakaomames.github.io/turbowarp/ 100;
       S = Math.min(Math.max(S, 0), 1);
       V = Math.min(Math.max(V, 0), 1);
       H = H % 360;
       const C = V * S;
-      const X = C * (1 - Math.abs(((H / 60) % 2) - 1));
+      const X = C * (1 - Math.abs(((Hhttps://kakaomames.github.io/turbowarp/ 60) % 2) - 1));
       const M = V - C;
       let Primes = [0, 0, 0];
       if (H >= 0 && H < 60) {
@@ -2549,15 +2549,15 @@ Other various small fixes
     converttocanvascoords({ coordmenu, scrcoord, coordTypes }) {
       if (coordTypes == "Canvas") {
         if (coordmenu == "x") {
-          return scrcoord + runtime.stageWidth / 2;
+          return scrcoord + runtime.stageWidthhttps://kakaomames.github.io/turbowarp/ 2;
         } else {
-          return scrcoord * -1 + runtime.stageHeight / 2;
+          return scrcoord * -1 + runtime.stageHeighthttps://kakaomames.github.io/turbowarp/ 2;
         }
       } else {
         if (coordmenu == "x") {
-          return scrcoord - runtime.stageWidth / 2;
+          return scrcoord - runtime.stageWidthhttps://kakaomames.github.io/turbowarp/ 2;
         } else {
-          return scrcoord * -1 + runtime.stageHeight / 2;
+          return scrcoord * -1 + runtime.stageHeighthttps://kakaomames.github.io/turbowarp/ 2;
         }
       }
     }
@@ -2583,7 +2583,7 @@ Other various small fixes
     }
 
     pendrawspritefromurl({ url, x, y }) {
-      var scaleMultiplier = canvas.width / runtime.stageWidth;
+      var scaleMultiplier = canvas.widthhttps://kakaomames.github.io/turbowarp/ runtime.stageWidth;
       if (!textures.hasOwnProperty(url)) {
         textures[url] = loadImageAndCreateTextureInfo(url, true);
       }
@@ -2608,7 +2608,7 @@ Other various small fixes
     }
 
     drawLine({ x1, y1, x2, y2 }) {
-      var scalemultiplyer = canvas.width / runtime.stageWidth;
+      var scalemultiplyer = canvas.widthhttps://kakaomames.github.io/turbowarp/ runtime.stageWidth;
       let tempColors = triangleColors;
       triangleColors = [
         lineColor.r,
@@ -2626,8 +2626,8 @@ Other various small fixes
       ];
       let vectorLength = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
       let vectorDir = {
-        X: (x2 - x1) / vectorLength,
-        Y: (y2 - y1) / vectorLength,
+        X: (x2 - x1)https://kakaomames.github.io/turbowarp/ vectorLength,
+        Y: (y2 - y1)https://kakaomames.github.io/turbowarp/ vectorLength,
       };
       let triangleDir = {
         X1: -vectorDir.Y * lineWidth[0],
@@ -2676,7 +2676,7 @@ Other various small fixes
     }
 
     pendrawtexturedtrifromurl({ url, trianglepoints, triangleuvs }) {
-      var scalemultiplyer = canvas.width / runtime.stageWidth;
+      var scalemultiplyer = canvas.widthhttps://kakaomames.github.io/turbowarp/ runtime.stageWidth;
       if (!textures.hasOwnProperty(url)) {
         textures[url] = loadImageAndCreateTextureInfo(url, true);
       }
@@ -2714,28 +2714,28 @@ Other various small fixes
 
     settripointcolour({ pointmenu, color, T }) {
       if (pointmenu == "1") {
-        triangleColors[0] = hexToRgb(color).r / 255;
-        triangleColors[1] = hexToRgb(color).g / 255;
-        triangleColors[2] = hexToRgb(color).b / 255;
-        triangleColors[3] = T / 255;
+        triangleColors[0] = hexToRgb(color).rhttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[1] = hexToRgb(color).ghttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[2] = hexToRgb(color).bhttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[3] = Thttps://kakaomames.github.io/turbowarp/ 255;
       } else if (pointmenu == "2") {
-        triangleColors[4] = hexToRgb(color).r / 255;
-        triangleColors[5] = hexToRgb(color).g / 255;
-        triangleColors[6] = hexToRgb(color).b / 255;
-        triangleColors[7] = T / 255;
+        triangleColors[4] = hexToRgb(color).rhttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[5] = hexToRgb(color).ghttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[6] = hexToRgb(color).bhttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[7] = Thttps://kakaomames.github.io/turbowarp/ 255;
       } else {
-        triangleColors[8] = hexToRgb(color).r / 255;
-        triangleColors[9] = hexToRgb(color).g / 255;
-        triangleColors[10] = hexToRgb(color).b / 255;
-        triangleColors[11] = T / 255;
+        triangleColors[8] = hexToRgb(color).rhttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[9] = hexToRgb(color).ghttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[10] = hexToRgb(color).bhttps://kakaomames.github.io/turbowarp/ 255;
+        triangleColors[11] = Thttps://kakaomames.github.io/turbowarp/ 255;
       }
     }
 
     setLineColor({ color, Alpha }) {
-      lineColor.r = hexToRgb(color).r / 255;
-      lineColor.g = hexToRgb(color).g / 255;
-      lineColor.b = hexToRgb(color).b / 255;
-      lineColor.a = Alpha / 255;
+      lineColor.r = hexToRgb(color).rhttps://kakaomames.github.io/turbowarp/ 255;
+      lineColor.g = hexToRgb(color).ghttps://kakaomames.github.io/turbowarp/ 255;
+      lineColor.b = hexToRgb(color).bhttps://kakaomames.github.io/turbowarp/ 255;
+      lineColor.a = Alphahttps://kakaomames.github.io/turbowarp/ 255;
     }
 
     setTriPointZ({ pointmenu, Z }) {
@@ -2749,10 +2749,10 @@ Other various small fixes
     }
 
     setstampcolor({ color, T }) {
-      let convertr = hexToRgb(color).r / 255;
-      let convertg = hexToRgb(color).g / 255;
-      let convertb = hexToRgb(color).b / 255;
-      let converta = T / 255;
+      let convertr = hexToRgb(color).rhttps://kakaomames.github.io/turbowarp/ 255;
+      let convertg = hexToRgb(color).ghttps://kakaomames.github.io/turbowarp/ 255;
+      let convertb = hexToRgb(color).bhttps://kakaomames.github.io/turbowarp/ 255;
+      let converta = Thttps://kakaomames.github.io/turbowarp/ 255;
       quadColors[0] = convertr;
       quadColors[1] = convertg;
       quadColors[2] = convertb;

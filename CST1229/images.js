@@ -1,8 +1,8 @@
-// Name: Images
-// ID: images
-// Description: Some blocks for working with images.
-// Original: CST1229 <https://scratch.mit.edu/users/CST1229/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Images
+https://kakaomames.github.io/turbowarp/ ID: images
+https://kakaomames.github.io/turbowarp/ Description: Some blocks for working with images.
+https://kakaomames.github.io/turbowarp/ Original: CST1229 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/CST122https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -46,13 +46,13 @@
             arguments: {
               IMAGEURL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./robot.png",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/robot.png",
               },
             },
             disableMonitor: true,
           },
 
-          // hidden because of bugs
+         https://kakaomames.github.io/turbowarp// hidden because of bugs
           {
             opcode: "penTrailsImage",
             blockType: Scratch.BlockType.REPORTER,
@@ -72,15 +72,15 @@
                 defaultValue: "width",
               },
               IMG: {
-                // Intentional null input to require dropping a block in
+               https://kakaomames.github.io/turbowarp// Intentional null input to require dropping a block in
                 type: null,
                 defaultValue: "",
               },
             },
             disableMonitor: true,
           },
-          // legacy block, for compatiblity with projects that
-          // used images v1
+         https://kakaomames.github.io/turbowarp// legacy block, for compatiblity with projects that
+         https://kakaomames.github.io/turbowarp// used images v1
           {
             opcode: "drawImage",
             blockType: Scratch.BlockType.COMMAND,
@@ -89,7 +89,7 @@
             ),
             arguments: {
               IMG: {
-                // Intentional null input to require dropping a block in
+               https://kakaomames.github.io/turbowarp// Intentional null input to require dropping a block in
                 type: null,
                 defaultValue: "",
               },
@@ -118,7 +118,7 @@
             text: Scratch.translate("switch costume to image [IMG]"),
             arguments: {
               IMG: {
-                // Intentional null input to require dropping a block in
+               https://kakaomames.github.io/turbowarp// Intentional null input to require dropping a block in
                 type: null,
                 defaultValue: "",
               },
@@ -228,16 +228,16 @@
 
         let skinId;
         switch (type) {
-          case "image/svg+xml":
-          case "image/svg":
+          case "imaghttps://kakaomames.github.io/turbowarp/svg+xml":
+          case "imaghttps://kakaomames.github.io/turbowarp/svg":
             skinId = this.render.createSVGSkin(await resp.text());
             break;
-          case "image/png":
-          case "image/bmp":
-          case "image/jpeg":
+          case "imaghttps://kakaomames.github.io/turbowarp/png":
+          case "imaghttps://kakaomames.github.io/turbowarp/bmp":
+          case "imaghttps://kakaomames.github.io/turbowarp/jpeg":
             {
               if (!(await Scratch.canFetch(IMAGEURL))) return;
-              // eslint-disable-next-line extension/check-can-fetch
+             https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
               const image = new Image();
               image.crossOrigin = "anonymous";
               image.src = IMAGEURL;
@@ -261,16 +261,16 @@
       return this._gotImage(this.render._penSkinId);
     }
 
-    // stamp image with position and stretch
-    // (only for compatibility with images v1, requires
-    // making pen create the pen layer first)
+   https://kakaomames.github.io/turbowarp// stamp image with position and stretch
+   https://kakaomames.github.io/turbowarp// (only for compatibility with images v1, requires
+   https://kakaomames.github.io/turbowarp// making pen create the pen layer first)
     drawImage({ IMG, X, Y, XSCALE = 100, YSCALE = 100 }) {
       let drawableID = null;
       try {
         if (!this.render._penSkinId) return;
         if (!this.render._allSkins[IMG] || !this.validImages.has(IMG)) return;
 
-        // Create a temporary drawable to stamp the image
+       https://kakaomames.github.io/turbowarp// Create a temporary drawable to stamp the image
         drawableID = this.render.createDrawable("sprite");
         const img = this.render._allDrawables[drawableID];
         img.updateVisible(false);
@@ -282,7 +282,7 @@
       } catch (e) {
         console.error("Error drawing image:", e);
       } finally {
-        // Delete the temporary drawable
+       https://kakaomames.github.io/turbowarp// Delete the temporary drawable
         if (drawableID !== null) {
           this.render.destroyDrawable(drawableID, "sprite");
         }
@@ -305,7 +305,7 @@
         this._deleteImage(IMG);
 
         for (const target of targetsToReset) {
-          // Reset costume
+         https://kakaomames.github.io/turbowarp// Reset costume
           target.updateAllDrawableProperties();
         }
       } catch (e) {
@@ -318,7 +318,7 @@
           this._deleteImage(skinId);
         }
         for (const target of this.vm.runtime.targets) {
-          // Reset costume
+         https://kakaomames.github.io/turbowarp// Reset costume
           target.updateAllDrawableProperties();
         }
       } catch (e) {
@@ -361,7 +361,7 @@
       let returnValue = 0;
       let drawableID = null;
       try {
-        // Create a temporary drawable to query the image
+       https://kakaomames.github.io/turbowarp// Create a temporary drawable to query the image
         drawableID = this.render.createDrawable("sprite");
         const img = this.render._allDrawables[drawableID];
         img.updateVisible(false);
@@ -401,12 +401,12 @@
       } catch (e) {
         console.error("Error querying image:", e);
       } finally {
-        // Delete the temporary drawable
+       https://kakaomames.github.io/turbowarp// Delete the temporary drawable
         if (drawableID !== null) {
           this.render._allDrawables[drawableID].dispose();
         }
       }
-      return Math.round(returnValue / 0.01) * 0.01;
+      return Math.round(returnValuehttps://kakaomames.github.io/turbowarp/ 0.01) * 0.01;
     }
   }
 

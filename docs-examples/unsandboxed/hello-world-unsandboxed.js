@@ -1,4 +1,4 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';

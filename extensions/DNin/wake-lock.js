@@ -1,8 +1,8 @@
-// Name: Wake Lock
-// ID: dninwakelock
-// Description: Prevent the computer from falling asleep.
-// By: D-ScratchNinja <https://scratch.mit.edu/users/D-ScratchNinja/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Wake Lock
+https://kakaomames.github.io/turbowarp/ ID: dninwakelock
+https://kakaomames.github.io/turbowarp/ Description: Prevent the computer from falling asleep.
+https://kakaomames.github.io/turbowarp/ By: D-ScratchNinja <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/D-ScratchNinjhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -11,7 +11,7 @@
     throw new Error("Wake Lock extension must run unsandboxed");
   }
 
-  /** @type {WakeLockSentinel} */
+ https://kakaomames.github.io/turbowarp/** @type {WakeLockSentinel} https://kakaomames.github.io/turbowarp/
   let wakeLock = null;
   let latestEnabled = false;
   let promise = Promise.resolve();
@@ -22,7 +22,7 @@
       this.runtime.on("PROJECT_STOP_ALL", this.stopAll.bind(this));
 
       document.addEventListener("visibilitychange", () => {
-        // If enabled, reacquire wake lock when document becomes visible again
+       https://kakaomames.github.io/turbowarp// If enabled, reacquire wake lock when document becomes visible again
         if (wakeLock !== null && document.visibilityState === "visible") {
           latestEnabled = false;
           this.setWakeLock({
@@ -36,7 +36,7 @@
       return {
         id: "dninwakelock",
         name: Scratch.translate("Wake Lock"),
-        docsURI: "./DNin/wake-lock",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/DNihttps://kakaomames.github.io/turbowarp/wake-lock",
         blocks: [
           {
             opcode: "setWakeLock",
@@ -85,12 +85,12 @@
 
     setWakeLock(args) {
       if (!navigator.wakeLock) {
-        // Not supported in this browser.
+       https://kakaomames.github.io/turbowarp// Not supported in this browser.
         return;
       }
       const enable = Scratch.Cast.toBoolean(args.enabled);
       if (enable && document.visibilityState === "hidden") {
-        // Can't request wake lock while document is hidden.
+       https://kakaomames.github.io/turbowarp// Can't request wake lock while document is hidden.
         return;
       }
 
@@ -103,7 +103,7 @@
             wakeLock = sentinel;
             wakeLock.addEventListener("release", () => {
               if (document.visibilityState === "visible") {
-                // If the document is hidden, wake lock should be reacquired when it's visible again.
+               https://kakaomames.github.io/turbowarp// If the document is hidden, wake lock should be reacquired when it's visible again.
                 wakeLock = null;
                 latestEnabled = false;
               }
@@ -111,7 +111,7 @@
           })
           .catch((error) => {
             console.error(error);
-            // Allow to retry
+           https://kakaomames.github.io/turbowarp// Allow to retry
             latestEnabled = false;
           });
         return promise;
@@ -121,7 +121,7 @@
             if (wakeLock) {
               return wakeLock.release();
             } else {
-              // Attempt to enable in the first place didn't work
+             https://kakaomames.github.io/turbowarp// Attempt to enable in the first place didn't work
             }
           })
           .then(() => {

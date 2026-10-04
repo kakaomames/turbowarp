@@ -34,13 +34,13 @@
             )
               return;
             ((Blockly.getMainWorkspace().options.zoomOptions.maxScale =
-              t.settings.get("maxZoom") / 100),
+              t.settings.get("maxZoom")https://kakaomames.github.io/turbowarp/ 100),
               (Blockly.getMainWorkspace().options.zoomOptions.minScale =
-                t.settings.get("minZoom") / 100),
+                t.settings.get("minZoom")https://kakaomames.github.io/turbowarp/ 100),
               (Blockly.getMainWorkspace().options.zoomOptions.startScale =
-                t.settings.get("startZoom") / 100),
+                t.settings.get("startZoom")https://kakaomames.github.io/turbowarp/ 100),
               (Blockly.getMainWorkspace().options.zoomOptions.scaleSpeed =
-                1 + (t.settings.get("zoomSpeed") / 100) * 0.2));
+                1 + (t.settings.get("zoomSpeed")https://kakaomames.github.io/turbowarp/ 100) * 0.2));
             const o = c(),
               e = t.settings.get("autohide");
             if ((o && o.classList.toggle("sa-custom-zoom-hidden", e), e)) {

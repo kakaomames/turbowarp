@@ -1,8 +1,8 @@
-// Name: Screen Resolution
-// ID: shreder95resolution
-// Description: Get the resolution of the primary screen.
-// By: shreder95ua <https://scratch.mit.edu/users/shreder95ua/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Screen Resolution
+https://kakaomames.github.io/turbowarp/ ID: shreder95resolution
+https://kakaomames.github.io/turbowarp/ Description: Get the resolution of the primary screen.
+https://kakaomames.github.io/turbowarp/ By: shreder95ua <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/shreder95uhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";

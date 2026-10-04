@@ -1,8 +1,8 @@
-// Name: More Motion
-// ID: nkmoremotion
-// Description: More motion-related blocks.
-// By: NamelessCat <https://scratch.mit.edu/users/NamelessCat/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: More Motion
+https://kakaomames.github.io/turbowarp/ ID: nkmoremotion
+https://kakaomames.github.io/turbowarp/ Description: More motion-related blocks.
+https://kakaomames.github.io/turbowarp/ By: NamelessCat <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/NamelessCahttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -11,7 +11,7 @@
     throw new Error("More Motion must run unsandboxed");
   }
 
-  // @ts-expect-error - not typed yet
+ https://kakaomames.github.io/turbowarp// @ts-expect-error - not typed yet
   const Rectangle = Scratch.vm.renderer.exports.Rectangle;
 
   class nkmoremotion {
@@ -25,11 +25,11 @@
           {
             filter: [Scratch.TargetType.STAGE],
             blockType: Scratch.BlockType.LABEL,
-            // We can copy this translation from scratch-blocks
+           https://kakaomames.github.io/turbowarp// We can copy this translation from scratch-blocks
             text:
               typeof ScratchBlocks !== "undefined"
                 ? ScratchBlocks.Msg["MOTION_STAGE_SELECTED"]
-                : // This is just fallback for non-editor environments, don't need to translate
+                :https://kakaomames.github.io/turbowarp// This is just fallback for non-editor environments, don't need to translate
                   "Stage selected: no motion blocks",
           },
           {
@@ -279,7 +279,7 @@
       const x = Scratch.Cast.toNumber(args.X);
       const y = Scratch.Cast.toNumber(args.Y);
       util.target.setDirection(
-        (180 / Math.PI) * Math.atan2(x - util.target.x, y - util.target.y)
+        (180https://kakaomames.github.io/turbowarp/ Math.PI) * Math.atan2(x - util.target.x, y - util.target.y)
       );
     }
 
@@ -296,33 +296,33 @@
     }
 
     directionto(args, util) {
-      // Old version, returns values from -90 to 270
+     https://kakaomames.github.io/turbowarp// Old version, returns values from -90 to 270
       const x = Scratch.Cast.toNumber(args.X);
       const y = Scratch.Cast.toNumber(args.Y);
       if (util.target.y > y) {
         return (
-          (180 / Math.PI) *
-            Math.atan((x - util.target.x) / (y - util.target.y)) +
+          (180https://kakaomames.github.io/turbowarp/ Math.PI) *
+            Math.atan((x - util.target.x)https://kakaomames.github.io/turbowarp/ (y - util.target.y)) +
           180
         );
       } else {
         return (
-          (180 / Math.PI) * Math.atan((x - util.target.x) / (y - util.target.y))
+          (180https://kakaomames.github.io/turbowarp/ Math.PI) * Math.atan((x - util.target.x)https://kakaomames.github.io/turbowarp/ (y - util.target.y))
         );
       }
     }
 
     directionto2(args, util) {
-      // New version, returns values from -180 to 180, like Scratch direction reporter.
+     https://kakaomames.github.io/turbowarp// New version, returns values from -180 to 180, like Scratch direction reporter.
       const x = Scratch.Cast.toNumber(args.X);
       const y = Scratch.Cast.toNumber(args.Y);
-      return (180 / Math.PI) * Math.atan2(x - util.target.x, y - util.target.y);
+      return (180https://kakaomames.github.io/turbowarp/ Math.PI) * Math.atan2(x - util.target.x, y - util.target.y);
     }
 
     distanceto(args, util) {
       const x = Scratch.Cast.toNumber(args.X);
       const y = Scratch.Cast.toNumber(args.Y);
-      // Shoutout to Pythagoras!
+     https://kakaomames.github.io/turbowarp// Shoutout to Pythagoras!
       return Math.sqrt((x - util.target.x) ** 2 + (y - util.target.y) ** 2);
     }
 
@@ -331,7 +331,7 @@
       const y = Scratch.Cast.toNumber(args.Y);
       const steps = Scratch.Cast.toNumber(args.STEPS);
       const val =
-        steps / Math.sqrt((x - util.target.x) ** 2 + (y - util.target.y) ** 2);
+        stepshttps://kakaomames.github.io/turbowarp/ Math.sqrt((x - util.target.x) ** 2 + (y - util.target.y) ** 2);
       if (val >= 1) {
         util.target.setXY(x, y);
       } else {
@@ -346,10 +346,10 @@
       const x = Scratch.Cast.toNumber(args.X);
       const y = Scratch.Cast.toNumber(args.Y);
       const val = Scratch.Cast.toNumber(args.PERCENT);
-      // Essentially a smooth glide script.
+     https://kakaomames.github.io/turbowarp// Essentially a smooth glide script.
       util.target.setXY(
-        (x - util.target.x) * (val / 100) + util.target.x,
-        (y - util.target.y) * (val / 100) + util.target.y
+        (x - util.target.x) * (valhttps://kakaomames.github.io/turbowarp/ 100) + util.target.x,
+        (y - util.target.y) * (valhttps://kakaomames.github.io/turbowarp/ 100) + util.target.y
       );
     }
 
@@ -359,7 +359,7 @@
       let bottom = Scratch.Cast.toNumber(args.Y1);
       let top = Scratch.Cast.toNumber(args.Y2);
 
-      // Fix argument order if they got it backwards
+     https://kakaomames.github.io/turbowarp// Fix argument order if they got it backwards
       if (left > right) {
         let temp = left;
         left = right;
@@ -377,7 +377,7 @@
         return false;
       }
 
-      // See renderer.isTouchingDrawables
+     https://kakaomames.github.io/turbowarp// See renderer.isTouchingDrawables
 
       const drawableBounds = drawable.getFastBounds();
       drawableBounds.snapToInt();
@@ -402,7 +402,7 @@
           y < intersectingBounds.top;
           y++
         ) {
-          // technically should be a twgl vec3, but does not actually need to be
+         https://kakaomames.github.io/turbowarp// technically should be a twgl vec3, but does not actually need to be
           if (drawable.isTouching([x, y])) {
             return true;
           }
@@ -419,7 +419,7 @@
       if (!drawable) {
         return false;
       }
-      // Position should technically be a twgl vec3, but it doesn't actually need to be
+     https://kakaomames.github.io/turbowarp// Position should technically be a twgl vec3, but it doesn't actually need to be
       drawable.updateCPURenderAttributes();
       return drawable.isTouching([x, y]);
     }

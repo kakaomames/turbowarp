@@ -4,7 +4,7 @@
     1733: function (e, t, n) {
       (e.exports = n(9)(!1)).push([
         e.i,
-        '[dir="ltr"] .sa-gamepad-container {\n  margin-right: 0.2rem;\n}\n[dir="rtl"] .sa-gamepad-container {\n  margin-left: 0.2rem;\n}\n\n.sa-gamepad-popup-outer {\n  /* above fullscreen */\n  z-index: 99999;\n}\n.sa-gamepad-popup {\n  box-sizing: border-box;\n  width: 700px;\n  max-height: min(800px, 85vh);\n  height: 100%;\n  max-width: 85%;\n  margin: 50px auto;\n  display: flex;\n  flex-direction: column;\n}\n.sa-gamepad-popup-content {\n  padding: 1.5rem 2.25rem;\n  height: 100%;\n  overflow-y: auto;\n}\n\n.sa-gamepad-popup [class*="modal_header-item-title"] {\n  margin: 0 -20rem 0 0;\n}\n\n.sa-gamepad-cursor {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 9999;\n  user-select: none;\n  pointer-events: none;\n  will-change: transform;\n  image-rendering: optimizeSpeed;\n  image-rendering: crisp-edges;\n  image-rendering: pixelated;\n}\n.sa-gamepad-cursor-down {\n  filter: invert(100%);\n}\n\n.sa-gamepad-small .sa-gamepad-container[data-editor-mode="editor"] {\n  display: none !important;\n}\n\n.sa-gamepad-hide-cursor [class^="stage_stage_"] {\n  cursor: none;\n}\n\n.sa-gamepad-browser-support-warning {\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.sa-gamepad-extra-options {\n  display: none;\n}\n.sa-gamepad-has-controller .sa-gamepad-extra-options {\n  display: block;\n}\n\n.sa-gamepad-store-settings {\n  display: block;\n}\n.sa-gamepad-store-settings > input {\n  margin-right: 4px;\n}\n\n.sa-gamepad-reset-button {\n  margin: 8px 8px 8px 0;\n}\n',
+        '[dir="ltr"] .sa-gamepad-container {\n  margin-right: 0.2rem;\n}\n[dir="rtl"] .sa-gamepad-container {\n  margin-left: 0.2rem;\n}\n\n.sa-gamepad-popup-outer {\n https://kakaomames.github.io/turbowarp/* above fullscreen https://kakaomames.github.io/turbowarp/\n  z-index: 99999;\n}\n.sa-gamepad-popup {\n  box-sizing: border-box;\n  width: 700px;\n  max-height: min(800px, 85vh);\n  height: 100%;\n  max-width: 85%;\n  margin: 50px auto;\n  display: flex;\n  flex-direction: column;\n}\n.sa-gamepad-popup-content {\n  padding: 1.5rem 2.25rem;\n  height: 100%;\n  overflow-y: auto;\n}\n\n.sa-gamepad-popup [class*="modal_header-item-title"] {\n  margin: 0 -20rem 0 0;\n}\n\n.sa-gamepad-cursor {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 9999;\n  user-select: none;\n  pointer-events: none;\n  will-change: transform;\n  image-rendering: optimizeSpeed;\n  image-rendering: crisp-edges;\n  image-rendering: pixelated;\n}\n.sa-gamepad-cursor-down {\n  filter: invert(100%);\n}\n\n.sa-gamepad-small .sa-gamepad-container[data-editor-mode="editor"] {\n  display: none !important;\n}\n\n.sa-gamepad-hide-cursor [class^="stage_stage_"] {\n  cursor: none;\n}\n\n.sa-gamepad-browser-support-warning {\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.sa-gamepad-extra-options {\n  display: none;\n}\n.sa-gamepad-has-controller .sa-gamepad-extra-options {\n  display: block;\n}\n\n.sa-gamepad-store-settings {\n  display: block;\n}\n.sa-gamepad-store-settings > input {\n  margin-right: 4px;\n}\n\n.sa-gamepad-reset-button {\n  margin: 8px 8px 8px 0;\n}\n',
         "",
       ]);
     },
@@ -19,7 +19,7 @@
       ]);
     },
     1735: function (e, t, n) {
-      e.exports = n.p + "static/assets/88a77444f0bb453209bf1c62becbd37c.svg";
+      e.exports = n.p + "statihttps://kakaomames.github.io/turbowarp/assethttps://kakaomames.github.io/turbowarp/88a77444f0bb453209bf1c62becbd37c.svg";
     },
     1761: function (e, t, n) {
       "use strict";
@@ -207,10 +207,10 @@
             (this.virtualCursor = {
               x: 0,
               y: 0,
-              maxX: 1 / 0,
-              minX: -1 / 0,
-              maxY: 1 / 0,
-              minY: -1 / 0,
+              maxX: 1https://kakaomames.github.io/turbowarp/ 0,
+              minX: -1https://kakaomames.github.io/turbowarp/ 0,
+              maxY: 1https://kakaomames.github.io/turbowarp/ 0,
+              minY: -1https://kakaomames.github.io/turbowarp/ 0,
               modified: !1,
             }),
             (this._editor = null),
@@ -314,7 +314,7 @@
             const n = t.deadZone;
             let a;
             if ((e >= n && (a = t.high), e <= -n && (a = t.low), a)) {
-              const s = (Math.abs(e) - n) / (1 - n),
+              const s = (Math.abs(e) - n)https://kakaomames.github.io/turbowarp/ (1 - n),
                 i = s * s * t.sensitivity * this.deltaTime;
               ("+x" === a
                 ? (this.virtualCursor.x += i)
@@ -465,7 +465,7 @@
                       ? this.msg("key-enter")
                       : 1 === e.length
                         ? e.toUpperCase()
-                        : e.replace(/[a-z]([A-Z])/, (e) =>
+                        : e.replacehttps://kakaomames.github.io/turbowarp/[a-z]([A-Z]https://kakaomames.github.io/turbowarp/, (e) =>
                             "".concat(e[0], " ").concat(e[1]),
                           );
         }
@@ -875,7 +875,7 @@
             r = () => {
               const e = a.runtime.getTargetForStage().comments;
               for (const t of Object.values(e))
-                if (t.text.includes(" // _gamepad_")) return t;
+                if (t.text.includes("https://kakaomames.github.io/turbowarp// _gamepad_")) return t;
               return null;
             };
           f.setConsole(t);
@@ -886,13 +886,13 @@
               if (!e) return null;
               const n = e.text
                 .split("\n")
-                .find((e) => e.endsWith(" // _gamepad_"));
+                .find((e) => e.endsWith("https://kakaomames.github.io/turbowarp// _gamepad_"));
               if (!n)
                 return (
                   t.warn("Gamepad comment does not contain valid line"),
                   null
                 );
-              const a = n.substr(0, n.length - " // _gamepad_".length);
+              const a = n.substr(0, n.length - "https://kakaomames.github.io/turbowarp// _gamepad_".length);
               let s;
               try {
                 if (
@@ -942,7 +942,7 @@
           let b;
           ((y.className = e.tab.scratchClass("stage-header_stage-button-icon")),
             (y.draggable = !1),
-            (y.src = e.self.getResource("/gamepad.svg")),
+            (y.src = e.self.getResource(https://kakaomames.github.io/turbowarp/gamepad.svg")),
             m.appendChild(y),
             g.appendChild(m),
             u.appendChild(g));
@@ -958,7 +958,7 @@
               const s = ""
                   .concat(n("config-header"), "\n")
                   .concat(JSON.stringify(e))
-                  .concat(" // _gamepad_"),
+                  .concat("https://kakaomames.github.io/turbowarp// _gamepad_"),
                 i = r();
               if (i) i.text = s;
               else {
@@ -1094,7 +1094,7 @@
           let L;
           ((M.hidden = !0),
             (M.className = "sa-gamepad-cursor"),
-            (M.src = e.self.getResource("/cursor.png")),
+            (M.src = e.self.getResource(https://kakaomames.github.io/turbowarp/cursor.png")),
             e.self.addEventListener("disabled", () => {
               M.hidden = !0;
             }));
@@ -1143,8 +1143,8 @@
                   {
                     canvasWidth: n,
                     canvasHeight: i,
-                    x: (O + c / 2) * (n / c),
-                    y: (i / p) * (p / 2 - S),
+                    x: (O + chttps://kakaomames.github.io/turbowarp/ 2) * (nhttps://kakaomames.github.io/turbowarp/ c),
+                    y: (ihttps://kakaomames.github.io/turbowarp/ p) * (phttps://kakaomames.github.io/turbowarp/ 2 - S),
                   },
                 ),
               );
@@ -1172,8 +1172,8 @@
                   (S = e.detail.y),
                   ((e, t) => {
                     D(!0);
-                    const n = c / 2 + e - 3,
-                      a = p / 2 - t - 3;
+                    const n = chttps://kakaomames.github.io/turbowarp/ 2 + e - 3,
+                      a = phttps://kakaomames.github.io/turbowarp/ 2 - t - 3;
                     M.style.transform = "translate("
                       .concat(n, "px, ")
                       .concat(a, "px)");
@@ -1187,10 +1187,10 @@
               {
                 markAsSeen: !0,
                 reduxEvents: [
-                  "scratch-gui/mode/SET_PLAYER",
-                  "scratch-gui/mode/SET_FULL_SCREEN",
-                  "fontsLoaded/SET_FONTS_LOADED",
-                  "scratch-gui/locales/SELECT_LOCALE",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_FULL_SCREEN",
+                  "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
                 ],
               },
             );
@@ -1214,15 +1214,15 @@
         "style.css": M.a,
         "gamepadlib.css": D.a,
         "active.png":
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGAQMAAADaAn0LAAAABlBMVEX///8AAABVwtN+AAAADklEQVQI12MAAQMgBAIAAkwAYUis6mUAAAAASUVORK5CYII=",
+          "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGAQMAAADaAn0LAAAABlBMVEhttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/8AAABVwtN+AAAADklEQVQI12MAAQMgBAIAAkwAYUis6mUAAAAASUVORK5CYII=",
         "close.svg":
-          "data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDcuNDggNy40OCI+PHBhdGggZD0iTTMuNzQgNi40OFYxTTEgMy43NGg1LjQ4IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4Ii8+PC9zdmc+",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDcuNDggNy40OCI+PHBhdGggZD0iTTMuNzQgNi40OFYxTTEgMy43NGg1LjQ4IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4Ii8+PC9zdmc+",
         "cursor.png":
-          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGAQMAAADaAn0LAAAABlBMVEUAAAD///+l2Z/dAAAADklEQVQI12MAAQMgBAIAAkwAYUis6mUAAAAASUVORK5CYII=",
+          "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGAQMAAADaAn0LAAAABlBMVEUAAAhttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/+l2https://kakaomames.github.io/turbowarp/dAAAADklEQVQI12MAAQMgBAIAAkwAYUis6mUAAAAASUVORK5CYII=",
         "dot.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCAyLjExNyAyLjExNyI+PGNpcmNsZSBjeD0iMS4wNTgiIGN5PSIxLjA1OCIgcj0iMS4wNTgiIGZpbGw9InJlZCIvPjwvc3ZnPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCAyLjExNyAyLjExNyI+PGNpcmNsZSBjeD0iMS4wNTgiIGN5PSIxLjA1OCIgcj0iMS4wNTgiIGZpbGw9InJlZCIvPjwvc3ZnPg==",
         "gamepad.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgc3R5bGU9Ii1tcy10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7LXdlYmtpdC10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7dHJhbnNmb3JtOnJvdGF0ZSgzNjBkZWcpIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzU3NWU3NSIgZD0iTTM2OCAxNjhoLTk2di02NGgxNzZhMjQuMDI3IDI0LjAyNyAwIDAgMCAyNC0yNFYxNmgtMzJ2NTZIMjY0YTI0LjAyNyAyNC4wMjcgMCAwIDAtMjQgMjR2NzJoLTk2QTEyOC4xNDUgMTI4LjE0NSAwIDAgMCAxNiAyOTZ2MTAwLjk1M0E5MS4xNSA5MS4xNSAwIDAgMCAxMDcuMDQ3IDQ4OGgxLjhhOTAuODA3IDkwLjgwNyAwIDAgMCA2OS45NTMtMzIuNzZMMjMxLjUgMzkyaDQ4LjYyOGw1Mi42NjYgNjguNDY1QTkxLjA0NiA5MS4wNDYgMCAwIDAgNDk2IDQwNC45NTNWMjk2YTEyOC4xNDUgMTI4LjE0NSAwIDAgMC0xMjgtMTI4em05NiAyMzYuOTUzYTU5LjA0NyA1OS4wNDcgMCAwIDEtMTA1Ljg0OSAzNkwyOTUuODc4IDM2MGgtNzkuMzcybC02Mi4yOTQgNzQuNzU0QTU4Ljg5MyA1OC44OTMgMCAwIDEgMTA4Ljg1IDQ1NmgtMS44QTU5LjExMyA1OS4xMTMgMCAwIDEgNDggMzk2Ljk1M1YyOTZhOTYuMTA4IDk2LjEwOCAwIDAgMSA5Ni05NmgyMjRhOTYuMTA4IDk2LjEwOCAwIDAgMSA5NiA5NnoiLz48cGF0aCBmaWxsPSIjNTc1ZTc1IiBkPSJNMzYwIDI0OGgzMnYzMmgtMzJ6bTAgODBoMzJ2MzJoLTMyem0tNDAtNDBoMzJ2MzJoLTMyem04MCAwaDMydjMyaC0zMnptLTI0OC00MGgtMzJ2NDBIODB2MzJoNDB2NDBoMzJ2LTQwaDQwdi0zMmgtNDB2LTQweiIvPjwvc3ZnPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgc3R5bGU9Ii1tcy10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7LXdlYmtpdC10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7dHJhbnNmb3JtOnJvdGF0ZSgzNjBkZWcpIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzU3NWU3NSIgZD0iTTM2OCAxNjhoLTk2di02NGgxNzZhMjQuMDI3IDI0LjAyNyAwIDAgMCAyNC0yNFYxNmgtMzJ2NTZIMjY0YTI0LjAyNyAyNC4wMjcgMCAwIDAtMjQgMjR2NzJoLTk2QTEyOC4xNDUgMTI4LjE0NSAwIDAgMCAxNiAyOTZ2MTAwLjk1M0E5MS4xNSA5MS4xNSAwIDAgMCAxMDcuMDQ3IDQ4OGgxLjhhOTAuODA3IDkwLjgwNyAwIDAgMCA2OS45NTMtMzIuNzZMMjMxLjUgMzkyaDQ4LjYyOGw1Mi42NjYgNjguNDY1QTkxLjA0NiA5MS4wNDYgMCAwIDAgNDk2IDQwNC45NTNWMjk2YTEyOC4xNDUgMTI4LjE0NSAwIDAgMC0xMjgtMTI4em05NiAyMzYuOTUzYTU5LjA0NyA1OS4wNDcgMCAwIDEtMTA1Ljg0OSAzNkwyOTUuODc4IDM2MGgtNzkuMzcybC02Mi4yOTQgNzQuNzU0QTU4Ljg5MyA1OC44OTMgMCAwIDEgMTA4Ljg1IDQ1NmgtMS44QTU5LjExMyA1OS4xMTMgMCAwIDEgNDggMzk2Ljk1M1YyOTZhOTYuMTA4IDk2LjEwOCAwIDAgMSA5Ni05NmgyMjRhOTYuMTA4IDk2LjEwOCAwIDAgMSA5NiA5NnoiLz48cGF0aCBmaWxsPSIjNTc1ZTc1IiBkPSJNMzYwIDI0OGgzMnYzMmgtMzJ6bTAgODBoMzJ2MzJoLTMyem0tNDAtNDBoMzJ2MzJoLTMyem04MCAwaDMydjMyaC0zMnptLTI0OC00MGgtMzJ2NDBIODB2MzJoNDB2NDBoMzJ2LTQwaDQwdi0zMmgtNDB2LTQweiIvPjwvc3ZnPg==",
       };
     },
   },

@@ -1,32 +1,32 @@
-// Name: More Timers
-// ID: lmsTimers
-// Description: Control several timers at once.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: More Timers
+https://kakaomames.github.io/turbowarp/ ID: lmsTimers
+https://kakaomames.github.io/turbowarp/ Description: Control several timers at once.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 (function (Scratch) {
   "use strict";
 
   const vm = Scratch.vm;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @typedef Timer
    * @property {number} startTime
    * @property {number} pauseTime
    * @property {boolean} paused
-   */
+   https://kakaomames.github.io/turbowarp/
 
-  /** @type {Record<string, Timer>} */
+ https://kakaomames.github.io/turbowarp/** @type {Record<string, Timer>} https://kakaomames.github.io/turbowarp/
   let timers = Object.create(null);
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {Timer} timer
    * @return {number}
-   */
+   https://kakaomames.github.io/turbowarp/
   const timerValue = (timer) => {
     return (
       ((timer.paused ? 0 : Math.floor(performance.now()) - timer.startTime) +
-        timer.pauseTime) /
+        timer.pauseTime)https://kakaomames.github.io/turbowarp/
       1000
     );
   };
@@ -73,7 +73,7 @@
             opcode: "startResetTimer",
             blockType: Scratch.BlockType.COMMAND,
             extensions: ["colours_sensing"],
-            text: Scratch.translate("start/reset timer [TIMER]"),
+            text: Scratch.translate("starhttps://kakaomames.github.io/turbowarp/reset timer [TIMER]"),
             arguments: {
               TIMER: {
                 type: Scratch.ArgumentType.STRING,
@@ -198,7 +198,7 @@
         ],
         menus: {
           operation: {
-            // false for Scratch parity
+           https://kakaomames.github.io/turbowarp// false for Scratch parity
             acceptReporters: false,
             items: [">", "<"],
           },
@@ -272,18 +272,18 @@
     }
   }
 
-  // "Extension" option reimplementation by Xeltalliv
-  // https://github.com/Xeltalliv/extensions/blob/examples/examples/extension-colors.js
+ https://kakaomames.github.io/turbowarp// "Extension" option reimplementation by Xeltalliv
+ https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/Xeltallihttps://kakaomames.github.io/turbowarp/extensionhttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/examplehttps://kakaomames.github.io/turbowarp/examplehttps://kakaomames.github.io/turbowarp/extension-colors.js
 
-  // const cbfsb = Scratch.vm.runtime._convertBlockForScratchBlocks.bind(Scratch.vm.runtime);
-  // Scratch.vm.runtime._convertBlockForScratchBlocks = function(blockInfo, categoryInfo) {
-  //   const res = cbfsb(blockInfo, categoryInfo);
-  //   if (blockInfo.extensions) {
-  //     if (!res.json.extensions) res.json.extensions = [];
-  //     res.json.extensions.push(...blockInfo.extensions);
-  //   }
-  //   return res;
-  // };
+ https://kakaomames.github.io/turbowarp// const cbfsb = Scratch.vm.runtime._convertBlockForScratchBlocks.bind(Scratch.vm.runtime);
+ https://kakaomames.github.io/turbowarp// Scratch.vm.runtime._convertBlockForScratchBlocks = function(blockInfo, categoryInfo) {
+ https://kakaomames.github.io/turbowarp//   const res = cbfsb(blockInfo, categoryInfo);
+ https://kakaomames.github.io/turbowarp//   if (blockInfo.extensions) {
+ https://kakaomames.github.io/turbowarp//     if (!res.json.extensions) res.json.extensions = [];
+ https://kakaomames.github.io/turbowarp//     res.json.extensions.push(...blockInfo.extensions);
+ https://kakaomames.github.io/turbowarp//   }
+ https://kakaomames.github.io/turbowarp//   return res;
+ https://kakaomames.github.io/turbowarp// };
 
   Scratch.extensions.register(new Timers());
 })(Scratch);

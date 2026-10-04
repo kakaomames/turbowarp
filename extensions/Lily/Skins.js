@@ -1,8 +1,8 @@
-// Name: Skins
-// ID: lmsSkins
-// Description: Have your sprites render as other images or costumes.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Skins
+https://kakaomames.github.io/turbowarp/ ID: lmsSkins
+https://kakaomames.github.io/turbowarp/ Description: Have your sprites render as other images or costumes.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 (function (Scratch) {
   "use strict";
@@ -27,12 +27,12 @@
     if (!skinId) return;
     const svgSkin = renderer._allSkins[skinId];
     if (!svgSkin) return;
-    // To prevent a issue in the skin loading we will override the onload event ourself.
+   https://kakaomames.github.io/turbowarp// To prevent a issue in the skin loading we will override the onload event ourself.
     const _onload = svgSkin._svgImage.onload;
-    svgSkin._svgImage.onload = /**
+    svgSkin._svgImage.onload =https://kakaomames.github.io/turbowarp/**
      * @this {RenderWebGL.SVGSkin}
-     */ function (ev) {
-      // Reimplement the begining logic of SVGSkin to fix a loading error.
+     https://kakaomames.github.io/turbowarp/ function (ev) {
+     https://kakaomames.github.io/turbowarp// Reimplement the begining logic of SVGSkin to fix a loading error.
       if (!this._size) throw "_size race";
       if (this._size[0] === 0 || this._size[1] === 0) {
         Object.getPrototypeOf(
@@ -54,8 +54,8 @@
       const rotationCenter = this.calculateRotationCenter();
       if (!Array.isArray(rotationCenter)) throw "rotationCenter race";
       if (!Array.isArray(this._rotationCenter)) {
-        // This can happen if the file is loaded too fast.
-        // We will handle creating this ourselves to prevent a swarm of errors.
+       https://kakaomames.github.io/turbowarp// This can happen if the file is loaded too fast.
+       https://kakaomames.github.io/turbowarp// We will handle creating this ourselves to prevent a swarm of errors.
         this._rotationCenter = [0, 0];
       }
       return _onload.call(this, ev);
@@ -63,10 +63,10 @@
     return skinId;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {RenderWebGL.SVGSkin} svgSkin
    * @returns {Promise<boolean>}
-   */
+   https://kakaomames.github.io/turbowarp/
   const svgSkinFinishedLoading = (svgSkin) =>
     new Promise((resolve) => {
       if (svgSkin._svgImageLoaded) {
@@ -101,7 +101,7 @@
         color1: "#6b56ff",
         color2: "#604de6",
         color3: "#5645cc",
-        docsURI: "./Lily/Skins",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/Lilhttps://kakaomames.github.io/turbowarp/Skins",
         blocks: [
           {
             opcode: "registerSVGSkin",
@@ -110,7 +110,7 @@
             arguments: {
               SVG: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<svg />",
+                defaultValue: "<svghttps://kakaomames.github.io/turbowarp/>",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,
@@ -142,7 +142,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./dango.png",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/dango.png",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,
@@ -277,7 +277,7 @@
       if (typeof skinName !== "undefined") {
         if (createdSkins[skinName] !== skinId) {
           throw new Error(
-            `Lily/Skins: skinName "${skinName}" mismatched with skinId "${skinId}". actual value of "${
+            `Lilhttps://kakaomames.github.io/turbowarp/Skins: skinName "${skinName}" mismatched with skinId "${skinId}". actual value of "${
               skinName
             }" is "${createdSkins[skinName]}". please report this to the developers`
           );
@@ -295,7 +295,7 @@
         oldSkinId = createdSkins[skinName];
       }
 
-      // This generally takes a few frames, so yield the block
+     https://kakaomames.github.io/turbowarp// This generally takes a few frames, so yield the block
       const skinId = createSVGSkin(svgData);
       createdSkins[skinName] = skinId;
 
@@ -344,7 +344,7 @@
         try {
           return _onload.apply(skin, args);
         } catch (err) {
-          // Handle a race condition.
+         https://kakaomames.github.io/turbowarp// Handle a race condition.
           if (err !== "rotationCenter race") throw err;
           this._disposeSafe(skinId, skinName);
           return;
@@ -388,7 +388,7 @@
       const skinName = `lms-${Cast.toString(args.NAME)}`;
       if (!createdSkins[skinName]) return;
       const skinId = createdSkins[skinName];
-      // Make sure the skin we are setting still well.. exists.
+     https://kakaomames.github.io/turbowarp// Make sure the skin we are setting still well.. exists.
       if (!renderer._allSkins[skinId]) {
         this._disposeSafe(skinId, skinName);
         return;
@@ -427,7 +427,7 @@
       if (!createdSkins[skinName]) return 0;
       const skinId = createdSkins[skinName];
       if (!skins[skinId]) {
-        // If the skin doesnt exist in the renderer we should probably just delete it on our end...
+       https://kakaomames.github.io/turbowarp// If the skin doesnt exist in the renderer we should probably just delete it on our end...
         this._disposeSafe(skinId, skinName);
         return 0;
       }
@@ -470,7 +470,7 @@
       this._refreshTargetsFromID(skinId, true);
     }
 
-    // Utility Functions
+   https://kakaomames.github.io/turbowarp// Utility Functions
 
     _refreshTargetsFromID(skinId, reset, newId) {
       const drawables = renderer._allDrawables;
@@ -516,14 +516,14 @@
       }
 
       const contentType = imageData.headers.get("Content-Type");
-      if (contentType === "image/svg+xml") {
+      if (contentType === "imaghttps://kakaomames.github.io/turbowarp/svg+xml") {
         return createSVGSkin(await imageData.text(), rotationCenter);
       } else if (
-        contentType === "image/png" ||
-        contentType === "image/jpeg" ||
-        contentType === "image/bmp"
+        contentType === "imaghttps://kakaomames.github.io/turbowarp/png" ||
+        contentType === "imaghttps://kakaomames.github.io/turbowarp/jpeg" ||
+        contentType === "imaghttps://kakaomames.github.io/turbowarp/bmp"
       ) {
-        // eslint-disable-next-line extension/check-can-fetch
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
         const output = new Image();
         output.src = URL;
         output.crossOrigin = "anonymous";

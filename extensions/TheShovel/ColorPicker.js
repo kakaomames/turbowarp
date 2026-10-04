@@ -1,15 +1,15 @@
-// Name: Color Picker
-// ID: shovelColorPicker
-// Description: Access your system's color picker.
-// By: TheShovel
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Color Picker
+https://kakaomames.github.io/turbowarp/ ID: shovelColorPicker
+https://kakaomames.github.io/turbowarp/ Description: Access your system's color picker.
+https://kakaomames.github.io/turbowarp/ By: TheShovel
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
 
   const input = document.createElement("input");
   input.type = "color";
-  input.value = "#9966ff"; // default scratch-paint color
+  input.value = "#9966ff";https://kakaomames.github.io/turbowarp// default scratch-paint color
   input.style.pointerEvents = "none";
   input.style.width = "1px";
   input.style.height = "1px";
@@ -22,7 +22,7 @@
 
   let wasMovedThisTick = false;
   Scratch.vm.runtime.on("AFTER_EXECUTE", () => {
-    // browser will relayout will happen automatically at the end of the frame; we won't need to do anything
+   https://kakaomames.github.io/turbowarp// browser will relayout will happen automatically at the end of the frame; we won't need to do anything
     wasMovedThisTick = false;
   });
 
@@ -136,8 +136,8 @@
     }
 
     showPicker() {
-      // force re-layout if input was moved in the same tick, otherwise in Chrome it will appear in the old location
-      // this can be slow, so we avoid it when we can
+     https://kakaomames.github.io/turbowarp// force re-layout if input was moved in the same tick, otherwise in Chrome it will appear in the old location
+     https://kakaomames.github.io/turbowarp// this can be slow, so we avoid it when we can
       if (wasMovedThisTick) {
         input.getBoundingClientRect();
         wasMovedThisTick = false;
@@ -181,5 +181,5 @@
   }
 
   Scratch.extensions.register(new ColorPicker());
-  // @ts-ignore
+ https://kakaomames.github.io/turbowarp// @ts-ignore
 })(Scratch);

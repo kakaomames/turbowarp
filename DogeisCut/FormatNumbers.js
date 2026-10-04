@@ -1,15 +1,15 @@
-// Name: Format Numbers
-// ID: dogeiscutformatnumbers
-// Description: Format large numbers into AD standard, fixed decimal, comma separated, or scientific notation.
-// By: DogeisCut <https://scratch.mit.edu/users/dogeiscut/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Format Numbers
+https://kakaomames.github.io/turbowarp/ ID: dogeiscutformatnumbers
+https://kakaomames.github.io/turbowarp/ Description: Format large numbers into AD standard, fixed decimal, comma separated, or scientific notation.
+https://kakaomames.github.io/turbowarp/ By: DogeisCut <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/dogeiscuhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
-// Version V.2.0.2
+https://kakaomames.github.io/turbowarp/ Version V.2.0.2
 
-// TODO:
-// - Editor Icon
-// - BigInt Support
-// - Time notation, decimal count defines how many milliseconds show.
+https://kakaomames.github.io/turbowarp/ TODO:
+https://kakaomames.github.io/turbowarp/ - Editor Icon
+https://kakaomames.github.io/turbowarp/ - BigInt Support
+https://kakaomames.github.io/turbowarp/ - Time notation, decimal count defines how many milliseconds show.
 
 (function (Scratch) {
   "use strict";
@@ -31,7 +31,7 @@
 
     toFixedTrimmed(number, decimalPlaces) {
       const formatted = number.toFixed(decimalPlaces);
-      return decimalPlaces > 0 ? formatted.replace(/\.?0+$/, "") : formatted;
+      return decimalPlaces > 0 ? formatted.replacehttps://kakaomames.github.io/turbowarp/\.?0+https://kakaomames.github.io/turbowarp/, "") : formatted;
     }
 
     convertToADStandard(number, decimalPlaces = 2) {
@@ -94,19 +94,19 @@
         return this.toFixedTrimmed(number, decimalPlaces);
       }
 
-      const tier = Math.max(0, Math.floor(Math.log10(Math.abs(number)) / 3));
+      const tier = Math.max(0, Math.floor(Math.log10(Math.abs(number))https://kakaomames.github.io/turbowarp/ 3));
 
       if (tier <= 11) {
-        const scaledNumber = number / Math.pow(10, tier * 3);
+        const scaledNumber = numberhttps://kakaomames.github.io/turbowarp/ Math.pow(10, tier * 3);
         return this.toFixedTrimmed(scaledNumber, decimalPlaces) + kMBd[tier];
       }
 
-      const illionNumber = Math.floor(Math.log10(Math.abs(number)) / 3) - 1;
+      const illionNumber = Math.floor(Math.log10(Math.abs(number))https://kakaomames.github.io/turbowarp/ 3) - 1;
       let illionString = "";
 
       if (illionNumber <= 999) {
-        const hundreds = Math.floor(illionNumber / 100);
-        const tens = Math.floor((illionNumber % 100) / 10);
+        const hundreds = Math.floor(illionNumberhttps://kakaomames.github.io/turbowarp/ 100);
+        const tens = Math.floor((illionNumber % 100)https://kakaomames.github.io/turbowarp/ 10);
         const units = illionNumber % 10;
 
         illionString =
@@ -114,7 +114,7 @@
           (units > 0 ? unitPrefixes[units - 1] : "") +
           (tens > 0 ? tensPrefixes[tens - 1] : "");
       } else {
-        const tier2Index = Math.floor(illionNumber / 1000);
+        const tier2Index = Math.floor(illionNumberhttps://kakaomames.github.io/turbowarp/ 1000);
         const tier2Remainder = illionNumber % 1000;
 
         if (tier2Index <= tier2Illions.length) {
@@ -124,8 +124,8 @@
         }
 
         if (tier2Remainder > 0) {
-          const hundreds = Math.floor(tier2Remainder / 100);
-          const tens = Math.floor((tier2Remainder % 100) / 10);
+          const hundreds = Math.floor(tier2Remainderhttps://kakaomames.github.io/turbowarp/ 100);
+          const tens = Math.floor((tier2Remainder % 100)https://kakaomames.github.io/turbowarp/ 10);
           const units = tier2Remainder % 10;
 
           const remainderString =
@@ -137,7 +137,7 @@
       }
 
       const scaledNumber =
-        number / Math.pow(10, Math.floor(Math.log10(Math.abs(number)) / 3) * 3);
+        numberhttps://kakaomames.github.io/turbowarp/ Math.pow(10, Math.floor(Math.log10(Math.abs(number))https://kakaomames.github.io/turbowarp/ 3) * 3);
       return (
         this.toFixedTrimmed(scaledNumber, decimalPlaces) + " " + illionString
       );
@@ -146,7 +146,7 @@
     convertToCommaSeparated(number, decimalPlaces = 2) {
       return number
         .toFixed(decimalPlaces)
-        .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+        .replacehttps://kakaomames.github.io/turbowarp/(\d)(?=(\d{3})+(?!\d)https://kakaomames.github.io/turbowarp/g, "$1,");
     }
 
     convertToScientificNotation(number, decimalPlaces = 2) {

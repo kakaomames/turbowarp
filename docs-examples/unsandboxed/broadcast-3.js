@@ -1,4 +1,4 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';
@@ -13,7 +13,7 @@
             blockType: Scratch.BlockType.HAT,
             text: 'when I receive [EVENT_OPTION]',
             isEdgeActivated: false,
-            // highlight-next-line
+           https://kakaomames.github.io/turbowarp// highlight-next-line
             shouldRestartExistingThreads: true,
             arguments: {
               EVENT_OPTION: {

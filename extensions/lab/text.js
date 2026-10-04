@@ -1,22 +1,22 @@
-// Name: Animated Text
-// ID: text
-// Description: An easy way to display and animate text. Compatible with Scratch Lab's Animated Text experiment.
-// By: LilyMakesThings
-// By: GarboMuffin
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Animated Text
+https://kakaomames.github.io/turbowarp/ ID: text
+https://kakaomames.github.io/turbowarp/ Description: An easy way to display and animate text. Compatible with Scratch Lab's Animated Text experiment.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 (function (Scratch) {
   "use strict";
 
-  // This extension was created by making projects with https://lab.scratch.mit.edu/text/
-  // To determine block and argument IDs, we extracted project.json and examined the result.
-  // To determine block behaviors we simply experiment with Scratch Lab and made sure our
-  // blocks do the same things.
-  // This extension's code is not based on the source code of Scratch Lab's.
+ https://kakaomames.github.io/turbowarp// This extension was created by making projects with httpshttps://kakaomames.github.io/turbowarp//lab.scratch.mit.edhttps://kakaomames.github.io/turbowarp/texhttps://kakaomames.github.io/turbowarp/
+ https://kakaomames.github.io/turbowarp// To determine block and argument IDs, we extracted project.json and examined the result.
+ https://kakaomames.github.io/turbowarp// To determine block behaviors we simply experiment with Scratch Lab and made sure our
+ https://kakaomames.github.io/turbowarp// blocks do the same things.
+ https://kakaomames.github.io/turbowarp// This extension's code is not based on the source code of Scratch Lab's.
 
-  // by @LilyMakesThings
+ https://kakaomames.github.io/turbowarp// by @LilyMakesThings
   const blockIconURI =
-    "data:image/svg+xml;,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22284.242%22%20height%3D%22284.242%22%3E%3Cg%20fill-rule%3D%22evenodd%22%20stroke-miterlimit%3D%2210%22%20data-paper-data%3D%22%7B%26quot%3BisPaintingLayer%26quot%3B%3Atrue%7D%22%20style%3D%22mix-blend-mode%3Anormal%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M188.894%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.48%209.888a1671.47%201671.47%200%200%200-4.174%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.83%20522.83%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.329%20157.508H225.43l-9.636-26.111h-54.08l-9.636%2026.11h-43.432l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22%2396f%22%20stroke%3D%22%237240d6%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2229%22%20d%3D%22M188.894%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.48%209.888a1671.47%201671.47%200%200%200-4.174%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.83%20522.83%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.329%20157.508H225.43l-9.636-26.111h-54.08l-9.636%2026.11h-43.432l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M188.894%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.48%209.888a1671.47%201671.47%200%200%200-4.174%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.302%20408.302%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.329%20157.508H225.43l-9.636-26.111h-54.08l-9.636%2026.11h-43.432l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22%23ffa24d%22%20stroke%3D%22%23fff%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%229%22%20d%3D%22M188.894%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.48%209.888a1671.47%201671.47%200%200%200-4.174%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.302%20408.302%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.329%20157.508H225.43l-9.636-26.111h-54.08l-9.636%2026.11h-43.432l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M143.696%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888a1671.47%201671.47%200%200%200-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.33%20157.508h-44.312l-9.637-26.111h-54.08l-9.636%2026.11H63.448l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22%2396f%22%20stroke%3D%22%237240d6%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2229%22%20d%3D%22M143.696%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888a1671.47%201671.47%200%200%200-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.33%20157.508h-44.312l-9.637-26.111h-54.08l-9.636%2026.11H63.448l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M143.696%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888a1671.47%201671.47%200%200%200-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.33%20157.508h-44.312l-9.637-26.111h-54.08l-9.636%2026.11H63.448l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22%23ff774d%22%20stroke%3D%22%23fff%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%229%22%20d%3D%22M143.696%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888a1671.47%201671.47%200%200%200-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.33%20157.508h-44.312l-9.637-26.111h-54.08l-9.636%2026.11H63.448l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M94.748%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888-1.27%203.442-2.66%207.263-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.885%20522.885%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.52-56.092%2062.328%20157.508h-44.311l-9.637-26.111h-54.08l-9.635%2026.11H14.5L77.269%2063.368Z%22%2F%3E%3Cpath%20fill%3D%22%2396f%22%20stroke%3D%22%237240d6%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2229%22%20d%3D%22M94.748%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888-1.27%203.442-2.66%207.263-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.885%20522.885%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.52-56.092%2062.328%20157.508h-44.311l-9.637-26.111h-54.08l-9.635%2026.11H14.5L77.269%2063.368Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M94.748%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888-1.27%203.442-2.66%207.263-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.885%20522.885%200%200%201-4.065-11.242%20408.302%20408.302%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.52-56.092%2062.328%20157.508h-44.311l-9.637-26.111h-54.08l-9.635%2026.11H14.5L77.269%2063.368Z%22%2F%3E%3Cpath%20fill%3D%22%23ff4c4c%22%20stroke%3D%22%23fff%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%229%22%20d%3D%22M94.748%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888-1.27%203.442-2.66%207.263-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.885%20522.885%200%200%201-4.065-11.242%20408.302%20408.302%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.52-56.092%2062.328%20157.508h-44.311l-9.637-26.111h-54.08l-9.635%2026.11H14.5L77.269%2063.368Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22284.242%22%20height%3D%22284.242%22%3E%3Cg%20fill-rule%3D%22evenodd%22%20stroke-miterlimit%3D%2210%22%20data-paper-data%3D%22%7B%26quot%3BisPaintingLayer%26quot%3B%3Atrue%7D%22%20style%3D%22mix-blend-mode%3Anormal%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M188.894%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.48%209.888a1671.47%201671.47%200%200%200-4.174%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.83%20522.83%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.329%20157.508H225.43l-9.636-26.111h-54.08l-9.636%2026.11h-43.432l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22%2396f%22%20stroke%3D%22%237240d6%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2229%22%20d%3D%22M188.894%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.48%209.888a1671.47%201671.47%200%200%200-4.174%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.83%20522.83%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.329%20157.508H225.43l-9.636-26.111h-54.08l-9.636%2026.11h-43.432l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M188.894%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.48%209.888a1671.47%201671.47%200%200%200-4.174%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.302%20408.302%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.329%20157.508H225.43l-9.636-26.111h-54.08l-9.636%2026.11h-43.432l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22%23ffa24d%22%20stroke%3D%22%23fff%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%229%22%20d%3D%22M188.894%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.48%209.888a1671.47%201671.47%200%200%200-4.174%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.302%20408.302%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.329%20157.508H225.43l-9.636-26.111h-54.08l-9.636%2026.11h-43.432l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M143.696%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888a1671.47%201671.47%200%200%200-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.33%20157.508h-44.312l-9.637-26.111h-54.08l-9.636%2026.11H63.448l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22%2396f%22%20stroke%3D%22%237240d6%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2229%22%20d%3D%22M143.696%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888a1671.47%201671.47%200%200%200-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.33%20157.508h-44.312l-9.637-26.111h-54.08l-9.636%2026.11H63.448l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M143.696%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888a1671.47%201671.47%200%200%200-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.33%20157.508h-44.312l-9.637-26.111h-54.08l-9.636%2026.11H63.448l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22%23ff774d%22%20stroke%3D%22%23fff%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%229%22%20d%3D%22M143.696%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888a1671.47%201671.47%200%200%200-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.827%20522.827%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.519-56.092%2062.33%20157.508h-44.312l-9.637-26.111h-54.08l-9.636%2026.11H63.448l62.768-157.507Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M94.748%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888-1.27%203.442-2.66%207.263-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.885%20522.885%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.52-56.092%2062.328%20157.508h-44.311l-9.637-26.111h-54.08l-9.635%2026.11H14.5L77.269%2063.368Z%22%2F%3E%3Cpath%20fill%3D%22%2396f%22%20stroke%3D%22%237240d6%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%2229%22%20d%3D%22M94.748%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888-1.27%203.442-2.66%207.263-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.885%20522.885%200%200%201-4.065-11.242%20408.343%20408.343%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.52-56.092%2062.328%20157.508h-44.311l-9.637-26.111h-54.08l-9.635%2026.11H14.5L77.269%2063.368Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M94.748%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888-1.27%203.442-2.66%207.263-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.885%20522.885%200%200%201-4.065-11.242%20408.302%20408.302%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.52-56.092%2062.328%20157.508h-44.311l-9.637-26.111h-54.08l-9.635%2026.11H14.5L77.269%2063.368Z%22%2F%3E%3Cpath%20fill%3D%22%23ff4c4c%22%20stroke%3D%22%23fff%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%229%22%20d%3D%22M94.748%20119.459c-.706%202.378-1.43%204.69-2.172%206.933-1.05%203.15-2.21%206.445-3.479%209.888-1.27%203.442-2.66%207.263-4.175%2011.462l-5.73%2015.528h30.833l-5.73-15.528a522.885%20522.885%200%200%201-4.065-11.242%20408.302%20408.302%200%200%201-3.37-10.108%20350.767%20350.767%200%200%201-2.112-6.933zm18.52-56.092%2062.328%20157.508h-44.311l-9.637-26.111h-54.08l-9.635%2026.11H14.5L77.269%2063.368Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E";
 
   const CUSTOM_STATE_KEY = Symbol();
 
@@ -44,10 +44,10 @@
   const DEFAULT_FONT = "Handwriting";
   const DEFAULT_ALIGN = ALIGN_CENTER;
   const DEFAULT_FONT_SIZE = 24;
-  const DEFAULT_OUTLINE_WIDTH = 0; // 0 = no outline
+  const DEFAULT_OUTLINE_WIDTH = 0;https://kakaomames.github.io/turbowarp// 0 = no outline
   const DEFAULT_OUTLINE_COLOR = "#000000";
 
-  const DEFAULT_TYPE_DELAY = 1000 / 15;
+  const DEFAULT_TYPE_DELAY = 1000https://kakaomames.github.io/turbowarp/ 15;
 
   const RAINBOW_TIME_PER = 1000;
   const DEFAULT_RAINBOW_DURATION = 2000;
@@ -59,12 +59,12 @@
 
   let globalFrameTime = 0;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @typedef TextState
    * @property {TextCostumeSkin} skin
-   */
+   https://kakaomames.github.io/turbowarp/
 
-  // temporary
+ https://kakaomames.github.io/turbowarp// temporary
   if (!renderer.exports || !renderer.exports.Skin || !vm.exports) {
     alert("VM is too old for animated text extension");
     throw new Error("VM is too old");
@@ -75,29 +75,29 @@
   const twgl = renderer.exports.twgl;
   const RenderedTarget = vm.exports.RenderedTarget;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {number} c
    * @returns {string}
-   */
+   https://kakaomames.github.io/turbowarp/
   const formatComponent = (c) => Math.round(c).toString(16).padStart(2, "0");
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {[number, number, number]} color
    * @returns {string}
-   */
+   https://kakaomames.github.io/turbowarp/
   const formatColor = (color) =>
     `#${formatComponent(color[0])}${formatComponent(color[1])}${formatComponent(
       color[2]
     )}`;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {number} h hue from 0-1
    * @param {number} s saturation from 0-1
    * @param {number} v value from 0-1
    * @returns {[number, number, number]} RGB channels from 0-255
-   */
+   https://kakaomames.github.io/turbowarp/
   const hsvToRGB = (h, s, v) => {
-    // https://en.wikipedia.org/wiki/HSL_and_HSV
+   https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//en.wikipedia.orhttps://kakaomames.github.io/turbowarp/wikhttps://kakaomames.github.io/turbowarp/HSL_and_HSV
     var r, g, b;
     var i = Math.floor(h * 6);
     var f = h * 6 - i;
@@ -127,14 +127,14 @@
     return [(r * 255) | 0, (g * 255) | 0, (b * 255) | 0];
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {CanvasGradient} gradient
    * @param {number} offset number of cycles to offset by
-   */
+   https://kakaomames.github.io/turbowarp/
   const addRainbowStops = (gradient, offset) => {
     const NUMBER_STOPS = 20;
     for (let i = 0; i < NUMBER_STOPS; i++) {
-      const exactPosition = i / NUMBER_STOPS;
+      const exactPosition = ihttps://kakaomames.github.io/turbowarp/ NUMBER_STOPS;
       let offsetPosition = (exactPosition - offset) % 1;
       if (offsetPosition < 0) {
         offsetPosition += 1;
@@ -148,9 +148,9 @@
     constructor(id, drawable) {
       super(id, renderer);
 
-      /** @type {RenderWebGL.Drawable} */
+     https://kakaomames.github.io/turbowarp/** @type {RenderWebGL.Drawable} https://kakaomames.github.io/turbowarp/
       this.drawable = drawable;
-      /** @type {number} */
+     https://kakaomames.github.io/turbowarp/** @type {number} https://kakaomames.github.io/turbowarp/
       this._previousDrawableXScale = 100;
 
       this.canvas = document.createElement("canvas");
@@ -167,14 +167,14 @@
       this.outlineWidth = DEFAULT_OUTLINE_WIDTH;
       this.outlineColor = DEFAULT_OUTLINE_COLOR;
 
-      /** @type {Array<{text: string; width: number;}>} */
+     https://kakaomames.github.io/turbowarp/** @type {Array<{text: string; width: number;}>} https://kakaomames.github.io/turbowarp/
       this.lines = [];
-      /** @type {[number, number]} */
+     https://kakaomames.github.io/turbowarp/** @type {[number, number]} https://kakaomames.github.io/turbowarp/
       this._size = [0, 0];
-      /** @type {[number, number]} */
+     https://kakaomames.github.io/turbowarp/** @type {[number, number]} https://kakaomames.github.io/turbowarp/
       this._rotationCenter = [0, 0];
 
-      // Updated in _updateFontDimensions
+     https://kakaomames.github.io/turbowarp// Updated in _updateFontDimensions
       this.calculatedFontSize = 0;
       this.lineHeight = 0;
       this.verticalPadding = 0;
@@ -206,11 +206,11 @@
       this.shakeDuration = DEFAULT_SHAKE_DURATION;
       this.shakeIntensity = DEFAULT_SHAKE_INTENSITY;
 
-      /** @type {(() => void)|null} */
+     https://kakaomames.github.io/turbowarp/** @type {(() => void)|null} https://kakaomames.github.io/turbowarp/
       this.resolveOngoingAnimation = null;
     }
 
-    // Part of Skin API
+   https://kakaomames.github.io/turbowarp// Part of Skin API
     dispose() {
       if (this._texture) {
         gl.deleteTexture(this._texture);
@@ -221,7 +221,7 @@
       super.dispose();
     }
 
-    // Part of Skin API
+   https://kakaomames.github.io/turbowarp// Part of Skin API
     get size() {
       if (this._needsReflow()) {
         this._reflowText();
@@ -229,7 +229,7 @@
       return this._size;
     }
 
-    // Part of Skin API
+   https://kakaomames.github.io/turbowarp// Part of Skin API
     useNearest() {
       return false;
     }
@@ -246,17 +246,17 @@
     _updateFontDimensions() {
       this.calculatedFontSize = this.baseFontSize;
       if (this.isZooming) {
-        // TODO: it looks like Scratch's animation always starts at least a little visible
+       https://kakaomames.github.io/turbowarp// TODO: it looks like Scratch's animation always starts at least a little visible
         const time = globalFrameTime - this.zoomStartTime;
-        const progress = Math.max(0, Math.min(1, time / this.zoomDuration));
+        const progress = Math.max(0, Math.min(1, timehttps://kakaomames.github.io/turbowarp/ this.zoomDuration));
         this.calculatedFontSize *= progress;
       }
-      this.lineHeight = (this.baseFontSize * 8) / 7;
-      // Always use the base size for padding. This makes the zoom animation look better.
-      this.verticalPadding = this.baseFontSize / 7;
-      // Only use horizontal scale for wrap width for compatibility with stretch extension.
+      this.lineHeight = (this.baseFontSize * 8)https://kakaomames.github.io/turbowarp/ 7;
+     https://kakaomames.github.io/turbowarp// Always use the base size for padding. This makes the zoom animation look better.
+      this.verticalPadding = this.baseFontSizehttps://kakaomames.github.io/turbowarp/ 7;
+     https://kakaomames.github.io/turbowarp// Only use horizontal scale for wrap width for compatibility with stretch extension.
       this.wrapWidth =
-        this.textWidth / (Math.abs(this.drawable.scale[0]) / 100);
+        this.textWidthhttps://kakaomames.github.io/turbowarp/ (Math.abs(this.drawable.scale[0])https://kakaomames.github.io/turbowarp/ 100);
     }
 
     _getFontStyle() {
@@ -272,9 +272,9 @@
       this._updateFontDimensions();
       this.ctx.font = this._getFontStyle();
 
-      // need to make new ones each time to avoid caching incorrectly across fonts
+     https://kakaomames.github.io/turbowarp// need to make new ones each time to avoid caching incorrectly across fonts
       const measurementProvider = new CanvasMeasurementProvider(this.ctx);
-      /** @type {RenderWebGL.TextWrapper} */
+     https://kakaomames.github.io/turbowarp/** @type {RenderWebGL.TextWrapper} https://kakaomames.github.io/turbowarp/
       const textWrapper = renderer.createTextWrapper(measurementProvider);
 
       const lines = textWrapper.wrapText(this.wrapWidth, this.text);
@@ -292,17 +292,17 @@
         2 * this.verticalPadding +
         2 * this.outlineWidth;
 
-      // Centered horizontally
-      this._rotationCenter[0] = this._size[0] / 2;
-      // Vertical center is roughly below the first line of text
+     https://kakaomames.github.io/turbowarp// Centered horizontally
+      this._rotationCenter[0] = this._size[0]https://kakaomames.github.io/turbowarp/ 2;
+     https://kakaomames.github.io/turbowarp// Vertical center is roughly below the first line of text
       this._rotationCenter[1] =
         this.calculatedFontSize * 0.9 +
         this.verticalPadding +
         this.outlineWidth;
 
       if (this.isShaking) {
-        const padding = Math.max(0, this.shakeIntensity / 20);
-        // offsets should be in range [-padding, +padding]
+        const padding = Math.max(0, this.shakeIntensityhttps://kakaomames.github.io/turbowarp/ 20);
+       https://kakaomames.github.io/turbowarp// offsets should be in range [-padding, +padding]
         this._rotationCenter[0] += 2 * Math.random() * padding - padding;
         this._rotationCenter[1] += 2 * Math.random() * padding - padding;
       }
@@ -316,8 +316,8 @@
       const scratchWidth = this._size[0];
       const scratchHeight = this._size[1];
 
-      // Renderer's requested scale is accounted for at this point. Do not touch `requestedScale`
-      // ever after this point.
+     https://kakaomames.github.io/turbowarp// Renderer's requested scale is accounted for at this point. Do not touch `requestedScale`
+     https://kakaomames.github.io/turbowarp// ever after this point.
       this.canvas.width = Math.ceil(scratchWidth * requestedScale);
       this.canvas.height = Math.ceil(scratchHeight * requestedScale);
       this.ctx.scale(requestedScale, requestedScale);
@@ -325,7 +325,7 @@
       this.ctx.translate(this.outlineWidth, this.outlineWidth);
 
       const rainbowOffset = this.isRainbow
-        ? (globalFrameTime - this.rainbowStartTime) / RAINBOW_TIME_PER
+        ? (globalFrameTime - this.rainbowStartTime)https://kakaomames.github.io/turbowarp/ RAINBOW_TIME_PER
         : 0;
       this.ctx.fillStyle = this.color;
       this.ctx.font = this._getFontStyle();
@@ -340,7 +340,7 @@
         if (this.align === ALIGN_LEFT) {
           xOffset = 0;
         } else if (this.align === ALIGN_CENTER) {
-          xOffset = (this.wrapWidth - lineWidth) / 2;
+          xOffset = (this.wrapWidth - lineWidth)https://kakaomames.github.io/turbowarp/ 2;
         } else {
           xOffset = this.wrapWidth - lineWidth;
         }
@@ -364,12 +364,12 @@
           this.ctx.strokeText(text, xOffset, yOffset);
         }
 
-        // TODO: we're still a few pixels off of Scratch Lab
+       https://kakaomames.github.io/turbowarp// TODO: we're still a few pixels off of Scratch Lab
         this.ctx.fillText(text, xOffset, yOffset);
       }
 
       if (!this._texture) {
-        // @ts-expect-error - twgl not typed yet
+       https://kakaomames.github.io/turbowarp// @ts-expect-error - twgl not typed yet
         this._texture = twgl.createTexture(gl, {
           auto: false,
           wrap: gl.CLAMP_TO_EDGE,
@@ -537,8 +537,8 @@
       return this._oneAnimationAtATime((resolve) => {
         this.isShaking = true;
         this.shakeStartTime = Date.now();
-        // TODO: _invalidateText() is not smart enough to realize that we don't need to actually
-        // do a full reflow, just update rotation center...
+       https://kakaomames.github.io/turbowarp// TODO: _invalidateText() is not smart enough to realize that we don't need to actually
+       https://kakaomames.github.io/turbowarp// do a full reflow, just update rotation center...
         this._invalidateText();
         this.shakeTimeout = setTimeout(() => {
           this.isShaking = false;
@@ -573,24 +573,24 @@
         this.isShaking = false;
         clearTimeout(this.shakeTimeout);
 
-        // TODO: sometimes we only need to invalidate the texture at this point
+       https://kakaomames.github.io/turbowarp// TODO: sometimes we only need to invalidate the texture at this point
         this._invalidateText();
       }
     }
 
-    // Part of Skin API
+   https://kakaomames.github.io/turbowarp// Part of Skin API
     updateSilhouette(scale) {
       this.getTexture(scale);
       this._silhouette.unlazy();
     }
 
-    // Part of Skin API
+   https://kakaomames.github.io/turbowarp// Part of Skin API
     getTexture(scale) {
       const MAX_SCALE = 10;
       const upperScale = scale
         ? Math.max(Math.abs(scale[0]), Math.abs(scale[1]))
         : 100;
-      const calculatedScale = Math.min(MAX_SCALE, upperScale / 100);
+      const calculatedScale = Math.min(MAX_SCALE, upperScalehttps://kakaomames.github.io/turbowarp/ 100);
 
       if (this._needsReflow()) {
         this._reflowText();
@@ -614,12 +614,12 @@
     }
   }
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Note that the returned skin is only usable by the given target. Things will break if another
    * target tries to use it.
    * @param {VM.Target} target
    * @returns {TextCostumeSkin}
-   */
+   https://kakaomames.github.io/turbowarp/
   const createTextCostumeSkin = (target) => {
     const drawable = renderer._allDrawables[target.drawableID];
     const id = renderer._nextSkinId++;
@@ -652,13 +652,13 @@
         this._hideAllText();
       });
 
-      // targetWasCreated does not work because it runs before the Drawable is set up
+     https://kakaomames.github.io/turbowarp// targetWasCreated does not work because it runs before the Drawable is set up
       const extension = this;
       const originalMakeClone = RenderedTarget.prototype.makeClone;
       RenderedTarget.prototype.makeClone = function () {
         const newClone = originalMakeClone.call(this);
         if (extension._hasState(this)) {
-          // TODO: creates much unneeded state
+         https://kakaomames.github.io/turbowarp// TODO: creates much unneeded state
           const originalSkin = extension._getState(this).skin;
           const newSkin = extension._getState(newClone).skin;
           newSkin.setAlign(originalSkin.align);
@@ -825,10 +825,10 @@
           },
           "---",
 
-          /**
+         https://kakaomames.github.io/turbowarp/**
            * Contributors:
            * - LilyMakesThings
-           */
+           https://kakaomames.github.io/turbowarp/
 
           {
             func: "disableCompatibilityMode",
@@ -921,7 +921,7 @@
             extensions: ["colours_looks"],
           },
           {
-            // why is the other block called "setWidth" :(
+           https://kakaomames.github.io/turbowarp// why is the other block called "setWidth" :(
             opcode: "setWidthValue",
             blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate("set width to [WIDTH]"),
@@ -1101,7 +1101,7 @@
           },
         ],
         menus: {
-          // These all need acceptReporters: false for parity with the Scratch Labs version.
+         https://kakaomames.github.io/turbowarp// These all need acceptReporters: false for parity with the Scratch Labs version.
           animate: {
             acceptReporters: false,
             items: [
@@ -1151,7 +1151,7 @@
               "alignment",
             ],
           },
-          // TurboWarp menus (acceptReporters: true)
+         https://kakaomames.github.io/turbowarp// TurboWarp menus (acceptReporters: true)
           twAnimate: {
             acceptReporters: true,
             items: [
@@ -1243,14 +1243,14 @@
         : [];
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {VM.Target} target
      * @returns {TextState}
-     */
+     https://kakaomames.github.io/turbowarp/
     _getState(target) {
       const state = target[CUSTOM_STATE_KEY];
       if (!state) {
-        /** @type {TextState} */
+       https://kakaomames.github.io/turbowarp/** @type {TextState} https://kakaomames.github.io/turbowarp/
         const newState = {
           skin: createTextCostumeSkin(target),
         };
@@ -1260,10 +1260,10 @@
       return state;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {VM.Target} target
      * @returns {boolean}
-     */
+     https://kakaomames.github.io/turbowarp/
     _hasState(target) {
       return !!target[CUSTOM_STATE_KEY];
     }
@@ -1276,19 +1276,19 @@
       }
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {VM.Target} target
      * @param {TextState} state
-     */
+     https://kakaomames.github.io/turbowarp/
     _renderText(target, state) {
       state.skin.cancelAnimation();
       renderer.updateDrawableSkinId(target.drawableID, state.skin.id);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {VM.Target} target
      * @param {TextState} state
-     */
+     https://kakaomames.github.io/turbowarp/
     _hideText(target, state) {
       state.skin.cancelAnimation();
       target.setCostume(target.currentCostume);
@@ -1298,7 +1298,7 @@
       const state = this._getState(util.target);
       this._renderText(util.target, state);
       state.skin.setText(Scratch.Cast.toString(TEXT));
-      // Scratch forces 1 frame delay by returning promise. I think that's silly.
+     https://kakaomames.github.io/turbowarp// Scratch forces 1 frame delay by returning promise. I think that's silly.
       util.runtime.requestRedraw();
     }
 
@@ -1318,7 +1318,7 @@
       } else if (ANIMATE === "shake") {
         return state.skin.startShakeAnimation();
       } else {
-        // Scratch does nothing here
+       https://kakaomames.github.io/turbowarp// Scratch does nothing here
       }
     }
 
@@ -1327,7 +1327,7 @@
         const state = this._getState(util.target);
         this._hideText(util.target, state);
       }
-      // Scratch forces 1 frame delay by returning promise. I think that's silly.
+     https://kakaomames.github.io/turbowarp// Scratch forces 1 frame delay by returning promise. I think that's silly.
       util.runtime.requestRedraw();
     }
 
@@ -1336,7 +1336,7 @@
       const state = this._getState(util.target);
 
       if (font === "Random") {
-        // Random font always switches to a new font, never the same one
+       https://kakaomames.github.io/turbowarp// Random font always switches to a new font, never the same one
         const possibleFonts = [
           ...FONTS,
           ...this._getFontsMap().map((i) => i.value),
@@ -1362,16 +1362,16 @@
       } else if (ALIGN === "right") {
         state.skin.setAlign(ALIGN_RIGHT);
       } else {
-        // Scratch treats unknown values as left alignment.
+       https://kakaomames.github.io/turbowarp// Scratch treats unknown values as left alignment.
         state.skin.setAlign(ALIGN_LEFT);
       }
 
       state.skin.setWidth(Scratch.Cast.toNumber(WIDTH));
     }
 
-    /*
+   https://kakaomames.github.io/turbowarp/*
      * Extra blocks, not compatible with Scratch:
-     */
+     https://kakaomames.github.io/turbowarp/
 
     disableCompatibilityMode() {
       const popup = Scratch.translate({
@@ -1437,7 +1437,7 @@
     }
 
     setAlignment(args, util) {
-      // see setWidth
+     https://kakaomames.github.io/turbowarp// see setWidth
       const state = this._getState(util.target);
       if (args.ALIGN === "center") {
         state.skin.setAlign(ALIGN_CENTER);
@@ -1466,7 +1466,7 @@
       const state = this._getState(util.target);
       state.skin.cancelAnimation();
 
-      // Don't return the promise
+     https://kakaomames.github.io/turbowarp// Don't return the promise
       if (args.ANIMATE == "type") {
         state.skin.startTypeAnimation();
       } else if (args.ANIMATE == "rainbow") {
@@ -1476,7 +1476,7 @@
       } else if (args.ANIMATE == "shake") {
         state.skin.startShakeAnimation();
       } else {
-        // Scratch does nothing here
+       https://kakaomames.github.io/turbowarp// Scratch does nothing here
       }
     }
 
@@ -1497,7 +1497,7 @@
       } else if (args.ANIMATE == "shake") {
         return state.skin.startShakeAnimation();
       } else {
-        // Scratch does nothing here
+       https://kakaomames.github.io/turbowarp// Scratch does nothing here
       }
     }
 
@@ -1537,13 +1537,13 @@
       const state = this._getState(util.target);
       const animation = args.ANIMATE;
       if (animation === "rainbow") {
-        return state.skin.rainbowDuration / 1000;
+        return state.skin.rainbowDurationhttps://kakaomames.github.io/turbowarp/ 1000;
       } else if (animation === "zoom") {
-        return state.skin.zoomDuration / 1000;
+        return state.skin.zoomDurationhttps://kakaomames.github.io/turbowarp/ 1000;
       } else if (animation === "shake") {
-        return state.skin.shakeDuration / 1000;
+        return state.skin.shakeDurationhttps://kakaomames.github.io/turbowarp/ 1000;
       } else {
-        // should never happen
+       https://kakaomames.github.io/turbowarp// should never happen
         return "";
       }
     }
@@ -1565,8 +1565,8 @@
 
     getTypeDelay(args, util) {
       const state = this._getState(util.target);
-      // TODO: Should we round this?
-      return state.skin.typeDelay / 1000;
+     https://kakaomames.github.io/turbowarp// TODO: Should we round this?
+      return state.skin.typeDelayhttps://kakaomames.github.io/turbowarp/ 1000;
     }
 
     textActive(args, util) {
@@ -1603,7 +1603,7 @@
             return "center";
         }
       } else {
-        // should never happen
+       https://kakaomames.github.io/turbowarp// should never happen
         return "";
       }
     }

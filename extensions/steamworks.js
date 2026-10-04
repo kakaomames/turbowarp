@@ -1,14 +1,14 @@
-// Name: Steamworks
-// ID: steamworks
-// Description: Connect your project to Steamworks APIs.
-// By: GarboMuffin
-// License: MPL-2.0
-// Context: Probably don't translate the word "Steamworks".
+https://kakaomames.github.io/turbowarp/ Name: Steamworks
+https://kakaomames.github.io/turbowarp/ ID: steamworks
+https://kakaomames.github.io/turbowarp/ Description: Connect your project to Steamworks APIs.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MPL-2.0
+https://kakaomames.github.io/turbowarp/ Context: Probably don't translate the word "Steamworks".
 
 (function (Scratch) {
   "use strict";
 
-  /* globals Steamworks */
+ https://kakaomames.github.io/turbowarp/* globals Steamworks https://kakaomames.github.io/turbowarp/
 
   const canUseSteamworks = typeof Steamworks !== "undefined" && Steamworks.ok();
 
@@ -16,12 +16,12 @@
     getInfo() {
       return {
         id: "steamworks",
-        // eslint-disable-next-line extension/should-translate
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
         name: "Steamworks",
         color1: "#136C9F",
         color2: "#105e8c",
         color3: "#0d486b",
-        docsURI: "./steamworks",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/steamworks",
         blocks: [
           {
             blockType: Scratch.BlockType.BOOLEAN,
@@ -52,7 +52,7 @@
             opcode: "setAchievement",
             text: Scratch.translate({
               default: "set achievement [ACHIEVEMENT] unlocked to [STATUS]",
-              description: "[STATUS] is true/false dropdown",
+              description: "[STATUS] is truhttps://kakaomames.github.io/turbowarp/false dropdown",
             }),
             arguments: {
               ACHIEVEMENT: {
@@ -114,7 +114,7 @@
               },
               DATA: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://example.com/",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//example.cohttps://kakaomames.github.io/turbowarp/",
               },
             },
           },
@@ -232,11 +232,11 @@
       if (TYPE === "URL") {
         const url = Scratch.Cast.toString(DATA);
         if (canUseSteamworks) {
-          // This will always be a packaged environment so don't need to bother
-          // with canOpenWindow()
+         https://kakaomames.github.io/turbowarp// This will always be a packaged environment so don't need to bother
+         https://kakaomames.github.io/turbowarp// with canOpenWindow()
           Steamworks.overlay.activateToWebPage(DATA);
         } else {
-          // Don't await result, we don't care
+         https://kakaomames.github.io/turbowarp// Don't await result, we don't care
           Scratch.openWindow(url);
         }
       }

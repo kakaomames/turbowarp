@@ -1,14 +1,14 @@
-// Name: LZ Compress
-// ID: shovellzcompress
-// Description: Compress and decompress text using lz-string.
-// By: TheShovel
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: LZ Compress
+https://kakaomames.github.io/turbowarp/ ID: shovellzcompress
+https://kakaomames.github.io/turbowarp/ Description: Compress and decompress text using lz-string.
+https://kakaomames.github.io/turbowarp/ By: TheShovel
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (async function (Scratch) {
   "use strict";
 
-  /*!
-    https://github.com/pieroxy/lz-string
+ https://kakaomames.github.io/turbowarp/*!
+    httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/pieroxhttps://kakaomames.github.io/turbowarp/lz-string
     We use it under this license:
 
     MIT License
@@ -18,7 +18,7 @@
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
     in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    to use, copy, modify, merge, publish, distribute, sublicense, anhttps://kakaomames.github.io/turbowarp/or sell
     copies of the Software, and to permit persons to whom the Software is
     furnished to do so, subject to the following conditions:
 
@@ -32,9 +32,9 @@
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
-  */
+  https://kakaomames.github.io/turbowarp/
   const LZString = await Scratch.external.evalAndReturn(
-    "https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js",
+    "httpshttps://kakaomames.github.io/turbowarp//cdn.jsdelivr.nehttps://kakaomames.github.io/turbowarp/nphttps://kakaomames.github.io/turbowarp/lz-string@1.5.https://kakaomames.github.io/turbowarp/libhttps://kakaomames.github.io/turbowarp/lz-string.min.js",
     "LZString"
   );
 

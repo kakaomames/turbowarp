@@ -1,8 +1,8 @@
-// Name: Ask Before Closing Tab
-// ID: xmerclosecontrol
-// Description: Show a prompt when someone tries to close the tab.
-// By: XmerOriginals <https://scratch.mit.edu/users/XmerOriginals/>
-// License: MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Ask Before Closing Tab
+https://kakaomames.github.io/turbowarp/ ID: xmerclosecontrol
+https://kakaomames.github.io/turbowarp/ Description: Show a prompt when someone tries to close the tab.
+https://kakaomames.github.io/turbowarp/ By: XmerOriginals <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/XmerOriginalhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MPL-2.0
 
 (function (Scratch) {
   "use strict";

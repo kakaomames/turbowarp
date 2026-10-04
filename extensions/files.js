@@ -1,8 +1,8 @@
-// Name: Files
-// ID: files
-// Description: Read and download files.
-// By: GarboMuffin
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Files
+https://kakaomames.github.io/turbowarp/ ID: files
+https://kakaomames.github.io/turbowarp/ Description: Read and download files.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -24,36 +24,36 @@
   const AS_TEXT = "text";
   const AS_DATA_URL = "url";
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {HTMLInputElement} input
    * @returns {boolean}
-   */
+   https://kakaomames.github.io/turbowarp/
   const isCancelEventSupported = (input) => {
     if ("oncancel" in input) {
-      // Chrome 113+, Safari 16.4+
+     https://kakaomames.github.io/turbowarp// Chrome 113+, Safari 16.4+
       return true;
     }
-    // Firefox is weird. cancel is supported since Firefox 91, but oncancel doesn't exist.
-    // Firefox 91 is from August 2021. That's old enough to not care about previous versions.
+   https://kakaomames.github.io/turbowarp// Firefox is weird. cancel is supported since Firefox 91, but oncancel doesn't exist.
+   https://kakaomames.github.io/turbowarp// Firefox 91 is from August 2021. That's old enough to not care about previous versions.
     return navigator.userAgent.includes("Firefox");
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} accept See MODE_ constants above
    * @param {string} as See AS_ constants above
    * @returns {Promise<string>} format given by as parameter
-   */
+   https://kakaomames.github.io/turbowarp/
   const showFilePrompt = (accept, as) =>
     new Promise((_resolve) => {
-      // We can't reliably show an <input> picker without "user interaction" in all environments,
-      // so we have to show our own UI anyways. We may as well use this to implement some nice features
-      // that native file pickers don't have:
-      //  - Easy drag+drop
-      //  - Reliable cancel button (input cancel event is still not perfect)
-      //    This is important so we can make this just a reporter instead of a command+hat block.
-      //    Without an interface, the script would be stalled if the prompt was cancelled.
+     https://kakaomames.github.io/turbowarp// We can't reliably show an <input> picker without "user interaction" in all environments,
+     https://kakaomames.github.io/turbowarp// so we have to show our own UI anyways. We may as well use this to implement some nice features
+     https://kakaomames.github.io/turbowarp// that native file pickers don't have:
+     https://kakaomames.github.io/turbowarp//  - Easy drag+drop
+     https://kakaomames.github.io/turbowarp//  - Reliable cancel button (input cancel event is still not perfect)
+     https://kakaomames.github.io/turbowarp//    This is important so we can make this just a reporter instead of a command+hat block.
+     https://kakaomames.github.io/turbowarp//    Without an interface, the script would be stalled if the prompt was cancelled.
 
-      /** @param {string} text */
+     https://kakaomames.github.io/turbowarp/** @param {string} text https://kakaomames.github.io/turbowarp/
       const callback = (text) => {
         _resolve(text);
         Scratch.vm.renderer.removeOverlay(outer);
@@ -65,7 +65,7 @@
 
       let isReadingFile = false;
 
-      /** @param {File} file */
+     https://kakaomames.github.io/turbowarp/** @param {File} file https://kakaomames.github.io/turbowarp/
       const readFile = (file) => {
         if (isReadingFile) {
           return;
@@ -74,7 +74,7 @@
 
         const reader = new FileReader();
         reader.onload = () => {
-          callback(/** @type {string} */ (reader.result));
+          callbackhttps://kakaomames.github.io/turbowarp/** @type {string} https://kakaomames.github.io/turbowarp/ (reader.result));
         };
         reader.onerror = () => {
           console.error("Failed to read file as text", reader.error);
@@ -87,7 +87,7 @@
         }
       };
 
-      /** @param {KeyboardEvent} e */
+     https://kakaomames.github.io/turbowarp/** @param {KeyboardEvent} e https://kakaomames.github.io/turbowarp/
       const handleKeyDown = (e) => {
         if (e.key === "Escape") {
           e.stopPropagation();
@@ -160,7 +160,7 @@
       input.type = "file";
       input.accept = accept;
       input.addEventListener("change", (e) => {
-        // @ts-expect-error
+       https://kakaomames.github.io/turbowarp// @ts-expect-error
         const file = e.target.files[0];
         if (file) {
           readFile(file);
@@ -187,8 +187,8 @@
       );
       modal.appendChild(subtitle);
 
-      // To avoid the script getting stalled forever, if cancel isn't supported, we'll just forcibly
-      // show our modal.
+     https://kakaomames.github.io/turbowarp// To avoid the script getting stalled forever, if cancel isn't supported, we'll just forcibly
+     https://kakaomames.github.io/turbowarp// show our modal.
       if (
         openFileSelectorMode === MODE_ONLY_SELECTOR &&
         !isCancelEventSupported(input)
@@ -209,18 +209,18 @@
       }
 
       if (openFileSelectorMode === MODE_ONLY_SELECTOR) {
-        // Note that browser support for cancel is currently quite bad
+       https://kakaomames.github.io/turbowarp// Note that browser support for cancel is currently quite bad
         input.addEventListener("cancel", () => {
           callback("");
         });
       }
     });
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {Blob} blob Data to download
    * @param {string} file Name of the file
    * @returns {Promise<void>}
-   */
+   https://kakaomames.github.io/turbowarp/
   const downloadBlob = async (blob, file) => {
     const url = URL.createObjectURL(blob);
     try {
@@ -231,10 +231,10 @@
     URL.revokeObjectURL(url);
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} url
    * @returns {boolean}
-   */
+   https://kakaomames.github.io/turbowarp/
   const isDataURL = (url) => {
     try {
       const parsed = new URL(url);
@@ -244,14 +244,14 @@
     }
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} url
    * @param {string} file
-   */
+   https://kakaomames.github.io/turbowarp/
   const downloadUntrustedURL = async (url, file) => {
     if (isDataURL(url)) {
-      // TODO: Scratch.fetch's better handling of data: means this is probably not needed anymore
-      // and it the blob: probably works better with big files
+     https://kakaomames.github.io/turbowarp// TODO: Scratch.fetch's better handling of data: means this is probably not needed anymore
+     https://kakaomames.github.io/turbowarp// and it the blob: probably works better with big files
       return Scratch.download(url, file);
     }
 
@@ -340,7 +340,7 @@
             arguments: {
               url: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "data:text/plain;base64,SGVsbG8sIHdvcmxkIQ==",
+                defaultValue: "data:texhttps://kakaomames.github.io/turbowarp/plain;base64,SGVsbG8sIHdvcmxkIQ==",
               },
               file: {
                 type: Scratch.ArgumentType.STRING,
@@ -390,7 +390,7 @@
                 value: MODE_IMMEDIATELY_SHOW_SELECTOR,
               },
               {
-                // Will not work if the browser doesn't think we are responding to a click event.
+               https://kakaomames.github.io/turbowarp// Will not work if the browser doesn't think we are responding to a click event.
                 text: Scratch.translate("only show selector (unreliable)"),
                 value: MODE_ONLY_SELECTOR,
               },

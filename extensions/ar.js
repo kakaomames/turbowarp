@@ -1,8 +1,8 @@
-// Name: Augmented Reality
-// ID: AR
-// Description: Shows image from camera and performs motion tracking, allowing 3D projects to correctly overlay virtual objects on real world.
-// By: Vadik1 <https://scratch.mit.edu/users/Vadik1/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Augmented Reality
+https://kakaomames.github.io/turbowarp/ ID: AR
+https://kakaomames.github.io/turbowarp/ Description: Shows image from camera and performs motion tracking, allowing 3D projects to correctly overlay virtual objects on real world.
+https://kakaomames.github.io/turbowarp/ By: Vadik1 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Vadikhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -50,10 +50,10 @@
   const gl = Scratch.vm.renderer.gl;
   const enableVideoOriginal = video.enableVideo;
 
-  // Checking whether AR is supported.
-  // If not, extension should still load, to let people
-  // develop AR projects on non-AR-capable devices and then
-  // test them on AR-capable mobile devices
+ https://kakaomames.github.io/turbowarp// Checking whether AR is supported.
+ https://kakaomames.github.io/turbowarp// If not, extension should still load, to let people
+ https://kakaomames.github.io/turbowarp// develop AR projects on non-AR-capable devices and then
+ https://kakaomames.github.io/turbowarp// test them on AR-capable mobile devices
   if (!window.isSecureContext) {
     console.error(
       (arFail =
@@ -109,19 +109,19 @@
       });
     updateState();
 
-    // [enter AR] blocks should continue after success
+   https://kakaomames.github.io/turbowarp// [enter AR] blocks should continue after success
     enterARDone.forEach((fn) => fn());
     enterARDone = [];
   };
   const onError = function (error) {
-    // This shouldn't set arFail, because arFail is for cases when it permanently failed.
-    // This might fail once, but work on the next attempt.
+   https://kakaomames.github.io/turbowarp// This shouldn't set arFail, because arFail is for cases when it permanently failed.
+   https://kakaomames.github.io/turbowarp// This might fail once, but work on the next attempt.
     console.error(
       "Even though 'immersive-ar' is supported in your browser, requesting it failed"
     );
     console.error(error);
 
-    // [enter AR] blocks should continue after failure
+   https://kakaomames.github.io/turbowarp// [enter AR] blocks should continue after failure
     enterARDone.forEach((fn) => fn());
     enterARDone = [];
   };
@@ -144,19 +144,19 @@
     }
     canvas.removeEventListener("pointerup", enterAR);
     if (state) {
-      video.disableVideo(); // Hiding it, since it freezes anyways
+      video.disableVideo();https://kakaomames.github.io/turbowarp// Hiding it, since it freezes anyways
       video.enableVideo = () => null;
 
-      // css "transform" doesn't work directly on domOverlay element,
-      // but works on it's children. stageWrapper needs to have "transform: scale"
-      // on it, so that is why it is placed into another div
+     https://kakaomames.github.io/turbowarp// css "transform" doesn't work directly on domOverlay element,
+     https://kakaomames.github.io/turbowarp// but works on it's children. stageWrapper needs to have "transform: scale"
+     https://kakaomames.github.io/turbowarp// on it, so that is why it is placed into another div
       div.append(stageWrapper);
 
       xrNeedsResize = true;
       oldWidth = runtime.stageWidth;
       oldHeight = runtime.stageHeight;
     } else {
-      video.enableVideo = enableVideoOriginal; // After exiting AR, video sensing can be used again
+      video.enableVideo = enableVideoOriginal;https://kakaomames.github.io/turbowarp// After exiting AR, video sensing can be used again
 
       if (!isPackaged) {
         const borderThing = stageWrapper.children[0].children[0].style;
@@ -177,11 +177,11 @@
     }
   };
 
-  // Code copied from tw-frame-loop.js because existing code can't be accesed
+ https://kakaomames.github.io/turbowarp// Code copied from tw-frame-loop.js because existing code can't be accesed
   const _requestAnimationFrame =
     typeof requestAnimationFrame === "function"
       ? requestAnimationFrame
-      : (f) => setTimeout(f, 1000 / 60);
+      : (f) => setTimeout(f, 1000https://kakaomames.github.io/turbowarp/ 60);
   const _cancelAnimationFrame =
     typeof requestAnimationFrame === "function"
       ? cancelAnimationFrame
@@ -200,7 +200,7 @@
     };
   };
 
-  // Patching frameLoop to use xrSession.requestAnimationFrame when in AR mode
+ https://kakaomames.github.io/turbowarp// Patching frameLoop to use xrSession.requestAnimationFrame when in AR mode
   const xrAnimationFrameWrapper = (callback, fps = 30) => {
     const xrSessionBackup = xrSession;
     let shouldTriggerAgain = false;
@@ -208,13 +208,13 @@
     let idIsXR;
     let interval;
     const handle = (t, frame) => {
-      // If fps = 0, then run at screen's refresh rate
-      // and always use xr animation frame.
-      // In other cases keep using normal animation frame
-      // and waiting until shouldTriggerAgain gets set
-      // to true, and only then use xr animation frame
-      // once and resume waiting. shouldTriggerAgain is
-      // set to true by the interval located below.
+     https://kakaomames.github.io/turbowarp// If fps = 0, then run at screen's refresh rate
+     https://kakaomames.github.io/turbowarp// and always use xr animation frame.
+     https://kakaomames.github.io/turbowarp// In other cases keep using normal animation frame
+     https://kakaomames.github.io/turbowarp// and waiting until shouldTriggerAgain gets set
+     https://kakaomames.github.io/turbowarp// to true, and only then use xr animation frame
+     https://kakaomames.github.io/turbowarp// once and resume waiting. shouldTriggerAgain is
+     https://kakaomames.github.io/turbowarp// set to true by the interval located below.
       if (fps === 0 || shouldTriggerAgain) {
         shouldTriggerAgain = false;
         id = xrSession.requestAnimationFrame(handle);
@@ -223,14 +223,14 @@
         id = window.requestAnimationFrame(handle);
         idIsXR = false;
       }
-      // Normal animation frames are just for waiting and
-      // shouldn't trigger callback()
+     https://kakaomames.github.io/turbowarp// Normal animation frames are just for waiting and
+     https://kakaomames.github.io/turbowarp// shouldn't trigger callback()
       if (!frame) return;
 
       if (xrNeedsResize) {
         xrNeedsResize = false;
 
-        // This needs to run before setStageSize
+       https://kakaomames.github.io/turbowarp// This needs to run before setStageSize
         if (isPackaged) {
           scControlsBar.style["display"] = "none";
           scLayers.style["transform"] = "translate(0px, 0px)";
@@ -240,13 +240,13 @@
 
         const bl = xrSession.renderState.baseLayer;
         const newWidth = Math.round(
-          (bl.framebufferWidth / bl.framebufferHeight) * oldHeight
+          (bl.framebufferWidthhttps://kakaomames.github.io/turbowarp/ bl.framebufferHeight) * oldHeight
         );
         if (runtime.stageWidth !== newWidth) {
           runtime.setStageSize(newWidth, oldHeight);
         }
 
-        const scale = div.clientHeight / canvas.clientHeight;
+        const scale = div.clientHeighthttps://kakaomames.github.io/turbowarp/ canvas.clientHeight;
         stageWrapper.style =
           "transform-origin: top left; transform: scale(" +
           scale +
@@ -259,7 +259,7 @@
           const borderThing = stageWrapper.children[0].children[0].style;
           borderThing["border"] = "none";
           borderThing["border-radius"] = "0";
-          borderThing["transform"] = ""; // Removes translateX
+          borderThing["transform"] = "";https://kakaomames.github.io/turbowarp// Removes translateX
         }
       }
       poseAvailable = false;
@@ -347,7 +347,7 @@
     if (fps > 0) {
       interval = setInterval(() => {
         shouldTriggerAgain = true;
-      }, 1000 / fps);
+      }, 1000https://kakaomames.github.io/turbowarp/ fps);
     }
     return {
       cancel,
@@ -361,9 +361,9 @@
           this.stepCallback,
           0
         );
-        this.runtime.currentStepTime = 1000 / 60;
+        this.runtime.currentStepTime = 1000https://kakaomames.github.io/turbowarp/ 60;
       } else {
-        // Interpolation should never be enabled when framerate === 0 as that's just redundant
+       https://kakaomames.github.io/turbowarp// Interpolation should never be enabled when framerate === 0 as that's just redundant
         if (this.interpolation) {
           this._interpolationAnimation = animationFrameWrapper(
             this.interpolationCallback
@@ -373,14 +373,14 @@
           this.stepCallback,
           this.framerate
         );
-        this.runtime.currentStepTime = 1000 / this.framerate;
+        this.runtime.currentStepTime = 1000https://kakaomames.github.io/turbowarp/ this.framerate;
       }
     } else {
       if (this.framerate === 0) {
         this._stepAnimation = animationFrameWrapper(this.stepCallback);
-        this.runtime.currentStepTime = 1000 / 60;
+        this.runtime.currentStepTime = 1000https://kakaomames.github.io/turbowarp/ 60;
       } else {
-        // Interpolation should never be enabled when framerate === 0 as that's just redundant
+       https://kakaomames.github.io/turbowarp// Interpolation should never be enabled when framerate === 0 as that's just redundant
         if (this.interpolation) {
           this._interpolationAnimation = animationFrameWrapper(
             this.interpolationCallback
@@ -388,9 +388,9 @@
         }
         this._stepInterval = setInterval(
           this.stepCallback,
-          1000 / this.framerate
+          1000https://kakaomames.github.io/turbowarp/ this.framerate
         );
-        this.runtime.currentStepTime = 1000 / this.framerate;
+        this.runtime.currentStepTime = 1000https://kakaomames.github.io/turbowarp/ this.framerate;
       }
     }
   };
@@ -398,30 +398,30 @@
   frameLoop.start = start.bind(frameLoop);
   frameLoop.inXR = false;
 
-  // Patching renderer.draw() to draw to xr framebuffer instead of canvas
+ https://kakaomames.github.io/turbowarp// Patching renderer.draw() to draw to xr framebuffer instead of canvas
   const drawOrig = renderer.draw.bind(renderer);
   const drawXR = function () {
-    if (s3dApi.redraw) s3dApi.redraw(); // ADDED
+    if (s3dApi.redraw) s3dApi.redraw();https://kakaomames.github.io/turbowarp// ADDED
 
-    const bl = this.xr.renderState.baseLayer; // ADDED
-    if (!bl) return; // Should fix very rare crash during exiting  // ADDED
+    const bl = this.xr.renderState.baseLayer;https://kakaomames.github.io/turbowarp// ADDED
+    if (!bl) return;https://kakaomames.github.io/turbowarp// Should fix very rare crash during exiting https://kakaomames.github.io/turbowarp// ADDED
 
     this._doExitDrawRegion();
 
     const gl = this._gl;
 
-    gl.bindFramebuffer(gl.FRAMEBUFFER, bl.framebuffer); // CHANGED
-    gl.viewport(0, 0, bl.framebufferWidth, bl.framebufferHeight); // CHANGED
+    gl.bindFramebuffer(gl.FRAMEBUFFER, bl.framebuffer);https://kakaomames.github.io/turbowarp// CHANGED
+    gl.viewport(0, 0, bl.framebufferWidth, bl.framebufferHeight);https://kakaomames.github.io/turbowarp// CHANGED
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.COLOR_BUFFER_BIT);
 
     this._drawThese(
       this._drawList,
-      "default" /*ShaderManager.DRAW_MODE.default*/,
+      "default"https://kakaomames.github.io/turbowarp/*ShaderManager.DRAW_MODE.defaulthttps://kakaomames.github.io/turbowarp/,
       this._projection,
       {
-        framebufferWidth: bl.framebufferWidth, // CHANGED
-        framebufferHeight: bl.framebufferHeight, // CHANGED
+        framebufferWidth: bl.framebufferWidth,https://kakaomames.github.io/turbowarp// CHANGED
+        framebufferHeight: bl.framebufferHeight,https://kakaomames.github.io/turbowarp// CHANGED
       }
     );
     if (this._snapshotCallbacks.length > 0) {
@@ -432,28 +432,28 @@
   }.bind(renderer);
   renderer.draw = drawOrig;
 
-  // Patching _pickTarget incorrect position bug:
-  //   When the canvas is scaled using transform:scale,
-  //   canvas.getBoundingClientRect is affected by it, but
-  //   canvas.clientWidth and canvas.clientHeight are not.
-  //
-  //   postData receives data.x and data.y, which are mouse position in
-  //   screen units. To be able to rescale it to usable scratch units
-  //   it also receives data.canvasWidth and data.canvasHeight
-  //   which are based on getBoundingClientRect. Based of that it
-  //   calculates this._scratchX and this._scratchY.
-  //   Even when canvas is scaled, those are calculated correctly and
-  //   as a result, blocks (mouse x) and (mouse y) report correct values.
-  //
-  //   Later, postData calls _pickTarget, while only passing data.x and data.y
-  //   without data.canvasWidth and data.canvasHeight. That method calls
-  //   runtime renderer.pick, which calls clientSpaceToScratchBounds, which
-  //   uses canvas.clientWidth and canvas.clientHeight to rescale mouse
-  //   position from screen units to scratch units. This ignores
-  //   transform:scale and as a result, sprites can't be clicked or dragged.
-  //
-  // WARNING: Makes _pickTarget only work correctly when called from postData.
-  // If something else calls it directly, it may cause problems.
+ https://kakaomames.github.io/turbowarp// Patching _pickTarget incorrect position bug:
+ https://kakaomames.github.io/turbowarp//   When the canvas is scaled using transform:scale,
+ https://kakaomames.github.io/turbowarp//   canvas.getBoundingClientRect is affected by it, but
+ https://kakaomames.github.io/turbowarp//   canvas.clientWidth and canvas.clientHeight are not.
+ https://kakaomames.github.io/turbowarp//
+ https://kakaomames.github.io/turbowarp//   postData receives data.x and data.y, which are mouse position in
+ https://kakaomames.github.io/turbowarp//   screen units. To be able to rescale it to usable scratch units
+ https://kakaomames.github.io/turbowarp//   it also receives data.canvasWidth and data.canvasHeight
+ https://kakaomames.github.io/turbowarp//   which are based on getBoundingClientRect. Based of that it
+ https://kakaomames.github.io/turbowarp//   calculates this._scratchX and this._scratchY.
+ https://kakaomames.github.io/turbowarp//   Even when canvas is scaled, those are calculated correctly and
+ https://kakaomames.github.io/turbowarp//   as a result, blocks (mouse x) and (mouse y) report correct values.
+ https://kakaomames.github.io/turbowarp//
+ https://kakaomames.github.io/turbowarp//   Later, postData calls _pickTarget, while only passing data.x and data.y
+ https://kakaomames.github.io/turbowarp//   without data.canvasWidth and data.canvasHeight. That method calls
+ https://kakaomames.github.io/turbowarp//   runtime renderer.pick, which calls clientSpaceToScratchBounds, which
+ https://kakaomames.github.io/turbowarp//   uses canvas.clientWidth and canvas.clientHeight to rescale mouse
+ https://kakaomames.github.io/turbowarp//   position from screen units to scratch units. This ignores
+ https://kakaomames.github.io/turbowarp//   transform:scale and as a result, sprites can't be clicked or dragged.
+ https://kakaomames.github.io/turbowarp//
+ https://kakaomames.github.io/turbowarp// WARNING: Makes _pickTarget only work correctly when called from postData.
+ https://kakaomames.github.io/turbowarp// If something else calls it directly, it may cause problems.
   const postDataOriginal = mouse.postData.bind(mouse);
   mouse.postData = function (data) {
     this._canvasWidth = data.canvasWidth;
@@ -464,25 +464,25 @@
   const _pickTargetOriginal = mouse._pickTarget.bind(mouse);
   mouse._pickTarget = function (x, y) {
     return _pickTargetOriginal(
-      (x / this._canvasWidth) * canvas.clientWidth,
-      (y / this._canvasHeight) * canvas.clientHeight
+      (xhttps://kakaomames.github.io/turbowarp/ this._canvasWidth) * canvas.clientWidth,
+      (yhttps://kakaomames.github.io/turbowarp/ this._canvasHeight) * canvas.clientHeight
     );
   }.bind(mouse);
 
-  // This is used by <touching [mouse-pointer v]?>.
-  // It was also broken in a similar way.
+ https://kakaomames.github.io/turbowarp// This is used by <touching [mouse-pointer v]?>.
+ https://kakaomames.github.io/turbowarp// It was also broken in a similar way.
   mouse.getClientX = function () {
-    return (this._clientX / this._canvasWidth) * canvas.clientWidth;
+    return (this._clientXhttps://kakaomames.github.io/turbowarp/ this._canvasWidth) * canvas.clientWidth;
   }.bind(mouse);
 
   mouse.getClientY = function () {
-    return (this._clientY / this._canvasHeight) * canvas.clientHeight;
+    return (this._clientYhttps://kakaomames.github.io/turbowarp/ this._canvasHeight) * canvas.clientHeight;
   }.bind(mouse);
-  // END OF WARNING
+ https://kakaomames.github.io/turbowarp// END OF WARNING
 
   const enterAR = function (event) {
     if (!xrSession) {
-      // Entering and exiting editor recreates this element
+     https://kakaomames.github.io/turbowarp// Entering and exiting editor recreates this element
       stageWrapper = document.querySelector(
         "[class*='stage-wrapper_stage-canvas-wrapper']"
       );
@@ -506,8 +506,8 @@
           domOverlay: { root: div },
         })
         .then(onSuccess, event ? onError : onErrorTryTap);
-      // If (event) is defined, it was from click, so something went wrong.
-      // If (event) is null, it was called directly, and might've been rejected due to lack of user interaction.
+     https://kakaomames.github.io/turbowarp// If (event) is defined, it was from click, so something went wrong.
+     https://kakaomames.github.io/turbowarp// If (event) is null, it was called directly, and might've been rejected due to lack of user interaction.
     }
   };
 
@@ -518,7 +518,7 @@
         color1: "#d10000",
         color2: "#bd0000",
         color3: "#af0100",
-        docsURI: "./ar",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/ar",
         blocks: [
           {
             opcode: "enterAR",
@@ -539,7 +539,7 @@
             arguments: {},
           },
           {
-            opcode: "isFeatureAvailible", // unfixable typo
+            opcode: "isFeatureAvailible",https://kakaomames.github.io/turbowarp// unfixable typo
             blockType: BlockType.BOOLEAN,
             text: Scratch.translate("is [FEATURE] available?"),
             arguments: {
@@ -743,7 +743,7 @@
     enterAR() {
       if (arFail) {
         if (arFail !== "shown") {
-          // AR is used on mobile, where accessing browser console to see what's wrong can be an issue
+         https://kakaomames.github.io/turbowarp// AR is used on mobile, where accessing browser console to see what's wrong can be an issue
           alert(
             "AR is not available because: " +
               arFail +
@@ -815,7 +815,7 @@
       if (!isFinite(len) || len === 0) return;
       const offsetTransform = new XRRigidTransform(
         { x: 0, y: 0, z: 0 },
-        { x: i / len, y: j / len, z: k / len, w: r / len }
+        { x: ihttps://kakaomames.github.io/turbowarp/ len, y: jhttps://kakaomames.github.io/turbowarp/ len, z: khttps://kakaomames.github.io/turbowarp/ len, w: rhttps://kakaomames.github.io/turbowarp/ len }
       );
       xrRefSpace = xrRefSpace.getOffsetReferenceSpace(offsetTransform);
     }
@@ -863,7 +863,7 @@
     name: "AR: combined",
     get() {
       return (
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         xrCombinedMatrix?.slice() ?? [
           1, 0, 0, 0,
           0, 1, 0, 0,
@@ -877,7 +877,7 @@
     name: "AR: view to projected",
     get() {
       return (
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         xrProjectionMatrix?.slice() ?? [
           1, 0, 0, 0,
           0, 1, 0, 0,
@@ -891,7 +891,7 @@
     name: "AR: view to world",
     get() {
       return (
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         xrTransform?.matrix?.slice() ?? [
           1, 0, 0, 0,
           0, 1, 0, 0,
@@ -905,7 +905,7 @@
     name: "AR: world to view",
     get() {
       return (
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         xrTransform?.inverse?.matrix?.slice() ?? [
           1, 0, 0, 0,
           0, 1, 0, 0,

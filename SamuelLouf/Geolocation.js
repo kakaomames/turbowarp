@@ -1,41 +1,41 @@
-// Name: Geolocation
-// ID: samuelloufgeolocation
-// Description: Get the user's current location (requires permission from browser). Not supported in desktop app or Electron packaged projects.
-// By: SamuelLouf <https://scratch.mit.edu/users/samuellouf/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Geolocation
+https://kakaomames.github.io/turbowarp/ ID: samuelloufgeolocation
+https://kakaomames.github.io/turbowarp/ Description: Get the user's current location (requires permission from browser). Not supported in desktop app or Electron packaged projects.
+https://kakaomames.github.io/turbowarp/ By: SamuelLouf <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/samuellouhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
 
   const menuIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMTAuODAyNSIgaGVpZ2h0PSIxMTAuNDAyNDkiIHZpZXdCb3g9IjAsMCwxMTAuODAyNSwxMTAuNDAyNDkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODQuNTk4NzUsLTEyNC43OTg3NSkiPjxnIGRhdGEtcGFwZXItZGF0YT0ieyZxdW90O2lzUGFpbnRpbmdMYXllciZxdW90Ozp0cnVlfSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0xODQuNTk4NzUsMjM1LjIwMTI1di0xMTAuNDAyNDloMTEwLjgwMjV2MTEwLjQwMjQ5eiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMCIvPjxwYXRoIGQ9Ik0yNDEuNzc3MTQsMjE2LjQwNzcyYy0wLjU0NTUyLDAuNDA5NjQgLTEuMjg5MjEsMC40MzM2MyAtMS44NiwwLjA2Yy02LjE0MzY2LC0zLjg2ODY0IC0xMS41OTg1OSwtOC43MzU1IC0xNi4xNCwtMTQuNGMtNS41NTkxLC02Ljc1NTkyIC05LjI5NzYsLTE0LjgyMTU4IC0xMC44NiwtMjMuNDNjLTEuMjksLTcuOTkgLTAuMDYsLTE1LjY3IDMuOTQsLTIxLjkyYzEuNjE0OTMsLTIuNTM4ODEgMy42NDI4NywtNC43ODk4MyA2LC02LjY2YzUuMTU3NjksLTQuMzA2MjUgMTEuNjQxNSwtNi43MDQxMyAxOC4zNiwtNi43OWM2LjUwNTg5LDAuMTA0OTYgMTIuNzM1OTYsMi42NDU1MSAxNy40Niw3LjEyYzEuODE0MzUsMS42NjMyMiAzLjM4MzM1LDMuNTc1NjQgNC42Niw1LjY4YzQuMjcsNyA1LjE5LDE2IDMuMzEsMjUuMTJjLTMuMTgyMzQsMTQuNjIxNzcgLTEyLjE1NTQ4LDI3LjMyOTIyIC0yNC44NywzNS4yMnpNMjQwLjAwNzE0LDE1Ny40Nzc3MWM3LjU3NzM1LDAgMTMuNzIsNi4xNDI2NSAxMy43MiwxMy43MmMwLDcuNTc3MzUgLTYuMTQyNjUsMTMuNzIgLTEzLjcyLDEzLjcyYy03LjU3NzM1LDAgLTEzLjcyLC02LjE0MjY1IC0xMy43MiwtMTMuNzJjMCwtNy41NzczNSA2LjE0MjY1LC0xMy43MiAxMy43MiwtMTMuNzJ6IiBmaWxsPSIjMDM2ZTE1IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzAwYTExYiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjo1NS40MDEyNTAwMDAwMDAwMDU6NTUuMjAxMjQ1LS0+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMTAuODAyNSIgaGVpZ2h0PSIxMTAuNDAyNDkiIHZpZXdCb3g9IjAsMCwxMTAuODAyNSwxMTAuNDAyNDkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODQuNTk4NzUsLTEyNC43OTg3NSkiPjxnIGRhdGEtcGFwZXItZGF0YT0ieyZxdW90O2lzUGFpbnRpbmdMYXllciZxdW90Ozp0cnVlfSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0xODQuNTk4NzUsMjM1LjIwMTI1di0xMTAuNDAyNDloMTEwLjgwMjV2MTEwLjQwMjQ5eiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMCIvPjxwYXRoIGQ9Ik0yNDEuNzc3MTQsMjE2LjQwNzcyYy0wLjU0NTUyLDAuNDA5NjQgLTEuMjg5MjEsMC40MzM2MyAtMS44NiwwLjA2Yy02LjE0MzY2LC0zLjg2ODY0IC0xMS41OTg1OSwtOC43MzU1IC0xNi4xNCwtMTQuNGMtNS41NTkxLC02Ljc1NTkyIC05LjI5NzYsLTE0LjgyMTU4IC0xMC44NiwtMjMuNDNjLTEuMjksLTcuOTkgLTAuMDYsLTE1LjY3IDMuOTQsLTIxLjkyYzEuNjE0OTMsLTIuNTM4ODEgMy42NDI4NywtNC43ODk4MyA2LC02LjY2YzUuMTU3NjksLTQuMzA2MjUgMTEuNjQxNSwtNi43MDQxMyAxOC4zNiwtNi43OWM2LjUwNTg5LDAuMTA0OTYgMTIuNzM1OTYsMi42NDU1MSAxNy40Niw3LjEyYzEuODE0MzUsMS42NjMyMiAzLjM4MzM1LDMuNTc1NjQgNC42Niw1LjY4YzQuMjcsNyA1LjE5LDE2IDMuMzEsMjUuMTJjLTMuMTgyMzQsMTQuNjIxNzcgLTEyLjE1NTQ4LDI3LjMyOTIyIC0yNC44NywzNS4yMnpNMjQwLjAwNzE0LDE1Ny40Nzc3MWM3LjU3NzM1LDAgMTMuNzIsNi4xNDI2NSAxMy43MiwxMy43MmMwLDcuNTc3MzUgLTYuMTQyNjUsMTMuNzIgLTEzLjcyLDEzLjcyYy03LjU3NzM1LDAgLTEzLjcyLC02LjE0MjY1IC0xMy43MiwtMTMuNzJjMCwtNy41NzczNSA2LjE0MjY1LC0xMy43MiAxMy43MiwtMTMuNzJ6IiBmaWxsPSIjMDM2ZTE1IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzAwYTExYiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjo1NS40MDEyNTAwMDAwMDAwMDU6NTUuMjAxMjQ1LS0+";
 
-  const MOVEMENT_THRESHOLD_DEGREES = 5 * 10 ** -5; // ~ 5.5 meters
+  const MOVEMENT_THRESHOLD_DEGREES = 5 * 10 ** -5;https://kakaomames.github.io/turbowarp// ~ 5.5 meters
 
-  /** @type {Required<PositionOptions>} */
+ https://kakaomames.github.io/turbowarp/** @type {Required<PositionOptions>} https://kakaomames.github.io/turbowarp/
   const options = {
     enableHighAccuracy: true,
     timeout: 10000,
     maximumAge: 0,
   };
 
-  /** @type {number|null} */
+ https://kakaomames.github.io/turbowarp/** @type {number|null} https://kakaomames.github.io/turbowarp/
   let latitude = null;
-  /** @type {number|null} */
+ https://kakaomames.github.io/turbowarp/** @type {number|null} https://kakaomames.github.io/turbowarp/
   let longitude = null;
-  /** @type {number|null} accuracy of the position, in meters */
+ https://kakaomames.github.io/turbowarp/** @type {number|null} accuracy of the position, in meters https://kakaomames.github.io/turbowarp/
   let accuracy = null;
 
-  /** @type {number|null} */
+ https://kakaomames.github.io/turbowarp/** @type {number|null} https://kakaomames.github.io/turbowarp/
   let watcherID = null;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {PositionOptions} options
    * @returns {Promise<{latitude: number; longitude: number; accuracy: number}|null>}
-   */
+   https://kakaomames.github.io/turbowarp/
   function getGeolocation(options) {
     return new Promise((resolve) => {
-      /** @type {PositionCallback} */
+     https://kakaomames.github.io/turbowarp/** @type {PositionCallback} https://kakaomames.github.io/turbowarp/
       const success = (pos) => {
         resolve({
           latitude: pos.coords.latitude,
@@ -44,7 +44,7 @@
         });
       };
 
-      /** @type {PositionErrorCallback} */
+     https://kakaomames.github.io/turbowarp/** @type {PositionErrorCallback} https://kakaomames.github.io/turbowarp/
       const error = (err) => {
         console.warn(err);
         resolve(null);
@@ -54,13 +54,13 @@
     });
   }
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {number|null} oldLatitude
    * @param {number|null} oldLongitude
    * @param {number} newLatitude
    * @param {number} newLongitude
    * @returns {boolean}
-   */
+   https://kakaomames.github.io/turbowarp/
   function hasMoved(oldLatitude, oldLongitude, newLatitude, newLongitude) {
     return (
       oldLatitude === null ||
@@ -70,10 +70,10 @@
     );
   }
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Updates the stored position and, if it moved, fires "when location changed".
    * @param {{latitude: number; longitude: number; accuracy: number}} coords
-   */
+   https://kakaomames.github.io/turbowarp/
   function updatePosition(coords) {
     const moved = hasMoved(
       latitude,
@@ -91,23 +91,23 @@
     }
   }
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @returns {boolean}
-   */
+   https://kakaomames.github.io/turbowarp/
   function isElectron() {
     return navigator.userAgent.includes("Electron");
   }
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @returns {boolean}
-   */
+   https://kakaomames.github.io/turbowarp/
   function isSupported() {
     return !!navigator.geolocation && !isElectron();
   }
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @returns {Promise<boolean>}
-   */
+   https://kakaomames.github.io/turbowarp/
   async function canGeolocate() {
     if (!isSupported()) {
       return false;
@@ -301,7 +301,7 @@
     }
 
     getTimeout() {
-      return options.timeout / 1000;
+      return options.timeouthttps://kakaomames.github.io/turbowarp/ 1000;
     }
 
     setAccuracy(args) {
@@ -312,7 +312,7 @@
       return options.enableHighAccuracy;
     }
   }
-  // @ts-ignore
+ https://kakaomames.github.io/turbowarp// @ts-ignore
   Scratch.extensions.register(new Geolocation());
-  // @ts-ignore
+ https://kakaomames.github.io/turbowarp// @ts-ignore
 })(Scratch);

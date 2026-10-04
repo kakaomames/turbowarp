@@ -1,14 +1,14 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';
 
-  // highlight-start
+ https://kakaomames.github.io/turbowarp// highlight-start
   if (!Scratch.extensions.unsandboxed) {
     throw new Error('This Turbo Mode example must run unsandboxed');
   }
   const vm = Scratch.vm;
-  // highlight-end
+ https://kakaomames.github.io/turbowarp// highlight-end
 
   class TurboMode {
     getInfo() {
@@ -36,11 +36,11 @@
         }
       };
     }
-    // highlight-start
+   https://kakaomames.github.io/turbowarp// highlight-start
     set(args) {
       vm.setTurboMode(args.ENABLED === 'on');
     }
-    // highlight-end
+   https://kakaomames.github.io/turbowarp// highlight-end
   }
   Scratch.extensions.register(new TurboMode());
 })(Scratch);

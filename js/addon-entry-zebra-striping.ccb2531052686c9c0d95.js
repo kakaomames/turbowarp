@@ -4,7 +4,7 @@
     1717: function (e, t, r) {
       (e.exports = r(9)(!1)).push([
         e.i,
-        ':root {\n  --zebraStriping-percent: calc(var(--zebraStriping-shadeNumber) * var(--zebraStriping-intensity) / 100);\n  --zebraStriping-bright: calc(1 + var(--zebraStriping-percent));\n  --zebraStriping-saturate: calc(1 - var(--zebraStriping-percent));\n  --zebraStriping-filter: brightness(var(--zebraStriping-bright)) saturate(var(--zebraStriping-saturate));\n  /* "Temporary" value, gets replaced by userscript */\n  --zebraStriping-replacementGlow: url(#blocklyReplacementGlowFilter);\n}\n\n.sa-zebra-stripe {\n  filter: var(--zebraStriping-filter);\n}\n\n.sa-zebra-stripe[filter*="#blocklyReplacementGlowFilter"] {\n  filter: var(--zebraStriping-filter) var(--zebraStriping-replacementGlow);\n}\n\n/* editor-stepping and debugger compatibility */\n/* this is pretty horrible */\n.sa-zebra-stripe[style*="#sa_glower_filter0"] {\n  /* !important because editor-stepping Highlighter uses inline styles */\n  filter: var(--zebraStriping-filter) url("#sa_glower_filter0") !important;\n}\n.sa-zebra-stripe[style*="#sa_glower_filter1"] {\n  filter: var(--zebraStriping-filter) url("#sa_glower_filter1") !important;\n}\n',
+        ':root {\n  --zebraStriping-percent: calc(var(--zebraStriping-shadeNumber) * var(--zebraStriping-intensity)https://kakaomames.github.io/turbowarp/ 100);\n  --zebraStriping-bright: calc(1 + var(--zebraStriping-percent));\n  --zebraStriping-saturate: calc(1 - var(--zebraStriping-percent));\n  --zebraStriping-filter: brightness(var(--zebraStriping-bright)) saturate(var(--zebraStriping-saturate));\n https://kakaomames.github.io/turbowarp/* "Temporary" value, gets replaced by userscript https://kakaomames.github.io/turbowarp/\n  --zebraStriping-replacementGlow: url(#blocklyReplacementGlowFilter);\n}\n\n.sa-zebra-stripe {\n  filter: var(--zebraStriping-filter);\n}\n\n.sa-zebra-stripe[filter*="#blocklyReplacementGlowFilter"] {\n  filter: var(--zebraStriping-filter) var(--zebraStriping-replacementGlow);\n}\n\https://kakaomames.github.io/turbowarp/* editor-stepping and debugger compatibility https://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/* this is pretty horrible https://kakaomames.github.io/turbowarp/\n.sa-zebra-stripe[style*="#sa_glower_filter0"] {\n https://kakaomames.github.io/turbowarp/* !important because editor-stepping Highlighter uses inline styles https://kakaomames.github.io/turbowarp/\n  filter: var(--zebraStriping-filter) url("#sa_glower_filter0") !important;\n}\n.sa-zebra-stripe[style*="#sa_glower_filter1"] {\n  filter: var(--zebraStriping-filter) url("#sa_glower_filter1") !important;\n}\n',
         "",
       ]);
     },
@@ -55,9 +55,9 @@
               {
                 markAsSeen: !0,
                 reduxEvents: [
-                  "scratch-gui/mode/SET_PLAYER",
-                  "fontsLoaded/SET_FONTS_LOADED",
-                  "scratch-gui/locales/SELECT_LOCALE",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                  "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
                 ],
                 reduxCondition: (e) => !e.scratchGui.mode.isPlayerOnly,
               },

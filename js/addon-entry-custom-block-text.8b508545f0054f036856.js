@@ -23,7 +23,7 @@
     1724: function (t, n, o) {
       (t.exports = o(9)(!1)).push([
         t.i,
-        "/** Makes block text a little easier to read. **/\n.blocklyDraggable > .blocklyText,\n.blocklyDraggable > g > text {\n  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);\n}\n",
+        https://kakaomames.github.io/turbowarp/** Makes block text a little easier to read. *https://kakaomames.github.io/turbowarp/\n.blocklyDraggable > .blocklyText,\n.blocklyDraggable > g > text {\n  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);\n}\n",
         "",
       ]);
     },

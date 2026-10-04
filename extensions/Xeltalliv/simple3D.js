@@ -1,21 +1,21 @@
-// Name: Simple 3D
-// ID: xeltallivSimple3D
-// Description: Make GPU accelerated 3D projects easily.
-// By: Vadik1 <https://scratch.mit.edu/users/Vadik1/>
-// License: MPL-2.0 AND BSD-3-Clause
-// Version: 1.3.0
+https://kakaomames.github.io/turbowarp/ Name: Simple 3D
+https://kakaomames.github.io/turbowarp/ ID: xeltallivSimple3D
+https://kakaomames.github.io/turbowarp/ Description: Make GPU accelerated 3D projects easily.
+https://kakaomames.github.io/turbowarp/ By: Vadik1 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Vadikhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MPL-2.0 AND BSD-3-Clause
+https://kakaomames.github.io/turbowarp/ Version: 1.3.0
 
 (function (Scratch) {
   "use strict";
 
-  /*
+ https://kakaomames.github.io/turbowarp/*
    * A modified version of m4 library based on one of the earlier lessons on webglfundamentals.org
-   * All lessons can be found on https://github.com/gfxfundamentals/webgl-fundamentals/tree/master
+   * All lessons can be found on httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/gfxfundamentalhttps://kakaomames.github.io/turbowarp/webgl-fundamentalhttps://kakaomames.github.io/turbowarp/trehttps://kakaomames.github.io/turbowarp/master
    * licensed under BSD 3-Clause license.
    * Only this section of the code is BSD 3-Clause. The rest of the extension is MPL-2.0.
-   */
+   https://kakaomames.github.io/turbowarp/
 
-  /*
+ https://kakaomames.github.io/turbowarp/*
    * Copyright 2021 GFXFundamentals.
    * All rights reserved.
    *
@@ -27,7 +27,7 @@
    * notice, this list of conditions and the following disclaimer.
    *     * Redistributions in binary form must reproduce the above
    * copyright notice, this list of conditions and the following disclaimer
-   * in the documentation and/or other materials provided with the
+   * in the documentation anhttps://kakaomames.github.io/turbowarp/or other materials provided with the
    * distribution.
    *     * Neither the name of GFXFundamentals. nor the names of his
    * contributors may be used to endorse or promote products derived from
@@ -44,24 +44,24 @@
    * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
    * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
    * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-   */
-  // prettier-ignore
+   https://kakaomames.github.io/turbowarp/
+ https://kakaomames.github.io/turbowarp// prettier-ignore
   const m4 = {
     perspective(fieldOfViewInRadians, aspect, near, far) {
       const f = Math.tan(Math.PI * 0.5 - 0.5 * fieldOfViewInRadians);
-      const rangeInv = 1.0 / (near - far);
+      const rangeInv = 1.0https://kakaomames.github.io/turbowarp/ (near - far);
       return [
-        f / aspect, 0, 0, 0,
+        fhttps://kakaomames.github.io/turbowarp/ aspect, 0, 0, 0,
         0, f, 0, 0,
         0, 0, (near + far) * rangeInv, -1,
         0, 0, near * far * rangeInv * 2, 0
       ];
     },
     orthographic(aspect, near, far) {
-      const a = 2 / (near - far);
+      const a = 2https://kakaomames.github.io/turbowarp/ (near - far);
       const b = -1 + near * a;
       return [
-        1 / aspect, 0, 0, 0,
+        1https://kakaomames.github.io/turbowarp/ aspect, 0, 0, 0,
         0, 1, 0, 0,
         0, 0, a, 0,
         0, 0, b, 1
@@ -290,21 +290,21 @@
       ];
       const det = m[0] * inv[0] + m[1] * inv[4] + m[2] * inv[8] + m[3] * inv[12];
       if (det == 0) return m4.zero();
-      const invDet = 1 / det;
+      const invDet = 1https://kakaomames.github.io/turbowarp/ det;
       for(let i=0; i<16; i++) {
         inv[i] *= invDet;
       }
       return inv;
     },
   };
-  /* End of m4 */
+ https://kakaomames.github.io/turbowarp/* End of m4 https://kakaomames.github.io/turbowarp/
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * hasOwn but it works in older browsers
    * @param {object} obj
    * @param {string} name
    * @returns {boolean}
-   */
+   https://kakaomames.github.io/turbowarp/
   const hasOwn = (obj, name) => Object.prototype.hasOwnProperty.call(obj, name);
   const clamp = (value, min, max) =>
     value > max ? max : value < min ? min : value;
@@ -374,7 +374,7 @@
     }
     getAspectRatio() {
       if (this.width == 0) return 1;
-      return this.width / this.height;
+      return this.widthhttps://kakaomames.github.io/turbowarp/ this.height;
     }
     destroy() {
       this.destroyed = true;
@@ -509,7 +509,7 @@
       }
     }
     isLoading() {
-      // TODO: optimize: make sides report their state changes, rather than asking them every time
+     https://kakaomames.github.io/turbowarp// TODO: optimize: make sides report their state changes, rather than asking them every time
       for (const side of this.sides) {
         if (side.loading) return true;
       }
@@ -766,7 +766,7 @@
       for (const otherMesh of this.dependants) {
         otherMesh.update();
       }
-      //TODO: continue
+     https://kakaomames.github.io/turbowarp//TODO: continue
     }
   }
   const MeshPropFns = {
@@ -783,7 +783,7 @@
     "has positions": (mesh) => !!mesh.buffers.position,
     "has colors": (mesh) => !!mesh.buffers.colors,
     "has texture coordinates": (mesh) => !!mesh.buffers.texCoords,
-    "has bone indices/weights": (mesh) => !!mesh.buffers.boneIndices,
+    "has bone indicehttps://kakaomames.github.io/turbowarp/weights": (mesh) => !!mesh.buffers.boneIndices,
     "has bones": (mesh) => !!mesh.data.bonesDiff,
     "has instanced positions": (mesh) => !!mesh.buffers.instanceTransforms,
     "has instanced colors": (mesh) => !!mesh.buffers.instanceColors,
@@ -869,7 +869,7 @@
     parseColor(string) {
       const number = +string;
       if (!Number.isFinite(number)) return undefined;
-      if (string.indexOf(".") == -1) return number / 255;
+      if (string.indexOf(".") == -1) return numberhttps://kakaomames.github.io/turbowarp/ 255;
       return number;
     }
   }
@@ -896,7 +896,7 @@
           vertUV.push([+arr[1], +arr[2]]);
         }
         if (arr[0] == "f") {
-          this.addPoly(arr.slice(1).map(e => e.split("/").map(Number)), materials[materialUsed]);
+          this.addPoly(arr.slice(1).map(e => e.split(https://kakaomames.github.io/turbowarp/").map(Number)), materials[materialUsed]);
         }
         if (arr[0] == "usemtl") {
           materialUsed = materials[arr[1]] ? arr[1] : " ";
@@ -920,7 +920,7 @@
           color[3] = 1 - arr[1];
         }
       }
-      if (this.output.uv.length/2 !== this.output.rgba.length/4) {
+      if (this.output.uv.lengthttps://kakaomames.github.io/turbowarp/2 !== this.output.rgba.lengthttps://kakaomames.github.io/turbowarp/4) {
         this.output.uv = null;
       }
     }
@@ -1003,7 +1003,7 @@
       if (this.queue.length == 0) return;
       if (!this.worker) {
         this.worker = new Worker(
-          `data:text/javascript;base64,${btoa(workerSrc)}`
+          `data:texhttps://kakaomames.github.io/turbowarp/javascript;base64,${btoa(workerSrc)}`
         );
         this.worker.addEventListener("message", this.boundHandle);
       }
@@ -1112,16 +1112,16 @@
     }
     updateNativeSize() {
       this._nativeSize = canvasNativeSize || renderer.getNativeSize();
-      this._rotationCenter = [this._nativeSize[0] / 2, this._nativeSize[1] / 2];
+      this._rotationCenter = [this._nativeSize[0]https://kakaomames.github.io/turbowarp/ 2, this._nativeSize[1]https://kakaomames.github.io/turbowarp/ 2];
     }
     useNearest() {
       return canvasUseNearest;
     }
   }
   function addSimple3DLayer(publicApi) {
-    // Register new drawable group "simple3D"
-    // To undertsand how this patch works, first understand how those are interconnected:
-    // renderer._groupOrdering => renderer._layerGroups => renderer._drawList => renderer._allDrawables
+   https://kakaomames.github.io/turbowarp// Register new drawable group "simple3D"
+   https://kakaomames.github.io/turbowarp// To undertsand how this patch works, first understand how those are interconnected:
+   https://kakaomames.github.io/turbowarp// renderer._groupOrdering => renderer._layerGroups => renderer._drawList => renderer._allDrawables
     let index = renderer._groupOrdering.indexOf("video");
     renderer._groupOrdering.splice(index + 1, 0, "simple3D");
     renderer._layerGroups["simple3D"] = {
@@ -1132,7 +1132,7 @@
       renderer._layerGroups[renderer._groupOrdering[i]].groupIndex = i;
     }
 
-    // Create drawable and skin
+   https://kakaomames.github.io/turbowarp// Create drawable and skin
     skinId = renderer._nextSkinId++;
     const skin = new SimpleSkin(skinId, renderer);
     renderer._allSkins[skinId] = skin;
@@ -1140,14 +1140,14 @@
     const drawable = renderer._allDrawables[drawableId];
     renderer.updateDrawableSkinId(drawableId, skinId);
 
-    // Prevent pick() from trying to read all the pixels from the 3D skin as this drawable does not
-    // correspond to a target, so it can't be dragged or anything like that. Fixes pick() doing an
-    // unnecessary GPU -> CPU transfer (very slow) for a collision test whose result doesn't matter.
+   https://kakaomames.github.io/turbowarp// Prevent pick() from trying to read all the pixels from the 3D skin as this drawable does not
+   https://kakaomames.github.io/turbowarp// correspond to a target, so it can't be dragged or anything like that. Fixes pick() doing an
+   https://kakaomames.github.io/turbowarp// unnecessary GPU -> CPU transfer (very slow) for a collision test whose result doesn't matter.
     if (renderer.markDrawableAsNoninteractive) {
       renderer.markDrawableAsNoninteractive(drawableId);
     }
 
-    // Detect resizing
+   https://kakaomames.github.io/turbowarp// Detect resizing
     drawable.setHighQuality = function (...args) {
       Object.getPrototypeOf(this).setHighQuality(...args);
       runtime.startHats(`${extensionId}_whenStageResized`);
@@ -1155,7 +1155,7 @@
       if (!canvasResolution) this.skin.resizeCanvas();
     };
 
-    // Support for SharkPool's Layer Control extension
+   https://kakaomames.github.io/turbowarp// Support for SharkPool's Layer Control extension
     drawable.customDrawableName = "Simple3D Layer";
 
     if (!publicApi.redraw) {
@@ -1412,7 +1412,7 @@ uniform float u_alpha_threshold;
 void main() {
 #ifdef TEXTURES
   vec4 color = texture(u_texture, v_uv);
-  color.rgb /= color.a;
+  color.rgbhttps://kakaomames.github.io/turbowarp/= color.a;
 #else
   vec4 color = vec4(1);
 #endif
@@ -1427,7 +1427,7 @@ void main() {
 #endif
   color = color * u_color_mul + u_color_add;
 #ifdef FOG
-  float fog = (length(v_viewpos) - u_fog_dist.x) / u_fog_dist.y;
+  float fog = (length(v_viewpos) - u_fog_dist.x)https://kakaomames.github.io/turbowarp/ u_fog_dist.y;
   color.rgb = mix(color.rgb, u_fog_color, clamp(fog, 0.0, 1.0));
 #endif
   color.a = clamp(color.a, 0.0, 1.0);
@@ -1518,10 +1518,10 @@ void main() {
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
-    // eslint-disable-next-line extension/check-can-fetch
+   https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
     const image = new Image();
     image.src =
-      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAABg2lDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpUUqDnYQcchQneyiIo61FYpQIdQKrTqYvPQPmjQkKS6OgmvBwZ/FqoOLs64OroIg+APi7OCk6CIl3pcUWsT44PI+znvncN99gNCqMc3qSwCabpvZdFLMF1bF0CsEhAGqmMwsY16SMvBdX/cI8P0uzrP87/25BtWixYCASJxghmkTbxDPbtoG533iKKvIKvE58aRJDRI/cl3x+I1z2WWBZ0bNXDZFHCUWyz2s9DCrmBrxDHFM1XTKF/Ieq5y3OGu1Buv0yV8YKeory1ynGkMai1iCBBEKGqiiBhtx2nVSLGTpPOnjH3X9ErkUclXByLGAOjTIrh/8D37P1ipNT3lJkSTQ/+I4H+NAaBdoNx3n+9hx2idA8Bm40rv+eguY+yS92dViR8DQNnBx3dWUPeByBxh5MmRTdqUglVAqAe9n9E0FYPgWGFjz5tY5x+kDkKNZZW6Ag0NgokzZ6z7vDvfO7d87nfn9ACRZcoedT/mXAAAAGFBMVEVtbW11dXVtbf+EhIT/bW2goKBt/21t//8Qh6V7AAAACXBIWXMAABhMAAAYdAGfqEAgAAAAB3RJTUUH6AIIAA4YBFj9GAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAABjSURBVAjXPctBDkAwFIThqdey91ygnIAoa9EzcIBGLyDS69MW/26+ZIAvZYwhZkbpNy/saKGOyUjmFeQ2J5Z+SUJNFi+TfK+/uKJCtENbhT2gYO7UNT+ie03nfoLqV4os4X/dFf0TKILDS0AAAAAASUVORK5CYII=";
+      "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAABg2lDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpUUqDnYQcchQneyiIo61FYpQIdQKrTqYvPQPmjQkKS6OgmvBwhttps://kakaomames.github.io/turbowarp/FqoOLs64OroIg+APi7OCk6CIl3pcUWsT44PI+znvncN99gNCqMc3qSwCabpvZdFLMF1bF0CsEhAGqmMwsY16SMvBdhttps://kakaomames.github.io/turbowarp/cI8P0uzrP8https://kakaomames.github.io/turbowarp/25BtWixYCASJxghmkTbxDPbtoG533iKKvIKvE58aRJDRhttps://kakaomames.github.io/turbowarp/cl3x+I1z2WWBZ0bNXDZFHCUWyz2s9DCrmBrxDHFM1XTKhttps://kakaomames.github.io/turbowarp/Ieq5y3OGu1Buv0yV8YKeory1ynGkMai1iCBBEKGqiiBhtx2nVSLGTpPOnjH3X9ErkUclXByLGAOjTIrhttps://kakaomames.github.io/turbowarp/8D37P1ipNT3lJkSThttps://kakaomames.github.io/turbowarp/+I4H+NAaBdoNx3n+9hx2idA8Bm40rv+eguY+yS92dViR8DQNnBx3dWUPeByBxh5MmRTdqUglVAqAe9n9E0FYPgWGFjz5tY5x+kDkKNZZW6Ag0NgokzZ6z7vDvfO7d87nfn9ACRZcoedhttps://kakaomames.github.io/turbowarp/mXAAAAGFBMVEVtbW11dXVtbf+EhIhttps://kakaomames.github.io/turbowarp/bW2goKBhttps://kakaomames.github.io/turbowarp/21https://kakaomames.github.io/turbowarp//8Qh6V7AAAACXBIWXMAABhMAAAYdAGfqEAgAAAAB3RJTUUH6AIIAA4YBFj9GAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAABjSURBVAjXPctBDkAwFIThqdey91ygnIAoa9EzcIBGLyDS69Mhttps://kakaomames.github.io/turbowarp/26+ZIAvZYwhZkbpNhttps://kakaomames.github.io/turbowarp/saKGOyUjmFeQ2J5Z+SUJNFi+TfKhttps://kakaomames.github.io/turbowarp/uKJCtENbhT2gYO7UNT+ie03nfoLqV4os4https://kakaomames.github.io/turbowarp/dFf0TKILDS0AAAAAASUVORK5CYII=";
     image.onload = function () {
       gl.bindTexture(gl.TEXTURE_2D, texture);
       gl.texImage2D(
@@ -1535,7 +1535,7 @@ void main() {
     };
     return texture;
   }
-  // requireNonPackagedRuntime by LilyMakesThings
+ https://kakaomames.github.io/turbowarp// requireNonPackagedRuntime by LilyMakesThings
   function requireNonPackagedRuntime(blockName) {
     if (runtime.isPackaged) {
       alert(
@@ -1545,11 +1545,11 @@ void main() {
     }
     return true;
   }
-  /*
+ https://kakaomames.github.io/turbowarp/*
    * Profiler has shown that this was the main bottleneck, so:
    * - loops were unrolled
    * - Cast.toNumber was replaced with unary plus
-   */
+   https://kakaomames.github.io/turbowarp/
   function compact(target, names, typedArray, scale = 1) {
     const lists = names.map((name) =>
       target.lookupVariableByNameAndType(name, "list")
@@ -1593,7 +1593,7 @@ void main() {
           value[j + 3] = list3[i] * scale;
         }
       } else {
-        // Unused
+       https://kakaomames.github.io/turbowarp// Unused
         for (let i = 0, j = 0; i < targetLength; i++) {
           for (let k = 0; k < listCount; k++) {
             value[j++] = lists[k].value[i] * scale;
@@ -1634,7 +1634,7 @@ void main() {
           value[j + 3] = +list3[i];
         }
       } else {
-        // Unused
+       https://kakaomames.github.io/turbowarp// Unused
         for (let i = 0, j = 0; i < targetLength; i++) {
           for (let k = 0; k < listCount; k++) {
             value[j++] = +lists[k].value[i];
@@ -1696,7 +1696,7 @@ void main() {
       gl.bindBuffer(target, buffer.buffer);
       gl.bufferData(target, value, mesh.uploadUsage);
       buffer.size = size;
-      buffer.length = value.length / size;
+      buffer.length = value.lengthhttps://kakaomames.github.io/turbowarp/ size;
       buffer.bytesPerEl = value.BYTES_PER_ELEMENT;
       mesh.update();
     } else {
@@ -1847,7 +1847,7 @@ void main() {
   let ext_md;
   let texture;
   initGlContext();
-  // prettier-ignore
+ https://kakaomames.github.io/turbowarp// prettier-ignore
   const Blendings = {
     "overwrite color (fastest for opaque)": [false],
     "default": [true, gl.ONE, gl.ONE_MINUS_SRC_ALPHA, gl.ONE, gl.ONE_MINUS_SRC_ALPHA, gl.FUNC_ADD],
@@ -1860,13 +1860,13 @@ void main() {
     "mask": [true, gl.ZERO, gl.SRC_ALPHA, gl.ZERO, gl.SRC_ALPHA, gl.FUNC_ADD],
     "erase": [true, gl.ZERO, gl.ONE_MINUS_SRC_ALPHA, gl.ZERO, gl.ONE_MINUS_SRC_ALPHA, gl.FUNC_ADD],
   };
-  // prettier-ignore
+ https://kakaomames.github.io/turbowarp// prettier-ignore
   const Cullings = {
     "nothing": [false],
     "back faces": [true, gl.BACK],
     "front faces": [true, gl.FRONT],
   };
-  // prettier-ignore
+ https://kakaomames.github.io/turbowarp// prettier-ignore
   const DepthTests = {
     "nothing": gl.NEVER,
     "closer": gl.LESS,
@@ -1877,7 +1877,7 @@ void main() {
     "not same": gl.NOTEQUAL,
     "everything": gl.ALWAYS,
   };
-  // prettier-ignore
+ https://kakaomames.github.io/turbowarp// prettier-ignore
   const Primitives = {
     "points": gl.POINTS,
     "lines": gl.LINES,
@@ -1887,7 +1887,7 @@ void main() {
     "triangle strip": gl.TRIANGLE_STRIP,
     "triangle fan": gl.TRIANGLE_FAN,
   };
-  // prettier-ignore
+ https://kakaomames.github.io/turbowarp// prettier-ignore
   const ClearLayers = {
     "color": gl.COLOR_BUFFER_BIT,
     "depth": gl.DEPTH_BUFFER_BIT,
@@ -1992,10 +1992,10 @@ void main() {
       text: "Open extra resources",
       func: "openSite",
       def: function () {
-        // Exempted from Scratch.openWindow as initiated by user gesture.
-        // docsURI won't ask for permission so it doesn't make sense for this to either.
-        // eslint-disable-next-line extension/use-scratch-open-window
-        window.open("https://xeltalliv.github.io/simple3d-extension/");
+       https://kakaomames.github.io/turbowarp// Exempted from Scratch.openWindow as initiated by user gesture.
+       https://kakaomames.github.io/turbowarp// docsURI won't ask for permission so it doesn't make sense for this to either.
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/use-scratch-open-window
+        window.open("httpshttps://kakaomames.github.io/turbowarp//xeltalliv.github.ihttps://kakaomames.github.io/turbowarp/simple3d-extensiohttps://kakaomames.github.io/turbowarp/");
       },
     },
     {
@@ -2006,11 +2006,11 @@ void main() {
         const url = new URL(location.href);
         url.searchParams.set(
           "project_url",
-          "./samples/Simple3D%20template.sb3"
+          "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/samplehttps://kakaomames.github.io/turbowarp/Simple3D%20template.sb3"
         );
-        // Exempted from Scratch.openWindow as it is in response to a user gesture and it does not
-        // bring in third-party websites at all.
-        // eslint-disable-next-line extension/use-scratch-open-window
+       https://kakaomames.github.io/turbowarp// Exempted from Scratch.openWindow as it is in response to a user gesture and it does not
+       https://kakaomames.github.io/turbowarp// bring in third-party websites at all.
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/use-scratch-open-window
         window.open(url.href);
       },
     },
@@ -2048,9 +2048,9 @@ void main() {
           gl.depthMask(false);
         }
         if (currentRenderTarget === canvasRenderTarget) {
-          canvasDirty = true; // Telling extension to update texture
-          renderer.dirty = true; // Telling renderer to redraw the screen
-          runtime.requestRedraw(); // Telling sequencer to yield in loops
+          canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+          renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+          runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
         }
       },
     },
@@ -2133,7 +2133,7 @@ void main() {
         },
       },
       def: function ({ NAME }) {
-        NAME = Cast.toString(NAME).replace(/,/g, "").trim();
+        NAME = Cast.toString(NAME).replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, "").trim();
         if (NAME.length == 0) return;
         meshes.get(NAME)?.destroy();
         meshes.set(NAME, new Mesh(NAME));
@@ -3213,7 +3213,7 @@ void main() {
         if (currentRenderTarget.getMesh() == mesh) return;
         if (!mesh.buffers.position) return;
 
-        // TODO: only recompute this after one or more buffers were changed
+       https://kakaomames.github.io/turbowarp// TODO: only recompute this after one or more buffers were changed
         let length = -1;
         let lengthIns = -1;
         for (const name in mesh.buffers) {
@@ -3228,7 +3228,7 @@ void main() {
         }
         if (length == -1) return;
 
-        // TODO: keep list of per mesh flags, list of global flags, and simply concatenate them here
+       https://kakaomames.github.io/turbowarp// TODO: keep list of per mesh flags, list of global flags, and simply concatenate them here
         let flags = [];
         if (mesh.buffers.colors) flags.push("COLORS");
         if (mesh.buffers.texCoords)
@@ -3242,7 +3242,7 @@ void main() {
         }
         if (mesh.buffers.boneIndices && mesh.data.bonesDiff) {
           flags.push(`SKINNING ${mesh.buffers.boneIndices.size}`);
-          flags.push(`BONE_COUNT ${mesh.data.bonesDiff.length / 16}`);
+          flags.push(`BONE_COUNT ${mesh.data.bonesDiff.lengthhttps://kakaomames.github.io/turbowarp/ 16}`);
         }
         if (mesh.data.interpolation) flags.push(mesh.data.interpolation);
         if (mesh.data.alphaTest > 0) flags.push("ALPHATEST");
@@ -3270,7 +3270,7 @@ void main() {
         if (!program.program) return;
         gl.useProgram(program.program);
 
-        // TODO: replace the following slow monstrosity with fast VAOs
+       https://kakaomames.github.io/turbowarp// TODO: replace the following slow monstrosity with fast VAOs
         if (mesh.buffers.indices) {
           gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, mesh.buffers.indices.buffer);
         }
@@ -3667,9 +3667,9 @@ void main() {
         }
 
         if (currentRenderTarget === canvasRenderTarget) {
-          canvasDirty = true; // Telling extension to update texture
-          renderer.dirty = true; // Telling renderer to redraw the screen
-          runtime.requestRedraw(); // Telling sequencer to yield in loops
+          canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+          renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+          runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
         }
 
         if (mesh.buffers.colors) {
@@ -3720,7 +3720,7 @@ void main() {
       arguments: {
         TEXURL: {
           type: ArgumentType.STRING,
-          defaultValue: "./dango.png",
+          defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/dango.png",
         },
       },
       def: function ({ TEXURL }, { target }) {
@@ -3732,7 +3732,7 @@ void main() {
                 resolve(null);
                 return;
               }
-              // eslint-disable-next-line extension/check-can-fetch
+             https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
               const img = new Image();
               if (
                 new URL(TEXURL, window.location.href).origin !==
@@ -3742,7 +3742,7 @@ void main() {
               }
               img.src = TEXURL;
               img.onload = function () {
-                // This takes time, so no imageSourceSync
+               https://kakaomames.github.io/turbowarp// This takes time, so no imageSourceSync
                 resolve({
                   width: img.width,
                   height: img.height,
@@ -3782,11 +3782,11 @@ void main() {
             return;
           }
           const costume = target.sprite.costumes[costumeIndex];
-          // eslint-disable-next-line extension/check-can-fetch
+         https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
           const img = new Image();
           img.src = costume.asset.encodeDataURI();
           img.onload = function () {
-            // This takes time, so no imageSourceSync
+           https://kakaomames.github.io/turbowarp// This takes time, so no imageSourceSync
             resolve({
               width: img.width,
               height: img.height,
@@ -3832,7 +3832,7 @@ void main() {
           canv.height = m.fontBoundingBoxAscent + m.fontBoundingBoxDescent;
           ctx.clearRect(0, 0, canv.width, canv.height);
           ctx.font = FONT;
-          ctx.fillStyle = `rgba(${COLOR.r},${COLOR.g},${COLOR.b},${(COLOR.a ?? 255) / 255})`;
+          ctx.fillStyle = `rgba(${COLOR.r},${COLOR.g},${COLOR.b},${(COLOR.a ?? 255)https://kakaomames.github.io/turbowarp/ 255})`;
           ctx.fillText(TEXT, m.actualBoundingBoxLeft, m.fontBoundingBoxAscent);
           imageSourceSync = {
             width: canv.width,
@@ -3894,8 +3894,8 @@ void main() {
           ctx.clearRect(0, 0, canv.width, canv.height);
           ctx.font = FONT;
           ctx.lineWidth = BORDERSIZE;
-          ctx.fillStyle = `rgba(${COLOR.r},${COLOR.g},${COLOR.b},${(COLOR.a ?? 255) / 255})`;
-          ctx.strokeStyle = `rgba(${BORDERCOLOR.r},${BORDERCOLOR.g},${BORDERCOLOR.b},${(BORDERCOLOR.a ?? 255) / 255})`;
+          ctx.fillStyle = `rgba(${COLOR.r},${COLOR.g},${COLOR.b},${(COLOR.a ?? 255)https://kakaomames.github.io/turbowarp/ 255})`;
+          ctx.strokeStyle = `rgba(${BORDERCOLOR.r},${BORDERCOLOR.g},${BORDERCOLOR.b},${(BORDERCOLOR.a ?? 255)https://kakaomames.github.io/turbowarp/ 255})`;
           ctx.fillText(
             TEXT,
             m.actualBoundingBoxLeft + BORDERSIZECEIL,
@@ -4186,7 +4186,7 @@ void main() {
       },
       def: function ({ FOV, NEAR, FAR }) {
         transforms[selectedTransform] = m4.perspective(
-          (Cast.toNumber(FOV) / 180) * Math.PI,
+          (Cast.toNumber(FOV)https://kakaomames.github.io/turbowarp/ 180) * Math.PI,
           currentRenderTarget.getAspectRatio(),
           Cast.toNumber(NEAR),
           Cast.toNumber(FAR)
@@ -4313,7 +4313,7 @@ void main() {
         if (!fn) return;
         transforms[selectedTransform] = fn(
           transforms[selectedTransform],
-          (Cast.toNumber(ANGLE) / 180) * Math.PI
+          (Cast.toNumber(ANGLE)https://kakaomames.github.io/turbowarp/ 180) * Math.PI
         );
       },
     },
@@ -4456,7 +4456,7 @@ void main() {
       def: function ({ COMPONENT }) {
         const a = transforms[selectedTransform];
         if (COMPONENT == "rotation") {
-          // prettier-ignore
+         https://kakaomames.github.io/turbowarp// prettier-ignore
           transforms[selectedTransform] = [
             1, 0, 0, 0,
             0, 1, 0, 0,
@@ -4465,7 +4465,7 @@ void main() {
           ];
         }
         if (COMPONENT == "offset") {
-          // prettier-ignore
+         https://kakaomames.github.io/turbowarp// prettier-ignore
           transforms[selectedTransform] = [
             a[0], a[1], a[2], 0,
             a[4], a[5], a[6], 0,
@@ -4560,9 +4560,9 @@ void main() {
         transformed = m4.multiplyVec(totalMat, vec);
         if (TO == "projected (scratch units)") {
           transformed[0] =
-            ((transformed[0] / transformed[3]) * runtime.stageWidth) / 2;
+            ((transformed[0]https://kakaomames.github.io/turbowarp/ transformed[3]) * runtime.stageWidth)https://kakaomames.github.io/turbowarp/ 2;
           transformed[1] =
-            ((transformed[1] / transformed[3]) * runtime.stageHeight) / 2;
+            ((transformed[1]https://kakaomames.github.io/turbowarp/ transformed[3]) * runtime.stageHeight)https://kakaomames.github.io/turbowarp/ 2;
           transformed[2] = transformed[3];
         }
       },
@@ -4761,11 +4761,11 @@ void main() {
           const pixels = new Uint8ClampedArray(w * h * 4);
           gl.readPixels(x, y, w, h, gl.RGBA, gl.UNSIGNED_BYTE, pixels);
           for (let i = 0; i < pixels.length; i += 4) {
-            // Internally we store everything with permultiplied alpha. Undoing it
-            const alpha = pixels[i + 3] / 255;
-            pixels[i + 0] /= alpha;
-            pixels[i + 1] /= alpha;
-            pixels[i + 2] /= alpha;
+           https://kakaomames.github.io/turbowarp// Internally we store everything with permultiplied alpha. Undoing it
+            const alpha = pixels[i + 3]https://kakaomames.github.io/turbowarp/ 255;
+            pixels[i + 0]https://kakaomames.github.io/turbowarp/= alpha;
+            pixels[i + 1]https://kakaomames.github.io/turbowarp/= alpha;
+            pixels[i + 2]https://kakaomames.github.io/turbowarp/= alpha;
           }
           const canv = document.createElement("canvas");
           canv.width = w;
@@ -5066,9 +5066,9 @@ void main() {
           ];
           renderer._allSkins[skinId].updateNativeSize();
           if (!canvasResolution) renderer._allSkins[skinId].resizeCanvas();
-          canvasDirty = true; // Telling extension to update texture
-          renderer.dirty = true; // Telling renderer to redraw the screen
-          runtime.requestRedraw(); // Telling sequencer to yield in loops
+          canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+          renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+          runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
         }
         if (SIZE === "resolution") {
           canvasResolution = [
@@ -5076,9 +5076,9 @@ void main() {
             clamp(Cast.toNumber(Y), 1, 4096),
           ];
           renderer._allSkins[skinId].resizeCanvas();
-          canvasDirty = true; // Telling extension to update texture
-          renderer.dirty = true; // Telling renderer to redraw the screen
-          runtime.requestRedraw(); // Telling sequencer to yield in loops
+          canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+          renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+          runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
         }
       },
     },
@@ -5097,16 +5097,16 @@ void main() {
         if (SIZE === "size") {
           canvasNativeSize = null;
           renderer._allSkins[skinId].updateNativeSize();
-          canvasDirty = true; // Telling extension to update texture
-          renderer.dirty = true; // Telling renderer to redraw the screen
-          runtime.requestRedraw(); // Telling sequencer to yield in loops
+          canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+          renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+          runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
         }
         if (SIZE === "resolution") {
           canvasResolution = null;
           renderer._allSkins[skinId].resizeCanvas();
-          canvasDirty = true; // Telling extension to update texture
-          renderer.dirty = true; // Telling renderer to redraw the screen
-          runtime.requestRedraw(); // Telling sequencer to yield in loops
+          canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+          renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+          runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
         }
       },
     },
@@ -5122,9 +5122,9 @@ void main() {
       },
       def: function ({ FILTER }) {
         canvasUseNearest = FILTER !== "blurred";
-        canvasDirty = true; // Telling extension to update texture
-        renderer.dirty = true; // Telling renderer to redraw the screen
-        runtime.requestRedraw(); // Telling sequencer to yield in loops
+        canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+        renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+        runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
       },
     },
     {
@@ -5156,9 +5156,9 @@ void main() {
       def: function (_, { target }) {
         renderer._allDrawables[target.drawableID].skin =
           renderer._allSkins[skinId];
-        canvasDirty = true; // Telling extension to update texture
-        renderer.dirty = true; // Telling renderer to redraw the screen
-        runtime.requestRedraw(); // Telling sequencer to yield in loops
+        canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+        renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+        runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
       },
     },
     {
@@ -5167,9 +5167,9 @@ void main() {
       text: "restore my look",
       def: function (_, { target }) {
         target.updateAllDrawableProperties();
-        canvasDirty = true; // Telling extension to update texture
-        renderer.dirty = true; // Telling renderer to redraw the screen
-        runtime.requestRedraw(); // Telling sequencer to yield in loops
+        canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+        renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+        runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
       },
     },
     {
@@ -5185,9 +5185,9 @@ void main() {
       },
       def: function ({ STATE }) {
         renderer._allDrawables[drawableId].updateVisible(Cast.toBoolean(STATE));
-        canvasDirty = true; // Telling extension to update texture
-        renderer.dirty = true; // Telling renderer to redraw the screen
-        runtime.requestRedraw(); // Telling sequencer to yield in loops
+        canvasDirty = true;https://kakaomames.github.io/turbowarp// Telling extension to update texture
+        renderer.dirty = true;https://kakaomames.github.io/turbowarp// Telling renderer to redraw the screen
+        runtime.requestRedraw();https://kakaomames.github.io/turbowarp// Telling sequencer to yield in loops
       },
     },
     {
@@ -5213,7 +5213,7 @@ void main() {
     color1: "#5CB1D6",
     color2: "#47A8D1",
     color3: "#2E8EB8",
-    docsURI: "./Xeltalliv/simple3D",
+    docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/Xeltallihttps://kakaomames.github.io/turbowarp/simple3D",
     blocks: definitions,
     menus: {
       fonts: {
@@ -5468,7 +5468,7 @@ void main() {
         "Pixel",
         "Scratch",
       ];
-      // Based on https://github.com/TurboWarp/extensions/blob/a6f5944f52163792780ae550fbf2822ce425714d/extensions/lab/text.js#L1198-L1205
+     https://kakaomames.github.io/turbowarp// Based on httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/TurboWarhttps://kakaomames.github.io/turbowarp/extensionhttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/a6f5944f52163792780ae550fbf2822ce425714https://kakaomames.github.io/turbowarp/extensionhttps://kakaomames.github.io/turbowarp/lahttps://kakaomames.github.io/turbowarp/text.js#L1198-L1205
       const customFonts = runtime.fontManager
         ? runtime.fontManager.getFonts().map((i) => ({
             text: i.name,
@@ -5520,9 +5520,9 @@ void main() {
     Extension.prototype[block.opcode ?? block.func] = block.def;
   }
 
-  // WebGL call logger for debugging.
-  // Add 1 extra slash to the line below to enable
-  /*
+ https://kakaomames.github.io/turbowarp// WebGL call logger for debugging.
+ https://kakaomames.github.io/turbowarp// Add 1 extra slash to the line below to enable
+ https://kakaomames.github.io/turbowarp/*
   const ogl = gl;
   gl = {}
   for(let i in ogl) {
@@ -5541,7 +5541,7 @@ void main() {
       gl[i] = ogl[i];
     }
   }
-  gl.__proto__ = ogl; //*/
+  gl.__proto__ = ogl;https://kakaomames.github.io/turbowarp//https://kakaomames.github.io/turbowarp/
 
   let warningShown = false;
   publicApi.i_will_not_ask_for_help_when_these_break = () => {
@@ -5551,7 +5551,7 @@ void main() {
       );
       if (
         runtime.extensionManager.isExtensionURLLoaded(
-          "./Xeltalliv/simple3D.js"
+          "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/Xeltallihttps://kakaomames.github.io/turbowarp/simple3D.js"
         )
       ) {
         alert(

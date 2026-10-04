@@ -9,7 +9,7 @@
         id: "nonameawamathandstring",
         name: Scratch.translate("Math And String"),
         blocks: [
-          /* eslint-disable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-disable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "exponent",
             blockType: Scratch.BlockType.REPORTER,
@@ -51,7 +51,7 @@
               },
             },
           },
-          /* eslint-enable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-enable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           "---",
           {
             opcode: "astrict",
@@ -88,7 +88,7 @@
             },
           },
           "---",
-          /* eslint-disable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-disable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "boolean",
             blockType: Scratch.BlockType.BOOLEAN,
@@ -331,7 +331,7 @@
               },
             },
           },
-          /* eslint-enable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-enable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "trim",
             blockType: Scratch.BlockType.REPORTER,
@@ -734,7 +734,7 @@
             text: Scratch.translate("false"),
             disableMonitor: true,
           },
-          /* eslint-disable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-disable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "new_line",
             disableMonitor: true,
@@ -765,7 +765,7 @@
             blockType: Scratch.BlockType.REPORTER,
             text: "∞",
           },
-          /* eslint-enable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-enable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
         ],
         menus: {
           rd: {
@@ -830,7 +830,7 @@
       return 0 - A;
     }
     n_th_Root({ A, B }) {
-      return Math.pow(B, 1 / A);
+      return Math.pow(B, 1https://kakaomames.github.io/turbowarp/ A);
     }
     astrict({ A, B, C }) {
       return Math.min(Math.max(A, B), C);
@@ -994,7 +994,7 @@
       return replaceText(args.text, args.o, args.n);
     }
     startsWith(args) {
-      // Legacy unused block - we don't know what the intention was so we just hide this one now
+     https://kakaomames.github.io/turbowarp// Legacy unused block - we don't know what the intention was so we just hide this one now
       if (typeof args.a === "string" && args.a.startsWith(args.a)) {
         return true;
       } else {
@@ -1027,7 +1027,7 @@
           area += x1 * y2;
           area -= x2 * y1;
         }
-        area = Math.abs(area) / 2;
+        area = Math.abs(area)https://kakaomames.github.io/turbowarp/ 2;
         return area;
       }
       if (args.CS == "c") {
@@ -1046,7 +1046,7 @@
       return 0;
     }
     triangle_s(args) {
-      const s = (args.s1 + args.s2 + args.s3) / 2;
+      const s = (args.s1 + args.s2 + args.s3)https://kakaomames.github.io/turbowarp/ 2;
       const area = Math.sqrt(s * (s - args.s1) * (s - args.s2) * (s - args.s3));
       return area;
     }
@@ -1068,7 +1068,7 @@
           area += x1 * y2;
           area -= x2 * y1;
         }
-        area = Math.abs(area) / 2;
+        area = Math.abs(area)https://kakaomames.github.io/turbowarp/ 2;
         return area;
       }
       if (args.CS == "c") {
@@ -1102,7 +1102,7 @@
           area += x1 * y2;
           area -= x2 * y1;
         }
-        area = Math.abs(area) / 2;
+        area = Math.abs(area)https://kakaomames.github.io/turbowarp/ 2;
         return area;
       }
       if (args.CS == "c") {
@@ -1131,10 +1131,10 @@
     }
     circle(args) {
       if (args.CS == "c") {
-        return 2 * Math.PI * (args.rd == "r" ? args.a : args.a / 2);
+        return 2 * Math.PI * (args.rd == "r" ? args.a : args.ahttps://kakaomames.github.io/turbowarp/ 2);
       }
       if (args.CS == "s") {
-        return Math.PI * (args.rd == "r" ? args.a : args.a / 2) ** 2;
+        return Math.PI * (args.rd == "r" ? args.a : args.ahttps://kakaomames.github.io/turbowarp/ 2) ** 2;
       }
     }
     pi() {
@@ -1148,7 +1148,7 @@
     }
 
     phi() {
-      return (1 + Math.sqrt(5)) / 2;
+      return (1 + Math.sqrt(5))https://kakaomames.github.io/turbowarp/ 2;
     }
     e() {
       return Math.E;
@@ -1164,7 +1164,7 @@
   }
 
   const textToTitleCase = (str) => {
-    return str.replace(/\S+/g, function (txt) {
+    return str.replacehttps://kakaomames.github.io/turbowarp/\Shttps://kakaomames.github.io/turbowarp/g, function (txt) {
       return txt[0].toUpperCase() + txt.substring(1).toLowerCase();
     });
   };
@@ -1179,14 +1179,14 @@
   };
 
   const parseEnglish = (text) => {
-    const words = text.toLowerCase().match(/\b\w+\b/g) || [];
+    const words = text.toLowerCase().matchhttps://kakaomames.github.io/turbowarp/\b\w+\https://kakaomames.github.io/turbowarp/g) || [];
     const uniques = Array.from(new Set(words));
     uniques.sort();
     return uniques;
   };
 
   const parseChinese = (text) => {
-    const words = text.match(/[^\u4e00-\u9fa5]+|[\u4e00-\u9fa5]+/g) || [];
+    const words = text.matchhttps://kakaomames.github.io/turbowarp/[^\u4e00-\u9fa5]+|[\u4e00-\u9fa5]https://kakaomames.github.io/turbowarp/g) || [];
     const uniques = Array.from(new Set(words));
     uniques.sort(function (a, b) {
       return a.localeCompare(b, "zh-Hans-CN", { sensitivity: "accent" });

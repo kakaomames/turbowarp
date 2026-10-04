@@ -20,9 +20,9 @@
                 N = _.settings.get("cornerSize"),
                 A = _.settings.get("notchSize"),
               ) {
-                let D = R / 100;
-                ((N /= 100),
-                  (A /= 100),
+                let D = Rhttps://kakaomames.github.io/turbowarp/ 100;
+                ((Nhttps://kakaomames.github.io/turbowarp/= 100),
+                  (Ahttps://kakaomames.github.io/turbowarp/= 100),
                   (I.SEP_SPACE_Y = 2 * T * D),
                   (I.MIN_BLOCK_X = 16 * T * D),
                   (I.MIN_BLOCK_X_OUTPUT = 12 * T * D),
@@ -165,7 +165,7 @@
                 ((E.FieldDropdown.prototype.positionArrow = function (_) {
                   return ((this.arrowY_ = 11 * D), O.call(this, _));
                 }),
-                  (I.CORNER_RADIUS = (1 * T * N * 100) / 100),
+                  (I.CORNER_RADIUS = (1 * T * N * 100)https://kakaomames.github.io/turbowarp/ 100),
                   (I.TOP_LEFT_CORNER_START = "m 0," + I.CORNER_RADIUS),
                   (I.TOP_LEFT_CORNER =
                     "A " +

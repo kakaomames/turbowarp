@@ -1,13 +1,13 @@
-// Name: RixxyX
-// ID: RixxyX
-// Description: Various utility blocks.
-// By: RixTheTyrunt <https://scratch.mit.edu/users/RixTheTyrunt/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: RixxyX
+https://kakaomames.github.io/turbowarp/ ID: RixxyX
+https://kakaomames.github.io/turbowarp/ Description: Various utility blocks.
+https://kakaomames.github.io/turbowarp/ By: RixTheTyrunt <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/RixTheTyrunhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 /*!
- * Originally created by https://scratch.mit.edu/users/RixTheTyrunt/
+ * Originally created by httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/RixTheTyrunhttps://kakaomames.github.io/turbowarp/
  * This file is available under an informal "use with credit" license.
- */
+ https://kakaomames.github.io/turbowarp/
 
 (function (Scratch) {
   "use strict";
@@ -28,13 +28,13 @@
         color1: "#773c00",
         color2: "#5f3000",
         id: "RixxyX",
-        // eslint-disable-next-line extension/should-translate
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
         name: "RixxyX",
         blocks: [
           {
             opcode: "notEquals",
             blockType: Scratch.BlockType.BOOLEAN,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[TEXT_1] != [TEXT_2]",
             arguments: {
               TEXT_1: {
@@ -322,7 +322,7 @@
           {
             opcode: "returnENum",
             blockType: Scratch.BlockType.REPORTER,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "e",
             arguments: {},
           },
@@ -418,9 +418,9 @@
     }
     setCount(args) {
       if (
-        // Logically, checking for count being negative makes no sense, but it was there for
-        // a while and we don't want remove it for compatibility. No one should be using this
-        // in new projects.
+       https://kakaomames.github.io/turbowarp// Logically, checking for count being negative makes no sense, but it was there for
+       https://kakaomames.github.io/turbowarp// a while and we don't want remove it for compatibility. No one should be using this
+       https://kakaomames.github.io/turbowarp// in new projects.
         count.toString().indexOf("-") == -1 &&
         args.NUM.toString().indexOf("-") == -1
       ) {
@@ -446,8 +446,8 @@
       return Math.floor(args.NUM);
     }
     returnBool(args) {
-      // The original version of this block was quite broken. It would return empty string for
-      // values other than true/false/1/0, which I think does not make sense at all.
+     https://kakaomames.github.io/turbowarp// The original version of this block was quite broken. It would return empty string for
+     https://kakaomames.github.io/turbowarp// values other than truhttps://kakaomames.github.io/turbowarp/falshttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/0, which I think does not make sense at all.
       return Scratch.Cast.toBoolean(args.BOOL);
     }
     binToTxt(args) {

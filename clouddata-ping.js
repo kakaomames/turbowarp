@@ -1,28 +1,28 @@
-// Name: Ping Cloud Data
-// ID: clouddataping
-// Description: Determine whether a cloud variable server is probably up.
-// By: GarboMuffin
-// Original: TheShovel
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Ping Cloud Data
+https://kakaomames.github.io/turbowarp/ ID: clouddataping
+https://kakaomames.github.io/turbowarp/ Description: Determine whether a cloud variable server is probably up.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ Original: TheShovel
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @typedef CacheEntry
    * @property {number} expires
    * @property {boolean} value
-   */
+   https://kakaomames.github.io/turbowarp/
 
-  /** @type {Map<string, Promise<CacheEntry>>} */
+ https://kakaomames.github.io/turbowarp/** @type {Map<string, Promise<CacheEntry>>} https://kakaomames.github.io/turbowarp/
   const computing = new Map();
-  /** @type {Map<string, CacheEntry>} */
+ https://kakaomames.github.io/turbowarp/** @type {Map<string, CacheEntry>} https://kakaomames.github.io/turbowarp/
   const computed = new Map();
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} uri
    * @returns {Promise<CacheEntry>}
-   */
+   https://kakaomames.github.io/turbowarp/
   const pingWebSocket = async (uri) => {
     if (!(await Scratch.canFetch(uri))) {
       return {
@@ -31,11 +31,11 @@
       };
     }
 
-    /** @type {WebSocket} */
+   https://kakaomames.github.io/turbowarp/** @type {WebSocket} https://kakaomames.github.io/turbowarp/
     let ws;
     try {
-      // Permission is checked earlier.
-      // eslint-disable-next-line extension/check-can-fetch
+     https://kakaomames.github.io/turbowarp// Permission is checked earlier.
+     https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
       ws = new WebSocket(uri);
     } catch (e) {
       return {
@@ -71,10 +71,10 @@
     };
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} uri
    * @returns {boolean|Promise<boolean>}
-   */
+   https://kakaomames.github.io/turbowarp/
   const cachedPingWebSocket = (uri) => {
     const computingEntry = computing.get(uri);
     if (computingEntry) {
@@ -108,7 +108,7 @@
             arguments: {
               SERVER: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "wss://clouddata.turbowarp.org",
+                defaultValue: "wsshttps://kakaomames.github.io/turbowarp//clouddata.turbowarp.org",
               },
             },
           },

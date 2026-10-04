@@ -1,8 +1,8 @@
-// Name: Comment Blocks
-// ID: lmscomments
-// Description: Annotate your scripts.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Comment Blocks
+https://kakaomames.github.io/turbowarp/ ID: lmscomments
+https://kakaomames.github.io/turbowarp/ Description: Annotate your scripts.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 (function (Scratch) {
   "use strict";
@@ -20,11 +20,11 @@
         color2: "#c6be79",
         color3: "#a8a167",
         blocks: [
-          /* eslint-disable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-disable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "commentHat",
             blockType: Scratch.BlockType.HAT,
-            text: "// [COMMENT]",
+            text: https://kakaomames.github.io/turbowarp// [COMMENT]",
             isEdgeActivated: false,
             arguments: {
               COMMENT: {
@@ -36,7 +36,7 @@
           {
             opcode: "commentCommand",
             blockType: Scratch.BlockType.COMMAND,
-            text: "// [COMMENT]",
+            text: https://kakaomames.github.io/turbowarp// [COMMENT]",
             arguments: {
               COMMENT: {
                 type: Scratch.ArgumentType.STRING,
@@ -47,7 +47,7 @@
           {
             opcode: "commentC",
             blockType: Scratch.BlockType.CONDITIONAL,
-            text: "// [COMMENT]",
+            text: https://kakaomames.github.io/turbowarp// [COMMENT]",
             arguments: {
               COMMENT: {
                 type: Scratch.ArgumentType.STRING,
@@ -58,7 +58,7 @@
           {
             opcode: "commentReporter",
             blockType: Scratch.BlockType.REPORTER,
-            text: "[INPUT] // [COMMENT]",
+            text: "[INPUT]https://kakaomames.github.io/turbowarp// [COMMENT]",
             allowDropAnywhere: true,
             arguments: {
               COMMENT: {
@@ -74,7 +74,7 @@
           {
             opcode: "commentBoolean",
             blockType: Scratch.BlockType.BOOLEAN,
-            text: "[INPUT] // [COMMENT]",
+            text: "[INPUT]https://kakaomames.github.io/turbowarp// [COMMENT]",
             arguments: {
               COMMENT: {
                 type: Scratch.ArgumentType.STRING,
@@ -85,17 +85,17 @@
               },
             },
           },
-          /* eslint-enable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-enable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
         ],
       };
     }
 
     commentHat() {
-      // no-op
+     https://kakaomames.github.io/turbowarp// no-op
     }
 
     commentCommand() {
-      // no-op
+     https://kakaomames.github.io/turbowarp// no-op
     }
 
     commentC(args, util) {

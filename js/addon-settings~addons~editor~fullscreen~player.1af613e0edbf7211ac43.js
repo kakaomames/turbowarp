@@ -11,7 +11,7 @@
         credits: [
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/TheColaber/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TheColabehttps://kakaomames.github.io/turbowarp/",
           },
           { name: "GarboMuffin" },
         ],
@@ -38,7 +38,7 @@
         editorOnly: !0,
         name: "Developer tools",
         description:
-          "Adds new menu options to the editor: copy/paste blocks, better clean up, and more!",
+          "Adds new menu options to the editor: cophttps://kakaomames.github.io/turbowarp/paste blocks, better clean up, and more!",
         credits: [{ name: "griffpatch" }],
         settings: [
           {
@@ -75,7 +75,7 @@
           { name: "griffpatch" },
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/thecolaber/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/thecolabehttps://kakaomames.github.io/turbowarp/",
           },
         ],
         dynamicDisable: !0,
@@ -93,7 +93,7 @@
           { name: "griffpatch" },
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/TheColaber/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TheColabehttps://kakaomames.github.io/turbowarp/",
           },
         ],
         tags: ["recommended"],
@@ -130,7 +130,7 @@
           navigator.clipboard.write,
         c =
           "undefined" != typeof MediaRecorder &&
-          MediaRecorder.isTypeSupported("video/webm"),
+          MediaRecorder.isTypeSupported("videhttps://kakaomames.github.io/turbowarp/webm"),
         u = {
           editorOnly: !0,
           name: "Searchable dropdowns",
@@ -190,9 +190,9 @@
         credits: [
           {
             name: "--Explosion--",
-            link: "https://scratch.mit.edu/users/--Explosion--/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/--Explosion-https://kakaomames.github.io/turbowarp/",
           },
-          { name: "RedGuy7", link: "https://scratch.mit.edu/users/RedGuy7/" },
+          { name: "RedGuy7", link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/RedGuyhttps://kakaomames.github.io/turbowarp/" },
         ],
       };
       var h = {
@@ -204,11 +204,11 @@
         credits: [
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/TheColaber/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TheColabehttps://kakaomames.github.io/turbowarp/",
           },
           {
             name: "Maximouse",
-            link: "https://scratch.mit.edu/users/Maximouse/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Maximoushttps://kakaomames.github.io/turbowarp/",
           },
         ],
         info: [
@@ -282,7 +282,7 @@
         noTranslations: !0,
         name: "File drag and drop",
         description:
-          'Lets you drag images and sounds from your file manager into the sprite pane or costume/sound list. You can also drag text files into lists or "ask and wait" question inputs.',
+          'Lets you drag images and sounds from your file manager into the sprite pane or costumhttps://kakaomames.github.io/turbowarp/sound list. You can also drag text files into lists or "ask and wait" question inputs.',
         credits: [{ name: "Sheep_maker" }],
         userscripts: [{ url: "userscript.js" }],
         settings: [
@@ -307,7 +307,7 @@
         credits: [
           {
             name: "Tacodiva",
-            link: "https://scratch.mit.edu/users/Tacodude7729/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Tacodude772https://kakaomames.github.io/turbowarp/",
           },
           { name: "GarboMuffin" },
           { name: "GrahamSH" },
@@ -369,7 +369,7 @@
       var w = {
         noTranslations: !0,
         name: "Muted project player mode",
-        description: "Ctrl+Click the green flag to mute/unmute the project.",
+        description: "Ctrl+Click the green flag to muthttps://kakaomames.github.io/turbowarp/unmute the project.",
         info: [
           {
             text: "On macOS, use the Cmd key instead of the Ctrl key.",
@@ -379,7 +379,7 @@
         credits: [
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/TheColaber/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TheColabehttps://kakaomames.github.io/turbowarp/",
           },
         ],
         userscripts: [{ url: "userscript.js" }],
@@ -392,7 +392,7 @@
         name: "Project volume slider",
         description: "Adds a volume slider next to the green flag controls.",
         credits: [
-          { name: "samq64", link: "https://scratch.mit.edu/users/samq64/" },
+          { name: "samq64", link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/samq6https://kakaomames.github.io/turbowarp/" },
           { name: "GarboMuffin" },
         ],
         userscripts: [{ url: "userscript.js" }],
@@ -417,7 +417,7 @@
           "Adds a counter above the stage in the editor which shows the total amount of clones.",
         credits: [
           { name: "Jeffalo" },
-          { name: "OregSam", link: "https://scratch.mit.edu/users/simiagain/" },
+          { name: "OregSam", link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/simiagaihttps://kakaomames.github.io/turbowarp/" },
         ],
         dynamicDisable: !0,
         userscripts: [{ url: "userscript.js" }],
@@ -439,7 +439,7 @@
         noTranslations: !0,
         name: "Mouse position",
         description:
-          "Displays your mouse x/y position above the stage in the editor.",
+          "Displays your mouse https://kakaomames.github.io/turbowarp/y position above the stage in the editor.",
         credits: [{ name: "Jeffalo" }],
         dynamicDisable: !0,
         userscripts: [{ url: "userscript.js" }],
@@ -477,7 +477,7 @@
         credits: [
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/TheColaber/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TheColabehttps://kakaomames.github.io/turbowarp/",
           },
         ],
         dynamicDisable: !0,
@@ -757,13 +757,13 @@
         credits: [
           {
             name: "ErrorGamer2000",
-            link: "https://scratch.mit.edu/users/ErrorGamer2000/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/ErrorGamer200https://kakaomames.github.io/turbowarp/",
           },
           { name: "GarboMuffin" },
           { name: "World_Languages" },
           {
             name: "SheepTester",
-            link: "https://scratch.mit.edu/users/Sheep_maker/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Sheep_makehttps://kakaomames.github.io/turbowarp/",
           },
         ],
         dynamicDisable: !0,
@@ -807,15 +807,15 @@
         credits: [
           {
             name: "SheepTester",
-            link: "https://scratch.mit.edu/users/Sheep_maker/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Sheep_makehttps://kakaomames.github.io/turbowarp/",
           },
           {
             name: "lisa_wolfgang",
-            link: "https://scratch.mit.edu/users/lisa_wolfgang/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/lisa_wolfganhttps://kakaomames.github.io/turbowarp/",
           },
           {
             name: "GarboMuffin",
-            link: "https://scratch.mit.edu/users/GarboMuffin/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/GarboMuffihttps://kakaomames.github.io/turbowarp/",
           },
         ],
         enabledByDefault: !1,
@@ -891,11 +891,11 @@
         description:
           "Makes blocks of the same category alternate between lighter and darker shades when nested inside each other. This is also known as zebra striping.",
         credits: [
-          { name: "CST1229", link: "https://scratch.mit.edu/users/CST1229/" },
+          { name: "CST1229", link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/CST122https://kakaomames.github.io/turbowarp/" },
           { name: "GarboMuffin" },
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/thecolaber",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/thecolaber",
           },
         ],
         tags: [],
@@ -941,10 +941,10 @@
         name: "Customizable block colors",
         description: "Edit block colors for each category in the editor.",
         credits: [
-          { name: "NitroCipher/ZenithRogue" },
+          { name: "NitroCiphehttps://kakaomames.github.io/turbowarp/ZenithRogue" },
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/TheColaber/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TheColabehttps://kakaomames.github.io/turbowarp/",
           },
         ],
         customCssVariables: [
@@ -1269,7 +1269,7 @@
         tags: [],
         credits: [
           { name: "Secret-chest" },
-          { name: "_nix", link: "https://scratch.mit.edu/users/_nix" },
+          { name: "_nix", link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/_nix" },
         ],
         userstyles: [
           { url: "text-bold.css", if: { settings: { bold: !0 } } },
@@ -1317,7 +1317,7 @@
             text: 'To change the position of buttons above the stage, use the "reverse order of project controls" addon.',
           },
         ],
-        credits: [{ name: "NitroCipher/ZenithRogue" }],
+        credits: [{ name: "NitroCiphehttps://kakaomames.github.io/turbowarp/ZenithRogue" }],
         userscripts: [{ url: "fix-share-the-love.js" }],
         dynamicDisable: !0,
         userstyles: [{ url: "stageleft.css" }],
@@ -1352,7 +1352,7 @@
         credits: [
           {
             name: "BarelySmooth",
-            link: "https://scratch.mit.edu/users/BarelySmooth/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/BarelySmoothttps://kakaomames.github.io/turbowarp/",
           },
           { name: "GarboMuffin" },
         ],
@@ -1371,7 +1371,7 @@
         credits: [
           {
             name: "lisa_wolfgang",
-            link: "https://scratch.mit.edu/users/lisa_wolfgang/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/lisa_wolfganhttps://kakaomames.github.io/turbowarp/",
           },
         ],
         userstyles: [{ url: "userstyle.css" }],
@@ -1427,7 +1427,7 @@
       var J = {
         name: "Gamepad support",
         description:
-          "Interact with projects using a USB or Bluetooth controller/gamepad.",
+          "Interact with projects using a USB or Bluetooth controllehttps://kakaomames.github.io/turbowarp/gamepad.",
         credits: [{ name: "GarboMuffin" }],
         userscripts: [{ url: "userscript.js" }],
         userstyles: [{ url: "style.css" }, { url: "gamepadlib.css" }],
@@ -1459,7 +1459,7 @@
         editorOnly: !0,
         name: "Sprite folders",
         description:
-          'Adds folders to the sprite pane, as well as costume and sound lists. To create a folder, right click any sprite and click "create folder". Click a folder to open or close it. Right click a sprite to see what folders you can move it to, or alternatively drag and drop it into an open folder. This feature works by adding "[folderName]//" at the beginning of the names for your sprites.',
+          'Adds folders to the sprite pane, as well as costume and sound lists. To create a folder, right click any sprite and click "create folder". Click a folder to open or close it. Right click a sprite to see what folders you can move it to, or alternatively drag and drop it into an open folder. This feature works by adding "[folderNamehttps://kakaomames.github.io/turbowarp//" at the beginning of the names for your sprites.',
         info: [
           {
             type: "notice",
@@ -1481,7 +1481,7 @@
           { name: "GarboMuffin" },
           {
             name: "pufferfish101007",
-            link: "https://scratch.mit.edu/users/pufferfish101007/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/pufferfish10100https://kakaomames.github.io/turbowarp/",
           },
         ],
         dynamicDisable: !0,
@@ -1619,7 +1619,7 @@
         credits: [
           {
             name: "ErrorGamer2000",
-            link: "https://scratch.mit.edu/users/ErrorGamer2000/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/ErrorGamer200https://kakaomames.github.io/turbowarp/",
           },
         ],
         enabledByDefault: !1,
@@ -1688,11 +1688,11 @@
         editorOnly: !0,
         noTranslations: !0,
         name: "Customizable new sprite position",
-        description: "Change the default x/y position of new sprites.",
+        description: "Change the default https://kakaomames.github.io/turbowarp/y position of new sprites.",
         credits: [
           {
             name: "pufferfish101007",
-            link: "https://scratch.mit.edu/users/pufferfish101007/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/pufferfish10100https://kakaomames.github.io/turbowarp/",
           },
         ],
         dynamicDisable: !0,
@@ -1730,7 +1730,7 @@
             type: "select",
             default: "randomize",
             potentialValues: [
-              { id: "custom", name: "Send to specified x/y values" },
+              { id: "custom", name: "Send to specified https://kakaomames.github.io/turbowarp/y values" },
               { id: "keep", name: "Keep the same as the original sprite" },
               { id: "randomize", name: "Randomize" },
             ],
@@ -1743,7 +1743,7 @@
         editorOnly: !0,
         name: "Save blocks as image",
         description:
-          "Right click the code area to export blocks as SVG/PNG images.",
+          "Right click the code area to export blocks as SVhttps://kakaomames.github.io/turbowarp/PNG images.",
         tags: [],
         credits: [{ name: "summerscar" }],
         dynamicDisable: !0,
@@ -1759,7 +1759,7 @@
         credits: [
           {
             name: "Tacodiva",
-            link: "https://scratch.mit.edu/users/Tacodude7729/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Tacodude772https://kakaomames.github.io/turbowarp/",
           },
         ],
         enabledByDefault: !1,
@@ -1777,7 +1777,7 @@
         credits: [
           {
             name: "ErrorGamer2000",
-            link: "https://scratch.mit.edu/users/ErrorGamer2000/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/ErrorGamer200https://kakaomames.github.io/turbowarp/",
           },
           { name: "GarboMuffin" },
         ],
@@ -1817,7 +1817,7 @@
         noTranslations: !0,
         name: "Paint costume by default",
         description:
-          'Changes the default action of "Choose a Sprite/Costume/Backdrop/Sound" buttons, which open the library by default.',
+          'Changes the default action of "Choose a Sprithttps://kakaomames.github.io/turbowarp/Costumhttps://kakaomames.github.io/turbowarp/Backdrohttps://kakaomames.github.io/turbowarp/Sound" buttons, which open the library by default.',
         credits: [{ name: "GarboMuffin" }],
         userscripts: [{ url: "userscript.js" }],
         settings: [
@@ -1897,7 +1897,7 @@
         credits: [
           {
             name: "lisa_wolfgang",
-            link: "https://scratch.mit.edu/users/lisa_wolfgang/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/lisa_wolfganhttps://kakaomames.github.io/turbowarp/",
           },
           { name: "GarboMuffin" },
         ],
@@ -1935,7 +1935,7 @@
         credits: [
           {
             name: "Tacodiva",
-            link: "https://scratch.mit.edu/users/Tacodude7729/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Tacodude772https://kakaomames.github.io/turbowarp/",
           },
         ],
         info: [
@@ -2037,7 +2037,7 @@
         credits: [
           {
             name: "Chrome_Cat",
-            link: "https://scratch.mit.edu/users/Chrome_Cat/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Chrome_Cahttps://kakaomames.github.io/turbowarp/",
           },
           { name: "GarboMuffin" },
         ],
@@ -2107,7 +2107,7 @@
         credits: [
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/TheColaber",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TheColaber",
           },
           { name: "GarboMuffin" },
         ],
@@ -2119,7 +2119,7 @@
         editorOnly: !0,
         name: 'Switch variables between "For all sprites" and "For this sprite only"',
         description:
-          'Adds more options when renaming an existing variable or list: allows changing between "For all sprites" and "For this sprite only" and whether variables are stored in the cloud. Also adds a new option when right clicking a variable/list to quickly change its scope.',
+          'Adds more options when renaming an existing variable or list: allows changing between "For all sprites" and "For this sprite only" and whether variables are stored in the cloud. Also adds a new option when right clicking a variablhttps://kakaomames.github.io/turbowarp/list to quickly change its scope.',
         credits: [{ name: "GarboMuffin" }],
         userscripts: [{ url: "userscript.js" }],
         userstyles: [{ url: "style.css" }],
@@ -2137,7 +2137,7 @@
         credits: [
           {
             name: "lisa_wolfgang",
-            link: "https://scratch.mit.edu/users/lisa_wolfgang/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/lisa_wolfganhttps://kakaomames.github.io/turbowarp/",
           },
           { name: "GarboMuffin" },
         ],
@@ -2209,7 +2209,7 @@
         description:
           "Splits the block category menu into two columns and moves it to the top of the block palette, like in Scratch 2.0.",
         credits: [
-          { name: "TheColaber", link: "https://scratch.mit.edu/TheColaber" },
+          { name: "TheColaber", link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/TheColaber" },
         ],
         tags: [],
         dynamicDisable: !0,
@@ -2241,14 +2241,14 @@
           "Drag a script to automatically align its position to the code area dots.",
         tags: [],
         credits: [
-          { name: "CST1229", link: "https://scratch.mit.edu/users/CST1229/" },
+          { name: "CST1229", link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/CST122https://kakaomames.github.io/turbowarp/" },
           {
             name: "TheColaber",
-            link: "https://scratch.mit.edu/users/TheColaber/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TheColabehttps://kakaomames.github.io/turbowarp/",
           },
           {
             name: "lisa_wolfgang",
-            link: "https://scratch.mit.edu/users/lisa_wolfgang/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/lisa_wolfganhttps://kakaomames.github.io/turbowarp/",
           },
         ],
         userscripts: [{ url: "userscript.js" }],
@@ -2277,7 +2277,7 @@
         credits: [
           {
             name: "lisa_wolfgang",
-            link: "https://scratch.mit.edu/users/lisa_wolfgang/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/lisa_wolfganhttps://kakaomames.github.io/turbowarp/",
           },
         ],
         info: [
@@ -2326,7 +2326,7 @@
         credits: [
           {
             name: "Maximouse",
-            link: "https://scratch.mit.edu/users/Maximouse/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Maximoushttps://kakaomames.github.io/turbowarp/",
           },
         ],
         dynamicDisable: !0,
@@ -2344,7 +2344,7 @@
         credits: [
           {
             name: "lisa_wolfgang",
-            link: "https://scratch.mit.edu/users/lisa_wolfgang/",
+            link: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/lisa_wolfganhttps://kakaomames.github.io/turbowarp/",
           },
         ],
         userscripts: [{ url: "userscript.js" }],
@@ -2699,7 +2699,7 @@
                 throw new Error("Color value is not a string.");
               if (
                 (9 === s.length && (s = s.substring(0, 7)),
-                !/^#[0-9a-f]{6}$/i.test(s))
+                https://kakaomames.github.io/turbowarp/^#[0-9a-f]{6}https://kakaomames.github.io/turbowarp/i.test(s))
               )
                 throw new Error("Color value is invalid format.");
             } else {

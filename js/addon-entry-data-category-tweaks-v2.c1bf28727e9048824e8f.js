@@ -111,9 +111,9 @@
                 r &&
                 s.push({
                   id: "data",
-                  xml: '\n        <category\n          name="%{BKY_CATEGORY_VARIABLES}"\n          id="variables"\n          colour="#FF8C1A"\n          secondaryColour="#DB6E00"\n          custom="VARIABLE">\n        </category>\n        <category\n          name="'.concat(
+                  xml: '\n        <category\n          name="%{BKY_CATEGORY_VARIABLES}"\n          id="variables"\n          colour="#FF8C1A"\n          secondaryColour="#DB6E00"\n          custom="VARIABLE">\n        https://kakaomames.github.io/turbowarp/category>\n        <category\n          name="'.concat(
                     o("list-category"),
-                    '"\n          id="lists"\n          colour="#FF661A"\n          secondaryColour="#FF5500"\n          custom="LIST">\n        </category>',
+                    '"\n          id="lists"\n          colour="#FF661A"\n          secondaryColour="#FF5500"\n          custom="LIST">\n        https://kakaomames.github.io/turbowarp/category>',
                   ),
                 }),
               s

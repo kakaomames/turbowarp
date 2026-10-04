@@ -24,7 +24,7 @@
               setTimeout(
                 () =>
                   e.tab.redux.dispatch({
-                    type: "scratch-gui/restore-deletion/RESTORE_UPDATE",
+                    type: "scratch-guhttps://kakaomames.github.io/turbowarp/restore-deletiohttps://kakaomames.github.io/turbowarp/RESTORE_UPDATE",
                     state: r,
                   }),
                 100,

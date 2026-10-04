@@ -1,14 +1,14 @@
-// Name: Iframe
-// ID: iframe
-// Description: Display webpages or HTML over the stage.
-// By: GarboMuffin
-// Context: "iframe" is an HTML element that lets websites embed other websites.
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Iframe
+https://kakaomames.github.io/turbowarp/ ID: iframe
+https://kakaomames.github.io/turbowarp/ Description: Display webpages or HTML over the stage.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ Context: "iframe" is an HTML element that lets websites embed other websites.
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
 
-  /** @type {HTMLIFrameElement|null} */
+ https://kakaomames.github.io/turbowarp/** @type {HTMLIFrameElement|null} https://kakaomames.github.io/turbowarp/
   let iframe = null;
   let overlay = null;
 
@@ -45,18 +45,18 @@
     "allow-modals",
     "allow-popups",
 
-    // The big one we don't want to include is allow-top-navigation
+   https://kakaomames.github.io/turbowarp// The big one we don't want to include is allow-top-navigation
   ];
 
   let x = 0;
   let y = 0;
-  let width = -1; // negative means default
-  let height = -1; // negative means default
+  let width = -1;https://kakaomames.github.io/turbowarp// negative means default
+  let height = -1;https://kakaomames.github.io/turbowarp// negative means default
   let interactive = true;
   let resizeBehavior = "scale";
-  /** @type {string|number|boolean} */
+ https://kakaomames.github.io/turbowarp/** @type {string|number|boolean} https://kakaomames.github.io/turbowarp/
   let latestMessage = "";
-  /** @type {string|number|boolean} */
+ https://kakaomames.github.io/turbowarp/** @type {string|number|boolean} https://kakaomames.github.io/turbowarp/
   let latestParentMessage = "";
 
   const updateFrameAttributes = () => {
@@ -74,22 +74,22 @@
       iframe.style.width = `${effectiveWidth}px`;
       iframe.style.height = `${effectiveHeight}px`;
 
-      iframe.style.transform = `translate(${-effectiveWidth / 2 + x}px, ${
-        -effectiveHeight / 2 - y
+      iframe.style.transform = `translate(${-effectiveWidthhttps://kakaomames.github.io/turbowarp/ 2 + x}px, ${
+        -effectiveHeighthttps://kakaomames.github.io/turbowarp/ 2 - y
       }px)`;
       iframe.style.top = "0";
       iframe.style.left = "0";
     } else {
-      // As the stage is resized in fullscreen mode, only % can be relied upon
-      iframe.style.width = `${(effectiveWidth / stageWidth) * 100}%`;
-      iframe.style.height = `${(effectiveHeight / stageHeight) * 100}%`;
+     https://kakaomames.github.io/turbowarp// As the stage is resized in fullscreen mode, only % can be relied upon
+      iframe.style.width = `${(effectiveWidthhttps://kakaomames.github.io/turbowarp/ stageWidth) * 100}%`;
+      iframe.style.height = `${(effectiveHeighthttps://kakaomames.github.io/turbowarp/ stageHeight) * 100}%`;
 
       iframe.style.transform = "";
       iframe.style.top = `${
-        (0.5 - effectiveHeight / 2 / stageHeight - y / stageHeight) * 100
+        (0.5 - effectiveHeighthttps://kakaomames.github.io/turbowarp/ 2https://kakaomames.github.io/turbowarp/ stageHeight - yhttps://kakaomames.github.io/turbowarp/ stageHeight) * 100
       }%`;
       iframe.style.left = `${
-        (0.5 - effectiveWidth / 2 / stageWidth + x / stageWidth) * 100
+        (0.5 - effectiveWidthhttps://kakaomames.github.io/turbowarp/ 2https://kakaomames.github.io/turbowarp/ stageWidth + xhttps://kakaomames.github.io/turbowarp/ stageWidth) * 100
       }%`;
     }
   };
@@ -125,7 +125,7 @@
     }
   };
 
-  /** @param {unknown} data */
+ https://kakaomames.github.io/turbowarp/** @param {unknown} data https://kakaomames.github.io/turbowarp/
   const normalizeMessage = (data) =>
     typeof data === "string" ||
     typeof data === "number" ||
@@ -133,11 +133,11 @@
       ? data
       : JSON.stringify(data);
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @returns {Window|null}
-   */
+   https://kakaomames.github.io/turbowarp/
   const getParentWindow = () => {
-    // if no parent, window.parent is us. which is not useful
+   https://kakaomames.github.io/turbowarp// if no parent, window.parent is us. which is not useful
     if (window.parent !== window) {
       return window.parent;
     }
@@ -174,7 +174,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./hello.html",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/hello.html",
               },
             },
           },
@@ -185,7 +185,7 @@
             arguments: {
               HTML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: `<h1>${Scratch.translate("It works!")}</h1>`,
+                defaultValue: `<h1>${Scratch.translate("It works!")}https://kakaomames.github.io/turbowarp/h1>`,
               },
             },
           },
@@ -347,7 +347,7 @@
           interactiveMenu: {
             acceptReporters: true,
             items: [
-              // The getter blocks will return English regardless of translating these
+             https://kakaomames.github.io/turbowarp// The getter blocks will return English regardless of translating these
               "true",
               "false",
             ],
@@ -378,7 +378,7 @@
 
     async displayHTML({ HTML }) {
       closeFrame();
-      const url = `data:text/html;,${encodeURIComponent(
+      const url = `data:texhttps://kakaomames.github.io/turbowarp/html;,${encodeURIComponent(
         Scratch.Cast.toString(HTML)
       )}`;
       if (await Scratch.canEmbed(url)) {

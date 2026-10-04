@@ -4,7 +4,7 @@
     1635: function (e, t, o) {
       (e.exports = o(9)(!1)).push([
         e.i,
-        "/* Imported by other addons */\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-primary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-primary);\n  --sa-block-text: white;\n  --sa-block-gray-text: white;\n  --sa-block-colored-text: var(--sa-block-background-primary);\n  --sa-block-text-on-bright-background: white;\n}\n\n.sa-block-color-motion {\n  --sa-block-background-primary: var(--editorTheme3-motion-primary, #4c97ff);\n  --sa-block-background-secondary: var(--editorTheme3-motion-secondary, #4280d7);\n  --sa-block-background-tertiary: var(--editorTheme3-motion-tertiary, #3373cc);\n  --sa-block-field-background: var(--editorTheme3-motion-field, #3373cc);\n}\n\n.sa-block-color-looks {\n  --sa-block-background-primary: var(--editorTheme3-looks-primary, #9966ff);\n  --sa-block-background-secondary: var(--editorTheme3-looks-secondary, #855cd6);\n  --sa-block-background-tertiary: var(--editorTheme3-looks-tertiary, #774dcb);\n  --sa-block-field-background: var(--editorTheme3-looks-field, #774dcb);\n}\n\n.sa-block-color-sounds {\n  --sa-block-background-primary: var(--editorTheme3-sounds-primary, #cf63cf);\n  --sa-block-background-secondary: var(--editorTheme3-sounds-secondary, #c94fc9);\n  --sa-block-background-tertiary: var(--editorTheme3-sounds-tertiary, #bd42bd);\n  --sa-block-field-background: var(--editorTheme3-sounds-field, #bd42bd);\n}\n\n.sa-block-color-events {\n  --sa-block-background-primary: var(--editorTheme3-event-primary, #ffbf00);\n  --sa-block-background-secondary: var(--editorTheme3-event-secondary, #e6ac00);\n  --sa-block-background-tertiary: var(--editorTheme3-event-tertiary, #cc9900);\n  --sa-block-field-background: var(--editorTheme3-event-field, #cc9900);\n}\n\n.sa-block-color-control {\n  --sa-block-background-primary: var(--editorTheme3-control-primary, #ffab19);\n  --sa-block-background-secondary: var(--editorTheme3-control-secondary, #ec9c13);\n  --sa-block-background-tertiary: var(--editorTheme3-control-tertiary, #cf8b17);\n  --sa-block-field-background: var(--editorTheme3-control-field, #cf8b17);\n}\n\n.sa-block-color-sensing {\n  --sa-block-background-primary: var(--editorTheme3-sensing-primary, #5cb1d6);\n  --sa-block-background-secondary: var(--editorTheme3-sensing-secondary, #47a8d1);\n  --sa-block-background-tertiary: var(--editorTheme3-sensing-tertiary, #2e8eb8);\n  --sa-block-field-background: var(--editorTheme3-sensing-field, #2e8eb8);\n}\n\n.sa-block-color-operators {\n  --sa-block-background-primary: var(--editorTheme3-operators-primary, #59c059);\n  --sa-block-background-secondary: var(--editorTheme3-operators-secondary, #46b946);\n  --sa-block-background-tertiary: var(--editorTheme3-operators-tertiary, #389438);\n  --sa-block-field-background: var(--editorTheme3-operators-field, #389438);\n}\n\n.sa-block-color-data {\n  --sa-block-background-primary: var(--editorTheme3-data-primary, #ff8c1a);\n  --sa-block-background-secondary: var(--editorTheme3-data-secondary, #ff8000);\n  --sa-block-background-tertiary: var(--editorTheme3-data-tertiary, #db6e00);\n  --sa-block-field-background: var(--editorTheme3-data-field, #db6e00);\n}\n\n.sa-block-color-data-lists,\n.sa-block-color-list {\n  --sa-block-background-primary: var(--editorTheme3-data_lists-primary, #ff661a);\n  --sa-block-background-secondary: var(--editorTheme3-data_lists-secondary, #ff5500);\n  --sa-block-background-tertiary: var(--editorTheme3-data_lists-tertiary, #e64d00);\n  --sa-block-field-background: var(--editorTheme3-data_lists-field, #e64d00);\n}\n\n.sa-block-color-more,\n.sa-block-color-null {\n  --sa-block-background-primary: var(--editorTheme3-more-primary, #ff6680);\n  --sa-block-background-secondary: var(--editorTheme3-more-secondary, #ff4d6a);\n  --sa-block-background-tertiary: var(--editorTheme3-more-tertiary, #ff3355);\n  --sa-block-field-background: var(--editorTheme3-more-field, #ff3355);\n}\n\n.sa-block-color-pen {\n  --sa-block-background-primary: var(--editorTheme3-pen-primary, #0fbd8c);\n  --sa-block-background-secondary: var(--editorTheme3-pen-secondary, #0da57a);\n  --sa-block-background-tertiary: var(--editorTheme3-pen-tertiary, #0b8e69);\n  --sa-block-field-background: var(--editorTheme3-pen-field, #0b8e69);\n}\n\n.sa-block-color-addon-custom-block {\n  --sa-block-background-primary: var(--editorTheme3-sa-primary, #29beb8);\n  --sa-block-background-secondary: var(--editorTheme3-sa-secondary, #3aa8a4);\n  --sa-block-background-tertiary: var(--editorTheme3-sa-tertiary, #3aa8a4);\n  --sa-block-field-background: var(--editorTheme3-sa-field, #3aa8a4);\n}\n\n.sa-block-color-TurboWarp {\n  --sa-block-background-primary: var(--editorTheme3-tw-primary, #ff4c4c);\n  --sa-block-background-secondary: var(--editorTheme3-tw-secondary, #e64444);\n  --sa-block-background-tertiary: var(--editorTheme3-tw-tertiary, #e64444);\n  --sa-block-field-background: var(--editorTheme3-tw-field, #e64444);\n}\n",
+        https://kakaomames.github.io/turbowarp/* Imported by other addons https://kakaomames.github.io/turbowarp/\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-primary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-primary);\n  --sa-block-text: white;\n  --sa-block-gray-text: white;\n  --sa-block-colored-text: var(--sa-block-background-primary);\n  --sa-block-text-on-bright-background: white;\n}\n\n.sa-block-color-motion {\n  --sa-block-background-primary: var(--editorTheme3-motion-primary, #4c97ff);\n  --sa-block-background-secondary: var(--editorTheme3-motion-secondary, #4280d7);\n  --sa-block-background-tertiary: var(--editorTheme3-motion-tertiary, #3373cc);\n  --sa-block-field-background: var(--editorTheme3-motion-field, #3373cc);\n}\n\n.sa-block-color-looks {\n  --sa-block-background-primary: var(--editorTheme3-looks-primary, #9966ff);\n  --sa-block-background-secondary: var(--editorTheme3-looks-secondary, #855cd6);\n  --sa-block-background-tertiary: var(--editorTheme3-looks-tertiary, #774dcb);\n  --sa-block-field-background: var(--editorTheme3-looks-field, #774dcb);\n}\n\n.sa-block-color-sounds {\n  --sa-block-background-primary: var(--editorTheme3-sounds-primary, #cf63cf);\n  --sa-block-background-secondary: var(--editorTheme3-sounds-secondary, #c94fc9);\n  --sa-block-background-tertiary: var(--editorTheme3-sounds-tertiary, #bd42bd);\n  --sa-block-field-background: var(--editorTheme3-sounds-field, #bd42bd);\n}\n\n.sa-block-color-events {\n  --sa-block-background-primary: var(--editorTheme3-event-primary, #ffbf00);\n  --sa-block-background-secondary: var(--editorTheme3-event-secondary, #e6ac00);\n  --sa-block-background-tertiary: var(--editorTheme3-event-tertiary, #cc9900);\n  --sa-block-field-background: var(--editorTheme3-event-field, #cc9900);\n}\n\n.sa-block-color-control {\n  --sa-block-background-primary: var(--editorTheme3-control-primary, #ffab19);\n  --sa-block-background-secondary: var(--editorTheme3-control-secondary, #ec9c13);\n  --sa-block-background-tertiary: var(--editorTheme3-control-tertiary, #cf8b17);\n  --sa-block-field-background: var(--editorTheme3-control-field, #cf8b17);\n}\n\n.sa-block-color-sensing {\n  --sa-block-background-primary: var(--editorTheme3-sensing-primary, #5cb1d6);\n  --sa-block-background-secondary: var(--editorTheme3-sensing-secondary, #47a8d1);\n  --sa-block-background-tertiary: var(--editorTheme3-sensing-tertiary, #2e8eb8);\n  --sa-block-field-background: var(--editorTheme3-sensing-field, #2e8eb8);\n}\n\n.sa-block-color-operators {\n  --sa-block-background-primary: var(--editorTheme3-operators-primary, #59c059);\n  --sa-block-background-secondary: var(--editorTheme3-operators-secondary, #46b946);\n  --sa-block-background-tertiary: var(--editorTheme3-operators-tertiary, #389438);\n  --sa-block-field-background: var(--editorTheme3-operators-field, #389438);\n}\n\n.sa-block-color-data {\n  --sa-block-background-primary: var(--editorTheme3-data-primary, #ff8c1a);\n  --sa-block-background-secondary: var(--editorTheme3-data-secondary, #ff8000);\n  --sa-block-background-tertiary: var(--editorTheme3-data-tertiary, #db6e00);\n  --sa-block-field-background: var(--editorTheme3-data-field, #db6e00);\n}\n\n.sa-block-color-data-lists,\n.sa-block-color-list {\n  --sa-block-background-primary: var(--editorTheme3-data_lists-primary, #ff661a);\n  --sa-block-background-secondary: var(--editorTheme3-data_lists-secondary, #ff5500);\n  --sa-block-background-tertiary: var(--editorTheme3-data_lists-tertiary, #e64d00);\n  --sa-block-field-background: var(--editorTheme3-data_lists-field, #e64d00);\n}\n\n.sa-block-color-more,\n.sa-block-color-null {\n  --sa-block-background-primary: var(--editorTheme3-more-primary, #ff6680);\n  --sa-block-background-secondary: var(--editorTheme3-more-secondary, #ff4d6a);\n  --sa-block-background-tertiary: var(--editorTheme3-more-tertiary, #ff3355);\n  --sa-block-field-background: var(--editorTheme3-more-field, #ff3355);\n}\n\n.sa-block-color-pen {\n  --sa-block-background-primary: var(--editorTheme3-pen-primary, #0fbd8c);\n  --sa-block-background-secondary: var(--editorTheme3-pen-secondary, #0da57a);\n  --sa-block-background-tertiary: var(--editorTheme3-pen-tertiary, #0b8e69);\n  --sa-block-field-background: var(--editorTheme3-pen-field, #0b8e69);\n}\n\n.sa-block-color-addon-custom-block {\n  --sa-block-background-primary: var(--editorTheme3-sa-primary, #29beb8);\n  --sa-block-background-secondary: var(--editorTheme3-sa-secondary, #3aa8a4);\n  --sa-block-background-tertiary: var(--editorTheme3-sa-tertiary, #3aa8a4);\n  --sa-block-field-background: var(--editorTheme3-sa-field, #3aa8a4);\n}\n\n.sa-block-color-TurboWarp {\n  --sa-block-background-primary: var(--editorTheme3-tw-primary, #ff4c4c);\n  --sa-block-background-secondary: var(--editorTheme3-tw-secondary, #e64444);\n  --sa-block-background-tertiary: var(--editorTheme3-tw-tertiary, #e64444);\n  --sa-block-field-background: var(--editorTheme3-tw-field, #e64444);\n}\n",
         "",
       ]);
     },
@@ -16,7 +16,7 @@
         o.d(t, "b", function () {
           return r;
         }));
-      const n = () => /^#?[0-9a-fA-F]{3,8}$/,
+      const n = () =>https://kakaomames.github.io/turbowarp/^#?[0-9a-fA-F]{3,8}https://kakaomames.github.io/turbowarp/,
         r = (e) => {
           let t = String(e);
           if (!n().test(t)) return "#000000";
@@ -54,8 +54,8 @@
     1642: function (e, t, o) {
       "use strict";
       const n = (function (e) {
-        var t = /^\s+/,
-          o = /\s+$/,
+        var t =https://kakaomames.github.io/turbowarp/^\shttps://kakaomames.github.io/turbowarp/,
+          o =https://kakaomames.github.io/turbowarp/\s+https://kakaomames.github.io/turbowarp/,
           n = 0,
           r = e.round,
           s = e.min,
@@ -163,12 +163,12 @@
                         return (
                           o < 0 && (o += 1),
                           o > 1 && (o -= 1),
-                          o < 1 / 6
+                          o < 1https://kakaomames.github.io/turbowarp/ 6
                             ? e + 6 * (t - e) * o
                             : o < 0.5
                               ? t
-                              : o < 2 / 3
-                                ? e + (t - e) * (2 / 3 - o) * 6
+                              : o < 2https://kakaomames.github.io/turbowarp/ 3
+                                ? e + (t - e) * (2https://kakaomames.github.io/turbowarp/ 3 - o) * 6
                                 : e
                         );
                       }
@@ -182,9 +182,9 @@
                       else {
                         var i = o < 0.5 ? o * (1 + t) : o + t - o * t,
                           c = 2 * o - i;
-                        ((n = a(c, i, e + 1 / 3)),
+                        ((n = a(c, i, e + 1https://kakaomames.github.io/turbowarp/ 3)),
                           (r = a(c, i, e)),
-                          (s = a(c, i, e - 1 / 3)));
+                          (s = a(c, i, e - 1https://kakaomames.github.io/turbowarp/ 3)));
                       }
                       return { r: 255 * n, g: 255 * r, b: 255 * s };
                     })(n.h, c, d)),
@@ -209,7 +209,7 @@
             (this._g = d.g),
             (this._b = d.b),
             (this._a = d.a),
-            (this._roundA = r(100 * this._a) / 100),
+            (this._roundA = r(100 * this._a)https://kakaomames.github.io/turbowarp/ 100),
             (this._format = l.format || d.format),
             (this._gradientType = l.gradientType),
             this._r < 1 && (this._r = r(this._r)),
@@ -224,21 +224,21 @@
             r,
             i = a(e, t, o),
             c = s(e, t, o),
-            l = (i + c) / 2;
+            l = (i + c)https://kakaomames.github.io/turbowarp/ 2;
           if (i == c) n = r = 0;
           else {
             var d = i - c;
-            switch (((r = l > 0.5 ? d / (2 - i - c) : d / (i + c)), i)) {
+            switch (((r = l > 0.5 ? dhttps://kakaomames.github.io/turbowarp/ (2 - i - c) : dhttps://kakaomames.github.io/turbowarp/ (i + c)), i)) {
               case e:
-                n = (t - o) / d + (t < o ? 6 : 0);
+                n = (t - o)https://kakaomames.github.io/turbowarp/ d + (t < o ? 6 : 0);
                 break;
               case t:
-                n = (o - e) / d + 2;
+                n = (o - e)https://kakaomames.github.io/turbowarp/ d + 2;
                 break;
               case o:
-                n = (e - t) / d + 4;
+                n = (e - t)https://kakaomames.github.io/turbowarp/ d + 4;
             }
-            n /= 6;
+            nhttps://kakaomames.github.io/turbowarp/= 6;
           }
           return { h: n, s: r, l: l };
         }
@@ -250,19 +250,19 @@
             c = s(e, t, o),
             l = i,
             d = i - c;
-          if (((r = 0 === i ? 0 : d / i), i == c)) n = 0;
+          if (((r = 0 === i ? 0 : dhttps://kakaomames.github.io/turbowarp/ i), i == c)) n = 0;
           else {
             switch (i) {
               case e:
-                n = (t - o) / d + (t < o ? 6 : 0);
+                n = (t - o)https://kakaomames.github.io/turbowarp/ d + (t < o ? 6 : 0);
                 break;
               case t:
-                n = (o - e) / d + 2;
+                n = (o - e)https://kakaomames.github.io/turbowarp/ d + 2;
                 break;
               case o:
-                n = (e - t) / d + 4;
+                n = (e - t)https://kakaomames.github.io/turbowarp/ d + 4;
             }
-            n /= 6;
+            nhttps://kakaomames.github.io/turbowarp/= 6;
           }
           return { h: n, s: r, v: l };
         }
@@ -290,12 +290,12 @@
         function h(e, t) {
           t = 0 === t ? 0 : t || 10;
           var o = c(e).toHsl();
-          return ((o.s -= t / 100), (o.s = E(o.s)), c(o));
+          return ((o.s -= thttps://kakaomames.github.io/turbowarp/ 100), (o.s = E(o.s)), c(o));
         }
         function f(e, t) {
           t = 0 === t ? 0 : t || 10;
           var o = c(e).toHsl();
-          return ((o.s += t / 100), (o.s = E(o.s)), c(o));
+          return ((o.s += thttps://kakaomames.github.io/turbowarp/ 100), (o.s = E(o.s)), c(o));
         }
         function m(e) {
           return c(e).desaturate(100);
@@ -303,22 +303,22 @@
         function g(e, t) {
           t = 0 === t ? 0 : t || 10;
           var o = c(e).toHsl();
-          return ((o.l += t / 100), (o.l = E(o.l)), c(o));
+          return ((o.l += thttps://kakaomames.github.io/turbowarp/ 100), (o.l = E(o.l)), c(o));
         }
         function b(e, t) {
           t = 0 === t ? 0 : t || 10;
           var o = c(e).toRgb();
           return (
-            (o.r = a(0, s(255, o.r - r((-t / 100) * 255)))),
-            (o.g = a(0, s(255, o.g - r((-t / 100) * 255)))),
-            (o.b = a(0, s(255, o.b - r((-t / 100) * 255)))),
+            (o.r = a(0, s(255, o.r - r((-thttps://kakaomames.github.io/turbowarp/ 100) * 255)))),
+            (o.g = a(0, s(255, o.g - r((-thttps://kakaomames.github.io/turbowarp/ 100) * 255)))),
+            (o.b = a(0, s(255, o.b - r((-thttps://kakaomames.github.io/turbowarp/ 100) * 255)))),
             c(o)
           );
         }
         function y(e, t) {
           t = 0 === t ? 0 : t || 10;
           var o = c(e).toHsl();
-          return ((o.l -= t / 100), (o.l = E(o.l)), c(o));
+          return ((o.l -= thttps://kakaomames.github.io/turbowarp/ 100), (o.l = E(o.l)), c(o));
         }
         function v(e, t) {
           var o = c(e).toHsl(),
@@ -360,7 +360,7 @@
         function I(e, t, o) {
           ((t = t || 6), (o = o || 30));
           var n = c(e).toHsl(),
-            r = 360 / o,
+            r = 360https://kakaomames.github.io/turbowarp/ o,
             s = [c(e)];
           for (n.h = (n.h - ((r * t) >> 1) + 720) % 360; --t;)
             ((n.h = (n.h + r) % 360), s.push(c(n)));
@@ -369,7 +369,7 @@
         function T(e, t) {
           t = t || 6;
           for (
-            var o = c(e).toHsv(), n = o.h, r = o.s, s = o.v, a = [], i = 1 / t;
+            var o = c(e).toHsv(), n = o.h, r = o.s, s = o.v, a = [], i = 1https://kakaomames.github.io/turbowarp/ t;
             t--;
           )
             (a.push(c({ h: n, s: r, v: s })), (s = (s + i) % 1));
@@ -396,7 +396,7 @@
           },
           getBrightness: function () {
             var e = this.toRgb();
-            return (299 * e.r + 587 * e.g + 114 * e.b) / 1e3;
+            return (299 * e.r + 587 * e.g + 114 * e.b)https://kakaomames.github.io/turbowarp/ 1e3;
           },
           getLuminance: function () {
             var t,
@@ -404,21 +404,21 @@
               n,
               r = this.toRgb();
             return (
-              (t = r.r / 255),
-              (o = r.g / 255),
-              (n = r.b / 255),
+              (t = r.rhttps://kakaomames.github.io/turbowarp/ 255),
+              (o = r.ghttps://kakaomames.github.io/turbowarp/ 255),
+              (n = r.bhttps://kakaomames.github.io/turbowarp/ 255),
               0.2126 *
-                (t <= 0.03928 ? t / 12.92 : e.pow((t + 0.055) / 1.055, 2.4)) +
+                (t <= 0.03928 ? thttps://kakaomames.github.io/turbowarp/ 12.92 : e.pow((t + 0.055)https://kakaomames.github.io/turbowarp/ 1.055, 2.4)) +
                 0.7152 *
-                  (o <= 0.03928 ? o / 12.92 : e.pow((o + 0.055) / 1.055, 2.4)) +
+                  (o <= 0.03928 ? ohttps://kakaomames.github.io/turbowarp/ 12.92 : e.pow((o + 0.055)https://kakaomames.github.io/turbowarp/ 1.055, 2.4)) +
                 0.0722 *
-                  (n <= 0.03928 ? n / 12.92 : e.pow((n + 0.055) / 1.055, 2.4))
+                  (n <= 0.03928 ? nhttps://kakaomames.github.io/turbowarp/ 12.92 : e.pow((n + 0.055)https://kakaomames.github.io/turbowarp/ 1.055, 2.4))
             );
           },
           setAlpha: function (e) {
             return (
               (this._a = L(e)),
-              (this._roundA = r(100 * this._a) / 100),
+              (this._roundA = r(100 * this._a)https://kakaomames.github.io/turbowarp/ 100),
               this
             );
           },
@@ -655,7 +655,7 @@
             o = 0 === o ? 0 : o || 50;
             var n = c(e).toRgb(),
               r = c(t).toRgb(),
-              s = o / 100;
+              s = ohttps://kakaomames.github.io/turbowarp/ 100;
             return c({
               r: (r.r - n.r) * s + n.r,
               g: (r.g - n.g) * s + n.g,
@@ -667,7 +667,7 @@
             var n = c(t),
               r = c(o);
             return (
-              (e.max(n.getLuminance(), r.getLuminance()) + 0.05) /
+              (e.max(n.getLuminance(), r.getLuminance()) + 0.05)https://kakaomames.github.io/turbowarp/
               (e.min(n.getLuminance(), r.getLuminance()) + 0.05)
             );
           }),
@@ -893,8 +893,8 @@
           })(t);
           return (
             (t = s(o, a(0, parseFloat(t)))),
-            n && (t = parseInt(t * o, 10) / 100),
-            e.abs(t - o) < 1e-6 ? 1 : (t % o) / parseFloat(o)
+            n && (t = parseInt(t * o, 10)https://kakaomames.github.io/turbowarp/ 100),
+            e.abs(t - o) < 1e-6 ? 1 : (t % o)https://kakaomames.github.io/turbowarp/ parseFloat(o)
           );
         }
         function E(e) {
@@ -913,7 +913,7 @@
           return e.round(255 * parseFloat(t)).toString(16);
         }
         function j(e) {
-          return D(e) / 255;
+          return D(e)https://kakaomames.github.io/turbowarp/ 255;
         }
         var B,
           R,
@@ -945,10 +945,10 @@
               hsla: new RegExp("hsla" + z),
               hsv: new RegExp("hsv" + R),
               hsva: new RegExp("hsva" + z),
-              hex3: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
-              hex6: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
-              hex4: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
-              hex8: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
+              hex3:https://kakaomames.github.io/turbowarp/^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})https://kakaomames.github.io/turbowarp/,
+              hex6:https://kakaomames.github.io/turbowarp/^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})https://kakaomames.github.io/turbowarp/,
+              hex4:https://kakaomames.github.io/turbowarp/^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})https://kakaomames.github.io/turbowarp/,
+              hex8:https://kakaomames.github.io/turbowarp/^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})https://kakaomames.github.io/turbowarp/,
             });
         function W(e) {
           return !!Z.CSS_UNIT.exec(e);
@@ -1038,7 +1038,7 @@
       ((t = e.exports = o(9)(!1)).i(o(1635), ""),
         t.push([
           e.i,
-          '.sa-find-bar {\n  display: flex;\n  align-items: center;\n  white-space: nowrap;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  width: 100%;\n  height: 100%;\n  margin-left: 1em;\n}\n.sa-find-bar[hidden] {\n  /* !important to override displayNoneWhileDisabled */\n  display: none !important;\n}\n\n.sa-find-wrapper {\n  overflow: visible;\n  position: relative;\n  height: 2rem;\n  width: 100%;\n  max-width: 16em;\n}\n\n.sa-find-dropdown-out {\n  display: block;\n  top: -6px;\n  z-index: 100;\n  width: 100%;\n  max-width: 16em;\n  position: relative;\n  padding: 4px;\n  border: none;\n  border-radius: 4px;\n  margin-top: 6px;\n}\n\n.sa-find-dropdown-out.visible {\n  position: absolute;\n  width: 16em;\n  box-shadow: 0px 0px 8px 1px var(--ui-black-transparent, rgba(0, 0, 0, 0.3));\n  background-color: var(--ui-primary, white);\n}\n\n/* We need to modify Scratch styles so that the place where the find bar is injected */\n/* has actually correct size information, which is used to make the find bar not cover up controls */\n[class*="gui_tab-list_"] {\n  width: 100%;\n}\n[class*="gui_tab_"] {\n  flex-grow: 0;\n}\n\n.sa-find-input {\n  width: 100%;\n  box-sizing: border-box !important;\n  /* !important required for extension, because CSS injection method (and hence order) differs from addon */\n  height: 1.5rem;\n\n  /* Change Scratch default styles */\n  border-radius: 0.25rem;\n  font-size: 0.75rem;\n  padding-left: 0.4em;\n}\n\n.sa-find-input:focus {\n  /* Change Scratch default styles */\n  box-shadow: none;\n}\n\n.sa-find-dropdown {\n  display: none;\n  position: relative;\n  padding: 0.2em 0;\n  font-size: 0.75rem;\n  line-height: 1;\n  overflow-y: auto;\n  min-height: 128px;\n  max-height: 65vh;\n  user-select: none;\n  max-width: 100%;\n  margin-top: 6px;\n  border: none;\n}\n\n.sa-find-dropdown-out.visible > .sa-find-dropdown {\n  display: block;\n}\n\n.sa-find-dropdown > li {\n  display: block;\n  padding: 0.5em 0.3em;\n  white-space: nowrap;\n  margin: 0;\n  font-weight: bold;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.sa-find-dropdown > li > b {\n  background-color: #aaffaa;\n  color: black;\n}\n\n/* Drop down items */\n.sa-find-dropdown > li:hover,\n.sa-find-dropdown > li.sel {\n  color: var(--sa-block-text-on-bright-background);\n  cursor: pointer;\n}\n\n.sa-find-dropdown > li::before {\n  content: "\\25CF   "; /* ● */\n}\n\n.sa-find-flag {\n  color: #4cbf56;\n}\n/* .sa-find-dropdown added for specificity */\n.sa-find-dropdown > .sa-find-flag:hover,\n.sa-find-dropdown > .sa-find-flag.sel {\n  background-color: #4cbf56;\n  color: white;\n}\n\n.sa-find-dropdown .sa-block-color {\n  color: var(--sa-block-colored-text);\n}\n.sa-find-dropdown .sa-block-color:hover,\n.sa-find-dropdown .sa-block-color.sel {\n  background-color: var(--sa-block-bright-background);\n}\n\n.sa-find-carousel {\n  font-weight: normal;\n  position: absolute;\n  right: 0;\n  white-space: nowrap;\n  background-color: inherit;\n  z-index: 1;\n  padding: 0;\n}\n\n.sa-find-carousel-control {\n  padding: 0 6px;\n}\n\n.sa-find-carousel-control:hover {\n  color: #ffff80;\n}\n',
+          '.sa-find-bar {\n  display: flex;\n  align-items: center;\n  white-space: nowrap;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  width: 100%;\n  height: 100%;\n  margin-left: 1em;\n}\n.sa-find-bar[hidden] {\n https://kakaomames.github.io/turbowarp/* !important to override displayNoneWhileDisabled https://kakaomames.github.io/turbowarp/\n  display: none !important;\n}\n\n.sa-find-wrapper {\n  overflow: visible;\n  position: relative;\n  height: 2rem;\n  width: 100%;\n  max-width: 16em;\n}\n\n.sa-find-dropdown-out {\n  display: block;\n  top: -6px;\n  z-index: 100;\n  width: 100%;\n  max-width: 16em;\n  position: relative;\n  padding: 4px;\n  border: none;\n  border-radius: 4px;\n  margin-top: 6px;\n}\n\n.sa-find-dropdown-out.visible {\n  position: absolute;\n  width: 16em;\n  box-shadow: 0px 0px 8px 1px var(--ui-black-transparent, rgba(0, 0, 0, 0.3));\n  background-color: var(--ui-primary, white);\n}\n\https://kakaomames.github.io/turbowarp/* We need to modify Scratch styles so that the place where the find bar is injected https://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/* has actually correct size information, which is used to make the find bar not cover up controls https://kakaomames.github.io/turbowarp/\n[class*="gui_tab-list_"] {\n  width: 100%;\n}\n[class*="gui_tab_"] {\n  flex-grow: 0;\n}\n\n.sa-find-input {\n  width: 100%;\n  box-sizing: border-box !important;\n https://kakaomames.github.io/turbowarp/* !important required for extension, because CSS injection method (and hence order) differs from addon https://kakaomames.github.io/turbowarp/\n  height: 1.5rem;\n\n https://kakaomames.github.io/turbowarp/* Change Scratch default styles https://kakaomames.github.io/turbowarp/\n  border-radius: 0.25rem;\n  font-size: 0.75rem;\n  padding-left: 0.4em;\n}\n\n.sa-find-input:focus {\n https://kakaomames.github.io/turbowarp/* Change Scratch default styles https://kakaomames.github.io/turbowarp/\n  box-shadow: none;\n}\n\n.sa-find-dropdown {\n  display: none;\n  position: relative;\n  padding: 0.2em 0;\n  font-size: 0.75rem;\n  line-height: 1;\n  overflow-y: auto;\n  min-height: 128px;\n  max-height: 65vh;\n  user-select: none;\n  max-width: 100%;\n  margin-top: 6px;\n  border: none;\n}\n\n.sa-find-dropdown-out.visible > .sa-find-dropdown {\n  display: block;\n}\n\n.sa-find-dropdown > li {\n  display: block;\n  padding: 0.5em 0.3em;\n  white-space: nowrap;\n  margin: 0;\n  font-weight: bold;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.sa-find-dropdown > li > b {\n  background-color: #aaffaa;\n  color: black;\n}\n\https://kakaomames.github.io/turbowarp/* Drop down items https://kakaomames.github.io/turbowarp/\n.sa-find-dropdown > li:hover,\n.sa-find-dropdown > li.sel {\n  color: var(--sa-block-text-on-bright-background);\n  cursor: pointer;\n}\n\n.sa-find-dropdown > li::before {\n  content: "\\25CF   ";https://kakaomames.github.io/turbowarp/* ● https://kakaomames.github.io/turbowarp/\n}\n\n.sa-find-flag {\n  color: #4cbf56;\n}\https://kakaomames.github.io/turbowarp/* .sa-find-dropdown added for specificity https://kakaomames.github.io/turbowarp/\n.sa-find-dropdown > .sa-find-flag:hover,\n.sa-find-dropdown > .sa-find-flag.sel {\n  background-color: #4cbf56;\n  color: white;\n}\n\n.sa-find-dropdown .sa-block-color {\n  color: var(--sa-block-colored-text);\n}\n.sa-find-dropdown .sa-block-color:hover,\n.sa-find-dropdown .sa-block-color.sel {\n  background-color: var(--sa-block-bright-background);\n}\n\n.sa-find-carousel {\n  font-weight: normal;\n  position: absolute;\n  right: 0;\n  white-space: nowrap;\n  background-color: inherit;\n  z-index: 1;\n  padding: 0;\n}\n\n.sa-find-carousel-control {\n  padding: 0 6px;\n}\n\n.sa-find-carousel-control:hover {\n  color: #ffff80;\n}\n',
           "",
         ]));
     },
@@ -1046,28 +1046,28 @@
       ((t = e.exports = o(9)(!1)).i(o(1635), ""),
         t.push([
           e.i,
-          '/* Find Input Box */\n.sa-float-bar-input {\n  width: 100%;\n  box-sizing: border-box !important;\n  /* !important required for extension, because CSS injection method (and hence order) differs from addon */\n  height: 1.5rem;\n\n  /* Change Scratch default styles */\n  border-radius: 0.25rem;\n  font-size: 0.75rem;\n  padding-left: 0.4em;\n}\n[theme="dark"] input.s3devInp {\n  color: #eee;\n  background: #3333;\n}\n[theme="dark"] input.s3devInp:hover {\n  background: #333;\n}\n\n.sa-float-bar-input:focus {\n  /* Change Scratch default styles */\n  box-shadow: none;\n}\n\n/* Drop down from find button */\n.sa-float-bar-dropdown-out {\n  display: block;\n  top: -6px;\n  z-index: 100;\n  max-width: 16em;\n  padding: 4px;\n  position: absolute;\n  width: 16em;\n  box-shadow: 0px 0px 8px 1px var(--ui-black-transparent, rgba(0, 0, 0, 0.3));\n  background-color: var(--ui-primary, white);\n  border: none;\n  border-radius: 4px;\n}\n\n/* Drop down from find button */\n.sa-float-bar-dropdown {\n  display: none;\n  position: relative;\n  padding: 0.2em 0;\n  font-size: 0.75rem;\n  line-height: 1;\n  overflow-y: auto;\n  min-height: 128px;\n  user-select: none;\n  max-width: 100%;\n  max-height: 200px;\n  margin-bottom: 0;\n}\n\n.sa-float-bar-dropdown-out.vis .sa-float-bar-dropdown {\n  display: block;\n  border: none;\n}\n\n/* Drop down items */\n.sa-float-bar-dropdown > li {\n  display: block;\n  padding: 0.5em 0.3em;\n  white-space: nowrap;\n  margin: 0;\n  font-weight: bold;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  cursor: pointer;\n}\n\n.sa-float-bar-dropdown > li > b {\n  background-color: #aaffaa;\n  color: black;\n}\n\n.sa-float-bar-dropdown > li {\n  height: 19px;\n  padding: 3px 8px;\n  margin: 2px 0.3em;\n  box-sizing: border-box;\n  position: relative;\n  background-color: var(--sa-block-colored-background);\n  color: var(--sa-block-text);\n  font-weight: bold;\n  width: min-content;\n}\n.sa-float-bar-dropdown > li:hover,\n.sa-float-bar-dropdown > li.sel {\n  background-color: var(--sa-block-colored-background-secondary);\n}\n\n.sa-float-bar-dropdown > li.sa-hat {\n  border-radius: 14px 14px 3px 3px;\n}\n.sa-float-bar-dropdown > li.sa-block {\n  border-radius: 3px;\n}\n.sa-float-bar-dropdown > li.sa-reporter {\n  border-radius: 10px;\n}\n\n.sa-float-bar-dropdown > li.sa-boolean {\n  width: min-content;\n}\n.sa-float-bar-dropdown > li.sa-boolean::before {\n  content: "";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 0;\n  height: 0;\n  border-right: 9px solid transparent;\n  border-top: 9px solid var(--ui-primary, white);\n  border-bottom: 10px solid var(--ui-primary, white);\n}\n.sa-float-bar-dropdown > li.sa-boolean::after {\n  content: "";\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 0;\n  height: 0;\n  border-left: 9px solid transparent;\n  border-top: 9px solid var(--ui-primary, white);\n  border-bottom: 10px solid var(--ui-primary, white);\n}\n[theme="dark"] .s3devDD > li.boolean::before {\n  border-top-color: #111;\n  border-bottom-color: #111;\n}\n[theme="dark"] .s3devDD > li.boolean::after {\n  border-top-color: #111;\n  border-bottom-color: #111;\n}\n\n.sa-float-bar {\n  display: flex;\n  white-space: nowrap;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n\n  position: absolute;\n  min-width: 128px;\n  background-color: white;\n  border-radius: 4px;\n  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px, rgba(0, 0, 0, 0.2) 0 3px 10px;\n\n  z-index: 999;\n}\n[theme="dark"] #s3devFloatingBar {\n  background-color: #111;\n}\n\n.sa-float-bar-dropdown > li > b {\n  background-color: rgba(0, 0, 0, 0.6);\n  color: white;\n}\n\n[data-highlighted="true"] {\n  background-color: hsla(30, 100%, 55%, 1) !important; /* orange */\n  color: white !important;\n}\n',
+          https://kakaomames.github.io/turbowarp/* Find Input Box https://kakaomames.github.io/turbowarp/\n.sa-float-bar-input {\n  width: 100%;\n  box-sizing: border-box !important;\n https://kakaomames.github.io/turbowarp/* !important required for extension, because CSS injection method (and hence order) differs from addon https://kakaomames.github.io/turbowarp/\n  height: 1.5rem;\n\n https://kakaomames.github.io/turbowarp/* Change Scratch default styles https://kakaomames.github.io/turbowarp/\n  border-radius: 0.25rem;\n  font-size: 0.75rem;\n  padding-left: 0.4em;\n}\n[theme="dark"] input.s3devInp {\n  color: #eee;\n  background: #3333;\n}\n[theme="dark"] input.s3devInp:hover {\n  background: #333;\n}\n\n.sa-float-bar-input:focus {\n https://kakaomames.github.io/turbowarp/* Change Scratch default styles https://kakaomames.github.io/turbowarp/\n  box-shadow: none;\n}\n\https://kakaomames.github.io/turbowarp/* Drop down from find button https://kakaomames.github.io/turbowarp/\n.sa-float-bar-dropdown-out {\n  display: block;\n  top: -6px;\n  z-index: 100;\n  max-width: 16em;\n  padding: 4px;\n  position: absolute;\n  width: 16em;\n  box-shadow: 0px 0px 8px 1px var(--ui-black-transparent, rgba(0, 0, 0, 0.3));\n  background-color: var(--ui-primary, white);\n  border: none;\n  border-radius: 4px;\n}\n\https://kakaomames.github.io/turbowarp/* Drop down from find button https://kakaomames.github.io/turbowarp/\n.sa-float-bar-dropdown {\n  display: none;\n  position: relative;\n  padding: 0.2em 0;\n  font-size: 0.75rem;\n  line-height: 1;\n  overflow-y: auto;\n  min-height: 128px;\n  user-select: none;\n  max-width: 100%;\n  max-height: 200px;\n  margin-bottom: 0;\n}\n\n.sa-float-bar-dropdown-out.vis .sa-float-bar-dropdown {\n  display: block;\n  border: none;\n}\n\https://kakaomames.github.io/turbowarp/* Drop down items https://kakaomames.github.io/turbowarp/\n.sa-float-bar-dropdown > li {\n  display: block;\n  padding: 0.5em 0.3em;\n  white-space: nowrap;\n  margin: 0;\n  font-weight: bold;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  cursor: pointer;\n}\n\n.sa-float-bar-dropdown > li > b {\n  background-color: #aaffaa;\n  color: black;\n}\n\n.sa-float-bar-dropdown > li {\n  height: 19px;\n  padding: 3px 8px;\n  margin: 2px 0.3em;\n  box-sizing: border-box;\n  position: relative;\n  background-color: var(--sa-block-colored-background);\n  color: var(--sa-block-text);\n  font-weight: bold;\n  width: min-content;\n}\n.sa-float-bar-dropdown > li:hover,\n.sa-float-bar-dropdown > li.sel {\n  background-color: var(--sa-block-colored-background-secondary);\n}\n\n.sa-float-bar-dropdown > li.sa-hat {\n  border-radius: 14px 14px 3px 3px;\n}\n.sa-float-bar-dropdown > li.sa-block {\n  border-radius: 3px;\n}\n.sa-float-bar-dropdown > li.sa-reporter {\n  border-radius: 10px;\n}\n\n.sa-float-bar-dropdown > li.sa-boolean {\n  width: min-content;\n}\n.sa-float-bar-dropdown > li.sa-boolean::before {\n  content: "";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 0;\n  height: 0;\n  border-right: 9px solid transparent;\n  border-top: 9px solid var(--ui-primary, white);\n  border-bottom: 10px solid var(--ui-primary, white);\n}\n.sa-float-bar-dropdown > li.sa-boolean::after {\n  content: "";\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 0;\n  height: 0;\n  border-left: 9px solid transparent;\n  border-top: 9px solid var(--ui-primary, white);\n  border-bottom: 10px solid var(--ui-primary, white);\n}\n[theme="dark"] .s3devDD > li.boolean::before {\n  border-top-color: #111;\n  border-bottom-color: #111;\n}\n[theme="dark"] .s3devDD > li.boolean::after {\n  border-top-color: #111;\n  border-bottom-color: #111;\n}\n\n.sa-float-bar {\n  display: flex;\n  white-space: nowrap;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n\n  position: absolute;\n  min-width: 128px;\n  background-color: white;\n  border-radius: 4px;\n  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px, rgba(0, 0, 0, 0.2) 0 3px 10px;\n\n  z-index: 999;\n}\n[theme="dark"] #s3devFloatingBar {\n  background-color: #111;\n}\n\n.sa-float-bar-dropdown > li > b {\n  background-color: rgba(0, 0, 0, 0.6);\n  color: white;\n}\n\n[data-highlighted="true"] {\n  background-color: hsla(30, 100%, 55%, 1) !important;https://kakaomames.github.io/turbowarp/* orange https://kakaomames.github.io/turbowarp/\n  color: white !important;\n}\n',
           "",
         ]));
     },
     1685: function (e, t, o) {
       (e.exports = o(9)(!1)).push([
         e.i,
-        ".u-dropdown-searchbar {\n  width: 100%;\n  box-sizing: border-box;\n  /* based on styles for the title input */\n  color: white;\n  background-color: hsla(0, 100%, 100%, 0.25);\n  border: 1px solid hsla(0, 0%, 0%, 0.15);\n  padding: 0.5rem;\n  outline: none;\n  transition: 0.25s ease-out;\n  font-size: 13px;\n  font-weight: bold;\n  border-radius: 4px;\n}\n.u-dropdown-searchbar:hover {\n  background-color: hsla(0, 100%, 100%, 0.5);\n}\n.u-dropdown-searchbar:focus {\n  background-color: white;\n  color: black;\n}\n.blocklyDropDownDiv .goog-menu {\n  overflow-x: hidden;\n}\n",
+        ".u-dropdown-searchbar {\n  width: 100%;\n  box-sizing: border-box;\n https://kakaomames.github.io/turbowarp/* based on styles for the title input https://kakaomames.github.io/turbowarp/\n  color: white;\n  background-color: hsla(0, 100%, 100%, 0.25);\n  border: 1px solid hsla(0, 0%, 0%, 0.15);\n  padding: 0.5rem;\n  outline: none;\n  transition: 0.25s ease-out;\n  font-size: 13px;\n  font-weight: bold;\n  border-radius: 4px;\n}\n.u-dropdown-searchbar:hover {\n  background-color: hsla(0, 100%, 100%, 0.5);\n}\n.u-dropdown-searchbar:focus {\n  background-color: white;\n  color: black;\n}\n.blocklyDropDownDiv .goog-menu {\n  overflow-x: hidden;\n}\n",
         "",
       ]);
     },
     1711: function (e, t, o) {
       (e.exports = o(9)(!1)).push([
         e.i,
-        '.sa-color-picker {\n  display: flex;\n}\n\n.sa-color-picker-code {\n  margin: 8px 0;\n}\n\n.sa-color-picker-paint {\n  margin-top: 16px;\n  margin-bottom: 4px;\n}\n\n.sa-color-picker > .sa-color-picker-color {\n  border: none;\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  padding: 0;\n  padding-left: 0.6rem;\n  padding-right: 0.4rem;\n  margin-left: 0.5rem;\n  outline: none;\n  box-sizing: border-box;\n  width: 3rem;\n  height: 2rem;\n}\n[theme="dark"] .sa-color-picker > .sa-color-picker-color {\n  background: var(--ui-secondary);\n}\n\n.sa-color-picker > .sa-color-picker-text {\n  box-sizing: border-box;\n  width: calc(150px - 3rem);\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n\n[dir="rtl"] .sa-color-picker > .sa-color-picker-color {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n  border-top-right-radius: 1rem;\n  border-bottom-right-radius: 1rem;\n  margin-left: 0;\n  margin-right: 0.5rem;\n}\n\n[dir="rtl"] .sa-color-picker > .sa-color-picker-text {\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\nbody.sa-hide-eye-dropper-background div[class*="stage_color-picker-background"] {\n  /* Do not show eye dropper background if the color picker is "fake" */\n  display: none;\n}\n',
+        '.sa-color-picker {\n  display: flex;\n}\n\n.sa-color-picker-code {\n  margin: 8px 0;\n}\n\n.sa-color-picker-paint {\n  margin-top: 16px;\n  margin-bottom: 4px;\n}\n\n.sa-color-picker > .sa-color-picker-color {\n  border: none;\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  padding: 0;\n  padding-left: 0.6rem;\n  padding-right: 0.4rem;\n  margin-left: 0.5rem;\n  outline: none;\n  box-sizing: border-box;\n  width: 3rem;\n  height: 2rem;\n}\n[theme="dark"] .sa-color-picker > .sa-color-picker-color {\n  background: var(--ui-secondary);\n}\n\n.sa-color-picker > .sa-color-picker-text {\n  box-sizing: border-box;\n  width: calc(150px - 3rem);\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n\n[dir="rtl"] .sa-color-picker > .sa-color-picker-color {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n  border-top-right-radius: 1rem;\n  border-bottom-right-radius: 1rem;\n  margin-left: 0;\n  margin-right: 0.5rem;\n}\n\n[dir="rtl"] .sa-color-picker > .sa-color-picker-text {\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\nbody.sa-hide-eye-dropper-background div[class*="stage_color-picker-background"] {\n https://kakaomames.github.io/turbowarp/* Do not show eye dropper background if the color picker is "fake" https://kakaomames.github.io/turbowarp/\n  display: none;\n}\n',
         "",
       ]);
     },
     1712: function (e, t, o) {
       (e.exports = o(9)(!1)).push([
         e.i,
-        '.sa-onion-button {\n  position: relative;\n}\n.sa-onion-button:focus-within {\n  background-color: hsla(0, 100%, 65%, 0.2);\n}\n[theme="dark"] .sa-onion-image {\n  filter: brightness(0) invert(0.8);\n}\n.sa-onion-button[data-enabled="true"] .sa-onion-image {\n  filter: brightness(0) invert(1);\n}\n.sa-onion-button[data-enabled="true"] {\n  background-color: #ff4c4c;\n}\n\n.sa-onion-group {\n  position: relative;\n  flex-direction: row;\n}\n\n.sa-onion-settings-wrapper {\n  position: absolute;\n  justify-items: center;\n  left: 50%;\n  width: 1.95rem;\n  height: 1.95rem;\n  display: grid;\n}\n\n.sa-onion-settings {\n  position: absolute;\n  bottom: 100%;\n  /* based on the styles for the color dropdown */\n  padding: 4px;\n  border-radius: 4px;\n  border: 1px solid var(--paint-ui-pane-border, #ddd);\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  transition-property: bottom, opacity;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);\n  opacity: 0;\n  pointer-events: none;\n  background: var(--ui-primary, white);\n  min-height: 100%;\n  min-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n}\n.sa-onion-settings[data-visible="true"] {\n  bottom: calc(100% + 22px);\n  pointer-events: auto;\n  opacity: 1;\n}\n\n.sa-onion-settings-line {\n  display: flex;\n  justify-content: flex-end;\n  align-items: baseline;\n  gap: 0.25em;\n}\n\n.sa-onion-settings-input {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  text-align: center;\n  border: 0;\n  background: transparent;\n  -moz-appearance: textfield;\n  border: 0;\n  outline: 0;\n}\n\n.sa-onion-settings-input::-webkit-outer-spin-button,\n.sa-onion-settings-input::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n.sa-onion-settings-tip {\n  position: absolute;\n  bottom: 0;\n  transform: translateY(100%);\n  right: calc(50% - 7px);\n}\n.sa-onion-settings-polygon {\n  fill: var(--ui-primary, white);\n  stroke: var(--paint-ui-pane-border, #ddd);\n}\n\n.sa-onion-settings-label {\n  white-space: nowrap;\n}\n',
+        '.sa-onion-button {\n  position: relative;\n}\n.sa-onion-button:focus-within {\n  background-color: hsla(0, 100%, 65%, 0.2);\n}\n[theme="dark"] .sa-onion-image {\n  filter: brightness(0) invert(0.8);\n}\n.sa-onion-button[data-enabled="true"] .sa-onion-image {\n  filter: brightness(0) invert(1);\n}\n.sa-onion-button[data-enabled="true"] {\n  background-color: #ff4c4c;\n}\n\n.sa-onion-group {\n  position: relative;\n  flex-direction: row;\n}\n\n.sa-onion-settings-wrapper {\n  position: absolute;\n  justify-items: center;\n  left: 50%;\n  width: 1.95rem;\n  height: 1.95rem;\n  display: grid;\n}\n\n.sa-onion-settings {\n  position: absolute;\n  bottom: 100%;\n https://kakaomames.github.io/turbowarp/* based on the styles for the color dropdown https://kakaomames.github.io/turbowarp/\n  padding: 4px;\n  border-radius: 4px;\n  border: 1px solid var(--paint-ui-pane-border, #ddd);\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  transition-property: bottom, opacity;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);\n  opacity: 0;\n  pointer-events: none;\n  background: var(--ui-primary, white);\n  min-height: 100%;\n  min-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n}\n.sa-onion-settings[data-visible="true"] {\n  bottom: calc(100% + 22px);\n  pointer-events: auto;\n  opacity: 1;\n}\n\n.sa-onion-settings-line {\n  display: flex;\n  justify-content: flex-end;\n  align-items: baseline;\n  gap: 0.25em;\n}\n\n.sa-onion-settings-input {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  text-align: center;\n  border: 0;\n  background: transparent;\n  -moz-appearance: textfield;\n  border: 0;\n  outline: 0;\n}\n\n.sa-onion-settings-input::-webkit-outer-spin-button,\n.sa-onion-settings-input::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n.sa-onion-settings-tip {\n  position: absolute;\n  bottom: 0;\n  transform: translateY(100%);\n  right: calc(50% - 7px);\n}\n.sa-onion-settings-polygon {\n  fill: var(--ui-primary, white);\n  stroke: var(--paint-ui-pane-border, #ddd);\n}\n\n.sa-onion-settings-label {\n  white-space: nowrap;\n}\n',
         "",
       ]);
     },
@@ -1088,7 +1088,7 @@
     1747: function (e, t, o) {
       (e.exports = o(9)(!1)).push([
         e.i,
-        ".sa-comment-preview-outer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100000000;\n  pointer-events: none;\n}\n\n.sa-comment-preview-inner {\n  width: calc(200px - 16px);\n  max-height: calc(132px - 8px);\n  padding: 8px;\n  overflow: hidden;\n\n  font-size: 12px;\n  white-space: pre-wrap;\n  pointer-events: none;\n\n  color: rgb(87, 94, 117);\n  background-color: rgb(255 255 255 / 90%);\n  border-style: none;\n  border-radius: 8px;\n  filter: drop-shadow(0px 5px 5px rgb(0 0 0 / 10%));\n\n  transform: perspective(200px);\n}\n\n@supports (backdrop-filter: blur(16px)) {\n  .sa-comment-preview-inner {\n    background-color: rgb(255 255 255 / 75%);\n    backdrop-filter: blur(16px);\n  }\n}\n\n.sa-comment-preview-fade {\n  transition: opacity 0.1s, filter 0.1s, transform 0.1s linear;\n}\n\n.sa-comment-preview-hidden {\n  opacity: 0;\n  filter: none;\n  transform: perspective(200px) translateZ(-20px);\n}\n\n.sa-comment-preview-reduce-transparency {\n  background-color: rgb(255 255 255);\n  backdrop-filter: none;\n}\n",
+        ".sa-comment-preview-outer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100000000;\n  pointer-events: none;\n}\n\n.sa-comment-preview-inner {\n  width: calc(200px - 16px);\n  max-height: calc(132px - 8px);\n  padding: 8px;\n  overflow: hidden;\n\n  font-size: 12px;\n  white-space: pre-wrap;\n  pointer-events: none;\n\n  color: rgb(87, 94, 117);\n  background-color: rgb(255 255 255https://kakaomames.github.io/turbowarp/ 90%);\n  border-style: none;\n  border-radius: 8px;\n  filter: drop-shadow(0px 5px 5px rgb(0 0 0https://kakaomames.github.io/turbowarp/ 10%));\n\n  transform: perspective(200px);\n}\n\n@supports (backdrop-filter: blur(16px)) {\n  .sa-comment-preview-inner {\n    background-color: rgb(255 255 255https://kakaomames.github.io/turbowarp/ 75%);\n    backdrop-filter: blur(16px);\n  }\n}\n\n.sa-comment-preview-fade {\n  transition: opacity 0.1s, filter 0.1s, transform 0.1s linear;\n}\n\n.sa-comment-preview-hidden {\n  opacity: 0;\n  filter: none;\n  transform: perspective(200px) translateZ(-20px);\n}\n\n.sa-comment-preview-reduce-transparency {\n  background-color: rgb(255 255 255);\n  backdrop-filter: none;\n}\n",
         "",
       ]);
     },
@@ -1129,8 +1129,8 @@
             a = t;
           if (!s) return !1;
           let i = s.getBoundingClientRect(),
-            c = Math.floor((i.left + i.right) / 2),
-            l = Math.floor((i.top + i.bottom) / 2);
+            c = Math.floor((i.left + i.right)https://kakaomames.github.io/turbowarp/ 2),
+            l = Math.floor((i.top + i.bottom)https://kakaomames.github.io/turbowarp/ 2);
           if (
             (r("mouseover", s, c, l),
             r("mousedown", s, c, l),
@@ -1147,8 +1147,8 @@
             return !1;
           }
           i = a.getBoundingClientRect();
-          let d = Math.floor((i.left + i.right) / 2),
-            u = Math.floor((i.top + i.bottom) / 2);
+          let d = Math.floor((i.left + i.right)https://kakaomames.github.io/turbowarp/ 2),
+            u = Math.floor((i.top + i.bottom)https://kakaomames.github.io/turbowarp/ 2);
           return (
             r("drag", s, d, u),
             r("mousemove", a, d, u),
@@ -1192,7 +1192,7 @@
           setTimeout(() => {
             const e = (function () {
               const e =
-                "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%()*+,-./:;=?@[]^_`{|}~";
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%()*+,-https://kakaomames.github.io/turbowarp/:;=?@[]^_`{|}~";
               let t = "";
               for (let o = 0; o < 20; o++)
                 t += e[Math.floor(Math.random() * e.length)];
@@ -1223,9 +1223,9 @@
               {
                 markAsSeen: !0,
                 reduxEvents: [
-                  "scratch-gui/mode/SET_PLAYER",
-                  "fontsLoaded/SET_FONTS_LOADED",
-                  "scratch-gui/locales/SELECT_LOCALE",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                  "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
                 ],
                 reduxCondition: (e) => !e.scratchGui.mode.isPlayerOnly,
               },
@@ -1463,7 +1463,7 @@
                 t < a && ((a = t), (n = e));
               }
               n
-                ? ((n.x = (n.x * n.count + o.x) / ++n.count), n.blocks.push(t))
+                ? ((n.x = (n.x * n.count + o.x)https://kakaomames.github.io/turbowarp/ ++n.count), n.blocks.push(t))
                 : r.push(new i(o.x, 1, [t]));
             }
           }
@@ -1636,7 +1636,7 @@
           new a(e, o, n).init();
         },
         "icon--close.svg":
-          "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjQ4IDcuNDgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi0tYWRkPC90aXRsZT48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIzLjc0IiB5MT0iNi40OCIgeDI9IjMuNzQiIHkyPSIxIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMSIgeTE9IjMuNzQiIHgyPSI2LjQ4IiB5Mj0iMy43NCIvPjwvc3ZnPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjQ4IDcuNDgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi0tYWRkPC90aXRsZT48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIzLjc0IiB5MT0iNi40OCIgeDI9IjMuNzQiIHkyPSIxIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMSIgeTE9IjMuNzQiIHgyPSI2LjQ4IiB5Mj0iMy43NCIvPjwvc3ZnPg==",
       };
     },
     1763: function (e, t, o) {
@@ -1711,7 +1711,7 @@
             },
             m = (e, t, o, n) => {
               const r = n ? c.beforeTint : c.afterTint,
-                s = (e + t + o) / 3 / 255 / 1.5 + (1 - 1 / 1.5);
+                s = (e + t + o)https://kakaomames.github.io/turbowarp/ 3https://kakaomames.github.io/turbowarp/ 255https://kakaomames.github.io/turbowarp/ 1.5 + (1 - 1https://kakaomames.github.io/turbowarp/ 1.5);
               return [r[0] * s, r[1] * s, r[2] * s];
             },
             g = (e, t) =>
@@ -1739,7 +1739,7 @@
             y = (e) => {
               const t = e.strokeBounds,
                 { width: o, height: r } = t,
-                s = Math.min(3e3 / o, 3e3 / r),
+                s = Math.min(3e3https://kakaomames.github.io/turbowarp/ o, 3e3https://kakaomames.github.io/turbowarp/ r),
                 a = new n.Raster(new n.Size(o, r));
               (a.remove(), (a.smoothing = !0), (a.guide = !0), (a.locked = !0));
               let i = 0;
@@ -1769,7 +1769,7 @@
                       this.transform(
                         new n.Matrix()
                           .translate(u.add(h.divide(2)))
-                          .scale(1 / d),
+                          .scale(1https://kakaomames.github.io/turbowarp/ d),
                       ));
                   }
                   return c.call(this, ...a);
@@ -1780,18 +1780,18 @@
             v = (e, t, o, r) =>
               new Promise((s, a) => {
                 const { rotationCenterX: i, rotationCenterY: d } = t,
-                  u = (o = (o = o.split(/<\s*svg:/).join("<"))
-                    .split(/<\/\s*svg:/)
-                    .join("</")).match(/<svg [^>]*>/);
+                  u = (o = (o = o.splithttps://kakaomames.github.io/turbowarp/<\s*svghttps://kakaomames.github.io/turbowarp/).join("<"))
+                    .splithttps://kakaomames.github.io/turbowarp/<https://kakaomames.github.io/turbowarp/\s*svghttps://kakaomames.github.io/turbowarp/)
+                    .join("https://kakaomames.github.io/turbowarp/")).matchhttps://kakaomames.github.io/turbowarp/<svg [^>]*https://kakaomames.github.io/turbowarp/);
                 u &&
                   -1 === u[0].indexOf("xmlns=") &&
                   (o = o.replace(
                     "<svg ",
-                    '<svg xmlns="http://www.w3.org/2000/svg" ',
+                    '<svg xmlns="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg" ',
                   ));
-                const p = new DOMParser().parseFromString(o, "text/xml"),
+                const p = new DOMParser().parseFromString(o, "texhttps://kakaomames.github.io/turbowarp/xml"),
                   h = p.documentElement.attributes.viewBox
-                    ? p.documentElement.attributes.viewBox.value.match(/\S+/g)
+                    ? p.documentElement.attributes.viewBox.value.matchhttps://kakaomames.github.io/turbowarp/\Shttps://kakaomames.github.io/turbowarp/g)
                     : null;
                 if (h)
                   for (let e = 0; e < h.length; e++) h[e] = parseFloat(h[e]);
@@ -1905,7 +1905,7 @@
                   if (t === r) continue;
                   const o = t < r,
                     n = Math.abs(t - r) - 1,
-                    s = (c.opacity - c.opacityStep * n) / 100;
+                    s = (c.opacity - c.opacityStep * n)https://kakaomames.github.io/turbowarp/ 100;
                   s <= 0 || e.push({ index: t, isBefore: o, opacity: s });
                 }
                 const t = await Promise.all(
@@ -1922,12 +1922,12 @@
                             const t = l(),
                               o = Math.min(2 * t.x, u.width),
                               a = Math.min(2 * t.y, u.height);
-                            (void 0 === i && (i = o / 2),
-                              void 0 === d && (d = a / 2));
+                            (void 0 === i && (i = ohttps://kakaomames.github.io/turbowarp/ 2),
+                              void 0 === d && (d = ahttps://kakaomames.github.io/turbowarp/ 2));
                             const p = new n.Raster(u);
                             ((p.opacity = e), (p.guide = !0), (p.locked = !0));
-                            const h = o / 2 + (t.x - i),
-                              f = a / 2 + (t.y - d);
+                            const h = ohttps://kakaomames.github.io/turbowarp/ 2 + (t.x - i),
+                              f = ahttps://kakaomames.github.io/turbowarp/ 2 + (t.y - d);
                             ((p.position = new n.Point(h, f)),
                               p.remove(),
                               "tint" === c.mode && b(p, r),
@@ -2002,7 +2002,7 @@
                 (o.draggable = !1),
                 (o.dataset.image = t),
                 (o.loading = "lazy"),
-                (o.src = e.self.getResource("/" + t + ".svg")),
+                (o.src = e.self.getResource(https://kakaomames.github.io/turbowarp/" + t + ".svg")),
                 o
               );
             },
@@ -2131,7 +2131,7 @@
             (G.dataset.enabled = "behind" === c.layering),
             Z.appendChild(P),
             E.appendChild(Z));
-          const H = "http://www.w3.org/2000/svg",
+          const H = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
             Y = document.createElementNS(H, "svg");
           (Y.setAttribute("class", "sa-onion-settings-tip"),
             Y.setAttribute("width", "14"),
@@ -2199,11 +2199,11 @@
                     {
                       markAsSeen: !0,
                       reduxEvents: [
-                        "scratch-gui/navigation/ACTIVATE_TAB",
-                        "scratch-gui/mode/SET_PLAYER",
-                        "fontsLoaded/SET_FONTS_LOADED",
-                        "scratch-gui/locales/SELECT_LOCALE",
-                        "scratch-gui/targets/UPDATE_TARGET_LIST",
+                        "scratch-guhttps://kakaomames.github.io/turbowarp/navigatiohttps://kakaomames.github.io/turbowarp/ACTIVATE_TAB",
+                        "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                        "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
+                        "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
+                        "scratch-guhttps://kakaomames.github.io/turbowarp/targethttps://kakaomames.github.io/turbowarp/UPDATE_TARGET_LIST",
                       ],
                       reduxCondition: (e) =>
                         1 === e.scratchGui.editorTab.activeTabIndex &&
@@ -2237,13 +2237,13 @@
         },
         "style.css": o.n(n).a,
         "decrement.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUgMTEuMzU4aDE3LjUwMXYxLjI4NUgzLjI1eiIvPjwvc3ZnPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUgMTEuMzU4aDE3LjUwMXYxLjI4NUgzLjI1eiIvPjwvc3ZnPg==",
         "increment.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCI+PHBhdGggc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUgMTEuMzU4aDE3LjUwMXYxLjI4NUgzLjI1eiIvPjxwYXRoIHRyYW5zZm9ybT0icm90YXRlKDkwKSIgc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUtMTIuNjQyaDE3LjUwMXYxLjI4NUgzLjI1eiIvPjwvc3ZnPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCI+PHBhdGggc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUgMTEuMzU4aDE3LjUwMXYxLjI4NUgzLjI1eiIvPjxwYXRoIHRyYW5zZm9ybT0icm90YXRlKDkwKSIgc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUtMTIuNjQyaDE3LjUwMXYxLjI4NUgzLjI1eiIvPjwvc3ZnPg==",
         "settings.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggc3R5bGU9Im9wYWNpdHk6Ljc1O2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6NDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIgZD0iTTU2IDE2djk2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMi4zNzYgLTIuMzc2KSBzY2FsZSguMjI0NjIpIi8+PHBhdGggc3R5bGU9Im9wYWNpdHk6LjU7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiBkPSJNNDAgMzJ2NjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjM3NiAtMi4zNzYpIHNjYWxlKC4yMjQ2MikiLz48cGF0aCBzdHlsZT0ib3BhY2l0eTouMjU7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiBkPSJNMjQgNDh2MzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjM3NiAtMi4zNzYpIHNjYWxlKC4yMjQ2MikiLz48cGF0aCBzdHlsZT0ib3BhY2l0eTouNzU7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiBkPSJNNzIgMTZ2OTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjM3NiAtMi4zNzYpIHNjYWxlKC4yMjQ2MikiLz48cGF0aCBzdHlsZT0ib3BhY2l0eTouNTtmaWxsOm5vbmU7c3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiIGQ9Ik04OCAzMnY2NCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIuMzc2IC0yLjM3Nikgc2NhbGUoLjIyNDYyKSIvPjxwYXRoIHN0eWxlPSJvcGFjaXR5Oi4yNTtmaWxsOm5vbmU7c3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiIGQ9Ik0xMDQgNDh2MzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjM3NiAtMi4zNzYpIHNjYWxlKC4yMjQ2MikiLz48L3N2Zz4=",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggc3R5bGU9Im9wYWNpdHk6Ljc1O2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6NDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIgZD0iTTU2IDE2djk2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMi4zNzYgLTIuMzc2KSBzY2FsZSguMjI0NjIpIi8+PHBhdGggc3R5bGU9Im9wYWNpdHk6LjU7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiBkPSJNNDAgMzJ2NjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjM3NiAtMi4zNzYpIHNjYWxlKC4yMjQ2MikiLz48cGF0aCBzdHlsZT0ib3BhY2l0eTouMjU7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiBkPSJNMjQgNDh2MzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjM3NiAtMi4zNzYpIHNjYWxlKC4yMjQ2MikiLz48cGF0aCBzdHlsZT0ib3BhY2l0eTouNzU7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIiBkPSJNNzIgMTZ2OTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjM3NiAtMi4zNzYpIHNjYWxlKC4yMjQ2MikiLz48cGF0aCBzdHlsZT0ib3BhY2l0eTouNTtmaWxsOm5vbmU7c3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiIGQ9Ik04OCAzMnY2NCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIuMzc2IC0yLjM3Nikgc2NhbGUoLjIyNDYyKSIvPjxwYXRoIHN0eWxlPSJvcGFjaXR5Oi4yNTtmaWxsOm5vbmU7c3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiIGQ9Ik0xMDQgNDh2MzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjM3NiAtMi4zNzYpIHNjYWxlKC4yMjQ2MikiLz48L3N2Zz4=",
         "toggle.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGcgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZT0iIzAwMTAyNiI+PGcgc3R5bGU9Im9wYWNpdHk6LjU7c3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLWRhc2hhcnJheTpub25lIj48cGF0aCBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsO2ZpbGw6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2Utd2lkdGg6NDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIgZmlsbD0iI2JmYmZiZiIgZD0iTTY4LjQ1IDMyLjQ1N2MuMy0uMi44LS4xLjkuM2wyLjYgMTAuN3M2LjQgNC43IDguMyA4YzMuMiA1LjUgMy4zIDEwIDMuMyAxMHM3LjEgMi4xIDguMyA3LjhjMS4yIDUuNy0zLjIgMTYuNS0yMiAyMC4yLTE4LjggMy43LTMzLjktMS40LTQxLTEyLjgtNy4xLTExLjQgNC4xLTI1IDMuNS0yNC4ybC0yLjEtMTcuOWMtLjEtLjQuNC0uNy44LS41bDEyLjEgNy45czQuNS0xLjcgOS4yLTEuOWMyLjgtLjIgNS4yIDAgNy41LjR6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNC42NTIgLTQuNjUpIHNjYWxlKC4yMzI5KSIvPjxwYXRoIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTpub3JtYWw7ZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiIGQ9Ik0xMDEuNjUgNjIuOTU3Yy00LjcgMy44LTExLjkgMy45LTExLjkgMy45bTEwLjYgNy4zYy02LjMuNS0xMC4yLTEuNC0xMC4yLTEuNG0tNjguOC0xMC4xczguNiAyLjggMTIuMSA1LjltLjMgMy41Yy00LjMgMS43LTExLjcuNi0xMS43LjYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00LjY1MiAtNC42NSkgc2NhbGUoLjIzMjkpIi8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5Oi43NTtzdHJva2Utd2lkdGg6NDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmUiPjxwYXRoIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTpub3JtYWw7ZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowIiBmaWxsPSIjYmZiZmJmIiBkPSJNNjguNDUgMzIuNDU3Yy4zLS4yLjgtLjEuOS4zbDIuNiAxMC43czYuNCA0LjcgOC4zIDhjMy4yIDUuNSAzLjMgMTAgMy4zIDEwczcuMSAyLjEgOC4zIDcuOGMxLjIgNS43LTMuMiAxNi41LTIyIDIwLjItMTguOCAzLjctMzMuOS0xLjQtNDEtMTIuOC03LjEtMTEuNCA0LjEtMjUgMy41LTI0LjJsLTIuMS0xNy45Yy0uMS0uNC40LS43LjgtLjVsMTIuMSA3LjlzNC41LTEuNyA5LjItMS45YzIuOC0uMiA1LjIgMCA3LjUuNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjMyMyAtMi4zMjEpIHNjYWxlKC4yMzI5KSIvPjxwYXRoIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTpub3JtYWw7ZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiIGQ9Ik0xMDEuNjUgNjIuOTU3Yy00LjcgMy44LTExLjkgMy45LTExLjkgMy45bTEwLjYgNy4zYy02LjMuNS0xMC4yLTEuNC0xMC4yLTEuNG0tNjguOC0xMC4xczguNiAyLjggMTIuMSA1LjltLjMgMy41Yy00LjMgMS43LTExLjcuNi0xMS43LjYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjMyMyAtMi4zMjEpIHNjYWxlKC4yMzI5KSIvPjwvZz48ZyBzdHlsZT0ic3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLWRhc2hhcnJheTpub25lIj48cGF0aCBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsO2ZpbGw6I2ZmZjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2Utd2lkdGg6NDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIgZmlsbD0iI2JmYmZiZiIgZD0iTTczLjQ1IDM3LjQ1N2MuMy0uMi44LS4xLjkuM2wyLjYgMTAuN3M2LjQgNC43IDguMyA4YzMuMiA1LjUgMy4zIDEwIDMuMyAxMHM3LjEgMi4xIDguMyA3LjhjMS4yIDUuNy0zLjIgMTYuNS0yMiAyMC4yLTE4LjggMy43LTMzLjktMS40LTQxLTEyLjgtNy4xLTExLjQgNC4xLTI1IDMuNS0yNC4ybC0yLjEtMTcuOWMtLjEtLjQuNC0uNy44LS41bDEyLjEgNy45czQuNS0xLjcgOS4yLTEuOWMyLjgtLjIgNS4yIDAgNy41LjR6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMS4xNTkgLTEuMTU3KSBzY2FsZSguMjMyOSkiLz48cGF0aCBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsO2ZpbGw6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2Utd2lkdGg6NDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIiBkPSJNMTA2LjY1IDY3Ljk1N2MtNC43IDMuOC0xMS45IDMuOS0xMS45IDMuOW0xMC42IDcuM2MtNi4zLjUtMTAuMi0xLjQtMTAuMi0xLjRtLTY4LjgtMTAuMXM4LjYgMi44IDEyLjEgNS45bS4zIDMuNWMtNC4zIDEuNy0xMS43LjYtMTEuNy42IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMS4xNTkgLTEuMTU3KSBzY2FsZSguMjMyOSkiLz48L2c+PC9nPjwvc3ZnPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PGcgc3Ryb2tlLXdpZHRoPSIxLjIiIHN0cm9rZT0iIzAwMTAyNiI+PGcgc3R5bGU9Im9wYWNpdHk6LjU7c3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLWRhc2hhcnJheTpub25lIj48cGF0aCBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsO2ZpbGw6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2Utd2lkdGg6NDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIgZmlsbD0iI2JmYmZiZiIgZD0iTTY4LjQ1IDMyLjQ1N2MuMy0uMi44LS4xLjkuM2wyLjYgMTAuN3M2LjQgNC43IDguMyA4YzMuMiA1LjUgMy4zIDEwIDMuMyAxMHM3LjEgMi4xIDguMyA3LjhjMS4yIDUuNy0zLjIgMTYuNS0yMiAyMC4yLTE4LjggMy43LTMzLjktMS40LTQxLTEyLjgtNy4xLTExLjQgNC4xLTI1IDMuNS0yNC4ybC0yLjEtMTcuOWMtLjEtLjQuNC0uNy44LS41bDEyLjEgNy45czQuNS0xLjcgOS4yLTEuOWMyLjgtLjIgNS4yIDAgNy41LjR6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNC42NTIgLTQuNjUpIHNjYWxlKC4yMzI5KSIvPjxwYXRoIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTpub3JtYWw7ZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiIGQ9Ik0xMDEuNjUgNjIuOTU3Yy00LjcgMy44LTExLjkgMy45LTExLjkgMy45bTEwLjYgNy4zYy02LjMuNS0xMC4yLTEuNC0xMC4yLTEuNG0tNjguOC0xMC4xczguNiAyLjggMTIuMSA1LjltLjMgMy41Yy00LjMgMS43LTExLjcuNi0xMS43LjYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00LjY1MiAtNC42NSkgc2NhbGUoLjIzMjkpIi8+PC9nPjxnIHN0eWxlPSJvcGFjaXR5Oi43NTtzdHJva2Utd2lkdGg6NDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmUiPjxwYXRoIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTpub3JtYWw7ZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowIiBmaWxsPSIjYmZiZmJmIiBkPSJNNjguNDUgMzIuNDU3Yy4zLS4yLjgtLjEuOS4zbDIuNiAxMC43czYuNCA0LjcgOC4zIDhjMy4yIDUuNSAzLjMgMTAgMy4zIDEwczcuMSAyLjEgOC4zIDcuOGMxLjIgNS43LTMuMiAxNi41LTIyIDIwLjItMTguOCAzLjctMzMuOS0xLjQtNDEtMTIuOC03LjEtMTEuNCA0LjEtMjUgMy41LTI0LjJsLTIuMS0xNy45Yy0uMS0uNC40LS43LjgtLjVsMTIuMSA3LjlzNC41LTEuNyA5LjItMS45YzIuOC0uMiA1LjIgMCA3LjUuNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjMyMyAtMi4zMjEpIHNjYWxlKC4yMzI5KSIvPjxwYXRoIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTpub3JtYWw7ZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiIGQ9Ik0xMDEuNjUgNjIuOTU3Yy00LjcgMy44LTExLjkgMy45LTExLjkgMy45bTEwLjYgNy4zYy02LjMuNS0xMC4yLTEuNC0xMC4yLTEuNG0tNjguOC0xMC4xczguNiAyLjggMTIuMSA1LjltLjMgMy41Yy00LjMgMS43LTExLjcuNi0xMS43LjYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjMyMyAtMi4zMjEpIHNjYWxlKC4yMzI5KSIvPjwvZz48ZyBzdHlsZT0ic3Ryb2tlLXdpZHRoOjQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLWRhc2hhcnJheTpub25lIj48cGF0aCBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsO2ZpbGw6I2ZmZjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2Utd2lkdGg6NDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIgZmlsbD0iI2JmYmZiZiIgZD0iTTczLjQ1IDM3LjQ1N2MuMy0uMi44LS4xLjkuM2wyLjYgMTAuN3M2LjQgNC43IDguMyA4YzMuMiA1LjUgMy4zIDEwIDMuMyAxMHM3LjEgMi4xIDguMyA3LjhjMS4yIDUuNy0zLjIgMTYuNS0yMiAyMC4yLTE4LjggMy43LTMzLjktMS40LTQxLTEyLjgtNy4xLTExLjQgNC4xLTI1IDMuNS0yNC4ybC0yLjEtMTcuOWMtLjEtLjQuNC0uNy44LS41bDEyLjEgNy45czQuNS0xLjcgOS4yLTEuOWMyLjgtLjIgNS4yIDAgNy41LjR6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMS4xNTkgLTEuMTU3KSBzY2FsZSguMjMyOSkiLz48cGF0aCBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsO2ZpbGw6bm9uZTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2Utd2lkdGg6NDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIiBkPSJNMTA2LjY1IDY3Ljk1N2MtNC43IDMuOC0xMS45IDMuOS0xMS45IDMuOW0xMC42IDcuM2MtNi4zLjUtMTAuMi0xLjQtMTAuMi0xLjRtLTY4LjgtMTAuMXM4LjYgMi44IDEyLjEgNS45bS4zIDMuNWMtNC4zIDEuNy0xMS43LjYtMTEuNy42IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMS4xNTkgLTEuMTU3KSBzY2FsZSguMjMyOSkiLz48L2c+PC9nPjwvc3ZnPg==",
       };
     },
     1772: function (e, t, o) {
@@ -2509,7 +2509,7 @@
                 )),
                 (this.count.innerText =
                   this.blocks.length > 0
-                    ? this.idx + 1 + " / " + this.blocks.length
+                    ? this.idx + 1 + "https://kakaomames.github.io/turbowarp/ " + this.blocks.length
                     : "0"));
               const t = this.el.appendChild(document.createElement("span"));
               return (
@@ -2534,7 +2534,7 @@
                 ((this.idx =
                   (this.idx + t + this.blocks.length) % this.blocks.length),
                 (this.count.innerText =
-                  this.idx + 1 + " / " + this.blocks.length),
+                  this.idx + 1 + "https://kakaomames.github.io/turbowarp/ " + this.blocks.length),
                 this.utils.scrollBlockIntoView(this.blocks[this.idx])),
                 e && ((e.cancelBubble = !0), e.preventDefault()));
             }
@@ -2896,7 +2896,7 @@
             },
               e.tab.redux.initialize(),
               e.tab.redux.addEventListener("statechanged", (e) => {
-                "scratch-gui/navigation/ACTIVATE_TAB" ===
+                "scratch-guhttps://kakaomames.github.io/turbowarp/navigatiohttps://kakaomames.github.io/turbowarp/ACTIVATE_TAB" ===
                   e.detail.action.type && l.tabChanged();
               });
             ;
@@ -2904,9 +2904,9 @@
             const t = await e.tab.waitForElement("ul[class*=gui_tab-list_]", {
               markAsSeen: !0,
               reduxEvents: [
-                "scratch-gui/mode/SET_PLAYER",
-                "fontsLoaded/SET_FONTS_LOADED",
-                "scratch-gui/locales/SELECT_LOCALE",
+                "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
+                "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
               ],
               reduxCondition: (e) => !e.scratchGui.mode.isPlayerOnly,
             });
@@ -2934,7 +2934,7 @@
               )
                 return;
               const r = ({ detail: t }) => {
-                  "scratch-gui/color-picker/DEACTIVATE_COLOR_PICKER" ===
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/color-pickehttps://kakaomames.github.io/turbowarp/DEACTIVATE_COLOR_PICKER" ===
                     t.action.type &&
                     (e.tab.redux.removeEventListener("statechanged", r),
                     setTimeout(() => {
@@ -2944,13 +2944,13 @@
                     }, 50));
                 },
                 s = ({ detail: o }) => {
-                  "scratch-gui/color-picker/ACTIVATE_COLOR_PICKER" ===
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/color-pickehttps://kakaomames.github.io/turbowarp/ACTIVATE_COLOR_PICKER" ===
                     o.action.type &&
                     (e.tab.redux.removeEventListener("statechanged", s),
                     e.tab.redux.addEventListener("statechanged", r),
                     setTimeout(() => {
                       e.tab.redux.dispatch({
-                        type: "scratch-gui/color-picker/DEACTIVATE_COLOR_PICKER",
+                        type: "scratch-guhttps://kakaomames.github.io/turbowarp/color-pickehttps://kakaomames.github.io/turbowarp/DEACTIVATE_COLOR_PICKER",
                         color: t,
                       });
                     }, 50));
@@ -2967,7 +2967,7 @@
                     o = t[1].getAttribute("aria-valuenow"),
                     n = t[3].getAttribute("aria-valuenow"),
                     r = t[5].getAttribute("aria-valuenow"),
-                    a = Number(r) / 255;
+                    a = Number(r)https://kakaomames.github.io/turbowarp/ 255;
                   return Object(s.a)(
                     "hsv("
                       .concat(o, ", ")
@@ -3074,18 +3074,18 @@
         "userscript.js": async function ({ addon: e, console: t, msg: o }) {
           let n, s, a, i, c, l;
           const d = (e) => {
-              const t = e.indexOf("//");
+              const t = e.indexOf(https://kakaomames.github.io/turbowarp//");
               return -1 === t || 0 === t ? null : e.substr(0, t);
             },
             u = (e) => {
-              const t = e.indexOf("//");
-              return -1 === t || 0 === t ? e : e.substr(t + "//".length);
+              const t = e.indexOf(https://kakaomames.github.io/turbowarp//");
+              return -1 === t || 0 === t ? e : e.substr(t + https://kakaomames.github.io/turbowarp//".length);
             },
             p = (e, t) => {
               const o = u(e);
-              return t ? "".concat(t).concat("//").concat(o) : o;
+              return t ? "".concat(t).concat(https://kakaomames.github.io/turbowarp//").concat(o) : o;
             },
-            h = (e) => !e.includes("//") && !e.endsWith("/"),
+            h = (e) => !e.includes(https://kakaomames.github.io/turbowarp//") && !e.endsWith(https://kakaomames.github.io/turbowarp/"),
             f = ["_mouse_", "_stage_", "_edge_", "_myself_", "_random_"],
             m = (e) => ("" === e ? "2" : f.includes(e) ? "".concat(e, "2") : e),
             g = (e) => {
@@ -3100,11 +3100,11 @@
               e && e.name && "object" == typeof e.name ? e.name : null,
             v = {
               assetId: "&__sa_folders_folder",
-              encodeDataURI: () => e.self.getResource("/folder.svg"),
+              encodeDataURI: () => e.self.getResource(https://kakaomames.github.io/turbowarp/folder.svg"),
             },
-            k = "data:image/svg+xml;base64,".concat(
+            k = "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,".concat(
               btoa(
-                '<?xml version="1.0" encoding="UTF-8"?>\n<svg width="100px" height="100px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n    <g id="Sound" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n        <path d="M12.4785058,12.6666667 C12.3144947,12.6666667 12.1458852,12.6272044 11.9926038,12.5440517 C11.537358,12.2960031 11.3856094,11.7562156 11.6553847,11.3376335 C12.1688774,10.5371131 12.1688774,9.54491867 11.6553847,8.74580756 C11.3856094,8.32581618 11.537358,7.78602861 11.9926038,7.53798001 C12.452448,7.29275014 13.0379829,7.43086811 13.3046926,7.84804076 C14.1737981,9.20103311 14.1737981,10.8809986 13.3046926,12.233991 C13.1268862,12.5130457 12.806528,12.6666667 12.4785058,12.6666667 Z M15.3806784,13.8333333 C15.2408902,13.8333333 15.0958763,13.796281 14.9665396,13.7182064 C14.5785295,13.485306 14.4491928,12.9784829 14.6791247,12.5854634 C15.5949331,11.0160321 15.5949331,9.065491 14.6791247,7.49738299 C14.4491928,7.10436352 14.5785295,6.59621712 14.9665396,6.36331669 C15.3558562,6.13438616 15.8549129,6.26274605 16.0848448,6.65444223 C17.3050517,8.74260632 17.3050517,11.3389168 16.0848448,13.4270809 C15.9319924,13.6890939 15.6602547,13.8333333 15.3806784,13.8333333 Z M10.3043478,5.62501557 L10.3043478,13.873675 C10.3043478,14.850934 9.10969849,15.3625101 8.36478311,14.7038052 L6.7566013,13.2797607 C6.18712394,12.7762834 5.44499329,12.4968737 4.67362297,12.4968737 L4.3923652,12.4968737 C3.62377961,12.4968737 3,11.8935108 3,11.1470686 L3,8.36646989 C3,7.62137743 3.62377961,7.01666471 4.3923652,7.01666471 L4.65830695,7.01666471 C5.42967727,7.01666471 6.17180792,6.73725504 6.74128529,6.23377771 L8.36478311,4.79623519 C9.10969849,4.13753026 10.3043478,4.64910643 10.3043478,5.62501557 Z" id="Combined-Shape" fill="#575E75"></path>\n    </g>\n</svg>',
+                '<?xml version="1.0" encoding="UTF-8"?>\n<svg width="100px" height="100px" viewBox="0 0 20 20" version="1.1" xmlns="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg" xmlns:xlink="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink">\n    <g id="Sound" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n        <path d="M12.4785058,12.6666667 C12.3144947,12.6666667 12.1458852,12.6272044 11.9926038,12.5440517 C11.537358,12.2960031 11.3856094,11.7562156 11.6553847,11.3376335 C12.1688774,10.5371131 12.1688774,9.54491867 11.6553847,8.74580756 C11.3856094,8.32581618 11.537358,7.78602861 11.9926038,7.53798001 C12.452448,7.29275014 13.0379829,7.43086811 13.3046926,7.84804076 C14.1737981,9.20103311 14.1737981,10.8809986 13.3046926,12.233991 C13.1268862,12.5130457 12.806528,12.6666667 12.4785058,12.6666667 Z M15.3806784,13.8333333 C15.2408902,13.8333333 15.0958763,13.796281 14.9665396,13.7182064 C14.5785295,13.485306 14.4491928,12.9784829 14.6791247,12.5854634 C15.5949331,11.0160321 15.5949331,9.065491 14.6791247,7.49738299 C14.4491928,7.10436352 14.5785295,6.59621712 14.9665396,6.36331669 C15.3558562,6.13438616 15.8549129,6.26274605 16.0848448,6.65444223 C17.3050517,8.74260632 17.3050517,11.3389168 16.0848448,13.4270809 C15.9319924,13.6890939 15.6602547,13.8333333 15.3806784,13.8333333 Z M10.3043478,5.62501557 L10.3043478,13.873675 C10.3043478,14.850934 9.10969849,15.3625101 8.36478311,14.7038052 L6.7566013,13.2797607 C6.18712394,12.7762834 5.44499329,12.4968737 4.67362297,12.4968737 L4.3923652,12.4968737 C3.62377961,12.4968737 3,11.8935108 3,11.1470686 L3,8.36646989 C3,7.62137743 3.62377961,7.01666471 4.3923652,7.01666471 L4.65830695,7.01666471 C5.42967727,7.01666471 6.17180792,6.73725504 6.74128529,6.23377771 L8.36478311,4.79623519 C9.10969849,4.13753026 10.3043478,4.64910643 10.3043478,5.62501557 Z" id="Combined-Shape" fill="#575E75">https://kakaomames.github.io/turbowarp/path>\n    https://kakaomames.github.io/turbowarp/g>\nhttps://kakaomames.github.io/turbowarp/svg>',
               ),
             );
           let w = null;
@@ -3125,7 +3125,7 @@
                         (e = Math.imul(e ^ (e >>> 15), 1 | e)),
                         (((e ^= e + Math.imul(e ^ (e >>> 7), 61 | e)) ^
                           (e >>> 14)) >>>
-                          0) /
+                          0)https://kakaomames.github.io/turbowarp/
                           4294967296
                       );
                     });
@@ -3231,7 +3231,7 @@
                 ],
                 p = (e) => {
                   let t =
-                    'data:image/svg+xml;,<svg xmlns="http://www.w3.org/2000/svg" width="'
+                    'data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;,<svg xmlns="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg" width="'
                       .concat(80, '" height="')
                       .concat(80, '">');
                   for (let o = 0; o < Math.min(u.length, e.length); o++) {
@@ -3251,9 +3251,9 @@
                           .concat(s, '" x="')
                           .concat(a, '" y="')
                           .concat(i, '" href="')
-                          .concat(c, '"/>')));
+                          .concat(c, 'https://kakaomames.github.io/turbowarp/>')));
                   }
-                  return ((t += "</svg>"), t);
+                  return ((t += "https://kakaomames.github.io/turbowarp/svg>"), t);
                 },
                 h = (e) => {
                   let t = "sa_folder&&";
@@ -4000,7 +4000,7 @@
         },
         "style.css": o.n(a).a,
         "folder.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCI+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMCA0SDRjLTEuMSAwLTEuOTkuOS0xLjk5IDJMMiAxOGMwIDEuMS45IDIgMiAyaDE2YzEuMSAwIDItLjkgMi0yVjhjMC0xLjEtLjktMi0yLTJoLThsLTItMnoiLz48L3N2Zz4=",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCI+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMCA0SDRjLTEuMSAwLTEuOTkuOS0xLjk5IDJMMiAxOGMwIDEuMS45IDIgMiAyaDE2YzEuMSAwIDItLjkgMi0yVjhjMC0xLjEtLjktMi0yLTJoLThsLTItMnoiLz48L3N2Zz4=",
       };
     },
     1780: function (e, t, o) {
@@ -4136,10 +4136,10 @@
                     throw new Error("newBlock is not rendered.");
                   let e = s.svgPath_.getBoundingClientRect(),
                     t = Math.floor(
-                      (r.x - (e.left + e.right) / 2) / this.workspace.scale,
+                      (r.x - (e.left + e.right)https://kakaomames.github.io/turbowarp/ 2)https://kakaomames.github.io/turbowarp/ this.workspace.scale,
                     ),
                     a = Math.floor(
-                      (r.y - (e.top + e.bottom) / 2) / this.workspace.scale,
+                      (r.y - (e.top + e.bottom)https://kakaomames.github.io/turbowarp/ 2)https://kakaomames.github.io/turbowarp/ this.workspace.scale,
                     );
                   s.moveBy(t, a);
                 } finally {
@@ -4633,7 +4633,7 @@
             e.tab.redux.addEventListener("statechanged", ({ detail: o }) => {
               if (e.self.disabled) return;
               const n = o;
-              if (!n.action || "scratch-paint/clipboard/SET" !== n.action.type)
+              if (!n.action || "scratch-painhttps://kakaomames.github.io/turbowarp/clipboarhttps://kakaomames.github.io/turbowarp/SET" !== n.action.type)
                 return;
               const r = n.next.scratchPaint.clipboard.items;
               if (1 !== r.length) return;
@@ -4722,30 +4722,30 @@
               o[n] ||
                 (!e.self.disabled &&
                   a &&
-                  "scratch-paint/eye-dropper/ACTIVATE_COLOR_PICKER" ===
+                  "scratch-painhttps://kakaomames.github.io/turbowarp/eye-droppehttps://kakaomames.github.io/turbowarp/ACTIVATE_COLOR_PICKER" ===
                     o.type &&
                   (s(!0),
                   e.tab.redux.dispatch({
-                    type: "scratch-gui/color-picker/ACTIVATE_COLOR_PICKER",
+                    type: "scratch-guhttps://kakaomames.github.io/turbowarp/color-pickehttps://kakaomames.github.io/turbowarp/ACTIVATE_COLOR_PICKER",
                     callback: (t) => {
                       queueMicrotask(() => {
                         (e.tab.redux.dispatch(r(r({}, o), {}, { [n]: !0 })),
                           o.callback(t),
                           o.previousMode && o.previousMode.activate(),
                           e.tab.redux.dispatch({
-                            type: "scratch-paint/eye-dropper/DEACTIVATE_COLOR_PICKER",
+                            type: "scratch-painhttps://kakaomames.github.io/turbowarp/eye-droppehttps://kakaomames.github.io/turbowarp/DEACTIVATE_COLOR_PICKER",
                             [n]: !0,
                           }),
                           s(!1));
                       });
                     },
                   })),
-                "scratch-paint/eye-dropper/DEACTIVATE_COLOR_PICKER" ===
+                "scratch-painhttps://kakaomames.github.io/turbowarp/eye-droppehttps://kakaomames.github.io/turbowarp/DEACTIVATE_COLOR_PICKER" ===
                   o.type &&
                   (s(!1),
                   e.tab.redux.state.scratchGui.colorPicker.active &&
                     e.tab.redux.dispatch({
-                      type: "scratch-gui/color-picker/DEACTIVATE_COLOR_PICKER",
+                      type: "scratch-guhttps://kakaomames.github.io/turbowarp/color-pickehttps://kakaomames.github.io/turbowarp/DEACTIVATE_COLOR_PICKER",
                       [n]: !0,
                     })));
             }));
@@ -5325,7 +5325,7 @@
                   const o = t.mutation.proccode,
                     n = JSON.parse(t.mutation.argumentnames),
                     r = o
-                      .split(/(?=[^\\]%[nbs])/g)
+                      .splithttps://kakaomames.github.io/turbowarp/(?=[^\\]%[nbs]https://kakaomames.github.io/turbowarp/g)
                       .map((e) => e.trim())
                       .filter((e) => "%" === e.charAt(0))
                       .map((e) => e.substring(0, 2));
@@ -5394,8 +5394,8 @@
               (t) => {
                 const o = e.tab.traps.vm.editingTarget;
                 ("sound" === t.type
-                  ? o.reorderSound(t.index, 1 / 0)
-                  : o.reorderCostume(t.index, 1 / 0),
+                  ? o.reorderSound(t.index, 1https://kakaomames.github.io/turbowarp/ 0)
+                  : o.reorderCostume(t.index, 1https://kakaomames.github.io/turbowarp/ 0),
                   queueMicrotask(() => {
                     (e.tab.traps.vm.emitTargetsUpdate(),
                       e.tab.traps.vm.runtime.emitProjectChanged(),

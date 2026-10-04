@@ -1,48 +1,48 @@
-// Name: Numerical Encoding V1
-// ID: cs2627883NumericalEncoding
-// Description: Use V2 instead as it is more efficient. V1 only exists for compatibility reasons.
-// By: cs2627883 <https://scratch.mit.edu/users/cs2627883/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Numerical Encoding V1
+https://kakaomames.github.io/turbowarp/ ID: cs2627883NumericalEncoding
+https://kakaomames.github.io/turbowarp/ Description: Use V2 instead as it is more efficient. V1 only exists for compatibility reasons.
+https://kakaomames.github.io/turbowarp/ By: cs2627883 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/cs262788https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
-// https://github.com/CS2627883/Turbowarp-Encoding-Extension/blob/main/Encoding.js
+https://kakaomames.github.io/turbowarp/ httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/CS262788https://kakaomames.github.io/turbowarp/Turbowarp-Encoding-Extensiohttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/maihttps://kakaomames.github.io/turbowarp/Encoding.js
 
 (function (Scratch) {
   "use strict";
 
-  // There are 149,186 unicode characters, so the maximum character code length is 6
+ https://kakaomames.github.io/turbowarp// There are 149,186 unicode characters, so the maximum character code length is 6
   const MAX_CHAR_LEN = 6;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} str
    * @returns {string}
-   */
+   https://kakaomames.github.io/turbowarp/
   const encode = (str) => {
     let encoded = "";
     for (let i = 0; i < str.length; ++i) {
-      // Get character
+     https://kakaomames.github.io/turbowarp// Get character
       const char = Scratch.Cast.toString(str.charCodeAt(i));
-      // Pad encodedChar with 0s to ensure all encodedchars are the same length
+     https://kakaomames.github.io/turbowarp// Pad encodedChar with 0s to ensure all encodedchars are the same length
       const encodedChar = "0".repeat(MAX_CHAR_LEN - char.length) + char;
       encoded += encodedChar;
     }
     return encoded;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} str
    * @returns {string}
-   */
+   https://kakaomames.github.io/turbowarp/
   const decode = (str) => {
     if (str === "") {
       return "";
     }
     let decoded = "";
-    // Create regex to split by char length
+   https://kakaomames.github.io/turbowarp// Create regex to split by char length
     const regex = new RegExp(".{1," + MAX_CHAR_LEN + "}", "g");
-    // Split into array of characters
+   https://kakaomames.github.io/turbowarp// Split into array of characters
     const split = str.match(regex);
     for (let i = 0; i < split.length; i++) {
-      // Get character from char code
+     https://kakaomames.github.io/turbowarp// Get character from char code
       const decodedChar = String.fromCharCode(+split[i]);
       decoded += decodedChar;
     }
@@ -50,10 +50,10 @@
   };
 
   class NumericalEncodingExtension {
-    /** @type {string|number} */
+   https://kakaomames.github.io/turbowarp/** @type {string|number} https://kakaomames.github.io/turbowarp/
     encoded = 0;
 
-    /** @type {string|number} */
+   https://kakaomames.github.io/turbowarp/** @type {string|number} https://kakaomames.github.io/turbowarp/
     decoded = 0;
 
     getInfo() {

@@ -1,9 +1,9 @@
-// Name: ShovelUtils
-// ID: ShovelUtils
-// Description: A bunch of miscellaneous blocks.
-// By: TheShovel
-// By: Mio <https://scratch.mit.edu/users/0znzw/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: ShovelUtils
+https://kakaomames.github.io/turbowarp/ ID: ShovelUtils
+https://kakaomames.github.io/turbowarp/ Description: A bunch of miscellaneous blocks.
+https://kakaomames.github.io/turbowarp/ By: TheShovel
+https://kakaomames.github.io/turbowarp/ By: Mio <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/0znzhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -13,7 +13,7 @@
   console.log("ShovelUtils v1.4");
   const vm = Scratch.vm;
 
-  // Based on from https://www.growingwiththeweb.com/2017/12/fast-simple-js-fps-counter.html
+ https://kakaomames.github.io/turbowarp// Based on from httpshttps://kakaomames.github.io/turbowarp//www.growingwiththeweb.cohttps://kakaomames.github.io/turbowarp/201https://kakaomames.github.io/turbowarp/1https://kakaomames.github.io/turbowarp/fast-simple-js-fps-counter.html
   const times = [];
   let fps = vm.runtime.frameLoop.framerate;
   const oldStep = vm.runtime._step;
@@ -35,7 +35,7 @@
         color1: "#f54242",
         color2: "#f54242",
         color3: "#f54242",
-        docsURI: "./TheShovel/ShovelUtils",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/TheShovehttps://kakaomames.github.io/turbowarp/ShovelUtils",
         blocks: [
           {
             opcode: "importImage",
@@ -44,7 +44,7 @@
             arguments: {
               TEXT: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./dango.png",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/dango.png",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,
@@ -96,7 +96,7 @@
             arguments: {
               TEXT: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./meow.mp3",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/meow.mp3",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,
@@ -112,7 +112,7 @@
               TEXT: {
                 type: Scratch.ArgumentType.STRING,
                 defaultValue:
-                  "./samples/Box2D.sb3",
+                  "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/samplehttps://kakaomames.github.io/turbowarp/Box2D.sb3",
               },
             },
           },
@@ -123,7 +123,7 @@
             arguments: {
               TEXT: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./utilities.js",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/utilities.js",
               },
             },
           },
@@ -206,7 +206,7 @@
             name: NAME + "",
             asset: new storage.Asset(
               storage.AssetType.ImageBitmap,
-              null, // asset id, doesn't need to be set here because of `true` at the end will make Scratch generate it for you
+              null,https://kakaomames.github.io/turbowarp// asset id, doesn't need to be set here because of `true` at the end will make Scratch generate it for you
               storage.DataFormat.PNG,
               new Uint8Array(arrayBuffer),
               true
@@ -266,7 +266,7 @@
 
     importProject({ TEXT }) {
       if (typeof ScratchBlocks !== "undefined") {
-        // We are in the editor. Ask before loading a new project to avoid unrecoverable data loss.
+       https://kakaomames.github.io/turbowarp// We are in the editor. Ask before loading a new project to avoid unrecoverable data loss.
         if (
           !confirm(
             `Do you want to import a project from "${TEXT}"? Everything in the current project will be permanently deleted.`
@@ -312,17 +312,17 @@
       try {
         parsed = JSON.parse(TEXT);
       } catch (e) {
-        return; // JSON was invalid
+        return;https://kakaomames.github.io/turbowarp// JSON was invalid
       }
 
       if (!Array.isArray(parsed)) {
-        return; // it's not an array
+        return;https://kakaomames.github.io/turbowarp// it's not an array
       }
 
       for (const element of parsed) {
         const type = typeof element;
         if (type !== "string" && type !== "number" && type !== "boolean") {
-          return; // One of the elements has a disallowed type
+          return;https://kakaomames.github.io/turbowarp// One of the elements has a disallowed type
         }
       }
 
@@ -330,7 +330,7 @@
         .getTargetForStage()
         .lookupVariableByNameAndType(NAME, "list");
       if (!list) {
-        return; // List was not found
+        return;https://kakaomames.github.io/turbowarp// List was not found
       }
 
       list.value = parsed;
@@ -339,7 +339,7 @@
     setedtarget({ NAME }) {
       let target;
 
-      //I know this might cause sprites called "stage" to be ignored. But lets be real, who names their sprite "stage"?
+     https://kakaomames.github.io/turbowarp//I know this might cause sprites called "stage" to be ignored. But lets be real, who names their sprite "stage"?
       if (NAME.toLowerCase() === "stage") {
         target = vm.runtime.getTargetForStage();
       } else {
@@ -350,15 +350,15 @@
       }
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Calculate brightness value by RGB or HEX color.
      * @param color (String) The color value in RGB or HEX (for example: #000000 || #000 || rgb(0,0,0) || rgba(0,0,0,0))
      * @returns (Number) The brightness value (dark) 0 ... 255 (light)
-     */
+     https://kakaomames.github.io/turbowarp/
     brightnessByColor({ color }) {
-      // https://www.w3.org/TR/AERT/#color-contrast
+     https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/Thttps://kakaomames.github.io/turbowarp/AERhttps://kakaomames.github.io/turbowarp/#color-contrast
       const { r, g, b } = Scratch.Cast.toRgbColorObject(color);
-      return (r * 299 + g * 587 + b * 114) / 1000;
+      return (r * 299 + g * 587 + b * 114)https://kakaomames.github.io/turbowarp/ 1000;
     }
 
     getfps() {
@@ -366,7 +366,7 @@
     }
 
     deleteImage({ SPRITE, COSNAME }) {
-      // 0znzw, since shovel did not add it yet.
+     https://kakaomames.github.io/turbowarp// 0znzw, since shovel did not add it yet.
       const target = vm.runtime.getSpriteTargetByName(SPRITE);
       if (!target) {
         return;
@@ -375,7 +375,7 @@
     }
 
     getAllSprites() {
-      // 0znzw, since shovel did not add it yet.
+     https://kakaomames.github.io/turbowarp// 0znzw, since shovel did not add it yet.
       let sprites = [];
       for (const target of vm.runtime.targets) {
         if (target.isOriginal) sprites.push(target.sprite.name);
@@ -384,5 +384,5 @@
     }
   }
   Scratch.extensions.register(new ShovelUtils());
-  // @ts-ignore
+ https://kakaomames.github.io/turbowarp// @ts-ignore
 })(Scratch);

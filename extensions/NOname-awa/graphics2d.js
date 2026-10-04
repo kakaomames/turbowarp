@@ -1,8 +1,8 @@
-// Name: Graphics 2D
-// ID: nonameawagraph
-// Description: Blocks to compute lengths, angles, and areas in two dimensions.
-// By: NOname-awa
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Graphics 2D
+https://kakaomames.github.io/turbowarp/ ID: nonameawagraph
+https://kakaomames.github.io/turbowarp/ Description: Blocks to compute lengths, angles, and areas in two dimensions.
+https://kakaomames.github.io/turbowarp/ By: NOname-awa
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -97,7 +97,7 @@
           {
             opcode: "vertical",
             blockType: Scratch.BlockType.BOOLEAN,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[a] ⊥ [b]",
             arguments: {
               a: {
@@ -309,8 +309,8 @@
       );
     }
     ray_direction(args) {
-      // Added by NexusKitten
-      // 由 NexusKitten 添加
+     https://kakaomames.github.io/turbowarp// Added by NexusKitten
+     https://kakaomames.github.io/turbowarp// 由 NexusKitten 添加
       const dx =
         Scratch.Cast.toNumber(args.x2) - Scratch.Cast.toNumber(args.x1);
       const dy =
@@ -318,9 +318,9 @@
       if (dx === 0 && dy === 0) {
         return 0;
       } else if (dy < 0) {
-        return (180 / Math.PI) * Math.atan(dx / dy) + 180;
+        return (180https://kakaomames.github.io/turbowarp/ Math.PI) * Math.atan(dxhttps://kakaomames.github.io/turbowarp/ dy) + 180;
       } else {
-        return (180 / Math.PI) * Math.atan(dx / dy);
+        return (180https://kakaomames.github.io/turbowarp/ Math.PI) * Math.atan(dxhttps://kakaomames.github.io/turbowarp/ dy);
       }
     }
     ray_direction2(args) {
@@ -328,7 +328,7 @@
         Scratch.Cast.toNumber(args.x2) - Scratch.Cast.toNumber(args.x1);
       const dy =
         Scratch.Cast.toNumber(args.y2) - Scratch.Cast.toNumber(args.y1);
-      return (Math.atan2(dx, dy) * 180) / Math.PI;
+      return (Math.atan2(dx, dy) * 180)https://kakaomames.github.io/turbowarp/ Math.PI;
     }
     vertical(args) {
       if (isNaN(args.a) || isNaN(args.b)) {
@@ -354,7 +354,7 @@
           area += x1 * y2;
           area -= x2 * y1;
         }
-        area = Math.abs(area) / 2;
+        area = Math.abs(area)https://kakaomames.github.io/turbowarp/ 2;
         return area;
       }
       if (args.CS == "c") {
@@ -373,7 +373,7 @@
       return 0;
     }
     triangle_s(args) {
-      const s = (args.s1 + args.s2 + args.s3) / 2;
+      const s = (args.s1 + args.s2 + args.s3)https://kakaomames.github.io/turbowarp/ 2;
       const area = Math.sqrt(s * (s - args.s1) * (s - args.s2) * (s - args.s3));
       return area;
     }
@@ -395,7 +395,7 @@
           area += x1 * y2;
           area -= x2 * y1;
         }
-        area = Math.abs(area) / 2;
+        area = Math.abs(area)https://kakaomames.github.io/turbowarp/ 2;
         return area;
       }
       if (args.CS == "c") {
@@ -437,7 +437,7 @@
           area += x1 * y2;
           area -= x2 * y1;
         }
-        area = Math.abs(area) / 2;
+        area = Math.abs(area)https://kakaomames.github.io/turbowarp/ 2;
         return area;
       }
       if (args.CS == "c") {
@@ -466,10 +466,10 @@
     }
     round(args) {
       if (args.CS == "c") {
-        return 2 * Math.PI * (args.rd == "r" ? args.a : args.a / 2);
+        return 2 * Math.PI * (args.rd == "r" ? args.a : args.ahttps://kakaomames.github.io/turbowarp/ 2);
       }
       if (args.CS == "s") {
-        return Math.PI * (args.rd == "r" ? args.a : args.a / 2) ** 2;
+        return Math.PI * (args.rd == "r" ? args.a : args.ahttps://kakaomames.github.io/turbowarp/ 2) ** 2;
       }
     }
     pi() {

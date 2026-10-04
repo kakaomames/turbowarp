@@ -1,17 +1,17 @@
-// Name: BigInt
-// ID: skyhigh173BigInt
-// Description: Math blocks that work on infinitely large integers (no decimals).
-// By: Skyhigh173 <https://scratch.mit.edu/users/Skyhigh173/>
-// License: MIT
-// Context: BigInt is short for "Big Integer" which can be infinitely big. "number" refers to normal numbers that have limits.
+https://kakaomames.github.io/turbowarp/ Name: BigInt
+https://kakaomames.github.io/turbowarp/ ID: skyhigh173BigInt
+https://kakaomames.github.io/turbowarp/ Description: Math blocks that work on infinitely large integers (no decimals).
+https://kakaomames.github.io/turbowarp/ By: Skyhigh173 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Skyhigh17https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
+https://kakaomames.github.io/turbowarp/ Context: BigInt is short for "Big Integer" which can be infinitely big. "number" refers to normal numbers that have limits.
 
 (function (Scratch) {
   "use strict";
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {unknown} x
    * @returns {bigint}
-   */
+   https://kakaomames.github.io/turbowarp/
   const bi = (x) => {
     if (typeof x === "bigint") {
       return x;
@@ -19,37 +19,37 @@
     if (typeof x === "string") {
       x = x.toLowerCase();
 
-      // Try to parse things like '8n'
+     https://kakaomames.github.io/turbowarp// Try to parse things like '8n'
       if (x.charAt(x.length - 1) === "n") {
         try {
           return BigInt(x.slice(0, -1));
         } catch (e) {
-          // ignore
+         https://kakaomames.github.io/turbowarp// ignore
         }
       }
 
       if (x.includes("e") && !x.includes("x")) {
-        // read scientific notation
+       https://kakaomames.github.io/turbowarp// read scientific notation
         const [mantissa, exponentStr] = x.split("e");
         const exponent = parseInt(exponentStr, 10);
 
         if (!isNaN(exponent) && exponent >= 0) {
           const [integerPart, fractionalPart = ""] = mantissa.split(".");
           if (exponent >= fractionalPart.length) {
-            // Pad with trailing zeros
+           https://kakaomames.github.io/turbowarp// Pad with trailing zeros
             x =
               integerPart +
               fractionalPart +
               "0".repeat(exponent - fractionalPart.length);
           } else {
-            // Shift decimal point right
+           https://kakaomames.github.io/turbowarp// Shift decimal point right
             x = integerPart + fractionalPart.slice(0, exponent);
           }
         }
       }
 
-      // Must remove decimal using string operations. Math.trunc will convert to float
-      // which ruins the point of using bigints.
+     https://kakaomames.github.io/turbowarp// Must remove decimal using string operations. Math.trunc will convert to float
+     https://kakaomames.github.io/turbowarp// which ruins the point of using bigints.
       const decimalIndex = x.indexOf(".");
       const xWithoutDecimal =
         decimalIndex === -1 ? x : x.substring(0, decimalIndex);
@@ -61,8 +61,8 @@
       }
     }
     try {
-      // Here we can use Math.trunc because it's a boolean or number.
-      // @ts-expect-error
+     https://kakaomames.github.io/turbowarp// Here we can use Math.trunc because it's a boolean or number.
+     https://kakaomames.github.io/turbowarp// @ts-expect-error
       return BigInt(Math.trunc(x));
     } catch (e) {
       return 0n;
@@ -81,7 +81,7 @@
         name: Scratch.translate("BigInt"),
         color1: "#59C093",
         blocks: [
-          /* eslint-disable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-disable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "from",
             blockType: Scratch.BlockType.REPORTER,
@@ -153,7 +153,7 @@
           {
             opcode: "div",
             blockType: Scratch.BlockType.REPORTER,
-            text: "[a] / [b]",
+            text: "[a]https://kakaomames.github.io/turbowarp/ [b]",
             arguments: {
               a: {
                 type: Scratch.ArgumentType.STRING,
@@ -396,11 +396,11 @@
               },
             },
           },
-          /* eslint-enable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-enable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
         ],
         menus: {
           op: {
-            items: ["+", "-", "*", "/", "%", "^"],
+            items: ["+", "-", "*", https://kakaomames.github.io/turbowarp/", "%", "^"],
             acceptReporters: true,
           },
         },
@@ -423,7 +423,7 @@
     }
     div({ a, b }) {
       if (Number(b) == 0) return "NaN";
-      return (bi(a) / bi(b)).toString();
+      return (bi(a)https://kakaomames.github.io/turbowarp/ bi(b)).toString();
     }
     pow({ a, b }) {
       return (bi(a) ** bi(b)).toString();
@@ -463,9 +463,9 @@
           return (bi(a) - bi(b)).toString();
         case "*":
           return (bi(a) * bi(b)).toString();
-        case "/": {
+        case https://kakaomames.github.io/turbowarp/": {
           if (Number(b) == 0) return "NaN";
-          return (bi(a) / bi(b)).toString();
+          return (bi(a)https://kakaomames.github.io/turbowarp/ bi(b)).toString();
         }
         case "%": {
           if (Number(b) == 0) return "NaN";

@@ -1,14 +1,14 @@
-// Name: Notifications
-// ID: mdwaltersnotifications
-// Description: Display notifications.
-// By: mdwalters
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Notifications
+https://kakaomames.github.io/turbowarp/ ID: mdwaltersnotifications
+https://kakaomames.github.io/turbowarp/ Description: Display notifications.
+https://kakaomames.github.io/turbowarp/ By: mdwalters
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
 
   let denied = false;
-  /** @type {Notification|null} */
+ https://kakaomames.github.io/turbowarp/** @type {Notification|null} https://kakaomames.github.io/turbowarp/
   let notification = null;
 
   const askForNotificationPermission = async () => {
@@ -36,7 +36,7 @@
 
   const getServiceWorkerRegistration = () => {
     if (!("serviceWorker" in navigator)) return null;
-    // This is only needed on Android
+   https://kakaomames.github.io/turbowarp// This is only needed on Android
     if (!isAndroid()) return null;
     return navigator.serviceWorker.getRegistration();
   };
@@ -109,7 +109,7 @@
         try {
           notification = new Notification(title, options);
         } catch (e) {
-          // On Android we need to go through the service worker.
+         https://kakaomames.github.io/turbowarp// On Android we need to go through the service worker.
           const registration = await getServiceWorkerRegistration();
           if (registration) {
             try {

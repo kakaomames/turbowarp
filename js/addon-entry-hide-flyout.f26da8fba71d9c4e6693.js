@@ -4,7 +4,7 @@
     1697: function (e, t, o) {
       (e.exports = o(9)(!1)).push([
         e.i,
-        '[class*="gui_tabs_"] {\n  /* overridden by other addons */\n  --sa-category-width: 60px;\n  --sa-flyout-width: 250px;\n}\n\n/* The default left-side border does not work properly when a block is being dragged, */\n/* which lets a 1 pixel column of the flyout be visible. */\n/* To fix this we use two elements that are only visible when a block is being dragged. */\n/* The first element is opaque to cover up the contents with the background color. */\n/* The other element is the transparent border color. */\n.sa-flyout-border-1,\n.sa-flyout-border-2 {\n  position: absolute;\n  /* Above flyout but below add extension button */\n  z-index: 40;\n  top: 0;\n  bottom: 8px;\n  left: -1px;\n}\n[dir="rtl"] .sa-flyout-border-1,\n[dir="rtl"] .sa-flyout-border-2 {\n  left: auto;\n  right: -1px;\n}\n.sa-flyout-border-1 {\n  border-left: 1px solid var(--ui-primary, hsla(215, 100%, 95%, 1));\n}\n.sa-flyout-border-2 {\n  border-left: 1px solid var(--ui-black-transparent, rgba(0, 0, 0, 0.15));\n}\n\n.blocklyFlyout,\n.blocklyFlyoutScrollbar {\n  transition-property: margin;\n}\n\n[dir="ltr"] .blocklyFlyout.sa-flyoutClose,\n[dir="ltr"] .blocklyFlyoutScrollbar.sa-flyoutClose {\n  margin-left: calc(0px - var(--sa-flyout-width) - 10px);\n}\n\n[dir="rtl"] .blocklyFlyout.sa-flyoutClose,\n[dir="rtl"] .blocklyFlyoutScrollbar.sa-flyoutClose {\n  margin-left: calc(var(--sa-flyout-width) + 10px);\n}\n\n.sa-flyout-placeHolder {\n  display: var(--hideFlyout-placeholderDisplay) !important;\n  position: absolute;\n  height: 100%;\n  width: calc(var(--sa-flyout-width) + 1px);\n  top: 0;\n}\n\n[dir="ltr"] .sa-flyout-placeHolder {\n  left: calc(var(--sa-category-width) + 1px);\n}\n\n[dir="rtl"] .sa-flyout-placeHolder {\n  right: calc(var(--sa-category-width) + 1px);\n}\n\n.sa-lock-object {\n  display: var(--hideFlyout-lockDisplay) !important;\n  transform: translate(calc(var(--sa-flyout-width) - 15px - 32px), 3px);\n  width: 32px;\n  height: 32px;\n}\n[dir="rtl"] .sa-lock-object {\n  transform: translate(15px, 3px);\n}\n\n.sa-lock-button {\n  display: flex;\n  cursor: pointer;\n  width: 100%;\n  height: 100%;\n  padding: 0;\n  justify-content: center;\n  align-items: center;\n  background-color: var(--ui-primary, white);\n  border: 1px solid var(--ui-black-transparent, rgba(0, 0, 0, 0.15));\n  border-radius: 4px;\n}\n\n.sa-lock-object.locked .sa-lock-button {\n  background-color: #ff4c4c;\n  border-color: #cc4c4c;\n}\n\n.sa-lock-button img {\n  width: 20px;\n}\n\n[theme="dark"] .sa-lock-button img {\n  filter: brightness(200%);\n}\n\n.sa-hide-flyout-not-fullscreen [class*="gui_body-wrapper_" ] [class*="gui_stage-and-target-wrapper"] {\n  position: relative;\n  /* We need to be above these to hide the flyout while dragging blocks: */\n  /* .blocklyFlyout (z-index: 20) */\n  /* .blocklyFlyoutScrollbar (z-index: 30) */\n  /* and above these so that dragged sprites aren\'t obscured: */\n  /* .blocklyToolboxDiv (z-index: 40) */\n  /* .gui_extension-button-container_b4rCs (z-index: 42) */\n  z-index: 43;\n  padding-inline: 0.5rem;\n  background-color: var(--ui-primary, hsl(215, 100%, 95%));\n}\n\n[class*="gui_stage-and-target-wrapper_"] {\n  padding: 0;\n}\n\n/* https://github.com/ScratchAddons/ScratchAddons/issues/4896 */\n.Popover {\n  /* Above stage wrapper and target pane */\n  /* See editor-stage-left */\n  z-index: 51;\n}\n',
+        '[class*="gui_tabs_"] {\n https://kakaomames.github.io/turbowarp/* overridden by other addons https://kakaomames.github.io/turbowarp/\n  --sa-category-width: 60px;\n  --sa-flyout-width: 250px;\n}\n\https://kakaomames.github.io/turbowarp/* The default left-side border does not work properly when a block is being dragged, https://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/* which lets a 1 pixel column of the flyout be visible. https://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/* To fix this we use two elements that are only visible when a block is being dragged. https://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/* The first element is opaque to cover up the contents with the background color. https://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/* The other element is the transparent border color. https://kakaomames.github.io/turbowarp/\n.sa-flyout-border-1,\n.sa-flyout-border-2 {\n  position: absolute;\n https://kakaomames.github.io/turbowarp/* Above flyout but below add extension button https://kakaomames.github.io/turbowarp/\n  z-index: 40;\n  top: 0;\n  bottom: 8px;\n  left: -1px;\n}\n[dir="rtl"] .sa-flyout-border-1,\n[dir="rtl"] .sa-flyout-border-2 {\n  left: auto;\n  right: -1px;\n}\n.sa-flyout-border-1 {\n  border-left: 1px solid var(--ui-primary, hsla(215, 100%, 95%, 1));\n}\n.sa-flyout-border-2 {\n  border-left: 1px solid var(--ui-black-transparent, rgba(0, 0, 0, 0.15));\n}\n\n.blocklyFlyout,\n.blocklyFlyoutScrollbar {\n  transition-property: margin;\n}\n\n[dir="ltr"] .blocklyFlyout.sa-flyoutClose,\n[dir="ltr"] .blocklyFlyoutScrollbar.sa-flyoutClose {\n  margin-left: calc(0px - var(--sa-flyout-width) - 10px);\n}\n\n[dir="rtl"] .blocklyFlyout.sa-flyoutClose,\n[dir="rtl"] .blocklyFlyoutScrollbar.sa-flyoutClose {\n  margin-left: calc(var(--sa-flyout-width) + 10px);\n}\n\n.sa-flyout-placeHolder {\n  display: var(--hideFlyout-placeholderDisplay) !important;\n  position: absolute;\n  height: 100%;\n  width: calc(var(--sa-flyout-width) + 1px);\n  top: 0;\n}\n\n[dir="ltr"] .sa-flyout-placeHolder {\n  left: calc(var(--sa-category-width) + 1px);\n}\n\n[dir="rtl"] .sa-flyout-placeHolder {\n  right: calc(var(--sa-category-width) + 1px);\n}\n\n.sa-lock-object {\n  display: var(--hideFlyout-lockDisplay) !important;\n  transform: translate(calc(var(--sa-flyout-width) - 15px - 32px), 3px);\n  width: 32px;\n  height: 32px;\n}\n[dir="rtl"] .sa-lock-object {\n  transform: translate(15px, 3px);\n}\n\n.sa-lock-button {\n  display: flex;\n  cursor: pointer;\n  width: 100%;\n  height: 100%;\n  padding: 0;\n  justify-content: center;\n  align-items: center;\n  background-color: var(--ui-primary, white);\n  border: 1px solid var(--ui-black-transparent, rgba(0, 0, 0, 0.15));\n  border-radius: 4px;\n}\n\n.sa-lock-object.locked .sa-lock-button {\n  background-color: #ff4c4c;\n  border-color: #cc4c4c;\n}\n\n.sa-lock-button img {\n  width: 20px;\n}\n\n[theme="dark"] .sa-lock-button img {\n  filter: brightness(200%);\n}\n\n.sa-hide-flyout-not-fullscreen [class*="gui_body-wrapper_" ] [class*="gui_stage-and-target-wrapper"] {\n  position: relative;\n https://kakaomames.github.io/turbowarp/* We need to be above these to hide the flyout while dragging blocks: https://kakaomames.github.io/turbowarp/\n https://kakaomames.github.io/turbowarp/* .blocklyFlyout (z-index: 20) https://kakaomames.github.io/turbowarp/\n https://kakaomames.github.io/turbowarp/* .blocklyFlyoutScrollbar (z-index: 30) https://kakaomames.github.io/turbowarp/\n https://kakaomames.github.io/turbowarp/* and above these so that dragged sprites aren\'t obscured: https://kakaomames.github.io/turbowarp/\n https://kakaomames.github.io/turbowarp/* .blocklyToolboxDiv (z-index: 40) https://kakaomames.github.io/turbowarp/\n https://kakaomames.github.io/turbowarp/* .gui_extension-button-container_b4rCs (z-index: 42) https://kakaomames.github.io/turbowarp/\n  z-index: 43;\n  padding-inline: 0.5rem;\n  background-color: var(--ui-primary, hsl(215, 100%, 95%));\n}\n\n[class*="gui_stage-and-target-wrapper_"] {\n  padding: 0;\n}\n\https://kakaomames.github.io/turbowarp/* httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/ScratchAddonhttps://kakaomames.github.io/turbowarp/ScratchAddonhttps://kakaomames.github.io/turbowarp/issuehttps://kakaomames.github.io/turbowarp/4896 https://kakaomames.github.io/turbowarp/\n.Popover {\n https://kakaomames.github.io/turbowarp/* Above stage wrapper and target pane https://kakaomames.github.io/turbowarp/\n https://kakaomames.github.io/turbowarp/* See editor-stage-left https://kakaomames.github.io/turbowarp/\n  z-index: 51;\n}\n',
         "",
       ]);
     },
@@ -91,7 +91,7 @@
             (a.classList.toggle("locked", u),
               (r.title = o(u ? "unlock" : "lock")),
               (s.src = e.self.getResource(
-                "/".concat(u ? "" : "un", "lock.svg"),
+                https://kakaomames.github.io/turbowarp/".concat(u ? "" : "un", "lock.svg"),
               )));
           }
           function A(e, t = {}) {
@@ -134,7 +134,7 @@
               e.tab.redux.initialize(),
               e.tab.redux.addEventListener("statechanged", (t) => {
                 switch (t.detail.action.type) {
-                  case "scratch-gui/navigation/ACTIVATE_TAB": {
+                  case "scratch-guhttps://kakaomames.github.io/turbowarp/navigatiohttps://kakaomames.github.io/turbowarp/ACTIVATE_TAB": {
                     const o = M();
                     0 !== t.detail.action.activeTabIndex ||
                       e.self.disabled ||
@@ -142,7 +142,7 @@
                       (I(null, 0), (d = !1));
                     break;
                   }
-                  case "scratch-gui/mode/SET_FULL_SCREEN":
+                  case "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_FULL_SCREEN":
                     v();
                 }
               }),
@@ -244,9 +244,9 @@
             ((c = await e.tab.waitForElement(".blocklyFlyout", {
               markAsSeen: !0,
               reduxEvents: [
-                "scratch-gui/mode/SET_PLAYER",
-                "scratch-gui/locales/SELECT_LOCALE",
-                "fontsLoaded/SET_FONTS_LOADED",
+                "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
+                "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
               ],
               reduxCondition: (e) => !e.scratchGui.mode.isPlayerOnly,
             })),
@@ -268,7 +268,7 @@
               (n.style.display = "none"),
               a && a.remove(),
               (a = document.createElementNS(
-                "http://www.w3.org/2000/svg",
+                "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
                 "foreignObject",
               )),
               a.setAttribute("class", "sa-lock-object"),
@@ -313,9 +313,9 @@
         },
         "style.css": o.n(r).a,
         "lock.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgc3R5bGU9Ii1tcy10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7LXdlYmtpdC10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7dHJhbnNmb3JtOnJvdGF0ZSgzNjBkZWcpIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiAxM2ExIDEgMCAwIDAtMSAxdjNhMSAxIDAgMCAwIDIgMHYtM2ExIDEgMCAwIDAtMS0xem01LTRWN0E1IDUgMCAwIDAgNyA3djJhMyAzIDAgMCAwLTMgM3Y3YTMgMyAwIDAgMCAzIDNoMTBhMyAzIDAgMCAwIDMtM3YtN2EzIDMgMCAwIDAtMy0zek05IDdhMyAzIDAgMCAxIDYgMHYySDl6bTkgMTJhMSAxIDAgMCAxLTEgMUg3YTEgMSAwIDAgMS0xLTF2LTdhMSAxIDAgMCAxIDEtMWgxMGExIDEgMCAwIDEgMSAxeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgc3R5bGU9Ii1tcy10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7LXdlYmtpdC10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7dHJhbnNmb3JtOnJvdGF0ZSgzNjBkZWcpIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiAxM2ExIDEgMCAwIDAtMSAxdjNhMSAxIDAgMCAwIDIgMHYtM2ExIDEgMCAwIDAtMS0xem01LTRWN0E1IDUgMCAwIDAgNyA3djJhMyAzIDAgMCAwLTMgM3Y3YTMgMyAwIDAgMCAzIDNoMTBhMyAzIDAgMCAwIDMtM3YtN2EzIDMgMCAwIDAtMy0zek05IDdhMyAzIDAgMCAxIDYgMHYySDl6bTkgMTJhMSAxIDAgMCAxLTEgMUg3YTEgMSAwIDAgMS0xLTF2LTdhMSAxIDAgMCAxIDEtMWgxMGExIDEgMCAwIDEgMSAxeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==",
         "unlock.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgc3R5bGU9Ii1tcy10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7LXdlYmtpdC10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7dHJhbnNmb3JtOnJvdGF0ZSgzNjBkZWcpIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiAxM2ExLjQ5IDEuNDkgMCAwIDAtMSAyLjYxVjE3YTEgMSAwIDAgMCAyIDB2LTEuMzlBMS40OSAxLjQ5IDAgMCAwIDEyIDEzem01LTRIOVY3YTMgMyAwIDAgMSA1LjEyLTIuMTMgMy4wOCAzLjA4IDAgMCAxIC43OCAxLjM4IDEgMSAwIDEgMCAxLjk0LS41IDUuMDkgNS4wOSAwIDAgMC0xLjMxLTIuMjlBNSA1IDAgMCAwIDcgN3YyYTMgMyAwIDAgMC0zIDN2N2EzIDMgMCAwIDAgMyAzaDEwYTMgMyAwIDAgMCAzLTN2LTdhMyAzIDAgMCAwLTMtM3ptMSAxMGExIDEgMCAwIDEtMSAxSDdhMSAxIDAgMCAxLTEtMXYtN2ExIDEgMCAwIDEgMS0xaDEwYTEgMSAwIDAgMSAxIDF6IiBmaWxsPSIjNTc1ZTc1Ii8+PC9zdmc+",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgc3R5bGU9Ii1tcy10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7LXdlYmtpdC10cmFuc2Zvcm06cm90YXRlKDM2MGRlZyk7dHJhbnNmb3JtOnJvdGF0ZSgzNjBkZWcpIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiAxM2ExLjQ5IDEuNDkgMCAwIDAtMSAyLjYxVjE3YTEgMSAwIDAgMCAyIDB2LTEuMzlBMS40OSAxLjQ5IDAgMCAwIDEyIDEzem01LTRIOVY3YTMgMyAwIDAgMSA1LjEyLTIuMTMgMy4wOCAzLjA4IDAgMCAxIC43OCAxLjM4IDEgMSAwIDEgMCAxLjk0LS41IDUuMDkgNS4wOSAwIDAgMC0xLjMxLTIuMjlBNSA1IDAgMCAwIDcgN3YyYTMgMyAwIDAgMC0zIDN2N2EzIDMgMCAwIDAgMyAzaDEwYTMgMyAwIDAgMCAzLTN2LTdhMyAzIDAgMCAwLTMtM3ptMSAxMGExIDEgMCAwIDEtMSAxSDdhMSAxIDAgMCAxLTEtMXYtN2ExIDEgMCAwIDEgMS0xaDEwYTEgMSAwIDAgMSAxIDF6IiBmaWxsPSIjNTc1ZTc1Ii8+PC9zdmc+",
       };
     },
   },

@@ -1,11 +1,11 @@
-// Name: Box2D Physics
-// ID: griffpatch
-// Description: Two dimensional physics.
-// Original: griffpatch <https://scratch.mit.edu/users/griffpatch/>
-// License: BSD-3-Clause AND MIT AND Zlib AND ISC
+https://kakaomames.github.io/turbowarp/ Name: Box2D Physics
+https://kakaomames.github.io/turbowarp/ ID: griffpatch
+https://kakaomames.github.io/turbowarp/ Description: Two dimensional physics.
+https://kakaomames.github.io/turbowarp/ Original: griffpatch <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/griffpatchttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: BSD-3-Clause AND MIT AND Zlib AND ISC
 
 /*!
- * This is based on https://github.com/griffpatch/scratch-vm/tree/box2d/src/extensions/scratch3_griffpatch
+ * This is based on httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/griffpatchttps://kakaomames.github.io/turbowarp/scratch-vhttps://kakaomames.github.io/turbowarp/trehttps://kakaomames.github.io/turbowarp/box2https://kakaomames.github.io/turbowarp/srhttps://kakaomames.github.io/turbowarp/extensionhttps://kakaomames.github.io/turbowarp/scratch3_griffpatch
  * by griffpatch, which has this license attached:
  *
  * Copyright (c) 2016, Massachusetts Institute of Technology
@@ -15,12 +15,12 @@
  *
  * 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
  *
- * 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation anhttps://kakaomames.github.io/turbowarp/or other materials provided with the distribution.
  *
  * 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
+ https://kakaomames.github.io/turbowarp/
 
 (async function (Scratch) {
   "use strict";
@@ -29,14 +29,14 @@
     throw new Error("Box2D must be run unsandboxed");
   }
 
-  // First we need to load the Box2D physics library that this extension uses.
-  // Scratch.external needs the library to have an established external presence that isn't going away but this
-  // library is very old and seems to be abandoned. We might have to give it a home ourselves.
+ https://kakaomames.github.io/turbowarp// First we need to load the Box2D physics library that this extension uses.
+ https://kakaomames.github.io/turbowarp// Scratch.external needs the library to have an established external presence that isn't going away but this
+ https://kakaomames.github.io/turbowarp// library is very old and seems to be abandoned. We might have to give it a home ourselves.
 
-  /* eslint-disable */
+ https://kakaomames.github.io/turbowarp/* eslint-disable https://kakaomames.github.io/turbowarp/
 
-  /*!
-   * Copyright (c) 2006-2007 Erin Catto http://www.gphysics.com
+ https://kakaomames.github.io/turbowarp/*!
+   * Copyright (c) 2006-2007 Erin Catto httphttps://kakaomames.github.io/turbowarp//www.gphysics.com
    *
    * This software is provided 'as-is', without any express or implied
    * warranty.  In no event will the authors be held liable for any damages
@@ -51,7 +51,7 @@
    * 2. Altered source versions must be plainly marked as such, and must not be
    * misrepresented as being the original software.
    * 3. This notice may not be removed or altered from any source distribution.
-   */
+   https://kakaomames.github.io/turbowarp/
 
   var Box2D = {};
   (function (a2j, undefined) {
@@ -92,10 +92,10 @@
     };
   })(Box2D);
 
-  //#TODO remove assignments from global namespace
+ https://kakaomames.github.io/turbowarp//#TODO remove assignments from global namespace
   var Vector = Array;
   var Vector_a2j_Number = Box2D.NVector;
-  //package structure
+ https://kakaomames.github.io/turbowarp//package structure
   if (typeof Box2D === "undefined") Box2D = {};
   if (typeof Box2D.Collision === "undefined") Box2D.Collision = {};
   if (typeof Box2D.Collision.Shapes === "undefined")
@@ -108,7 +108,7 @@
   if (typeof Box2D.Dynamics.Controllers === "undefined")
     Box2D.Dynamics.Controllers = {};
   if (typeof Box2D.Dynamics.Joints === "undefined") Box2D.Dynamics.Joints = {};
-  //pre-definitions
+ https://kakaomames.github.io/turbowarp//pre-definitions
   (function () {
     Box2D.Collision.IBroadPhase = "Box2D.Collision.IBroadPhase";
 
@@ -726,7 +726,7 @@
         this.b2WeldJointDef.apply(this, arguments);
     }
     Box2D.Dynamics.Joints.b2WeldJointDef = b2WeldJointDef;
-  })(); //definitions
+  })();https://kakaomames.github.io/turbowarp//definitions
   Box2D.postDefs = [];
   (function () {
     var b2CircleShape = Box2D.Collision.Shapes.b2CircleShape,
@@ -789,14 +789,14 @@
     };
     b2AABB.prototype.GetCenter = function () {
       return new b2Vec2(
-        (this.lowerBound.x + this.upperBound.x) / 2,
-        (this.lowerBound.y + this.upperBound.y) / 2
+        (this.lowerBound.x + this.upperBound.x)https://kakaomames.github.io/turbowarp/ 2,
+        (this.lowerBound.y + this.upperBound.y)https://kakaomames.github.io/turbowarp/ 2
       );
     };
     b2AABB.prototype.GetExtents = function () {
       return new b2Vec2(
-        (this.upperBound.x - this.lowerBound.x) / 2,
-        (this.upperBound.y - this.lowerBound.y) / 2
+        (this.upperBound.x - this.lowerBound.x)https://kakaomames.github.io/turbowarp/ 2,
+        (this.upperBound.y - this.lowerBound.y)https://kakaomames.github.io/turbowarp/ 2
       );
     };
     b2AABB.prototype.Contains = function (aabb) {
@@ -826,7 +826,7 @@
         if (absDX < Number.MIN_VALUE) {
           if (pX < this.lowerBound.x || this.upperBound.x < pX) return false;
         } else {
-          inv_d = 1.0 / dX;
+          inv_d = 1.0https://kakaomames.github.io/turbowarp/ dX;
           t1 = (this.lowerBound.x - pX) * inv_d;
           t2 = (this.upperBound.x - pX) * inv_d;
           s = -1.0;
@@ -849,7 +849,7 @@
         if (absDY < Number.MIN_VALUE) {
           if (pY < this.lowerBound.y || this.upperBound.y < pY) return false;
         } else {
-          inv_d = 1.0 / dY;
+          inv_d = 1.0https://kakaomames.github.io/turbowarp/ dY;
           t1 = (this.lowerBound.y - pY) * inv_d;
           t2 = (this.upperBound.y - pY) * inv_d;
           s = -1.0;
@@ -932,7 +932,7 @@
       if (distance0 <= 0.0) vOut[numOut++].Set(vIn[0]);
       if (distance1 <= 0.0) vOut[numOut++].Set(vIn[1]);
       if (distance0 * distance1 < 0.0) {
-        var interp = distance0 / (distance0 - distance1);
+        var interp = distance0https://kakaomames.github.io/turbowarp/ (distance0 - distance1);
         cv = vOut[numOut];
         var tVec = cv.v;
         tVec.x = vIn0.x + interp * (vIn1.x - vIn0.x);
@@ -1803,20 +1803,20 @@
           var child2 = sibling.child2;
           var norm1 =
             Math.abs(
-              (child1.aabb.lowerBound.x + child1.aabb.upperBound.x) / 2 -
+              (child1.aabb.lowerBound.x + child1.aabb.upperBound.x)https://kakaomames.github.io/turbowarp/ 2 -
                 center.x
             ) +
             Math.abs(
-              (child1.aabb.lowerBound.y + child1.aabb.upperBound.y) / 2 -
+              (child1.aabb.lowerBound.y + child1.aabb.upperBound.y)https://kakaomames.github.io/turbowarp/ 2 -
                 center.y
             );
           var norm2 =
             Math.abs(
-              (child2.aabb.lowerBound.x + child2.aabb.upperBound.x) / 2 -
+              (child2.aabb.lowerBound.x + child2.aabb.upperBound.x)https://kakaomames.github.io/turbowarp/ 2 -
                 center.x
             ) +
             Math.abs(
-              (child2.aabb.lowerBound.y + child2.aabb.upperBound.y) / 2 -
+              (child2.aabb.lowerBound.y + child2.aabb.upperBound.y)https://kakaomames.github.io/turbowarp/ 2 -
                 center.y
             );
           if (norm1 < norm2) {
@@ -2116,10 +2116,10 @@
         if (0.0 <= a && a <= maxLambda * denom) {
           var mu2 = -rX * bY + rY * bX;
           if (-k_slop * denom <= mu2 && mu2 <= denom * (1.0 + k_slop)) {
-            a /= denom;
+            ahttps://kakaomames.github.io/turbowarp/= denom;
             var nLen = Math.sqrt(nX * nX + nY * nY);
-            nX /= nLen;
-            nY /= nLen;
+            nXhttps://kakaomames.github.io/turbowarp/= nLen;
+            nYhttps://kakaomames.github.io/turbowarp/= nLen;
             lambda[0] = a;
             normal.Set(nX, nY);
             return true;
@@ -2137,14 +2137,14 @@
       var dY = this.p2.y - this.p1.y;
       var lambda = Math.min(
         dX > 0
-          ? (aabb.upperBound.x - this.p1.x) / dX
+          ? (aabb.upperBound.x - this.p1.x)https://kakaomames.github.io/turbowarp/ dX
           : dX < 0
-            ? (aabb.lowerBound.x - this.p1.x) / dX
+            ? (aabb.lowerBound.x - this.p1.x)https://kakaomames.github.io/turbowarp/ dX
             : Number.POSITIVE_INFINITY,
         dY > 0
-          ? (aabb.upperBound.y - this.p1.y) / dY
+          ? (aabb.upperBound.y - this.p1.y)https://kakaomames.github.io/turbowarp/ dY
           : dY < 0
-            ? (aabb.lowerBound.y - this.p1.y) / dY
+            ? (aabb.lowerBound.y - this.p1.y)https://kakaomames.github.io/turbowarp/ dY
             : Number.POSITIVE_INFINITY
       );
       this.p2.x = this.p1.x + dX * lambda;
@@ -2155,14 +2155,14 @@
       var dY = -this.p2.y + this.p1.y;
       var lambda = Math.min(
         dX > 0
-          ? (aabb.upperBound.x - this.p2.x) / dX
+          ? (aabb.upperBound.x - this.p2.x)https://kakaomames.github.io/turbowarp/ dX
           : dX < 0
-            ? (aabb.lowerBound.x - this.p2.x) / dX
+            ? (aabb.lowerBound.x - this.p2.x)https://kakaomames.github.io/turbowarp/ dX
             : Number.POSITIVE_INFINITY,
         dY > 0
-          ? (aabb.upperBound.y - this.p2.y) / dY
+          ? (aabb.upperBound.y - this.p2.y)https://kakaomames.github.io/turbowarp/ dY
           : dY < 0
-            ? (aabb.lowerBound.y - this.p2.y) / dY
+            ? (aabb.lowerBound.y - this.p2.y)https://kakaomames.github.io/turbowarp/ dY
             : Number.POSITIVE_INFINITY
       );
       this.p1.x = this.p2.x + dX * lambda;
@@ -2306,12 +2306,12 @@
         var denom = a * e - b * b;
         s = 0.0;
         if (denom != 0.0) {
-          s = b2Math.Clamp((b * f - c * e) / denom, 0.0, 1.0);
+          s = b2Math.Clamp((b * f - c * e)https://kakaomames.github.io/turbowarp/ denom, 0.0, 1.0);
         }
-        var t = (b * s + f) / e;
+        var t = (b * s + f)https://kakaomames.github.io/turbowarp/ e;
         if (t < 0.0) {
           t = 0.0;
-          s = b2Math.Clamp((b - c) / a, 0.0, 1.0);
+          s = b2Math.Clamp((b - c)https://kakaomames.github.io/turbowarp/ a, 0.0, 1.0);
         }
         localPointA = new b2Vec2();
         localPointA.x = localPointA1.x + s * (localPointA2.x - localPointA1.x);
@@ -2607,7 +2607,7 @@
         this.m_v1.Set(this.m_v2);
         return;
       }
-      var inv_d12 = 1.0 / (d12_1 + d12_2);
+      var inv_d12 = 1.0https://kakaomames.github.io/turbowarp/ (d12_1 + d12_2);
       this.m_v1.a = d12_1 * inv_d12;
       this.m_v2.a = d12_2 * inv_d12;
       this.m_count = 2;
@@ -2641,14 +2641,14 @@
         return;
       }
       if (d12_1 > 0.0 && d12_2 > 0.0 && d123_3 <= 0.0) {
-        var inv_d12 = 1.0 / (d12_1 + d12_2);
+        var inv_d12 = 1.0https://kakaomames.github.io/turbowarp/ (d12_1 + d12_2);
         this.m_v1.a = d12_1 * inv_d12;
         this.m_v2.a = d12_2 * inv_d12;
         this.m_count = 2;
         return;
       }
       if (d13_1 > 0.0 && d13_2 > 0.0 && d123_2 <= 0.0) {
-        var inv_d13 = 1.0 / (d13_1 + d13_2);
+        var inv_d13 = 1.0https://kakaomames.github.io/turbowarp/ (d13_1 + d13_2);
         this.m_v1.a = d13_1 * inv_d13;
         this.m_v3.a = d13_2 * inv_d13;
         this.m_count = 2;
@@ -2668,14 +2668,14 @@
         return;
       }
       if (d23_1 > 0.0 && d23_2 > 0.0 && d123_1 <= 0.0) {
-        var inv_d23 = 1.0 / (d23_1 + d23_2);
+        var inv_d23 = 1.0https://kakaomames.github.io/turbowarp/ (d23_1 + d23_2);
         this.m_v2.a = d23_1 * inv_d23;
         this.m_v3.a = d23_2 * inv_d23;
         this.m_count = 2;
         this.m_v1.Set(this.m_v3);
         return;
       }
-      var inv_d123 = 1.0 / (d123_1 + d123_2 + d123_3);
+      var inv_d123 = 1.0https://kakaomames.github.io/turbowarp/ (d123_1 + d123_2 + d123_3);
       this.m_v1.a = d123_1 * inv_d123;
       this.m_v2.a = d123_2 * inv_d123;
       this.m_v3.a = d123_3 * inv_d123;
@@ -2775,7 +2775,7 @@
           for (;;) {
             var x = 0;
             if (rootIterCount & 1) {
-              x = x1 + ((target - f1) * (x2 - x1)) / (f2 - f1);
+              x = x1 + ((target - f1) * (x2 - x1))https://kakaomames.github.io/turbowarp/ (f2 - f1);
             } else {
               x = 0.5 * (x1 + x2);
             }
@@ -2892,8 +2892,8 @@
             var d2 = dX * dX + dY * dY;
             if (d2 > Number.MIN_VALUE * Number.MIN_VALUE) {
               var d = Math.sqrt(d2);
-              this.m_normal.x = dX / d;
-              this.m_normal.y = dY / d;
+              this.m_normal.x = dXhttps://kakaomames.github.io/turbowarp/ d;
+              this.m_normal.y = dYhttps://kakaomames.github.io/turbowarp/ d;
             } else {
               this.m_normal.x = 1;
               this.m_normal.y = 0;
@@ -3181,7 +3181,7 @@
       }
       var a = -(c + Math.sqrt(sigma));
       if (0.0 <= a && a <= input.maxFraction * rr) {
-        a /= rr;
+        ahttps://kakaomames.github.io/turbowarp/= rr;
         output.fraction = a;
         output.normal.x = sX + a * rX;
         output.normal.y = sY + a * rY;
@@ -3230,9 +3230,9 @@
       var r2 = this.m_radius * this.m_radius;
       var l2 = l * l;
       var area =
-        r2 * (Math.asin(l / this.m_radius) + Math.PI / 2) +
+        r2 * (Math.asin(lhttps://kakaomames.github.io/turbowarp/ this.m_radius) + Math.PIhttps://kakaomames.github.io/turbowarp/ 2) +
         l * Math.sqrt(r2 - l2);
-      var com = ((-2 / 3) * Math.pow(r2 - l2, 1.5)) / area;
+      var com = ((-2https://kakaomames.github.io/turbowarp/ 3) * Math.pow(r2 - l2, 1.5))https://kakaomames.github.io/turbowarp/ area;
       c.x = p.x + normal.x * com;
       c.y = p.y + normal.y * com;
       return area;
@@ -3308,11 +3308,11 @@
         if (0.0 <= a && a <= input.maxFraction * denom) {
           var mu2 = -rX * bY + rY * bX;
           if (-k_slop * denom <= mu2 && mu2 <= denom * (1.0 + k_slop)) {
-            a /= denom;
+            ahttps://kakaomames.github.io/turbowarp/= denom;
             output.fraction = a;
             var nLen = Math.sqrt(nX * nX + nY * nY);
-            output.normal.x = nX / nLen;
-            output.normal.y = nY / nLen;
+            output.normal.x = nXhttps://kakaomames.github.io/turbowarp/ nLen;
+            output.normal.y = nYhttps://kakaomames.github.io/turbowarp/ nLen;
             return true;
           }
         }
@@ -3370,18 +3370,18 @@
         if (d2 > 0) {
           return 0;
         } else {
-          v1.x = (-d2 / (d1 - d2)) * v1.x + (d1 / (d1 - d2)) * v2.x;
-          v1.y = (-d2 / (d1 - d2)) * v1.y + (d1 / (d1 - d2)) * v2.y;
+          v1.x = (-d2https://kakaomames.github.io/turbowarp/ (d1 - d2)) * v1.x + (d1https://kakaomames.github.io/turbowarp/ (d1 - d2)) * v2.x;
+          v1.y = (-d2https://kakaomames.github.io/turbowarp/ (d1 - d2)) * v1.y + (d1https://kakaomames.github.io/turbowarp/ (d1 - d2)) * v2.y;
         }
       } else {
         if (d2 > 0) {
-          v2.x = (-d2 / (d1 - d2)) * v1.x + (d1 / (d1 - d2)) * v2.x;
-          v2.y = (-d2 / (d1 - d2)) * v1.y + (d1 / (d1 - d2)) * v2.y;
+          v2.x = (-d2https://kakaomames.github.io/turbowarp/ (d1 - d2)) * v1.x + (d1https://kakaomames.github.io/turbowarp/ (d1 - d2)) * v2.x;
+          v2.y = (-d2https://kakaomames.github.io/turbowarp/ (d1 - d2)) * v1.y + (d1https://kakaomames.github.io/turbowarp/ (d1 - d2)) * v2.y;
         } else {
         }
       }
-      c.x = (v0.x + v1.x + v2.x) / 3;
-      c.y = (v0.y + v1.y + v2.y) / 3;
+      c.x = (v0.x + v1.x + v2.x)https://kakaomames.github.io/turbowarp/ 3;
+      c.y = (v0.y + v1.y + v2.y)https://kakaomames.github.io/turbowarp/ 3;
       return (
         0.5 * ((v1.x - v0.x) * (v2.y - v0.y) - (v1.y - v0.y) * (v2.x - v0.x))
       );
@@ -3712,10 +3712,10 @@
           }
         } else {
           if (denominator < 0.0 && numerator < lower * denominator) {
-            lower = numerator / denominator;
+            lower = numeratorhttps://kakaomames.github.io/turbowarp/ denominator;
             index = i;
           } else if (denominator > 0.0 && numerator < upper * denominator) {
-            upper = numerator / denominator;
+            upper = numeratorhttps://kakaomames.github.io/turbowarp/ denominator;
           }
         }
         if (upper < lower - Number.MIN_VALUE) {
@@ -3770,7 +3770,7 @@
       var I = 0.0;
       var p1X = 0.0;
       var p1Y = 0.0;
-      var k_inv3 = 1.0 / 3.0;
+      var k_inv3 = 1.0https://kakaomames.github.io/turbowarp/ 3.0;
       for (var i = 0; i < this.m_vertexCount; ++i) {
         var p2 = this.m_vertices[i];
         var p3 =
@@ -3805,8 +3805,8 @@
         I += D * (intx2 + inty2);
       }
       massData.mass = density * area;
-      centerX *= 1.0 / area;
-      centerY *= 1.0 / area;
+      centerX *= 1.0https://kakaomames.github.io/turbowarp/ area;
+      centerY *= 1.0https://kakaomames.github.io/turbowarp/ area;
       massData.center.Set(centerX, centerY);
       massData.I = density * I;
     };
@@ -3865,9 +3865,9 @@
       var intoIndex2 = parseInt((intoIndex + 1) % this.m_vertexCount);
       var outoIndex2 = parseInt((outoIndex + 1) % this.m_vertexCount);
       var intoLamdda =
-        (0 - depths[intoIndex]) / (depths[intoIndex2] - depths[intoIndex]);
+        (0 - depths[intoIndex])https://kakaomames.github.io/turbowarp/ (depths[intoIndex2] - depths[intoIndex]);
       var outoLamdda =
-        (0 - depths[outoIndex]) / (depths[outoIndex2] - depths[outoIndex]);
+        (0 - depths[outoIndex])https://kakaomames.github.io/turbowarp/ (depths[outoIndex2] - depths[outoIndex]);
       var intoVec = new b2Vec2(
         this.m_vertices[intoIndex].x * (1 - intoLamdda) +
           this.m_vertices[intoIndex2].x * intoLamdda,
@@ -3894,11 +3894,11 @@
           ((p2.x - intoVec.x) * (p3.y - intoVec.y) -
             (p2.y - intoVec.y) * (p3.x - intoVec.x));
         area += triangleArea;
-        center.x += (triangleArea * (intoVec.x + p2.x + p3.x)) / 3;
-        center.y += (triangleArea * (intoVec.y + p2.y + p3.y)) / 3;
+        center.x += (triangleArea * (intoVec.x + p2.x + p3.x))https://kakaomames.github.io/turbowarp/ 3;
+        center.y += (triangleArea * (intoVec.y + p2.y + p3.y))https://kakaomames.github.io/turbowarp/ 3;
         p2 = p3;
       }
-      center.Multiply(1 / area);
+      center.Multiply(1https://kakaomames.github.io/turbowarp/ area);
       c.SetV(b2Math.MulX(xf, center));
       return area;
     };
@@ -3958,7 +3958,7 @@
       var area = 0.0;
       var p1X = 0.0;
       var p1Y = 0.0;
-      var inv3 = 1.0 / 3.0;
+      var inv3 = 1.0https://kakaomames.github.io/turbowarp/ 3.0;
       for (var i = 0; i < count; ++i) {
         var p2 = vs[i];
         var p3 = i + 1 < count ? vs[parseInt(i + 1)] : vs[0];
@@ -3972,8 +3972,8 @@
         c.x += triangleArea * inv3 * (p1X + p2.x + p3.x);
         c.y += triangleArea * inv3 * (p1Y + p2.y + p3.y);
       }
-      c.x *= 1.0 / area;
-      c.y *= 1.0 / area;
+      c.x *= 1.0https://kakaomames.github.io/turbowarp/ area;
+      c.y *= 1.0https://kakaomames.github.io/turbowarp/ area;
       return c;
     };
     b2PolygonShape.ComputeOBB = function (obb, vs, count) {
@@ -3990,8 +3990,8 @@
         var uxX = p[i].x - root.x;
         var uxY = p[i].y - root.y;
         var length = Math.sqrt(uxX * uxX + uxY * uxY);
-        uxX /= length;
-        uxY /= length;
+        uxXhttps://kakaomames.github.io/turbowarp/= length;
+        uxYhttps://kakaomames.github.io/turbowarp/= length;
         var uyX = -uxY;
         var uyY = uxX;
         var lowerX = Number.MAX_VALUE;
@@ -4173,14 +4173,14 @@
       Box2D.Common.b2Settings.b2_aabbMultiplier = 2.0;
       Box2D.Common.b2Settings.b2_polygonRadius = 2.0 * b2Settings.b2_linearSlop;
       Box2D.Common.b2Settings.b2_linearSlop = 0.005;
-      Box2D.Common.b2Settings.b2_angularSlop = (2.0 / 180.0) * b2Settings.b2_pi;
+      Box2D.Common.b2Settings.b2_angularSlop = (2.0https://kakaomames.github.io/turbowarp/ 180.0) * b2Settings.b2_pi;
       Box2D.Common.b2Settings.b2_toiSlop = 8.0 * b2Settings.b2_linearSlop;
       Box2D.Common.b2Settings.b2_maxTOIContactsPerIsland = 32;
       Box2D.Common.b2Settings.b2_maxTOIJointsPerIsland = 32;
       Box2D.Common.b2Settings.b2_velocityThreshold = 1.0;
       Box2D.Common.b2Settings.b2_maxLinearCorrection = 0.2;
       Box2D.Common.b2Settings.b2_maxAngularCorrection =
-        (8.0 / 180.0) * b2Settings.b2_pi;
+        (8.0https://kakaomames.github.io/turbowarp/ 180.0) * b2Settings.b2_pi;
       Box2D.Common.b2Settings.b2_maxTranslation = 2.0;
       Box2D.Common.b2Settings.b2_maxTranslationSquared =
         b2Settings.b2_maxTranslation * b2Settings.b2_maxTranslation;
@@ -4191,7 +4191,7 @@
       Box2D.Common.b2Settings.b2_timeToSleep = 0.5;
       Box2D.Common.b2Settings.b2_linearSleepTolerance = 0.01;
       Box2D.Common.b2Settings.b2_angularSleepTolerance =
-        (2.0 / 180.0) * b2Settings.b2_pi;
+        (2.0https://kakaomames.github.io/turbowarp/ 180.0) * b2Settings.b2_pi;
     });
   })();
   (function () {
@@ -4275,7 +4275,7 @@
       var d = this.col2.y;
       var det = a * d - b * c;
       if (det != 0.0) {
-        det = 1.0 / det;
+        det = 1.0https://kakaomames.github.io/turbowarp/ det;
       }
       out.col1.x = det * d;
       out.col2.x = -det * b;
@@ -4292,7 +4292,7 @@
       var a22 = this.col2.y;
       var det = a11 * a22 - a12 * a21;
       if (det != 0.0) {
-        det = 1.0 / det;
+        det = 1.0https://kakaomames.github.io/turbowarp/ det;
       }
       out.x = det * (a22 * bX - a12 * bY);
       out.y = det * (a11 * bY - a21 * bX);
@@ -4376,7 +4376,7 @@
       var a22 = this.col2.y;
       var det = a11 * a22 - a12 * a21;
       if (det != 0.0) {
-        det = 1.0 / det;
+        det = 1.0https://kakaomames.github.io/turbowarp/ det;
       }
       out.x = det * (a22 * bX - a12 * bY);
       out.y = det * (a11 * bY - a21 * bX);
@@ -4400,7 +4400,7 @@
         a21 * (a32 * a13 - a12 * a33) +
         a31 * (a12 * a23 - a22 * a13);
       if (det != 0.0) {
-        det = 1.0 / det;
+        det = 1.0https://kakaomames.github.io/turbowarp/ det;
       }
       out.x =
         det *
@@ -4627,7 +4627,7 @@
     b2Sweep.prototype.Advance = function (t) {
       if (t === undefined) t = 0;
       if (this.t0 < t && 1.0 - this.t0 > Number.MIN_VALUE) {
-        var alpha = (t - this.t0) / (1.0 - this.t0);
+        var alpha = (t - this.t0)https://kakaomames.github.io/turbowarp/ (1.0 - this.t0);
         this.c0.x = (1.0 - alpha) * this.c0.x + alpha * this.c.x;
         this.c0.y = (1.0 - alpha) * this.c0.y + alpha * this.c.y;
         this.a0 = (1.0 - alpha) * this.a0 + alpha * this.a;
@@ -4755,7 +4755,7 @@
       if (length < Number.MIN_VALUE) {
         return 0.0;
       }
-      var invLength = 1.0 / length;
+      var invLength = 1.0https://kakaomames.github.io/turbowarp/ length;
       this.x *= invLength;
       this.y *= invLength;
       return length;
@@ -5229,7 +5229,7 @@
       if (this.m_mass <= 0.0) {
         this.m_mass = 1.0;
       }
-      this.m_invMass = 1.0 / this.m_mass;
+      this.m_invMass = 1.0https://kakaomames.github.io/turbowarp/ this.m_mass;
       if (
         massData.I > 0.0 &&
         (this.m_flags & b2Body.e_fixedRotationFlag) == 0
@@ -5239,7 +5239,7 @@
           this.m_mass *
             (massData.center.x * massData.center.x +
               massData.center.y * massData.center.y);
-        this.m_invI = 1.0 / this.m_I;
+        this.m_invI = 1.0https://kakaomames.github.io/turbowarp/ this.m_I;
       }
       var oldCenter = this.m_sweep.c.Copy();
       this.m_sweep.localCenter.SetV(massData.center);
@@ -5274,7 +5274,7 @@
         this.m_I += massData.I;
       }
       if (this.m_mass > 0.0) {
-        this.m_invMass = 1.0 / this.m_mass;
+        this.m_invMass = 1.0https://kakaomames.github.io/turbowarp/ this.m_mass;
         center.x *= this.m_invMass;
         center.y *= this.m_invMass;
       } else {
@@ -5285,7 +5285,7 @@
         this.m_I -= this.m_mass * (center.x * center.x + center.y * center.y);
         this.m_I *= this.m_inertiaScale;
         b2Settings.b2Assert(this.m_I > 0);
-        this.m_invI = 1.0 / this.m_I;
+        this.m_invI = 1.0https://kakaomames.github.io/turbowarp/ this.m_I;
       } else {
         this.m_I = 0.0;
         this.m_invI = 0.0;
@@ -6591,7 +6591,7 @@
       step.velocityIterations = velocityIterations;
       step.positionIterations = positionIterations;
       if (dt > 0.0) {
-        step.inv_dt = 1.0 / dt;
+        step.inv_dt = 1.0https://kakaomames.github.io/turbowarp/ dt;
       } else {
         step.inv_dt = 0.0;
       }
@@ -7110,7 +7110,7 @@
         var subStep = b2World.s_timestep;
         subStep.warmStarting = false;
         subStep.dt = (1.0 - minTOI) * step.dt;
-        subStep.inv_dt = 1.0 / subStep.dt;
+        subStep.inv_dt = 1.0https://kakaomames.github.io/turbowarp/ subStep.dt;
         subStep.dtRatio = 0.0;
         subStep.velocityIterations = step.velocityIterations;
         subStep.positionIterations = step.positionIterations;
@@ -7752,13 +7752,13 @@
             bodyB.m_invMass +
             bodyA.m_invI * rnA +
             bodyB.m_invI * rnB;
-          ccp.normalMass = 1.0 / kNormal;
+          ccp.normalMass = 1.0https://kakaomames.github.io/turbowarp/ kNormal;
           var kEqualized =
             bodyA.m_mass * bodyA.m_invMass + bodyB.m_mass * bodyB.m_invMass;
           kEqualized +=
             bodyA.m_mass * bodyA.m_invI * rnA +
             bodyB.m_mass * bodyB.m_invI * rnB;
-          ccp.equalizedMass = 1.0 / kEqualized;
+          ccp.equalizedMass = 1.0https://kakaomames.github.io/turbowarp/ kEqualized;
           var tangentX = normalY;
           var tangentY = -normalX;
           var rtA = rAX * tangentY - rAY * tangentX;
@@ -7770,7 +7770,7 @@
             bodyB.m_invMass +
             bodyA.m_invI * rtA +
             bodyB.m_invI * rtB;
-          ccp.tangentMass = 1.0 / kTangent;
+          ccp.tangentMass = 1.0https://kakaomames.github.io/turbowarp/ kTangent;
           ccp.velocityBias = 0.0;
           var tX = vBX + -wB * rBY - vAX - -wA * rAY;
           var tY = vBY + wB * rBX - vAY - wA * rAX;
@@ -8330,8 +8330,8 @@
             var d2 = dX * dX + dY * dY;
             if (d2 > Number.MIN_VALUE * Number.MIN_VALUE) {
               var d = Math.sqrt(d2);
-              this.m_normal.x = dX / d;
-              this.m_normal.y = dY / d;
+              this.m_normal.x = dXhttps://kakaomames.github.io/turbowarp/ d;
+              this.m_normal.y = dYhttps://kakaomames.github.io/turbowarp/ d;
             } else {
               this.m_normal.x = 1.0;
               this.m_normal.y = 0.0;
@@ -8520,10 +8520,10 @@
           massc.x += sarea * sc.x * shapeDensity;
           massc.y += sarea * sc.y * shapeDensity;
         }
-        areac.x /= area;
-        areac.y /= area;
-        massc.x /= mass;
-        massc.y /= mass;
+        areac.xhttps://kakaomames.github.io/turbowarp/= area;
+        areac.yhttps://kakaomames.github.io/turbowarp/= area;
+        massc.xhttps://kakaomames.github.io/turbowarp/= mass;
+        massc.yhttps://kakaomames.github.io/turbowarp/= mass;
         if (area < Number.MIN_VALUE) continue;
         var buoyancyForce = this.gravity.GetNegative();
         buoyancyForce.Multiply(this.density * area);
@@ -8533,7 +8533,7 @@
         dragForce.Multiply(-this.linearDrag * area);
         body.ApplyForce(dragForce, areac);
         body.ApplyTorque(
-          (-body.GetInertia() / body.GetMass()) *
+          (-body.GetInertia()https://kakaomames.github.io/turbowarp/ body.GetMass()) *
             area *
             body.GetAngularVelocity() *
             this.angularDrag
@@ -8679,7 +8679,7 @@
             r2 = dx * dx + dy * dy;
             if (r2 < Number.MIN_VALUE) continue;
             f = new b2Vec2(dx, dy);
-            f.Multiply((this.G / r2 / Math.sqrt(r2)) * mass1 * body2.GetMass());
+            f.Multiply((this.Ghttps://kakaomames.github.io/turbowarp/ r2https://kakaomames.github.io/turbowarp/ Math.sqrt(r2)) * mass1 * body2.GetMass());
             if (body1.IsAwake()) body1.ApplyForce(f, p1);
             f.Multiply(-1);
             if (body2.IsAwake()) body2.ApplyForce(f, p2);
@@ -8698,7 +8698,7 @@
             r2 = dx * dx + dy * dy;
             if (r2 < Number.MIN_VALUE) continue;
             f = new b2Vec2(dx, dy);
-            f.Multiply((this.G / r2) * mass1 * body2.GetMass());
+            f.Multiply((this.Ghttps://kakaomames.github.io/turbowarp/ r2) * mass1 * body2.GetMass());
             if (body1.IsAwake()) body1.ApplyForce(f, p1);
             f.Multiply(-1);
             if (body2.IsAwake()) body2.ApplyForce(f, p2);
@@ -8731,7 +8731,7 @@
       this.T.col2.x = 0;
       this.T.col2.y = -yDamping;
       if (xDamping > 0 || yDamping > 0) {
-        this.maxTimestep = 1 / Math.max(xDamping, yDamping);
+        this.maxTimestep = 1https://kakaomames.github.io/turbowarp/ Math.max(xDamping, yDamping);
       } else {
         this.maxTimestep = 0;
       }
@@ -8887,7 +8887,7 @@
       this.m_u.y = bB.m_sweep.c.y + r2Y - bA.m_sweep.c.y - r1Y;
       var length = Math.sqrt(this.m_u.x * this.m_u.x + this.m_u.y * this.m_u.y);
       if (length > b2Settings.b2_linearSlop) {
-        this.m_u.Multiply(1.0 / length);
+        this.m_u.Multiply(1.0https://kakaomames.github.io/turbowarp/ length);
       } else {
         this.m_u.SetZero();
       }
@@ -8898,17 +8898,17 @@
         bA.m_invI * cr1u * cr1u +
         bB.m_invMass +
         bB.m_invI * cr2u * cr2u;
-      this.m_mass = invMass != 0.0 ? 1.0 / invMass : 0.0;
+      this.m_mass = invMass != 0.0 ? 1.0https://kakaomames.github.io/turbowarp/ invMass : 0.0;
       if (this.m_frequencyHz > 0.0) {
         var C = length - this.m_length;
         var omega = 2.0 * Math.PI * this.m_frequencyHz;
         var d = 2.0 * this.m_mass * this.m_dampingRatio * omega;
         var k = this.m_mass * omega * omega;
         this.m_gamma = step.dt * (d + step.dt * k);
-        this.m_gamma = this.m_gamma != 0.0 ? 1 / this.m_gamma : 0.0;
+        this.m_gamma = this.m_gamma != 0.0 ? 1https://kakaomames.github.io/turbowarp/ this.m_gamma : 0.0;
         this.m_bias = C * step.dt * k * this.m_gamma;
         this.m_mass = invMass + this.m_gamma;
-        this.m_mass = this.m_mass != 0.0 ? 1.0 / this.m_mass : 0.0;
+        this.m_mass = this.m_mass != 0.0 ? 1.0https://kakaomames.github.io/turbowarp/ this.m_mass : 0.0;
       }
       if (step.warmStarting) {
         this.m_impulse *= step.dtRatio;
@@ -8980,8 +8980,8 @@
       var dX = bB.m_sweep.c.x + r2X - bA.m_sweep.c.x - r1X;
       var dY = bB.m_sweep.c.y + r2Y - bA.m_sweep.c.y - r1Y;
       var length = Math.sqrt(dX * dX + dY * dY);
-      dX /= length;
-      dY /= length;
+      dXhttps://kakaomames.github.io/turbowarp/= length;
+      dYhttps://kakaomames.github.io/turbowarp/= length;
       var C = length - this.m_length;
       C = b2Math.Clamp(
         C,
@@ -9121,7 +9121,7 @@
       K.GetInverse(this.m_linearMass);
       this.m_angularMass = iA + iB;
       if (this.m_angularMass > 0.0) {
-        this.m_angularMass = 1.0 / this.m_angularMass;
+        this.m_angularMass = 1.0https://kakaomames.github.io/turbowarp/ this.m_angularMass;
       }
       if (step.warmStarting) {
         this.m_linearImpulse.x *= step.dtRatio;
@@ -9372,7 +9372,7 @@
           this.m_ratio *
           (bB.m_invMass + bB.m_invI * crug * crug);
       }
-      this.m_mass = K > 0.0 ? 1.0 / K : 0.0;
+      this.m_mass = K > 0.0 ? 1.0https://kakaomames.github.io/turbowarp/ K : 0.0;
       if (step.warmStarting) {
         bA.m_linearVelocity.x +=
           bA.m_invMass * this.m_impulse * this.m_J.linearA.x;
@@ -9818,7 +9818,7 @@
           this.m_invIA * this.m_a1 * this.m_a1 +
           this.m_invIB * this.m_a2 * this.m_a2;
         this.m_motorMass =
-          this.m_motorMass > Number.MIN_VALUE ? 1.0 / this.m_motorMass : 0.0;
+          this.m_motorMass > Number.MIN_VALUE ? 1.0https://kakaomames.github.io/turbowarp/ this.m_motorMass : 0.0;
       }
       {
         this.m_perp.SetV(b2Math.MulMV(xf1.R, this.m_localYAxis1));
@@ -9949,7 +9949,7 @@
         var b = -Cdot1 - (this.m_impulse.y - f1.y) * this.m_K.col2.x;
         var f2r = 0;
         if (this.m_K.col1.x != 0.0) {
-          f2r = b / this.m_K.col1.x + f1.x;
+          f2r = bhttps://kakaomames.github.io/turbowarp/ this.m_K.col1.x + f1.x;
         } else {
           f2r = f1.x;
         }
@@ -9969,7 +9969,7 @@
       } else {
         var df2 = 0;
         if (this.m_K.col1.x != 0.0) {
-          df2 = -Cdot1 / this.m_K.col1.x;
+          df2 = -Cdot1https://kakaomames.github.io/turbowarp/ this.m_K.col1.x;
         } else {
           df2 = 0.0;
         }
@@ -10089,7 +10089,7 @@
           m1 + m2 + i1 * this.m_s1 * this.m_s1 + i2 * this.m_s2 * this.m_s2;
         var impulse1 = 0;
         if (k11 != 0.0) {
-          impulse1 = -C1 / k11;
+          impulse1 = -C1https://kakaomames.github.io/turbowarp/ k11;
         } else {
           impulse1 = 0.0;
         }
@@ -10221,7 +10221,7 @@
       var d = 2.0 * mass * this.m_dampingRatio * omega;
       var k = mass * omega * omega;
       this.m_gamma = step.dt * (d + step.dt * k);
-      this.m_gamma = this.m_gamma != 0 ? 1 / this.m_gamma : 0.0;
+      this.m_gamma = this.m_gamma != 0 ? 1https://kakaomames.github.io/turbowarp/ this.m_gamma : 0.0;
       this.m_beta = step.dt * k * this.m_gamma;
       var tMat;
       tMat = b.m_xf.R;
@@ -10279,7 +10279,7 @@
       this.m_impulse.y += impulseY;
       var maxImpulse = step.dt * this.m_maxForce;
       if (this.m_impulse.LengthSquared() > maxImpulse * maxImpulse) {
-        this.m_impulse.Multiply(maxImpulse / this.m_impulse.Length());
+        this.m_impulse.Multiply(maxImpulsehttps://kakaomames.github.io/turbowarp/ this.m_impulse.Length());
       }
       impulseX = this.m_impulse.x - oldImpulseX;
       impulseY = this.m_impulse.y - oldImpulseY;
@@ -10495,7 +10495,7 @@
           this.m_invIA * this.m_a1 * this.m_a1 +
           this.m_invIB * this.m_a2 * this.m_a2;
         if (this.m_motorMass > Number.MIN_VALUE)
-          this.m_motorMass = 1.0 / this.m_motorMass;
+          this.m_motorMass = 1.0https://kakaomames.github.io/turbowarp/ this.m_motorMass;
       }
       {
         this.m_perp.SetV(b2Math.MulMV(xf1.R, this.m_localYAxis1));
@@ -10912,7 +10912,7 @@
       );
       this.m_maxLength2 = b2Math.Min(
         def.maxLengthB,
-        (this.m_constant - b2PulleyJoint.b2_minPulleyLength) / this.m_ratio
+        (this.m_constant - b2PulleyJoint.b2_minPulleyLength)https://kakaomames.github.io/turbowarp/ this.m_ratio
       );
       this.m_impulse = 0.0;
       this.m_limitImpulse1 = 0.0;
@@ -10947,12 +10947,12 @@
       var length1 = this.m_u1.Length();
       var length2 = this.m_u2.Length();
       if (length1 > b2Settings.b2_linearSlop) {
-        this.m_u1.Multiply(1.0 / length1);
+        this.m_u1.Multiply(1.0https://kakaomames.github.io/turbowarp/ length1);
       } else {
         this.m_u1.SetZero();
       }
       if (length2 > b2Settings.b2_linearSlop) {
-        this.m_u2.Multiply(1.0 / length2);
+        this.m_u2.Multiply(1.0https://kakaomames.github.io/turbowarp/ length2);
       } else {
         this.m_u2.SetZero();
       }
@@ -10981,9 +10981,9 @@
       this.m_limitMass2 = bB.m_invMass + bB.m_invI * cr2u2 * cr2u2;
       this.m_pulleyMass =
         this.m_limitMass1 + this.m_ratio * this.m_ratio * this.m_limitMass2;
-      this.m_limitMass1 = 1.0 / this.m_limitMass1;
-      this.m_limitMass2 = 1.0 / this.m_limitMass2;
-      this.m_pulleyMass = 1.0 / this.m_pulleyMass;
+      this.m_limitMass1 = 1.0https://kakaomames.github.io/turbowarp/ this.m_limitMass1;
+      this.m_limitMass2 = 1.0https://kakaomames.github.io/turbowarp/ this.m_limitMass2;
+      this.m_pulleyMass = 1.0https://kakaomames.github.io/turbowarp/ this.m_pulleyMass;
       if (step.warmStarting) {
         this.m_impulse *= step.dtRatio;
         this.m_limitImpulse1 *= step.dtRatio;
@@ -11132,12 +11132,12 @@
         length1 = this.m_u1.Length();
         length2 = this.m_u2.Length();
         if (length1 > b2Settings.b2_linearSlop) {
-          this.m_u1.Multiply(1.0 / length1);
+          this.m_u1.Multiply(1.0https://kakaomames.github.io/turbowarp/ length1);
         } else {
           this.m_u1.SetZero();
         }
         if (length2 > b2Settings.b2_linearSlop) {
-          this.m_u2.Multiply(1.0 / length2);
+          this.m_u2.Multiply(1.0https://kakaomames.github.io/turbowarp/ length2);
         } else {
           this.m_u2.SetZero();
         }
@@ -11174,8 +11174,8 @@
         this.m_u1.Set(p1X - s1X, p1Y - s1Y);
         length1 = this.m_u1.Length();
         if (length1 > b2Settings.b2_linearSlop) {
-          this.m_u1.x *= 1.0 / length1;
-          this.m_u1.y *= 1.0 / length1;
+          this.m_u1.x *= 1.0https://kakaomames.github.io/turbowarp/ length1;
+          this.m_u1.y *= 1.0https://kakaomames.github.io/turbowarp/ length1;
         } else {
           this.m_u1.SetZero();
         }
@@ -11206,8 +11206,8 @@
         this.m_u2.Set(p2X - s2X, p2Y - s2Y);
         length2 = this.m_u2.Length();
         if (length2 > b2Settings.b2_linearSlop) {
-          this.m_u2.x *= 1.0 / length2;
-          this.m_u2.y *= 1.0 / length2;
+          this.m_u2.x *= 1.0https://kakaomames.github.io/turbowarp/ length2;
+          this.m_u2.y *= 1.0https://kakaomames.github.io/turbowarp/ length2;
         } else {
           this.m_u2.SetZero();
         }
@@ -11280,7 +11280,7 @@
       this.ratio = r;
       var C = this.lengthA + this.ratio * this.lengthB;
       this.maxLengthA = C - this.ratio * b2PulleyJoint.b2_minPulleyLength;
-      this.maxLengthB = (C - b2PulleyJoint.b2_minPulleyLength) / this.ratio;
+      this.maxLengthB = (C - b2PulleyJoint.b2_minPulleyLength)https://kakaomames.github.io/turbowarp/ this.ratio;
     };
     Box2D.inherit(b2RevoluteJoint, Box2D.Dynamics.Joints.b2Joint);
     b2RevoluteJoint.prototype.__super = Box2D.Dynamics.Joints.b2Joint.prototype;
@@ -11409,7 +11409,7 @@
       this.m_mass.col1.z = this.m_mass.col3.x;
       this.m_mass.col2.z = this.m_mass.col3.y;
       this.m_mass.col3.z = i1 + i2;
-      this.m_motorMass = 1.0 / (i1 + i2);
+      this.m_motorMass = 1.0https://kakaomames.github.io/turbowarp/ (i1 + i2);
       if (this.m_enableMotor == false) {
         this.m_motorImpulse = 0.0;
       }
@@ -11641,10 +11641,10 @@
         var invI2 = bB.m_invI;
         var k_allowedStretch = 10.0 * b2Settings.b2_linearSlop;
         if (CLengthSquared > k_allowedStretch * k_allowedStretch) {
-          var uX = CX / CLength;
-          var uY = CY / CLength;
+          var uX = CXhttps://kakaomames.github.io/turbowarp/ CLength;
+          var uY = CYhttps://kakaomames.github.io/turbowarp/ CLength;
           var k = invMass1 + invMass2;
-          var m = 1.0 / k;
+          var m = 1.0https://kakaomames.github.io/turbowarp/ k;
           impulseX = m * -CX;
           impulseY = m * -CY;
           var k_beta = 0.5;
@@ -11923,7 +11923,7 @@
       this.m_fillAlpha = 1.0;
       this.m_xformScale = 1.0;
       var __this = this;
-      //#WORKAROUND
+     https://kakaomames.github.io/turbowarp//#WORKAROUND
       this.m_sprite = {
         graphics: {
           clear: function () {
@@ -12126,23 +12126,23 @@
 
   const ArgumentType = Scratch.ArgumentType;
   const BlockType = Scratch.BlockType;
-  // const MathUtil = require('../../util/math-util');
-  // const Clone = require('../../util/clone');
+ https://kakaomames.github.io/turbowarp// const MathUtil = require('.https://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/utihttps://kakaomames.github.io/turbowarp/math-util');
+ https://kakaomames.github.io/turbowarp// const Clone = require('.https://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/utihttps://kakaomames.github.io/turbowarp/clone');
   const Cast = {
     toNumber: (n) => +n || 0,
   };
-  // const Cast = require('../../util/cast');
-  // const Runtime = require('../../engine/runtime');
-  // const RenderedTarget = require('../../sprites/rendered-target');
-  // const MathUtil = require('../../util/math-util');
-  // const Timer = require('../../util/timer');
-  // const Matter = require('matterJs/matter');
-  // const Matter = require('matter-js');
+ https://kakaomames.github.io/turbowarp// const Cast = require('.https://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/utihttps://kakaomames.github.io/turbowarp/cast');
+ https://kakaomames.github.io/turbowarp// const Runtime = require('.https://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/enginhttps://kakaomames.github.io/turbowarp/runtime');
+ https://kakaomames.github.io/turbowarp// const RenderedTarget = require('.https://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/spritehttps://kakaomames.github.io/turbowarp/rendered-target');
+ https://kakaomames.github.io/turbowarp// const MathUtil = require('.https://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/utihttps://kakaomames.github.io/turbowarp/math-util');
+ https://kakaomames.github.io/turbowarp// const Timer = require('.https://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/utihttps://kakaomames.github.io/turbowarp/timer');
+ https://kakaomames.github.io/turbowarp// const Matter = require('matterJhttps://kakaomames.github.io/turbowarp/matter');
+ https://kakaomames.github.io/turbowarp// const Matter = require('matter-js');
   const ROTATION_STYLE_ALL_AROUND = "all around";
 
-  // const Box2D = require('./Box2d.min').box2d;
+ https://kakaomames.github.io/turbowarp// const Box2D = require('https://kakaomames.github.io/turbowarp/Box2d.min').box2d;
 
-  // window.decomp = require('poly-decomp');
+ https://kakaomames.github.io/turbowarp// window.decomp = require('poly-decomp');
 
   const b2World = Box2D.Dynamics.b2World;
   const b2Vec2 = Box2D.Common.Math.b2Vec2;
@@ -12150,13 +12150,13 @@
   const b2BodyDef = Box2D.Dynamics.b2BodyDef;
   const b2Body = Box2D.Dynamics.b2Body;
   const b2FixtureDef = Box2D.Dynamics.b2FixtureDef;
-  // const b2Fixture = Box2D.Dynamics.b2Fixture;
-  // const b2Fixture = Box2D.Dynamics.b2Fixture;
+ https://kakaomames.github.io/turbowarp// const b2Fixture = Box2D.Dynamics.b2Fixture;
+ https://kakaomames.github.io/turbowarp// const b2Fixture = Box2D.Dynamics.b2Fixture;
   const b2Contact = Box2D.Dynamics.Contacts.b2Contact;
-  // const b2MassData = Box2D.Collision.Shapes.b2MassData;
+ https://kakaomames.github.io/turbowarp// const b2MassData = Box2D.Collision.Shapes.b2MassData;
   const b2PolygonShape = Box2D.Collision.Shapes.b2PolygonShape;
   const b2CircleShape = Box2D.Collision.Shapes.b2CircleShape;
-  // const b2DebugDraw = Box2D.Dynamics.b2DebugDraw;
+ https://kakaomames.github.io/turbowarp// const b2DebugDraw = Box2D.Dynamics.b2DebugDraw;
   const b2MouseJointDef = Box2D.Dynamics.Joints.b2MouseJointDef;
   const b2Math = Box2D.Common.Math.b2Math;
 
@@ -12166,33 +12166,33 @@
   const fixDef = new b2FixtureDef();
   const bodyDef = new b2BodyDef();
 
-  // const uid_seq = 0;
-  // let ujidSeq = 0;
+ https://kakaomames.github.io/turbowarp// const uid_seq = 0;
+ https://kakaomames.github.io/turbowarp// let ujidSeq = 0;
 
   const prevPos = {};
-  /**
-   * Active b2Body/s in the world.
+ https://kakaomames.github.io/turbowarp/**
+   * Active b2Bodhttps://kakaomames.github.io/turbowarp/s in the world.
    * @type {Object.<string,*>}
-   */
+   https://kakaomames.github.io/turbowarp/
   const bodies = {};
-  // const joints = {};
-  const pinned = {}; // Map of IDs to pinned joints
-  /**
+ https://kakaomames.github.io/turbowarp// const joints = {};
+  const pinned = {};https://kakaomames.github.io/turbowarp// Map of IDs to pinned joints
+ https://kakaomames.github.io/turbowarp/**
    * The runtime instantiating this block package.
    * @type {Array}
-   */
+   https://kakaomames.github.io/turbowarp/
   const stageBodies = [];
 
-  // const categorySeq = 1;
-  // const categories = {default: 1};
+ https://kakaomames.github.io/turbowarp// const categorySeq = 1;
+ https://kakaomames.github.io/turbowarp// const categories = {default: 1};
 
   const bodyCategoryBits = 1;
   const bodyMaskBits = 1;
-  // const noCollideSeq = 0;
+ https://kakaomames.github.io/turbowarp// const noCollideSeq = 0;
 
-  const toRad = Math.PI / 180;
+  const toRad = Math.PIhttps://kakaomames.github.io/turbowarp/ 180;
 
-  // Used to record the scroll position of all sprites
+ https://kakaomames.github.io/turbowarp// Used to record the scroll position of all sprites
   const _scroll = new b2Vec2(0, 0);
 
   const STAGE_TYPE_OPTIONS = {
@@ -12226,8 +12226,8 @@
 
     let prev = null;
     for (let i = hullPoints.length - 1; i >= 0; i--) {
-      // for (let i = 0; i < hullPoints.length; i++) {
-      const b2Vec = new b2Vec2(hullPoints[i].x / zoom, hullPoints[i].y / zoom);
+     https://kakaomames.github.io/turbowarp// for (let i = 0; i < hullPoints.length; i++) {
+      const b2Vec = new b2Vec2(hullPoints[i].xhttps://kakaomames.github.io/turbowarp/ zoom, hullPoints[i].yhttps://kakaomames.github.io/turbowarp/ zoom);
       if (
         prev !== null &&
         b2Math.SubtractVV(b2Vec, prev).LengthSquared() > Number.MIN_VALUE
@@ -12240,56 +12240,56 @@
     fixDef.shape.SetAsArray(vertices);
   };
 
-  // Polygon mode: silhouette -> marching squares -> ring/hole groups ->
-  // RDP simplify -> earcut triangulate -> Hertel-Mehlhorn merge -> fixtures.
+ https://kakaomames.github.io/turbowarp// Polygon mode: silhouette -> marching squares -> rinhttps://kakaomames.github.io/turbowarp/hole groups ->
+ https://kakaomames.github.io/turbowarp// RDP simplify -> earcut triangulate -> Hertel-Mehlhorn merge -> fixtures.
 
-  // earcut (ISC, https://github.com/mapbox/earcut)
+ https://kakaomames.github.io/turbowarp// earcut (ISC, httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/mapbohttps://kakaomames.github.io/turbowarp/earcut)
   const earcut = (
     await Scratch.external.importModule(
-      "https://cdn.jsdelivr.net/npm/earcut@3.0.2/src/earcut.js"
+      "httpshttps://kakaomames.github.io/turbowarp//cdn.jsdelivr.nehttps://kakaomames.github.io/turbowarp/nphttps://kakaomames.github.io/turbowarp/earcut@3.0.https://kakaomames.github.io/turbowarp/srhttps://kakaomames.github.io/turbowarp/earcut.js"
     )
   ).default;
 
-  // Missing on older renderers; without it, effects don't shape the trace.
+ https://kakaomames.github.io/turbowarp// Missing on older renderers; without it, effects don't shape the trace.
   const EffectTransform = Scratch.vm.runtime.renderer?.exports?.EffectTransform;
 
-  // Silhouette sampling resolution
+ https://kakaomames.github.io/turbowarp// Silhouette sampling resolution
   const POLY_GRID_MIN = 16;
   const POLY_GRID_MAX = 96;
   const POLY_GRID_STEP = 4;
 
-  // Ramer-Douglas-Peucker tolerance, in grid cells: outline points within this
-  // distance of a kept edge are discarded. Larger means fewer, coarser corners.
+ https://kakaomames.github.io/turbowarp// Ramer-Douglas-Peucker tolerance, in grid cells: outline points within this
+ https://kakaomames.github.io/turbowarp// distance of a kept edge are discarded. Larger means fewer, coarser corners.
   const POLY_RDP_EPSILON = 0.75;
 
-  // Contours whose area is below this many grid cells are sampling noise
-  // and will be ignored when an island or a hole.
+ https://kakaomames.github.io/turbowarp// Contours whose area is below this many grid cells are sampling noise
+ https://kakaomames.github.io/turbowarp// and will be ignored when an island or a hole.
   const POLY_MIN_AREA = 2.0;
 
-  // Maximum number of vertices per Box2D polygon before breaking apart.
+ https://kakaomames.github.io/turbowarp// Maximum number of vertices per Box2D polygon before breaking apart.
   const POLY_MAX_VERTS = 8;
 
-  // Maximum number of Box2D fixtures polygon mode can generate before falling back.
+ https://kakaomames.github.io/turbowarp// Maximum number of Box2D fixtures polygon mode can generate before falling back.
   const POLY_MAX_FIXTURES = 32;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @typedef {{ x: number, y: number }} Point
-   */
+   https://kakaomames.github.io/turbowarp/
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Clamp v to [lo, hi].
    * @param {number} v
    * @param {number} lo
    * @param {number} hi
    * @returns {number}
-   */
+   https://kakaomames.github.io/turbowarp/
   const clamp = (v, lo, hi) => (v < lo ? lo : v > hi ? hi : v);
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Shoelace signed area. Positive = CCW (outer), negative = CW (hole).
    * @param {Point[]} points
    * @returns {number}
-   */
+   https://kakaomames.github.io/turbowarp/
   const signedArea = (points) => {
     let area = 0;
     for (let i = 0, n = points.length; i < n; i++) {
@@ -12297,48 +12297,48 @@
       const b = points[(i + 1) % n];
       area += a.x * b.y - b.x * a.y;
     }
-    return area / 2;
+    return areahttps://kakaomames.github.io/turbowarp/ 2;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Twice the signed area of triangle abc. Positive iff a, b, c turn CCW.
    * @param {Point} a
    * @param {Point} b
    * @param {Point} c
    * @returns {number}
-   */
+   https://kakaomames.github.io/turbowarp/
   const area3 = (a, b, c) =>
     (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Sample drawable silhouette into a padded binary opacity grid (1 = opaque).
    * The 1-cell transparent border keeps every contour as a closed loop inside
    * the grid. Effects are applied via EffectTransform when available, matching
    * scratch-render's hull sampling.
    * @param {import('scratch-render').Drawable} drawable
    * @returns {{ grid: Uint8Array, gx: number, gy: number, gxI: number,
-   *   gyI: number, opaqueCount: number }} gx/gy include the border; gxI/gyI
+   *   gyI: number, opaqueCount: number }} ghttps://kakaomames.github.io/turbowarp/gy include the border; gxhttps://kakaomames.github.io/turbowarp/gyI
    *   are the interior dimensions.
-   */
+   https://kakaomames.github.io/turbowarp/
   const polySampleSilhouette = (drawable) => {
     const skin = drawable.skin;
     skin.updateSilhouette();
 
     const size = skin.size;
     const gxI = clamp(
-      Math.round(size[0] / POLY_GRID_STEP),
+      Math.round(size[0]https://kakaomames.github.io/turbowarp/ POLY_GRID_STEP),
       POLY_GRID_MIN,
       POLY_GRID_MAX
     );
     const gyI = clamp(
-      Math.round(size[1] / POLY_GRID_STEP),
+      Math.round(size[1]https://kakaomames.github.io/turbowarp/ POLY_GRID_STEP),
       POLY_GRID_MIN,
       POLY_GRID_MAX
     );
     const gx = gxI + 2;
     const gy = gyI + 2;
     const grid = new Uint8Array(gx * gy);
-    // 3-element: transformPoint's twgl.v3.copy needs a z slot.
+   https://kakaomames.github.io/turbowarp// 3-element: transformPoint's twgl.v3.copy needs a z slot.
     const coord = [0, 0, 0];
     const sample = [0, 0, 0];
     let opaqueCount = 0;
@@ -12346,9 +12346,9 @@
     const useEffects = !!EffectTransform && drawable.enabledEffects !== 0;
 
     for (let j = 0; j < gyI; j++) {
-      coord[1] = j / (gyI - 1);
+      coord[1] = jhttps://kakaomames.github.io/turbowarp/ (gyI - 1);
       for (let i = 0; i < gxI; i++) {
-        coord[0] = i / (gxI - 1);
+        coord[0] = ihttps://kakaomames.github.io/turbowarp/ (gxI - 1);
         let lookup = coord;
         if (useEffects) {
           EffectTransform.transformPoint(drawable, coord, sample);
@@ -12364,14 +12364,14 @@
     return { grid, gx, gy, gxI, gyI, opaqueCount };
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Marching-squares case table. Indexed by the 4-bit block code (see
    * polyMarchingSquares for bit layout). Each entry is a list of segments
    * [fromEdge, toEdge] where edges are 0=top, 1=right, 2=bottom, 3=left.
    * Segments are oriented so the opaque region stays on one side, letting
    * them chain head-to-tail into closed loops.
    * @type {Array<Array<number[]>|null>}
-   */
+   https://kakaomames.github.io/turbowarp/
   const POLY_MS_TABLE = [
     null,
     [[0, 3]],
@@ -12397,15 +12397,15 @@
     null,
   ];
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Trace closed contour loops of a binary grid via marching squares.
    * @param {Uint8Array} grid Padded grid from polySampleSilhouette.
    * @param {number} gx Width in cells, including the border.
    * @param {number} gy Height in cells, including the border.
    * @returns {Point[][]} One loop per island and per hole, in grid coords.
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyMarchingSquares = (grid, gx, gy) => {
-    // Edge midpoint for the (ci, cj) block; edge per POLY_MS_TABLE.
+   https://kakaomames.github.io/turbowarp// Edge midpoint for the (ci, cj) block; edge per POLY_MS_TABLE.
     const edgePoint = (ci, cj, edge) => {
       if (edge === 0) return { x: ci + 0.5, y: cj };
       if (edge === 1) return { x: ci + 1, y: cj + 0.5 };
@@ -12413,12 +12413,12 @@
       return { x: ci, y: cj + 0.5 };
     };
 
-    // Midpoints fall on half-integers, so doubling gives a collision-free int
-    // key as long as coords stay well below 100000 (they do).
+   https://kakaomames.github.io/turbowarp// Midpoints fall on half-integers, so doubling gives a collision-free int
+   https://kakaomames.github.io/turbowarp// key as long as coords stay well below 100000 (they do).
     const pointKey = (p) => Math.round(p.x * 2) * 100000 + Math.round(p.y * 2);
 
-    // Pass 1: per 2x2 block, pack corners into a 4-bit code (TL=0, TR=1,
-    // BR=2, BL=3) and emit the segments the table calls for.
+   https://kakaomames.github.io/turbowarp// Pass 1: per 2x2 block, pack corners into a 4-bit code (TL=0, TR=1,
+   https://kakaomames.github.io/turbowarp// BR=2, BL=3) and emit the segments the table calls for.
     const segments = [];
     const startMap = new Map();
     for (let cj = 0; cj < gy - 1; cj++) {
@@ -12442,7 +12442,7 @@
       }
     }
 
-    // Pass 2: chain head-to-tail via startMap until each loop closes.
+   https://kakaomames.github.io/turbowarp// Pass 2: chain head-to-tail via startMap until each loop closes.
     const loops = [];
     for (let i = 0; i < segments.length; i++) {
       let seg = segments[i];
@@ -12459,12 +12459,12 @@
     return loops;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Even-odd point-in-polygon test.
    * @param {Point} p
    * @param {Point[]} ring
    * @returns {boolean}
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyPointInPolygon = (p, ring) => {
     let inside = false;
     for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
@@ -12472,7 +12472,7 @@
       const b = ring[j];
       if (
         a.y > p.y !== b.y > p.y &&
-        p.x < ((b.x - a.x) * (p.y - a.y)) / (b.y - a.y) + a.x
+        p.x < ((b.x - a.x) * (p.y - a.y))https://kakaomames.github.io/turbowarp/ (b.y - a.y) + a.x
       ) {
         inside = !inside;
       }
@@ -12480,14 +12480,14 @@
     return inside;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Group loops into solid regions: positive area = outer (seeds a group),
    * negative = hole (attached to the smallest containing outer). Tiny |area|
    * speckle and orphan holes are dropped. A positive loop inside a hole
    * becomes its own group, modelling a solid island in a hollow.
    * @param {Point[][]} loops From polyMarchingSquares.
    * @returns {Array<{ outer: Point[], holes: Point[][], area: number }>}
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyGroupContours = (loops) => {
     const groups = [];
     const holes = [];
@@ -12500,8 +12500,8 @@
       }
     }
 
-    // Contours never cross, so one vertex decides containment; the smallest
-    // containing outer is the immediately enclosing one (handles nesting).
+   https://kakaomames.github.io/turbowarp// Contours never cross, so one vertex decides containment; the smallest
+   https://kakaomames.github.io/turbowarp// containing outer is the immediately enclosing one (handles nesting).
     for (let h = 0; h < holes.length; h++) {
       const probe = holes[h][0];
       let best = null;
@@ -12519,7 +12519,7 @@
     return groups;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Ramer-Douglas-Peucker on the open polyline pts[first..last]. Kept interior
    * points are appended to `out`; the caller supplies the endpoints.
    * @param {Point[]} pts
@@ -12528,7 +12528,7 @@
    * @param {number} epsilon Distance tolerance, in pts' units.
    * @param {Point[]} out
    * @returns {void}
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyRdpOpen = (pts, first, last, epsilon, out) => {
     let maxDist = -1;
     let index = -1;
@@ -12538,16 +12538,16 @@
     const dy = b.y - a.y;
     const lenSq = dx * dx + dy * dy;
 
-    // Squared distances throughout, so no square roots.
+   https://kakaomames.github.io/turbowarp// Squared distances throughout, so no square roots.
     for (let i = first + 1; i < last; i++) {
       const p = pts[i];
       let dist;
       if (lenSq === 0) {
-        // Degenerate chord: fall back to distance from a.
+       https://kakaomames.github.io/turbowarp// Degenerate chord: fall back to distance from a.
         dist = (p.x - a.x) * (p.x - a.x) + (p.y - a.y) * (p.y - a.y);
       } else {
         const cross = (p.x - a.x) * dy - (p.y - a.y) * dx;
-        dist = (cross * cross) / lenSq;
+        dist = (cross * cross)https://kakaomames.github.io/turbowarp/ lenSq;
       }
       if (dist > maxDist) {
         maxDist = dist;
@@ -12562,14 +12562,14 @@
     }
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * RDP-simplify a closed loop. RDP needs an open polyline, so the ring is
    * split at two roughly antipodal vertices (farthest from loop[0], then
    * farthest from that), keeping each half non-degenerate.
    * @param {Point[]} loop
    * @param {number} epsilon Distance tolerance, in grid cells.
    * @returns {Point[]} A new simplified loop.
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyRdpLoop = (loop, epsilon) => {
     const n = loop.length;
     if (n <= 4) return loop.slice();
@@ -12601,7 +12601,7 @@
     const lo = Math.min(far1, far2);
     const hi = Math.max(far1, far2);
     if (lo === hi) return loop.slice();
-    // First half lo..hi; second half hi..lo wrapping past the end.
+   https://kakaomames.github.io/turbowarp// First half lo..hi; second half hi..lo wrapping past the end.
     const out = [];
     out.push(loop[lo]);
     polyRdpOpen(loop, lo, hi, epsilon, out);
@@ -12611,7 +12611,7 @@
     return out;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Hertel-Mehlhorn convex merge: greedily dissolve shared edges between faces
    * whenever the union stays convex and within maxVerts. Collapses earcut's
    * triangles into fewer fat convex polygons for cheaper Box2D collisions.
@@ -12620,9 +12620,9 @@
    * @param {number[][]} faces Index lists, mutated in place.
    * @param {number} maxVerts Cap on any merged face's vertex count.
    * @returns {number[][]} The same `faces` array, after merging.
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyMergeConvex = (pts, faces, maxVerts) => {
-    // Faces are CCW, so any clearly negative turn marks a reflex corner.
+   https://kakaomames.github.io/turbowarp// Faces are CCW, so any clearly negative turn marks a reflex corner.
     const isConvexFace = (face) => {
       const n = face.length;
       if (n < 3) return false;
@@ -12640,8 +12640,8 @@
       return true;
     };
 
-    // A shared edge runs a0->a1 in A and a1->a0 in B (same winding). The merged
-    // ring is A rotated to walk that edge last, then B's other vertices.
+   https://kakaomames.github.io/turbowarp// A shared edge runs a0->a1 in A and a1->a0 in B (same winding). The merged
+   https://kakaomames.github.io/turbowarp// ring is A rotated to walk that edge last, then B's other vertices.
     const tryMerge = (A, B) => {
       const nA = A.length;
       const nB = B.length;
@@ -12680,23 +12680,23 @@
     return faces;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Decompose a simple polygon (with optional holes) into convex pieces via
    * earcut + Hertel-Mehlhorn.
    * @param {Point[]} outer Open ring in grid space.
    * @param {Point[][]} holes Open rings inside `outer`; <3-vertex holes dropped.
    * @returns {Point[][]} Convex pieces, or empty if triangulation fails.
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyDecomposeWithHoles = (outer, holes) => {
     if (outer.length < 3) return [];
 
-    // Dropping a <3-vertex hole just fills it back in.
+   https://kakaomames.github.io/turbowarp// Dropping a <3-vertex hole just fills it back in.
     const validHoles = [];
     for (let i = 0; i < holes.length; i++) {
       if (holes[i].length >= 3) validHoles.push(holes[i]);
     }
 
-    // earcut input: outer then holes, flat [x,y,...]; holeIndices marks starts.
+   https://kakaomames.github.io/turbowarp// earcut input: outer then holes, flat [x,y,...]; holeIndices marks starts.
     const pts = outer.slice();
     const holeIndices = [];
     for (let i = 0; i < validHoles.length; i++) {
@@ -12710,12 +12710,12 @@
 
     const tris = earcut(coords, holeIndices, 2);
     if (tris.length === 0) {
-      // No safe fill when holes are present.
+     https://kakaomames.github.io/turbowarp// No safe fill when holes are present.
       return validHoles.length === 0 ? [outer.slice()] : [];
     }
 
-    // earcut's winding follows the input, but the merge needs CCW — must be
-    // normalised here, or merging produces garbage.
+   https://kakaomames.github.io/turbowarp// earcut's winding follows the input, but the merge needs CCW — must be
+   https://kakaomames.github.io/turbowarp// normalised here, or merging produces garbage.
     const faces = [];
     for (let t = 0; t < tris.length; t += 3) {
       let i0 = tris[t];
@@ -12741,13 +12741,13 @@
     return out;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Fan-split a convex polygon over the maxVerts budget into smaller pieces,
    * all sharing vertex 0 and overlapping by one vertex for seamless tiling.
    * @param {Point[]} poly Convex polygon.
    * @param {number} maxVerts
    * @returns {Point[][]} One or more pieces, none over maxVerts.
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyLimitVertices = (poly, maxVerts) => {
     const n = poly.length;
     if (n <= maxVerts) return [poly];
@@ -12759,20 +12759,20 @@
       const piece = [poly[0]];
       for (let k = i; k <= end; k++) piece.push(poly[k]);
       if (piece.length >= 3) out.push(piece);
-      // Resume at `end` so it's shared with the next piece's first edge.
+     https://kakaomames.github.io/turbowarp// Resume at `end` so it's shared with the next piece's first edge.
       i = end;
     }
 
     return out.length > 0 ? out : [poly];
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Drop adjacent duplicate vertices (including the wrap-around pair).
    * earcut's bridges and coordinate transforms can introduce them, and Box2D
    * rejects zero-length edges.
    * @param {Point[]} pts
    * @returns {Point[]} New array.
-   */
+   https://kakaomames.github.io/turbowarp/
   const polyDedupe = (pts) => {
     const eps = 1e-4;
     const out = [];
@@ -12802,14 +12802,14 @@
     return out;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Polygon-mode entry point: trace a drawable's costume into convex pieces in
    * the same space as the "this costume" hull, ready for definePolyFromHull
    * (each piece is a closed ring, last vertex = first). Returns null when the
    * costume yields nothing usable, so the caller falls back to the hull.
    * @param {import('scratch-render').Drawable} drawable
    * @returns {Point[][]|null}
-   */
+   https://kakaomames.github.io/turbowarp/
   const traceCostumePolygon = (drawable) => {
     const skin = drawable && drawable.skin;
     if (!skin || typeof skin.isTouchingLinear !== "function") return null;
@@ -12824,13 +12824,13 @@
 
     const size = skin.size;
     const offset = skin.rotationCenter;
-    const scaleX = drawable.scale[0] / 100;
-    const scaleY = drawable.scale[1] / -100; // Flip Y for hulls
+    const scaleX = drawable.scale[0]https://kakaomames.github.io/turbowarp/ 100;
+    const scaleY = drawable.scale[1]https://kakaomames.github.io/turbowarp/ -100;https://kakaomames.github.io/turbowarp// Flip Y for hulls
     const gxI = sampled.gxI;
     const gyI = sampled.gyI;
 
-    // Simplify, then clamp into interior indices 1..gxI / 1..gyI — without
-    // this, the midpoint rule leaves outlines half a cell out into the padding.
+   https://kakaomames.github.io/turbowarp// Simplify, then clamp into interior indices 1..gxIhttps://kakaomames.github.io/turbowarp/ 1..gyI — without
+   https://kakaomames.github.io/turbowarp// this, the midpoint rule leaves outlines half a cell out into the padding.
     const prep = (loop) => {
       const simplified = polyRdpLoop(loop, POLY_RDP_EPSILON);
       for (let s = 0; s < simplified.length; s++) {
@@ -12844,7 +12844,7 @@
 
     const result = [];
     for (let g = 0; g < groups.length; g++) {
-      // Don't let one malformed region abort the whole costume.
+     https://kakaomames.github.io/turbowarp// Don't let one malformed region abort the whole costume.
       try {
         const outer = prep(groups[g].outer);
         if (outer.length < 3) continue;
@@ -12862,17 +12862,17 @@
             let piece = capped[c];
             if (piece.length < 3) continue;
 
-            // Force CCW: the Y-flip below reverses winding, then
-            // definePolyFromHull reverses again, leaving CCW for Box2D —
-            // matching what the "this costume" hull path produces.
+           https://kakaomames.github.io/turbowarp// Force CCW: the Y-flip below reverses winding, then
+           https://kakaomames.github.io/turbowarp// definePolyFromHull reverses again, leaving CCW for Box2D —
+           https://kakaomames.github.io/turbowarp// matching what the "this costume" hull path produces.
             if (signedArea(piece) < 0) piece = piece.slice().reverse();
 
             const transformed = [];
             for (let v = 0; v < piece.length; v++) {
-              // Strip padding, normalise to [0,1], scale to skin pixels, then
-              // recentre and apply sprite scale (negative scaleY flips Y).
-              const px = ((piece[v].x - 1) / (gxI - 1)) * size[0];
-              const py = ((piece[v].y - 1) / (gyI - 1)) * size[1];
+             https://kakaomames.github.io/turbowarp// Strip padding, normalise to [0,1], scale to skin pixels, then
+             https://kakaomames.github.io/turbowarp// recentre and apply sprite scale (negative scaleY flips Y).
+              const px = ((piece[v].x - 1)https://kakaomames.github.io/turbowarp/ (gxI - 1)) * size[0];
+              const py = ((piece[v].y - 1)https://kakaomames.github.io/turbowarp/ (gyI - 1)) * size[1];
               transformed.push({
                 x: (px - offset[0]) * scaleX,
                 y: (py - offset[1]) * scaleY,
@@ -12882,16 +12882,16 @@
             const cleaned = polyDedupe(transformed);
             if (cleaned.length < 3) continue;
             if (Math.abs(signedArea(cleaned)) < 1e-3) continue;
-            // definePolyFromHull expects last vertex = first.
+           https://kakaomames.github.io/turbowarp// definePolyFromHull expects last vertex = first.
             cleaned.push({ x: cleaned[0].x, y: cleaned[0].y });
             result.push(cleaned);
           }
         }
       } catch (e) {
-        // Other groups and the hull fallback still apply.
+       https://kakaomames.github.io/turbowarp// Other groups and the hull fallback still apply.
       }
     }
-    // Too many fixtures collide slowly; fall back to the single hull.
+   https://kakaomames.github.io/turbowarp// Too many fixtures collide slowly; fall back to the single hull.
     if (result.length > POLY_MAX_FIXTURES) return null;
     return result.length > 0 ? result : null;
   };
@@ -12904,8 +12904,8 @@
     fixDef.filter.categoryBits = bodyCategoryBits;
     fixDef.filter.maskBits = bodyMaskBits;
 
-    bodyDef.position.x = (x + _scroll.x) / zoom;
-    bodyDef.position.y = (y + _scroll.y) / zoom;
+    bodyDef.position.x = (x + _scroll.x)https://kakaomames.github.io/turbowarp/ zoom;
+    bodyDef.position.y = (y + _scroll.y)https://kakaomames.github.io/turbowarp/ zoom;
     bodyDef.angle = (90 - dir) * toRad;
 
     const body = world.CreateBody(bodyDef);
@@ -12932,24 +12932,24 @@
     dir = (90 - dir) * toRad;
 
     if (ftype === "Impulse") {
-      const center = body.GetLocalCenter(); // get the mass data from you body
+      const center = body.GetLocalCenter();https://kakaomames.github.io/turbowarp// get the mass data from you body
 
       body.ApplyImpulse(
         { x: pow * Math.cos(dir), y: pow * Math.sin(dir) },
-        body.GetWorldPoint({ x: x / zoom + center.x, y: y / zoom + center.y })
+        body.GetWorldPoint({ x: xhttps://kakaomames.github.io/turbowarp/ zoom + center.x, y: yhttps://kakaomames.github.io/turbowarp/ zoom + center.y })
       );
     } else if (ftype === "World Impulse") {
       body.ApplyForce(
         { x: pow * Math.cos(dir), y: pow * Math.sin(dir) },
-        { x: x / zoom, y: y / zoom }
+        { x: xhttps://kakaomames.github.io/turbowarp/ zoom, y: yhttps://kakaomames.github.io/turbowarp/ zoom }
       );
     }
   };
 
-  // ['', 'Define Spring Length: %n Damping: %n  Freq: %n', '_defineSpring', 100, 0.5, 8],
+ https://kakaomames.github.io/turbowarp// ['', 'Define Spring Length: %n Damping: %n  Freq: %n', '_defineSpring', 100, 0.5, 8],
   const defSpring = { len: 100, damp: 0.7, freq: 5 };
   const _defineSpring = function (len, damp, freq) {
-    defSpring.len = len < 0.1 ? 0.1 : len / zoom;
+    defSpring.len = len < 0.1 ? 0.1 : lenhttps://kakaomames.github.io/turbowarp/ zoom;
     defSpring.damp = damp < 0 ? 0.7 : damp;
     defSpring.freq = freq > 0 ? freq : 5;
   };
@@ -12964,7 +12964,7 @@
     x2,
     y2
   ) {
-    // if (jName.length > 0) ext.destroyJoint(jName);
+   https://kakaomames.github.io/turbowarp// if (jName.length > 0) ext.destroyJoint(jName);
 
     if (!bodyID) bodyID = null;
     if (!bodyID2) bodyID2 = null;
@@ -12986,23 +12986,23 @@
         md.frequencyHz = defSpring.freq;
         md.bodyA = body;
         md.bodyB = body2;
-        md.localAnchorA = { x: x / zoom, y: y / zoom };
-        md.localAnchorB = { x: x2 / zoom, y: y2 / zoom };
+        md.localAnchorA = { x: xhttps://kakaomames.github.io/turbowarp/ zoom, y: yhttps://kakaomames.github.io/turbowarp/ zoom };
+        md.localAnchorB = { x: x2https://kakaomames.github.io/turbowarp/ zoom, y: y2https://kakaomames.github.io/turbowarp/ zoom };
         break;
 
       case "Rotating":
         md = new Box2D.Dynamics.Joints.b2RevoluteJointDef();
         md.bodyA = body;
         md.bodyB = body2;
-        md.localAnchorA = { x: x / zoom, y: y / zoom };
+        md.localAnchorA = { x: xhttps://kakaomames.github.io/turbowarp/ zoom, y: yhttps://kakaomames.github.io/turbowarp/ zoom };
         if (x2 === null) {
           if (body2) {
-            md.localAnchorB = body2.GetLocalPoint(body.GetPosition()); // Wheel Type Joint...
+            md.localAnchorB = body2.GetLocalPoint(body.GetPosition());https://kakaomames.github.io/turbowarp// Wheel Type Joint...
           } else {
-            md.localAnchorB = body.GetWorldPoint({ x: x / zoom, y: y / zoom });
+            md.localAnchorB = body.GetWorldPoint({ x: xhttps://kakaomames.github.io/turbowarp/ zoom, y: yhttps://kakaomames.github.io/turbowarp/ zoom });
           }
         } else {
-          md.localAnchorB = { x: x2 / zoom, y: y2 / zoom };
+          md.localAnchorB = { x: x2https://kakaomames.github.io/turbowarp/ zoom, y: y2https://kakaomames.github.io/turbowarp/ zoom };
         }
         break;
 
@@ -13010,10 +13010,10 @@
         md = new b2MouseJointDef();
         if (bodyID) {
           md.bodyB = body;
-          md.target.Set(x / zoom, y / zoom);
+          md.target.Set(xhttps://kakaomames.github.io/turbowarp/ zoom, yhttps://kakaomames.github.io/turbowarp/ zoom);
         } else {
           md.bodyB = body2;
-          md.target.Set(x2 / zoom, y2 / zoom);
+          md.target.Set(x2https://kakaomames.github.io/turbowarp/ zoom, y2https://kakaomames.github.io/turbowarp/ zoom);
         }
         md.bodyA = world.GetGroundBody();
         md.collideConnected = true;
@@ -13021,8 +13021,8 @@
         break;
     }
 
-    // md.collideConnected = true;
-    // md.maxForce = 300.0 * body.GetMass();
+   https://kakaomames.github.io/turbowarp// md.collideConnected = true;
+   https://kakaomames.github.io/turbowarp// md.maxForce = 300.0 * body.GetMass();
     const joint = world.CreateJoint(md);
     if (bodyID) {
       body.SetAwake(true);
@@ -13031,30 +13031,30 @@
       body2.SetAwake(true);
     }
 
-    // if (!jName) {
-    //     ujidSeq++;
-    //     jName = `_${ujidSeq}`;
-    // }
-    // joints[jName] = joint;
+   https://kakaomames.github.io/turbowarp// if (!jName) {
+   https://kakaomames.github.io/turbowarp//     ujidSeq++;
+   https://kakaomames.github.io/turbowarp//     jName = `_${ujidSeq}`;
+   https://kakaomames.github.io/turbowarp// }
+   https://kakaomames.github.io/turbowarp// joints[jName] = joint;
     return joint;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Set the X and Y coordinates (No Fencing)
    * @param {!RenderedTarget} rt the renderedTarget.
    * @param {!number} x New X coordinate, in Scratch coordinates.
    * @param {!number} y New Y coordinate, in Scratch coordinates.
-   * @param {?boolean} force Force setting X/Y, in case of dragging
-   */
+   * @param {?boolean} force Force setting https://kakaomames.github.io/turbowarp/Y, in case of dragging
+   https://kakaomames.github.io/turbowarp/
   const _setXY = function (rt, x, y, force) {
     if (rt.isStage) return;
     if (rt.dragging && !force) return;
     const oldX = rt.x;
     const oldY = rt.y;
     if (rt.renderer) {
-      // const position = rt.renderer.getFencedPositionOfDrawable(rt.drawableID, [x, y]);
-      rt.x = x; // position[0];
-      rt.y = y; // position[1];
+     https://kakaomames.github.io/turbowarp// const position = rt.renderer.getFencedPositionOfDrawable(rt.drawableID, [x, y]);
+      rt.x = x;https://kakaomames.github.io/turbowarp// position[0];
+      rt.y = y;https://kakaomames.github.io/turbowarp// position[1];
 
       rt.renderer.updateDrawableProperties(rt.drawableID, {
         position: [x, y],
@@ -13078,7 +13078,7 @@
   };
 
   const _setStageType = function (type) {
-    // Clear down previous stage
+   https://kakaomames.github.io/turbowarp// Clear down previous stage
     if (stageBodies.length > 0) {
       for (const stageBodyID in stageBodies) {
         world.DestroyBody(stageBodies[stageBodyID]);
@@ -13086,47 +13086,47 @@
       }
     }
 
-    // Build up new stage
+   https://kakaomames.github.io/turbowarp// Build up new stage
     bodyDef.type = b2Body.b2_staticBody;
     fixDef.shape = new b2PolygonShape();
     bodyDef.angle = 0;
 
     const { stageWidth, stageHeight } = Scratch.vm.runtime;
     const stageBounds = {
-      left: -stageWidth / 2,
-      right: stageWidth / 2,
-      top: stageHeight / 2,
-      bottom: -stageHeight / 2,
+      left: -stageWidthhttps://kakaomames.github.io/turbowarp/ 2,
+      right: stageWidthhttps://kakaomames.github.io/turbowarp/ 2,
+      top: stageHeighthttps://kakaomames.github.io/turbowarp/ 2,
+      bottom: -stageHeighthttps://kakaomames.github.io/turbowarp/ 2,
     };
 
     if (type === STAGE_TYPE_OPTIONS.BOXED) {
-      // For the ceiling boxes...
-      // use a width equivalent to the stage width + 10, with a thickness of 10
-      fixDef.shape.SetAsBox((stageWidth + 10) / zoom, 10 / zoom);
-      // create one such box at the bottom of the stage, accounting for thickness...
-      bodyDef.position.Set(0, (stageBounds.bottom - 10) / zoom);
+     https://kakaomames.github.io/turbowarp// For the ceiling boxes...
+     https://kakaomames.github.io/turbowarp// use a width equivalent to the stage width + 10, with a thickness of 10
+      fixDef.shape.SetAsBox((stageWidth + 10)https://kakaomames.github.io/turbowarp/ zoom, 10https://kakaomames.github.io/turbowarp/ zoom);
+     https://kakaomames.github.io/turbowarp// create one such box at the bottom of the stage, accounting for thickness...
+      bodyDef.position.Set(0, (stageBounds.bottom - 10)https://kakaomames.github.io/turbowarp/ zoom);
       createStageBody();
-      // and one 820 units above the top of the stage.
-      bodyDef.position.Set(0, (stageBounds.top + 820) / zoom);
+     https://kakaomames.github.io/turbowarp// and one 820 units above the top of the stage.
+      bodyDef.position.Set(0, (stageBounds.top + 820)https://kakaomames.github.io/turbowarp/ zoom);
       createStageBody();
-      // For the left & right wall boxes...
-      // use a height equivalent to the stage height + 820, with a thickness of 10
-      fixDef.shape.SetAsBox(10 / zoom, (stageHeight + 820) / zoom);
-      // create a box at the left of the stage...
-      bodyDef.position.Set((stageBounds.left - 10) / zoom, 0);
+     https://kakaomames.github.io/turbowarp// For the left & right wall boxes...
+     https://kakaomames.github.io/turbowarp// use a height equivalent to the stage height + 820, with a thickness of 10
+      fixDef.shape.SetAsBox(10https://kakaomames.github.io/turbowarp/ zoom, (stageHeight + 820)https://kakaomames.github.io/turbowarp/ zoom);
+     https://kakaomames.github.io/turbowarp// create a box at the left of the stage...
+      bodyDef.position.Set((stageBounds.left - 10)https://kakaomames.github.io/turbowarp/ zoom, 0);
       createStageBody();
-      // and one at the right of the stage.
-      bodyDef.position.Set((stageBounds.right + 10) / zoom, 0);
+     https://kakaomames.github.io/turbowarp// and one at the right of the stage.
+      bodyDef.position.Set((stageBounds.right + 10)https://kakaomames.github.io/turbowarp/ zoom, 0);
       createStageBody();
     } else if (type === STAGE_TYPE_OPTIONS.FLOOR) {
-      // All floor boxes are positioned at the bottom of the stage, accounting for
-      // the thickness of 100.
-      const floorY = (stageBounds.bottom - 100) / zoom;
+     https://kakaomames.github.io/turbowarp// All floor boxes are positioned at the bottom of the stage, accounting for
+     https://kakaomames.github.io/turbowarp// the thickness of 100.
+      const floorY = (stageBounds.bottom - 100)https://kakaomames.github.io/turbowarp/ zoom;
 
-      // The floor boxes have a width of the stage width + 4520 units, and a
-      // thickness of 100 units.
-      fixDef.shape.SetAsBox((stageWidth + 4520) / zoom, 100 / zoom);
-      // Floor boxes are created at different intervals throughout the bottom of the stage.
+     https://kakaomames.github.io/turbowarp// The floor boxes have a width of the stage width + 4520 units, and a
+     https://kakaomames.github.io/turbowarp// thickness of 100 units.
+      fixDef.shape.SetAsBox((stageWidth + 4520)https://kakaomames.github.io/turbowarp/ zoom, 100https://kakaomames.github.io/turbowarp/ zoom);
+     https://kakaomames.github.io/turbowarp// Floor boxes are created at different intervals throughout the bottom of the stage.
       bodyDef.position.Set(0, floorY);
       createStageBody();
       bodyDef.position.Set(stageBounds.left - 5000, floorY);
@@ -13146,39 +13146,39 @@
     }
   };
 
-  /* eslint-enable */
+ https://kakaomames.github.io/turbowarp/* eslint-enable https://kakaomames.github.io/turbowarp/
 
   let tickRate = 30;
 
   const blockIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOmE9Imh0dHA6Ly9ucy5hZG9iZS5jb20vQWRvYmVTVkdWaWV3ZXJFeHRlbnNpb25zLzMuMC8iDQoJIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSItMy43IC0zLjcgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTMuNyAtMy43IDQwIDQwIg0KCSB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxkZWZzPg0KPC9kZWZzPg0KPHJlY3QgeD0iOC45IiB5PSIxLjUiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzE2OUZCMCIgc3Ryb2tlLXdpZHRoPSIzIiB3aWR0aD0iMTQuOCIgaGVpZ2h0PSIxNC44Ii8+DQo8cmVjdCB4PSIxLjUiIHk9IjE2LjMiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzE2OUZCMCIgc3Ryb2tlLXdpZHRoPSIzIiB3aWR0aD0iMTQuOCIgaGVpZ2h0PSIxNC44Ii8+DQo8cmVjdCB4PSIxNi4zIiB5PSIxNi4zIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMxNjlGQjAiIHN0cm9rZS13aWR0aD0iMyIgd2lkdGg9IjE0LjgiIGhlaWdodD0iMTQuOCIvPg0KPC9zdmc+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOmE9Imh0dHA6Ly9ucy5hZG9iZS5jb20vQWRvYmVTVkdWaWV3ZXJFeHRlbnNpb25zLzMuMC8iDQoJIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSItMy43IC0zLjcgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTMuNyAtMy43IDQwIDQwIg0KCSB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxkZWZzPg0KPC9kZWZzPg0KPHJlY3QgeD0iOC45IiB5PSIxLjUiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzE2OUZCMCIgc3Ryb2tlLXdpZHRoPSIzIiB3aWR0aD0iMTQuOCIgaGVpZ2h0PSIxNC44Ii8+DQo8cmVjdCB4PSIxLjUiIHk9IjE2LjMiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzE2OUZCMCIgc3Ryb2tlLXdpZHRoPSIzIiB3aWR0aD0iMTQuOCIgaGVpZ2h0PSIxNC44Ii8+DQo8cmVjdCB4PSIxNi4zIiB5PSIxNi4zIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMxNjlGQjAiIHN0cm9rZS13aWR0aD0iMyIgd2lkdGg9IjE0LjgiIGhlaWdodD0iMTQuOCIvPg0KPC9zdmc+";
   const menuIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOmE9Imh0dHA6Ly9ucy5hZG9iZS5jb20vQWRvYmVTVkdWaWV3ZXJFeHRlbnNpb25zLzMuMC8iDQoJIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSItMy43IC0zLjcgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTMuNyAtMy43IDQwIDQwIg0KCSB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxkZWZzPg0KPC9kZWZzPg0KPHJlY3QgeD0iOC45IiB5PSIxLjUiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzE2OUZCMCIgc3Ryb2tlLXdpZHRoPSIzIiB3aWR0aD0iMTQuOCIgaGVpZ2h0PSIxNC44Ii8+DQo8cmVjdCB4PSIxLjUiIHk9IjE2LjMiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzE2OUZCMCIgc3Ryb2tlLXdpZHRoPSIzIiB3aWR0aD0iMTQuOCIgaGVpZ2h0PSIxNC44Ii8+DQo8cmVjdCB4PSIxNi4zIiB5PSIxNi4zIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMxNjlGQjAiIHN0cm9rZS13aWR0aD0iMyIgd2lkdGg9IjE0LjgiIGhlaWdodD0iMTQuOCIvPg0KPC9zdmc+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOmE9Imh0dHA6Ly9ucy5hZG9iZS5jb20vQWRvYmVTVkdWaWV3ZXJFeHRlbnNpb25zLzMuMC8iDQoJIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSItMy43IC0zLjcgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTMuNyAtMy43IDQwIDQwIg0KCSB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxkZWZzPg0KPC9kZWZzPg0KPHJlY3QgeD0iOC45IiB5PSIxLjUiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzE2OUZCMCIgc3Ryb2tlLXdpZHRoPSIzIiB3aWR0aD0iMTQuOCIgaGVpZ2h0PSIxNC44Ii8+DQo8cmVjdCB4PSIxLjUiIHk9IjE2LjMiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzE2OUZCMCIgc3Ryb2tlLXdpZHRoPSIzIiB3aWR0aD0iMTQuOCIgaGVpZ2h0PSIxNC44Ii8+DQo8cmVjdCB4PSIxNi4zIiB5PSIxNi4zIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMxNjlGQjAiIHN0cm9rZS13aWR0aD0iMyIgd2lkdGg9IjE0LjgiIGhlaWdodD0iMTQuOCIvPg0KPC9zdmc+";
   const vm = Scratch.vm;
 
   class Scratch3Griffpatch {
     constructor() {
-      /**
+     https://kakaomames.github.io/turbowarp/**
        * The runtime instantiating this block package.
        * @type {Runtime}
-       */
+       https://kakaomames.github.io/turbowarp/
       this.runtime = vm.runtime;
 
-      // Clear target motion state values when the project starts.
+     https://kakaomames.github.io/turbowarp// Clear target motion state values when the project starts.
       this.runtime.on("PROJECT_START", this.reset.bind(this));
 
       world = new b2World(
-        new b2Vec2(0, -10), // gravity (10)
-        true // allow sleep
+        new b2Vec2(0, -10),https://kakaomames.github.io/turbowarp// gravity (10)
+        truehttps://kakaomames.github.io/turbowarp// allow sleep
       );
 
-      zoom = 50; // scale;
+      zoom = 50;https://kakaomames.github.io/turbowarp// scale;
 
       this.map = {};
 
-      fixDef.density = 1.0; // 1.0
-      fixDef.friction = 0.5; // 0.5
-      fixDef.restitution = 0.2; // 0.2
+      fixDef.density = 1.0;https://kakaomames.github.io/turbowarp// 1.0
+      fixDef.friction = 0.5;https://kakaomames.github.io/turbowarp// 0.5
+      fixDef.restitution = 0.2;https://kakaomames.github.io/turbowarp// 0.2
 
       _setStageType(STAGE_TYPE_OPTIONS.BOXED);
     }
@@ -13194,20 +13194,20 @@
         delete prevPos[body];
       }
       tickRate = 30;
-      // todo: delete joins?
+     https://kakaomames.github.io/turbowarp// todo: delete joins?
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * The key to load & store a target's music-related state.
      * @type {string}
-     */
+     https://kakaomames.github.io/turbowarp/
     static get STATE_KEY() {
       return "Scratch.Griffpatch";
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @returns {object} metadata for this extension and its blocks.
-     */
+     https://kakaomames.github.io/turbowarp/
     getInfo() {
       return {
         id: "griffpatch",
@@ -13216,11 +13216,11 @@
           default: "Physics",
           description: "Label for the Griffpatch extension category",
         }),
-        docsURI: "./box2d",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/box2d",
         menuIconURI: menuIconURI,
         blockIconURI: blockIconURI,
         blocks: [
-          // Global Setup ------------------
+         https://kakaomames.github.io/turbowarp// Global Setup ------------------
 
           {
             opcode: "setStage",
@@ -13311,32 +13311,32 @@
             arguments: {},
             filter: [Scratch.TargetType.SPRITE],
           },
-          // {
-          //     opcode: 'setPhysics',
-          //     blockType: BlockType.COMMAND,
-          //     text: Scratch.translate({
-          //         id: 'griffpatch.setPhysics',
-          //         default: 'enable physics for sprite [shape]',
-          //         description: 'Enable Physics for this Sprite'
-          //     }),
-          //     arguments: {
-          //         shape: {
-          //             type: ArgumentType.STRING,
-          //             menu: 'ShapeTypes',
-          //             defaultValue: 'costume'
-          //         }
-          //     }
-          // },
-          // {
-          //     opcode: 'setPhysicsAll',
-          //     blockType: BlockType.COMMAND,
-          //     text: Scratch.translate({
-          //         id: 'griffpatch.setPhysicsAll',
-          //         default: 'enable physics for all sprites',
-          //         description: 'Enable Physics For All Sprites'
-          //     })
-          // },
-          //
+         https://kakaomames.github.io/turbowarp// {
+         https://kakaomames.github.io/turbowarp//     opcode: 'setPhysics',
+         https://kakaomames.github.io/turbowarp//     blockType: BlockType.COMMAND,
+         https://kakaomames.github.io/turbowarp//     text: Scratch.translate({
+         https://kakaomames.github.io/turbowarp//         id: 'griffpatch.setPhysics',
+         https://kakaomames.github.io/turbowarp//         default: 'enable physics for sprite [shape]',
+         https://kakaomames.github.io/turbowarp//         description: 'Enable Physics for this Sprite'
+         https://kakaomames.github.io/turbowarp//     }),
+         https://kakaomames.github.io/turbowarp//     arguments: {
+         https://kakaomames.github.io/turbowarp//         shape: {
+         https://kakaomames.github.io/turbowarp//             type: ArgumentType.STRING,
+         https://kakaomames.github.io/turbowarp//             menu: 'ShapeTypes',
+         https://kakaomames.github.io/turbowarp//             defaultValue: 'costume'
+         https://kakaomames.github.io/turbowarp//         }
+         https://kakaomames.github.io/turbowarp//     }
+         https://kakaomames.github.io/turbowarp// },
+         https://kakaomames.github.io/turbowarp// {
+         https://kakaomames.github.io/turbowarp//     opcode: 'setPhysicsAll',
+         https://kakaomames.github.io/turbowarp//     blockType: BlockType.COMMAND,
+         https://kakaomames.github.io/turbowarp//     text: Scratch.translate({
+         https://kakaomames.github.io/turbowarp//         id: 'griffpatch.setPhysicsAll',
+         https://kakaomames.github.io/turbowarp//         default: 'enable physics for all sprites',
+         https://kakaomames.github.io/turbowarp//         description: 'Enable Physics For All Sprites'
+         https://kakaomames.github.io/turbowarp//     })
+         https://kakaomames.github.io/turbowarp// },
+         https://kakaomames.github.io/turbowarp//
           "---",
 
           {
@@ -13353,7 +13353,7 @@
             blockType: BlockType.COMMAND,
             text: Scratch.translate({
               id: "griffpatch.setTickRate",
-              default: "set simulation rate to [rate]/s",
+              default: "set simulation rate to [ratehttps://kakaomames.github.io/turbowarp/s",
               description:
                 "Set the number of physics simulation steps to run per second",
             }),
@@ -13405,8 +13405,8 @@
 
           "---",
 
-          // applyForce (target, ftype, x, y, dir, pow) {
-          // applyAngForce (target, pow) {
+         https://kakaomames.github.io/turbowarp// applyForce (target, ftype, x, y, dir, pow) {
+         https://kakaomames.github.io/turbowarp// applyAngForce (target, pow) {
 
           {
             opcode: "setVelocity",
@@ -13740,25 +13740,25 @@
             filter: [Scratch.TargetType.SPRITE],
             hideFromPalette: true,
           },
-          // {
-          //     opcode: 'pinSprite',
-          //     blockType: BlockType.COMMAND,
-          //     text: Scratch.translate({
-          //         id: 'griffpatch.pinSprite',
-          //         default: 'pin to world at sprite\'s x: [x] y: [y]',
-          //         description: 'Pin the sprite'
-          //     }),
-          //     arguments: {
-          //         x: {
-          //             type: ArgumentType.NUMBER,
-          //             defaultValue: 0
-          //         },
-          //         y: {
-          //             type: ArgumentType.NUMBER,
-          //             defaultValue: 0
-          //         }
-          //     }
-          // },
+         https://kakaomames.github.io/turbowarp// {
+         https://kakaomames.github.io/turbowarp//     opcode: 'pinSprite',
+         https://kakaomames.github.io/turbowarp//     blockType: BlockType.COMMAND,
+         https://kakaomames.github.io/turbowarp//     text: Scratch.translate({
+         https://kakaomames.github.io/turbowarp//         id: 'griffpatch.pinSprite',
+         https://kakaomames.github.io/turbowarp//         default: 'pin to world at sprite\'s x: [x] y: [y]',
+         https://kakaomames.github.io/turbowarp//         description: 'Pin the sprite'
+         https://kakaomames.github.io/turbowarp//     }),
+         https://kakaomames.github.io/turbowarp//     arguments: {
+         https://kakaomames.github.io/turbowarp//         x: {
+         https://kakaomames.github.io/turbowarp//             type: ArgumentType.NUMBER,
+         https://kakaomames.github.io/turbowarp//             defaultValue: 0
+         https://kakaomames.github.io/turbowarp//         },
+         https://kakaomames.github.io/turbowarp//         y: {
+         https://kakaomames.github.io/turbowarp//             type: ArgumentType.NUMBER,
+         https://kakaomames.github.io/turbowarp//             defaultValue: 0
+         https://kakaomames.github.io/turbowarp//         }
+         https://kakaomames.github.io/turbowarp//     }
+         https://kakaomames.github.io/turbowarp// },
 
           "---",
 
@@ -13780,7 +13780,7 @@
             filter: [Scratch.TargetType.SPRITE],
           },
 
-          // Scene Scrolling -------------------
+         https://kakaomames.github.io/turbowarp// Scene Scrolling -------------------
 
           "---",
 
@@ -13937,43 +13937,43 @@
       ];
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Play a drum sound for some number of beats.
      * @property {number} x - x offset.
      * @property {number} y - y offset.
-     */
+     https://kakaomames.github.io/turbowarp/
     doTick() {
-      // args, util) {
-      // this._playDrumForBeats(args.DRUM, args.BEATS, util);
-      // if (util.runtime.audioEngine === null) return;
-      // if (util.target.sprite.soundBank === null) return;
+     https://kakaomames.github.io/turbowarp// args, util) {
+     https://kakaomames.github.io/turbowarp// this._playDrumForBeats(args.DRUM, args.BEATS, util);
+     https://kakaomames.github.io/turbowarp// if (util.runtime.audioEngine === null) return;
+     https://kakaomames.github.io/turbowarp// if (util.target.sprite.soundBank === null) return;
 
-      // const dx = Cast.toNumber(args.x);
-      // const dy = Cast.toNumber(args.y);
+     https://kakaomames.github.io/turbowarp// const dx = Cast.toNumber(args.x);
+     https://kakaomames.github.io/turbowarp// const dy = Cast.toNumber(args.y);
 
-      // const allTargets = this.runtime.targets;
-      // if (allTargets === null) return;
-      // for (let i = 0; i < allTargets.length; i++) {
-      //     const target = allTargets[i];
-      //     if (!target.isStage) {
-      //         target.setXY(target.x + dx, target.y + dy);
-      //     }
-      // }
+     https://kakaomames.github.io/turbowarp// const allTargets = this.runtime.targets;
+     https://kakaomames.github.io/turbowarp// if (allTargets === null) return;
+     https://kakaomames.github.io/turbowarp// for (let i = 0; i < allTargets.length; i++) {
+     https://kakaomames.github.io/turbowarp//     const target = allTargets[i];
+     https://kakaomames.github.io/turbowarp//     if (!target.isStage) {
+     https://kakaomames.github.io/turbowarp//         target.setXY(target.x + dx, target.y + dy);
+     https://kakaomames.github.io/turbowarp//     }
+     https://kakaomames.github.io/turbowarp// }
 
-      // util.target.setXY(util.target.x + dx, util.target.y + dy);
+     https://kakaomames.github.io/turbowarp// util.target.setXY(util.target.x + dx, util.target.y + dy);
 
-      // Matter.Engine.update(this.engine, 1000 / 30);
+     https://kakaomames.github.io/turbowarp// Matter.Engine.update(this.engine, 1000https://kakaomames.github.io/turbowarp/ 30);
       this._checkMoved();
 
-      // world.Step(1 / 30, 10, 10);
-      world.Step(1 / tickRate, 10, 10);
+     https://kakaomames.github.io/turbowarp// world.Step(1https://kakaomames.github.io/turbowarp/ 30, 10, 10);
+      world.Step(1https://kakaomames.github.io/turbowarp/ tickRate, 10, 10);
       world.ClearForces();
 
       for (const targetID in bodies) {
         const body = bodies[targetID];
         const target = this.runtime.getTargetById(targetID);
         if (!target) {
-          // Drop target from simulation
+         https://kakaomames.github.io/turbowarp// Drop target from simulation
           world.DestroyBody(body);
           delete bodies[targetID];
           delete prevPos[targetID];
@@ -13988,7 +13988,7 @@
           position.y * zoom - _scroll.y
         );
         if (target.rotationStyle === ROTATION_STYLE_ALL_AROUND) {
-          target.setDirection(90 - body.GetAngle() / toRad);
+          target.setDirection(90 - body.GetAngle()https://kakaomames.github.io/turbowarp/ toRad);
         }
 
         prevPos[targetID] = { x: target.x, y: target.y, dir: target.direction };
@@ -14012,7 +14012,7 @@
         const body = bodies[targetID];
         const target = this.runtime.getTargetById(targetID);
         if (!target) {
-          // Drop target from simulation
+         https://kakaomames.github.io/turbowarp// Drop target from simulation
           world.DestroyBody(body);
           delete bodies[targetID];
           delete prevPos[targetID];
@@ -14025,8 +14025,8 @@
 
         if (prev && (prev.x !== target.x || prev.y !== target.y)) {
           const pos = new b2Vec2(
-            (target.x + _scroll.x) / zoom,
-            (target.y + _scroll.y) / zoom
+            (target.x + _scroll.x)https://kakaomames.github.io/turbowarp/ zoom,
+            (target.y + _scroll.y)https://kakaomames.github.io/turbowarp/ zoom
           );
           this._setPosition(body, pos);
           if (!fixedRotation) {
@@ -14040,11 +14040,11 @@
       }
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Play a drum sound for some number of beats.
      * @property {number} x - x offset.
      * @property {number} y - y offset.
-     */
+     https://kakaomames.github.io/turbowarp/
     setPhysicsAll() {
       const allTargets = this.runtime.targets;
       if (allTargets === null) return;
@@ -14056,19 +14056,19 @@
       }
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Play a drum sound for some number of beats.
      * @param {object} args the block arguments.
      * @param {object} util utility object provided by the runtime.
      * @property {string} shape - the shape
-     */
+     https://kakaomames.github.io/turbowarp/
     setPhysics(args, util) {
-      // this._playDrumForBeats(args.DRUM, args.BEATS, util);
-      // if (util.runtime.audioEngine === null) return;
-      // if (util.target.sprite.soundBank === null) return;
+     https://kakaomames.github.io/turbowarp// this._playDrumForBeats(args.DRUM, args.BEATS, util);
+     https://kakaomames.github.io/turbowarp// if (util.runtime.audioEngine === null) return;
+     https://kakaomames.github.io/turbowarp// if (util.target.sprite.soundBank === null) return;
 
-      // const dx = Cast.toNumber(args.x);
-      // const dy = Cast.toNumber(args.y);
+     https://kakaomames.github.io/turbowarp// const dx = Cast.toNumber(args.x);
+     https://kakaomames.github.io/turbowarp// const dy = Cast.toNumber(args.y);
 
       if (args.shape === SHAPE_TYPE_OPTIONS.ALL) {
         this.setPhysicsAll();
@@ -14086,25 +14086,25 @@
       const r = this.runtime.renderer;
       const drawable = r._allDrawables[target.drawableID];
 
-      // Tell the Drawable about its updated convex hullPoints, if necessary.
+     https://kakaomames.github.io/turbowarp// Tell the Drawable about its updated convex hullPoints, if necessary.
       if (drawable.needsConvexHullPoints()) {
         const points = r._getConvexHullPointsForDrawable(target.drawableID);
         drawable.setConvexHullPoints(points);
       }
 
-      // if (drawable._transformDirty) {
-      //     drawable._calculateTransform();
-      // }
-      // const points = drawable._getTransformedHullPoints();
-      //
-      // const hullPoints = [];
-      // for (const i in points) {
-      //     hullPoints.push({x: points[i][0] - target.x, y: points[i][1] - target.y});
-      // }
+     https://kakaomames.github.io/turbowarp// if (drawable._transformDirty) {
+     https://kakaomames.github.io/turbowarp//     drawable._calculateTransform();
+     https://kakaomames.github.io/turbowarp// }
+     https://kakaomames.github.io/turbowarp// const points = drawable._getTransformedHullPoints();
+     https://kakaomames.github.io/turbowarp//
+     https://kakaomames.github.io/turbowarp// const hullPoints = [];
+     https://kakaomames.github.io/turbowarp// for (const i in points) {
+     https://kakaomames.github.io/turbowarp//     hullPoints.push({x: points[i][0] - target.x, y: points[i][1] - target.y});
+     https://kakaomames.github.io/turbowarp// }
 
       const points = drawable._convexHullPoints;
-      const scaleX = drawable.scale[0] / 100;
-      const scaleY = drawable.scale[1] / -100; // Flip Y for hulls
+      const scaleX = drawable.scale[0]https://kakaomames.github.io/turbowarp/ 100;
+      const scaleY = drawable.scale[1]https://kakaomames.github.io/turbowarp/ -100;https://kakaomames.github.io/turbowarp// Flip Y for hulls
       const offset = drawable.skin.rotationCenter;
       let allHulls = null;
 
@@ -14112,11 +14112,11 @@
         fixDef.shape = new b2CircleShape();
         const size = drawable.skin.size;
         fixDef.shape.SetRadius(
-          (size[0] * Math.abs(scaleX) + size[1] * Math.abs(scaleY)) / 4.0 / zoom
+          (size[0] * Math.abs(scaleX) + size[1] * Math.abs(scaleY))https://kakaomames.github.io/turbowarp/ 4.0https://kakaomames.github.io/turbowarp/ zoom
         );
-        // fixDef.shape.SetRadius((drawable.getBounds().width / 2) / zoom);
+       https://kakaomames.github.io/turbowarp// fixDef.shape.SetRadius((drawable.getBounds().widthhttps://kakaomames.github.io/turbowarp/ 2)https://kakaomames.github.io/turbowarp/ zoom);
       } else if (shape === SHAPE_TYPE_OPTIONS.POLYGON) {
-        // Trace the costume silhouette into convex polygons (concave-capable).
+       https://kakaomames.github.io/turbowarp// Trace the costume silhouette into convex polygons (concave-capable).
         let traced = null;
         try {
           traced = traceCostumePolygon(drawable);
@@ -14128,8 +14128,8 @@
           definePolyFromHull(traced[0]);
           allHulls = traced;
         } else {
-          // Tracing produced nothing usable (empty or degenerate costume):
-          // fall back to the convex hull, same as "this costume" mode.
+         https://kakaomames.github.io/turbowarp// Tracing produced nothing usable (empty or degenerate costume):
+         https://kakaomames.github.io/turbowarp// fall back to the convex hull, same as "this costume" mode.
           const hullPoints = [];
           for (const i in points) {
             hullPoints.push({
@@ -14219,7 +14219,7 @@
         body = this.setPhysicsFor(util.target);
       }
 
-      body.GetFixtureList().SetDensity(Cast.toNumber(args.density) / 100.0);
+      body.GetFixtureList().SetDensity(Cast.toNumber(args.density)https://kakaomames.github.io/turbowarp/ 100.0);
       body.ResetMassData();
     }
 
@@ -14238,7 +14238,7 @@
         body = this.setPhysicsFor(util.target);
       }
 
-      body.GetFixtureList().SetFriction(Cast.toNumber(args.friction) / 100.0);
+      body.GetFixtureList().SetFriction(Cast.toNumber(args.friction)https://kakaomames.github.io/turbowarp/ 100.0);
       body.ResetMassData();
     }
 
@@ -14259,7 +14259,7 @@
 
       body
         .GetFixtureList()
-        .SetRestitution(Cast.toNumber(args.restitution) / 100.0);
+        .SetRestitution(Cast.toNumber(args.restitution)https://kakaomames.github.io/turbowarp/ 100.0);
       body.ResetMassData();
     }
 
@@ -14278,11 +14278,11 @@
         body = this.setPhysicsFor(util.target);
       }
 
-      body.GetFixtureList().SetDensity(Cast.toNumber(args.density) / 100.0);
-      body.GetFixtureList().SetFriction(Cast.toNumber(args.friction) / 100.0);
+      body.GetFixtureList().SetDensity(Cast.toNumber(args.density)https://kakaomames.github.io/turbowarp/ 100.0);
+      body.GetFixtureList().SetFriction(Cast.toNumber(args.friction)https://kakaomames.github.io/turbowarp/ 100.0);
       body
         .GetFixtureList()
-        .SetRestitution(Cast.toNumber(args.restitution) / 100.0);
+        .SetRestitution(Cast.toNumber(args.restitution)https://kakaomames.github.io/turbowarp/ 100.0);
       body.ResetMassData();
     }
 
@@ -14306,14 +14306,14 @@
       );
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Set's the sprites position.
      * @param {object} args the block arguments.
      * @param {object} util utility object provided by the runtime.
      * @property {number} x - x offset.
      * @property {number} y - y offset.
      * @property {string} space - Space type (SPACE_TYPE_OPTIONS)
-     */
+     https://kakaomames.github.io/turbowarp/
     setPosition(args, util) {
       const x = Cast.toNumber(args.x);
       const y = Cast.toNumber(args.y);
@@ -14321,11 +14321,11 @@
 
       switch (args.space) {
         case SPACE_TYPE_OPTIONS.STAGE:
-          _setXY(util.target, x, y); // Position on stage (after scroll)
+          _setXY(util.target, x, y);https://kakaomames.github.io/turbowarp// Position on stage (after scroll)
           if (body) {
             this._setPosition(
               body,
-              new b2Vec2((x + _scroll.x) / zoom, (y + _scroll.y) / zoom)
+              new b2Vec2((x + _scroll.x)https://kakaomames.github.io/turbowarp/ zoom, (y + _scroll.y)https://kakaomames.github.io/turbowarp/ zoom)
             );
           }
           break;
@@ -14333,7 +14333,7 @@
           _setXY(util.target, util.target.x + x, util.target.y + y);
           if (body) {
             const pos = body.GetPosition();
-            const pos2 = new b2Vec2(pos.x + x / zoom, pos.y + y / zoom);
+            const pos2 = new b2Vec2(pos.x + xhttps://kakaomames.github.io/turbowarp/ zoom, pos.y + yhttps://kakaomames.github.io/turbowarp/ zoom);
             this._setPosition(body, pos2);
           }
           break;
@@ -14341,7 +14341,7 @@
         default:
           _setXY(util.target, x - _scroll.x, y - _scroll.y);
           if (body) {
-            this._setPosition(body, new b2Vec2(x / zoom, y / zoom));
+            this._setPosition(body, new b2Vec2(xhttps://kakaomames.github.io/turbowarp/ zoom, yhttps://kakaomames.github.io/turbowarp/ zoom));
           }
       }
     }
@@ -14362,18 +14362,18 @@
         );
       }
       body.SetPosition(pos2);
-      // if (md) {
-      //     pinned[body.uid] = _createJointOfType(null, 'Rotating', body.uid, 0, 0, null, null, null);
-      // }
+     https://kakaomames.github.io/turbowarp// if (md) {
+     https://kakaomames.github.io/turbowarp//     pinned[body.uid] = _createJointOfType(null, 'Rotating', body.uid, 0, 0, null, null, null);
+     https://kakaomames.github.io/turbowarp// }
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Set the sprites velocity.
      * @param {object} args the block arguments.
      * @param {object} util utility object provided by the runtime.
      * @property {number} sx - speed x.
      * @property {number} sy - speed y.
-     */
+     https://kakaomames.github.io/turbowarp/
     setVelocity(args, util) {
       let body = bodies[util.target.id];
       if (!body) {
@@ -14385,17 +14385,17 @@
       const x = Cast.toNumber(args.sx);
       const y = Cast.toNumber(args.sy);
       const force = new b2Vec2(x, y);
-      force.Multiply(30 / zoom);
+      force.Multiply(30https://kakaomames.github.io/turbowarp/ zoom);
       body.SetLinearVelocity(force);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Change the sprites velocity.
      * @param {object} args the block arguments.
      * @param {object} util utility object provided by the runtime.
      * @property {number} sx - speed x.
      * @property {number} sy - speed y.
-     */
+     https://kakaomames.github.io/turbowarp/
     changeVelocity(args, util) {
       let body = bodies[util.target.id];
       if (!body) {
@@ -14407,17 +14407,17 @@
       const x = Cast.toNumber(args.sx);
       const y = Cast.toNumber(args.sy);
       const force = new b2Vec2(x, y);
-      force.Multiply(30 / zoom);
+      force.Multiply(30https://kakaomames.github.io/turbowarp/ zoom);
       force.Add(body.GetLinearVelocity());
       body.SetLinearVelocity(force);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Get the current tempo.
      * @param {object} args the block arguments.
      * @param {object} util utility object provided by the runtime.
      * @return {boolean} - the current tempo, in beats per minute.
-     */
+     https://kakaomames.github.io/turbowarp/
     getStatic(args, util) {
       const body = bodies[util.target.id];
       if (!body) {
@@ -14427,42 +14427,42 @@
       return type === b2Body.b2_staticBody;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Get the current tempo.
      * @param {object} args the block arguments.
      * @param {object} util utility object provided by the runtime.
      * @return {number} - the current x velocity.
-     */
+     https://kakaomames.github.io/turbowarp/
     getVelocityX(args, util) {
       const body = bodies[util.target.id];
       if (!body) {
         return 0;
       }
       const x = body.GetLinearVelocity().x;
-      return (x * zoom) / 30;
+      return (x * zoom)https://kakaomames.github.io/turbowarp/ 30;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Get the current tempo.
      * @param {object} args the block arguments.
      * @param {object} util utility object provided by the runtime.
      * @return {boolean} - the current y velocity.
-     */
+     https://kakaomames.github.io/turbowarp/
     getVelocityY(args, util) {
       const body = bodies[util.target.id];
       if (!body) {
         return 0;
       }
       const y = body.GetLinearVelocity().y;
-      return (y * zoom) / 30;
+      return (y * zoom)https://kakaomames.github.io/turbowarp/ 30;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Sets the static property
      * @param {object} args the block arguments.
      * @param {object} util utility object provided by the runtime.
      * @property {string} static - static or not
-     */
+     https://kakaomames.github.io/turbowarp/
     setStatic(args, util) {
       const target = util.target;
       let body = bodies[util.target.id];
@@ -14474,8 +14474,8 @@
       );
 
       const pos = new b2Vec2(
-        (target.x + _scroll.x) / zoom,
-        (target.y + _scroll.y) / zoom
+        (target.x + _scroll.x)https://kakaomames.github.io/turbowarp/ zoom,
+        (target.y + _scroll.y)https://kakaomames.github.io/turbowarp/ zoom
       );
       const fixedRotation = target.rotationStyle !== ROTATION_STYLE_ALL_AROUND;
       body.SetPositionAndAngle(
@@ -14484,7 +14484,7 @@
       );
 
       if (args.static === "pinned") {
-        // Find what's behind the sprite (pin to that)
+       https://kakaomames.github.io/turbowarp// Find what's behind the sprite (pin to that)
         const point = new b2AABB();
         point.lowerBound.SetV(pos);
         point.upperBound.SetV(pos);
@@ -14512,18 +14512,18 @@
         const pin = pinned[target.id];
         if (pin) {
           world.DestroyJoint(pin);
-          // delete joints[pin.I];
+         https://kakaomames.github.io/turbowarp// delete joints[pin.I];
           delete pinned[target.id];
         }
       }
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Sets the sprite offset
      * @param {object} args the block arguments.
      * @property {number} ox - x offset.
      * @property {number} oy - y offset.
-     */
+     https://kakaomames.github.io/turbowarp/
     setScroll(args) {
       this._checkMoved();
       _scroll.x = Cast.toNumber(args.ox);
@@ -14531,12 +14531,12 @@
       this._repositionBodies();
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Sets the sprite offset
      * @param {object} args the block arguments.
      * @property {number} ox - x offset.
      * @property {number} oy - y offset.
-     */
+     https://kakaomames.github.io/turbowarp/
     changeScroll(args) {
       this._checkMoved();
       _scroll.x += Cast.toNumber(args.ox);
@@ -14544,18 +14544,18 @@
       this._repositionBodies();
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Get the scroll x.
      * @return {number} - the current x velocity.
-     */
+     https://kakaomames.github.io/turbowarp/
     getScrollX() {
       return _scroll.x;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Get the scroll x.
      * @return {number} - the current x velocity.
-     */
+     https://kakaomames.github.io/turbowarp/
     getScrollY() {
       return _scroll.y;
     }
@@ -14590,7 +14590,7 @@
       let touching = "";
       const contacts = body.GetContactList();
       for (let ce = contacts; ce; ce = ce.next) {
-        // noinspection JSBitwiseOperatorUsage
+       https://kakaomames.github.io/turbowarp// noinspection JSBitwiseOperatorUsage
         if (ce.contact.m_flags & b2Contact.e_islandFlag) {
           continue;
         }
@@ -14607,20 +14607,20 @@
         const bodyA = fixtureA.GetBody();
         const bodyB = fixtureB.GetBody();
 
-        // const myFix = touchingB ? fixtureA : fixtureB;
+       https://kakaomames.github.io/turbowarp// const myFix = touchingB ? fixtureA : fixtureB;
 
         const touchingB = bodyA === body;
         if (where !== "any") {
           const man = new Box2D.Collision.b2WorldManifold();
           contact.GetWorldManifold(man);
-          // man.m_points
-          // const mx = man.m_normal.x;
-          // const my = man.m_normal.y;
+         https://kakaomames.github.io/turbowarp// man.m_points
+         https://kakaomames.github.io/turbowarp// const mx = man.m_normal.x;
+         https://kakaomames.github.io/turbowarp// const my = man.m_normal.y;
 
           if (where === "feet") {
-            // if (my > -0.6) {
-            //     continue;
-            // }
+           https://kakaomames.github.io/turbowarp// if (my > -0.6) {
+           https://kakaomames.github.io/turbowarp//     continue;
+           https://kakaomames.github.io/turbowarp// }
 
             const fixture = body.GetFixtureList();
             const y = man.m_points[0].y;
@@ -14632,8 +14632,8 @@
               continue;
             }
 
-            // const lp = body.GetLocalPoint(man.m_points[0]).Normalize();
-            // if (lp.y)
+           https://kakaomames.github.io/turbowarp// const lp = body.GetLocalPoint(man.m_points[0]).Normalize();
+           https://kakaomames.github.io/turbowarp// if (lp.y)
           }
         }
 
@@ -14654,21 +14654,21 @@
       return touching;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Sets the stage
      * @param {object} args the block arguments.
      * @property {number} stageType - Stage Type.
-     */
+     https://kakaomames.github.io/turbowarp/
     setStage(args) {
       _setStageType(args.stageType);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Sets the gravity
      * @param {object} args the block arguments.
      * @property {number} gx - Gravity x.
      * @property {number} gy - Gravity y.
-     */
+     https://kakaomames.github.io/turbowarp/
     setGravity(args) {
       world.SetGravity(
         new b2Vec2(Cast.toNumber(args.gx), Cast.toNumber(args.gy))

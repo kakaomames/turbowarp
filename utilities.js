@@ -1,12 +1,12 @@
-// Name: Utilities
-// ID: utilities
-// Description: A bunch of interesting blocks.
-// Original: Sheep_maker <https://scratch.mit.edu/users/Sheep_maker/>
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Utilities
+https://kakaomames.github.io/turbowarp/ ID: utilities
+https://kakaomames.github.io/turbowarp/ Description: A bunch of interesting blocks.
+https://kakaomames.github.io/turbowarp/ Original: Sheep_maker <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Sheep_makehttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 /*!
  * This is based on:
- * https://github.com/SheepTester/sheeptester.github.io/blob/master/javascripts/utilities.js
+ * httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/SheepTestehttps://kakaomames.github.io/turbowarp/sheeptester.github.ihttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/mastehttps://kakaomames.github.io/turbowarp/javascripthttps://kakaomames.github.io/turbowarp/utilities.js
  *
  * Original license:
  * MIT License
@@ -16,7 +16,7 @@
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * to use, copy, modify, merge, publish, distribute, sublicense, anhttps://kakaomames.github.io/turbowarp/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
@@ -30,13 +30,13 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */
+ https://kakaomames.github.io/turbowarp/
 
 (function (Scratch) {
   "use strict";
 
   const icon =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADTUlEQVRIS63VTWgUZxgH8P+7Mzsf+2U2SrPJKBoEA1WKUMzupaKHpgoetadCnaBN9FRaLLRQEW17KKIed1V21dJLbU/FRqiixx219NDaVi+NmnWNZT+cze7Ozsf7yoxEYpnMRJI5DQzP+5v3P8/7DEHANVHM7iXAVyAkwQCNgZYjDp3KH7jzZ1DdwmckBLirrE29KQgcTNOBZTrQdYP2es631LSPnp34zQqDlgTIcvTlOowxNBsG6o3uHw6he899eOt+EBIGeBHxUW5ElDjEYwKSKdFbzzAsVB61/q4lWlsvv3/XXAwJBOaL9pe29slE3MgoOSHF+N0DAwnwfASNehe1WudkYVw7sixgYfFkMXtSikU/VZQU3LhmHjVZ17Sz59Tbt/2QJe3glUIGMnEhe3PgjcR2Ny5dN/Df0873ebX8gS/wshUBUMK+PKveuhzWGZPF0fdiceHq4FAK3a6FyoyuFca13GKA14ruw8qM/ldhXNscBnz03duDUSY83jCchu04ePBvs5ZXtTW+wGQpW12/IZ1xP9r0dAM9g2bOH9Rmg5DDpW0ZwvFVD7CpW1ctqNqQP1DM/ZJRErvdFqw+bqHdMccKqvZr4AEsbdsVj4lTbkTttolqtXWloGp7FtlB7uv+1fIX6bSM9pyJJ9W5a3m1PAYC5ou4H7mUvT44mNwZTwio17to1Dsn8qp21Bc4cGl0WCLcP+vW9wkRQrxddNrW6cyw9NmxnTfthUX7ftgs9LcTP8dkfmxIWeW16cOHTdO22EheLU8v2qYTxezn6bT8zeo1MS/T2dk5GB3rHgNOMd6+SsFxnE3eJcAnohwdUZQkQAjqtTYadePHwri2L/CgHbuxg3/ywPhdUZJbJOnF3GnpPS9fw7ABAkgij3h8flS46REYPRvVig5KoebV8oXAg3bw4ugmjkV+6u+Xt/T1SSDE/wy6sTxrdiHHBYgCH4q8ssqLjOPHZYk/kkiKEUHg4Y5qBgbLpDBNG62W5Rhde4rjsGdISUEUgxHf1zx0MfsWdTBGCHIAeQeABbAyBdPmfziTpdz+SASlMOT1Z9GCoJeCLAtwrTBk2UAYsiKAH+JN2YreXDHg/wilzJ3Oz1YUmEcYY2fce0LIx88BFi6vvp70RPYAAAAASUVORK5CYII=";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADTUlEQVRIS63VTWgUZxgH8P+7Mzsf+2U2SrPJKBoEA1WKUMzupaKHpgoetadCnaBN9FRaLLRQEW17KKIed1V21dJLbhttps://kakaomames.github.io/turbowarp/FRqiixx219NDaVi+NmnWNZT+cze7Ozsf7yoxEYpnMRJI5DQzP+5v3Phttps://kakaomames.github.io/turbowarp/7DEHANVHM7iXAVyAkwQCNgZYjDp3KH7jzZ1DdwmckBLirrE29KQgcTNOBZTrQdYP2es631LSPnp34zQqDlgTIcvTlOowxNBsG6o3uHw6he899eOt+EBIGeBHxUW5ElDjEYwKSKdFbzzAsVB6https://kakaomames.github.io/turbowarp/q4lWlsvvhttps://kakaomames.github.io/turbowarp/XXAwJBOaL9pe29slE3MgoOSHF+N0DAwnwfASNehe1WudkYVw7sixgYfFkMXtSikhttps://kakaomames.github.io/turbowarp/VZQU3LhmHjVZ17Sz59Tbhttps://kakaomames.github.io/turbowarp/2QJe3glUIGMnEhe3PgjcR2Ny5dhttps://kakaomames.github.io/turbowarp/Df0873ebX8ghttps://kakaomames.github.io/turbowarp/wshUBUMK+PKveuhzWGZPF0fdiceHq4FAK3a6FyoyuFca13GKA14ruw8qhttps://kakaomames.github.io/turbowarp/ldhXNscBnz03duDUSY83jCchu04ePBvs5ZXtTW+wGQpW1https://kakaomames.github.io/turbowarp/IZ1xP9r0dAM9g2bOH9Rmg5DDpW0ZwvFVD7CpW1ctqNqQP1Dhttps://kakaomames.github.io/turbowarp/ZJRErvdFqw+bqHdMccKqvZr4AEsbdsVj4lTbkTttolqtXWloGp7FtlB7uv+1fIX6bSM9pyJJ9W5a3m1PAYC5ou4H7mUvT44mNwZTwio17to1Dsn8qp21Bc4cGl0WCLcP+vW9wkRQrxddNrW6cyw9NmxnTfthUX7ftgs9LcTP8dkfmxIWeW16cOHTdO22EheLU8v2qYTxezn6bT8zeo1Mhttps://kakaomames.github.io/turbowarp/T2dk5GB3rHgNOMd6+SsFxnE3eJcAnohwdUZQkQAjqtTYadePHwri2https://kakaomames.github.io/turbowarp/CgHbuxghttps://kakaomames.github.io/turbowarp/ywPhdUZJbJOnF3GnpPS9fw7ABAkgij3h8flS46REYPRvVig5KoebV8oXAg3bw4ugmjkV+6u+Xhttps://kakaomames.github.io/turbowarp/T1SSDhttps://kakaomames.github.io/turbowarp/wy6sTxrdiHHBYgCH4q8ssqLjOPHZYhttps://kakaomames.github.io/turbowarp/kkiKEUHg4Y5qBgbLpDBNG62W5Rhde4rjsGdISUEUgxHf1zx0MfsWdTBGCHIAeQeABbAyBdPmfziTpdz+SASlMOT1Z9GCoJeCLAtwrTBk2UAYsiKAH+JN2YreXDHhttps://kakaomames.github.io/turbowarp/wilzJ3Oz1YUmEcYY2fce0LIx88BFi6vvp70RPYAAAAASUVORK5CYII=";
 
   class Utilities {
     getInfo() {
@@ -73,7 +73,7 @@
 
             blockType: Scratch.BlockType.BOOLEAN,
 
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[A] <= [B]",
             arguments: {
               A: {
@@ -90,7 +90,7 @@
 
             blockType: Scratch.BlockType.BOOLEAN,
 
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[A] >= [B]",
             arguments: {
               A: {
@@ -125,7 +125,7 @@
 
             blockType: Scratch.BlockType.REPORTER,
 
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[A] ^ [B]",
             arguments: {
               A: {
@@ -221,7 +221,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./hello.txt",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/hello.txt",
               },
             },
           },
@@ -233,12 +233,12 @@
             text: Scratch.translate({
               default: "[PATH] of [JSON_STRING]",
               description:
-                'PATH is a string like "fruit/apples" and JSON_STRING is an object like {"fruit":{"apples":3}}. 3 would be reported in this example.',
+                'PATH is a string like "fruihttps://kakaomames.github.io/turbowarp/apples" and JSON_STRING is an object like {"fruit":{"apples":3}}. 3 would be reported in this example.',
             }),
             arguments: {
               PATH: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "fruit/apples",
+                defaultValue: "fruihttps://kakaomames.github.io/turbowarp/apples",
               },
               JSON_STRING: {
                 type: Scratch.ArgumentType.STRING,
@@ -259,7 +259,7 @@
 
             blockType: Scratch.BlockType.BOOLEAN,
 
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[STRING]",
             arguments: {
               STRING: {
@@ -358,7 +358,7 @@
     parseJSON({ PATH, JSON_STRING }) {
       try {
         const path = PATH.toString()
-          .split("/")
+          .split(https://kakaomames.github.io/turbowarp/")
           .map((prop) => decodeURIComponent(prop));
         if (path[0] === "") path.splice(0, 1);
         if (path[path.length - 1] === "") path.splice(-1, 1);

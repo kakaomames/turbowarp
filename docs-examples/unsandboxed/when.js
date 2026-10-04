@@ -1,4 +1,4 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';
@@ -14,34 +14,34 @@
         name: 'When',
         blocks: [
           {
-            // highlight-start
+           https://kakaomames.github.io/turbowarp// highlight-start
             blockType: Scratch.BlockType.HAT,
             opcode: 'when',
             text: 'when [CONDITION]',
-            isEdgeActivated: false, // required boilerplate
+            isEdgeActivated: false,https://kakaomames.github.io/turbowarp// required boilerplate
             arguments: {
               CONDITION: {
                 type: Scratch.BlockType.BOOLEAN
               }
             }
-            // highlight-end
+           https://kakaomames.github.io/turbowarp// highlight-end
           }
         ]
       };
     }
-    // highlight-start
+   https://kakaomames.github.io/turbowarp// highlight-start
     when(args) {
       return Scratch.Cast.toBoolean(args.CONDITION);
     }
-    // highlight-end
+   https://kakaomames.github.io/turbowarp// highlight-end
   }
 
-  // highlight-start
+ https://kakaomames.github.io/turbowarp// highlight-start
   Scratch.vm.runtime.on('BEFORE_EXECUTE', () => {
-    // startHats is the same as before!
+   https://kakaomames.github.io/turbowarp// startHats is the same as before!
     Scratch.vm.runtime.startHats('whenunsandboxed_when');
   });
-  // highlight-end
+ https://kakaomames.github.io/turbowarp// highlight-end
 
   Scratch.extensions.register(new When());
 })(Scratch);

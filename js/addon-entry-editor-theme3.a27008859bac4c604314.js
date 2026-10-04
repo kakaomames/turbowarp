@@ -11,21 +11,21 @@
     1719: function (t, o, e) {
       (t.exports = e(9)(!1)).push([
         t.i,
-        '@namespace xlink url("http://www.w3.org/1999/xlink");\n\n.scratchCategoryItemBubble::after {\n  /* block-palette-icons */\n  filter: brightness(0);\n}\n\n.blocklyEditableText > text {\n  fill: var(--editorTheme3-inputColor-blackText);\n}\n.blocklyHtmlInput {\n  color: var(--editorTheme3-inputColor-blackText);\n}\n\n[class*="blocks_blocks_"] image[xlink|href$="/rotate-left.svg"],\n[class*="blocks_blocks_"] image[xlink|href$="/rotate-right.svg"],\n[class*="blocks_blocks_"] image[xlink|href$="/repeat.svg"] {\n  filter: invert(1) hue-rotate(180deg);\n}\n\n.blocklyDropDownDiv .goog-menuitem,\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem .goog-menuitem-content {\n  color: black;\n}\n.blocklyDropDownDiv .blocklyText {\n  fill: black;\n}\n\n/* Compatibility */\n\n.sa-block-color {\n  --sa-block-text: black;\n  --sa-block-gray-text: black;\n  --sa-block-colored-text: var(--sa-block-background-tertiary);\n  --sa-block-text-on-bright-background: black;\n}\n',
+        '@namespace xlink url("httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink");\n\n.scratchCategoryItemBubble::after {\n https://kakaomames.github.io/turbowarp/* block-palette-icons https://kakaomames.github.io/turbowarp/\n  filter: brightness(0);\n}\n\n.blocklyEditableText > text {\n  fill: var(--editorTheme3-inputColor-blackText);\n}\n.blocklyHtmlInput {\n  color: var(--editorTheme3-inputColor-blackText);\n}\n\n[class*="blocks_blocks_"] image[xlink|href$=https://kakaomames.github.io/turbowarp/rotate-left.svg"],\n[class*="blocks_blocks_"] image[xlink|href$=https://kakaomames.github.io/turbowarp/rotate-right.svg"],\n[class*="blocks_blocks_"] image[xlink|href$=https://kakaomames.github.io/turbowarp/repeat.svg"] {\n  filter: invert(1) hue-rotate(180deg);\n}\n\n.blocklyDropDownDiv .goog-menuitem,\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem .goog-menuitem-content {\n  color: black;\n}\n.blocklyDropDownDiv .blocklyText {\n  fill: black;\n}\n\https://kakaomames.github.io/turbowarp/* Compatibility https://kakaomames.github.io/turbowarp/\n\n.sa-block-color {\n  --sa-block-text: black;\n  --sa-block-gray-text: black;\n  --sa-block-colored-text: var(--sa-block-background-tertiary);\n  --sa-block-text-on-bright-background: black;\n}\n',
         "",
       ]);
     },
     1720: function (t, o, e) {
       (t.exports = e(9)(!1)).push([
         t.i,
-        ".scratchCategoryItemBubble::after {\n  /* block-palette-icons */\n  filter: brightness(0);\n  opacity: 0.6;\n}\n\n.u-dropdown-searchbar,\n.u-dropdown-searchbar:focus,\n.blocklyDropDownDiv .goog-menuitem,\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem .goog-menuitem-content {\n  color: #575e75;\n}\n.u-dropdown-searchbar:focus {\n  background-color: var(--editorTheme3-hoveredItem);\n}\n\n.blocklyAngleDragHandle {\n  stroke: black;\n  stroke-opacity: 0.15;\n  paint-order: stroke fill;\n}\n\n.scratchCommentRect {\n  fill: #feffff;\n}\n.scratchCommentBody,\n.scratchCommentTextarea {\n  background-color: #ffffff;\n}\n.scratchWorkspaceCommentBorder {\n  stroke: var(--editorTheme3-commentColor);\n}\n.scratchCommentTextarea::placeholder {\n  color: rgba(0, 0, 0, 0.5);\n}\n.scratchCommentText {\n  fill: #575e75;\n  color: #575e75;\n}\n\n/* Compatibility */\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-secondary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-tertiary);\n  --sa-block-text: var(--sa-block-background-tertiary);\n  --sa-block-gray-text: #575e75;\n  --sa-block-colored-text: var(--sa-block-background-tertiary);\n  --sa-block-text-on-bright-background: white;\n}\n",
+        ".scratchCategoryItemBubble::after {\n https://kakaomames.github.io/turbowarp/* block-palette-icons https://kakaomames.github.io/turbowarp/\n  filter: brightness(0);\n  opacity: 0.6;\n}\n\n.u-dropdown-searchbar,\n.u-dropdown-searchbar:focus,\n.blocklyDropDownDiv .goog-menuitem,\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem .goog-menuitem-content {\n  color: #575e75;\n}\n.u-dropdown-searchbar:focus {\n  background-color: var(--editorTheme3-hoveredItem);\n}\n\n.blocklyAngleDragHandle {\n  stroke: black;\n  stroke-opacity: 0.15;\n  paint-order: stroke fill;\n}\n\n.scratchCommentRect {\n  fill: #feffff;\n}\n.scratchCommentBody,\n.scratchCommentTextarea {\n  background-color: #ffffff;\n}\n.scratchWorkspaceCommentBorder {\n  stroke: var(--editorTheme3-commentColor);\n}\n.scratchCommentTextarea::placeholder {\n  color: rgba(0, 0, 0, 0.5);\n}\n.scratchCommentText {\n  fill: #575e75;\n  color: #575e75;\n}\n\https://kakaomames.github.io/turbowarp/* Compatibility https://kakaomames.github.io/turbowarp/\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-secondary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-tertiary);\n  --sa-block-text: var(--sa-block-background-tertiary);\n  --sa-block-gray-text: #575e75;\n  --sa-block-colored-text: var(--sa-block-background-tertiary);\n  --sa-block-text-on-bright-background: white;\n}\n",
         "",
       ]);
     },
     1721: function (t, o, e) {
       (t.exports = e(9)(!1)).push([
         t.i,
-        ".u-dropdown-searchbar {\n  border-color: rgba(255, 255, 255, 0.15);\n}\n.u-dropdown-searchbar:focus {\n  background-color: var(--editorTheme3-hoveredItem);\n}\n.blocklyDropDownDiv .goog-menuitem-checkbox {\n  filter: brightness(0) invert(1);\n}\n\n.scratchCommentRect {\n  fill: #282828;\n}\n.scratchCommentBody,\n.scratchCommentTextarea {\n  background-color: #282828;\n}\n.scratchWorkspaceCommentBorder {\n  stroke: var(--editorTheme3-commentColor);\n}\n.scratchCommentTextarea::placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.scratchCommentText {\n  fill: #ffffff;\n  color: #ffffff;\n}\n\n/* Compatibility */\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-secondary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-tertiary);\n  --sa-block-text: var(--sa-block-background-tertiary);\n  --sa-block-gray-text: white;\n  --sa-block-colored-text: var(--sa-block-background-tertiary);\n  --sa-block-text-on-bright-background: white;\n}\n",
+        ".u-dropdown-searchbar {\n  border-color: rgba(255, 255, 255, 0.15);\n}\n.u-dropdown-searchbar:focus {\n  background-color: var(--editorTheme3-hoveredItem);\n}\n.blocklyDropDownDiv .goog-menuitem-checkbox {\n  filter: brightness(0) invert(1);\n}\n\n.scratchCommentRect {\n  fill: #282828;\n}\n.scratchCommentBody,\n.scratchCommentTextarea {\n  background-color: #282828;\n}\n.scratchWorkspaceCommentBorder {\n  stroke: var(--editorTheme3-commentColor);\n}\n.scratchCommentTextarea::placeholder {\n  color: rgba(255, 255, 255, 0.5);\n}\n.scratchCommentText {\n  fill: #ffffff;\n  color: #ffffff;\n}\n\https://kakaomames.github.io/turbowarp/* Compatibility https://kakaomames.github.io/turbowarp/\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-secondary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-tertiary);\n  --sa-block-text: var(--sa-block-background-tertiary);\n  --sa-block-gray-text: white;\n  --sa-block-colored-text: var(--sa-block-background-tertiary);\n  --sa-block-text-on-bright-background: white;\n}\n",
         "",
       ]);
     },
@@ -36,7 +36,7 @@
           return m;
         }));
       var r = e(1637);
-      const n = new RegExp("^data:image/svg\\+xml;base64,([A-Za-z0-9+/=]*)$"),
+      const n = new RegExp("^data:imaghttps://kakaomames.github.io/turbowarp/svg\\+xml;base64,([A-Za-z0-9https://kakaomames.github.io/turbowarp/=]*)$"),
         l = { id: null, settingId: "Pen-color", colorId: "pen" },
         c = { id: null, settingId: "tw-color", colorId: "tw" },
         i = { settingId: "sa-color", colorId: "sa" },
@@ -175,7 +175,7 @@
                   }[b],
             y = e.Block.prototype.makeColour_;
           e.Block.prototype.makeColour_ = function (t) {
-            return "string" == typeof t && /^#(?:[0-9A-Za-z]{2}){3,4}$/.test(t)
+            return "string" == typeof t &&https://kakaomames.github.io/turbowarp/^#(?:[0-9A-Za-z]{2}){3,4}https://kakaomames.github.io/turbowarp/.test(t)
               ? t
               : y(t);
           };
@@ -193,8 +193,8 @@
                   e = "sa-blocks" === this.id_ ? i : l,
                   r = g ? p(e) : h(e);
                 if (r) {
-                  const o = t.replace(/#29beb8|#0ebd8c/gi, r);
-                  this.iconURI_ = "data:image/svg+xml;base64,".concat(btoa(o));
+                  const o = t.replacehttps://kakaomames.github.io/turbowarp/#29beb8|#0ebd8https://kakaomames.github.io/turbowarp/gi, r);
+                  this.iconURI_ = "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,".concat(btoa(o));
                 }
               }
             }

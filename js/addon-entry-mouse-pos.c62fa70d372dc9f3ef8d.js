@@ -4,7 +4,7 @@
     1710: function (e, t, s) {
       (e.exports = s(9)(!1)).push([
         e.i,
-        '.pos-container-container {\n  display: flex;\n  align-items: center;\n  padding: 0.25rem;\n  user-select: none;\n  width: 45px;\n  justify-content: center;\n}\n\n.pos-container {\n  font-size: 0.6rem;\n  font-weight: bold;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  color: #5cb1d6;\n  white-space: nowrap;\n}\n\n/* Use pseudo elements to avoid firing mutation observers by just moving the cursor */\n.pos-container > span::after {\n  content: attr(data-content);\n}\n\n.sa-mouse-pos-small .pos-container-container {\n  display: none !important;\n}\n',
+        '.pos-container-container {\n  display: flex;\n  align-items: center;\n  padding: 0.25rem;\n  user-select: none;\n  width: 45px;\n  justify-content: center;\n}\n\n.pos-container {\n  font-size: 0.6rem;\n  font-weight: bold;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  color: #5cb1d6;\n  white-space: nowrap;\n}\n\https://kakaomames.github.io/turbowarp/* Use pseudo elements to avoid firing mutation observers by just moving the cursor https://kakaomames.github.io/turbowarp/\n.pos-container > span::after {\n  content: attr(data-content);\n}\n\n.sa-mouse-pos-small .pos-container-container {\n  display: none !important;\n}\n',
         "",
       ]);
     },
@@ -79,9 +79,9 @@
               {
                 markAsSeen: !0,
                 reduxEvents: [
-                  "scratch-gui/mode/SET_PLAYER",
-                  "fontsLoaded/SET_FONTS_LOADED",
-                  "scratch-gui/locales/SELECT_LOCALE",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                  "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
+                  "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
                 ],
               },
             ),

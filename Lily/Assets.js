@@ -1,11 +1,11 @@
-// Name: Asset Manager
-// ID: lmsAssets
-// Description: Add, remove, and get data from various types of assets.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// By: Mio <https://scratch.mit.edu/users/0znzw/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Asset Manager
+https://kakaomames.github.io/turbowarp/ ID: lmsAssets
+https://kakaomames.github.io/turbowarp/ Description: Add, remove, and get data from various types of assets.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ By: Mio <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/0znzhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
-// TheShovel is so epic and cool and awesome
+https://kakaomames.github.io/turbowarp/ TheShovel is so epic and cool and awesome
 
 (function (Scratch) {
   "use strict";
@@ -24,10 +24,10 @@
     return true;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {Blob} blob
    * @returns {Promise<string>}
-   */
+   https://kakaomames.github.io/turbowarp/
   const readAsDataURL = (blob) =>
     new Promise((resolve, reject) => {
       const fr = new FileReader();
@@ -180,7 +180,7 @@
             text: Scratch.translate("all sounds"),
           },
           {
-            // Legacy block
+           https://kakaomames.github.io/turbowarp// Legacy block
             hideFromPalette: true,
             opcode: "getSpriteName",
             blockType: Scratch.BlockType.REPORTER,
@@ -208,7 +208,7 @@
             },
           },
           {
-            // Legacy block
+           https://kakaomames.github.io/turbowarp// Legacy block
             disableMonitor: true,
             opcode: "getSpriteValue",
             blockType: Scratch.BlockType.REPORTER,
@@ -320,7 +320,7 @@
             },
           },
           {
-            // Legacy block
+           https://kakaomames.github.io/turbowarp// Legacy block
             hideFromPalette: true,
             opcode: "getProjectJSON",
             blockType: Scratch.BlockType.REPORTER,
@@ -347,7 +347,7 @@
               URL: {
                 type: Scratch.ArgumentType.STRING,
                 defaultValue:
-                  "./Skyhigh173/json.js",
+                  "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/Skyhigh17https://kakaomames.github.io/turbowarp/json.js",
               },
             },
           },
@@ -430,7 +430,7 @@
       }
     }
 
-    // Thank you PenguinMod for providing this code.
+   https://kakaomames.github.io/turbowarp// Thank you PenguinMod for providing this code.
     async addCostume(args, util) {
       const targetId = util.target.id;
       const assetName = Cast.toString(args.NAME);
@@ -438,7 +438,7 @@
       const res = await Scratch.fetch(args.URL);
       const blob = await res.blob();
 
-      if (!(this._typeIsBitmap(blob.type) || blob.type === "image/svg+xml")) {
+      if (!(this._typeIsBitmap(blob.type) || blob.type === "imaghttps://kakaomames.github.io/turbowarp/svg+xml")) {
         console.error(`Invalid MIME type: ${blob.type}`);
         return;
       }
@@ -446,11 +446,11 @@
         ? runtime.storage.AssetType.ImageBitmap
         : runtime.storage.AssetType.ImageVector;
 
-      // Bitmap data format is not actually enforced, but setting it to something that isn't in scratch-parser's
-      // known format list will throw an error when someone tries to load the project.
-      // (https://github.com/scratchfoundation/scratch-parser/blob/665f05d739a202d565a4af70a201909393d456b2/lib/sb3_definitions.json#L51)
+     https://kakaomames.github.io/turbowarp// Bitmap data format is not actually enforced, but setting it to something that isn't in scratch-parser's
+     https://kakaomames.github.io/turbowarp// known format list will throw an error when someone tries to load the project.
+     https://kakaomames.github.io/turbowarp// (httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/scratchfoundatiohttps://kakaomames.github.io/turbowarp/scratch-parsehttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/665f05d739a202d565a4af70a201909393d456bhttps://kakaomames.github.io/turbowarp/lihttps://kakaomames.github.io/turbowarp/sb3_definitions.json#L51)
       const dataType =
-        blob.type === "image/svg+xml"
+        blob.type === "imaghttps://kakaomames.github.io/turbowarp/svg+xml"
           ? runtime.storage.DataFormat.SVG
           : runtime.storage.DataFormat.PNG;
 
@@ -515,7 +515,7 @@
         console.error(e);
       }
     }
-    // End of PenguinMod
+   https://kakaomames.github.io/turbowarp// End of PenguinMod
 
     renameSprite(args, util) {
       const target = this._getTargetFromMenu(args.TARGET, util);
@@ -578,7 +578,7 @@
       const spriteNames = [];
       const targets = Scratch.vm.runtime.targets;
       for (const target of targets) {
-        // People reckoned the stage shouldn't be included
+       https://kakaomames.github.io/turbowarp// People reckoned the stage shouldn't be included
         if (target.isOriginal && !target.isStage) {
           spriteNames.push(target.sprite.name);
         }
@@ -767,7 +767,7 @@
       );
     }
 
-    /* Utility Functions */
+   https://kakaomames.github.io/turbowarp/* Utility Functions https://kakaomames.github.io/turbowarp/
 
     _getSoundIndexByName(soundName, util) {
       const sounds = util.target.sprite.sounds;
@@ -779,16 +779,16 @@
       return -1;
     }
 
-    // PenguinMod
+   https://kakaomames.github.io/turbowarp// PenguinMod
     _typeIsBitmap(type) {
       return (
-        type === "image/png" ||
-        type === "image/bmp" ||
-        type === "image/jpg" ||
-        type === "image/jpeg" ||
-        type === "image/jfif" ||
-        type === "image/webp" ||
-        type === "image/gif"
+        type === "imaghttps://kakaomames.github.io/turbowarp/png" ||
+        type === "imaghttps://kakaomames.github.io/turbowarp/bmp" ||
+        type === "imaghttps://kakaomames.github.io/turbowarp/jpg" ||
+        type === "imaghttps://kakaomames.github.io/turbowarp/jpeg" ||
+        type === "imaghttps://kakaomames.github.io/turbowarp/jfif" ||
+        type === "imaghttps://kakaomames.github.io/turbowarp/webp" ||
+        type === "imaghttps://kakaomames.github.io/turbowarp/gif"
       );
     }
 

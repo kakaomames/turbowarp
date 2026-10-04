@@ -1,39 +1,39 @@
-// Name: Pen Plus V7
-// ID: penP
-// Description: Advanced rendering capabilities.
-// By: ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>
-// By: Pen-Group
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Pen Plus V7
+https://kakaomames.github.io/turbowarp/ ID: penP
+https://kakaomames.github.io/turbowarp/ Description: Advanced rendering capabilities.
+https://kakaomames.github.io/turbowarp/ By: ObviousAlexC <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/pinksheep291https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ By: Pen-Group
+https://kakaomames.github.io/turbowarp/ License: MIT
 
-// With permission from Sharkpool-SP to use his pen layer data uri block!
-// Thanks dude!
+https://kakaomames.github.io/turbowarp/ With permission from Sharkpool-SP to use his pen layer data uri block!
+https://kakaomames.github.io/turbowarp/ Thanks dude!
 
-//If you are a mod developer please hit ctrl + f and look for /* MESSAGE FOR MOD DEVELOPERS */ to find more info
-//About supporting you mod.
-//    --Thanks ObviousAlexC
+https://kakaomames.github.io/turbowarp/If you are a mod developer please hit ctrl + f and look forhttps://kakaomames.github.io/turbowarp/* MESSAGE FOR MOD DEVELOPERS https://kakaomames.github.io/turbowarp/ to find more info
+https://kakaomames.github.io/turbowarp/About supporting you mod.
+https://kakaomames.github.io/turbowarp/    --Thanks ObviousAlexC
 
-//if you are looking for extension settings search up /* EXTENSION SETTINGS */
+https://kakaomames.github.io/turbowarp/if you are looking for extension settings search uphttps://kakaomames.github.io/turbowarp/* EXTENSION SETTINGS https://kakaomames.github.io/turbowarp/
 
-//7.1.9 patch notes
+https://kakaomames.github.io/turbowarp/7.1.9 patch notes
 
 /*
   ? -- Changes -- ?
-    ? Bug Fixes (see https://github.com/Pen-Group/extensions/issues/39)
-*/
+    ? Bug Fixes (see httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/Pen-Grouhttps://kakaomames.github.io/turbowarp/extensionhttps://kakaomames.github.io/turbowarp/issuehttps://kakaomames.github.io/turbowarp/39)
+https://kakaomames.github.io/turbowarp/
 
 (function (Scratch) {
   "use strict";
 
   if (!Scratch.extensions.unsandboxed) {
-    //for those who use the version from pen-group's site
+   https://kakaomames.github.io/turbowarp//for those who use the version from pen-group's site
     alert("Pen+ must be ran unsandboxed!");
     throw new Error("Pen+ must run unsandboxed");
   }
 
-  //?some smaller optimizations just store the multiplacation for later
+ https://kakaomames.github.io/turbowarp//?some smaller optimizations just store the multiplacation for later
   const d2r = 0.0174533;
 
-  //?Declare most of the main repo's we are going to use around the scratch vm
+ https://kakaomames.github.io/turbowarp//?Declare most of the main repo's we are going to use around the scratch vm
   const vm = Scratch.vm;
   const runtime = vm.runtime;
   const renderer = runtime.renderer;
@@ -47,7 +47,7 @@
     ? [canvas.width, canvas.height]
     : renderer._nativeSize;
 
-  //?create the depth buffer's texture
+ https://kakaomames.github.io/turbowarp//?create the depth buffer's texture
   const triBufferAttachments = [
     {
       format: gl.RGBA,
@@ -62,10 +62,10 @@
 
   let lastFB = gl.getParameter(gl.FRAMEBUFFER_BINDING);
 
-  //?Neato uniform for universally transforming triangles to fit the screen
+ https://kakaomames.github.io/turbowarp//?Neato uniform for universally transforming triangles to fit the screen
   let transform_Matrix = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-  //?Buffer handling and pen loading
+ https://kakaomames.github.io/turbowarp//?Buffer handling and pen loading
   {
     gl.enable(gl.DEPTH_TEST);
     gl.depthFunc(gl.LEQUAL);
@@ -75,8 +75,8 @@
         ? [canvas.width, canvas.height]
         : renderer._nativeSize;
 
-      transform_Matrix[0] = 2 / renderer._nativeSize[0];
-      transform_Matrix[1] = -2 / renderer._nativeSize[1];
+      transform_Matrix[0] = 2https://kakaomames.github.io/turbowarp/ renderer._nativeSize[0];
+      transform_Matrix[1] = -2https://kakaomames.github.io/turbowarp/ renderer._nativeSize[1];
       let lastFB = gl.getParameter(gl.FRAMEBUFFER_BINDING);
       twgl.resizeFramebufferInfo(
         gl,
@@ -88,7 +88,7 @@
       gl.bindFramebuffer(gl.FRAMEBUFFER, lastFB);
     };
 
-    //?Call it to have it consistant
+   https://kakaomames.github.io/turbowarp//?Call it to have it consistant
     updateCanvasSize();
 
     vm.renderer.on("UseHighQualityRenderChanged", updateCanvasSize);
@@ -107,7 +107,7 @@
       }
     });
 
-    //?Make sure pen is loaded!
+   https://kakaomames.github.io/turbowarp//?Make sure pen is loaded!
     if (!Scratch.vm.extensionManager.isExtensionLoaded("pen")) {
       runtime.extensionManager.loadExtensionIdSync("pen");
     }
@@ -132,7 +132,7 @@
     }
   };
 
-  //?Get Shaders
+ https://kakaomames.github.io/turbowarp//?Get Shaders
   const penPlusShaders = {
     untextured: {
       Shaders: {
@@ -228,7 +228,7 @@
                       void main()
                       {
                           gl_Position = a_position * vec4(a_position.w,a_position.w,0,1);
-                          v_texCoord = (a_position.xy / 2.0) + vec2(0.5,0.5);
+                          v_texCoord = (a_position.xyhttps://kakaomames.github.io/turbowarp/ 2.0) + vec2(0.5,0.5);
                       }
                   `,
         frag: `
@@ -245,7 +245,7 @@
       ProgramInf: null,
     },
     createAndCompileShaders: (vert, frag) => {
-      //? compile vertex Shader
+     https://kakaomames.github.io/turbowarp//? compile vertex Shader
       const vertShader = gl.createShader(gl.VERTEX_SHADER);
       try {
         gl.shaderSource(vertShader, vert.trim());
@@ -257,7 +257,7 @@
         console.error(error);
       }
 
-      //? compile fragment Shader
+     https://kakaomames.github.io/turbowarp//? compile fragment Shader
       const fragShader = gl.createShader(gl.FRAGMENT_SHADER);
       try {
         gl.shaderSource(fragShader, frag.trim());
@@ -269,7 +269,7 @@
         console.error(error);
       }
 
-      //? compile program
+     https://kakaomames.github.io/turbowarp//? compile program
       const program = gl.createProgram();
       try {
         gl.attachShader(program, vertShader);
@@ -295,7 +295,7 @@
     },
   };
 
-  //Used for the popup animation
+ https://kakaomames.github.io/turbowarp//Used for the popup animation
   const animationKeyframes = {
     open: {
       IFRAME: [{ top: "100%", easing: "ease-out" }, { top: "10%" }],
@@ -313,7 +313,7 @@
     },
   };
 
-  //? Create program info
+ https://kakaomames.github.io/turbowarp//? Create program info
   {
     penPlusShaders.untextured.ProgramInf = twgl.createProgramInfo(gl, [
       penPlusShaders.untextured.Shaders.vert,
@@ -324,7 +324,7 @@
       penPlusShaders.textured.Shaders.frag,
     ]);
 
-    //Only used on the draw buffer! for when stuff is drawn to the canvas!
+   https://kakaomames.github.io/turbowarp//Only used on the draw buffer! for when stuff is drawn to the canvas!
     penPlusShaders.draw.ProgramInf = twgl.createProgramInfo(gl, [
       penPlusShaders.draw.Shaders.vert,
       penPlusShaders.draw.Shaders.frag,
@@ -340,8 +340,8 @@
     a_texCoord: { numComponents: 2, data: [0, 0, 1, 0, 1, 1] },
   });
 
-  //Just for our eyes sakes
-  // prettier-ignore
+ https://kakaomames.github.io/turbowarp//Just for our eyes sakes
+ https://kakaomames.github.io/turbowarp// prettier-ignore
   let reRenderInfo = twgl.createBufferInfoFromArrays(gl, {
       a_position: {
         numComponents: 4, data: [
@@ -373,10 +373,10 @@
 
   let parentExtension = null;
 
-  //?Override pen Clear with pen+
+ https://kakaomames.github.io/turbowarp//?Override pen Clear with pen+
   renderer.penClear = (penSkinID) => {
     lastFB = gl.getParameter(gl.FRAMEBUFFER_BINDING);
-    //Pen+ Overrides default pen Clearing
+   https://kakaomames.github.io/turbowarp//Pen+ Overrides default pen Clearing
     gl.bindFramebuffer(gl.FRAMEBUFFER, triBufferInfo.framebuffer);
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT);
@@ -389,30 +389,30 @@
       renderer._backgroundColor4f[3]
     );
 
-    //Old clearing
+   https://kakaomames.github.io/turbowarp//Old clearing
     renderer.dirty = true;
-    const skin = /** @type {PenSkin} */ renderer._allSkins[penSkinID];
+    const skin =https://kakaomames.github.io/turbowarp/** @type {PenSkin} https://kakaomames.github.io/turbowarp/ renderer._allSkins[penSkinID];
     skin.clear();
   };
 
   class extension {
-    /* EXTENSION SETTINGS */
+   https://kakaomames.github.io/turbowarp/* EXTENSION SETTINGS https://kakaomames.github.io/turbowarp/
 
-    //?Shader editor settings
-    //?These are used when initilizing the shader editor!
+   https://kakaomames.github.io/turbowarp//?Shader editor settings
+   https://kakaomames.github.io/turbowarp//?These are used when initilizing the shader editor!
     isExperimental = false;
     urlHandleTypes = {
-      //github... we handle github differently.
+     https://kakaomames.github.io/turbowarp//github... we handle github differently.
       github: {
         handle: (url) => {
-          //Remember github uses the [username].github.io/[reponame];
-          let githubURL = url.split("/");
+         https://kakaomames.github.io/turbowarp//Remember github uses the [username].github.ihttps://kakaomames.github.io/turbowarp/[reponame];
+          let githubURL = url.split(https://kakaomames.github.io/turbowarp/");
           return githubURL.length > 4
-            ? url.split("/")[3]
-            : url.split("/")[2].split(".")[0];
+            ? url.split(https://kakaomames.github.io/turbowarp/")[3]
+            : url.split(https://kakaomames.github.io/turbowarp/")[2].split(".")[0];
         },
       },
-      //those .app domains
+     https://kakaomames.github.io/turbowarp//those .app domains
       vercel: {
         handle: 0,
       },
@@ -429,7 +429,7 @@
 
     extensionVersion = "7.1.9";
 
-    //?Stores our attributes
+   https://kakaomames.github.io/turbowarp//?Stores our attributes
     triangleAttributesOfAllSprites = {};
     squareAttributesOfAllSprites = {};
 
@@ -443,47 +443,47 @@
         offset = offset + attribute || attribute;
         let valuetoSet = 0;
         switch (attribute) {
-          //U
+         https://kakaomames.github.io/turbowarp//U
           case 0:
             valuetoSet = value;
             break;
-          //V
+         https://kakaomames.github.io/turbowarp//V
           case 1:
             valuetoSet = value;
             break;
 
-          //100 since that is what scratch users are accustomed to.
-          //R
+         https://kakaomames.github.io/turbowarp//100 since that is what scratch users are accustomed to.
+         https://kakaomames.github.io/turbowarp//R
           case 2:
             valuetoSet = Math.min(Math.max(value, 0), 100) * 0.01;
             break;
-          //G
+         https://kakaomames.github.io/turbowarp//G
           case 3:
             valuetoSet = Math.min(Math.max(value, 0), 100) * 0.01;
             break;
-          //B
+         https://kakaomames.github.io/turbowarp//B
           case 4:
             valuetoSet = Math.min(Math.max(value, 0), 100) * 0.01;
             break;
 
-          //Clamp to 0 so we can't go behind the stage.
-          //Z
+         https://kakaomames.github.io/turbowarp//Clamp to 0 so we can't go behind the stage.
+         https://kakaomames.github.io/turbowarp//Z
           case 5:
             if (this.AdvancedSettings._ClampZ) {
               if (value < 0) {
                 valuetoSet = 0;
                 break;
               }
-              //convert to depth space for best accuracy
+             https://kakaomames.github.io/turbowarp//convert to depth space for best accuracy
               valuetoSet = value;
               break;
             }
-            //convert to depth space for best accuracy
+           https://kakaomames.github.io/turbowarp//convert to depth space for best accuracy
             valuetoSet = value;
             break;
 
-          //Clamp to 1 so we don't accidentally clip.
-          //W
+         https://kakaomames.github.io/turbowarp//Clamp to 1 so we don't accidentally clip.
+         https://kakaomames.github.io/turbowarp//W
           case 6:
             if (this.AdvancedSettings.wValueUnderFlow == true) {
               valuetoSet = value;
@@ -491,17 +491,17 @@
               valuetoSet = Math.max(value, 1);
             }
             break;
-          //Transparency
-          //Same story as color
+         https://kakaomames.github.io/turbowarp//Transparency
+         https://kakaomames.github.io/turbowarp//Same story as color
           case 7:
             valuetoSet = Math.min(Math.max(value, 0), 1000) * 0.01;
             break;
 
-          //Just break if value isn't valid
+         https://kakaomames.github.io/turbowarp//Just break if value isn't valid
           default:
             break;
         }
-        //Check if the index even exists.
+       https://kakaomames.github.io/turbowarp//Check if the index even exists.
         if (attribute >= 0 && attribute <= 7) {
           if (wholeTri) {
             this.triangleAttributesOfAllSprites[targetId][attribute] =
@@ -517,21 +517,21 @@
       },
     };
 
-    //?Our functions that allow for extra rendering things.
+   https://kakaomames.github.io/turbowarp//?Our functions that allow for extra rendering things.
     renderFunctions = {
       drawTri: (x1, y1, x2, y2, x3, y3, penColor, targetID) => {
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
 
         this.trianglesDrawn += 1;
-        //? get triangle attributes for current sprite.
+       https://kakaomames.github.io/turbowarp//? get triangle attributes for current sprite.
         const triAttribs = this.triangleAttributesOfAllSprites[targetID];
 
         let inputInfo = {};
 
         if (triAttribs) {
-          //Just for our eyes sakes
-          // prettier-ignore
+         https://kakaomames.github.io/turbowarp//Just for our eyes sakes
+         https://kakaomames.github.io/turbowarp// prettier-ignore
           inputInfo = {
               a_position: new Float32Array([
                 x1, y1, triAttribs[5], triAttribs[6],
@@ -545,8 +545,8 @@
               ])
             };
         } else {
-          //Just for our eyes sakes
-          // prettier-ignore
+         https://kakaomames.github.io/turbowarp//Just for our eyes sakes
+         https://kakaomames.github.io/turbowarp// prettier-ignore
           inputInfo = {
               a_position: new Float32Array([
                 x1, y1, 1, 1,
@@ -569,7 +569,7 @@
         gl.bindBuffer(gl.ARRAY_BUFFER, bufferInfo.attribs.a_color.buffer);
         gl.bufferData(gl.ARRAY_BUFFER, inputInfo.a_color, gl.DYNAMIC_DRAW);
 
-        //? Bind Positional Data
+       https://kakaomames.github.io/turbowarp//? Bind Positional Data
         twgl.setBuffersAndAttributes(
           gl,
           penPlusShaders.untextured.ProgramInf,
@@ -586,19 +586,19 @@
       },
 
       drawTextTri: (x1, y1, x2, y2, x3, y3, targetID, texture) => {
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
 
         this.trianglesDrawn += 1;
 
-        //? get triangle attributes for current sprite.
+       https://kakaomames.github.io/turbowarp//? get triangle attributes for current sprite.
         const triAttribs = this.triangleAttributesOfAllSprites[targetID];
 
         let inputInfo = {};
 
         if (triAttribs) {
-          //Just for our eyes sakes
-          // prettier-ignore
+         https://kakaomames.github.io/turbowarp//Just for our eyes sakes
+         https://kakaomames.github.io/turbowarp// prettier-ignore
           inputInfo = {
               a_position: new Float32Array([
                 x1, y1, triAttribs[5], triAttribs[6],
@@ -617,8 +617,8 @@
               ])
             };
         } else {
-          //Just for our eyes sakes
-          // prettier-ignore
+         https://kakaomames.github.io/turbowarp//Just for our eyes sakes
+         https://kakaomames.github.io/turbowarp// prettier-ignore
           inputInfo = {
               a_position: new Float32Array([
                 x1, y1, 1, 1,
@@ -651,7 +651,7 @@
 
         gl.useProgram(penPlusShaders.textured.ProgramInf.program);
 
-        //? Bind Positional Data
+       https://kakaomames.github.io/turbowarp//? Bind Positional Data
         twgl.setBuffersAndAttributes(
           gl,
           penPlusShaders.textured.ProgramInf,
@@ -668,9 +668,9 @@
         twgl.drawBufferInfo(gl, bufferInfo);
       },
 
-      //? this is so I don't have to go through the hassle of replacing default scratch shaders
-      //? many of curse words where exchanged between me and a pillow while writing this extension
-      //? but I have previaled!
+     https://kakaomames.github.io/turbowarp//? this is so I don't have to go through the hassle of replacing default scratch shaders
+     https://kakaomames.github.io/turbowarp//? many of curse words where exchanged between me and a pillow while writing this extension
+     https://kakaomames.github.io/turbowarp//? but I have previaled!
       reRenderPenLayer: () => {
         gl.useProgram(penPlusShaders.draw.ProgramInf.program);
 
@@ -688,7 +688,7 @@
       },
     };
 
-    //?The Draw region! extra cool!
+   https://kakaomames.github.io/turbowarp//?The Draw region! extra cool!
     penPlusDrawRegion = {
       enter: () => {
         if (this.culling) {
@@ -709,13 +709,13 @@
               Scratch.Cast.toNumber(nativeSize[0]),
               Scratch.Cast.toNumber(nativeSize[1])
             );
-            transform_Matrix[0] = 2 / renderer._nativeSize[0];
-            transform_Matrix[1] = -2 / renderer._nativeSize[1];
+            transform_Matrix[0] = 2https://kakaomames.github.io/turbowarp/ renderer._nativeSize[0];
+            transform_Matrix[1] = -2https://kakaomames.github.io/turbowarp/ renderer._nativeSize[1];
           } else {
-            transform_Matrix[0] = 2 / this.currentRenderTexture.width;
-            transform_Matrix[1] = -2 / this.currentRenderTexture.height;
+            transform_Matrix[0] = 2https://kakaomames.github.io/turbowarp/ this.currentRenderTexture.width;
+            transform_Matrix[1] = -2https://kakaomames.github.io/turbowarp/ this.currentRenderTexture.height;
           }
-          //Resize our variables to be viewport accurate
+         https://kakaomames.github.io/turbowarp//Resize our variables to be viewport accurate
           gl.viewport(
             0,
             0,
@@ -724,8 +724,8 @@
           );
         } else {
           gl.viewport(0, 0, nativeSize[0], nativeSize[1]);
-          transform_Matrix[0] = 2 / renderer._nativeSize[0];
-          transform_Matrix[1] = -2 / renderer._nativeSize[1];
+          transform_Matrix[0] = 2https://kakaomames.github.io/turbowarp/ renderer._nativeSize[0];
+          transform_Matrix[1] = -2https://kakaomames.github.io/turbowarp/ renderer._nativeSize[1];
         }
         gl.bindFramebuffer(
           gl.FRAMEBUFFER,
@@ -745,7 +745,7 @@
 
         this.renderFunctions.reRenderPenLayer();
 
-        //Quick clear the pen+ frame buffer
+       https://kakaomames.github.io/turbowarp//Quick clear the pen+ frame buffer
         gl.clearColor(0, 0, 0, 0);
         gl.bindFramebuffer(gl.FRAMEBUFFER, triBufferInfo.framebuffer);
         gl.clear(gl.COLOR_BUFFER_BIT);
@@ -756,22 +756,22 @@
           renderer._backgroundColor4f[3]
         );
 
-        /*gl.bindFramebuffer(gl.FRAMEBUFFER, triFrameBuffer);
+       https://kakaomames.github.io/turbowarp/*gl.bindFramebuffer(gl.FRAMEBUFFER, triFrameBuffer);
   
           gl.bindFramebuffer(
             gl.FRAMEBUFFER,
             renderer._allSkins[renderer._penSkinId]._framebuffer.framebuffer
           );
   
-          gl.useProgram(penPlusShaders.pen.program);*/
+          gl.useProgram(penPlusShaders.pen.program);https://kakaomames.github.io/turbowarp/
       },
     };
 
-    //?The neat color library I made
+   https://kakaomames.github.io/turbowarp//?The neat color library I made
     colorLib = {
       hexToRgb: (hex) => {
         if (typeof hex == "string") {
-          const splitHex = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(
+          const splitHex =https://kakaomames.github.io/turbowarp/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})https://kakaomames.github.io/turbowarp/i.exec(
             hex
           );
           return {
@@ -782,8 +782,8 @@
         }
         hex = Scratch.Cast.toNumber(hex);
         return {
-          r: Math.floor(hex / 65536),
-          g: Math.floor(hex / 256) % 256,
+          r: Math.floor(hexhttps://kakaomames.github.io/turbowarp/ 65536),
+          g: Math.floor(hexhttps://kakaomames.github.io/turbowarp/ 256) % 256,
           b: hex % 256,
         };
       },
@@ -796,7 +796,7 @@
       },
     };
 
-    //?Just some advanced settings
+   https://kakaomames.github.io/turbowarp//?Just some advanced settings
     AdvancedSettings = {
       wValueUnderFlow: false,
       useDepthBuffer: true,
@@ -810,13 +810,13 @@
           ? parentExtension.penPlusCostumeLibrary[name].texture
           : gl.createTexture();
         gl.bindTexture(gl.TEXTURE_2D, texture);
-        // Fill the texture with a 1x1 blue pixel.
+       https://kakaomames.github.io/turbowarp// Fill the texture with a 1x1 blue pixel.
 
         const pixelData = new Uint8Array(width * height * 4);
 
         const decodedColor = Scratch.Cast.toRgbColorObject(color);
 
-        for (let pixelID = 0; pixelID < pixelData.length / 4; pixelID++) {
+        for (let pixelID = 0; pixelID < pixelData.lengthhttps://kakaomames.github.io/turbowarp/ 4; pixelID++) {
           pixelData[pixelID * 4] = decodedColor.r;
           pixelData[pixelID * 4 + 1] = decodedColor.g;
           pixelData[pixelID * 4 + 2] = decodedColor.b;
@@ -850,7 +850,7 @@
           : gl.createTexture();
 
         gl.bindTexture(gl.TEXTURE_2D, texture);
-        // Fill the texture with a 1x1 blue pixel.
+       https://kakaomames.github.io/turbowarp// Fill the texture with a 1x1 blue pixel.
         gl.texImage2D(
           gl.TEXTURE_2D,
           0,
@@ -863,7 +863,7 @@
           new Uint8Array([0, 0, 255, 255])
         );
 
-        // Let's assume all images are not a power of 2
+       https://kakaomames.github.io/turbowarp// Let's assume all images are not a power of 2
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
         return new Promise((resolve, reject) => {
@@ -872,8 +872,8 @@
               reject(false);
               return;
             }
-            // Permission is checked earlier.
-            // eslint-disable-next-line extension/check-can-fetch
+           https://kakaomames.github.io/turbowarp// Permission is checked earlier.
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
             const image = new Image();
             image.onload = function () {
               gl.bindTexture(gl.TEXTURE_2D, texture);
@@ -899,7 +899,7 @@
       },
 
       getTextureData: (texture, width, height) => {
-        //?Initilize the temp framebuffer and assign it
+       https://kakaomames.github.io/turbowarp//?Initilize the temp framebuffer and assign it
         const readBuffer = gl.createFramebuffer();
 
         lastFB = gl.getParameter(gl.FRAMEBUFFER_BINDING);
@@ -914,16 +914,16 @@
           0
         );
 
-        //?make sure to unbind the framebuffer and delete it!
+       https://kakaomames.github.io/turbowarp//?make sure to unbind the framebuffer and delete it!
         const removeBuffer = () => {
           gl.deleteFramebuffer(readBuffer);
         };
 
-        //?if sucessful read
+       https://kakaomames.github.io/turbowarp//?if sucessful read
         if (
           gl.checkFramebufferStatus(gl.FRAMEBUFFER) == gl.FRAMEBUFFER_COMPLETE
         ) {
-          //?Make an array to write the pixels onto
+         https://kakaomames.github.io/turbowarp//?Make an array to write the pixels onto
           let dataArray = new Uint8Array(width * height * 4);
           gl.readPixels(
             0,
@@ -935,18 +935,18 @@
             dataArray
           );
 
-          //?Remove Buffer data and return data
+         https://kakaomames.github.io/turbowarp//?Remove Buffer data and return data
           removeBuffer();
           return dataArray;
         }
 
-        //?If not return undefined
+       https://kakaomames.github.io/turbowarp//?If not return undefined
         removeBuffer();
         return undefined;
       },
 
       getTextureAsURI: (texture, width, height) => {
-        //?Initilize the temp framebuffer and assign it
+       https://kakaomames.github.io/turbowarp//?Initilize the temp framebuffer and assign it
         const readBuffer = gl.createFramebuffer();
 
         lastFB = gl.getParameter(gl.FRAMEBUFFER_BINDING);
@@ -961,16 +961,16 @@
           0
         );
 
-        //?make sure to unbind the framebuffer and delete it!
+       https://kakaomames.github.io/turbowarp//?make sure to unbind the framebuffer and delete it!
         const removeBuffer = () => {
           gl.deleteFramebuffer(readBuffer);
         };
 
-        //?if sucessful read
+       https://kakaomames.github.io/turbowarp//?if sucessful read
         if (
           gl.checkFramebufferStatus(gl.FRAMEBUFFER) == gl.FRAMEBUFFER_COMPLETE
         ) {
-          //?Make an array to write the pixels onto
+         https://kakaomames.github.io/turbowarp//?Make an array to write the pixels onto
           let dataArray = new Uint8Array(width * height * 4);
           gl.readPixels(
             0,
@@ -982,23 +982,23 @@
             dataArray
           );
 
-          //Make an invisible canvas
+         https://kakaomames.github.io/turbowarp//Make an invisible canvas
           const dataURICanvas = document.createElement("canvas");
           dataURICanvas.width = width;
           dataURICanvas.height = height;
           const dataURIContext = dataURICanvas.getContext("2d");
 
-          // Copy the pixels to a 2D canvas
+         https://kakaomames.github.io/turbowarp// Copy the pixels to a 2D canvas
           const imageData = dataURIContext.createImageData(width, height);
           imageData.data.set(dataArray);
           dataURIContext.putImageData(imageData, 0, 0);
 
-          //?Remove Buffer data and return data
+         https://kakaomames.github.io/turbowarp//?Remove Buffer data and return data
           removeBuffer();
           return dataURICanvas.toDataURL();
         }
 
-        //?If not return undefined
+       https://kakaomames.github.io/turbowarp//?If not return undefined
         removeBuffer();
         return undefined;
       },
@@ -1009,7 +1009,7 @@
       editorClosed: [],
     };
 
-    //Statistical Stuff
+   https://kakaomames.github.io/turbowarp//Statistical Stuff
     trianglesDrawn = 0;
     inDrawRegion = false;
 
@@ -1032,8 +1032,8 @@
     currentRenderTexture = triBufferInfo;
 
     blockIcons = {
-      undo: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOS40NDU0NCIgaGVpZ2h0PSIxMC42MzM1MSIgdmlld0JveD0iMCwwLDE5LjQ0NTQ0LDEwLjYzMzUxIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMxLjE1NDU0LC0xNzMuNTc1OTkpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMjMyLjIxNTIsMTc0LjMxYzAuNjM2NCwtMC4yMTIxMyAxLjM0MzUsLTAuMDcwNzEgMS43Njc3NywwLjM1MzU1bDEuMTMxMzcsMS4xMzEzN2MwLjk4OTk1LC0wLjg0ODUzIDIuMTIxMzIsLTEuNDE0MjEgMy4zMjM0LC0xLjc2Nzc3YzEuODM4NDgsLTAuNTY1NjkgMy44ODkwOSwtMC42MzY0IDUuNzk4MjgsMGMxLjgzODQ4LDAuNTY1NjkgMy4zOTQxMSwxLjY5NzA2IDQuNTI1NDgsMy4yNTI2OWMxLjA2MDY2LDEuNDg0OTIgMS42OTcwNiwzLjI1MjY5IDEuODM4NDgsNS4wOTExN2MwLDAuOTg5OTUgLTAuODQ4NTMsMS44Mzg0OCAtMS44Mzg0OCwxLjgzODQ4Yy0wLjg0ODUzLDAgLTEuNjI2MzUsLTAuNjM2NCAtMS43Njc3NywtMS40ODQ5MmwtMC4wNzA3MSwtMC4wNzA3MWMtMC4yMTIxMywtMS4wNjA2NiAtMC43MDcxMSwtMS45Nzk5IC0xLjQxNDIxLC0yLjY4NzAxYy0wLjcwNzExLC0wLjcwNzExIC0xLjU1NTYzLC0xLjEzMTM3IC0yLjU0NTU4LC0xLjI3Mjc5Yy0xLjM0MzUsLTAuMjEyMTMgLTIuNzU3NzIsMC4yMTIxMyAtMy43NDc2NywxLjIwMjA4bDEuMDYwNjYsMS4wNjA2NmMwLjYzNjQsMC42MzY0IDAuNzA3MTEsMS42OTcwNiAwLDIuNDA0MTZjLTAuMjgyODQsMC4yODI4NCAtMC43Nzc4MiwwLjQ5NDk3IC0xLjIwMjA4LDAuNDk0OTdsLTYuMjIyNTQsMGMtMC45MTkyNCwtMC4wNzA3MSAtMS42MjYzNSwtMC43Nzc4MiAtMS42OTcwNiwtMS42OTcwNmwwLC02LjM2Mzk2YzAsLTAuNzA3MTEgMC40MjQyNiwtMS4yNzI3OSAxLjA2MDY2LC0xLjQ4NDkyeiIgZmlsbC1vcGFjaXR5PSIwLjM3MjU1IiBmaWxsPSIjMDAwMDAwIi8+PHBhdGggZD0iTTIzMy4yNzU4NSwxNzUuMzcwNjVsMS44Mzg0OCwxLjgzODQ4YzEuMDYwNjYsLTEuMDYwNjYgMi4yNjI3NCwtMS44Mzg0OCAzLjY3Njk2LC0yLjI2Mjc0YzEuNjk3MDYsLTAuNTY1NjkgMy40NjQ4MiwtMC40OTQ5NyA1LjE2MTg4LDAuMDcwNzFjMS42MjYzNSwwLjQ5NDk3IDMuMTExMjcsMS41NTU2MyA0LjAzMDUxLDIuODk5MTRjMC45ODk5NSwxLjI3Mjc5IDEuNTU1NjMsMi45Njk4NSAxLjYyNjM1LDQuNTk2MTljMC4wNzA3MSwwLjQ5NDk3IC0wLjM1MzU1LDAuOTE5MjQgLTAuNzc3ODIsMC45MTkyNGMtMC40OTQ5NywwLjA3MDcxIC0wLjkxOTI0LC0wLjM1MzU1IC0wLjkxOTI0LC0wLjc3NzgydjBjLTAuMjEyMTMsLTEuMjAyMDggLTAuNzc3ODIsLTIuMzMzNDUgLTEuNjI2MzUsLTMuMTgxOThjLTAuODQ4NTMsLTAuODQ4NTMgLTEuODM4NDgsLTEuNDE0MjEgLTMuMDQwNTYsLTEuNjI2MzVjLTEuMDYwNjYsLTAuMjEyMTMgLTIuMTkyMDMsLTAuMDcwNzEgLTMuMjUyNjksMC40MjQyNmMtMC44NDg1MywwLjQyNDI2IC0xLjU1NTYzLDAuOTg5OTUgLTIuMTIxMzIsMS44Mzg0OGwxLjY5NzA2LDEuNjk3MDZjMC4yODI4NCwwLjI4Mjg0IDAuMjgyODQsMC43MDcxMSAwLDAuOTg5OTVjLTAuMTQxNDIsMC4xNDE0MiAtMC4yODI4NCwwLjE0MTQyIC0wLjQyNDI2LDAuMTQxNDJsLTYuMjIyNTQsMGMtMC40MjQyNiwwIC0wLjcwNzExLC0wLjI4Mjg0IC0wLjYzNjQsLTAuNjM2NGwwLC02LjIyMjU0YzAsLTAuNDI0MjYgMC4xNDE0MiwtMC43MDcxMSAwLjQyNDI2LC0wLjg0ODUzYzAuMjgyODQsLTAuMTQxNDIgMC40MjQyNiwwIDAuNTY1NjksMC4xNDE0MnoiIGZpbGw9IiNmZmZmZmYiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjo4Ljg0NTQ2Mzg5MDkwNTQ3ODo2LjQyNDAxMjQ0MTg5NTI4Ni0tPg==",
-      redo: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOS40NDU0NCIgaGVpZ2h0PSIxMC42MzM1MSIgdmlld0JveD0iMCwwLDE5LjQ0NTQ0LDEwLjYzMzUxIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMxLjE1NDU0LC0xNzMuNTc1OTcpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMjQ5LjUzOTMyLDE3NC4zMDk5OWMwLjYzNjQsMC4yMTIxMyAxLjA2MDY2LDAuNzc3ODEgMS4wNjA2NiwxLjQ4NDkydjYuMzYzOTZjLTAuMDcwNzEsMC45MTkyNCAtMC43Nzc4MiwxLjYyNjM1IC0xLjY5NzA2LDEuNjk3MDZoLTYuMjIyNTRjLTAuNDI0MjYsMCAtMC45MTkyNCwtMC4yMTIxMyAtMS4yMDIwOCwtMC40OTQ5N2MtMC43MDcxMSwtMC43MDcxIC0wLjYzNjQsLTEuNzY3NzYgMCwtMi40MDQxNmwxLjA2MDY2LC0xLjA2MDY2Yy0wLjk4OTk1LC0wLjk4OTk1IC0yLjQwNDE3LC0xLjQxNDIxIC0zLjc0NzY3LC0xLjIwMjA4Yy0wLjk4OTk1LDAuMTQxNDIgLTEuODM4NDcsMC41NjU2OCAtMi41NDU1OCwxLjI3Mjc5Yy0wLjcwNzEsMC43MDcxMSAtMS4yMDIwOCwxLjYyNjM1IC0xLjQxNDIxLDIuNjg3MDFsLTAuMDcwNzEsMC4wNzA3MWMtMC4xNDE0MiwwLjg0ODUyIC0wLjkxOTI0LDEuNDg0OTIgLTEuNzY3NzcsMS40ODQ5MmMtMC45ODk5NSwwIC0xLjgzODQ4LC0wLjg0ODUzIC0xLjgzODQ4LC0xLjgzODQ4YzAuMTQxNDIsLTEuODM4NDggMC43Nzc4MiwtMy42MDYyNSAxLjgzODQ4LC01LjA5MTE3YzEuMTMxMzcsLTEuNTU1NjMgMi42ODcsLTIuNjg3IDQuNTI1NDgsLTMuMjUyNjljMS45MDkxOSwtMC42MzY0IDMuOTU5OCwtMC41NjU2OSA1Ljc5ODI4LDBjMS4yMDIwOCwwLjM1MzU2IDIuMzMzNDUsMC45MTkyNCAzLjMyMzQsMS43Njc3N2wxLjEzMTM3LC0xLjEzMTM3YzAuNDI0MjcsLTAuNDI0MjYgMS4xMzEzNywtMC41NjU2OCAxLjc2Nzc3LC0wLjM1MzU1eiIgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aW5kZXgmcXVvdDs6bnVsbH0iIGZpbGwtb3BhY2l0eT0iMC4zNzI1NSIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Ik0yNDguNDc4NjYsMTc1LjM3MDY0YzAuMTQxNDMsLTAuMTQxNDIgMC4yODI4NSwtMC4yODI4NCAwLjU2NTY5LC0wLjE0MTQyYzAuMjgyODQsMC4xNDE0MiAwLjQyNDI2LDAuNDI0MjcgMC40MjQyNiwwLjg0ODUzdjYuMjIyNTRjMC4wNzA3MSwwLjM1MzU2IC0wLjIxMjE0LDAuNjM2NCAtMC42MzY0LDAuNjM2NGgtNi4yMjI1NGMtMC4xNDE0MiwwIC0wLjI4Mjg0LDAgLTAuNDI0MjYsLTAuMTQxNDJjLTAuMjgyODQsLTAuMjgyODQgLTAuMjgyODQsLTAuNzA3MTEgMCwtMC45ODk5NWwxLjY5NzA2LC0xLjY5NzA2Yy0wLjU2NTY5LC0wLjg0ODUzIC0xLjI3Mjc5LC0xLjQxNDIyIC0yLjEyMTMyLC0xLjgzODQ4Yy0xLjA2MDY2LC0wLjQ5NDk3IC0yLjE5MjAzLC0wLjYzNjM5IC0zLjI1MjY5LC0wLjQyNDI2Yy0xLjIwMjA4LDAuMjEyMTQgLTIuMTkyMDMsMC43Nzc4MiAtMy4wNDA1NiwxLjYyNjM1Yy0wLjg0ODUzLDAuODQ4NTMgLTEuNDE0MjIsMS45Nzk5IC0xLjYyNjM1LDMuMTgxOTh2MGMwLDAuNDI0MjcgLTAuNDI0MjcsMC44NDg1MyAtMC45MTkyNCwwLjc3NzgyYy0wLjQyNDI3LDAgLTAuODQ4NTMsLTAuNDI0MjcgLTAuNzc3ODIsLTAuOTE5MjRjMC4wNzA3MiwtMS42MjYzNCAwLjYzNjQsLTMuMzIzNCAxLjYyNjM1LC00LjU5NjE5YzAuOTE5MjQsLTEuMzQzNTEgMi40MDQxNiwtMi40MDQxNyA0LjAzMDUxLC0yLjg5OTE0YzEuNjk3MDYsLTAuNTY1NjggMy40NjQ4MiwtMC42MzY0IDUuMTYxODgsLTAuMDcwNzFjMS40MTQyMiwwLjQyNDI2IDIuNjE2MywxLjIwMjA4IDMuNjc2OTYsMi4yNjI3NGwxLjgzODQ4LC0xLjgzODQ4eiIgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aW5kZXgmcXVvdDs6bnVsbH0iIGZpbGw9IiNmZmZmZmYiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjo4Ljg0NTQ2Mzg5MDkwNTQyMTo2LjQyNDAyNTQ1ODI2MTQ2OC0tPg==",
+      undo: "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOS40NDU0NCIgaGVpZ2h0PSIxMC42MzM1MSIgdmlld0JveD0iMCwwLDE5LjQ0NTQ0LDEwLjYzMzUxIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMxLjE1NDU0LC0xNzMuNTc1OTkpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMjMyLjIxNTIsMTc0LjMxYzAuNjM2NCwtMC4yMTIxMyAxLjM0MzUsLTAuMDcwNzEgMS43Njc3NywwLjM1MzU1bDEuMTMxMzcsMS4xMzEzN2MwLjk4OTk1LC0wLjg0ODUzIDIuMTIxMzIsLTEuNDE0MjEgMy4zMjM0LC0xLjc2Nzc3YzEuODM4NDgsLTAuNTY1NjkgMy44ODkwOSwtMC42MzY0IDUuNzk4MjgsMGMxLjgzODQ4LDAuNTY1NjkgMy4zOTQxMSwxLjY5NzA2IDQuNTI1NDgsMy4yNTI2OWMxLjA2MDY2LDEuNDg0OTIgMS42OTcwNiwzLjI1MjY5IDEuODM4NDgsNS4wOTExN2MwLDAuOTg5OTUgLTAuODQ4NTMsMS44Mzg0OCAtMS44Mzg0OCwxLjgzODQ4Yy0wLjg0ODUzLDAgLTEuNjI2MzUsLTAuNjM2NCAtMS43Njc3NywtMS40ODQ5MmwtMC4wNzA3MSwtMC4wNzA3MWMtMC4yMTIxMywtMS4wNjA2NiAtMC43MDcxMSwtMS45Nzk5IC0xLjQxNDIxLC0yLjY4NzAxYy0wLjcwNzExLC0wLjcwNzExIC0xLjU1NTYzLC0xLjEzMTM3IC0yLjU0NTU4LC0xLjI3Mjc5Yy0xLjM0MzUsLTAuMjEyMTMgLTIuNzU3NzIsMC4yMTIxMyAtMy43NDc2NywxLjIwMjA4bDEuMDYwNjYsMS4wNjA2NmMwLjYzNjQsMC42MzY0IDAuNzA3MTEsMS42OTcwNiAwLDIuNDA0MTZjLTAuMjgyODQsMC4yODI4NCAtMC43Nzc4MiwwLjQ5NDk3IC0xLjIwMjA4LDAuNDk0OTdsLTYuMjIyNTQsMGMtMC45MTkyNCwtMC4wNzA3MSAtMS42MjYzNSwtMC43Nzc4MiAtMS42OTcwNiwtMS42OTcwNmwwLC02LjM2Mzk2YzAsLTAuNzA3MTEgMC40MjQyNiwtMS4yNzI3OSAxLjA2MDY2LC0xLjQ4NDkyeiIgZmlsbC1vcGFjaXR5PSIwLjM3MjU1IiBmaWxsPSIjMDAwMDAwIi8+PHBhdGggZD0iTTIzMy4yNzU4NSwxNzUuMzcwNjVsMS44Mzg0OCwxLjgzODQ4YzEuMDYwNjYsLTEuMDYwNjYgMi4yNjI3NCwtMS44Mzg0OCAzLjY3Njk2LC0yLjI2Mjc0YzEuNjk3MDYsLTAuNTY1NjkgMy40NjQ4MiwtMC40OTQ5NyA1LjE2MTg4LDAuMDcwNzFjMS42MjYzNSwwLjQ5NDk3IDMuMTExMjcsMS41NTU2MyA0LjAzMDUxLDIuODk5MTRjMC45ODk5NSwxLjI3Mjc5IDEuNTU1NjMsMi45Njk4NSAxLjYyNjM1LDQuNTk2MTljMC4wNzA3MSwwLjQ5NDk3IC0wLjM1MzU1LDAuOTE5MjQgLTAuNzc3ODIsMC45MTkyNGMtMC40OTQ5NywwLjA3MDcxIC0wLjkxOTI0LC0wLjM1MzU1IC0wLjkxOTI0LC0wLjc3NzgydjBjLTAuMjEyMTMsLTEuMjAyMDggLTAuNzc3ODIsLTIuMzMzNDUgLTEuNjI2MzUsLTMuMTgxOThjLTAuODQ4NTMsLTAuODQ4NTMgLTEuODM4NDgsLTEuNDE0MjEgLTMuMDQwNTYsLTEuNjI2MzVjLTEuMDYwNjYsLTAuMjEyMTMgLTIuMTkyMDMsLTAuMDcwNzEgLTMuMjUyNjksMC40MjQyNmMtMC44NDg1MywwLjQyNDI2IC0xLjU1NTYzLDAuOTg5OTUgLTIuMTIxMzIsMS44Mzg0OGwxLjY5NzA2LDEuNjk3MDZjMC4yODI4NCwwLjI4Mjg0IDAuMjgyODQsMC43MDcxMSAwLDAuOTg5OTVjLTAuMTQxNDIsMC4xNDE0MiAtMC4yODI4NCwwLjE0MTQyIC0wLjQyNDI2LDAuMTQxNDJsLTYuMjIyNTQsMGMtMC40MjQyNiwwIC0wLjcwNzExLC0wLjI4Mjg0IC0wLjYzNjQsLTAuNjM2NGwwLC02LjIyMjU0YzAsLTAuNDI0MjYgMC4xNDE0MiwtMC43MDcxMSAwLjQyNDI2LC0wLjg0ODUzYzAuMjgyODQsLTAuMTQxNDIgMC40MjQyNiwwIDAuNTY1NjksMC4xNDE0MnoiIGZpbGw9IiNmZmZmZmYiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjo4Ljg0NTQ2Mzg5MDkwNTQ3ODo2LjQyNDAxMjQ0MTg5NTI4Ni0tPg==",
+      redo: "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOS40NDU0NCIgaGVpZ2h0PSIxMC42MzM1MSIgdmlld0JveD0iMCwwLDE5LjQ0NTQ0LDEwLjYzMzUxIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMxLjE1NDU0LC0xNzMuNTc1OTcpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMjQ5LjUzOTMyLDE3NC4zMDk5OWMwLjYzNjQsMC4yMTIxMyAxLjA2MDY2LDAuNzc3ODEgMS4wNjA2NiwxLjQ4NDkydjYuMzYzOTZjLTAuMDcwNzEsMC45MTkyNCAtMC43Nzc4MiwxLjYyNjM1IC0xLjY5NzA2LDEuNjk3MDZoLTYuMjIyNTRjLTAuNDI0MjYsMCAtMC45MTkyNCwtMC4yMTIxMyAtMS4yMDIwOCwtMC40OTQ5N2MtMC43MDcxMSwtMC43MDcxIC0wLjYzNjQsLTEuNzY3NzYgMCwtMi40MDQxNmwxLjA2MDY2LC0xLjA2MDY2Yy0wLjk4OTk1LC0wLjk4OTk1IC0yLjQwNDE3LC0xLjQxNDIxIC0zLjc0NzY3LC0xLjIwMjA4Yy0wLjk4OTk1LDAuMTQxNDIgLTEuODM4NDcsMC41NjU2OCAtMi41NDU1OCwxLjI3Mjc5Yy0wLjcwNzEsMC43MDcxMSAtMS4yMDIwOCwxLjYyNjM1IC0xLjQxNDIxLDIuNjg3MDFsLTAuMDcwNzEsMC4wNzA3MWMtMC4xNDE0MiwwLjg0ODUyIC0wLjkxOTI0LDEuNDg0OTIgLTEuNzY3NzcsMS40ODQ5MmMtMC45ODk5NSwwIC0xLjgzODQ4LC0wLjg0ODUzIC0xLjgzODQ4LC0xLjgzODQ4YzAuMTQxNDIsLTEuODM4NDggMC43Nzc4MiwtMy42MDYyNSAxLjgzODQ4LC01LjA5MTE3YzEuMTMxMzcsLTEuNTU1NjMgMi42ODcsLTIuNjg3IDQuNTI1NDgsLTMuMjUyNjljMS45MDkxOSwtMC42MzY0IDMuOTU5OCwtMC41NjU2OSA1Ljc5ODI4LDBjMS4yMDIwOCwwLjM1MzU2IDIuMzMzNDUsMC45MTkyNCAzLjMyMzQsMS43Njc3N2wxLjEzMTM3LC0xLjEzMTM3YzAuNDI0MjcsLTAuNDI0MjYgMS4xMzEzNywtMC41NjU2OCAxLjc2Nzc3LC0wLjM1MzU1eiIgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aW5kZXgmcXVvdDs6bnVsbH0iIGZpbGwtb3BhY2l0eT0iMC4zNzI1NSIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Ik0yNDguNDc4NjYsMTc1LjM3MDY0YzAuMTQxNDMsLTAuMTQxNDIgMC4yODI4NSwtMC4yODI4NCAwLjU2NTY5LC0wLjE0MTQyYzAuMjgyODQsMC4xNDE0MiAwLjQyNDI2LDAuNDI0MjcgMC40MjQyNiwwLjg0ODUzdjYuMjIyNTRjMC4wNzA3MSwwLjM1MzU2IC0wLjIxMjE0LDAuNjM2NCAtMC42MzY0LDAuNjM2NGgtNi4yMjI1NGMtMC4xNDE0MiwwIC0wLjI4Mjg0LDAgLTAuNDI0MjYsLTAuMTQxNDJjLTAuMjgyODQsLTAuMjgyODQgLTAuMjgyODQsLTAuNzA3MTEgMCwtMC45ODk5NWwxLjY5NzA2LC0xLjY5NzA2Yy0wLjU2NTY5LC0wLjg0ODUzIC0xLjI3Mjc5LC0xLjQxNDIyIC0yLjEyMTMyLC0xLjgzODQ4Yy0xLjA2MDY2LC0wLjQ5NDk3IC0yLjE5MjAzLC0wLjYzNjM5IC0zLjI1MjY5LC0wLjQyNDI2Yy0xLjIwMjA4LDAuMjEyMTQgLTIuMTkyMDMsMC43Nzc4MiAtMy4wNDA1NiwxLjYyNjM1Yy0wLjg0ODUzLDAuODQ4NTMgLTEuNDE0MjIsMS45Nzk5IC0xLjYyNjM1LDMuMTgxOTh2MGMwLDAuNDI0MjcgLTAuNDI0MjcsMC44NDg1MyAtMC45MTkyNCwwLjc3NzgyYy0wLjQyNDI3LDAgLTAuODQ4NTMsLTAuNDI0MjcgLTAuNzc3ODIsLTAuOTE5MjRjMC4wNzA3MiwtMS42MjYzNCAwLjYzNjQsLTMuMzIzNCAxLjYyNjM1LC00LjU5NjE5YzAuOTE5MjQsLTEuMzQzNTEgMi40MDQxNiwtMi40MDQxNyA0LjAzMDUxLC0yLjg5OTE0YzEuNjk3MDYsLTAuNTY1NjggMy40NjQ4MiwtMC42MzY0IDUuMTYxODgsLTAuMDcwNzFjMS40MTQyMiwwLjQyNDI2IDIuNjE2MywxLjIwMjA4IDMuNjc2OTYsMi4yNjI3NGwxLjgzODQ4LC0xLjgzODQ4eiIgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aW5kZXgmcXVvdDs6bnVsbH0iIGZpbGw9IiNmZmZmZmYiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjo4Ljg0NTQ2Mzg5MDkwNTQyMTo2LjQyNDAyNTQ1ODI2MTQ2OC0tPg==",
     };
 
     constructor() {
@@ -1068,18 +1068,18 @@
 
       parentExtension = this;
 
-      //For addon development. Just something fun I plan to do in the future.
-      //Others are allowed to join!
+     https://kakaomames.github.io/turbowarp//For addon development. Just something fun I plan to do in the future.
+     https://kakaomames.github.io/turbowarp//Others are allowed to join!
       vm.runtime.ext_obviousalexc_penPlus = this;
 
       vm.runtime.on("PROJECT_LOADED", this._setupExtensionStorage);
 
-      //Remove clone data from cache;
+     https://kakaomames.github.io/turbowarp//Remove clone data from cache;
       vm.runtime.on("targetWasRemoved", (clone) => {
         const cloneID = clone.id;
         Object.keys(clone.variables).forEach((key) => {
-          //Yeah this is me. You are probably wondering how I got here?
-          //Welp it all started on 3DGAS
+         https://kakaomames.github.io/turbowarp//Yeah this is me. You are probably wondering how I got here?
+         https://kakaomames.github.io/turbowarp//Welp it all started on 3DGAS
           if (this.listCache[key + cloneID]) {
             delete this.listCache[key + cloneID];
           }
@@ -1093,37 +1093,37 @@
 
     _createAttributedatForShader(shaderName) {
       const shaderDat = this.programs[shaderName];
-      //Make sure required info exists
+     https://kakaomames.github.io/turbowarp//Make sure required info exists
       if (!shaderDat) return;
       if (!shaderDat.info) return;
       if (!shaderDat.info.attribSetters) return;
-      //Store info
+     https://kakaomames.github.io/turbowarp//Store info
       const attributeDat = shaderDat.info.attribSetters;
       const attributes = Object.keys(attributeDat);
 
       const bufferInitilizer = {};
 
-      //Loop through every attribute and add the appropriate data.
+     https://kakaomames.github.io/turbowarp//Loop through every attribute and add the appropriate data.
       attributes.forEach((attributeKey) => {
-        //Create the array
+       https://kakaomames.github.io/turbowarp//Create the array
         this.programs[shaderName].attribDat[attributeKey] = {
           type: "unknown",
           data: [],
         };
 
-        //Search using regex
+       https://kakaomames.github.io/turbowarp//Search using regex
         const regexSearcher = new RegExp(`.*${attributeKey}.*\n?`);
         let searchResult =
           this.shaders[shaderName].projectData.vertShader.match(
             regexSearcher
           )[0];
 
-        //Remove whitespace at the beginning for easy extraction
+       https://kakaomames.github.io/turbowarp//Remove whitespace at the beginning for easy extraction
         while (searchResult.charAt(0) == " ") {
           searchResult = searchResult.replace(" ", "");
         }
 
-        //determine the length of the array through type
+       https://kakaomames.github.io/turbowarp//determine the length of the array through type
         const split = searchResult.split(" ");
         const type = split.length < 4 ? split[1] : split[2];
         if (split && (split[1] || split[2])) {
@@ -1147,14 +1147,14 @@
               break;
           }
 
-          //Add data to data array.
+         https://kakaomames.github.io/turbowarp//Add data to data array.
           for (let i = 0; i < length; i++) {
             this.programs[shaderName].attribDat[attributeKey].data.push(0);
           }
 
-          //Add the data to our buffer initilizer.
+         https://kakaomames.github.io/turbowarp//Add the data to our buffer initilizer.
           bufferInitilizer[attributeKey] = {
-            numComponents: Math.floor(length / 3),
+            numComponents: Math.floor(lengthhttps://kakaomames.github.io/turbowarp/ 3),
             data: this.programs[shaderName].attribDat[attributeKey].data,
           };
         }
@@ -1166,20 +1166,20 @@
       );
 
       this.programs[shaderName];
-      //Make sure required info exists
+     https://kakaomames.github.io/turbowarp//Make sure required info exists
       if (!shaderDat) return;
       if (!shaderDat.info) return;
       if (!shaderDat.info.uniformSetters) return;
-      //Store info
+     https://kakaomames.github.io/turbowarp//Store info
       const uniformDat = shaderDat.info.uniformSetters;
       const uniforms = Object.keys(uniformDat);
 
-      //Set this to our program
+     https://kakaomames.github.io/turbowarp//Set this to our program
       gl.useProgram(this.programs[shaderName].info.program);
 
-      //Loop through every uniforms and add the appropriate data.
+     https://kakaomames.github.io/turbowarp//Loop through every uniforms and add the appropriate data.
       uniforms.forEach((uniformKey) => {
-        //Create the data
+       https://kakaomames.github.io/turbowarp//Create the data
         this.programs[shaderName].uniformDec[uniformKey] = {
           type: "unknown",
           isArray: false,
@@ -1187,31 +1187,31 @@
           arrayData: [],
         };
 
-        //Search using regex
+       https://kakaomames.github.io/turbowarp//Search using regex
         const regexSearcher = new RegExp(`uniform.*${uniformKey}.*;?`);
         let searchResult =
           this.shaders[shaderName].projectData.vertShader.match(
             regexSearcher
           )[0];
 
-        //Remove whitespace at the beginning for easy extraction
+       https://kakaomames.github.io/turbowarp//Remove whitespace at the beginning for easy extraction
         while (searchResult.charAt(0) == " ") {
           searchResult = searchResult.replace(" ", "");
         }
 
-        //determine the type of the uniform
+       https://kakaomames.github.io/turbowarp//determine the type of the uniform
         const split = searchResult.split(" ");
         const type = split.length < 4 ? split[1] : split[2];
         if (split && (split[2] || split[3])) {
-          //Try to extract array data
+         https://kakaomames.github.io/turbowarp//Try to extract array data
           const arrayLength = Scratch.Cast.toNumber(
             (split.length < 4 ? split[2] : split[3])
               .replace(uniformKey, "")
-              .replaceAll(/[[\];]/g, "")
+              .replaceAllhttps://kakaomames.github.io/turbowarp/[[\];https://kakaomames.github.io/turbowarp/g, "")
           );
 
           this.programs[shaderName].uniformDec[uniformKey].type = type;
-          //Add data for array stuff
+         https://kakaomames.github.io/turbowarp//Add data for array stuff
           this.programs[shaderName].uniformDec[uniformKey].arrayLength =
             arrayLength;
           this.programs[shaderName].uniformDec[uniformKey].isArray =
@@ -1255,8 +1255,8 @@
               break;
           }
 
-          //Data that will be sent to the GPU to initilize the array
-          //But we will keep it in the declaration
+         https://kakaomames.github.io/turbowarp//Data that will be sent to the GPU to initilize the array
+         https://kakaomames.github.io/turbowarp//But we will keep it in the declaration
           this.programs[shaderName].uniformDat[uniformKey] =
             this.programs[shaderName].uniformDec[uniformKey].arrayData;
         }
@@ -1280,9 +1280,9 @@
       });
     }
 
-    //So I can track and fix potentially extension breaking problems
+   https://kakaomames.github.io/turbowarp//So I can track and fix potentially extension breaking problems
     _updateRelevantInfo(oldInfo) {
-      //pre 7.0.0B1 detection
+     https://kakaomames.github.io/turbowarp//pre 7.0.0B1 detection
       if (oldInfo.version == "6.5.3" || !oldInfo.version) {
         this.prefixes.penPlusTextures = "!";
         if (!Scratch.extensions.isPenguinMod)
@@ -1291,10 +1291,10 @@
       }
     }
 
-    //Stolen from lily :3
+   https://kakaomames.github.io/turbowarp//Stolen from lily :3
     _setupExtensionStorage() {
       runtime.ext_pen._getPenLayerID();
-      //Penguinmod saving support
+     https://kakaomames.github.io/turbowarp//Penguinmod saving support
       if (Scratch.extensions.isPenguinMod) {
         parentExtension.serialize = () => {
           return JSON.stringify({
@@ -1321,7 +1321,7 @@
           parentExtension._parseProjectShaders();
         };
 
-        //Doing this to remedy the janky turbowarp saving system.
+       https://kakaomames.github.io/turbowarp//Doing this to remedy the janky turbowarp saving system.
         parentExtension.getShaders = () => {
           return parentExtension.shaders;
         };
@@ -1344,16 +1344,16 @@
             parentExtension.extensionVersion;
         }
 
-        //For some reason tw saving just doesn't work lol
+       https://kakaomames.github.io/turbowarp//For some reason tw saving just doesn't work lol
         parentExtension.shaders = runtime.extensionStorage["penP"].shaders;
         parentExtension.prefixes = runtime.extensionStorage["penP"].prefixes;
 
-        //Remedy for the turbowarp saving system being jank.
+       https://kakaomames.github.io/turbowarp//Remedy for the turbowarp saving system being jank.
         parentExtension.getShaders = () => {
           parentExtension.shaders = runtime.extensionStorage["penP"].shaders;
           return runtime.extensionStorage["penP"].shaders;
         };
-        //seems inconsistant. Should check on behavior of desired trait.
+       https://kakaomames.github.io/turbowarp//seems inconsistant. Should check on behavior of desired trait.
         parentExtension._parseProjectShaders();
       }
 
@@ -1365,7 +1365,7 @@
     }
 
     saveShader(name, data) {
-      //Create data in the json object
+     https://kakaomames.github.io/turbowarp//Create data in the json object
       this.shaders[name] = {
         projectData: data,
         modifyDate: Date.now(),
@@ -1378,7 +1378,7 @@
         attribDat: {},
       };
 
-      //Dispatch events for addons to catch.
+     https://kakaomames.github.io/turbowarp//Dispatch events for addons to catch.
       this.dispatchEvent("shaderSaved", {
         projectData: data,
         vertexShader: data.vertShader,
@@ -1396,14 +1396,14 @@
       });
     }
 
-    //For custom events
+   https://kakaomames.github.io/turbowarp//For custom events
     addEventListener(eventName, eventFunction) {
       if (!this.events[eventName]) return;
       this.events[eventName].push(eventFunction);
     }
 
     deleteShader(name) {
-      //Create data in the json object
+     https://kakaomames.github.io/turbowarp//Create data in the json object
       delete this.shaders[name];
       delete this.programs[name];
     }
@@ -1716,7 +1716,7 @@
             blockType: Scratch.BlockType.LABEL,
             text: Scratch.translate("Images"),
           },
-          //Useless block keep for compat
+         https://kakaomames.github.io/turbowarp//Useless block keep for compat
           {
             disableMonitor: true,
             opcode: "setDURIclampmode",
@@ -1763,7 +1763,7 @@
             arguments: {
               dataURI: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./dango.png",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/dango.png",
               },
               name: {
                 type: Scratch.ArgumentType.STRING,
@@ -1888,7 +1888,7 @@
             text: Scratch.translate("Advanced"),
           },
 
-          //Custom Shader Blocks
+         https://kakaomames.github.io/turbowarp//Custom Shader Blocks
           {
             blockType: Scratch.BlockType.LABEL,
             text: Scratch.translate("Custom Shaders"),
@@ -3106,14 +3106,14 @@
         name: Scratch.translate("Pen+ V7"),
         id: "penP",
         docsURI:
-          "https://pen-group.github.io/docs/?page=extensions%2FpenPlus%2Fmain",
+          "httpshttps://kakaomames.github.io/turbowarp//pen-group.github.ihttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/?page=extensions%2FpenPlus%2Fmain",
         menuIconURI:
-          "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzMi45OTk3MiIgaGVpZ2h0PSIzMi44ODIwNyIgdmlld0JveD0iMCwwLDMyLjk5OTcyLDMyLjg4MjA3Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI0LC0xNjMuOTk5OTMpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTIyOC43NTMsMTk0LjYwMmwtNC4yNSwxLjc4bDEuNzgzLC00LjIzN2MxLjIxOCwtMi44OTIgMi45MDcsLTUuNDIzIDUuMDMsLTcuNTM4bDE5Ljc1LC0xOS42NzdjMC44NDYsLTAuODQyIDIuNjUsLTAuNDEgNC4wMzIsMC45NjdjMS4zOCwxLjM3NSAxLjgxNiwzLjE3MyAwLjk3LDQuMDE1bC0xOS43NSwxOS42NzhjLTIuMTIzLDIuMTE2IC00LjY2NCwzLjggLTcuNTY1LDUuMDEyIiBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTIzNi44NTgsMTczLjQyOGMwLDAgMi42MTYsMi4yMiA0LjM1LC0xLjU0NmMzLjc1MiwtOC4xNSA4LjIwMiwtNS43NzIgOC4yMDIsLTUuNzcyIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTI1Ni40MiwxNjguODI1YzAsMC40NjMgLTAuMTQsMC44NzMgLTAuNDMyLDEuMTY0bC05LjMzNSw5LjNjMC4yODIsLTAuMjkgMC40MSwtMC42NjggMC40MSwtMS4xMmMwLC0wLjg3NCAtMC41MDcsLTEuOTYzIC0xLjQwNiwtMi44NjhjLTEuMzYyLC0xLjM1OCAtMy4xNDcsLTEuOCAtNC4wMDIsLTAuOTlsOS4zMzUsLTkuMzAxYzAuODQ0LC0wLjg0IDIuNjUsLTAuNDEgNC4wMzUsMC45NmMwLjg5OCwwLjkwNCAxLjM5NiwxLjk4MiAxLjM5NiwyLjg1NU0yMzAuNTE1LDE5My43NzRjLTAuNTczLDAuMzAyIC0xLjE1NywwLjU3IC0xLjc2NCwwLjgzbC00LjI1MSwxLjc3OGwxLjc4NiwtNC4yMzVjMC4yNTgsLTAuNjA0IDAuNTMsLTEuMTg2IDAuODMzLC0xLjc1N2MwLjY5LDAuMTgzIDEuNDQ4LDAuNjI1IDIuMTA4LDEuMjgyYzAuNjYsMC42NTggMS4xMDIsMS40MTIgMS4yODcsMi4xMDIiIGZpbGw9IiM0Yzk3ZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjU2LjQ5OCwxNjguNzQ4YzAsMC40NjQgLTAuMTQsMC44NzQgLTAuNDMzLDEuMTY1bC0xOS43NDIsMTkuNjhjLTIuMTMsMi4xMSAtNC42NzMsMy43OTMgLTcuNTcyLDUuMDFsLTQuMjUxLDEuNzc3bDAuOTc0LC0yLjMxNmwxLjkyNSwtMC44MDhjMi44OTgsLTEuMjE4IDUuNDQsLTIuOSA3LjU3LC01LjAxbDE5Ljc0MywtMTkuNjhjMC4yOTIsLTAuMjkyIDAuNDMyLC0wLjcwMiAwLjQzMiwtMS4xNjVjMCwtMC42NDYgLTAuMjcsLTEuNCAtMC43OCwtMi4xMjJjMC4yNSwwLjE3MiAwLjUsMC4zNzcgMC43MzcsMC42MTRjMC44OTgsMC45MDUgMS4zOTYsMS45ODMgMS4zOTYsMi44NTYiIGZpbGw9IiM1NzVlNzUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIG9wYWNpdHk9IjAuMTUiLz48cGF0aCBkPSJNMjM4LjQ1LDE3Mi44M2MwLDAuNSAtMC40MDQsMC45MDUgLTAuOTA0LDAuOTA1Yy0wLjUsMCAtMC45MDUsLTAuNDA1IC0wLjkwNSwtMC45MDRjMCwtMC41IDAuNDA3LC0wLjkwMyAwLjkwNiwtMC45MDNjMC41LDAgMC45MDQsMC40MDQgMC45MDQsMC45MDR6IiBmaWxsPSIjNTc1ZTc1IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTI0NC45OTgwNywxODcuMDUyOThoOS41MTc2NSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIi8+PHBhdGggZD0iTTI0OS43NTY4OSwxOTEuODExOHYtOS41MTc2NSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIi8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTY6MTYuMDAwMDY5MjMwODQyMTQzLS0+",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzMi45OTk3MiIgaGVpZ2h0PSIzMi44ODIwNyIgdmlld0JveD0iMCwwLDMyLjk5OTcyLDMyLjg4MjA3Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI0LC0xNjMuOTk5OTMpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTIyOC43NTMsMTk0LjYwMmwtNC4yNSwxLjc4bDEuNzgzLC00LjIzN2MxLjIxOCwtMi44OTIgMi45MDcsLTUuNDIzIDUuMDMsLTcuNTM4bDE5Ljc1LC0xOS42NzdjMC44NDYsLTAuODQyIDIuNjUsLTAuNDEgNC4wMzIsMC45NjdjMS4zOCwxLjM3NSAxLjgxNiwzLjE3MyAwLjk3LDQuMDE1bC0xOS43NSwxOS42NzhjLTIuMTIzLDIuMTE2IC00LjY2NCwzLjggLTcuNTY1LDUuMDEyIiBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTIzNi44NTgsMTczLjQyOGMwLDAgMi42MTYsMi4yMiA0LjM1LC0xLjU0NmMzLjc1MiwtOC4xNSA4LjIwMiwtNS43NzIgOC4yMDIsLTUuNzcyIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTI1Ni40MiwxNjguODI1YzAsMC40NjMgLTAuMTQsMC44NzMgLTAuNDMyLDEuMTY0bC05LjMzNSw5LjNjMC4yODIsLTAuMjkgMC40MSwtMC42NjggMC40MSwtMS4xMmMwLC0wLjg3NCAtMC41MDcsLTEuOTYzIC0xLjQwNiwtMi44NjhjLTEuMzYyLC0xLjM1OCAtMy4xNDcsLTEuOCAtNC4wMDIsLTAuOTlsOS4zMzUsLTkuMzAxYzAuODQ0LC0wLjg0IDIuNjUsLTAuNDEgNC4wMzUsMC45NmMwLjg5OCwwLjkwNCAxLjM5NiwxLjk4MiAxLjM5NiwyLjg1NU0yMzAuNTE1LDE5My43NzRjLTAuNTczLDAuMzAyIC0xLjE1NywwLjU3IC0xLjc2NCwwLjgzbC00LjI1MSwxLjc3OGwxLjc4NiwtNC4yMzVjMC4yNTgsLTAuNjA0IDAuNTMsLTEuMTg2IDAuODMzLC0xLjc1N2MwLjY5LDAuMTgzIDEuNDQ4LDAuNjI1IDIuMTA4LDEuMjgyYzAuNjYsMC42NTggMS4xMDIsMS40MTIgMS4yODcsMi4xMDIiIGZpbGw9IiM0Yzk3ZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMjU2LjQ5OCwxNjguNzQ4YzAsMC40NjQgLTAuMTQsMC44NzQgLTAuNDMzLDEuMTY1bC0xOS43NDIsMTkuNjhjLTIuMTMsMi4xMSAtNC42NzMsMy43OTMgLTcuNTcyLDUuMDFsLTQuMjUxLDEuNzc3bDAuOTc0LC0yLjMxNmwxLjkyNSwtMC44MDhjMi44OTgsLTEuMjE4IDUuNDQsLTIuOSA3LjU3LC01LjAxbDE5Ljc0MywtMTkuNjhjMC4yOTIsLTAuMjkyIDAuNDMyLC0wLjcwMiAwLjQzMiwtMS4xNjVjMCwtMC42NDYgLTAuMjcsLTEuNCAtMC43OCwtMi4xMjJjMC4yNSwwLjE3MiAwLjUsMC4zNzcgMC43MzcsMC42MTRjMC44OTgsMC45MDUgMS4zOTYsMS45ODMgMS4zOTYsMi44NTYiIGZpbGw9IiM1NzVlNzUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIG9wYWNpdHk9IjAuMTUiLz48cGF0aCBkPSJNMjM4LjQ1LDE3Mi44M2MwLDAuNSAtMC40MDQsMC45MDUgLTAuOTA0LDAuOTA1Yy0wLjUsMCAtMC45MDUsLTAuNDA1IC0wLjkwNSwtMC45MDRjMCwtMC41IDAuNDA3LC0wLjkwMyAwLjkwNiwtMC45MDNjMC41LDAgMC45MDQsMC40MDQgMC45MDQsMC45MDR6IiBmaWxsPSIjNTc1ZTc1IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTI0NC45OTgwNywxODcuMDUyOThoOS41MTc2NSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIi8+PHBhdGggZD0iTTI0OS43NTY4OSwxOTEuODExOHYtOS41MTc2NSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIi8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTY6MTYuMDAwMDY5MjMwODQyMTQzLS0+",
         blockIconURI:
-          "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+cGVuLWljb248L3RpdGxlPjxnIHN0cm9rZT0iIzU3NUU3NSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik04Ljc1MyAzNC42MDJsLTQuMjUgMS43OCAxLjc4My00LjIzN2MxLjIxOC0yLjg5MiAyLjkwNy01LjQyMyA1LjAzLTcuNTM4TDMxLjA2NiA0LjkzYy44NDYtLjg0MiAyLjY1LS40MSA0LjAzMi45NjcgMS4zOCAxLjM3NSAxLjgxNiAzLjE3My45NyA0LjAxNUwxNi4zMTggMjkuNTljLTIuMTIzIDIuMTE2LTQuNjY0IDMuOC03LjU2NSA1LjAxMiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik0yOS40MSA2LjExcy00LjQ1LTIuMzc4LTguMjAyIDUuNzcyYy0xLjczNCAzLjc2Ni00LjM1IDEuNTQ2LTQuMzUgMS41NDYiLz48cGF0aCBkPSJNMzYuNDIgOC44MjVjMCAuNDYzLS4xNC44NzMtLjQzMiAxLjE2NGwtOS4zMzUgOS4zYy4yODItLjI5LjQxLS42NjguNDEtMS4xMiAwLS44NzQtLjUwNy0xLjk2My0xLjQwNi0yLjg2OC0xLjM2Mi0xLjM1OC0zLjE0Ny0xLjgtNC4wMDItLjk5TDMwLjk5IDUuMDFjLjg0NC0uODQgMi42NS0uNDEgNC4wMzUuOTYuODk4LjkwNCAxLjM5NiAxLjk4MiAxLjM5NiAyLjg1NU0xMC41MTUgMzMuNzc0Yy0uNTczLjMwMi0xLjE1Ny41Ny0xLjc2NC44M0w0LjUgMzYuMzgybDEuNzg2LTQuMjM1Yy4yNTgtLjYwNC41My0xLjE4Ni44MzMtMS43NTcuNjkuMTgzIDEuNDQ4LjYyNSAyLjEwOCAxLjI4Mi42Ni42NTggMS4xMDIgMS40MTIgMS4yODcgMi4xMDIiIGZpbGw9IiM0Qzk3RkYiLz48cGF0aCBkPSJNMzYuNDk4IDguNzQ4YzAgLjQ2NC0uMTQuODc0LS40MzMgMS4xNjVsLTE5Ljc0MiAxOS42OGMtMi4xMyAyLjExLTQuNjczIDMuNzkzLTcuNTcyIDUuMDFMNC41IDM2LjM4bC45NzQtMi4zMTYgMS45MjUtLjgwOGMyLjg5OC0xLjIxOCA1LjQ0LTIuOSA3LjU3LTUuMDFsMTkuNzQzLTE5LjY4Yy4yOTItLjI5Mi40MzItLjcwMi40MzItMS4xNjUgMC0uNjQ2LS4yNy0xLjQtLjc4LTIuMTIyLjI1LjE3Mi41LjM3Ny43MzcuNjE0Ljg5OC45MDUgMS4zOTYgMS45ODMgMS4zOTYgMi44NTYiIGZpbGw9IiM1NzVFNzUiIG9wYWNpdHk9Ii4xNSIvPjxwYXRoIGQ9Ik0xOC40NSAxMi44M2MwIC41LS40MDQuOTA1LS45MDQuOTA1cy0uOTA1LS40MDUtLjkwNS0uOTA0YzAtLjUuNDA3LS45MDMuOTA2LS45MDMuNSAwIC45MDQuNDA0LjkwNC45MDR6IiBmaWxsPSIjNTc1RTc1Ii8+PC9nPjwvc3ZnPg==",
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+cGVuLWljb248L3RpdGxlPjxnIHN0cm9rZT0iIzU3NUU3NSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik04Ljc1MyAzNC42MDJsLTQuMjUgMS43OCAxLjc4My00LjIzN2MxLjIxOC0yLjg5MiAyLjkwNy01LjQyMyA1LjAzLTcuNTM4TDMxLjA2NiA0LjkzYy44NDYtLjg0MiAyLjY1LS40MSA0LjAzMi45NjcgMS4zOCAxLjM3NSAxLjgxNiAzLjE3My45NyA0LjAxNUwxNi4zMTggMjkuNTljLTIuMTIzIDIuMTE2LTQuNjY0IDMuOC03LjU2NSA1LjAxMiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik0yOS40MSA2LjExcy00LjQ1LTIuMzc4LTguMjAyIDUuNzcyYy0xLjczNCAzLjc2Ni00LjM1IDEuNTQ2LTQuMzUgMS41NDYiLz48cGF0aCBkPSJNMzYuNDIgOC44MjVjMCAuNDYzLS4xNC44NzMtLjQzMiAxLjE2NGwtOS4zMzUgOS4zYy4yODItLjI5LjQxLS42NjguNDEtMS4xMiAwLS44NzQtLjUwNy0xLjk2My0xLjQwNi0yLjg2OC0xLjM2Mi0xLjM1OC0zLjE0Ny0xLjgtNC4wMDItLjk5TDMwLjk5IDUuMDFjLjg0NC0uODQgMi42NS0uNDEgNC4wMzUuOTYuODk4LjkwNCAxLjM5NiAxLjk4MiAxLjM5NiAyLjg1NU0xMC41MTUgMzMuNzc0Yy0uNTczLjMwMi0xLjE1Ny41Ny0xLjc2NC44M0w0LjUgMzYuMzgybDEuNzg2LTQuMjM1Yy4yNTgtLjYwNC41My0xLjE4Ni44MzMtMS43NTcuNjkuMTgzIDEuNDQ4LjYyNSAyLjEwOCAxLjI4Mi42Ni42NTggMS4xMDIgMS40MTIgMS4yODcgMi4xMDIiIGZpbGw9IiM0Qzk3RkYiLz48cGF0aCBkPSJNMzYuNDk4IDguNzQ4YzAgLjQ2NC0uMTQuODc0LS40MzMgMS4xNjVsLTE5Ljc0MiAxOS42OGMtMi4xMyAyLjExLTQuNjczIDMuNzkzLTcuNTcyIDUuMDFMNC41IDM2LjM4bC45NzQtMi4zMTYgMS45MjUtLjgwOGMyLjg5OC0xLjIxOCA1LjQ0LTIuOSA3LjU3LTUuMDFsMTkuNzQzLTE5LjY4Yy4yOTItLjI5Mi40MzItLjcwMi40MzItMS4xNjUgMC0uNjQ2LS4yNy0xLjQtLjc4LTIuMTIyLjI1LjE3Mi41LjM3Ny43MzcuNjE0Ljg5OC45MDUgMS4zOTYgMS45ODMgMS4zOTYgMi44NTYiIGZpbGw9IiM1NzVFNzUiIG9wYWNpdHk9Ii4xNSIvPjxwYXRoIGQ9Ik0xOC40NSAxMi44M2MwIC41LS40MDQuOTA1LS45MDQuOTA1cy0uOTA1LS40MDUtLjkwNS0uOTA0YzAtLjUuNDA3LS45MDMuOTA2LS45MDMuNSAwIC45MDQuNDA0LjkwNC45MDR6IiBmaWxsPSIjNTc1RTc1Ii8+PC9nPjwvc3ZnPg==",
       };
     }
-    //Menus
+   https://kakaomames.github.io/turbowarp//Menus
     costumeMenuFunction() {
       if (!runtime) return ["no costumes?"];
       if (!runtime._editingTarget) return ["no costumes?"];
@@ -3143,7 +3143,7 @@
         readCostumes = readCostumes.concat(penplusRenderTextures);
       }
 
-      //For custom addons to be able to add their own texture lists.
+     https://kakaomames.github.io/turbowarp//For custom addons to be able to add their own texture lists.
       this.addonTextureFunctions.forEach((func) => {
         let functionTextures = func();
         if (functionTextures.length > 0) {
@@ -3164,7 +3164,7 @@
     }
 
     shaderMenu() {
-      //!Pain.json
+     https://kakaomames.github.io/turbowarp//!Pain.json
       return Object.keys(this.shaders).length == 0
         ? ["none yet"]
         : Object.keys(this.shaders);
@@ -3222,7 +3222,7 @@
       }
       return sprites;
     }
-    //From lily's list tools... With permission of course.
+   https://kakaomames.github.io/turbowarp//From lily's list tools... With permission of course.
     _getLists() {
       const lists =
         typeof Blockly === "undefined"
@@ -3237,7 +3237,7 @@
         return [""];
       }
     }
-    //And the associated helper function
+   https://kakaomames.github.io/turbowarp//And the associated helper function
     _getVarObjectFromName(name, util, type) {
       const stageTarget = runtime.getTargetForStage();
       const target = util.target;
@@ -3260,18 +3260,18 @@
     }
 
     _locateTextureObject(name, util) {
-      //Get the current target
+     https://kakaomames.github.io/turbowarp//Get the current target
       const curTarget = util.target;
 
-      //Set current texture to null
+     https://kakaomames.github.io/turbowarp//Set current texture to null
       let currentTexture = null;
 
-      //Look for it in the pen+ costume library
+     https://kakaomames.github.io/turbowarp//Look for it in the pen+ costume library
       if (this.penPlusCostumeLibrary[name]) {
         currentTexture = this.penPlusCostumeLibrary[name].texture;
       }
 
-      //Look for it in render textures
+     https://kakaomames.github.io/turbowarp//Look for it in render textures
       else if (
         this.renderTextures[name] &&
         name != this.currentRenderTexture.name
@@ -3279,7 +3279,7 @@
         currentTexture = this.renderTextures[name].attachments[0];
       }
 
-      //Hopefully it is in the costumes
+     https://kakaomames.github.io/turbowarp//Hopefully it is in the costumes
       else {
         const costIndex = curTarget.getCostumeIndexByName(
           Scratch.Cast.toString(name)
@@ -3298,9 +3298,9 @@
         }
       }
 
-      //If so edit the attributes of said texture.
+     https://kakaomames.github.io/turbowarp//If so edit the attributes of said texture.
       if (currentTexture) {
-        //Set the filter mode
+       https://kakaomames.github.io/turbowarp//Set the filter mode
         gl.bindTexture(gl.TEXTURE_2D, currentTexture);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, currentFilter);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, currentFilter);
@@ -3309,7 +3309,7 @@
       return currentTexture;
     }
 
-    //?Default pen helpers
+   https://kakaomames.github.io/turbowarp//?Default pen helpers
     isPenDown(args, util) {
       checkForPen(util);
       const curTarget = util.target;
@@ -3324,7 +3324,7 @@
             .diameter;
 
         case "hex code": {
-          //convert the rgb to hex
+         https://kakaomames.github.io/turbowarp//convert the rgb to hex
           let r = Math.floor(
             curTarget["_customState"]["Scratch.pen"].penAttributes.color4f[0] *
               255
@@ -3388,7 +3388,7 @@
 
     _getDefaultTriAttributes() {
       return [
-        // U V  TINT R G B  Z W transparency U V  TINT R G B  Z W transparency U V  TINT R G B  Z W transparency
+       https://kakaomames.github.io/turbowarp// U V  TINT R G B  Z W transparency U V  TINT R G B  Z W transparency U V  TINT R G B  Z W transparency
         0,
         0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1,
         1, 1,
@@ -3397,24 +3397,24 @@
 
     _getDefaultSquareAttributes() {
       return [
-        // width* height*  rotation  u-mul u     v-mul   v    r g b transparency
+       https://kakaomames.github.io/turbowarp// width* height*  rotation  u-mul u     v-mul   v    r g b transparency
         1, 1, 90, 1, 0, 1, 0, 1, 1, 1, 1, 1,
       ];
     }
 
-    //!Useless square blocks
+   https://kakaomames.github.io/turbowarp//!Useless square blocks
     squareDown(arg, util) {
-      // prettier-ignore
+     https://kakaomames.github.io/turbowarp// prettier-ignore
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
       checkForPen(util);
 
-      //Make sure we have the triangle data updating accordingly
+     https://kakaomames.github.io/turbowarp//Make sure we have the triangle data updating accordingly
       bufferInfo.numElements = 6;
       this.trianglesDrawn += 2;
 
       const curTarget = util.target;
 
-      //Get triangle attributes
+     https://kakaomames.github.io/turbowarp//Get triangle attributes
       if (
         typeof this.squareAttributesOfAllSprites[curTarget.id] == "undefined"
       ) {
@@ -3427,7 +3427,7 @@
       const attrib = curTarget["_customState"]["Scratch.pen"].penAttributes;
       const penColor = attrib.color4f;
 
-      //? get triangle attributes for current sprite.
+     https://kakaomames.github.io/turbowarp//? get triangle attributes for current sprite.
       const spritex = curTarget.x;
       const spritey = curTarget.y;
 
@@ -3501,7 +3501,7 @@
       gl.bindBuffer(gl.ARRAY_BUFFER, bufferInfo.attribs.a_color.buffer);
       gl.bufferData(gl.ARRAY_BUFFER, inputInfo.a_color, gl.DYNAMIC_DRAW);
 
-      //? Bind Positional Data
+     https://kakaomames.github.io/turbowarp//? Bind Positional Data
       twgl.setBuffersAndAttributes(
         gl,
         penPlusShaders.untextured.ProgramInf,
@@ -3532,17 +3532,17 @@
       bufferInfo.numElements = 3;
     }
     squareTexDown({ tex }, util) {
-      // prettier-ignore
+     https://kakaomames.github.io/turbowarp// prettier-ignore
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
       checkForPen(util);
 
-      //Make sure we have the triangle data updating accordingly
+     https://kakaomames.github.io/turbowarp//Make sure we have the triangle data updating accordingly
       bufferInfo.numElements = 6;
       this.trianglesDrawn += 2;
 
       const curTarget = util.target;
 
-      //Get triangle attributes
+     https://kakaomames.github.io/turbowarp//Get triangle attributes
       if (
         typeof this.squareAttributesOfAllSprites[curTarget.id] == "undefined"
       ) {
@@ -3557,7 +3557,7 @@
       let currentTexture = this._locateTextureObject(tex, util);
       if (!currentTexture) return;
 
-      //? get triangle attributes for current sprite.
+     https://kakaomames.github.io/turbowarp//? get triangle attributes for current sprite.
       const spritex = curTarget.x;
       const spritey = curTarget.y;
 
@@ -3597,7 +3597,7 @@
           myAttributes[11],
         ]),
         a_color: new Float32Array([
-          //Wow that was very cool
+         https://kakaomames.github.io/turbowarp//Wow that was very cool
           myAttributes[7],
           myAttributes[8],
           myAttributes[9],
@@ -3650,7 +3650,7 @@
       gl.bindBuffer(gl.ARRAY_BUFFER, bufferInfo.attribs.a_texCoord.buffer);
       gl.bufferData(gl.ARRAY_BUFFER, inputInfo.a_texCoord, gl.DYNAMIC_DRAW);
 
-      //? Bind Positional Data
+     https://kakaomames.github.io/turbowarp//? Bind Positional Data
       twgl.setBuffersAndAttributes(
         gl,
         penPlusShaders.textured.ProgramInf,
@@ -3695,7 +3695,7 @@
         11
       );
 
-      //Prevent it from setting the z to a color value;
+     https://kakaomames.github.io/turbowarp//Prevent it from setting the z to a color value;
       if (attributeNum >= 7 && attributeNum != 11) {
         this.squareAttributesOfAllSprites[curTarget.id][attributeNum] =
           Math.min(Math.max(valuetoSet, 0), 100) * 0.01;
@@ -3726,9 +3726,9 @@
 
       const calcColor = Scratch.Cast.toRgbColorObject(color);
 
-      this.squareAttributesOfAllSprites[curTarget.id][7] = calcColor.r / 255;
-      this.squareAttributesOfAllSprites[curTarget.id][8] = calcColor.g / 255;
-      this.squareAttributesOfAllSprites[curTarget.id][9] = calcColor.b / 255;
+      this.squareAttributesOfAllSprites[curTarget.id][7] = calcColor.rhttps://kakaomames.github.io/turbowarp/ 255;
+      this.squareAttributesOfAllSprites[curTarget.id][8] = calcColor.ghttps://kakaomames.github.io/turbowarp/ 255;
+      this.squareAttributesOfAllSprites[curTarget.id][9] = calcColor.bhttps://kakaomames.github.io/turbowarp/ 255;
     }
     resetSquareAttributes(args, util) {
       const curTarget = util.target;
@@ -3736,7 +3736,7 @@
         this._getDefaultSquareAttributes();
     }
 
-    //?Triangle stuffs
+   https://kakaomames.github.io/turbowarp//?Triangle stuffs
     setTriangleFilterMode({ filter }) {
       currentFilter = filter;
     }
@@ -3787,7 +3787,7 @@
       this.attributeEditors.triangle(
         targetId,
         2,
-        calcColor.r / 2.55,
+        calcColor.rhttps://kakaomames.github.io/turbowarp/ 2.55,
         false,
         trianglePointStart
       );
@@ -3795,7 +3795,7 @@
       this.attributeEditors.triangle(
         targetId,
         3,
-        calcColor.g / 2.55,
+        calcColor.ghttps://kakaomames.github.io/turbowarp/ 2.55,
         false,
         trianglePointStart
       );
@@ -3803,7 +3803,7 @@
       this.attributeEditors.triangle(
         targetId,
         4,
-        calcColor.b / 2.55,
+        calcColor.bhttps://kakaomames.github.io/turbowarp/ 2.55,
         false,
         trianglePointStart
       );
@@ -3823,7 +3823,7 @@
       this.attributeEditors.triangle(
         targetId,
         2,
-        calcColor.r / 2.55,
+        calcColor.rhttps://kakaomames.github.io/turbowarp/ 2.55,
         true,
         trianglePointStart
       );
@@ -3831,7 +3831,7 @@
       this.attributeEditors.triangle(
         targetId,
         3,
-        calcColor.g / 2.55,
+        calcColor.ghttps://kakaomames.github.io/turbowarp/ 2.55,
         true,
         trianglePointStart
       );
@@ -3839,7 +3839,7 @@
       this.attributeEditors.triangle(
         targetId,
         4,
-        calcColor.b / 2.55,
+        calcColor.bhttps://kakaomames.github.io/turbowarp/ 2.55,
         true,
         trianglePointStart
       );
@@ -3884,15 +3884,15 @@
         ? [canvas.width, canvas.height]
         : renderer._nativeSize;
 
-      //if (this.triangleAttributesOfAllSprites[curTarget.id]) {
-      //  this.triangleAttributesOfAllSprites[curTarget.id][5] = 1;
-      //  this.triangleAttributesOfAllSprites[curTarget.id][13] = 1;
-      //  this.triangleAttributesOfAllSprites[curTarget.id][21] = 1;
-      //}
+     https://kakaomames.github.io/turbowarp//if (this.triangleAttributesOfAllSprites[curTarget.id]) {
+     https://kakaomames.github.io/turbowarp//  this.triangleAttributesOfAllSprites[curTarget.id][5] = 1;
+     https://kakaomames.github.io/turbowarp//  this.triangleAttributesOfAllSprites[curTarget.id][13] = 1;
+     https://kakaomames.github.io/turbowarp//  this.triangleAttributesOfAllSprites[curTarget.id][21] = 1;
+     https://kakaomames.github.io/turbowarp//}
 
-      //?Renderer Freaks out if we don't do this so do it.
+     https://kakaomames.github.io/turbowarp//?Renderer Freaks out if we don't do this so do it.
 
-      //Paratheses because I know some obscure browser will screw this up.
+     https://kakaomames.github.io/turbowarp//Paratheses because I know some obscure browser will screw this up.
       x1 = Scratch.Cast.toNumber(x1);
       x2 = Scratch.Cast.toNumber(x2);
       x3 = Scratch.Cast.toNumber(x3);
@@ -3916,20 +3916,20 @@
       const curTarget = util.target;
       let currentTexture = this._locateTextureObject(tex, util);
 
-      //Triangle attributes
+     https://kakaomames.github.io/turbowarp//Triangle attributes
       if (!this.triangleAttributesOfAllSprites[curTarget.id]) {
         this.triangleAttributesOfAllSprites[curTarget.id] =
           this._getDefaultTriAttributes();
       }
 
-      //Get the resolution
+     https://kakaomames.github.io/turbowarp//Get the resolution
       nativeSize = renderer.useHighQualityRender
         ? [canvas.width, canvas.height]
         : renderer._nativeSize;
 
-      //?Renderer Freaks out if we don't do this so do it.
+     https://kakaomames.github.io/turbowarp//?Renderer Freaks out if we don't do this so do it.
 
-      //Paratheses because I know some obscure browser will screw this up.
+     https://kakaomames.github.io/turbowarp//Paratheses because I know some obscure browser will screw this up.
       x1 = Scratch.Cast.toNumber(x1);
       x2 = Scratch.Cast.toNumber(x2);
       x3 = Scratch.Cast.toNumber(x3);
@@ -3952,19 +3952,19 @@
       }
     }
 
-    //?Color Stuff
+   https://kakaomames.github.io/turbowarp//?Color Stuff
     RGB2HEX({ R, G, B }) {
       return this.colorLib.rgbtoSColor({ R: R, G: G, B: B });
     }
 
     HSV2RGB({ H, S, V }) {
-      S = S / 100;
-      V = V / 100;
+      S = Shttps://kakaomames.github.io/turbowarp/ 100;
+      V = Vhttps://kakaomames.github.io/turbowarp/ 100;
       S = Math.min(Math.max(S, 0), 1);
       V = Math.min(Math.max(V, 0), 1);
       H = H % 360;
       const C = V * S;
-      const X = C * (1 - Math.abs(((H / 60) % 2) - 1));
+      const X = C * (1 - Math.abs(((Hhttps://kakaomames.github.io/turbowarp/ 60) % 2) - 1));
       const M = V - C;
       let Primes = [0, 0, 0];
       if (H >= 0 && H < 60) {
@@ -3991,20 +3991,20 @@
       Primes[1] = (Primes[1] + M) * 255;
       Primes[2] = (Primes[2] + M) * 255;
       return this.colorLib.rgbtoSColor({
-        R: Primes[0] / 2.55,
-        G: Primes[1] / 2.55,
-        B: Primes[2] / 2.55,
+        R: Primes[0]https://kakaomames.github.io/turbowarp/ 2.55,
+        G: Primes[1]https://kakaomames.github.io/turbowarp/ 2.55,
+        B: Primes[2]https://kakaomames.github.io/turbowarp/ 2.55,
       });
     }
 
-    //?Image/costume Api
-    //? this block broke. Thus why it no longer has functionality.
+   https://kakaomames.github.io/turbowarp//?Imaghttps://kakaomames.github.io/turbowarp/costume Api
+   https://kakaomames.github.io/turbowarp//? this block broke. Thus why it no longer has functionality.
     setDURIclampmode({ clampMode }) {
       return;
     }
 
     addBlankIMG({ color, width, height, name }) {
-      //Just a simple thing to allow for pen drawing
+     https://kakaomames.github.io/turbowarp//Just a simple thing to allow for pen drawing
       this.textureFunctions.createBlankPenPlusTextureInfo(
         width,
         height,
@@ -4014,7 +4014,7 @@
     }
 
     addIMGfromDURI({ dataURI, name }) {
-      //Just a simple thing to allow for pen drawing
+     https://kakaomames.github.io/turbowarp//Just a simple thing to allow for pen drawing
       this.textureFunctions.createPenPlusTextureInfo(
         dataURI,
         this.prefixes.penPlusTextures + name
@@ -4022,14 +4022,14 @@
     }
 
     removeIMGfromDURI({ name }, util) {
-      //Just a simple thing to allow for pen drawing
+     https://kakaomames.github.io/turbowarp//Just a simple thing to allow for pen drawing
       if (this.penPlusCostumeLibrary[this.prefixes.penPlusTextures + name]) {
         delete this.penPlusCostumeLibrary[this.prefixes.penPlusTextures + name];
       }
     }
 
     doesIMGexist({ name }, util) {
-      //Just a simple thing to allow for pen drawing
+     https://kakaomames.github.io/turbowarp//Just a simple thing to allow for pen drawing
       return (
         typeof this.penPlusCostumeLibrary[
           this.prefixes.penPlusTextures + name
@@ -4038,7 +4038,7 @@
     }
 
     getCostumeDataURI({ costume }, util) {
-      //Just a simple thing to allow for pen drawing
+     https://kakaomames.github.io/turbowarp//Just a simple thing to allow for pen drawing
       const curTarget = util.target;
       const costIndex = curTarget.getCostumeIndexByName(
         Scratch.Cast.toString(costume)
@@ -4051,7 +4051,7 @@
     }
 
     getDimensionOf({ dimension, costume }, util) {
-      //Just a simple thing to allow for pen drawing
+     https://kakaomames.github.io/turbowarp//Just a simple thing to allow for pen drawing
       const costIndex = this.penPlusCostumeLibrary[costume];
       if (costIndex) {
         return costIndex[dimension] || "";
@@ -4117,9 +4117,9 @@
           ) {
             return (
               this.colorLib.rgbtoSColor({
-                R: textureData[colorIndex] / 2.55,
-                G: textureData[colorIndex + 1] / 2.55,
-                B: textureData[colorIndex + 2] / 2.55,
+                R: textureData[colorIndex]https://kakaomames.github.io/turbowarp/ 2.55,
+                G: textureData[colorIndex + 1]https://kakaomames.github.io/turbowarp/ 2.55,
+                B: textureData[colorIndex + 2]https://kakaomames.github.io/turbowarp/ 2.55,
               }) || "0"
             );
           }
@@ -4143,10 +4143,10 @@
       }
     }
 
-    //?Neato
+   https://kakaomames.github.io/turbowarp//?Neato
     clearDepth() {
       lastFB = gl.getParameter(gl.FRAMEBUFFER_BINDING);
-      //Pen+ Overrides default pen Clearing
+     https://kakaomames.github.io/turbowarp//Pen+ Overrides default pen Clearing
       gl.bindFramebuffer(gl.FRAMEBUFFER, triBufferInfo.framebuffer);
       gl.clear(gl.DEPTH_BUFFER_BIT);
       gl.bindFramebuffer(gl.FRAMEBUFFER, lastFB);
@@ -4181,32 +4181,32 @@
     }
 
     setPrefix({ prefix, value }) {
-      //That simple
+     https://kakaomames.github.io/turbowarp//That simple
       this.prefixes[prefix] = value;
     }
 
-    //People went crazy in the pen+ project forum. So here I am...
-    //Please people don't do this again...
+   https://kakaomames.github.io/turbowarp//People went crazy in the pen+ project forum. So here I am...
+   https://kakaomames.github.io/turbowarp//Please people don't do this again...
     __determineHostName() {
       let returnedURL = "project";
       const splitURL = window.location.hostname.split(".");
       if (splitURL.length > 2) {
         returnedURL = splitURL[1].toLowerCase();
         if (this.urlHandleTypes[returnedURL]) {
-          //IF WE DO HAVE TO DO SOME SPECIAL HANDLING!
+         https://kakaomames.github.io/turbowarp//IF WE DO HAVE TO DO SOME SPECIAL HANDLING!
           const handleType = this.urlHandleTypes[returnedURL].handle;
           switch (typeof handleType) {
-            //If it is a number we get the split number.
+           https://kakaomames.github.io/turbowarp//If it is a number we get the split number.
             case "number":
               returnedURL = splitURL[handleType];
               break;
 
-            //If it is a string use the string
+           https://kakaomames.github.io/turbowarp//If it is a string use the string
             case "string":
               returnedURL = handleType;
               break;
 
-            //If it is a function we run the function.
+           https://kakaomames.github.io/turbowarp//If it is a function we run the function.
             case "function":
               returnedURL = handleType(window.location.href);
               break;
@@ -4219,18 +4219,18 @@
       return returnedURL;
     }
 
-    //?Custom Shaders
+   https://kakaomames.github.io/turbowarp//?Custom Shaders
     async openShaderEditor() {
-      //Handle experimental versions
+     https://kakaomames.github.io/turbowarp//Handle experimental versions
       const frameSource =
-        "https://pen-group.github.io/penPlus-shader-editor/Source/" +
+        "httpshttps://kakaomames.github.io/turbowarp//pen-group.github.ihttps://kakaomames.github.io/turbowarp/penPlus-shader-editohttps://kakaomames.github.io/turbowarp/Sourchttps://kakaomames.github.io/turbowarp/" +
         (this.isExperimental ? "?experimental=true" : "");
 
       if (!(await Scratch.canEmbed(frameSource))) {
         return;
       }
 
-      //Styling the background and IFrame
+     https://kakaomames.github.io/turbowarp//Styling the background and IFrame
       const bgFade = document.createElement("div");
       bgFade.style.width = "100%";
       bgFade.style.height = "100%";
@@ -4261,7 +4261,7 @@
 
       this.IFrame.style.zIndex = "10001";
 
-      //Determine the Set up the initial variables
+     https://kakaomames.github.io/turbowarp//Determine the Set up the initial variables
       this.IFrame.onload = () => {
         let hostname = this.__determineHostName();
 
@@ -4270,18 +4270,18 @@
             type: "REGISTER_PARENT",
             exitButton: true,
             importText: `Import from ${hostname.replace(
-              /\w\S*/g,
+             https://kakaomames.github.io/turbowarp/\w\Shttps://kakaomames.github.io/turbowarp/g,
               function (txt) {
                 return (
                   txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
                 );
               }
             )}`,
-            exportText: `Export to ${hostname.replace(/\w\S*/g, function (txt) {
+            exportText: `Export to ${hostname.replacehttps://kakaomames.github.io/turbowarp/\w\Shttps://kakaomames.github.io/turbowarp/g, function (txt) {
               return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
             })}`,
           },
-          //Target URL
+         https://kakaomames.github.io/turbowarp//Target URL
           this.IFrame.src
         );
       };
@@ -4292,7 +4292,7 @@
         this.IFrame.animate(animationKeyframes.close.IFRAME, 1000);
         bgFade.animate(animationKeyframes.close.BG, 1000);
 
-        //Can't get animationend to work.
+       https://kakaomames.github.io/turbowarp//Can't get animationend to work.
         setTimeout(() => {
           document.body.removeChild(this.IFrame);
           document.body.removeChild(bgFade);
@@ -4301,22 +4301,22 @@
 
       this.IFrame.src = frameSource;
 
-      //Popup animation
+     https://kakaomames.github.io/turbowarp//Popup animation
       document.body.style.overflowY = "hidden";
       this.IFrame.animate(animationKeyframes.open.IFRAME, 1000);
       bgFade.animate(animationKeyframes.open.BG, 1000);
 
-      //Add the IFrame to the body
+     https://kakaomames.github.io/turbowarp//Add the IFrame to the body
       document.body.appendChild(this.IFrame);
     }
 
-    //?Shader blocks
+   https://kakaomames.github.io/turbowarp//?Shader blocks
     drawShaderTri({ shader, x1, y1, x2, y2, x3, y3 }, util) {
       if (!this.programs[shader]) return;
-      // prettier-ignore
+     https://kakaomames.github.io/turbowarp// prettier-ignore
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
 
-      //Safe to assume they have a buffer;
+     https://kakaomames.github.io/turbowarp//Safe to assume they have a buffer;
       const buffer = this.programs[shader].buffer;
 
       this.trianglesDrawn += 1;
@@ -4328,7 +4328,7 @@
           this._getDefaultTriAttributes();
       }
 
-      //? get triangle attributes for current sprite.
+     https://kakaomames.github.io/turbowarp//? get triangle attributes for current sprite.
       const triAttribs = this.triangleAttributesOfAllSprites[targetID];
 
       let inputInfo = JSON.parse(
@@ -4336,8 +4336,8 @@
       );
 
       if (triAttribs) {
-        //Just for our eyes sakes
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp//Just for our eyes sakes
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         inputInfo.a_position = {
             data: [
               x1, -y1, triAttribs[5], triAttribs[6],
@@ -4345,7 +4345,7 @@
               x3, -y3, triAttribs[21], triAttribs[22]
             ]
           }
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         inputInfo.a_color = {
             data: [
               triAttribs[2], triAttribs[3], triAttribs[4], triAttribs[7],
@@ -4353,7 +4353,7 @@
               triAttribs[18], triAttribs[19], triAttribs[20], triAttribs[23]
             ]
           }
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         inputInfo.a_texCoord = {
             data: [
               triAttribs[0], triAttribs[1],
@@ -4362,8 +4362,8 @@
             ]
           }
       } else {
-        //Just for our eyes sakes
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp//Just for our eyes sakes
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         inputInfo.a_position = {
             data: [
               x1, y1, 1, 1,
@@ -4371,7 +4371,7 @@
               x3, y3, 1, 1
             ]
           }
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         inputInfo.a_color = {
             data: [
               1, 1, 1, 1,
@@ -4379,7 +4379,7 @@
               1, 1, 1, 1
             ]
           }
-        // prettier-ignore
+       https://kakaomames.github.io/turbowarp// prettier-ignore
         inputInfo.a_texCoord = {
             data: [
               0, 0,
@@ -4403,7 +4403,7 @@
 
       gl.useProgram(this.programs[shader].info.program);
 
-      //Just use the real scratch timer.
+     https://kakaomames.github.io/turbowarp//Just use the real scratch timer.
       this.programs[shader].uniformDat.u_timer =
         runtime.ioDevices.clock.projectTimer();
       this.programs[shader].uniformDat.u_transform = transform_Matrix;
@@ -4412,7 +4412,7 @@
         this.currentRenderTexture.height,
       ];
 
-      //? Bind Positional Data
+     https://kakaomames.github.io/turbowarp//? Bind Positional Data
       twgl.setBuffersAndAttributes(gl, this.programs[shader].info, buffer);
 
       gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
@@ -4426,20 +4426,20 @@
 
     drawShaderSquare({ shader }, util) {
       if (!this.programs[shader]) return;
-      // prettier-ignore
+     https://kakaomames.github.io/turbowarp// prettier-ignore
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
       checkForPen(util);
 
-      //Safe to assume they have a buffer;
+     https://kakaomames.github.io/turbowarp//Safe to assume they have a buffer;
       const buffer = this.programs[shader].buffer;
 
-      //Make sure we have the triangle data updating accordingly
+     https://kakaomames.github.io/turbowarp//Make sure we have the triangle data updating accordingly
       buffer.numElements = 6;
       this.trianglesDrawn += 2;
 
       const curTarget = util.target;
 
-      //Get triangle attributes
+     https://kakaomames.github.io/turbowarp//Get triangle attributes
       if (
         typeof this.squareAttributesOfAllSprites[curTarget.id] == "undefined"
       ) {
@@ -4452,7 +4452,7 @@
       const attrib = curTarget["_customState"]["Scratch.pen"].penAttributes;
       const penColor = attrib.color4f;
 
-      //? get triangle attributes for current sprite.
+     https://kakaomames.github.io/turbowarp//? get triangle attributes for current sprite.
       const spritex = curTarget.x;
       const spritey = curTarget.y;
 
@@ -4547,7 +4547,7 @@
       gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
       gl.useProgram(this.programs[shader].info.program);
 
-      //Just use the real scratch timer.
+     https://kakaomames.github.io/turbowarp//Just use the real scratch timer.
       this.programs[shader].uniformDat.u_timer =
         runtime.ioDevices.clock.projectTimer();
       this.programs[shader].uniformDat.u_transform = transform_Matrix;
@@ -4562,7 +4562,7 @@
       transform_Matrix[4] = Math.cos(myAttributes[2] * d2r);
       transform_Matrix[5] = Math.sin(myAttributes[2] * d2r);
 
-      //? Bind Positional Data
+     https://kakaomames.github.io/turbowarp//? Bind Positional Data
       twgl.setBuffersAndAttributes(gl, this.programs[shader].info, buffer);
 
       gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
@@ -4647,7 +4647,7 @@
       if (!this.programs[shader]) return;
       if (this._isUniformArray(shader, uniformName)) return;
       let converted = JSON.parse(array);
-      //Make sure its an array
+     https://kakaomames.github.io/turbowarp//Make sure its an array
       if (!Array.isArray(converted)) return;
       converted = converted.map(function (str) {
         return parseFloat(str);
@@ -4710,7 +4710,7 @@
       let foundValue = Object.keys(this.penPlusCostumeLibrary).find(
         (key) => this.penPlusCostumeLibrary[key] === text
       );
-      //if we cannot find it in the pen+ library look for it in the scratch costume library
+     https://kakaomames.github.io/turbowarp//if we cannot find it in the pen+ library look for it in the scratch costume library
       if (!foundValue) {
         const curCostumes = util.target.sprite.costumes;
         if (!curCostumes) return "";
@@ -4746,7 +4746,7 @@
       return true;
     }
 
-    //For arrays!
+   https://kakaomames.github.io/turbowarp//For arrays!
     setArrayNumberInShader({ item, uniformName, shader, number }) {
       if (!this.programs[shader]) return;
       if (!this._isUniformArray(shader, uniformName)) return;
@@ -4870,19 +4870,19 @@
       );
     }
 
-    //Attributes
+   https://kakaomames.github.io/turbowarp//Attributes
     setNumberAttributeInShader({ attributeName, pointID, shader, number }) {
       if (!this.programs[shader]) return;
       if (!this.programs[shader].attribDat[attributeName]) return;
 
-      //Get the type and make sure its the desired one
+     https://kakaomames.github.io/turbowarp//Get the type and make sure its the desired one
       let type = this.programs[shader].attribDat[attributeName].type;
       if (!(type == "int" || type == "float")) return;
 
-      //If the attribute is an integer force it to be one
+     https://kakaomames.github.io/turbowarp//If the attribute is an integer force it to be one
       if (type == "int") number = Math.floor(number);
 
-      //Set the data in the array
+     https://kakaomames.github.io/turbowarp//Set the data in the array
       this.programs[shader].attribDat[attributeName].data[pointID - 1] = number;
     }
 
@@ -4896,14 +4896,14 @@
       if (!this.programs[shader]) return;
       if (!this.programs[shader].attribDat[attributeName]) return;
 
-      //Get the type and make sure its the desired one
+     https://kakaomames.github.io/turbowarp//Get the type and make sure its the desired one
       let type = this.programs[shader].attribDat[attributeName].type;
       if (!(type == "vec2")) return;
 
       pointID -= 1;
       pointID *= 2;
 
-      //Set the data in the array
+     https://kakaomames.github.io/turbowarp//Set the data in the array
       this.programs[shader].attribDat[attributeName].data[pointID] = numberX;
       this.programs[shader].attribDat[attributeName].data[pointID + 1] =
         numberY;
@@ -4920,14 +4920,14 @@
       if (!this.programs[shader]) return;
       if (!this.programs[shader].attribDat[attributeName]) return;
 
-      //Get the type and make sure its the desired one
+     https://kakaomames.github.io/turbowarp//Get the type and make sure its the desired one
       let type = this.programs[shader].attribDat[attributeName].type;
       if (!(type == "vec3")) return;
 
       pointID -= 1;
       pointID *= 3;
 
-      //Set the data in the array
+     https://kakaomames.github.io/turbowarp//Set the data in the array
       this.programs[shader].attribDat[attributeName].data[pointID] = numberX;
       this.programs[shader].attribDat[attributeName].data[pointID + 1] =
         numberY;
@@ -4947,14 +4947,14 @@
       if (!this.programs[shader]) return;
       if (!this.programs[shader].attribDat[attributeName]) return;
 
-      //Get the type and make sure its the desired one
+     https://kakaomames.github.io/turbowarp//Get the type and make sure its the desired one
       let type = this.programs[shader].attribDat[attributeName].type;
       if (!(type == "vec4")) return;
 
       pointID -= 1;
       pointID *= 4;
 
-      //Set the data in the array
+     https://kakaomames.github.io/turbowarp//Set the data in the array
       this.programs[shader].attribDat[attributeName].data[pointID] = numberX;
       this.programs[shader].attribDat[attributeName].data[pointID + 1] =
         numberY;
@@ -4964,13 +4964,13 @@
         numberW;
     }
 
-    /* MESSAGE FOR MOD DEVELOPERS */
-    //Doing this just because the penguinmod UI doesn't have this sort of stuff and I'm feeling nice today.
-    //Don't bother me with this stuff in the future.
-    //I cannot support every mod under the sun.
-    //if you want support in the future make a couple of variables
-    // --ui-modal-overlay --> your menu overlay color including transparency
-    // --menu-bar-background --> your menu colors
+   https://kakaomames.github.io/turbowarp/* MESSAGE FOR MOD DEVELOPERS https://kakaomames.github.io/turbowarp/
+   https://kakaomames.github.io/turbowarp//Doing this just because the penguinmod UI doesn't have this sort of stuff and I'm feeling nice today.
+   https://kakaomames.github.io/turbowarp//Don't bother me with this stuff in the future.
+   https://kakaomames.github.io/turbowarp//I cannot support every mod under the sun.
+   https://kakaomames.github.io/turbowarp//if you want support in the future make a couple of variables
+   https://kakaomames.github.io/turbowarp// --ui-modal-overlay --> your menu overlay color including transparency
+   https://kakaomames.github.io/turbowarp// --menu-bar-background --> your menu colors
     _handlePMvsEM(variableName) {
       switch (variableName) {
         case "--menu-bar-background":
@@ -4988,10 +4988,10 @@
       }
     }
 
-    //! HEED THY WARNING LOTS OF JAVASCRIPT BASED HTML AHEAD !//
-    //Modal themes
+   https://kakaomames.github.io/turbowarp//! HEED THY WARNING LOTS OF JAVASCRIPT BASED HTML AHEAD https://kakaomames.github.io/turbowarp//
+   https://kakaomames.github.io/turbowarp//Modal themes
     _setupTheme() {
-      //Use a predefined pen+ theme if packaged
+     https://kakaomames.github.io/turbowarp//Use a predefined pen+ theme if packaged
       if (typeof scaffolding !== "undefined") {
         this._menuBarBackground = "#0FBD8C";
         this._defaultBackgroundColor = "white";
@@ -5002,29 +5002,29 @@
         return;
       }
 
-      //Also if this looks bad it's due to prettier
-      //I support friendly competition!
+     https://kakaomames.github.io/turbowarp//Also if this looks bad it's due to prettier
+     https://kakaomames.github.io/turbowarp//I support friendly competition!
       this._menuBarBackground = Scratch.extensions.isPenguinMod
-        ? //This is penguinmod blue
+        ?https://kakaomames.github.io/turbowarp//This is penguinmod blue
           this._handlePMvsEM("--menu-bar-background")
-        : //Turbowarp
+        :https://kakaomames.github.io/turbowarp//Turbowarp
           "var(--menu-bar-background)";
 
-      //Of course due to the GUI version differences I need to conduct some checks on these
+     https://kakaomames.github.io/turbowarp//Of course due to the GUI version differences I need to conduct some checks on these
       this._defaultBackgroundColor = Scratch.extensions.isPenguinMod
-        ? //Wierd old turbowarp vm thingy right here
+        ?https://kakaomames.github.io/turbowarp//Wierd old turbowarp vm thingy right here
           document.body.getAttribute("theme") == "dark"
           ? "var(--ui-primary)"
           : "white"
-        : //New accent stuff me likey.
+        :https://kakaomames.github.io/turbowarp//New accent stuff me likey.
           "var(--ui-modal-background)";
 
-      //But in general its fine
+     https://kakaomames.github.io/turbowarp//But in general its fine
       this._textColor = Scratch.extensions.isPenguinMod
         ? document.body.getAttribute("theme") == "dark"
           ? "white"
           : "black"
-        : //Again with the accents. Me likey
+        :https://kakaomames.github.io/turbowarp//Again with the accents. Me likey
           "var(--ui-modal-foreground)";
 
       this._buttonShadow = Scratch.extensions.isPenguinMod
@@ -5038,7 +5038,7 @@
         : "var(--ui-white-transparent)";
     }
 
-    //Just a helper function so the main one isn't too cluttered
+   https://kakaomames.github.io/turbowarp//Just a helper function so the main one isn't too cluttered
     _shaderManagerModal() {
       const bgFade = document.createElement("div");
       bgFade.style.width = "100%";
@@ -5054,7 +5054,7 @@
 
       document.body.appendChild(bgFade);
 
-      /*
+     https://kakaomames.github.io/turbowarp/*
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ⠀⢀⡔⣻⠁⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀
   ⠀⠀⠀⠀⢀⣾⠳⢶⣦⠤⣀⠀⠀⠀⠀⠀⠀⠀⣾⢀⡇⡴⠋⣀⠴⣊⣩⣤⠶⠞⢹⣄⠀⠀⠀
   ⠀⠀⠀⠀⢸⠀⠀⢠⠈⠙⠢⣙⠲⢤⠤⠤⠀⠒⠳⡄⣿⢀⠾⠓⢋⠅⠛⠉⠉⠝⠀⠼⠀⠀⠀
@@ -5087,10 +5087,10 @@
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⠀⠀⠀⢺⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠈⠉⠻⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀
-        */
+        https://kakaomames.github.io/turbowarp/
       const shaderManager = document.createElement("div");
 
-      //Create our menu modal
+     https://kakaomames.github.io/turbowarp//Create our menu modal
       shaderManager.style.backgroundColor = this._menuBarBackground;
       shaderManager.style.width = "50%";
       shaderManager.style.height = "50%";
@@ -5101,18 +5101,18 @@
       shaderManager.style.borderColor = this._shadowBorder;
       shaderManager.style.borderWidth = "4px";
       shaderManager.style.borderStyle = "solid";
-      shaderManager.style.aspectRatio = "5/3";
+      shaderManager.style.aspectRatio = "https://kakaomames.github.io/turbowarp/3";
       shaderManager.style.transform = "translate(-50%,25%)";
       shaderManager.style.zIndex = "10002";
 
-      //!DONT FORGET THIS IS HERE
+     https://kakaomames.github.io/turbowarp//!DONT FORGET THIS IS HERE
       shaderManager.style.textAlign = "center";
 
       shaderManager.style.color = "#ffffff";
 
       document.body.appendChild(shaderManager);
 
-      //This is the text that shows up on-top of the modal
+     https://kakaomames.github.io/turbowarp//This is the text that shows up on-top of the modal
       const topText = document.createElement("div");
 
       topText.style.width = "100%";
@@ -5128,7 +5128,7 @@
 
       shaderManager.appendChild(topText);
 
-      //Then we have the inner panel. Where most of the ui goes
+     https://kakaomames.github.io/turbowarp//Then we have the inner panel. Where most of the ui goes
       const shaderPanel = document.createElement("div");
 
       shaderPanel.style.backgroundColor = this._defaultBackgroundColor;
@@ -5142,7 +5142,7 @@
 
       shaderManager.appendChild(shaderPanel);
 
-      //The actual container no filter to avoid buggy things
+     https://kakaomames.github.io/turbowarp//The actual container no filter to avoid buggy things
       const closeMenu = document.createElement("div");
 
       closeMenu.style.width = "1.75rem";
@@ -5159,17 +5159,17 @@
       closeMenu.style.transition = "all 0.15s ease-out";
       closeMenu.style.transform = "translate(-50%,25%)";
 
-      //Animation stuffs
+     https://kakaomames.github.io/turbowarp//Animation stuffs
       closeMenu.onmouseenter = () => {
         closeMenu.style.transform = "translate(-50%,25%) scale(1.1,1.1)";
       };
 
-      //More animation
+     https://kakaomames.github.io/turbowarp//More animation
       closeMenu.onmouseleave = () => {
         closeMenu.style.transform = "translate(-50%,25%) scale(1,1)";
       };
 
-      //Just the close button
+     https://kakaomames.github.io/turbowarp//Just the close button
       closeMenu.onclick = () => {
         document.body.removeChild(bgFade);
         document.body.removeChild(shaderManager);
@@ -5177,10 +5177,10 @@
 
       shaderManager.appendChild(closeMenu);
 
-      //The close button for the menu
+     https://kakaomames.github.io/turbowarp//The close button for the menu
       const xImage = document.createElement("img");
       xImage.src =
-        "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjQ4IDcuNDgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi0tYWRkPC90aXRsZT48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIzLjc0IiB5MT0iNi40OCIgeDI9IjMuNzQiIHkyPSIxIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMSIgeTE9IjMuNzQiIHgyPSI2LjQ4IiB5Mj0iMy43NCIvPjwvc3ZnPg==";
+        "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjQ4IDcuNDgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi0tYWRkPC90aXRsZT48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIzLjc0IiB5MT0iNi40OCIgeDI9IjMuNzQiIHkyPSIxIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMSIgeTE9IjMuNzQiIHgyPSI2LjQ4IiB5Mj0iMy43NCIvPjwvc3ZnPg==";
 
       xImage.style.width = "0.75rem";
       xImage.style.height = "0.75rem";
@@ -5196,7 +5196,7 @@
           document.body.removeChild(shaderManager);
         },
         resizeFunc: (width, height) => {
-          shaderManager.style.aspectRatio = width + "/" + height;
+          shaderManager.style.aspectRatio = width + https://kakaomames.github.io/turbowarp/" + height;
           shaderManager.style.width = width > height ? "auto" : width + "%";
           shaderManager.style.height = height >= width ? "auto" : height + "%";
         },
@@ -5206,24 +5206,24 @@
       };
     }
 
-    //Then this decides the contents of said modal while gathering some info
+   https://kakaomames.github.io/turbowarp//Then this decides the contents of said modal while gathering some info
     openShaderManager(reason) {
       const { shaderPanel, closeFunc, resizeFunc } = this._shaderManagerModal();
 
-      //If we don't have a reason assign a default value
+     https://kakaomames.github.io/turbowarp//If we don't have a reason assign a default value
       reason = reason || "manager";
 
-      //penguin one liner support
-      //for some reason it sends the entire workspace when a button is clicked?
+     https://kakaomames.github.io/turbowarp//penguin one liner support
+     https://kakaomames.github.io/turbowarp//for some reason it sends the entire workspace when a button is clicked?
       if (Scratch.extensions.isPenguinMod && typeof reason != "string")
         reason = "manager";
 
-      //Since I'm using a switch we do this.
+     https://kakaomames.github.io/turbowarp//Since I'm using a switch we do this.
       let menuSpecificVars = {};
 
       switch (reason) {
         case "save":
-          //The neat background color. Using a filter to limit the amount of colouring operations
+         https://kakaomames.github.io/turbowarp//The neat background color. Using a filter to limit the amount of colouring operations
           menuSpecificVars.savePanel = document.createElement("div");
 
           menuSpecificVars.savePanel.style.width = "60%";
@@ -5235,7 +5235,7 @@
 
           shaderPanel.appendChild(menuSpecificVars.savePanel);
 
-          //The actual container no filter to avoid buggy things
+         https://kakaomames.github.io/turbowarp//The actual container no filter to avoid buggy things
           menuSpecificVars.saveStuffHolder = document.createElement("div");
 
           menuSpecificVars.saveStuffHolder.style.width = "60%";
@@ -5245,7 +5245,7 @@
 
           shaderPanel.appendChild(menuSpecificVars.saveStuffHolder);
 
-          //A whole lotta hub jubba for the input box. Though I want it to be supported natively even in a non GUI enviornment
+         https://kakaomames.github.io/turbowarp//A whole lotta hub jubba for the input box. Though I want it to be supported natively even in a non GUI enviornment
           menuSpecificVars.shadername = document.createElement("input");
           menuSpecificVars.shadername.type = "text";
           menuSpecificVars.shadername.style.backgroundColor =
@@ -5268,12 +5268,12 @@
 
           menuSpecificVars.shadername.placeholder = "Shader Name";
 
-          //I dunno why prettier feels the need to do this. I feel like it makes it more unreadable.
+         https://kakaomames.github.io/turbowarp//I dunno why prettier feels the need to do this. I feel like it makes it more unreadable.
           menuSpecificVars.saveStuffHolder.appendChild(
             menuSpecificVars.shadername
           );
 
-          //Save Button
+         https://kakaomames.github.io/turbowarp//Save Button
           menuSpecificVars.saveButton = document.createElement("button");
 
           menuSpecificVars.saveButton.innerText = "Save";
@@ -5300,7 +5300,7 @@
             menuSpecificVars.saveButton
           );
 
-          //A container containing already existing shaders and some text to accompony them.
+         https://kakaomames.github.io/turbowarp//A container containing already existing shaders and some text to accompony them.
           menuSpecificVars.existingShaderHolder = document.createElement("div");
 
           menuSpecificVars.existingShaderHolder.style.width = "40%";
@@ -5330,7 +5330,7 @@
             menuSpecificVars.existingText
           );
 
-          //The background for existing shaders
+         https://kakaomames.github.io/turbowarp//The background for existing shaders
           menuSpecificVars.existingDivBackground =
             document.createElement("div");
 
@@ -5348,7 +5348,7 @@
             menuSpecificVars.existingDivBackground
           );
 
-          //The container for existing shaders
+         https://kakaomames.github.io/turbowarp//The container for existing shaders
           menuSpecificVars.existingDiv = document.createElement("div");
 
           menuSpecificVars.existingDiv.style.backgroundColor = "#00000000";
@@ -5389,16 +5389,16 @@
             nameDiv.style.height = "48px";
             nameDiv.style.transform = "translate(5%,5%)";
             nameDiv.style.textAlign = "left";
-            nameDiv.innerText = `${shader}\nModified: ${modifyDate.getDate()}/${modifyDate.getMonth() + 1}/${modifyDate.getFullYear()} ${modifyDate.getHours() % 12 == 0 ? 12 : modifyDate.getHours() % 12}:${modifyDate.getMinutes()} ${modifyDate.getHours() > 11 ? "PM" : "AM"}`;
+            nameDiv.innerText = `${shader}\nModified: ${modifyDate.getDate()https://kakaomames.github.io/turbowarp/${modifyDate.getMonth() + 1https://kakaomames.github.io/turbowarp/${modifyDate.getFullYear()} ${modifyDate.getHours() % 12 == 0 ? 12 : modifyDate.getHours() % 12}:${modifyDate.getMinutes()} ${modifyDate.getHours() > 11 ? "PM" : "AM"}`;
 
             shaderDiv.appendChild(nameDiv);
           });
           break;
 
         case "manager":
-          //Resize this manager to fit better
+         https://kakaomames.github.io/turbowarp//Resize this manager to fit better
           resizeFunc(25, 30);
-          //A container containing already existing shaders and some text to accompony them.
+         https://kakaomames.github.io/turbowarp//A container containing already existing shaders and some text to accompony them.
           menuSpecificVars.existingShaderHolder = document.createElement("div");
 
           menuSpecificVars.existingShaderHolder.style.width = "100%";
@@ -5428,7 +5428,7 @@
             menuSpecificVars.existingText
           );
 
-          //The background for existing shaders
+         https://kakaomames.github.io/turbowarp//The background for existing shaders
           menuSpecificVars.existingDivBackground =
             document.createElement("div");
 
@@ -5446,7 +5446,7 @@
             menuSpecificVars.existingDivBackground
           );
 
-          //The container for existing shaders
+         https://kakaomames.github.io/turbowarp//The container for existing shaders
           menuSpecificVars.existingDiv = document.createElement("div");
 
           menuSpecificVars.existingDiv.style.backgroundColor = "#00000000";
@@ -5484,11 +5484,11 @@
             nameDiv.style.left = "0px";
             nameDiv.style.transform = "translate(5%,5%)";
             nameDiv.style.textAlign = "left";
-            nameDiv.innerText = `${shader}\nModified: ${modifyDate.getDate()}/${modifyDate.getMonth() + 1}/${modifyDate.getFullYear()} ${modifyDate.getHours() % 12 == 0 ? 12 : modifyDate.getHours() % 12}:${modifyDate.getMinutes()} ${modifyDate.getHours() > 11 ? "PM" : "AM"}`;
+            nameDiv.innerText = `${shader}\nModified: ${modifyDate.getDate()https://kakaomames.github.io/turbowarp/${modifyDate.getMonth() + 1https://kakaomames.github.io/turbowarp/${modifyDate.getFullYear()} ${modifyDate.getHours() % 12 == 0 ? 12 : modifyDate.getHours() % 12}:${modifyDate.getMinutes()} ${modifyDate.getHours() > 11 ? "PM" : "AM"}`;
 
             shaderDiv.appendChild(nameDiv);
 
-            //The actual container no filter to avoid buggy things
+           https://kakaomames.github.io/turbowarp//The actual container no filter to avoid buggy things
             const closeMenu = document.createElement("div");
 
             closeMenu.style.width = "1.75rem";
@@ -5504,18 +5504,18 @@
             closeMenu.style.transition = "all 0.15s ease-out";
             closeMenu.style.transform = "translate(-50%,-135%)";
 
-            //Animation stuffs
+           https://kakaomames.github.io/turbowarp//Animation stuffs
             closeMenu.onmouseenter = () => {
               closeMenu.style.transform =
                 "translate(-50%,-135%) scale(1.1,1.1)";
             };
 
-            //More animation
+           https://kakaomames.github.io/turbowarp//More animation
             closeMenu.onmouseleave = () => {
               closeMenu.style.transform = "translate(-50%,-135%) scale(1,1)";
             };
 
-            //Just the close button
+           https://kakaomames.github.io/turbowarp//Just the close button
             closeMenu.onclick = () => {
               menuSpecificVars.existingDiv.removeChild(shaderDiv);
               this.deleteShader(shader);
@@ -5523,10 +5523,10 @@
 
             shaderDiv.appendChild(closeMenu);
 
-            //The close button for the menu
+           https://kakaomames.github.io/turbowarp//The close button for the menu
             const xImage = document.createElement("img");
             xImage.src =
-              "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjQ4IDcuNDgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi0tYWRkPC90aXRsZT48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIzLjc0IiB5MT0iNi40OCIgeDI9IjMuNzQiIHkyPSIxIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMSIgeTE9IjMuNzQiIHgyPSI2LjQ4IiB5Mj0iMy43NCIvPjwvc3ZnPg==";
+              "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjQ4IDcuNDgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGU+aWNvbi0tYWRkPC90aXRsZT48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIzLjc0IiB5MT0iNi40OCIgeDI9IjMuNzQiIHkyPSIxIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMSIgeTE9IjMuNzQiIHgyPSI2LjQ4IiB5Mj0iMy43NCIvPjwvc3ZnPg==";
 
             xImage.style.width = "0.75rem";
             xImage.style.height = "0.75rem";
@@ -5538,9 +5538,9 @@
           break;
 
         case "load":
-          //Resize this manager to fit better
+         https://kakaomames.github.io/turbowarp//Resize this manager to fit better
           resizeFunc(25, 30);
-          //A container containing already existing shaders and some text to accompony them.
+         https://kakaomames.github.io/turbowarp//A container containing already existing shaders and some text to accompony them.
           menuSpecificVars.existingShaderHolder = document.createElement("div");
 
           menuSpecificVars.existingShaderHolder.style.width = "100%";
@@ -5570,7 +5570,7 @@
             menuSpecificVars.existingText
           );
 
-          //The background for existing shaders
+         https://kakaomames.github.io/turbowarp//The background for existing shaders
           menuSpecificVars.existingDivBackground =
             document.createElement("div");
 
@@ -5588,7 +5588,7 @@
             menuSpecificVars.existingDivBackground
           );
 
-          //The container for existing shaders
+         https://kakaomames.github.io/turbowarp//The container for existing shaders
           menuSpecificVars.existingDiv = document.createElement("div");
 
           menuSpecificVars.existingDiv.style.backgroundColor = "#00000000";
@@ -5637,7 +5637,7 @@
             nameDiv.style.left = "0px";
             nameDiv.style.transform = "translate(5%,5%)";
             nameDiv.style.textAlign = "left";
-            nameDiv.innerText = `${shader}\nModified: ${modifyDate.getDate()}/${modifyDate.getMonth() + 1}/${modifyDate.getFullYear()} ${modifyDate.getHours() % 12 == 0 ? 12 : modifyDate.getHours() % 12}:${modifyDate.getMinutes()} ${modifyDate.getHours() > 11 ? "PM" : "AM"}`;
+            nameDiv.innerText = `${shader}\nModified: ${modifyDate.getDate()https://kakaomames.github.io/turbowarp/${modifyDate.getMonth() + 1https://kakaomames.github.io/turbowarp/${modifyDate.getFullYear()} ${modifyDate.getHours() % 12 == 0 ? 12 : modifyDate.getHours() % 12}:${modifyDate.getMinutes()} ${modifyDate.getHours() > 11 ? "PM" : "AM"}`;
 
             shaderDiv.appendChild(nameDiv);
           });
@@ -5652,7 +5652,7 @@
       return JSON.stringify(this.shaderMenu());
     }
 
-    //?Cubemaps
+   https://kakaomames.github.io/turbowarp//?Cubemaps
     createCubemap({ left, right, back, front, bottom, top, name }, util) {
       const cubemapSetup = [
         {
@@ -5681,11 +5681,11 @@
         },
       ];
 
-      //? Bind texture
+     https://kakaomames.github.io/turbowarp//? Bind texture
       this.penPlusCubemap[name] = gl.createTexture();
       gl.bindTexture(gl.TEXTURE_CUBE_MAP, this.penPlusCubemap[name]);
 
-      //Loop through faces in face array.
+     https://kakaomames.github.io/turbowarp//Loop through faces in face array.
       for (let faceID = 0; faceID < 6; faceID++) {
         const curTarget = util.target;
         const curCostume =
@@ -5701,7 +5701,7 @@
             curCostume.height
           );
 
-          // don't assume the image is square
+         https://kakaomames.github.io/turbowarp// don't assume the image is square
           const maxDimension = Math.max(curCostume.width, curCostume.height);
 
           gl.bindTexture(gl.TEXTURE_CUBE_MAP, this.penPlusCubemap[name]);
@@ -5732,14 +5732,14 @@
             const costumeURI =
               curTarget.sprite.costumes[curCostume].asset.encodeDataURI();
 
-            //Only used for images we got permission to fetch before. Don't need this.
-            // eslint-disable-next-line
+           https://kakaomames.github.io/turbowarp//Only used for images we got permission to fetch before. Don't need this.
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line
             const image = new Image();
 
             image.onload = () => {
               const maxDimension = Math.max(image.width, image.height);
               if (image.width != image.height) {
-                // I don't know if there's a better way to do this.
+               https://kakaomames.github.io/turbowarp// I don't know if there's a better way to do this.
                 const canvas = document.createElement("canvas");
                 canvas.width = maxDimension;
                 canvas.height = maxDimension;
@@ -5747,8 +5747,8 @@
                 const ctx = canvas.getContext("2d");
                 ctx.drawImage(
                   image,
-                  (maxDimension - image.width) / 2,
-                  (maxDimension - image.height) / 2
+                  (maxDimension - image.width)https://kakaomames.github.io/turbowarp/ 2,
+                  (maxDimension - image.height)https://kakaomames.github.io/turbowarp/ 2
                 );
 
                 gl.bindTexture(gl.TEXTURE_CUBE_MAP, this.penPlusCubemap[name]);
@@ -5798,7 +5798,7 @@
     }
 
     _getTriDataFromList(list, util) {
-      //Might be bad code? I dunno
+     https://kakaomames.github.io/turbowarp//Might be bad code? I dunno
       const listREF = this._getVarObjectFromName(list, util, "list");
       if (!listREF) return { successful: false };
       const refinedID = listREF.id + util.target.id;
@@ -5811,13 +5811,13 @@
 
       const stringified = JSON.stringify(listOBJ);
       if (this.listCache[refinedID].prev != stringified) {
-        //Map the list object if we can't find something
+       https://kakaomames.github.io/turbowarp//Map the list object if we can't find something
         listOBJ.map(function (str) {
           const obj = JSON.parse(str);
-          //Check through each object
+         https://kakaomames.github.io/turbowarp//Check through each object
           Object.keys(obj).forEach((key) => {
-            //Merge the keys if possible
-            //!!No built in function for this to my knowledge!!
+           https://kakaomames.github.io/turbowarp//Merge the keys if possible
+           https://kakaomames.github.io/turbowarp//!!No built in function for this to my knowledge!!
             if (!merged[key]) {
               merged[key] = obj[key];
             } else {
@@ -5826,7 +5826,7 @@
           });
         });
 
-        //Parse these into F32 arrays for performance.
+       https://kakaomames.github.io/turbowarp//Parse these into F32 arrays for performance.
         const keys = Object.keys(merged);
         keys.forEach((key) => {
           merged[key] = new Float32Array(merged[key]);
@@ -5846,7 +5846,7 @@
       };
     }
 
-    //?List based rendering
+   https://kakaomames.github.io/turbowarp//?List based rendering
     renderSolidTrisFromList({ list }, util) {
       const { triData, listLength, successful } = this._getTriDataFromList(
         list,
@@ -5854,12 +5854,12 @@
       );
       if (!successful) return;
 
-      // prettier-ignore
+     https://kakaomames.github.io/turbowarp// prettier-ignore
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
 
       if (!triData.a_position || !triData.a_color) return;
 
-      //Make sure we have the triangle data updating accordingly
+     https://kakaomames.github.io/turbowarp//Make sure we have the triangle data updating accordingly
       this.trianglesDrawn += listLength;
       bufferInfo.numElements = listLength * 3;
 
@@ -5869,7 +5869,7 @@
       gl.bindBuffer(gl.ARRAY_BUFFER, bufferInfo.attribs.a_color.buffer);
       gl.bufferData(gl.ARRAY_BUFFER, triData.a_color, gl.DYNAMIC_DRAW);
 
-      //? Bind Positional Data
+     https://kakaomames.github.io/turbowarp//? Bind Positional Data
       twgl.setBuffersAndAttributes(
         gl,
         penPlusShaders.untextured.ProgramInf,
@@ -5896,17 +5896,17 @@
       return JSON.stringify({
         a_position: [x1, y1, 0, 1, x2, y2, 0, 1, x3, y3, 0, 1],
         a_color: [
-          c1.r / 255,
-          c1.g / 255,
-          c1.b / 255,
+          c1.rhttps://kakaomames.github.io/turbowarp/ 255,
+          c1.ghttps://kakaomames.github.io/turbowarp/ 255,
+          c1.bhttps://kakaomames.github.io/turbowarp/ 255,
           1,
-          c2.r / 255,
-          c2.g / 255,
-          c2.b / 255,
+          c2.rhttps://kakaomames.github.io/turbowarp/ 255,
+          c2.ghttps://kakaomames.github.io/turbowarp/ 255,
+          c2.bhttps://kakaomames.github.io/turbowarp/ 255,
           1,
-          c3.r / 255,
-          c3.g / 255,
-          c3.b / 255,
+          c3.rhttps://kakaomames.github.io/turbowarp/ 255,
+          c3.ghttps://kakaomames.github.io/turbowarp/ 255,
+          c3.bhttps://kakaomames.github.io/turbowarp/ 255,
           1,
         ],
       });
@@ -5919,7 +5919,7 @@
       );
       if (!successful) return;
 
-      // prettier-ignore
+     https://kakaomames.github.io/turbowarp// prettier-ignore
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
 
       if (!triData.a_position || !triData.a_color || !triData.a_texCoord)
@@ -5928,7 +5928,7 @@
       let currentTexture = this._locateTextureObject(tex, util);
       if (!currentTexture) return;
 
-      //Make sure we have the triangle data updating accordingly
+     https://kakaomames.github.io/turbowarp//Make sure we have the triangle data updating accordingly
       this.trianglesDrawn += listLength;
       bufferInfo.numElements = listLength * 3;
 
@@ -5941,7 +5941,7 @@
       gl.bindBuffer(gl.ARRAY_BUFFER, bufferInfo.attribs.a_texCoord.buffer);
       gl.bufferData(gl.ARRAY_BUFFER, triData.a_texCoord, gl.DYNAMIC_DRAW);
 
-      //? Bind Positional Data
+     https://kakaomames.github.io/turbowarp//? Bind Positional Data
       twgl.setBuffersAndAttributes(
         gl,
         penPlusShaders.textured.ProgramInf,
@@ -5969,17 +5969,17 @@
       return JSON.stringify({
         a_position: [x1, y1, 0, 1, x2, y2, 0, 1, x3, y3, 0, 1],
         a_color: [
-          c1.r / 255,
-          c1.g / 255,
-          c1.b / 255,
+          c1.rhttps://kakaomames.github.io/turbowarp/ 255,
+          c1.ghttps://kakaomames.github.io/turbowarp/ 255,
+          c1.bhttps://kakaomames.github.io/turbowarp/ 255,
           1,
-          c2.r / 255,
-          c2.g / 255,
-          c2.b / 255,
+          c2.rhttps://kakaomames.github.io/turbowarp/ 255,
+          c2.ghttps://kakaomames.github.io/turbowarp/ 255,
+          c2.bhttps://kakaomames.github.io/turbowarp/ 255,
           1,
-          c3.r / 255,
-          c3.g / 255,
-          c3.b / 255,
+          c3.rhttps://kakaomames.github.io/turbowarp/ 255,
+          c3.ghttps://kakaomames.github.io/turbowarp/ 255,
+          c3.bhttps://kakaomames.github.io/turbowarp/ 255,
           1,
         ],
         a_texCoord: [u1, v1, u2, v2, u3, v3],
@@ -5991,32 +5991,32 @@
         this._getTriDataFromList(list, util);
       if (!successful) return;
 
-      // prettier-ignore
+     https://kakaomames.github.io/turbowarp// prettier-ignore
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
 
       if (!this.programs[shader]) return;
 
       const buffer = this.programs[shader].buffer;
 
-      //Make sure we have the triangle data updating accordingly
+     https://kakaomames.github.io/turbowarp//Make sure we have the triangle data updating accordingly
       this.trianglesDrawn += listLength;
       buffer.numElements = listLength * 3;
 
-      // prettier-ignore
+     https://kakaomames.github.io/turbowarp// prettier-ignore
       keys.forEach(key => {
-          //Check to see if the key exists here
+         https://kakaomames.github.io/turbowarp//Check to see if the key exists here
           if (!buffer.attribs[key]) return;
-          //Then use the key in the shader
+         https://kakaomames.github.io/turbowarp//Then use the key in the shader
           gl.bindBuffer(gl.ARRAY_BUFFER, buffer.attribs[key].buffer);
           gl.bufferData(gl.ARRAY_BUFFER, triData[key], gl.DYNAMIC_DRAW);
         });
 
-      //? Bind Positional Data
+     https://kakaomames.github.io/turbowarp//? Bind Positional Data
       twgl.setBuffersAndAttributes(gl, this.programs[shader].info, buffer);
 
       gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
 
-      //Just use the real scratch timer.
+     https://kakaomames.github.io/turbowarp//Just use the real scratch timer.
       this.programs[shader].uniformDat.u_timer =
         runtime.ext_scratch3_sensing.getTimer({}, util);
       this.programs[shader].uniformDat.u_transform = transform_Matrix;
@@ -6041,16 +6041,16 @@
       id = Scratch.Cast.toNumber(id);
       value = Scratch.Cast.toNumber(value);
 
-      //Ignore reductive values
+     https://kakaomames.github.io/turbowarp//Ignore reductive values
       if (!(id > 0 && id <= 3)) return def;
       if (typeof value == "undefined") return def;
 
-      //Parse it
+     https://kakaomames.github.io/turbowarp//Parse it
       let parsed = JSON.parse(def);
       if (!parsed) return def;
       id -= 1;
 
-      //handleAttributes
+     https://kakaomames.github.io/turbowarp//handleAttributes
       switch (attribute) {
         case "x":
           if (!parsed["a_position"]) break;
@@ -6074,22 +6074,22 @@
 
         case "red tint":
           if (!parsed["a_color"]) break;
-          parsed["a_color"][id * 4] = value / 100;
+          parsed["a_color"][id * 4] = valuehttps://kakaomames.github.io/turbowarp/ 100;
           break;
 
         case "green tint":
           if (!parsed["a_color"]) break;
-          parsed["a_color"][id * 4 + 1] = value / 100;
+          parsed["a_color"][id * 4 + 1] = valuehttps://kakaomames.github.io/turbowarp/ 100;
           break;
 
         case "blue tint":
           if (!parsed["a_color"]) break;
-          parsed["a_color"][id * 4 + 2] = value / 100;
+          parsed["a_color"][id * 4 + 2] = valuehttps://kakaomames.github.io/turbowarp/ 100;
           break;
 
         case "transparency":
           if (!parsed["a_color"]) break;
-          parsed["a_color"][id * 4 + 3] = value / 100;
+          parsed["a_color"][id * 4 + 3] = valuehttps://kakaomames.github.io/turbowarp/ 100;
           break;
 
         case "U value":
@@ -6130,24 +6130,24 @@
     }
 
     createRenderTexture({ name }) {
-      //If it is named scratch stage get that stuff out of here
+     https://kakaomames.github.io/turbowarp//If it is named scratch stage get that stuff out of here
       if (name == "Scratch Stage") return;
 
-      // preserve GL binding
+     https://kakaomames.github.io/turbowarp// preserve GL binding
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
       const prevFB = gl.getParameter(gl.FRAMEBUFFER_BINDING);
 
-      //if the render texture exists delete it
+     https://kakaomames.github.io/turbowarp//if the render texture exists delete it
       if (this.renderTextures[this.prefixes.renderTextures + name]) {
         this._deleteFramebuffer(
           this.renderTextures[this.prefixes.renderTextures + name]
         );
       }
 
-      // restore GL framebuffer binding
+     https://kakaomames.github.io/turbowarp// restore GL framebuffer binding
       gl.bindFramebuffer(gl.FRAMEBUFFER, prevFB);
 
-      //Add it
+     https://kakaomames.github.io/turbowarp//Add it
       this.renderTextures[this.prefixes.renderTextures + name] =
         twgl.createFramebufferInfo(gl, triBufferAttachments);
       this.renderTextures[this.prefixes.renderTextures + name].resizing = true;
@@ -6155,24 +6155,24 @@
     }
 
     createRenderTextureOfSize({ name, width, height }) {
-      //If it is named scratch stage get that stuff out of here
+     https://kakaomames.github.io/turbowarp//If it is named scratch stage get that stuff out of here
       if (name == "Scratch Stage") return;
 
-      // preserve GL binding
+     https://kakaomames.github.io/turbowarp// preserve GL binding
       if (!this.inDrawRegion) renderer.enterDrawRegion(this.penPlusDrawRegion);
       const prevFB = gl.getParameter(gl.FRAMEBUFFER_BINDING);
 
-      //if the render texture exists delete it
+     https://kakaomames.github.io/turbowarp//if the render texture exists delete it
       if (this.renderTextures[this.prefixes.renderTextures + name]) {
         this._deleteFramebuffer(
           this.renderTextures[this.prefixes.renderTextures + name]
         );
       }
 
-      // restore GL framebuffer binding
+     https://kakaomames.github.io/turbowarp// restore GL framebuffer binding
       gl.bindFramebuffer(gl.FRAMEBUFFER, prevFB);
 
-      //Add it
+     https://kakaomames.github.io/turbowarp//Add it
       this.renderTextures[this.prefixes.renderTextures + name] =
         twgl.createFramebufferInfo(gl, triBufferAttachments);
       twgl.resizeFramebufferInfo(
@@ -6208,7 +6208,7 @@
     removeRenderTexture({ name }) {
       if (name == "Scratch Stage") return;
       if (this.renderTextures[name]) {
-        //If we are deleting the one we are on failsafe to the default stage buffer
+       https://kakaomames.github.io/turbowarp//If we are deleting the one we are on failsafe to the default stage buffer
         if (this.currentRenderTexture.name == name) {
           this.currentRenderTexture = triBufferInfo;
           gl.bindFramebuffer(
@@ -6216,7 +6216,7 @@
             this.currentRenderTexture.framebuffer
           );
         }
-        //Delete the framebuffer
+       https://kakaomames.github.io/turbowarp//Delete the framebuffer
         this._deleteFramebuffer(this.renderTextures[name]);
         delete this.renderTextures[name];
       }
@@ -6228,15 +6228,15 @@
     }
 
     targetRenderTexture({ name }) {
-      //Check for the scratch stage
+     https://kakaomames.github.io/turbowarp//Check for the scratch stage
       if (name == "Scratch Stage") {
         this.currentRenderTexture = triBufferInfo;
       }
-      //Check for the render texture inside of the list
+     https://kakaomames.github.io/turbowarp//Check for the render texture inside of the list
       else if (this.renderTextures[name]) {
         this.currentRenderTexture = this.renderTextures[name];
 
-        //if we detect that ANY I MEAN ANY shader has THIS texture destroy it.
+       https://kakaomames.github.io/turbowarp//if we detect that ANY I MEAN ANY shader has THIS texture destroy it.
         Object.keys(this.programs).forEach((programKey) => {
           const program = this.programs[programKey];
           if (program && program.uniformDat) {
@@ -6245,19 +6245,19 @@
                 program.uniformDat[uniformKey] ==
                 this.currentRenderTexture.attachments[0]
               ) {
-                //This should show em!
+               https://kakaomames.github.io/turbowarp//This should show em!
                 this.programs[programKey].uniformDat[uniformKey] = null;
               }
             });
           }
         });
       }
-      //if all else fails use the tri buffer render texture.
+     https://kakaomames.github.io/turbowarp//if all else fails use the tri buffer render texture.
       else {
         this.currentRenderTexture = triBufferInfo;
       }
 
-      //Do some fixes if we are already in the pen+ draw region!
+     https://kakaomames.github.io/turbowarp//Do some fixes if we are already in the pen+ draw region!
       if (this.inDrawRegion) {
         gl.viewport(
           0,
@@ -6279,11 +6279,11 @@
             Scratch.Cast.toNumber(nativeSize[0]),
             Scratch.Cast.toNumber(nativeSize[1])
           );
-          transform_Matrix[0] = 2 / renderer._nativeSize[0];
-          transform_Matrix[1] = -2 / renderer._nativeSize[1];
+          transform_Matrix[0] = 2https://kakaomames.github.io/turbowarp/ renderer._nativeSize[0];
+          transform_Matrix[1] = -2https://kakaomames.github.io/turbowarp/ renderer._nativeSize[1];
         } else {
-          transform_Matrix[0] = 2 / this.currentRenderTexture.width;
-          transform_Matrix[1] = -2 / this.currentRenderTexture.height;
+          transform_Matrix[0] = 2https://kakaomames.github.io/turbowarp/ this.currentRenderTexture.width;
+          transform_Matrix[1] = -2https://kakaomames.github.io/turbowarp/ this.currentRenderTexture.height;
         }
 
         gl.bindFramebuffer(
@@ -6293,13 +6293,13 @@
       }
     }
 
-    //By Sharkpool-SP commented by Alex
+   https://kakaomames.github.io/turbowarp//By Sharkpool-SP commented by Alex
     getPenRenderLayer() {
-      //Grabbing the drawable for the pen layer
+     https://kakaomames.github.io/turbowarp//Grabbing the drawable for the pen layer
       const penID = vm.runtime.ext_pen?._penDrawableId;
       if (!penID) return "";
 
-      //If we can grab it create a canvas and parse the image data into a data uri
+     https://kakaomames.github.io/turbowarp//If we can grab it create a canvas and parse the image data into a data uri
       const imageData =
         vm.runtime.renderer.extractDrawableScreenSpace(penID).imageData;
       var canvas = document.createElement("canvas");
@@ -6307,11 +6307,11 @@
       canvas.height = imageData.height;
       canvas.getContext("2d").putImageData(imageData, 0, 0);
 
-      //Return it as a png? Why png specifically I dunno.
-      return canvas.toDataURL("image/png");
+     https://kakaomames.github.io/turbowarp//Return it as a png? Why png specifically I dunno.
+      return canvas.toDataURL("imaghttps://kakaomames.github.io/turbowarp/png");
     }
   }
 
-  //? A small hack to stop the renderer from immediatly dying. And to allow for immediate use
+ https://kakaomames.github.io/turbowarp//? A small hack to stop the renderer from immediatly dying. And to allow for immediate use
   Scratch.extensions.register(new extension());
 })(Scratch);

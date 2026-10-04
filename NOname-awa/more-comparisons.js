@@ -1,13 +1,13 @@
-// Name: More Comparisons
-// ID: nonameawacomparisons
-// Description: More comparison blocks.
-// By: NOname-awa
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: More Comparisons
+https://kakaomames.github.io/turbowarp/ ID: nonameawacomparisons
+https://kakaomames.github.io/turbowarp/ Description: More comparison blocks.
+https://kakaomames.github.io/turbowarp/ By: NOname-awa
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
   const quadrilateral =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI3Ny4wMjc4MSIgaGVpZ2h0PSI1NC44MDY1NCIgdmlld0JveD0iMCwwLDc3LjAyNzgxLDU0LjgwNjU0Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAxLjUwNDMsLTE1Mi4yMTk3MykiPjxnIGRhdGEtcGFwZXItZGF0YT0ieyZxdW90O2lzUGFpbnRpbmdMYXllciZxdW90Ozp0cnVlfSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMjI4LjE3ODc4LDE1NS40NzM3NGw0Ni40MDEwMywxOS44ODYxNmwtMjIuNTM3NjQsMjkuMTY2MzZoLTQ2LjYyMTk5eiIvPjwvZz48L2c+PC9zdmc+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI3Ny4wMjc4MSIgaGVpZ2h0PSI1NC44MDY1NCIgdmlld0JveD0iMCwwLDc3LjAyNzgxLDU0LjgwNjU0Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjAxLjUwNDMsLTE1Mi4yMTk3MykiPjxnIGRhdGEtcGFwZXItZGF0YT0ieyZxdW90O2lzUGFpbnRpbmdMYXllciZxdW90Ozp0cnVlfSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMjI4LjE3ODc4LDE1NS40NzM3NGw0Ni40MDEwMywxOS44ODYxNmwtMjIuNTM3NjQsMjkuMTY2MzZoLTQ2LjYyMTk5eiIvPjwvZz48L2c+PC9zdmc+";
   class MoreComparisons {
     getInfo() {
       return {
@@ -31,7 +31,7 @@
             arguments: {},
             disableMonitor: true,
           },
-          /* eslint-disable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-disable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "boolean",
             blockType: Scratch.BlockType.BOOLEAN,
@@ -433,7 +433,7 @@
               },
             },
           },
-          /* eslint-enable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-enable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
         ],
       };
     }
@@ -551,7 +551,7 @@
         area += x1 * y2;
         area -= x2 * y1;
       }
-      area = Math.abs(area) / 2;
+      area = Math.abs(area)https://kakaomames.github.io/turbowarp/ 2;
       return Math.round(area) == args.n;
     }
     Squadrilateral(args) {
@@ -571,7 +571,7 @@
         area += x1 * y2;
         area -= x2 * y1;
       }
-      area = Math.abs(area) / 2;
+      area = Math.abs(area)https://kakaomames.github.io/turbowarp/ 2;
       return area;
     }
   }

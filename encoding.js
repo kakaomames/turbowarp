@@ -1,28 +1,28 @@
-// Name: Encoding
-// ID: Encoding
-// Description: Encode and decode strings into their unicode numbers, base 64, or URLs.
-// By: -SIPC-
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Encoding
+https://kakaomames.github.io/turbowarp/ ID: Encoding
+https://kakaomames.github.io/turbowarp/ Description: Encode and decode strings into their unicode numbers, base 64, or URLs.
+https://kakaomames.github.io/turbowarp/ By: -SIPC-
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
   const icon =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMzcuNzk1MDYiIGhlaWdodD0iMTM0LjIzNzA3IiB2aWV3Qm94PSIwLDAsMTM3Ljc5NTA2LDEzNC4yMzcwNyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1Mi44OTU4NiwtMTMwLjM3OTg5KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyMCIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0xOTkuMzA5MDgsMjE5LjYyMDExdi03OS4yNDAyMmg4MS4zODE4NHY3OS4yNDAyMnoiLz48cGF0aCBkPSJNMTYyLjg5NTg2LDI1NC42MTY5NnYtNzkuMjQwMjJoODEuMzgxODR2NzkuMjQwMjJ6Ii8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6ODcuMTA0MTQwMTg0NTE2NDQ6NDkuNjIwMTA4MzQwNzA3OTYtLT4=";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMzcuNzk1MDYiIGhlaWdodD0iMTM0LjIzNzA3IiB2aWV3Qm94PSIwLDAsMTM3Ljc5NTA2LDEzNC4yMzcwNyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1Mi44OTU4NiwtMTMwLjM3OTg5KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyMCIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0xOTkuMzA5MDgsMjE5LjYyMDExdi03OS4yNDAyMmg4MS4zODE4NHY3OS4yNDAyMnoiLz48cGF0aCBkPSJNMTYyLjg5NTg2LDI1NC42MTY5NnYtNzkuMjQwMjJoODEuMzgxODR2NzkuMjQwMjJ6Ii8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6ODcuMTA0MTQwMTg0NTE2NDQ6NDkuNjIwMTA4MzQwNzA3OTYtLT4=";
   const icon2 =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI4MS44ODUzOSIgaGVpZ2h0PSI4MC42MDMwNyIgdmlld0JveD0iMCwwLDgxLjg4NTM5LDgwLjYwMzA3Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTk5LjA1NzMsLTEzOS42OTg0NikiPjxnIGRhdGEtcGFwZXItZGF0YT0ieyZxdW90O2lzUGFpbnRpbmdMYXllciZxdW90Ozp0cnVlfSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTI4MC45NDI3LDE4MGMwLDIyLjI1NzkyIC0xOC4zMzA2Nyw0MC4zMDE1NCAtNDAuOTQyNyw0MC4zMDE1NGMtMjIuNjEyMDMsMCAtNDAuOTQyNywtMTguMDQzNjEgLTQwLjk0MjcsLTQwLjMwMTU0YzAsLTIyLjI1NzkyIDE4LjMzMDY3LC00MC4zMDE1NCA0MC45NDI3LC00MC4zMDE1NGMyMi42MTIwMywwIDQwLjk0MjcsMTguMDQzNjEgNDAuOTQyNyw0MC4zMDE1NHoiIGZpbGw9IiM2NDk1ZWQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIi8+PHBhdGggZD0iTTIzMS44MTg3NiwxODcuOTc2MDh2LTI4Ljc2NzE1aDI5LjczNDExdjI4Ljc2NzE1eiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjYiLz48cGF0aCBkPSJNMjE4LjQ0NzEzLDIwMC43OTEwN3YtMjguNzY3MTVoMjkuNzM0MTF2MjguNzY3MTV6IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjQwLjk0MjY5NjA1MzgwMTE0OjQwLjMwMTUzNTI2NTQ4NjcwNi0tPg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI4MS44ODUzOSIgaGVpZ2h0PSI4MC42MDMwNyIgdmlld0JveD0iMCwwLDgxLjg4NTM5LDgwLjYwMzA3Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTk5LjA1NzMsLTEzOS42OTg0NikiPjxnIGRhdGEtcGFwZXItZGF0YT0ieyZxdW90O2lzUGFpbnRpbmdMYXllciZxdW90Ozp0cnVlfSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTI4MC45NDI3LDE4MGMwLDIyLjI1NzkyIC0xOC4zMzA2Nyw0MC4zMDE1NCAtNDAuOTQyNyw0MC4zMDE1NGMtMjIuNjEyMDMsMCAtNDAuOTQyNywtMTguMDQzNjEgLTQwLjk0MjcsLTQwLjMwMTU0YzAsLTIyLjI1NzkyIDE4LjMzMDY3LC00MC4zMDE1NCA0MC45NDI3LC00MC4zMDE1NGMyMi42MTIwMywwIDQwLjk0MjcsMTguMDQzNjEgNDAuOTQyNyw0MC4zMDE1NHoiIGZpbGw9IiM2NDk1ZWQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIi8+PHBhdGggZD0iTTIzMS44MTg3NiwxODcuOTc2MDh2LTI4Ljc2NzE1aDI5LjczNDExdjI4Ljc2NzE1eiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjYiLz48cGF0aCBkPSJNMjE4LjQ0NzEzLDIwMC43OTEwN3YtMjguNzY3MTVoMjkuNzM0MTF2MjguNzY3MTV6IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjQwLjk0MjY5NjA1MzgwMTE0OjQwLjMwMTUzNTI2NTQ4NjcwNi0tPg==";
 
-  /*!
-  This md5 function is based on https://github.com/blueimp/JavaScript-MD5/blob/master/js/md5.js
+ https://kakaomames.github.io/turbowarp/*!
+  This md5 function is based on httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/blueimhttps://kakaomames.github.io/turbowarp/JavaScript-MDhttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/mastehttps://kakaomames.github.io/turbowarp/jhttps://kakaomames.github.io/turbowarp/md5.js
   which is licensed under:
 
   MIT License
 
-  Copyright © 2011 Sebastian Tschan, https://blueimp.net
+  Copyright © 2011 Sebastian Tschan, httpshttps://kakaomames.github.io/turbowarp//blueimp.net
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of
   this software and associated documentation files (the "Software"), to deal in
   the Software without restriction, including without limitation the rights to
-  use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+  use, copy, modify, merge, publish, distribute, sublicense, anhttps://kakaomames.github.io/turbowarp/or sell copies of
   the Software, and to permit persons to whom the Software is furnished to do so,
   subject to the following conditions:
 
@@ -35,34 +35,34 @@
   COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
   IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-  */
+  https://kakaomames.github.io/turbowarp/
   const md5 = (function () {
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Add integers, wrapping at 2^32.
      * This uses 16-bit operations internally to work around bugs in interpreters.
      *
      * @param {number} x First integer
      * @param {number} y Second integer
      * @returns {number} Sum
-     */
+     https://kakaomames.github.io/turbowarp/
     function safeAdd(x, y) {
       var lsw = (x & 0xffff) + (y & 0xffff);
       var msw = (x >> 16) + (y >> 16) + (lsw >> 16);
       return (msw << 16) | (lsw & 0xffff);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Bitwise rotate a 32-bit number to the left.
      *
      * @param {number} num 32-bit number
      * @param {number} cnt Rotation count
      * @returns {number} Rotated number
-     */
+     https://kakaomames.github.io/turbowarp/
     function bitRotateLeft(num, cnt) {
       return (num << cnt) | (num >>> (32 - cnt));
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Basic operation the algorithm uses.
      *
      * @param {number} q q
@@ -72,14 +72,14 @@
      * @param {number} s s
      * @param {number} t t
      * @returns {number} Result
-     */
+     https://kakaomames.github.io/turbowarp/
     function md5cmn(q, a, b, x, s, t) {
       return safeAdd(
         bitRotateLeft(safeAdd(safeAdd(a, q), safeAdd(x, t)), s),
         b
       );
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Basic operation the algorithm uses.
      *
      * @param {number} a a
@@ -90,11 +90,11 @@
      * @param {number} s s
      * @param {number} t t
      * @returns {number} Result
-     */
+     https://kakaomames.github.io/turbowarp/
     function md5ff(a, b, c, d, x, s, t) {
       return md5cmn((b & c) | (~b & d), a, b, x, s, t);
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Basic operation the algorithm uses.
      *
      * @param {number} a a
@@ -105,11 +105,11 @@
      * @param {number} s s
      * @param {number} t t
      * @returns {number} Result
-     */
+     https://kakaomames.github.io/turbowarp/
     function md5gg(a, b, c, d, x, s, t) {
       return md5cmn((b & d) | (c & ~d), a, b, x, s, t);
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Basic operation the algorithm uses.
      *
      * @param {number} a a
@@ -120,11 +120,11 @@
      * @param {number} s s
      * @param {number} t t
      * @returns {number} Result
-     */
+     https://kakaomames.github.io/turbowarp/
     function md5hh(a, b, c, d, x, s, t) {
       return md5cmn(b ^ c ^ d, a, b, x, s, t);
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Basic operation the algorithm uses.
      *
      * @param {number} a a
@@ -135,20 +135,20 @@
      * @param {number} s s
      * @param {number} t t
      * @returns {number} Result
-     */
+     https://kakaomames.github.io/turbowarp/
     function md5ii(a, b, c, d, x, s, t) {
       return md5cmn(c ^ (b | ~d), a, b, x, s, t);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Calculate the MD5 of an array of little-endian words, and a bit length.
      *
      * @param {Array} x Array of little-endian words
      * @param {number} len Bit length
      * @returns {Array<number>} MD5 Array
-     */
+     https://kakaomames.github.io/turbowarp/
     function binlMD5(x, len) {
-      /* append padding */
+     https://kakaomames.github.io/turbowarp/* append padding https://kakaomames.github.io/turbowarp/
       x[len >> 5] |= 0x80 << len % 32;
       x[(((len + 64) >>> 9) << 4) + 14] = len;
 
@@ -244,12 +244,12 @@
       return [a, b, c, d];
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Convert an array of little-endian words to a string
      *
      * @param {Array<number>} input MD5 Array
      * @returns {string} MD5 string
-     */
+     https://kakaomames.github.io/turbowarp/
     function binl2rstr(input) {
       var i;
       var output = "";
@@ -260,13 +260,13 @@
       return output;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Convert a raw string to an array of little-endian words
      * Characters >255 have their high-byte silently ignored.
      *
      * @param {string} input Raw input string
      * @returns {Array<number>} Array of little-endian words
-     */
+     https://kakaomames.github.io/turbowarp/
     function rstr2binl(input) {
       var i;
       var output = [];
@@ -276,28 +276,28 @@
       }
       var length8 = input.length * 8;
       for (i = 0; i < length8; i += 8) {
-        output[i >> 5] |= (input.charCodeAt(i / 8) & 0xff) << i % 32;
+        output[i >> 5] |= (input.charCodeAt(ihttps://kakaomames.github.io/turbowarp/ 8) & 0xff) << i % 32;
       }
       return output;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Calculate the MD5 of a raw string
      *
      * @param {string} s Input string
      * @returns {string} Raw MD5 string
-     */
+     https://kakaomames.github.io/turbowarp/
     function rstrMD5(s) {
       return binl2rstr(binlMD5(rstr2binl(s), s.length * 8));
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Calculates the HMAC-MD5 of a key and some data (raw strings)
      *
      * @param {string} key HMAC key
      * @param {string} data Raw input string
      * @returns {string} Raw MD5 string
-     */
+     https://kakaomames.github.io/turbowarp/
     function rstrHMACMD5(key, data) {
       var i;
       var bkey = rstr2binl(key);
@@ -316,12 +316,12 @@
       return binl2rstr(binlMD5(opad.concat(hash), 512 + 128));
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Convert a raw string to a hex string
      *
      * @param {string} input Raw input string
      * @returns {string} Hex encoded string
-     */
+     https://kakaomames.github.io/turbowarp/
     function rstr2hex(input) {
       var hexTab = "0123456789abcdef";
       var output = "";
@@ -334,56 +334,56 @@
       return output;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Encode a string as UTF-8
      *
      * @param {string} input Input string
      * @returns {string} UTF8 string
-     */
+     https://kakaomames.github.io/turbowarp/
     function str2rstrUTF8(input) {
       return unescape(encodeURIComponent(input));
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Encodes input string as raw MD5 string
      *
      * @param {string} s Input string
      * @returns {string} Raw MD5 string
-     */
+     https://kakaomames.github.io/turbowarp/
     function rawMD5(s) {
       return rstrMD5(str2rstrUTF8(s));
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Encodes input string as Hex encoded string
      *
      * @param {string} s Input string
      * @returns {string} Hex encoded string
-     */
+     https://kakaomames.github.io/turbowarp/
     function hexMD5(s) {
       return rstr2hex(rawMD5(s));
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Calculates the raw HMAC-MD5 for the given key and data
      *
      * @param {string} k HMAC key
      * @param {string} d Input string
      * @returns {string} Raw MD5 string
-     */
+     https://kakaomames.github.io/turbowarp/
     function rawHMACMD5(k, d) {
       return rstrHMACMD5(str2rstrUTF8(k), str2rstrUTF8(d));
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Calculates the Hex encoded HMAC-MD5 for the given key and data
      *
      * @param {string} k HMAC key
      * @param {string} d Input string
      * @returns {string} Raw MD5 string
-     */
+     https://kakaomames.github.io/turbowarp/
     function hexHMACMD5(k, d) {
       return rstr2hex(rawHMACMD5(k, d));
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * Calculates MD5 value for a given string.
      * If a key is provided, calculates the HMAC-MD5 value.
      * Returns a Hex encoded string unless the raw argument is given.
@@ -392,7 +392,7 @@
      * @param {string} [key] HMAC key
      * @param {boolean} [raw] Raw output switch
      * @returns {string} MD5 output
-     */
+     https://kakaomames.github.io/turbowarp/
     function md5(string, key, raw) {
       if (!key) {
         if (!raw) {

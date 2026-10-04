@@ -1,23 +1,23 @@
-// Name: Gamepad
-// ID: Gamepad
-// Description: Directly access gamepads instead of just mapping buttons to keys.
-// By: GarboMuffin
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Gamepad
+https://kakaomames.github.io/turbowarp/ ID: Gamepad
+https://kakaomames.github.io/turbowarp/ Description: Directly access gamepads instead of just mapping buttons to keys.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
-// Some parts of this scripts are based on or designed to be compatible-ish with:
-// https://arpruss.github.io/gamepad.js (MIT Licensed)
+https://kakaomames.github.io/turbowarp/ Some parts of this scripts are based on or designed to be compatible-ish with:
+https://kakaomames.github.io/turbowarp/ httpshttps://kakaomames.github.io/turbowarp//arpruss.github.ihttps://kakaomames.github.io/turbowarp/gamepad.js (MIT Licensed)
 
 (function (Scratch) {
   "use strict";
 
-  // For joysticks
+ https://kakaomames.github.io/turbowarp// For joysticks
   const DEFAULT_AXIS_DEADZONE = 0.1;
   let axisDeadzone = DEFAULT_AXIS_DEADZONE;
 
-  // For triggers. Drift isn't so big of an issue with these.
+ https://kakaomames.github.io/turbowarp// For triggers. Drift isn't so big of an issue with these.
   const BUTTON_DEADZONE = 0.05;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @typedef InternalGamepadState
    * @property {string} id
    * @property {Gamepad} realGamepad
@@ -27,16 +27,16 @@
    * @property {number[]} axisValues
    * @property {number[]} buttonValues
    * @property {boolean[]} buttonPressed
-   */
+   https://kakaomames.github.io/turbowarp/
 
-  /** @type {Array<InternalGamepadState|null>} */
+ https://kakaomames.github.io/turbowarp/** @type {Array<InternalGamepadState|null>} https://kakaomames.github.io/turbowarp/
   let gamepadState = [];
 
   const updateState = () => {
-    // In Firefox, the objects returned by getGamepads() change in the background, but in Chrome
-    // we have to call getGamepads() each frame. Easiest for us to just always call it.
-    // But because Firefox changes the objects in the background, we need to track old values
-    // ourselves.
+   https://kakaomames.github.io/turbowarp// In Firefox, the objects returned by getGamepads() change in the background, but in Chrome
+   https://kakaomames.github.io/turbowarp// we have to call getGamepads() each frame. Easiest for us to just always call it.
+   https://kakaomames.github.io/turbowarp// But because Firefox changes the objects in the background, we need to track old values
+   https://kakaomames.github.io/turbowarp// ourselves.
     const gamepads = navigator.getGamepads();
 
     const oldState = gamepadState;
@@ -46,7 +46,7 @@
         return null;
       }
 
-      /** @type {InternalGamepadState} */
+     https://kakaomames.github.io/turbowarp/** @type {InternalGamepadState} https://kakaomames.github.io/turbowarp/
       const result = {
         id: gamepad.id,
         realGamepad: gamepad,
@@ -60,14 +60,14 @@
 
       const oldResult = oldState.find((i) => i !== null && i.id === gamepad.id);
 
-      // Each pair of axes is given a circular deadzone.
+     https://kakaomames.github.io/turbowarp// Each pair of axes is given a circular deadzone.
       for (let i = 0; i < gamepad.axes.length; i += 2) {
         const x = gamepad.axes[i];
         const y = i + 1 >= gamepad.axes.length ? 0 : gamepad.axes[i + 1];
         const magnitude = Math.sqrt(x ** 2 + y ** 2);
 
         if (magnitude > axisDeadzone) {
-          let direction = (Math.atan2(y, x) * 180) / Math.PI + 90;
+          let direction = (Math.atan2(y, x) * 180)https://kakaomames.github.io/turbowarp/ Math.PI + 90;
           if (direction < 0) {
             direction += 360;
           }
@@ -76,9 +76,9 @@
           result.axisMagnitudes.push(magnitude, magnitude);
           result.axisValues.push(x, y);
         } else {
-          // Set both axes to 0. Use the old direction state, if it exists, so that using the direction
-          // inside of something like "point in direction" won't reset when no inputs.
-          // If we have no information at all, default to 90 degrees, like new sprites.
+         https://kakaomames.github.io/turbowarp// Set both axes to 0. Use the old direction state, if it exists, so that using the direction
+         https://kakaomames.github.io/turbowarp// inside of something like "point in direction" won't reset when no inputs.
+         https://kakaomames.github.io/turbowarp// If we have no information at all, default to 90 degrees, like new sprites.
           const oldDirection = oldResult ? oldResult.axisDirections[i] : 90;
           result.axisDirections.push(oldDirection, oldDirection);
           result.axisMagnitudes.push(0, 0);
@@ -103,10 +103,10 @@
     updateState();
   });
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {unknown} index 1-indexed index or 'any'
    * @returns {InternalGamepadState[]}
-   */
+   https://kakaomames.github.io/turbowarp/
   const getGamepads = (index) => {
     if (index === "any") {
       return gamepadState.filter((i) => i);
@@ -118,11 +118,11 @@
     return [];
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {InternalGamepadState} gamepad
    * @param {unknown} buttonIndex 1-indexed index or 'any'
    * @returns {boolean} false if button does not exist
-   */
+   https://kakaomames.github.io/turbowarp/
   const isButtonPressed = (gamepad, buttonIndex) => {
     if (buttonIndex === "any") {
       return gamepad.buttonPressed.some((i) => i);
@@ -130,40 +130,40 @@
     return !!gamepad.buttonPressed[Scratch.Cast.toNumber(buttonIndex) - 1];
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {InternalGamepadState} gamepad
    * @param {unknown} buttonIndex 1-indexed index
    * @returns {number} 0 if button does not exist
-   */
+   https://kakaomames.github.io/turbowarp/
   const getButtonValue = (gamepad, buttonIndex) => {
     const value = gamepad.buttonValues[Scratch.Cast.toNumber(buttonIndex) - 1];
     return value || 0;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {InternalGamepadState} gamepad
    * @param {unknown} axisIndex 1-indexed index
    * @returns {number} 0 if axis does not exist
-   */
+   https://kakaomames.github.io/turbowarp/
   const getAxisValue = (gamepad, axisIndex) => {
     const axisValue = gamepad.axisValues[Scratch.Cast.toNumber(axisIndex) - 1];
     return axisValue || 0;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {InternalGamepadState} gamepad
    * @param {unknown} startIndex
-   */
+   https://kakaomames.github.io/turbowarp/
   const getAxisPairMagnitude = (gamepad, startIndex) => {
     const magnitude =
       gamepad.axisMagnitudes[Scratch.Cast.toNumber(startIndex) - 1];
     return magnitude || 0;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {InternalGamepadState} gamepad
    * @param {unknown} startIndex
-   */
+   https://kakaomames.github.io/turbowarp/
   const getAxisPairDirection = (gamepad, startIndex) => {
     const direction =
       gamepad.axisDirections[Scratch.Cast.toNumber(startIndex) - 1];
@@ -277,7 +277,7 @@
             },
           },
 
-          /*
+         https://kakaomames.github.io/turbowarp/*
           {
             opcode: 'buttonPressedReleased',
             blockType: Scratch.BlockType.EVENT,
@@ -316,7 +316,7 @@
               },
             },
           },
-          */
+          https://kakaomames.github.io/turbowarp/
 
           "---",
 
@@ -390,7 +390,7 @@
           buttonMenu: {
             acceptReporters: true,
             items: [
-              // Based on an Xbox controller
+             https://kakaomames.github.io/turbowarp// Based on an Xbox controller
               {
                 text: Scratch.translate("any"),
                 value: "any",
@@ -428,11 +428,11 @@
                 value: "8",
               },
               {
-                text: Scratch.translate("Select/View (9)"),
+                text: Scratch.translate("Selechttps://kakaomames.github.io/turbowarp/View (9)"),
                 value: "9",
               },
               {
-                text: Scratch.translate("Start/Menu (10)"),
+                text: Scratch.translate("Starhttps://kakaomames.github.io/turbowarp/Menu (10)"),
                 value: "10",
               },
               {
@@ -464,7 +464,7 @@
           axisMenu: {
             acceptReporters: true,
             items: [
-              // Based on an Xbox controller
+             https://kakaomames.github.io/turbowarp// Based on an Xbox controller
               {
                 text: Scratch.translate("Left stick horizontal (1)"),
                 value: "1",
@@ -486,7 +486,7 @@
           axesGroupMenu: {
             acceptReporters: true,
             items: [
-              // Based on an Xbox controller
+             https://kakaomames.github.io/turbowarp// Based on an Xbox controller
               {
                 text: Scratch.translate("Left stick (1 & 2)"),
                 value: "1",
@@ -497,7 +497,7 @@
               },
             ],
           },
-          /*
+         https://kakaomames.github.io/turbowarp/*
           pressReleaseMenu: [
             {
               text: Scratch.translate('press'),
@@ -508,7 +508,7 @@
               value: 0
             }
           ],
-          */
+          https://kakaomames.github.io/turbowarp/
         },
       };
     }
@@ -550,7 +550,7 @@
 
     axisDirection({ axis, pad }) {
       let greatestMagnitude = 0;
-      // by default sprites have direction 90 degrees, so that's a reasonable default
+     https://kakaomames.github.io/turbowarp// by default sprites have direction 90 degrees, so that's a reasonable default
       let direction = 90;
 
       const gamepads = getGamepads(pad);
@@ -562,8 +562,8 @@
         }
       }
 
-      // if no sticks are far enough out, instead we'll return the last direction
-      // of the most recently modified gamepad
+     https://kakaomames.github.io/turbowarp// if no sticks are far enough out, instead we'll return the last direction
+     https://kakaomames.github.io/turbowarp// of the most recently modified gamepad
       if (greatestMagnitude === 0 && gamepads.length > 0) {
         gamepads.sort((a, b) => b.timestamp - a.timestamp);
         direction = getAxisPairDirection(gamepads[0], axis);
@@ -588,9 +588,9 @@
     rumble({ s, w, t, i }) {
       const gamepads = getGamepads(i);
       for (const { realGamepad } of gamepads) {
-        // @ts-ignore
+       https://kakaomames.github.io/turbowarp// @ts-ignore
         if (realGamepad.vibrationActuator) {
-          // @ts-ignore
+         https://kakaomames.github.io/turbowarp// @ts-ignore
           realGamepad.vibrationActuator.playEffect("dual-rumble", {
             startDelay: 0,
             duration: t * 1000,

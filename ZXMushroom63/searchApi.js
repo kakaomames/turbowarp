@@ -1,8 +1,8 @@
-// Name: Search Params
-// ID: zxmushroom63searchparams
-// Description: Interact with URL search parameters: the part of the URL after a question mark.
-// By: ZXMushroom63
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Search Params
+https://kakaomames.github.io/turbowarp/ ID: zxmushroom63searchparams
+https://kakaomames.github.io/turbowarp/ Description: Interact with URL search parameters: the part of the URL after a question mark.
+https://kakaomames.github.io/turbowarp/ By: ZXMushroom63
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -169,7 +169,7 @@
 
     searchparamslength() {
       var s = new URLSearchParams(location.search);
-      // @ts-ignore
+     https://kakaomames.github.io/turbowarp// @ts-ignore
       return typeof s.size !== "object" ? s.size : 0;
     }
 

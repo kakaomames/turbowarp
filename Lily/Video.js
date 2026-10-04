@@ -1,12 +1,12 @@
-// Name: Video
-// ID: lmsVideo
-// Description: Play videos from URLs.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// By: SharkPool
-// By: Fath11 <https://scratch.mit.edu/users/fath11/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Video
+https://kakaomames.github.io/turbowarp/ ID: lmsVideo
+https://kakaomames.github.io/turbowarp/ Description: Play videos from URLs.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ By: SharkPool
+https://kakaomames.github.io/turbowarp/ By: Fath11 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/fath1https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
-// Attribution is not required, but greatly appreciated.
+https://kakaomames.github.io/turbowarp/ Attribution is not required, but greatly appreciated.
 
 (function (Scratch) {
   "use strict";
@@ -16,10 +16,10 @@
   const renderer = vm.renderer;
   const Cast = Scratch.Cast;
 
-  // In some versions of Chrome, it seems that trying to render a <video> returns pure black
-  // if it's not in the DOM in a place the browser thinks is visible. That means we can't
-  // use display: none.
-  // See https://github.com/TurboWarp/scratch-render/issues/12
+ https://kakaomames.github.io/turbowarp// In some versions of Chrome, it seems that trying to render a <video> returns pure black
+ https://kakaomames.github.io/turbowarp// if it's not in the DOM in a place the browser thinks is visible. That means we can't
+ https://kakaomames.github.io/turbowarp// use display: none.
+ https://kakaomames.github.io/turbowarp// See httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/TurboWarhttps://kakaomames.github.io/turbowarp/scratch-rendehttps://kakaomames.github.io/turbowarp/issuehttps://kakaomames.github.io/turbowarp/12
   const elementContainer = document.createElement("div");
   elementContainer.className = "tw-extensions-lily-videos-container";
   elementContainer.style.pointerEvents = "none";
@@ -36,17 +36,17 @@
     constructor(id, renderer, videoName, videoSrc) {
       super(id, renderer);
 
-      /** @type {string} */
+     https://kakaomames.github.io/turbowarp/** @type {string} https://kakaomames.github.io/turbowarp/
       this.videoName = videoName;
 
-      /** @type {string} */
+     https://kakaomames.github.io/turbowarp/** @type {string} https://kakaomames.github.io/turbowarp/
       this.videoSrc = videoSrc;
 
-      /**
+     https://kakaomames.github.io/turbowarp/**
        * Base volume as set by the scripts in the project, from 0 to 1.
        * Does not account for eg. the project being muted.
        * @type {number}
-       */
+       https://kakaomames.github.io/turbowarp/
       this.videoVolume = 1;
 
       this.videoError = false;
@@ -56,13 +56,13 @@
       });
 
       this.videoElement = document.createElement("video");
-      // Need to set non-zero dimensions, otherwise scratch-render thinks this is an empty image
+     https://kakaomames.github.io/turbowarp// Need to set non-zero dimensions, otherwise scratch-render thinks this is an empty image
       this.videoElement.width = 1;
       this.videoElement.height = 1;
       this.videoElement.crossOrigin = "anonymous";
       this.videoElement.playsInline = true;
       this.videoElement.onloadeddata = () => {
-        // First frame loaded
+       https://kakaomames.github.io/turbowarp// First frame loaded
         this.readyCallback();
         this.markVideoDirty();
       };
@@ -74,7 +74,7 @@
       this.videoElement.src = videoSrc;
       this.videoElement.currentTime = 0;
 
-      // <video> must be in the DOM for it to render (see comments above)
+     https://kakaomames.github.io/turbowarp// <video> must be in the DOM for it to render (see comments above)
       elementContainer.appendChild(this.videoElement);
       this.videoElement.tabIndex = -1;
 
@@ -86,7 +86,7 @@
     reuploadVideo() {
       this.videoDirty = false;
       if (this.videoError) {
-        // Draw an image that looks similar to Scratch's normal costume loading errors
+       https://kakaomames.github.io/turbowarp// Draw an image that looks similar to Scratch's normal costume loading errors
         const canvas = document.createElement("canvas");
         canvas.width = this.videoElement.videoWidth || 128;
         canvas.height = this.videoElement.videoHeight || 128;
@@ -101,9 +101,9 @@
           ctx.font = `${fontSize}px serif`;
           ctx.textBaseline = "middle";
           ctx.textAlign = "center";
-          ctx.fillText("?", canvas.width / 2, canvas.height / 2);
+          ctx.fillText("?", canvas.widthhttps://kakaomames.github.io/turbowarp/ 2, canvas.heighthttps://kakaomames.github.io/turbowarp/ 2);
         } else {
-          // guess we can't draw the error then
+         https://kakaomames.github.io/turbowarp// guess we can't draw the error then
         }
 
         this.setBitmap(canvas);
@@ -146,7 +146,7 @@
 
   class Video {
     constructor() {
-      /** @type {Record<string, VideoSkin>} */
+     https://kakaomames.github.io/turbowarp/** @type {Record<string, VideoSkin>} https://kakaomames.github.io/turbowarp/
       this.videos = Object.create(null);
 
       runtime.on("PROJECT_STOP_ALL", () => this.resetEverything());
@@ -187,11 +187,11 @@
         id: "lmsVideo",
         color1: "#557882",
         name: Scratch.translate("Video"),
-        docsURI: "./Lily/Video",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/Lilhttps://kakaomames.github.io/turbowarp/Video",
         blocks: [
           {
             blockType: Scratch.BlockType.XML,
-            xml: "<sep gap='6'/><label text='Only direct downloads will work, use'/><sep gap='-12'/><label text='the Iframe extension for YouTube.'/><sep gap='24'/>",
+            xml: "<sep gap='6https://kakaomames.github.io/turbowarp/><label text='Only direct downloads will work, usehttps://kakaomames.github.io/turbowarp/><sep gap='-12https://kakaomames.github.io/turbowarp/><label text='the Iframe extension for YouTube.https://kakaomames.github.io/turbowarp/><sep gap='24https://kakaomames.github.io/turbowarp/>",
           },
           {
             opcode: "loadVideoURL",
@@ -200,7 +200,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./dango.mp4",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/dango.mp4",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,
@@ -493,16 +493,16 @@
     }
 
     async loadVideoURL(args) {
-      // Always delete the old video with the same name, if it exists.
+     https://kakaomames.github.io/turbowarp// Always delete the old video with the same name, if it exists.
       this.deleteVideoURL(args);
 
       const videoName = Cast.toString(args.NAME);
       const url = Cast.toString(args.URL);
 
       if (
-        url.startsWith("https://www.youtube.com/") ||
-        url.startsWith("https://youtube.com/") ||
-        url.startsWith("https://youtu.be/")
+        url.startsWith("httpshttps://kakaomames.github.io/turbowarp//www.youtube.cohttps://kakaomames.github.io/turbowarp/") ||
+        url.startsWith("httpshttps://kakaomames.github.io/turbowarp//youtube.cohttps://kakaomames.github.io/turbowarp/") ||
+        url.startsWith("httpshttps://kakaomames.github.io/turbowarp//youtu.bhttps://kakaomames.github.io/turbowarp/")
       ) {
         alert(
           [
@@ -696,7 +696,7 @@
       if (!videoSkin) return;
 
       const value = Cast.toNumber(args.VALUE);
-      videoSkin.videoVolume = Math.min(1, Math.max(0, value / 100));
+      videoSkin.videoVolume = Math.min(1, Math.max(0, valuehttps://kakaomames.github.io/turbowarp/ 100));
       videoSkin.updateVolume();
     }
 
@@ -707,15 +707,15 @@
 
       try {
         const value = Cast.toNumber(args.RATE);
-        // Supposedly negative values will work in Safari but people probably shouldn't rely
-        // on that since others don't.
+       https://kakaomames.github.io/turbowarp// Supposedly negative values will work in Safari but people probably shouldn't rely
+       https://kakaomames.github.io/turbowarp// on that since others don't.
         videoSkin.videoElement.playbackRate = Math.max(0, value);
       } catch (e) {
         console.warn(e);
       }
     }
 
-    /** @returns {VM.Target|undefined} */
+   https://kakaomames.github.io/turbowarp/** @returns {VM.Target|undefined} https://kakaomames.github.io/turbowarp/
     _getTargetFromMenu(targetName, util) {
       if (targetName === "_myself_") return util.target;
       if (targetName === "_stage_") return runtime.getTargetForStage();

@@ -4,7 +4,7 @@
     1746: function (e, t, a) {
       (e.exports = a(9)(!1)).push([
         e.i,
-        ".sa-swap-local-global-hint {\n  padding-bottom: 1rem;\n}\n.sa-swap-local-global-stage {\n  /* resolves scratch class style conflict */\n  display: block;\n}\n",
+        ".sa-swap-local-global-hint {\n  padding-bottom: 1rem;\n}\n.sa-swap-local-global-stage {\n https://kakaomames.github.io/turbowarp/* resolves scratch class style conflict https://kakaomames.github.io/turbowarp/\n  display: block;\n}\n",
         "",
       ]);
     },

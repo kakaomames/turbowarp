@@ -1,9 +1,9 @@
-// Name: Stretch
-// ID: stretch
-// Description: Stretch sprites horizontally or vertically.
-// By: GarboMuffin
-// By: TheStarWorld
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Stretch
+https://kakaomames.github.io/turbowarp/ ID: stretch
+https://kakaomames.github.io/turbowarp/ Description: Stretch sprites horizontally or vertically.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ By: TheStarWorld
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -13,13 +13,13 @@
 
   const vm = Scratch.vm;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {VM.RenderedTarget} target
    * @param {VM.RenderedTarget} [originalTarget] If target is a clone, the original to copy from.
-   */
+   https://kakaomames.github.io/turbowarp/
   const implementStretchForTarget = (target, originalTarget) => {
     if (STRETCH_X in target) {
-      // Target already has stretch. Don't implement again.
+     https://kakaomames.github.io/turbowarp// Target already has stretch. Don't implement again.
       return;
     }
 
@@ -30,8 +30,8 @@
     target._getRenderedDirectionAndScale = function () {
       const result = original.call(this);
 
-      result.scale[0] *= this[STRETCH_X] / 100;
-      result.scale[1] *= this[STRETCH_Y] / 100;
+      result.scale[0] *= this[STRETCH_X]https://kakaomames.github.io/turbowarp/ 100;
+      result.scale[1] *= this[STRETCH_Y]https://kakaomames.github.io/turbowarp/ 100;
 
       return result;
     };
@@ -44,9 +44,9 @@
     vm.runtime.targets.forEach((target) => implementStretchForTarget(target));
   });
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {VM.RenderedTarget} target
-   */
+   https://kakaomames.github.io/turbowarp/
   const forceUpdateDirectionAndScale = (target) => {
     target.setDirection(target.direction);
   };

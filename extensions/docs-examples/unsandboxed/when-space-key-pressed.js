@@ -1,4 +1,4 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';
@@ -13,27 +13,27 @@
         id: 'eventexampleunsandboxed',
         name: 'Event Block Example',
         blocks: [
-          // highlight-start
+         https://kakaomames.github.io/turbowarp// highlight-start
           {
             blockType: Scratch.BlockType.EVENT,
             opcode: 'whenSpacePressed',
             text: 'when space key pressed',
-            isEdgeActivated: false // required boilerplate
+            isEdgeActivated: falsehttps://kakaomames.github.io/turbowarp// required boilerplate
           }
-          // highlight-end
+         https://kakaomames.github.io/turbowarp// highlight-end
         ]
       };
     }
-    // Notice: whenSpacePressed does not have a function defined!
+   https://kakaomames.github.io/turbowarp// Notice: whenSpacePressed does not have a function defined!
   }
 
-  // highlight-start
+ https://kakaomames.github.io/turbowarp// highlight-start
   document.addEventListener('keydown', (e) => {
     if (e.key === ' ') {
       Scratch.vm.runtime.startHats('eventexampleunsandboxed_whenSpacePressed');
     }
   });
-  // highlight-end
+ https://kakaomames.github.io/turbowarp// highlight-end
 
   Scratch.extensions.register(new WhenSpaceKeyPressed());
 })(Scratch);

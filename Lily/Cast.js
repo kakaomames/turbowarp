@@ -1,8 +1,8 @@
-// Name: Cast
-// ID: lmsCast
-// Description: Convert values between types.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Cast
+https://kakaomames.github.io/turbowarp/ ID: lmsCast
+https://kakaomames.github.io/turbowarp/ Description: Convert values between types.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 (function (Scratch) {
   "use strict";

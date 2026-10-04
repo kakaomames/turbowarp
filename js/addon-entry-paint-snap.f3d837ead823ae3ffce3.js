@@ -4,7 +4,7 @@
     1713: function (t, e, o) {
       (t.exports = o(9)(!1)).push([
         t.i,
-        '.sa-paint-snap-button {\n  position: relative;\n}\n.sa-paint-snap-button:focus-within {\n  background-color: hsla(0, 100%, 65%, 0.2);\n}\n.sa-paint-snap-button[data-enabled="true"] .sa-paint-snap-image {\n  filter: brightness(0) invert(1);\n}\n.sa-paint-snap-button[data-enabled="true"] {\n  background-color: #ff4c4c;\n}\n\n.sa-paint-snap-group {\n  position: relative;\n  flex-direction: row;\n}\n\n.sa-paint-snap-settings-wrapper {\n  position: absolute;\n  justify-items: center;\n  left: 50%;\n  width: 1.95rem;\n  height: 1.95rem;\n  display: grid;\n}\n\n.sa-paint-snap-settings {\n  position: absolute;\n  bottom: 100%;\n  /* based on the styles for the color dropdown */\n  padding: 4px;\n  border-radius: 4px;\n  border: 1px solid var(--paint-ui-pane-border, #ddd);\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  transition-property: bottom, opacity;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);\n  opacity: 0;\n  pointer-events: none;\n  background: var(--ui-primary, white);\n  min-height: 100%;\n  min-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n}\n.sa-paint-snap-settings[data-visible="true"] {\n  bottom: calc(100% + 22px);\n  pointer-events: auto;\n  opacity: 1;\n}\n\n.sa-paint-snap-settings-line {\n  display: flex;\n  justify-content: flex-end;\n  align-items: baseline;\n}\n\n.sa-paint-snap-settings-input {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  text-align: center;\n  border: 0;\n  background: transparent;\n  -moz-appearance: textfield;\n  border: 0;\n  outline: 0;\n}\n\n.sa-paint-snap-settings-input::-webkit-outer-spin-button,\n.sa-paint-snap-settings-input::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n.sa-paint-snap-settings-tip {\n  position: absolute;\n  bottom: 0;\n  transform: translateY(100%);\n  right: calc(50% - 7px);\n}\n.sa-paint-snap-settings-polygon {\n  fill: var(--ui-primary, white);\n  stroke: var(--paint-ui-pane-border, #ddd);\n}\n\n.sa-paint-snap-settings-separator {\n  flex-grow: 1;\n  border-bottom: 1px solid currentColor;\n  margin: 4px;\n  opacity: 0.25;\n}\n\n.sa-paint-snap-settings-section {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n  align-items: flex-end;\n  width: 100%;\n}\n\n.sa-paint-snap-settings-section-title {\n  font-size: 1.2em;\n  font-weight: 500;\n  align-self: flex-start;\n  margin-left: 4px;\n}\n\n.sa-paint-snap-settings-label {\n  white-space: nowrap;\n}\n\n.sa-paint-snap-image[data-shrink="true"] {\n  height: 1em;\n  width: 1em;\n}\n',
+        '.sa-paint-snap-button {\n  position: relative;\n}\n.sa-paint-snap-button:focus-within {\n  background-color: hsla(0, 100%, 65%, 0.2);\n}\n.sa-paint-snap-button[data-enabled="true"] .sa-paint-snap-image {\n  filter: brightness(0) invert(1);\n}\n.sa-paint-snap-button[data-enabled="true"] {\n  background-color: #ff4c4c;\n}\n\n.sa-paint-snap-group {\n  position: relative;\n  flex-direction: row;\n}\n\n.sa-paint-snap-settings-wrapper {\n  position: absolute;\n  justify-items: center;\n  left: 50%;\n  width: 1.95rem;\n  height: 1.95rem;\n  display: grid;\n}\n\n.sa-paint-snap-settings {\n  position: absolute;\n  bottom: 100%;\n https://kakaomames.github.io/turbowarp/* based on the styles for the color dropdown https://kakaomames.github.io/turbowarp/\n  padding: 4px;\n  border-radius: 4px;\n  border: 1px solid var(--paint-ui-pane-border, #ddd);\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  transition-property: bottom, opacity;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);\n  opacity: 0;\n  pointer-events: none;\n  background: var(--ui-primary, white);\n  min-height: 100%;\n  min-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n}\n.sa-paint-snap-settings[data-visible="true"] {\n  bottom: calc(100% + 22px);\n  pointer-events: auto;\n  opacity: 1;\n}\n\n.sa-paint-snap-settings-line {\n  display: flex;\n  justify-content: flex-end;\n  align-items: baseline;\n}\n\n.sa-paint-snap-settings-input {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  text-align: center;\n  border: 0;\n  background: transparent;\n  -moz-appearance: textfield;\n  border: 0;\n  outline: 0;\n}\n\n.sa-paint-snap-settings-input::-webkit-outer-spin-button,\n.sa-paint-snap-settings-input::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n.sa-paint-snap-settings-tip {\n  position: absolute;\n  bottom: 0;\n  transform: translateY(100%);\n  right: calc(50% - 7px);\n}\n.sa-paint-snap-settings-polygon {\n  fill: var(--ui-primary, white);\n  stroke: var(--paint-ui-pane-border, #ddd);\n}\n\n.sa-paint-snap-settings-separator {\n  flex-grow: 1;\n  border-bottom: 1px solid currentColor;\n  margin: 4px;\n  opacity: 0.25;\n}\n\n.sa-paint-snap-settings-section {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n  align-items: flex-end;\n  width: 100%;\n}\n\n.sa-paint-snap-settings-section-title {\n  font-size: 1.2em;\n  font-weight: 500;\n  align-self: flex-start;\n  margin-left: 4px;\n}\n\n.sa-paint-snap-settings-label {\n  white-space: nowrap;\n}\n\n.sa-paint-snap-image[data-shrink="true"] {\n  height: 1em;\n  width: 1em;\n}\n',
         "",
       ]);
     },
@@ -153,7 +153,7 @@
             },
             snapDeltaToAngle: function (e, o) {
               let n = Math.atan2(e.y, e.x);
-              n = Math.round(n / o) * o;
+              n = Math.round(nhttps://kakaomames.github.io/turbowarp/ o) * o;
               const i = Math.cos(n),
                 a = Math.sin(n),
                 s = i * e.x + a * e.y;
@@ -182,7 +182,7 @@
               return (
                 (a.matrix = o.matrix),
                 (function (e) {
-                  ((e.strokeWidth = 1 / t.view.zoom),
+                  ((e.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
                     (e.opacity = 1),
                     (e.blendMode = "normal"),
                     (e.guide = !0));
@@ -255,7 +255,7 @@
               from: [0, 0],
               to: [0, 0],
               strokeColor: new t.Color(s),
-              strokeWidth: 1 / t.view.zoom,
+              strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
               visible: !1,
               data: {
                 isHelperItem: !0,
@@ -277,7 +277,7 @@
               ((M.x = Math.max(j.left, Math.min(M.x, j.right))),
                 (M.y = Math.max(j.top, Math.min(M.y, j.bottom))));
               const S = M.subtract(e.downPoint),
-                C = r / t.view.zoom;
+                C = rhttps://kakaomames.github.io/turbowarp/ t.view.zoom;
               let P;
               if (0 === this.selectedItems.length) return;
               const z = this.selectionCenter._owner,
@@ -572,7 +572,7 @@
                   r = n.from,
                   c = n.to,
                   d = (e) => (
-                    e.clamp || (e.clamp = { min: -1 / 0, max: 1 / 0 }),
+                    e.clamp || (e.clamp = { min: -1https://kakaomames.github.io/turbowarp/ 0, max: 1https://kakaomames.github.io/turbowarp/ 0 }),
                     "point" === e.type
                       ? () => e.value
                       : "xcoord" === e.type || "itemSideVert" === e.type
@@ -635,7 +635,7 @@
                           };
                           var n, i;
                         })
-                        .sort(y)[0] || { pos: "", distance: 1 / 0 };
+                        .sort(y)[0] || { pos: "", distance: 1https://kakaomames.github.io/turbowarp/ 0 };
                       return {
                         point: e,
                         snapPoint:
@@ -656,7 +656,7 @@
                   var E;
                   ((f.shadow = new t.Path.Circle({
                     center: new t.Point(0, 0),
-                    radius: 5.5 / t.view.zoom,
+                    radius: 5.5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     fillColor: "black",
                     opacity: 0.12,
                     data: {
@@ -670,7 +670,7 @@
                   })),
                     (f.circle = new t.Path.Circle({
                       center: new t.Point(0, 0),
-                      radius: 4 / t.view.zoom,
+                      radius: 4https://kakaomames.github.io/turbowarp/ t.view.zoom,
                       fillColor: new t.Color(s),
                       data: {
                         isScaleHandle: !1,
@@ -684,14 +684,14 @@
                     })),
                     w.removeChildren(),
                     w.addChildren([f.shadow, f.circle]),
-                    (v.strokeWidth = 1 / t.view.zoom),
+                    (v.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
                     (v.strokeColor = new t.Color(s)),
                     v.bringToFront(),
                     w.bringToFront(),
                     g("isGuideLayer").addChildren([v, w]),
                     (P = M.snapPoint.subtract(M.point)));
                   const e =
-                    null === (E = M.pos.match(/item_(\d+)_/)) || void 0 === E
+                    null === (E = M.pos.matchhttps://kakaomames.github.io/turbowarp/item_(\d+)https://kakaomames.github.io/turbowarp/)) || void 0 === E
                       ? void 0
                       : E[1];
                   if (e) {
@@ -744,7 +744,7 @@
                   P
                     ? (t.position = t.data.origPos.add(P))
                     : e.modifiers.shift
-                      ? (t.position = t.data.origPos.add(c(S, Math.PI / 4)))
+                      ? (t.position = t.data.origPos.add(c(S, Math.PIhttps://kakaomames.github.io/turbowarp/ 4)))
                       : (t.position = t.data.origPos.add(S)),
                   (A = A ? A.unite(t.bounds) : t.bounds));
               this.firstDrag && ((u().visible = !0), (this.firstDrag = !1));
@@ -758,21 +758,21 @@
                 const e = Math.max(p.x - A.right, A.left - p.x),
                   o = Math.max(p.y - A.bottom, A.top - p.y),
                   n = Math.sqrt(e * e + o * o);
-                k = Math.max(0, 1 - n / (10 / t.view.zoom));
+                k = Math.max(0, 1 - nhttps://kakaomames.github.io/turbowarp/ (10https://kakaomames.github.io/turbowarp/ t.view.zoom));
               } else
                 p.y < A.top || p.y > A.bottom
                   ? (k = Math.max(
                       0,
                       1 -
-                        (Math.abs(p.y - T.y) - A.height / 2) /
-                          (10 / t.view.zoom),
+                        (Math.abs(p.y - T.y) - A.heighthttps://kakaomames.github.io/turbowarp/ 2)https://kakaomames.github.io/turbowarp/
+                          (10https://kakaomames.github.io/turbowarp/ t.view.zoom),
                     ))
                   : (p.x < A.left || p.x > A.right) &&
                     (k = Math.max(
                       0,
                       1 -
-                        (Math.abs(p.x - T.x) - A.width / 2) /
-                          (10 / t.view.zoom),
+                        (Math.abs(p.x - T.x) - A.widthhttps://kakaomames.github.io/turbowarp/ 2)https://kakaomames.github.io/turbowarp/
+                          (10https://kakaomames.github.io/turbowarp/ t.view.zoom),
                     ));
               u().opacity = m * k;
             }
@@ -987,7 +987,7 @@
               from: [0, 0],
               to: [0, 0],
               strokeColor: new t.Color(s),
-              strokeWidth: 1 / t.view.zoom,
+              strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
               visible: !0,
               data: {
                 isHelperItem: !0,
@@ -1001,7 +1001,7 @@
               from: [0, 0],
               to: [0, 0],
               strokeColor: new t.Color(s),
-              strokeWidth: 1 / t.view.zoom,
+              strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
               visible: !0,
               data: {
                 isHelperItem: !0,
@@ -1015,7 +1015,7 @@
               from: [0, 0],
               to: [0, 0],
               strokeColor: new t.Color(s),
-              strokeWidth: 1 / t.view.zoom,
+              strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
               visible: !0,
               data: {
                 isHelperItem: !0,
@@ -1032,7 +1032,7 @@
               from: [0, 0],
               to: [0, 0],
               strokeColor: new t.Color(s),
-              strokeWidth: 1 / t.view.zoom,
+              strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
               visible: !0,
               data: {
                 isHelperItem: !0,
@@ -1046,7 +1046,7 @@
               from: [0, 0],
               to: [0, 0],
               strokeColor: new t.Color(s),
-              strokeWidth: 1 / t.view.zoom,
+              strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
               visible: !0,
               data: {
                 isHelperItem: !0,
@@ -1060,7 +1060,7 @@
               from: [0, 0],
               to: [0, 0],
               strokeColor: new t.Color(s),
-              strokeWidth: 1 / t.view.zoom,
+              strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
               visible: !0,
               data: {
                 isHelperItem: !0,
@@ -1086,7 +1086,7 @@
             from: [0, 0],
             to: [0, 0],
             strokeColor: new t.Color(s),
-            strokeWidth: 1 / t.view.zoom,
+            strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
             visible: !1,
             data: {
               isHelperItem: !0,
@@ -1101,7 +1101,7 @@
             from: [0, 0],
             to: [0, 0],
             strokeColor: new t.Color(s),
-            strokeWidth: 1 / t.view.zoom,
+            strokeWidth: 1https://kakaomames.github.io/turbowarp/ t.view.zoom,
             visible: !1,
             data: {
               isHelperItem: !0,
@@ -1149,8 +1149,8 @@
               : (this.centered &&
                   ((this.centered = !1),
                   this.itemGroup.scale(
-                    1 / this.lastSx,
-                    1 / this.lastSy,
+                    1https://kakaomames.github.io/turbowarp/ this.lastSx,
+                    1https://kakaomames.github.io/turbowarp/ this.lastSy,
                     this.pivot,
                   ),
                   this.selectionAnchor &&
@@ -1163,8 +1163,8 @@
           e.modifiers.alt && (y = y.multiply(2));
           let v = 1,
             f = 1;
-          (Math.abs(this.origSize.x) > 1e-7 && (v = y.x / this.origSize.x),
-            Math.abs(this.origSize.y) > 1e-7 && (f = y.y / this.origSize.y));
+          (Math.abs(this.origSize.x) > 1e-7 && (v = y.xhttps://kakaomames.github.io/turbowarp/ this.origSize.x),
+            Math.abs(this.origSize.y) > 1e-7 && (f = y.yhttps://kakaomames.github.io/turbowarp/ this.origSize.y));
           const w = (t, e) => {
               const o = m.indexOf(t.type) - m.indexOf(e.type);
               return o || t.distance - e.distance;
@@ -1178,7 +1178,7 @@
               n &&
               ((this.isCorner && !e.modifiers.shift) ||
                 Math.abs(this.origSize.y) > 1e-7),
-            j = r / t.view.zoom,
+            j = rhttps://kakaomames.github.io/turbowarp/ t.view.zoom,
             N = (t) => t.distance < j,
             L = ([t, e]) => ({
               type: e.type,
@@ -1218,13 +1218,13 @@
                   new t.Point(
                     Math.abs(D.coord.clamp.max - D.coord.clamp.min),
                     this.corner.y,
-                  ).x / this.origSize.x;
+                  ).xhttps://kakaomames.github.io/turbowarp/ this.origSize.x;
                 break;
               case "xcoord":
               case "itemSideVert":
                 ((v =
                   new t.Point(D.coord.value, this.corner.y).subtract(this.pivot)
-                    .x / this.origSize.x),
+                    .xhttps://kakaomames.github.io/turbowarp/ this.origSize.x),
                   e.modifiers.alt && (v *= 2));
                 break;
             }
@@ -1235,13 +1235,13 @@
                   new t.Point(
                     this.corner.x,
                     Math.abs(O.coord.clamp.max - O.coord.clamp.min),
-                  ).y / this.origSize.y;
+                  ).yhttps://kakaomames.github.io/turbowarp/ this.origSize.y;
                 break;
               case "ycoord":
               case "itemSideHoriz":
                 ((f =
                   new t.Point(this.corner.x, O.coord.value).subtract(this.pivot)
-                    .y / this.origSize.y),
+                    .yhttps://kakaomames.github.io/turbowarp/ this.origSize.y),
                   e.modifiers.alt && (f *= 2));
                 break;
             }
@@ -1255,22 +1255,22 @@
               (f *= A)),
             (v = E * Math.max(Math.abs(v), 1e-4)),
             (f = A * Math.max(Math.abs(f), 1e-4)),
-            this.itemGroup.scale(v / this.lastSx, f / this.lastSy, this.pivot),
+            this.itemGroup.scale(vhttps://kakaomames.github.io/turbowarp/ this.lastSx, fhttps://kakaomames.github.io/turbowarp/ this.lastSy, this.pivot),
             this.selectionAnchor &&
-              this.selectionAnchor.scale(this.lastSx / v, this.lastSy / f),
+              this.selectionAnchor.scale(this.lastSxhttps://kakaomames.github.io/turbowarp/ v, this.lastSyhttps://kakaomames.github.io/turbowarp/ f),
             g(),
             ((Math.abs(k) === Math.abs(v) && D) ||
               (Math.abs(_) === Math.abs(f) && O)) &&
-              ((p.strokeWidth = 1 / t.view.zoom),
-              (u.strokeWidth = 1 / t.view.zoom),
+              ((p.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
+              (u.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
               (p.strokeColor = new t.Color(s)),
               (u.strokeColor = new t.Color(s)),
-              (c.endLeft.strokeWidth = 1 / t.view.zoom),
-              (d.endLeft.strokeWidth = 1 / t.view.zoom),
-              (c.endRight.strokeWidth = 1 / t.view.zoom),
-              (d.endRight.strokeWidth = 1 / t.view.zoom),
-              (c.line.strokeWidth = 1 / t.view.zoom),
-              (d.line.strokeWidth = 1 / t.view.zoom),
+              (c.endLeft.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
+              (d.endLeft.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
+              (c.endRight.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
+              (d.endRight.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
+              (c.line.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
+              (d.line.strokeWidth = 1https://kakaomames.github.io/turbowarp/ t.view.zoom),
               (c.endLeft.strokeColor = new t.Color(s)),
               (d.endLeft.strokeColor = new t.Color(s)),
               (c.endRight.strokeColor = new t.Color(s)),
@@ -1292,7 +1292,7 @@
                 )),
                   (d.endLeft.lastSegment.point = new t.Point(
                     D.coord.clamp.min,
-                    e + 5 / t.view.zoom,
+                    e + 5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (d.endRight.firstSegment.point = new t.Point(
                     D.coord.clamp.max,
@@ -1300,41 +1300,41 @@
                   )),
                   (d.endRight.lastSegment.point = new t.Point(
                     D.coord.clamp.max,
-                    e + 5 / t.view.zoom,
+                    e + 5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (d.line.firstSegment.point = new t.Point(
                     D.coord.clamp.min,
-                    e + 3 / t.view.zoom,
+                    e + 3https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (d.line.lastSegment.point = new t.Point(
                     D.coord.clamp.max,
-                    e + 3 / t.view.zoom,
+                    e + 3https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (d.group.visible = !0),
                   d.group.bringToFront(),
                   (c.endLeft.firstSegment.point = new t.Point(
                     this.itemGroup.bounds.left,
-                    o + 2 / t.view.zoom,
+                    o + 2https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (c.endLeft.lastSegment.point = new t.Point(
                     this.itemGroup.bounds.left,
-                    o + 7 / t.view.zoom,
+                    o + 7https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (c.endRight.firstSegment.point = new t.Point(
                     this.itemGroup.bounds.right,
-                    o + 2 / t.view.zoom,
+                    o + 2https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (c.endRight.lastSegment.point = new t.Point(
                     this.itemGroup.bounds.right,
-                    o + 7 / t.view.zoom,
+                    o + 7https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (c.line.firstSegment.point = new t.Point(
                     this.itemGroup.bounds.left,
-                    o + 4.5 / t.view.zoom,
+                    o + 4.5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (c.line.lastSegment.point = new t.Point(
                     this.itemGroup.bounds.right,
-                    o + 4.5 / t.view.zoom,
+                    o + 4.5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                   )),
                   (c.group.visible = !0),
                   c.group.bringToFront());
@@ -1357,7 +1357,7 @@
                   O.coord.clamp.min,
                 )),
                   (d.endLeft.lastSegment.point = new t.Point(
-                    e - 5 / t.view.zoom,
+                    e - 5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     O.coord.clamp.min,
                   )),
                   (d.endRight.firstSegment.point = new t.Point(
@@ -1365,41 +1365,41 @@
                     O.coord.clamp.max,
                   )),
                   (d.endRight.lastSegment.point = new t.Point(
-                    e - 5 / t.view.zoom,
+                    e - 5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     O.coord.clamp.max,
                   )),
                   (d.line.firstSegment.point = new t.Point(
-                    e - 3 / t.view.zoom,
+                    e - 3https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     O.coord.clamp.min,
                   )),
                   (d.line.lastSegment.point = new t.Point(
-                    e - 3 / t.view.zoom,
+                    e - 3https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     O.coord.clamp.max,
                   )),
                   (d.group.visible = !0),
                   d.group.bringToFront(),
                   (c.endLeft.firstSegment.point = new t.Point(
-                    o - 2 / t.view.zoom,
+                    o - 2https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     this.itemGroup.bounds.top,
                   )),
                   (c.endLeft.lastSegment.point = new t.Point(
-                    o - 7 / t.view.zoom,
+                    o - 7https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     this.itemGroup.bounds.top,
                   )),
                   (c.endRight.firstSegment.point = new t.Point(
-                    o - 2 / t.view.zoom,
+                    o - 2https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     this.itemGroup.bounds.bottom,
                   )),
                   (c.endRight.lastSegment.point = new t.Point(
-                    o - 7 / t.view.zoom,
+                    o - 7https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     this.itemGroup.bounds.bottom,
                   )),
                   (c.line.firstSegment.point = new t.Point(
-                    o - 4.5 / t.view.zoom,
+                    o - 4.5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     this.itemGroup.bounds.top,
                   )),
                   (c.line.lastSegment.point = new t.Point(
-                    o - 4.5 / t.view.zoom,
+                    o - 4.5https://kakaomames.github.io/turbowarp/ t.view.zoom,
                     this.itemGroup.bounds.bottom,
                   )),
                   (c.group.visible = !0),
@@ -1467,7 +1467,7 @@
                   return (
                     (o.className = "sa-paint-snap-image"),
                     (o.draggable = !1),
-                    (o.src = t.self.getResource("/icons/" + e + ".svg")),
+                    (o.src = t.self.getResource(https://kakaomames.github.io/turbowarp/iconhttps://kakaomames.github.io/turbowarp/" + e + ".svg")),
                     o
                   );
                 },
@@ -1478,7 +1478,7 @@
                 g.appendChild(b));
               const h = document.createElement("div");
               ((h.className = "sa-paint-snap-settings"), b.appendChild(h));
-              const y = "http://www.w3.org/2000/svg",
+              const y = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
                 v = document.createElementNS(y, "svg");
               (v.setAttribute("class", "sa-paint-snap-settings-tip"),
                 v.setAttribute("width", "14"),
@@ -1584,7 +1584,7 @@
                 },
                 C = L(
                   "threshold",
-                  ((t, e = () => {}, n = -1 / 0, i = 1 / 0, a = 1) => {
+                  ((t, e = () => {}, n = -1https://kakaomames.github.io/turbowarp/ 0, i = 1https://kakaomames.github.io/turbowarp/ 0, a = 1) => {
                     const s = o(),
                       r = document.createElement("div");
                     r.style.width = "20px";
@@ -1688,11 +1688,11 @@
                         {
                           markAsSeen: !0,
                           reduxEvents: [
-                            "scratch-gui/navigation/ACTIVATE_TAB",
-                            "scratch-gui/mode/SET_PLAYER",
-                            "fontsLoaded/SET_FONTS_LOADED",
-                            "scratch-gui/locales/SELECT_LOCALE",
-                            "scratch-gui/targets/UPDATE_TARGET_LIST",
+                            "scratch-guhttps://kakaomames.github.io/turbowarp/navigatiohttps://kakaomames.github.io/turbowarp/ACTIVATE_TAB",
+                            "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                            "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
+                            "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
+                            "scratch-guhttps://kakaomames.github.io/turbowarp/targethttps://kakaomames.github.io/turbowarp/UPDATE_TARGET_LIST",
                           ],
                           reduxCondition: (t) =>
                             1 === t.scratchGui.editorTab.activeTabIndex &&
@@ -1730,18 +1730,18 @@
             })(t));
         },
         "userstyle.css": o.n(O).a,
-        "icons/decrement.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUgMTEuMzU4aDE3LjUwMXYxLjI4NUgzLjI1eiIvPjwvc3ZnPg==",
-        "icons/increment.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCI+PHBhdGggc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUgMTEuMzU4aDE3LjUwMXYxLjI4NUgzLjI1eiIvPjxwYXRoIHRyYW5zZm9ybT0icm90YXRlKDkwKSIgc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUtMTIuNjQyaDE3LjUwMXYxLjI4NUgzLjI1eiIvPjwvc3ZnPg==",
-        "icons/off.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTExLjI1IDQuNzUtNi41IDYuNW0wLTYuNSA2LjUgNi41Ii8+PC9zdmc+",
-        "icons/on.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiM1NzVlNzUiIGQ9Ik0xMi43MzYgMy45N2EuNzMzLjczMyAwIDAgMSAxLjA0NyAwYy4yODYuMjg5LjI5Ljc1Ni4wMSAxLjA1TDcuODggMTIuMDFhLjczMy43MzMgMCAwIDEtMS4wNjUuMDJMMy4yMTcgOC4zODRhLjc1Ny43NTcgMCAwIDEgMC0xLjA2LjczMy43MzMgMCAwIDEgMS4wNDcgMGwzLjA1MiAzLjA5MyA1LjQtNi40MjVhLjI0Ny4yNDcgMCAwIDEgLjAyLS4wMjJaIi8+PC9zdmc+",
-        "icons/settings.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PGNpcmNsZSBjeD0iMTIuNTUiIGN5PSIxMi41NSIgcj0iOS4wNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNyIvPjxjaXJjbGUgY3g9IjYxLjk0MyIgY3k9IjYxLjQzNiIgcj0iNy41IiBmaWxsPSIjNTc1ZTc1Ii8+PHBhdGggZmlsbD0iIzU3NWU3NSIgZD0ibTUzLjExOSAyNy43NDMtOC4yNjcgOC4yNjZMMzEuNjkgMjIuODQ3bC04LjU3IDguNTczIDEzLjE2IDEzLjE2LTguMjY2IDguMjY2aDI1LjEwNXoiIGNvbG9yPSIjNTc1ZTc1Ii8+PHBhdGggZmlsbD0iIzU3NWU3NSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNDYuMjI3IDEwMGMuNTMtMy4yMDUgMS4yMTktNi4zNzQgMi4xMTItOS40N2wtNC44MDQtMS4zODZjLS45NTQgMy4zMS0xLjY4MyA2LjY2OS0yLjI0IDEwLjA0em0zLjYwMy0xNC4wNjhhNjMuOTM1IDYzLjkzNSAwIDAgMSAzLjkzLTguNzc1bC00LjM5My0yLjM4NmE2OC45MTcgNjguOTE3IDAgMCAwLTQuMjQgOS40NnptNi4zODItMTIuOWMxLjc1My0yLjY5NCAzLjY5LTUuMjQ5IDUuODQtNy41NzhsLTMuNjczLTMuMzkyYy0yLjM3MiAyLjU2OS00LjQ3NCA1LjM1LTYuMzU3IDguMjQxem05LjIzNC0xMC45NDFhNTcuOTUgNTcuOTUgMCAwIDEgNy42MDktNS44MTNsLTIuNzAzLTQuMjA4YTYyLjk0NCA2Mi45NDQgMCAwIDAtOC4yNjYgNi4zMTd6bTExLjc1Mi04LjI2MmE3MS4yNjUgNzEuMjY1IDAgMCAxIDguNzg2LTRsLTEuNzY2LTQuNjc3YTc2LjI0MiA3Ni4yNDIgMCAwIDAtOS40MDEgNC4yODF6bTEzLjM3Mi01LjU3MkE4Ny45MjYgODcuOTI2IDAgMCAxIDEwMCA0NS45MUw5OS4wNTcgNDFhOTIuOTM4IDkyLjkzOCAwIDAgMC05Ljk2NyAyLjQ4eiIgY29sb3I9IiM1NzVlNzUiLz48L3N2Zz4=",
-        "icons/snap.svg":
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzU3NWU3NSIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMzIiIGQ9Ik0xOTEuOTggNDYzLjU4di00OE05MC4xNiA0MjEuNGwzMy45NC0zMy45NG0tNzYuMTItNjcuODhoNDgiLz48cGF0aCBmaWxsPSIjNTc1ZTc1IiBkPSJNNDIyLjIgODkuODJhMTQ0IDE0NCAwIDAgMC0yMDMuNzEtLjA3bC02Ny44OCA2Ny44OCA2Ny44OCA2Ny44OSA2Ny44OC02Ny44OWE0OCA0OCAwIDAgMSA2OC40Ni41OWMxOC4zIDE4LjkyIDE3LjQ4IDQ5LjI0LTEuMTQgNjcuODZsLTY3LjMyIDY3LjMyIDY3Ljg4IDY3Ljg4IDY2LjkxLTY2LjkxYzU2LjM3LTU2LjM3IDU3LjM3LTE0OC4xNSAxLjA0LTIwNC41NVpNODIuNzE5IDIyNS41MTdsNDUuMjU0LTQ1LjI1NCA2Ny44ODMgNjcuODgyTDE1MC42IDI5My40ek0yMTguNDkgMzYxLjI3bDQ1LjI1NC00NS4yNTQgNjcuODgyIDY3Ljg4Mi00NS4yNTUgNDUuMjU1eiIvPjwvc3ZnPg==",
+        "iconhttps://kakaomames.github.io/turbowarp/decrement.svg":
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUgMTEuMzU4aDE3LjUwMXYxLjI4NUgzLjI1eiIvPjwvc3ZnPg==",
+        "iconhttps://kakaomames.github.io/turbowarp/increment.svg":
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSIyNCI+PHBhdGggc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUgMTEuMzU4aDE3LjUwMXYxLjI4NUgzLjI1eiIvPjxwYXRoIHRyYW5zZm9ybT0icm90YXRlKDkwKSIgc3R5bGU9ImZpbGw6IzU3NWU3NTtzdHJva2Utd2lkdGg6LjczNDczNiIgZD0iTTMuMjUtMTIuNjQyaDE3LjUwMXYxLjI4NUgzLjI1eiIvPjwvc3ZnPg==",
+        "iconhttps://kakaomames.github.io/turbowarp/off.svg":
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU3NWU3NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0ibTExLjI1IDQuNzUtNi41IDYuNW0wLTYuNSA2LjUgNi41Ii8+PC9zdmc+",
+        "iconhttps://kakaomames.github.io/turbowarp/on.svg":
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGZpbGw9IiM1NzVlNzUiIGQ9Ik0xMi43MzYgMy45N2EuNzMzLjczMyAwIDAgMSAxLjA0NyAwYy4yODYuMjg5LjI5Ljc1Ni4wMSAxLjA1TDcuODggMTIuMDFhLjczMy43MzMgMCAwIDEtMS4wNjUuMDJMMy4yMTcgOC4zODRhLjc1Ny43NTcgMCAwIDEgMC0xLjA2LjczMy43MzMgMCAwIDEgMS4wNDcgMGwzLjA1MiAzLjA5MyA1LjQtNi40MjVhLjI0Ny4yNDcgMCAwIDEgLjAyLS4wMjJaIi8+PC9zdmc+",
+        "iconhttps://kakaomames.github.io/turbowarp/settings.svg":
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PGNpcmNsZSBjeD0iMTIuNTUiIGN5PSIxMi41NSIgcj0iOS4wNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iNyIvPjxjaXJjbGUgY3g9IjYxLjk0MyIgY3k9IjYxLjQzNiIgcj0iNy41IiBmaWxsPSIjNTc1ZTc1Ii8+PHBhdGggZmlsbD0iIzU3NWU3NSIgZD0ibTUzLjExOSAyNy43NDMtOC4yNjcgOC4yNjZMMzEuNjkgMjIuODQ3bC04LjU3IDguNTczIDEzLjE2IDEzLjE2LTguMjY2IDguMjY2aDI1LjEwNXoiIGNvbG9yPSIjNTc1ZTc1Ii8+PHBhdGggZmlsbD0iIzU3NWU3NSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNDYuMjI3IDEwMGMuNTMtMy4yMDUgMS4yMTktNi4zNzQgMi4xMTItOS40N2wtNC44MDQtMS4zODZjLS45NTQgMy4zMS0xLjY4MyA2LjY2OS0yLjI0IDEwLjA0em0zLjYwMy0xNC4wNjhhNjMuOTM1IDYzLjkzNSAwIDAgMSAzLjkzLTguNzc1bC00LjM5My0yLjM4NmE2OC45MTcgNjguOTE3IDAgMCAwLTQuMjQgOS40NnptNi4zODItMTIuOWMxLjc1My0yLjY5NCAzLjY5LTUuMjQ5IDUuODQtNy41NzhsLTMuNjczLTMuMzkyYy0yLjM3MiAyLjU2OS00LjQ3NCA1LjM1LTYuMzU3IDguMjQxem05LjIzNC0xMC45NDFhNTcuOTUgNTcuOTUgMCAwIDEgNy42MDktNS44MTNsLTIuNzAzLTQuMjA4YTYyLjk0NCA2Mi45NDQgMCAwIDAtOC4yNjYgNi4zMTd6bTExLjc1Mi04LjI2MmE3MS4yNjUgNzEuMjY1IDAgMCAxIDguNzg2LTRsLTEuNzY2LTQuNjc3YTc2LjI0MiA3Ni4yNDIgMCAwIDAtOS40MDEgNC4yODF6bTEzLjM3Mi01LjU3MkE4Ny45MjYgODcuOTI2IDAgMCAxIDEwMCA0NS45MUw5OS4wNTcgNDFhOTIuOTM4IDkyLjkzOCAwIDAgMC05Ljk2NyAyLjQ4eiIgY29sb3I9IiM1NzVlNzUiLz48L3N2Zz4=",
+        "iconhttps://kakaomames.github.io/turbowarp/snap.svg":
+          "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzU3NWU3NSIgc3Ryb2tlPSIjNTc1ZTc1IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMzIiIGQ9Ik0xOTEuOTggNDYzLjU4di00OE05MC4xNiA0MjEuNGwzMy45NC0zMy45NG0tNzYuMTItNjcuODhoNDgiLz48cGF0aCBmaWxsPSIjNTc1ZTc1IiBkPSJNNDIyLjIgODkuODJhMTQ0IDE0NCAwIDAgMC0yMDMuNzEtLjA3bC02Ny44OCA2Ny44OCA2Ny44OCA2Ny44OSA2Ny44OC02Ny44OWE0OCA0OCAwIDAgMSA2OC40Ni41OWMxOC4zIDE4LjkyIDE3LjQ4IDQ5LjI0LTEuMTQgNjcuODZsLTY3LjMyIDY3LjMyIDY3Ljg4IDY3Ljg4IDY2LjkxLTY2LjkxYzU2LjM3LTU2LjM3IDU3LjM3LTE0OC4xNSAxLjA0LTIwNC41NVpNODIuNzE5IDIyNS41MTdsNDUuMjU0LTQ1LjI1NCA2Ny44ODMgNjcuODgyTDE1MC42IDI5My40ek0yMTguNDkgMzYxLjI3bDQ1LjI1NC00NS4yNTQgNjcuODgyIDY3Ljg4Mi00NS4yNTUgNDUuMjU1eiIvPjwvc3ZnPg==",
       };
     },
   },

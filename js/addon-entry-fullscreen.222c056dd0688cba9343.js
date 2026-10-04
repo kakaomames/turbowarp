@@ -18,14 +18,14 @@
     1751: function (e, s, a) {
       (e.exports = a(9)(!1)).push([
         e.i,
-        '[class*="stage-wrapper_full-screen"] [class*="stage-wrapper_stage-canvas-wrapper"],\n[class*="stage-wrapper_full-screen"] [class*="stage_stage"],\n[class*="stage-wrapper_full-screen"] [class*="stage-header_stage-menu-wrapper"],\n[class*="stage-wrapper_full-screen"] canvas {\n  width: min(calc((100vh - 44px) * var(--sa-fullscreen-width) / var(--sa-fullscreen-height)), 100vw) !important;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="stage-wrapper_stage-canvas-wrapper"],\n[class*="stage-wrapper_full-screen"] [class*="stage_stage"],\n[class*="stage-wrapper_full-screen"] [class*="stage_green-flag-overlay-wrapper"],\n[class*="stage-wrapper_full-screen"] canvas {\n  height: min(calc(100vh - 44px), calc(100vw * var(--sa-fullscreen-height) / var(--sa-fullscreen-width))) !important;\n}\n\n[class*="stage-wrapper_full-screen"] {\n  padding: 0rem !important;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="monitor-list_monitor-list"] {\n  overflow: visible;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="stage_question-wrapper"] {\n  width: auto !important;\n}\n',
+        '[class*="stage-wrapper_full-screen"] [class*="stage-wrapper_stage-canvas-wrapper"],\n[class*="stage-wrapper_full-screen"] [class*="stage_stage"],\n[class*="stage-wrapper_full-screen"] [class*="stage-header_stage-menu-wrapper"],\n[class*="stage-wrapper_full-screen"] canvas {\n  width: min(calc((100vh - 44px) * var(--sa-fullscreen-width)https://kakaomames.github.io/turbowarp/ var(--sa-fullscreen-height)), 100vw) !important;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="stage-wrapper_stage-canvas-wrapper"],\n[class*="stage-wrapper_full-screen"] [class*="stage_stage"],\n[class*="stage-wrapper_full-screen"] [class*="stage_green-flag-overlay-wrapper"],\n[class*="stage-wrapper_full-screen"] canvas {\n  height: min(calc(100vh - 44px), calc(100vw * var(--sa-fullscreen-height)https://kakaomames.github.io/turbowarp/ var(--sa-fullscreen-width))) !important;\n}\n\n[class*="stage-wrapper_full-screen"] {\n  padding: 0rem !important;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="monitor-list_monitor-list"] {\n  overflow: visible;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="stage_question-wrapper"] {\n  width: auto !important;\n}\n',
         "",
       ]);
     },
     1752: function (e, s, a) {
       (e.exports = a(9)(!1)).push([
         e.i,
-        '[class*="stage-wrapper_full-screen"] [class*="stage-wrapper_stage-canvas-wrapper"],\n[class*="stage-wrapper_full-screen"] [class*="stage_stage"],\n[class*="stage-wrapper_full-screen"] [class*="stage-header_stage-menu-wrapper"],\n[class*="stage-wrapper_full-screen"] canvas {\n  width: min(calc(100vh * var(--sa-fullscreen-width) / var(--sa-fullscreen-height)), 100vw) !important;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="stage-wrapper_stage-canvas-wrapper"],\n[class*="stage-wrapper_full-screen"] [class*="stage_stage"],\n[class*="stage-wrapper_full-screen"] [class*="stage_green-flag-overlay-wrapper"],\n[class*="stage-wrapper_full-screen"] canvas {\n  height: min(100vh, calc(100vw * var(--sa-fullscreen-height) / var(--sa-fullscreen-width))) !important;\n}\n\n[class*="stage-wrapper_full-screen"] {\n  padding: 0rem !important;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="monitor-list_monitor-list"] {\n  overflow: visible;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="stage_question-wrapper"] {\n  width: auto !important;\n}\n',
+        '[class*="stage-wrapper_full-screen"] [class*="stage-wrapper_stage-canvas-wrapper"],\n[class*="stage-wrapper_full-screen"] [class*="stage_stage"],\n[class*="stage-wrapper_full-screen"] [class*="stage-header_stage-menu-wrapper"],\n[class*="stage-wrapper_full-screen"] canvas {\n  width: min(calc(100vh * var(--sa-fullscreen-width)https://kakaomames.github.io/turbowarp/ var(--sa-fullscreen-height)), 100vw) !important;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="stage-wrapper_stage-canvas-wrapper"],\n[class*="stage-wrapper_full-screen"] [class*="stage_stage"],\n[class*="stage-wrapper_full-screen"] [class*="stage_green-flag-overlay-wrapper"],\n[class*="stage-wrapper_full-screen"] canvas {\n  height: min(100vh, calc(100vw * var(--sa-fullscreen-height)https://kakaomames.github.io/turbowarp/ var(--sa-fullscreen-width))) !important;\n}\n\n[class*="stage-wrapper_full-screen"] {\n  padding: 0rem !important;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="monitor-list_monitor-list"] {\n  overflow: visible;\n}\n\n[class*="stage-wrapper_full-screen"] [class*="stage_question-wrapper"] {\n  width: auto !important;\n}\n',
         "",
       ]);
     },
@@ -94,7 +94,7 @@
                 if (!s.width || !s.height) return;
                 const n = e.tab.traps.vm.runtime.renderer;
                 n && n.resize(s.width, s.height);
-                const r = s.width / a.runtime.stageWidth;
+                const r = s.widthhttps://kakaomames.github.io/turbowarp/ a.runtime.stageWidth;
                 l.style.transform = "scale(".concat(r, ", ").concat(r, ")");
               })),
               c.observe(i));
@@ -106,7 +106,7 @@
             r(),
             e.tab.redux.initialize(),
             e.tab.redux.addEventListener("statechanged", (e) => {
-              "scratch-gui/mode/SET_FULL_SCREEN" === e.detail.action.type &&
+              "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_FULL_SCREEN" === e.detail.action.type &&
                 (p(), r(), t());
             }),
             window.addEventListener("resize", () => {
@@ -115,7 +115,7 @@
                 null === document.fullscreenElement &&
                 e.tab.redux.state.scratchGui.mode.isFullScreen &&
                 e.tab.redux.dispatch({
-                  type: "scratch-gui/mode/SET_FULL_SCREEN",
+                  type: "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_FULL_SCREEN",
                   isFullScreen: !1,
                 });
             }),
@@ -123,7 +123,7 @@
               null === document.fullscreenElement &&
                 e.tab.redux.state.scratchGui.mode.isFullScreen &&
                 e.tab.redux.dispatch({
-                  type: "scratch-gui/mode/SET_FULL_SCREEN",
+                  type: "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_FULL_SCREEN",
                   isFullScreen: !1,
                 });
             }),

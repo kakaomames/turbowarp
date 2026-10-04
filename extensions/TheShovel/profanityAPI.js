@@ -26,7 +26,7 @@
 
     checkProfanity({ TEXT }) {
       return Scratch.fetch(
-        "https://www.purgomalum.com/service/plain?text=" +
+        "httpshttps://kakaomames.github.io/turbowarp//www.purgomalum.cohttps://kakaomames.github.io/turbowarp/servichttps://kakaomames.github.io/turbowarp/plain?text=" +
           encodeURIComponent(Scratch.Cast.toString(TEXT))
       )
         .then((r) => r.text())

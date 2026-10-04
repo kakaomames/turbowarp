@@ -1,14 +1,14 @@
-// Name: Math
-// ID: truefantommath
-// Description: A lot of operators blocks, from exponentiation to trigonometric functions.
-// By: TrueFantom <https://scratch.mit.edu/users/TrueFantom/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Math
+https://kakaomames.github.io/turbowarp/ ID: truefantommath
+https://kakaomames.github.io/turbowarp/ Description: A lot of operators blocks, from exponentiation to trigonometric functions.
+https://kakaomames.github.io/turbowarp/ By: TrueFantom <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/TrueFantohttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 ((Scratch) => {
   "use strict";
 
   const icon =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMjUuMzU0OCIgaGVpZ2h0PSIyMjUuMzU0OCIgdmlld0JveD0iMCwwLDIyNS4zNTQ4LDIyNS4zNTQ4Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3LjMyMjgsLTY3LjMyMjYpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0yMDcuMzIyODEsMTgwYzAsLTYyLjIzMDAxIDUwLjQ0NzM5LC0xMTIuNjc3NCAxMTIuNjc3NCwtMTEyLjY3NzRjNjIuMjMwMDEsMCAxMTIuNjc3NCw1MC40NDczOSAxMTIuNjc3NCwxMTIuNjc3NGMwLDYyLjIzMDAxIC01MC40NDczOSwxMTIuNjc3NCAtMTEyLjY3NzQsMTEyLjY3NzRjLTYyLjIzMDAxLDAgLTExMi42Nzc0LC01MC40NDczOSAtMTEyLjY3NzQsLTExMi42Nzc0eiIgZmlsbD0iIzU5YzA1OSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjAiLz48cGF0aCBkPSJNMzk0LjEzMDk3LDEzMi41MDkyN2wtMzUuMjQ3NTIsLTAuMDQ5MjNjLTAuOTQyMDgsNDEuNDQ4ODkgLTIxLjE1OTAxLDk0LjU5NzU0IDcuNDYwMzgsOTQuMjEzMzljMTAuNTAwMTgsLTAuNDQ4MTggMTEuMDYzNDgsLTE2LjA2MTEgMTAuODI1NjgsLTI2LjMwNTE4bDE5LjIyODE0LDEzLjM2NjY3YzAsMTIuNDIwOTQgLTEwLjE0MTgxLDM0Ljg1MjU0IC0zNS4xMTE3NCwzNC4wMjAyYy0xNS4xNzQwMywtMC4xMjgwNSAtMjkuNDQ4NjIsLTExLjI0NDA4IC0yOS44MzI3OCwtMzAuMTk1NjJjMC41MTIyLC0yOC40OTEzMyA2LjMwODAyLC01Ni4zMDg4OSA3Ljk3MjY3LC04NS4zNzY0NWwtMjYuMDA4NDUsLTAuNTY0MjhjLTcuNTU1LDgyLjQ2NDggLTEwLjI2NjU3LDExNS40OTYxIC0zNC41MzIyMiwxMTYuMzI4NDNjLTcuNjgzMDYsLTAuMzIwMTIgLTE0Ljc4OTg4LC01LjgyNjMyIC0xNS41NTgxOSwtMTQuNzg5ODhjLTIuMTEyODQsLTE1LjgxNDI5IDMwLjY5MjYxLC0yNS4xNTk4MSAzMS44NDUwNiwtMTAyLjI0NjQ3Yy0zMS42OTI2MSwtMy41MjE0IC0zMS44MDU0NSwxNS42ODQwMyAtMzcuMTgzNTgsMjEuNzY2NDVsLTE0LjM4NjA2LC0xLjU4NDE1YzE4Ljc2NTU4LC00NC45NDMyNiA5LjQ1ODI5LC0zOS4xMTU4NCAxNTAuNzY1MTIsLTM4LjQzMTM1eiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNTljMDU5IiBzdHJva2Utd2lkdGg9IjIuNSIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjExMi42NzcxOTQ5OTk5OTk5ODoxMTIuNjc3NDA1LS0+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMjUuMzU0OCIgaGVpZ2h0PSIyMjUuMzU0OCIgdmlld0JveD0iMCwwLDIyNS4zNTQ4LDIyNS4zNTQ4Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3LjMyMjgsLTY3LjMyMjYpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0yMDcuMzIyODEsMTgwYzAsLTYyLjIzMDAxIDUwLjQ0NzM5LC0xMTIuNjc3NCAxMTIuNjc3NCwtMTEyLjY3NzRjNjIuMjMwMDEsMCAxMTIuNjc3NCw1MC40NDczOSAxMTIuNjc3NCwxMTIuNjc3NGMwLDYyLjIzMDAxIC01MC40NDczOSwxMTIuNjc3NCAtMTEyLjY3NzQsMTEyLjY3NzRjLTYyLjIzMDAxLDAgLTExMi42Nzc0LC01MC40NDczOSAtMTEyLjY3NzQsLTExMi42Nzc0eiIgZmlsbD0iIzU5YzA1OSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjAiLz48cGF0aCBkPSJNMzk0LjEzMDk3LDEzMi41MDkyN2wtMzUuMjQ3NTIsLTAuMDQ5MjNjLTAuOTQyMDgsNDEuNDQ4ODkgLTIxLjE1OTAxLDk0LjU5NzU0IDcuNDYwMzgsOTQuMjEzMzljMTAuNTAwMTgsLTAuNDQ4MTggMTEuMDYzNDgsLTE2LjA2MTEgMTAuODI1NjgsLTI2LjMwNTE4bDE5LjIyODE0LDEzLjM2NjY3YzAsMTIuNDIwOTQgLTEwLjE0MTgxLDM0Ljg1MjU0IC0zNS4xMTE3NCwzNC4wMjAyYy0xNS4xNzQwMywtMC4xMjgwNSAtMjkuNDQ4NjIsLTExLjI0NDA4IC0yOS44MzI3OCwtMzAuMTk1NjJjMC41MTIyLC0yOC40OTEzMyA2LjMwODAyLC01Ni4zMDg4OSA3Ljk3MjY3LC04NS4zNzY0NWwtMjYuMDA4NDUsLTAuNTY0MjhjLTcuNTU1LDgyLjQ2NDggLTEwLjI2NjU3LDExNS40OTYxIC0zNC41MzIyMiwxMTYuMzI4NDNjLTcuNjgzMDYsLTAuMzIwMTIgLTE0Ljc4OTg4LC01LjgyNjMyIC0xNS41NTgxOSwtMTQuNzg5ODhjLTIuMTEyODQsLTE1LjgxNDI5IDMwLjY5MjYxLC0yNS4xNTk4MSAzMS44NDUwNiwtMTAyLjI0NjQ3Yy0zMS42OTI2MSwtMy41MjE0IC0zMS44MDU0NSwxNS42ODQwMyAtMzcuMTgzNTgsMjEuNzY2NDVsLTE0LjM4NjA2LC0xLjU4NDE1YzE4Ljc2NTU4LC00NC45NDMyNiA5LjQ1ODI5LC0zOS4xMTU4NCAxNTAuNzY1MTIsLTM4LjQzMTM1eiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNTljMDU5IiBzdHJva2Utd2lkdGg9IjIuNSIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjExMi42NzcxOTQ5OTk5OTk5ODoxMTIuNjc3NDA1LS0+";
 
   const cast = Scratch.Cast;
 
@@ -16,11 +16,11 @@
     if (typeof val !== "string") return false;
     for (let i = 0; i < val.length; i++) {
       const code = val.charCodeAt(i);
-      // '0'.charCodeAt(0) === 48
-      // '\t'.charCodeAt(0) === 9
-      // We include tab for compatibility with scratch-www's broken trim() polyfill.
-      // https://github.com/TurboWarp/scratch-vm/issues/115
-      // https://scratch.mit.edu/projects/788261699/
+     https://kakaomames.github.io/turbowarp// '0'.charCodeAt(0) === 48
+     https://kakaomames.github.io/turbowarp// '\t'.charCodeAt(0) === 9
+     https://kakaomames.github.io/turbowarp// We include tab for compatibility with scratch-www's broken trim() polyfill.
+     https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/TurboWarhttps://kakaomames.github.io/turbowarp/scratch-vhttps://kakaomames.github.io/turbowarp/issuehttps://kakaomames.github.io/turbowarp/115
+     https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/projecthttps://kakaomames.github.io/turbowarp/78826169https://kakaomames.github.io/turbowarp/
       if (code === 48 || code === 9) {
         return false;
       }
@@ -37,8 +37,8 @@
       n2 = NaN;
     }
     if (isNaN(n1) || isNaN(n2)) {
-      // At least one argument can't be converted to a number.
-      // Scratch compares strings as case insensitive, but it shouldn't be here
+     https://kakaomames.github.io/turbowarp// At least one argument can't be converted to a number.
+     https://kakaomames.github.io/turbowarp// Scratch compares strings as case insensitive, but it shouldn't be here
       const s1 = cast.toString(v1);
       const s2 = cast.toString(v2);
       if (s1 < s2) {
@@ -48,51 +48,51 @@
       }
       return 0;
     }
-    // Handle the special case of Infinity
+   https://kakaomames.github.io/turbowarp// Handle the special case of Infinity
     if (
       (n1 === Infinity && n2 === Infinity) ||
       (n1 === -Infinity && n2 === -Infinity)
     ) {
       return 0;
     }
-    // Compare as numbers.
+   https://kakaomames.github.io/turbowarp// Compare as numbers.
     return n1 - n2;
   };
 
   const toNaNNumber = (value) => {
-    // If value is already a number we don't need to coerce it with
-    // Number().
+   https://kakaomames.github.io/turbowarp// If value is already a number we don't need to coerce it with
+   https://kakaomames.github.io/turbowarp// Number().
     if (typeof value === "number") {
-      // Scratch treats NaN as 0, when needed as a number, but it shouldn't be here
-      // E.g., 0 + NaN -> 0.
+     https://kakaomames.github.io/turbowarp// Scratch treats NaN as 0, when needed as a number, but it shouldn't be here
+     https://kakaomames.github.io/turbowarp// E.g., 0 + NaN -> 0.
       return value;
     }
     const n = Number(value);
-    // Scratch treats NaN as 0, when needed as a number, but it shouldn't be here
-    // E.g., 0 + NaN -> 0.
+   https://kakaomames.github.io/turbowarp// Scratch treats NaN as 0, when needed as a number, but it shouldn't be here
+   https://kakaomames.github.io/turbowarp// E.g., 0 + NaN -> 0.
     return n;
   };
 
   const isTrueInt = (val) => {
-    // Values that are already numbers.
+   https://kakaomames.github.io/turbowarp// Values that are already numbers.
     if (typeof val === "number") {
       if (isNaN(val)) {
-        // NaN is considered an integer.
+       https://kakaomames.github.io/turbowarp// NaN is considered an integer.
         return true;
       }
-      // True if it's "round" (e.g., 2.0 and 2).
+     https://kakaomames.github.io/turbowarp// True if it's "round" (e.g., 2.0 and 2).
       return val === Math.floor(val);
     } else if (typeof val === "boolean") {
-      // `True` and `false` always represent integer after Scratch cast.
+     https://kakaomames.github.io/turbowarp// `True` and `false` always represent integer after Scratch cast.
       return true;
     } else if (typeof val === "string") {
-      // If it contains a decimal point, don't consider it an int, but it shouldn't be here
+     https://kakaomames.github.io/turbowarp// If it contains a decimal point, don't consider it an int, but it shouldn't be here
       const n = Number(val);
       if (isNaN(n)) {
-        // NaN is considered an integer.
+       https://kakaomames.github.io/turbowarp// NaN is considered an integer.
         return true;
       }
-      // True if it's "round" (e.g., 2.0 and 2).
+     https://kakaomames.github.io/turbowarp// True if it's "round" (e.g., 2.0 and 2).
       return n === Math.floor(n);
     }
     return false;
@@ -109,7 +109,7 @@
         menuIconURI: icon,
 
         blocks: [
-          /* eslint-disable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-disable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "exponent_block",
             blockType: Scratch.BlockType.REPORTER,
@@ -365,7 +365,7 @@
             },
             extensions: ["colours_operators"],
           },
-          /* eslint-enable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-enable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           "---",
           {
             opcode: "exactly_cont_block",
@@ -525,7 +525,7 @@
             extensions: ["colours_operators"],
           },
           "---",
-          /* eslint-disable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-disable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           {
             opcode: "pi_block",
             blockType: Scratch.BlockType.REPORTER,
@@ -544,7 +544,7 @@
             text: "∞",
             extensions: ["colours_operators"],
           },
-          /* eslint-enable extension/should-translate */
+         https://kakaomames.github.io/turbowarp/* eslint-enable extensiohttps://kakaomames.github.io/turbowarp/should-translate https://kakaomames.github.io/turbowarp/
           "---",
           {
             opcode: "is_safe_number_block",
@@ -609,7 +609,7 @@
       return Math.pow(cast.toNumber(A), cast.toNumber(B));
     }
     root_block({ A, B }) {
-      return Math.pow(cast.toNumber(B), 1 / cast.toNumber(A));
+      return Math.pow(cast.toNumber(B), 1https://kakaomames.github.io/turbowarp/ cast.toNumber(A));
     }
     negative_block({ A }) {
       return 0 - cast.toNumber(A);
@@ -673,7 +673,7 @@
     scale_block({ A, m1, M1, m2, M2 }) {
       return (
         ((cast.toNumber(A) - cast.toNumber(m1)) *
-          (cast.toNumber(M2) - cast.toNumber(m2))) /
+          (cast.toNumber(M2) - cast.toNumber(m2)))https://kakaomames.github.io/turbowarp/
           (cast.toNumber(M1) - cast.toNumber(m1)) +
         cast.toNumber(m2)
       );
@@ -683,7 +683,7 @@
       if (n >= 1) {
         n = 10 ** n;
         if (n !== Infinity) {
-          return Math.trunc(cast.toNumber(A) * n) / n;
+          return Math.trunc(cast.toNumber(A) * n)https://kakaomames.github.io/turbowarp/ n;
         }
         return cast.toNumber(A);
       }
@@ -696,7 +696,7 @@
       return cast.toNumber(A) % cast.toNumber(B) === 0;
     }
     log_with_base_block({ A, B }) {
-      return Math.log(cast.toNumber(A)) / Math.log(cast.toNumber(B));
+      return Math.log(cast.toNumber(A))https://kakaomames.github.io/turbowarp/ Math.log(cast.toNumber(B));
     }
     true_math_op(args) {
       const operator = cast.toString(args.OPERATOR).toLowerCase();

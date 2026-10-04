@@ -1,8 +1,8 @@
-// Name: S-Grab
-// ID: nexuskittensgrab
-// Description: Get information about Scratch projects and Scratch users.
-// By: NamelessCat <https://scratch.mit.edu/users/NamelessCat/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: S-Grab
+https://kakaomames.github.io/turbowarp/ ID: nexuskittensgrab
+https://kakaomames.github.io/turbowarp/ Description: Get information about Scratch projects and Scratch users.
+https://kakaomames.github.io/turbowarp/ By: NamelessCat <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/NamelessCahttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -75,7 +75,7 @@
           "---",
           {
             blockType: Scratch.BlockType.XML,
-            xml: "<sep gap='12'/><label text='The blocks below rely on a third-party'/><sep gap='-12'/><label text='API that is currently offline.'/>",
+            xml: "<sep gap='12https://kakaomames.github.io/turbowarp/><label text='The blocks below rely on a third-partyhttps://kakaomames.github.io/turbowarp/><sep gap='-12https://kakaomames.github.io/turbowarp/><label text='API that is currently offline.https://kakaomames.github.io/turbowarp/>",
           },
           {
             opcode: "usergrab",
@@ -225,7 +225,7 @@
     async usergrab(args) {
       try {
         const response = await Scratch.fetch(
-          "https://scratchdb.lefty.one/v3/user/info/" + args.WHO
+          "httpshttps://kakaomames.github.io/turbowarp//scratchdb.lefty.onhttps://kakaomames.github.io/turbowarp/vhttps://kakaomames.github.io/turbowarp/usehttps://kakaomames.github.io/turbowarp/infhttps://kakaomames.github.io/turbowarp/" + args.WHO
         );
         if (!response.ok) {
           return "";
@@ -245,7 +245,7 @@
     async rankusergrab(args) {
       try {
         const response = await Scratch.fetch(
-          "https://scratchdb.lefty.one/v3/user/info/" + args.WHO
+          "httpshttps://kakaomames.github.io/turbowarp//scratchdb.lefty.onhttps://kakaomames.github.io/turbowarp/vhttps://kakaomames.github.io/turbowarp/usehttps://kakaomames.github.io/turbowarp/infhttps://kakaomames.github.io/turbowarp/" + args.WHO
         );
         if (!response.ok) {
           return "";
@@ -269,7 +269,7 @@
     async usergrab2(args) {
       try {
         const response = await Scratch.fetch(
-          `https://trampoline.turbowarp.org/api/users/${args.WHO}`
+          `httpshttps://kakaomames.github.io/turbowarp//trampoline.turbowarp.orhttps://kakaomames.github.io/turbowarp/aphttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/${args.WHO}`
         );
         if (!response.ok) {
           return "";
@@ -282,7 +282,7 @@
         } else if (args.WHAT === "location") {
           return jsonData.profile.country ?? "";
         } else if (args.WHAT === "status") {
-          // ScratchDB would tell us whether they are a New Scratcher but api.scratch.mit.edu doesn't
+         https://kakaomames.github.io/turbowarp// ScratchDB would tell us whether they are a New Scratcher but api.scratch.mit.edu doesn't
           return jsonData.scratchteam ? "Scratch Team" : "Scratcher";
         } else {
           return "";
@@ -294,7 +294,7 @@
     async projectgrab(args) {
       try {
         const response = await Scratch.fetch(
-          `https://trampoline.turbowarp.org/api/projects/${args.WHO}`
+          `httpshttps://kakaomames.github.io/turbowarp//trampoline.turbowarp.orhttps://kakaomames.github.io/turbowarp/aphttps://kakaomames.github.io/turbowarp/projecthttps://kakaomames.github.io/turbowarp/${args.WHO}`
         );
         if (!response.ok) {
           return "";
@@ -316,7 +316,7 @@
     async rankprojectgrab(args) {
       try {
         const response = await Scratch.fetch(
-          "https://scratchdb.lefty.one/v3/project/info/" + args.WHO
+          "httpshttps://kakaomames.github.io/turbowarp//scratchdb.lefty.onhttps://kakaomames.github.io/turbowarp/vhttps://kakaomames.github.io/turbowarp/projechttps://kakaomames.github.io/turbowarp/infhttps://kakaomames.github.io/turbowarp/" + args.WHO
         );
         if (!response.ok) {
           return "";
@@ -338,7 +338,7 @@
     async idtoname(args) {
       try {
         const response = await Scratch.fetch(
-          `https://trampoline.turbowarp.org/api/projects/${args.WHO}`
+          `httpshttps://kakaomames.github.io/turbowarp//trampoline.turbowarp.orhttps://kakaomames.github.io/turbowarp/aphttps://kakaomames.github.io/turbowarp/projecthttps://kakaomames.github.io/turbowarp/${args.WHO}`
         );
         if (!response.ok) {
           return "";
@@ -352,7 +352,7 @@
     async idtoowner(args) {
       try {
         const response = await Scratch.fetch(
-          `https://trampoline.turbowarp.org/api/projects/${args.WHO}`
+          `httpshttps://kakaomames.github.io/turbowarp//trampoline.turbowarp.orhttps://kakaomames.github.io/turbowarp/aphttps://kakaomames.github.io/turbowarp/projecthttps://kakaomames.github.io/turbowarp/${args.WHO}`
         );
         if (!response.ok) {
           return "";

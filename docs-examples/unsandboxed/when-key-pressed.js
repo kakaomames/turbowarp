@@ -1,4 +1,4 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';
@@ -17,15 +17,15 @@
             blockType: Scratch.BlockType.EVENT,
             opcode: 'whenPressed',
             text: 'when [KEY] key pressed',
-            isEdgeActivated: false, // required boilerplate
-            // highlight-start
+            isEdgeActivated: false,https://kakaomames.github.io/turbowarp// required boilerplate
+           https://kakaomames.github.io/turbowarp// highlight-start
             arguments: {
               KEY: {
                 type: Scratch.ArgumentType.STRING,
                 menu: 'key'
               }
             }
-            // highlight-end
+           https://kakaomames.github.io/turbowarp// highlight-end
           }
         ],
         menus: {
@@ -33,14 +33,14 @@
             acceptReporters: false,
             items: [
               {
-                // startHats filters by *value*, not by text
+               https://kakaomames.github.io/turbowarp// startHats filters by *value*, not by text
                 text: 'space',
                 value: ' '
               },
               'a',
               'b',
               'c',
-              // ...
+             https://kakaomames.github.io/turbowarp// ...
             ]
           }
         }
@@ -49,11 +49,11 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    // highlight-start
+   https://kakaomames.github.io/turbowarp// highlight-start
     Scratch.vm.runtime.startHats('eventexample2unsandboxed_whenPressed', {
       KEY: e.key
     });
-    // highlight-end
+   https://kakaomames.github.io/turbowarp// highlight-end
   });
 
   Scratch.extensions.register(new WhenKeyPressed());

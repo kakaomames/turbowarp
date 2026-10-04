@@ -1,9 +1,9 @@
-// Name: Mouse Cursor
-// ID: MouseCursor
-// Description: Use custom cursors or hide the cursor. Also allows replacing the cursor with any costume image.
-// By: Samq64
-// By: GarboMuffin
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Mouse Cursor
+https://kakaomames.github.io/turbowarp/ ID: MouseCursor
+https://kakaomames.github.io/turbowarp/ Description: Use custom cursors or hide the cursor. Also allows replacing the cursor with any costume image.
+https://kakaomames.github.io/turbowarp/ By: Samq64
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -13,15 +13,15 @@
   }
 
   const lazilyCreatedCanvas = () => {
-    /** @type {HTMLCanvasElement} */
+   https://kakaomames.github.io/turbowarp/** @type {HTMLCanvasElement} https://kakaomames.github.io/turbowarp/
     let canvas = null;
-    /** @type {CanvasRenderingContext2D} */
+   https://kakaomames.github.io/turbowarp/** @type {CanvasRenderingContext2D} https://kakaomames.github.io/turbowarp/
     let ctx = null;
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {number} width
      * @param {number} height
      * @returns {[HTMLCanvasElement, CanvasRenderingContext2D]}
-     */
+     https://kakaomames.github.io/turbowarp/
     return (width, height) => {
       if (!canvas) {
         canvas = document.createElement("canvas");
@@ -30,7 +30,7 @@
           throw new Error("Could not get 2d rendering context");
         }
       }
-      // Setting canvas size also clears it
+     https://kakaomames.github.io/turbowarp// Setting canvas size also clears it
       canvas.width = width;
       canvas.height = height;
       return [canvas, ctx];
@@ -38,22 +38,22 @@
   };
   const getRawSkinCanvas = lazilyCreatedCanvas();
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {RenderWebGL.Skin} skin
    * @returns {string} A data: URI for the skin.
-   */
+   https://kakaomames.github.io/turbowarp/
   const encodeSkinToURL = (skin) => {
-    const svgSkin = /** @type {RenderWebGL.SVGSkin} */ (skin);
+    const svgSkin =https://kakaomames.github.io/turbowarp/** @type {RenderWebGL.SVGSkin} https://kakaomames.github.io/turbowarp/ (skin);
     if (svgSkin._svgImage) {
-      // This is an SVG skin
+     https://kakaomames.github.io/turbowarp// This is an SVG skin
       return svgSkin._svgImage.src;
     }
 
-    // It's probably a bitmap skin.
-    // The most reliable way to get the bitmap in every runtime is through the silhouette.
-    // This is very slow and could involve reading the texture from the GPU.
+   https://kakaomames.github.io/turbowarp// It's probably a bitmap skin.
+   https://kakaomames.github.io/turbowarp// The most reliable way to get the bitmap in every runtime is through the silhouette.
+   https://kakaomames.github.io/turbowarp// This is very slow and could involve reading the texture from the GPU.
     const silhouette = skin._silhouette;
-    // unlazy() only exists in TW
+   https://kakaomames.github.io/turbowarp// unlazy() only exists in TW
     if (silhouette.unlazy) {
       silhouette.unlazy();
     }
@@ -70,12 +70,12 @@
     return canvas.toDataURL();
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {VM.Costume} costume
    * @param {number} maxWidth
    * @param {number} maxHeight
    * @returns {{uri: string, width: number, height: number}}
-   */
+   https://kakaomames.github.io/turbowarp/
   const costumeToCursor = (costume, maxWidth, maxHeight) => {
     const skin = Scratch.vm.renderer._allSkins[costume.skinId];
     const imageURI = encodeSkinToURL(skin);
@@ -83,28 +83,28 @@
     let width = skin.size[0];
     let height = skin.size[1];
     if (width > maxWidth) {
-      height = height * (maxWidth / width);
+      height = height * (maxWidthhttps://kakaomames.github.io/turbowarp/ width);
       width = maxWidth;
     }
     if (height > maxHeight) {
-      width = width * (maxHeight / height);
+      width = width * (maxHeighthttps://kakaomames.github.io/turbowarp/ height);
       height = maxHeight;
     }
     width = Math.round(width);
     height = Math.round(height);
 
-    // We wrap the encoded image in an <svg>. This lets us do some clever things:
-    //  - We can resize the image without a canvas.
-    //  - We can give the browser an image with more raw pixels than its DPI independent size.
-    // The latter is important so that cursors won't look horrible on high DPI displays. For
-    // example, if the cursor will display at 32x32 in DPI independent units on a 2x high DPI
-    // display, we actually need to send a 64x64 image for it to look good. This lets us do
-    // that automatically.
-    let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">`;
-    svg += `<image href="${imageURI}" width="${width}" height="${height}" />`;
-    svg += "</svg>";
-    // URI encoding usually results in smaller string than base 64 for the types of data we get here.
-    const svgURI = `data:image/svg+xml;,${encodeURIComponent(svg)}`;
+   https://kakaomames.github.io/turbowarp// We wrap the encoded image in an <svg>. This lets us do some clever things:
+   https://kakaomames.github.io/turbowarp//  - We can resize the image without a canvas.
+   https://kakaomames.github.io/turbowarp//  - We can give the browser an image with more raw pixels than its DPI independent size.
+   https://kakaomames.github.io/turbowarp// The latter is important so that cursors won't look horrible on high DPI displays. For
+   https://kakaomames.github.io/turbowarp// example, if the cursor will display at 32x32 in DPI independent units on a 2x high DPI
+   https://kakaomames.github.io/turbowarp// display, we actually need to send a 64x64 image for it to look good. This lets us do
+   https://kakaomames.github.io/turbowarp// that automatically.
+    let svg = `<svg xmlns="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg" width="${width}" height="${height}">`;
+    svg += `<image href="${imageURI}" width="${width}" height="${height}"https://kakaomames.github.io/turbowarp/>`;
+    svg += "https://kakaomames.github.io/turbowarp/svg>";
+   https://kakaomames.github.io/turbowarp// URI encoding usually results in smaller string than base 64 for the types of data we get here.
+    const svgURI = `data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;,${encodeURIComponent(svg)}`;
 
     return {
       uri: svgURI,
@@ -113,13 +113,13 @@
     };
   };
 
-  /** @type {string} */
+ https://kakaomames.github.io/turbowarp/** @type {string} https://kakaomames.github.io/turbowarp/
   let nativeCursor = "default";
-  /** @type {null|string} */
+ https://kakaomames.github.io/turbowarp/** @type {null|string} https://kakaomames.github.io/turbowarp/
   let customCursorImageName = null;
 
   const canvas = Scratch.renderer.canvas;
-  /** @type {string} */
+ https://kakaomames.github.io/turbowarp/** @type {string} https://kakaomames.github.io/turbowarp/
   let currentCanvasCursor = nativeCursor;
   const updateCanvasCursor = () => {
     if (canvas.style.cursor !== currentCanvasCursor) {
@@ -127,26 +127,26 @@
     }
   };
 
-  // scratch-gui will sometimes reset the cursor when resizing the window or going in/out of fullscreen
+ https://kakaomames.github.io/turbowarp// scratch-gui will sometimes reset the cursor when resizing the window or going ihttps://kakaomames.github.io/turbowarp/out of fullscreen
   new MutationObserver(updateCanvasCursor).observe(canvas, {
     attributeFilter: ["style"],
     attributes: true,
   });
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Parse strings like "60x12" or "77,1"
    * @param {string} string
    * @returns {[number, number]}
-   */
+   https://kakaomames.github.io/turbowarp/
   const parseTuple = (string) => {
-    const [a, b] = ("" + string).split(/[ ,x]/);
+    const [a, b] = ("" + string).splithttps://kakaomames.github.io/turbowarp/[ ,xhttps://kakaomames.github.io/turbowarp/);
     return [+a || 0, +b || 0];
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} size eg. "48x84"
    * @returns {string}
-   */
+   https://kakaomames.github.io/turbowarp/
   const formatUnreliableSize = (size) =>
     Scratch.translate(
       {
@@ -157,7 +157,7 @@
     );
 
   const ALL_ALLOWED_CURSORS = [
-    // This list includes "none" while the dropdown's list does not
+   https://kakaomames.github.io/turbowarp// This list includes "none" while the dropdown's list does not
     "none",
 
     "default",
@@ -259,7 +259,7 @@
                 text: Scratch.translate({
                   default: "default",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "default",
               },
@@ -267,7 +267,7 @@
                 text: Scratch.translate({
                   default: "pointer",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "pointer",
               },
@@ -275,7 +275,7 @@
                 text: Scratch.translate({
                   default: "move",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "move",
               },
@@ -283,7 +283,7 @@
                 text: Scratch.translate({
                   default: "grab",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "grab",
               },
@@ -291,7 +291,7 @@
                 text: Scratch.translate({
                   default: "grabbing",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "grabbing",
               },
@@ -299,7 +299,7 @@
                 text: Scratch.translate({
                   default: "text",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "text",
               },
@@ -307,7 +307,7 @@
                 text: Scratch.translate({
                   default: "vertical-text",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "vertical-text",
               },
@@ -315,7 +315,7 @@
                 text: Scratch.translate({
                   default: "wait",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "wait",
               },
@@ -323,7 +323,7 @@
                 text: Scratch.translate({
                   default: "progress",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "progress",
               },
@@ -331,7 +331,7 @@
                 text: Scratch.translate({
                   default: "help",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "help",
               },
@@ -339,7 +339,7 @@
                 text: Scratch.translate({
                   default: "context-menu",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "context-menu",
               },
@@ -347,7 +347,7 @@
                 text: Scratch.translate({
                   default: "zoom-in",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "zoom-in",
               },
@@ -355,7 +355,7 @@
                 text: Scratch.translate({
                   default: "zoom-out",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "zoom-out",
               },
@@ -363,7 +363,7 @@
                 text: Scratch.translate({
                   default: "crosshair",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "crosshair",
               },
@@ -371,7 +371,7 @@
                 text: Scratch.translate({
                   default: "cell",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "cell",
               },
@@ -379,7 +379,7 @@
                 text: Scratch.translate({
                   default: "not allowed",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "not-allowed",
               },
@@ -387,7 +387,7 @@
                 text: Scratch.translate({
                   default: "copy",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "copy",
               },
@@ -395,7 +395,7 @@
                 text: Scratch.translate({
                   default: "alias",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "alias",
               },
@@ -403,7 +403,7 @@
                 text: Scratch.translate({
                   default: "no drop",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "no-drop",
               },
@@ -411,7 +411,7 @@
                 text: Scratch.translate({
                   default: "all-scroll",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "all-scroll",
               },
@@ -419,7 +419,7 @@
                 text: Scratch.translate({
                   default: "col-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "col-resize",
               },
@@ -427,7 +427,7 @@
                 text: Scratch.translate({
                   default: "row-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "row-resize",
               },
@@ -435,7 +435,7 @@
                 text: Scratch.translate({
                   default: "n-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "n-resize",
               },
@@ -443,7 +443,7 @@
                 text: Scratch.translate({
                   default: "e-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "e-resize",
               },
@@ -451,7 +451,7 @@
                 text: Scratch.translate({
                   default: "s-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "s-resize",
               },
@@ -459,7 +459,7 @@
                 text: Scratch.translate({
                   default: "w-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "w-resize",
               },
@@ -467,7 +467,7 @@
                 text: Scratch.translate({
                   default: "ne-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "ne-resize",
               },
@@ -475,7 +475,7 @@
                 text: Scratch.translate({
                   default: "nw-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "nw-resize",
               },
@@ -483,7 +483,7 @@
                 text: Scratch.translate({
                   default: "se-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "se-resize",
               },
@@ -491,7 +491,7 @@
                 text: Scratch.translate({
                   default: "sw-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "sw-resize",
               },
@@ -499,7 +499,7 @@
                 text: Scratch.translate({
                   default: "ew-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "ew-resize",
               },
@@ -507,7 +507,7 @@
                 text: Scratch.translate({
                   default: "ns-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "ns-resize",
               },
@@ -515,7 +515,7 @@
                 text: Scratch.translate({
                   default: "nesw-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "nesw-resize",
               },
@@ -523,7 +523,7 @@
                 text: Scratch.translate({
                   default: "nwse-resize",
                   description:
-                    "Part of cursor dropdown. See https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor#keyword",
+                    "Part of cursor dropdown. See httpshttps://kakaomames.github.io/turbowarp//developer.mozilla.orhttps://kakaomames.github.io/turbowarp/en-Uhttps://kakaomames.github.io/turbowarp/dochttps://kakaomames.github.io/turbowarp/Wehttps://kakaomames.github.io/turbowarp/CShttps://kakaomames.github.io/turbowarp/Referenchttps://kakaomames.github.io/turbowarp/Propertiehttps://kakaomames.github.io/turbowarp/cursor#keyword",
                 }),
                 value: "nwse-resize",
               },
@@ -532,7 +532,7 @@
           imagePositions: {
             acceptReporters: true,
             items: [
-              // [x, y] where x is [0=left, 100=right] and y is [0=top, 100=bottom]
+             https://kakaomames.github.io/turbowarp// [x, y] where x is [0=left, 100=right] and y is [0=top, 100=bottom]
               { text: Scratch.translate("top left"), value: "0,0" },
               { text: Scratch.translate("top right"), value: "100,0" },
               { text: Scratch.translate("bottom left"), value: "0,100" },
@@ -543,9 +543,9 @@
           imageSizes: {
             acceptReporters: true,
             items: [
-              // Some important numbers to keep in mind:
-              // Browsers ignore cursor images >128 in any dimension (https://searchfox.org/mozilla-central/rev/43ee5e789b079e94837a21336e9ce2420658fd19/widget/gtk/nsWindow.cpp#3393-3402)
-              // Browsers may refuse to display a cursor near window borders for images >32 in any dimension
+             https://kakaomames.github.io/turbowarp// Some important numbers to keep in mind:
+             https://kakaomames.github.io/turbowarp// Browsers ignore cursor images >128 in any dimension (httpshttps://kakaomames.github.io/turbowarp//searchfox.orhttps://kakaomames.github.io/turbowarp/mozilla-centrahttps://kakaomames.github.io/turbowarp/rehttps://kakaomames.github.io/turbowarp/43ee5e789b079e94837a21336e9ce2420658fd1https://kakaomames.github.io/turbowarp/widgehttps://kakaomames.github.io/turbowarp/gthttps://kakaomames.github.io/turbowarp/nsWindow.cpp#3393-3402)
+             https://kakaomames.github.io/turbowarp// Browsers may refuse to display a cursor near window borders for images >32 in any dimension
               { text: "4x4", value: "4x4" },
               { text: "8x8", value: "8x8" },
               { text: "12x12", value: "12x12" },
@@ -562,7 +562,7 @@
 
     setCur(args) {
       const newCursor = Scratch.Cast.toString(args.cur);
-      // Prevent setting cursor to "url(...), default" from causing fetch.
+     https://kakaomames.github.io/turbowarp// Prevent setting cursor to "url(...), default" from causing fetch.
       if (ALL_ALLOWED_CURSORS.includes(newCursor)) {
         nativeCursor = newCursor;
         customCursorImageName = null;
@@ -584,13 +584,13 @@
       try {
         encodedCostume = costumeToCursor(currentCostume, maxWidth, maxHeight);
       } catch (e) {
-        // This could happen for a variety of reasons.
+       https://kakaomames.github.io/turbowarp// This could happen for a variety of reasons.
         console.error(e);
       }
 
       if (encodedCostume) {
         const [percentX, percentY] = parseTuple(args.position).map(
-          (i) => Math.max(0, Math.min(100, i)) / 100
+          (i) => Math.max(0, Math.min(100, i))https://kakaomames.github.io/turbowarp/ 100
         );
         const x = percentX * encodedCostume.width;
         const y = percentY * encodedCostume.height;
@@ -598,9 +598,9 @@
         currentCanvasCursor = `url("${encodedCostume.uri}") ${x} ${y}, ${nativeCursor}`;
         updateCanvasCursor();
       } else {
-        // If for some reason the costume couldn't be encoded, we'll leave the cursor unchanged.
-        // This is the same behavior that would happen if we successfully encode a cursor but the browser
-        // is unable to parse it for some reason.
+       https://kakaomames.github.io/turbowarp// If for some reason the costume couldn't be encoded, we'll leave the cursor unchanged.
+       https://kakaomames.github.io/turbowarp// This is the same behavior that would happen if we successfully encode a cursor but the browser
+       https://kakaomames.github.io/turbowarp// is unable to parse it for some reason.
       }
 
       customCursorImageName = costumeName;

@@ -1,9 +1,9 @@
-// Name: Navigator
-// ID: navigatorinfo
-// Description: Details about the user's browser and operating system.
-// By: GarboMuffin
-// Context: "Navigator" refers to someone's browser
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Navigator
+https://kakaomames.github.io/turbowarp/ ID: navigatorinfo
+https://kakaomames.github.io/turbowarp/ Description: Details about the user's browser and operating system.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ Context: "Navigator" refers to someone's browser
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -105,11 +105,11 @@
     }
 
     getMemory() {
-      // @ts-expect-error
+     https://kakaomames.github.io/turbowarp// @ts-expect-error
       if (navigator.deviceMemory == undefined) {
         return "Unsupported";
       } else {
-        // @ts-expect-error
+       https://kakaomames.github.io/turbowarp// @ts-expect-error
         return navigator.deviceMemory;
       }
     }

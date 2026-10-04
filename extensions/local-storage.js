@@ -1,9 +1,9 @@
-// Name: Local Storage
-// ID: localstorage
-// Description: Store data persistently. Like cookies, but better.
-// By: infernostars
-// By: GarboMuffin
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Local Storage
+https://kakaomames.github.io/turbowarp/ ID: localstorage
+https://kakaomames.github.io/turbowarp/ Description: Store data persistently. Like cookies, but better.
+https://kakaomames.github.io/turbowarp/ By: infernostars
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -15,41 +15,41 @@
   const getNamespace = () =>
     Scratch.vm.runtime.extensionStorage["localstorage"]?.namespace;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {string} newNamespace
-   */
+   https://kakaomames.github.io/turbowarp/
   const setNamespace = (newNamespace) => {
     Scratch.vm.runtime.extensionStorage["localstorage"] = {
       namespace: newNamespace,
     };
     readFromStorage();
 
-    // We can generate namespace before we have fully loaded
+   https://kakaomames.github.io/turbowarp// We can generate namespace before we have fully loaded
     if (Scratch.vm.extensionManager.isExtensionLoaded("localstorage")) {
       Scratch.vm.extensionManager.refreshBlocks("localstorage");
     }
   };
 
-  const STORAGE_PREFIX = "extensions.turbowarp.org/local-storage:";
+  const STORAGE_PREFIX = "extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/local-storage:";
   const getStorageKey = () => `${STORAGE_PREFIX}${getNamespace()}`;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * Cached in memory for performance.
    * @type {Record<string, string|number|boolean>}
-   */
+   https://kakaomames.github.io/turbowarp/
   let namespaceValues = Object.create(null);
 
   const readFromStorage = () => {
     namespaceValues = Object.create(null);
 
     try {
-      // localStorage could throw if unsupported
+     https://kakaomames.github.io/turbowarp// localStorage could throw if unsupported
       const data = localStorage.getItem(getStorageKey());
       if (data) {
-        // JSON.parse could throw if data is invalid
+       https://kakaomames.github.io/turbowarp// JSON.parse could throw if data is invalid
         const parsed = JSON.parse(data);
         if (parsed && parsed.data) {
-          // Remove invalid values from the JSON
+         https://kakaomames.github.io/turbowarp// Remove invalid values from the JSON
           for (const [key, value] of Object.entries(parsed.data)) {
             if (
               typeof value === "string" ||
@@ -72,10 +72,10 @@
         localStorage.setItem(
           getStorageKey(),
           JSON.stringify({
-            // If we find that turbowarp.org is commonly running out of shared space in local storage,
-            // having a timestamp here makes it at least theoretically possible to delete storage based
-            // on last used time.
-            time: Math.round(Date.now() / 1000),
+           https://kakaomames.github.io/turbowarp// If we find that turbowarp.org is commonly running out of shared space in local storage,
+           https://kakaomames.github.io/turbowarp// having a timestamp here makes it at least theoretically possible to delete storage based
+           https://kakaomames.github.io/turbowarp// on last used time.
+            time: Math.round(Date.now()https://kakaomames.github.io/turbowarp/ 1000),
             data: namespaceValues,
           })
         );
@@ -99,8 +99,8 @@
   });
 
   const generateRandomNamespace = () => {
-    // doesn't need to be cryptographically secure and doesn't need to have excessive length
-    // this has 16^16 = 18446744073709551616 possible namespaces which is plenty
+   https://kakaomames.github.io/turbowarp// doesn't need to be cryptographically secure and doesn't need to have excessive length
+   https://kakaomames.github.io/turbowarp// this has 16^16 = 18446744073709551616 possible namespaces which is plenty
     const soup = "0123456789abcdef";
     let id = "";
     for (let i = 0; i < 16; i++) {
@@ -122,7 +122,7 @@
   });
 
   Scratch.vm.runtime.on("RUNTIME_DISPOSED", () => {
-    // Will always be followed by a PROJECT_LOADED event later
+   https://kakaomames.github.io/turbowarp// Will always be followed by a PROJECT_LOADED event later
     namespaceValues = Object.create(null);
   });
 
@@ -147,7 +147,7 @@
       return {
         id: "localstorage",
         name: Scratch.translate("Local Storage"),
-        docsURI: "./local-storage",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/local-storage",
         blocks: [
           {
             blockType: Scratch.BlockType.LABEL,

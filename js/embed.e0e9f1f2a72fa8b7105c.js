@@ -48,7 +48,7 @@ var GUI = (function (e) {
           (c.src = (function (e) {
             return (
               o.p +
-              "js/" +
+              "jhttps://kakaomames.github.io/turbowarp/" +
               ({
                 1: "addon-settings~addons~editor~fullscreen~player",
                 4: "addon-default-entry",
@@ -338,9 +338,9 @@ var GUI = (function (e) {
       F = d(175),
       O = d(73);
     const j = (() => {
-        const e = location.hash.match(/#(\d+)/);
+        const e = location.hash.matchhttps://kakaomames.github.io/turbowarp/#(\d+https://kakaomames.github.io/turbowarp/);
         if (null !== e) return e[1];
-        const n = location.pathname.match(/(\d+)\/embed/);
+        const n = location.pathname.matchhttps://kakaomames.github.io/turbowarp/(\d+)https://kakaomames.github.io/turbowarp/embehttps://kakaomames.github.io/turbowarp/);
         return null !== n ? n[n.length - 1] : "0";
       })(),
       k = new URLSearchParams(location.search);

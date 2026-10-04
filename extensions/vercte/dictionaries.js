@@ -1,8 +1,8 @@
-// Name: Dictionaries
-// ID: verctedictionaries
-// Description: Use the power of dictionaries in your project.
-// By: Vercte <https://scratch.mit.edu/users/lolecksdeehaha/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Dictionaries
+https://kakaomames.github.io/turbowarp/ ID: verctedictionaries
+https://kakaomames.github.io/turbowarp/ Description: Use the power of dictionaries in your project.
+https://kakaomames.github.io/turbowarp/ By: Vercte <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/lolecksdeehahhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -172,7 +172,7 @@
 
       const dataMap = new Map(Object.entries(parsed));
       if (Array.isArray(parsed)) {
-        // Add a length property if this is an array
+       https://kakaomames.github.io/turbowarp// Add a length property if this is an array
         dataMap.set("length", parsed.length);
       }
 

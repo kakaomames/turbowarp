@@ -1,8 +1,8 @@
-// Name: HTTP
-// ID: gsaHTTPRequests
-// Description: Comprehensive extension for interacting with external websites.
-// By: RedMan13 <https://scratch.mit.edu/users/RedMan13/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: HTTP
+https://kakaomames.github.io/turbowarp/ ID: gsaHTTPRequests
+https://kakaomames.github.io/turbowarp/ Description: Comprehensive extension for interacting with external websites.
+https://kakaomames.github.io/turbowarp/ By: RedMan13 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/RedMan1https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -74,10 +74,10 @@
     }
   };
   const parseType = (text) => {
-    // this isnt text and we just pass it down as what ever it is
+   https://kakaomames.github.io/turbowarp// this isnt text and we just pass it down as what ever it is
     if (typeof text !== "string") return text;
 
-    const asNumber = Number(text); // loose cast to allow NaN and other values
+    const asNumber = Number(text);https://kakaomames.github.io/turbowarp// loose cast to allow NaN and other values
     if (!isNaN(asNumber)) return asNumber;
     else {
       try {
@@ -96,7 +96,7 @@
     const names = path.split(".");
     for (let index = 0; index < names.length; index++) {
       let name = names[index];
-      name = name.replaceAll(/(?<!\\)&dot/g, ".");
+      name = name.replaceAllhttps://kakaomames.github.io/turbowarp/(?<!\\)&dohttps://kakaomames.github.io/turbowarp/g, ".");
       if (isUnsafePathSegment(name)) return null;
       names[index] = name;
     }
@@ -117,18 +117,18 @@
     object[path[path.length - 1]] = value;
   };
 
-  // the funny class to make event blocks look better
+ https://kakaomames.github.io/turbowarp// the funny class to make event blocks look better
   class Events {
     constructor() {
       this.events = {};
       this.blocks = {};
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * adds a event name listner for a block
      * @param {string} name name of the event
      * @param {string} [block] a block to run when trigered
-     */
+     https://kakaomames.github.io/turbowarp/
     add(name, block) {
       if (block) {
         if (!this.blocks[name]) this.blocks[name] = [];
@@ -136,10 +136,10 @@
       }
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * activate an event
      * @param {string} name name of the event
-     */
+     https://kakaomames.github.io/turbowarp/
     activate(name) {
       this.events[name] = true;
       if (this.blocks[name]) {
@@ -151,7 +151,7 @@
   }
   const createBlockId = (block) => `${extensionId}_${block}`;
 
-  /* ------- BLOCKS -------- */
+ https://kakaomames.github.io/turbowarp/* ------- BLOCKS -------- https://kakaomames.github.io/turbowarp/
   const { BlockType, ArgumentType } = Scratch;
 
   class WebRequests {
@@ -163,8 +163,8 @@
         },
         set mimeType(value) {
           if (
-            this.options.headers["Content-Type"] === "multipart/form-data" &&
-            value !== "multipart/form-data"
+            this.options.headers["Content-Type"] === "multiparhttps://kakaomames.github.io/turbowarp/form-data" &&
+            value !== "multiparhttps://kakaomames.github.io/turbowarp/form-data"
           ) {
             this.options.body = "";
           }
@@ -172,7 +172,7 @@
         },
         set method(val) {
           this.options.method = val;
-          // remove body on get requests
+         https://kakaomames.github.io/turbowarp// remove body on get requests
           if (val === "GET") {
             delete this.options.body;
           }
@@ -182,7 +182,7 @@
         },
         options: {
           headers: {
-            "Content-Type": "text/plain",
+            "Content-Type": "texhttps://kakaomames.github.io/turbowarp/plain",
           },
           method: "GET",
         },
@@ -193,14 +193,14 @@
             !(this.options.body instanceof FormData)
           ) {
             this.options.body = val;
-            this.options.headers["Content-Type"] = "multipart/form-data";
+            this.options.headers["Content-Type"] = "multiparhttps://kakaomames.github.io/turbowarp/form-data";
           }
           if (
             !(val instanceof FormData) &&
             this.options.body instanceof FormData
           ) {
             this.options.body = "";
-            this.options.headers["Content-Type"] = "text/plain";
+            this.options.headers["Content-Type"] = "texhttps://kakaomames.github.io/turbowarp/plain";
           }
           this.options.body = val;
         },
@@ -230,9 +230,9 @@
       return defaultResponse;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * no need to install runtime as it comes with Scratch var
-     */
+     https://kakaomames.github.io/turbowarp/
     constructor() {
       this.clearAll();
       this.showingExtra = false;
@@ -244,7 +244,7 @@
     getInfo() {
       return {
         id: extensionId,
-        // eslint-disable-next-line extension/should-translate
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
         name: "HTTP",
         color1: "#307eff",
         color2: "#2c5eb0",
@@ -445,7 +445,7 @@
             arguments: {
               url: {
                 type: ArgumentType.STRING,
-                defaultValue: "./hello.txt",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/hello.txt",
               },
             },
             text: Scratch.translate("send request to [url]"),
@@ -531,32 +531,32 @@
           },
           mimeType: {
             items: [
-              "application/json",
-              "application/x-www-form-urlencoded",
-              "application/javascript",
-              "application/ogg",
-              "application/pdf",
-              "application/ld+json",
-              "application/xml",
-              "application/zip",
-              "audio/mpeg",
-              "image/gif",
-              "image/jpeg",
-              "image/png",
-              "image/tiff",
-              "image/x-icon",
-              "image/svg+xml",
-              "text/css",
-              "text/csv",
-              "text/html",
-              "text/plain",
-              "text/xml",
-              "video/mpeg",
-              "video/mp4",
-              "video/x-ms-wmv",
-              "video/x-msvideo",
-              "video/x-flv",
-              "video/webm",
+              "applicatiohttps://kakaomames.github.io/turbowarp/json",
+              "applicatiohttps://kakaomames.github.io/turbowarp/x-www-form-urlencoded",
+              "applicatiohttps://kakaomames.github.io/turbowarp/javascript",
+              "applicatiohttps://kakaomames.github.io/turbowarp/ogg",
+              "applicatiohttps://kakaomames.github.io/turbowarp/pdf",
+              "applicatiohttps://kakaomames.github.io/turbowarp/ld+json",
+              "applicatiohttps://kakaomames.github.io/turbowarp/xml",
+              "applicatiohttps://kakaomames.github.io/turbowarp/zip",
+              "audihttps://kakaomames.github.io/turbowarp/mpeg",
+              "imaghttps://kakaomames.github.io/turbowarp/gif",
+              "imaghttps://kakaomames.github.io/turbowarp/jpeg",
+              "imaghttps://kakaomames.github.io/turbowarp/png",
+              "imaghttps://kakaomames.github.io/turbowarp/tiff",
+              "imaghttps://kakaomames.github.io/turbowarp/x-icon",
+              "imaghttps://kakaomames.github.io/turbowarp/svg+xml",
+              "texhttps://kakaomames.github.io/turbowarp/css",
+              "texhttps://kakaomames.github.io/turbowarp/csv",
+              "texhttps://kakaomames.github.io/turbowarp/html",
+              "texhttps://kakaomames.github.io/turbowarp/plain",
+              "texhttps://kakaomames.github.io/turbowarp/xml",
+              "videhttps://kakaomames.github.io/turbowarp/mpeg",
+              "videhttps://kakaomames.github.io/turbowarp/mp4",
+              "videhttps://kakaomames.github.io/turbowarp/x-ms-wmv",
+              "videhttps://kakaomames.github.io/turbowarp/x-msvideo",
+              "videhttps://kakaomames.github.io/turbowarp/x-flv",
+              "videhttps://kakaomames.github.io/turbowarp/webm",
             ],
             acceptReporters: true,
           },
@@ -564,14 +564,14 @@
       };
     }
 
-    /* ------ RESETING ------- */
+   https://kakaomames.github.io/turbowarp/* ------ RESETING ------- https://kakaomames.github.io/turbowarp/
 
     clearAll() {
       this.request = WebRequests.defaultRequest;
       this.response = WebRequests.defaultResponse;
     }
 
-    /* ------- DATA READING -------- */
+   https://kakaomames.github.io/turbowarp/* ------- DATA READING -------- https://kakaomames.github.io/turbowarp/
 
     resData() {
       return this.response.text;
@@ -630,7 +630,7 @@
       return JSON.stringify(object);
     }
 
-    /* -------- CONTROL --------- */
+   https://kakaomames.github.io/turbowarp/* -------- CONTROL --------- https://kakaomames.github.io/turbowarp/
 
     setMimeType(args) {
       const type = Cast.toString(args.type);
@@ -651,7 +651,7 @@
     setHeaderJSON(args) {
       const json = Cast.toString(args.json);
       let object;
-      // ignore invalid data
+     https://kakaomames.github.io/turbowarp// ignore invalid data
       try {
         object = JSON.parse(json);
       } catch {
@@ -698,7 +698,7 @@
       this.response.url = url;
       try {
         const res = await Scratch.fetch(url, options);
-        // @ts-ignore
+       https://kakaomames.github.io/turbowarp// @ts-ignore
         this.response.status = res.status;
         this.response.headers = res.headers;
         this.response.statusText = res.statusText;
@@ -710,7 +710,7 @@
           this.request.events.activate("reqFail");
         }
         this.request.end = true;
-        if (res.headers.get("Content-Type") === "multipart/form-data") {
+        if (res.headers.get("Content-Type") === "multiparhttps://kakaomames.github.io/turbowarp/form-data") {
           const form = await res.formData();
           const json = {};
           for (const [key, value] of form.entries()) {
@@ -731,7 +731,7 @@
       }
     }
 
-    /* extra stuff for when its missing something */
+   https://kakaomames.github.io/turbowarp/* extra stuff for when its missing something https://kakaomames.github.io/turbowarp/
 
     showExtra() {
       this.showingExtra = true;
@@ -779,6 +779,6 @@
   }
 
   const instance = new WebRequests();
-  // @ts-ignore
+ https://kakaomames.github.io/turbowarp// @ts-ignore
   Scratch.extensions.register(instance);
 })(Scratch);

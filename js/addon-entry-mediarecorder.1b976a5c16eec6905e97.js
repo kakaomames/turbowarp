@@ -29,7 +29,7 @@
     1698: function (e, t, n) {
       (e.exports = n(9)(!1)).push([
         e.i,
-        '.mediaRecorderPopup {\n  box-sizing: border-box;\n  width: 700px;\n  max-height: min(800px, 80vh);\n  max-width: 85%;\n  margin-top: 12vh;\n  overflow-y: auto;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.mediaRecorderPopupContent {\n  padding: 1.5rem 2.25rem;\n}\n\n.mediaRecorderPopup p {\n  font-size: 1rem;\n  margin: 0.5rem auto;\n}\n\n.mediaRecorderPopup p :last-child {\n  margin-left: 1rem;\n}\n\n.mediaRecorderPopup[dir="rtl"] p :last-child {\n  margin-left: 0;\n  margin-right: 1rem;\n}\n\np.mediaRecorderPopupOption {\n  display: flex;\n  align-items: center;\n}\n\n.mediaRecorderPopupOption input[type="checkbox"] {\n  height: 1.5rem;\n}\n\n#recordOptionSecondsInput,\n#recordOptionDelayInput {\n  width: 6rem;\n}\n\n.mediaRecorderPopupButtons {\n  margin-top: 1.5rem;\n}\n\n.mediaRecorderPopupButtons button {\n  margin-left: 0.5rem;\n}\n\n/* TW: Fixes cancel button in dark mode */\n.mediaRecorderPopupButtons button:nth-of-type(1) {\n  color: black;\n}\n',
+        '.mediaRecorderPopup {\n  box-sizing: border-box;\n  width: 700px;\n  max-height: min(800px, 80vh);\n  max-width: 85%;\n  margin-top: 12vh;\n  overflow-y: auto;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.mediaRecorderPopupContent {\n  padding: 1.5rem 2.25rem;\n}\n\n.mediaRecorderPopup p {\n  font-size: 1rem;\n  margin: 0.5rem auto;\n}\n\n.mediaRecorderPopup p :last-child {\n  margin-left: 1rem;\n}\n\n.mediaRecorderPopup[dir="rtl"] p :last-child {\n  margin-left: 0;\n  margin-right: 1rem;\n}\n\np.mediaRecorderPopupOption {\n  display: flex;\n  align-items: center;\n}\n\n.mediaRecorderPopupOption input[type="checkbox"] {\n  height: 1.5rem;\n}\n\n#recordOptionSecondsInput,\n#recordOptionDelayInput {\n  width: 6rem;\n}\n\n.mediaRecorderPopupButtons {\n  margin-top: 1.5rem;\n}\n\n.mediaRecorderPopupButtons button {\n  margin-left: 0.5rem;\n}\n\https://kakaomames.github.io/turbowarp/* TW: Fixes cancel button in dark mode https://kakaomames.github.io/turbowarp/\n.mediaRecorderPopupButtons button:nth-of-type(1) {\n  color: black;\n}\n',
         "",
       ]);
     },
@@ -58,9 +58,9 @@
                 {
                   markAsSeen: !0,
                   reduxEvents: [
-                    "scratch-gui/mode/SET_PLAYER",
-                    "fontsLoaded/SET_FONTS_LOADED",
-                    "scratch-gui/locales/SELECT_LOCALE",
+                    "scratch-guhttps://kakaomames.github.io/turbowarp/modhttps://kakaomames.github.io/turbowarp/SET_PLAYER",
+                    "fontsLoadehttps://kakaomames.github.io/turbowarp/SET_FONTS_LOADED",
+                    "scratch-guhttps://kakaomames.github.io/turbowarp/localehttps://kakaomames.github.io/turbowarp/SELECT_LOCALE",
                   ],
                 },
               ),
@@ -247,7 +247,7 @@
                   (t
                     ? h()
                     : ((r.onstop = () => {
-                        const e = new Blob(m, { type: "video/webm" });
+                        const e = new Blob(m, { type: "videhttps://kakaomames.github.io/turbowarp/webm" });
                         (Object(a.a)("video.webm", e), h());
                       }),
                       r.stop()));
@@ -310,7 +310,7 @@
                 }
                 ((a.audioEnabled || a.micEnabled) &&
                   O.addTrack(f.stream.getAudioTracks()[0]),
-                  (r = new MediaRecorder(O, { mimeType: "video/webm" })),
+                  (r = new MediaRecorder(O, { mimeType: "videhttps://kakaomames.github.io/turbowarp/webm" })),
                   (r.ondataavailable = (e) => {
                     m.push(e.data);
                   }),

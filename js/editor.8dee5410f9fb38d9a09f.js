@@ -48,7 +48,7 @@ var GUI = (function (e) {
           (s.src = (function (e) {
             return (
               i.p +
-              "js/" +
+              "jhttps://kakaomames.github.io/turbowarp/" +
               ({
                 4: "addon-default-entry",
                 5: "addon-entry-2d-color-picker",
@@ -339,7 +339,7 @@ var GUI = (function (e) {
     }).call(this, n(45));
   },
   161: function (e, t, n) {
-    e.exports = n.p + "static/assets/33b737193edfe1730f38112ad35a84b4.svg";
+    e.exports = n.p + "statihttps://kakaomames.github.io/turbowarp/assethttps://kakaomames.github.io/turbowarp/33b737193edfe1730f38112ad35a84b4.svg";
   },
   162: function (e, t, n) {
     e.exports = n.p + "sw.js";
@@ -417,12 +417,12 @@ var GUI = (function (e) {
           this.props.canOpenPackager &&
             window.open(
               ""
-                .concat("https://packager.turbowarp.org", "/?import_from=")
+                .concat("httpshttps://kakaomames.github.io/turbowarp//packager.turbowarp.org", https://kakaomames.github.io/turbowarp/?import_from=")
                 .concat(location.origin),
             );
         }
         handleMessage(e) {
-          if ("https://packager.turbowarp.org" !== e.origin) return;
+          if ("httpshttps://kakaomames.github.io/turbowarp//packager.turbowarp.org" !== e.origin) return;
           if (!this.props.canOpenPackager) return;
           "ready-for-import" === e.data.p4.type &&
             (e.source.postMessage({ p4: { type: "start-import" } }, e.origin),
@@ -522,7 +522,7 @@ var GUI = (function (e) {
           this.setState({ projectId: this.props.projectId }));
       }
       extractProjectId(e) {
-        const t = e.match(/\d+/);
+        const t = e.matchhttps://kakaomames.github.io/turbowarp/\dhttps://kakaomames.github.io/turbowarp/);
         return t ? t[0] : null;
       }
       readProjectId(e) {
@@ -564,7 +564,7 @@ var GUI = (function (e) {
             ref: this.inputRef,
             spellCheck: "false",
             type: "text",
-            value: "".concat("https://scratch.mit.edu/projects/").concat(e),
+            value: "".concat("httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/projecthttps://kakaomames.github.io/turbowarp/").concat(e),
             className: A.a.input,
             onKeyDown: this.handleKeyDown,
             onChange: this.handleChange,
@@ -771,11 +771,11 @@ var GUI = (function (e) {
       (B.prototype.onpageload = function () {}),
       (B.prototype.onend = function () {}),
       (B.STUDIO_API =
-        "https://trampoline.turbowarp.org/api/studios/$id/projects?offset=$offset"),
+        "httpshttps://kakaomames.github.io/turbowarp//trampoline.turbowarp.orhttps://kakaomames.github.io/turbowarp/aphttps://kakaomames.github.io/turbowarp/studiohttps://kakaomames.github.io/turbowarp/$ihttps://kakaomames.github.io/turbowarp/projects?offset=$offset"),
       (B.THUMBNAIL_SRC =
-        "https://trampoline.turbowarp.org/thumbnails/$id?width=144&height=108"),
-      (B.PROJECT_PAGE = "https://turbowarp.org/$id"),
-      (B.STUDIO_PAGE = "https://scratch.mit.edu/studios/$id/"),
+        "httpshttps://kakaomames.github.io/turbowarp//trampoline.turbowarp.orhttps://kakaomames.github.io/turbowarp/thumbnailhttps://kakaomames.github.io/turbowarp/$id?width=144&height=108"),
+      (B.PROJECT_PAGE = "httpshttps://kakaomames.github.io/turbowarp//turbowarp.orhttps://kakaomames.github.io/turbowarp/$id"),
+      (B.STUDIO_PAGE = "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/studiohttps://kakaomames.github.io/turbowarp/$ihttps://kakaomames.github.io/turbowarp/"),
       (B.PLACEHOLDER_COUNT = 9));
     var W = B;
     const G = Object(u.g)({
@@ -904,9 +904,9 @@ var GUI = (function (e) {
               {
                 target: "_blank",
                 rel: "noopener noreferrer",
-                href: "https://scratch.mit.edu/studios/".concat(
+                href: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/studiohttps://kakaomames.github.io/turbowarp/".concat(
                   this.props.studio,
-                  "/",
+                  https://kakaomames.github.io/turbowarp/",
                 ),
               },
               c.a.createElement(u.b, {
@@ -932,11 +932,11 @@ var GUI = (function (e) {
       X = n(102),
       Y = n.n(X);
     const ee = (e) => {
-        e = Y()(e, /@([\w-]+)/, (e, t) =>
+        e = Y()(e,https://kakaomames.github.io/turbowarp/@([\w-]+https://kakaomames.github.io/turbowarp/, (e, t) =>
           c.a.createElement(
             "a",
             {
-              href: "https://scratch.mit.edu/users/".concat(e, "/"),
+              href: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/".concat(e, https://kakaomames.github.io/turbowarp/"),
               rel: "noreferrer",
               key: e + t,
             },
@@ -946,7 +946,7 @@ var GUI = (function (e) {
         return (
           (e = Y()(
             e,
-            /(https?:\/\/[\w\d_\-.]{1,256}(?:\/(?:\S*[\w:/#[\]@$&'()*+=])?)?(?![^?!,:;\w\s]\S))/g,
+           https://kakaomames.github.io/turbowarp/(https?:https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/[\w\d_\-.]{1,256}(?:https://kakaomames.github.io/turbowarp/(?:\S*[\whttps://kakaomames.github.io/turbowarp/#[\]@$&'()*+=])?)?(?![^?!,:;\w\s]\S)https://kakaomames.github.io/turbowarp/g,
             (e, t) =>
               c.a.createElement(
                 "a",
@@ -954,11 +954,11 @@ var GUI = (function (e) {
                 e,
               ),
           )),
-          (e = Y()(e, /#([\w-]+)/g, (e, t) =>
+          (e = Y()(e,https://kakaomames.github.io/turbowarp/#([\w-]+https://kakaomames.github.io/turbowarp/g, (e, t) =>
             c.a.createElement(
               "a",
               {
-                href: "https://scratch.mit.edu/search/projects?q=".concat(e),
+                href: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/searchttps://kakaomames.github.io/turbowarp/projects?q=".concat(e),
                 key: e + t,
               },
               "#".concat(e),
@@ -978,7 +978,7 @@ var GUI = (function (e) {
             c.a.createElement(
               "a",
               {
-                href: "https://scratch.mit.edu/projects/".concat(n, "/"),
+                href: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/projecthttps://kakaomames.github.io/turbowarp/".concat(n, https://kakaomames.github.io/turbowarp/"),
                 target: "_blank",
                 rel: "noreferrer",
               },
@@ -1061,11 +1061,11 @@ var GUI = (function (e) {
     var le = de,
       ue = n(83);
     const pe = [
-        { name: "US East", cloudHost: "wss://clouddata.turbowarp.org" },
+        { name: "US East", cloudHost: "wsshttps://kakaomames.github.io/turbowarp//clouddata.turbowarp.org" },
         {
           name: "EU",
-          cloudHost: "wss://clouddata-eu.turbowarp.org",
-          provider: { name: "9gr", href: "https://scratch.mit.edu/users/9gr/" },
+          cloudHost: "wsshttps://kakaomames.github.io/turbowarp//clouddata-eu.turbowarp.org",
+          provider: { name: "9gr", href: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/9ghttps://kakaomames.github.io/turbowarp/" },
         },
       ],
       he = (e) => {
@@ -1150,7 +1150,7 @@ var GUI = (function (e) {
             {
               target: "_blank",
               rel: "noreferrer",
-              href: "https://docs.turbowarp.org/cloud-variables",
+              href: "httpshttps://kakaomames.github.io/turbowarp//docs.turbowarp.orhttps://kakaomames.github.io/turbowarp/cloud-variables",
             },
             c.a.createElement(u.b, {
               defaultMessage: "Learn more about cloud variables.",
@@ -1249,7 +1249,7 @@ var GUI = (function (e) {
     if (window.parent !== window)
       throw (
         alert(
-          "This page contains an invalid TurboWarp embed. Please read https://docs.turbowarp.org/embedding for instructions to create a working embed.",
+          "This page contains an invalid TurboWarp embed. Please read httpshttps://kakaomames.github.io/turbowarp//docs.turbowarp.orhttps://kakaomames.github.io/turbowarp/embedding for instructions to create a working embed.",
         ),
         new Error("Invalid embed")
       );
@@ -1304,7 +1304,7 @@ var GUI = (function (e) {
               ),
               c.a.createElement(
                 "a",
-                { href: "https://github.com/sponsors/GarboMuffin" },
+                { href: "httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/sponsorhttps://kakaomames.github.io/turbowarp/GarboMuffin" },
                 c.a.createElement(u.b, {
                   defaultMessage: "Donate",
                   id: "tw.footer.donate",
@@ -1316,17 +1316,17 @@ var GUI = (function (e) {
               { className: ke.a.footerSection },
               c.a.createElement(
                 "a",
-                { href: "https://desktop.turbowarp.org/" },
+                { href: "httpshttps://kakaomames.github.io/turbowarp//desktop.turbowarp.orhttps://kakaomames.github.io/turbowarp/" },
                 "TurboWarp Desktop",
               ),
               c.a.createElement(
                 "a",
-                { href: "https://kakaomames.github.io/Scratch-packager/" },
+                { href: "httpshttps://kakaomames.github.io/turbowarp//kakaomames.github.ihttps://kakaomames.github.io/turbowarp/Scratch-packagehttps://kakaomames.github.io/turbowarp/" },
                 "TurboWarp Packager",
               ),
               c.a.createElement(
                 "a",
-                { href: "https://docs.turbowarp.org/embedding" },
+                { href: "httpshttps://kakaomames.github.io/turbowarp//docs.turbowarp.orhttps://kakaomames.github.io/turbowarp/embedding" },
                 c.a.createElement(u.b, {
                   defaultMessage: "Embedding",
                   id: "tw.footer.embed",
@@ -1334,7 +1334,7 @@ var GUI = (function (e) {
               ),
               c.a.createElement(
                 "a",
-                { href: "https://docs.turbowarp.org/url-parameters" },
+                { href: "httpshttps://kakaomames.github.io/turbowarp//docs.turbowarp.orhttps://kakaomames.github.io/turbowarp/url-parameters" },
                 c.a.createElement(u.b, {
                   defaultMessage: "URL Parameters",
                   id: "tw.footer.parameters",
@@ -1342,7 +1342,7 @@ var GUI = (function (e) {
               ),
               c.a.createElement(
                 "a",
-                { href: "https://docs.turbowarp.org/" },
+                { href: "httpshttps://kakaomames.github.io/turbowarp//docs.turbowarp.orhttps://kakaomames.github.io/turbowarp/" },
                 c.a.createElement(u.b, {
                   defaultMessage: "Documentation",
                   id: "tw.footer.documentation",
@@ -1354,7 +1354,7 @@ var GUI = (function (e) {
               { className: ke.a.footerSection },
               c.a.createElement(
                 "a",
-                { href: "https://scratch.mit.edu/users/GarboMuffin/#comments" },
+                { href: "httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/GarboMuffihttps://kakaomames.github.io/turbowarp/#comments" },
                 c.a.createElement(u.b, {
                   defaultMessage: "Feedback & Bugs",
                   id: "tw.feedback",
@@ -1362,7 +1362,7 @@ var GUI = (function (e) {
               ),
               c.a.createElement(
                 "a",
-                { href: "https://github.com/TurboWarp/" },
+                { href: "httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/TurboWarhttps://kakaomames.github.io/turbowarp/" },
                 c.a.createElement(u.b, {
                   defaultMessage: "Source Code",
                   id: "tw.code",
@@ -1494,11 +1494,11 @@ var GUI = (function (e) {
                             link: c.a.createElement(
                               "a",
                               {
-                                href: "https://docs.turbowarp.org/unshared-projects",
+                                href: "httpshttps://kakaomames.github.io/turbowarp//docs.turbowarp.orhttps://kakaomames.github.io/turbowarp/unshared-projects",
                                 target: "_blank",
                                 rel: "noopener noreferrer",
                               },
-                              "https://docs.turbowarp.org/unshared-projects",
+                              "httpshttps://kakaomames.github.io/turbowarp//docs.turbowarp.orhttps://kakaomames.github.io/turbowarp/unshared-projects",
                             ),
                           },
                         }),
@@ -1605,7 +1605,7 @@ var GUI = (function (e) {
   255: function (e, t, n) {
     ((t = e.exports = n(9)(!1)).push([
       e.i,
-      '/* #E5F0FF */ /* #E9F1FC */ /* #D9E3F2 */ /* 90% transparent version of motion-primary */ /* #FFFFFF */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 15% transparent version of black */ /* #575E75 */ /* 35% transparent version of motion-primary */ /* 15% transparent version of motion-primary */ /* opt-in theme overrides */ /* #FF661A */ /* #E64D00 */ /* #CF63CF */ /* #BD42BD */ /* #FFAB19 */ /* #FF8C1A */ /* #0FBD8C */ /* #0FBD8C */ /* #FF8C1A */ /* #FFB366 */ /* #FF8C1A */ /* 35% transparent version of extensions-primary */ /* opaque version of extensions-transparent, on white bg */ /* lighter than motion-primary */ /*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are "inside" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/ /* Toolbox z-index: 40; set in scratch-blocks */ /* tooltips should go over add buttons if they overlap */ /* monitors go over add buttons */ /* "ask" block text input goes above monitors */ /* menu-bar should go over monitors, alerts and tutorials */ /* tw: show below menu bar normally */ /* Block drag z-index: 1000; default 50 is overriden in blocks.css */ /* so it is draggable into other panes */ /* in most interfaces, the context menu is always on top */ .project-input_input_1E6Af {\n    border: none;\n    width: 100%;\n    font-size: 23px;\n    line-height: 32px;\n    opacity: 0.5;\n    background-color: transparent;\n    color: inherit;\n} .project-input_input_1E6Af:focus {\n    opacity: 1;\n} .project-input_input_1E6Af:disabled {\n    opacity: 0.8;\n} .project-input_tooltip_3_EoA {\n    opacity: 1 !important;\n    background-color: hsla(10, 85%, 65%, 1) !important;\n    border: 1px solid hsla(0, 0%, 0%, .1) !important;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25) !important;\n    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;\n    border: 1px solid hsla(0, 0%, 0%, .1) !important;\n    z-index: 491 !important;\n} .project-input_tooltip_3_EoA:after {\n    border-top-color: hsla(10, 85%, 65%, 1) !important;\n}\n',
+      https://kakaomames.github.io/turbowarp/* #E5F0FF https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #E9F1FC https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #D9E3F2 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 90% transparent version of motion-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FFFFFF https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 25% transparent version of ui-white https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 25% transparent version of ui-white https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 25% transparent version of ui-white https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 15% transparent version of black https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #575E75 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 35% transparent version of motion-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 15% transparent version of motion-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* opt-in theme overrides https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FF661A https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #E64D00 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #CF63CF https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #BD42BD https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FFAB19 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FF8C1A https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #0FBD8C https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #0FBD8C https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FF8C1A https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FFB366 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FF8C1A https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 35% transparent version of extensions-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* opaque version of extensions-transparent, on white bg https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* lighter than motion-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are "inside" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\nhttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* Toolbox z-index: 40; set in scratch-blocks https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* tooltips should go over add buttons if they overlap https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* monitors go over add buttons https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* "ask" block text input goes above monitors https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* menu-bar should go over monitors, alerts and tutorials https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* tw: show below menu bar normally https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* Block drag z-index: 1000; default 50 is overriden in blocks.css https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* so it is draggable into other panes https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* in most interfaces, the context menu is always on top https://kakaomames.github.io/turbowarp/ .project-input_input_1E6Af {\n    border: none;\n    width: 100%;\n    font-size: 23px;\n    line-height: 32px;\n    opacity: 0.5;\n    background-color: transparent;\n    color: inherit;\n} .project-input_input_1E6Af:focus {\n    opacity: 1;\n} .project-input_input_1E6Af:disabled {\n    opacity: 0.8;\n} .project-input_tooltip_3_EoA {\n    opacity: 1 !important;\n    background-color: hsla(10, 85%, 65%, 1) !important;\n    border: 1px solid hsla(0, 0%, 0%, .1) !important;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25) !important;\n    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;\n    border: 1px solid hsla(0, 0%, 0%, .1) !important;\n    z-index: 491 !important;\n} .project-input_tooltip_3_EoA:after {\n    border-top-color: hsla(10, 85%, 65%, 1) !important;\n}\n',
       "",
     ]),
       (t.locals = {
@@ -1616,7 +1616,7 @@ var GUI = (function (e) {
   256: function (e, t, n) {
     ((t = e.exports = n(9)(!1)).push([
       e.i,
-      "/*\nImported from:\nhttps://github.com/forkphorus/forkphorus/tree/master/studioview\nWith changes to make it work properly in the scratch-gui environment.\n*/\n\n/* we wrap it in a <div> */\n\n.studioview_wrapper_1SFBd {\n  height: 100%;\n}\n\n/* fix some styles that can be messed up by scratch-gui */\n\n.studioview_studioview-root_1OP-i * {\n  box-sizing: content-box !important;\n}\n\n.studioview_studioview-root_1OP-i {\n  height: 100%;\n}\n\n.studioview_studioview-list_2hIxk {\n  width: 100%;\n  height: 100%;\n  overflow-y: scroll;\n  overflow-anchor: none;\n}\n\n.studioview_studioview-project_IDotv, .studioview_studioview-placeholder_KKHo9 {\n  display: inline-block;\n  width: 144px;\n  padding: 3px;\n  margin-bottom: 1px;\n  margin-right: 1px;\n}\n\n.studioview_studioview-root_1OP-i .studioview_studioview-project_IDotv {\n  color: inherit;\n  position: relative;\n  text-decoration: none;\n}\n\n.studioview_studioview-loaded_3UCil:hover::before, .studioview_studioview-loaded_3UCil:active::before {\n  content: '';\n  pointer-events: none;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: currentColor;\n  opacity: 0.1;\n}\n\n.studioview_studioview-root_1OP-i .studioview_studioview-loaded_3UCil:active::before {\n  opacity: 0.2;\n}\n\n.studioview_studioview-root_1OP-i .studioview_studioview-title_2ROWB,\n.studioview_studioview-root_1OP-i .studioview_studioview-author_2P0Hj {\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  color: inherit;\n  text-decoration: none;\n}\n\n.studioview_studioview-title_2ROWB {\n  font-size: 0.8em;\n  font-weight: bold;\n}\n\n.studioview_studioview-author_2P0Hj {\n  font-size: 0.75em;\n}\n\n.studioview_studioview-error_3XWai {\n  width: 100%;\n}\n\n.studioview_studioview-thumbnail_1HYJO, .studioview_studioview-placeholder-thumbnail_TUdop {\n  position: relative;\n  width: 144px;\n  height: 108px;\n}\n\n.studioview_studioview-thumbnail_1HYJO::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: currentColor;\n  opacity: 0.1;\n}\n\n.studioview_studioview-thumbnail_1HYJO img {\n  width: 100%;\n  height: 100%;\n}\n\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-thumbnail_1HYJO,\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-title_2ROWB,\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-author_2P0Hj {\n  background-color: currentColor;\n  opacity: 0.1;\n}\n\n.studioview_studioview-title_2ROWB {\n  height: 20px;\n  margin-top: 2px;\n}\n\n.studioview_studioview-author_2P0Hj {\n  height: 18px;\n}\n\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-title_2ROWB {\n  border-radius: 2px 2px 2px 0;\n  width: 100%;\n}\n\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-author_2P0Hj {\n  border-radius: 0 0 2px 2px;\n  width: 50%;\n}\n",
+      https://kakaomames.github.io/turbowarp/*\nImported from:\nhttpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/forkphoruhttps://kakaomames.github.io/turbowarp/forkphoruhttps://kakaomames.github.io/turbowarp/trehttps://kakaomames.github.io/turbowarp/mastehttps://kakaomames.github.io/turbowarp/studioview\nWith changes to make it work properly in the scratch-gui environment.\nhttps://kakaomames.github.io/turbowarp/\n\https://kakaomames.github.io/turbowarp/* we wrap it in a <div> https://kakaomames.github.io/turbowarp/\n\n.studioview_wrapper_1SFBd {\n  height: 100%;\n}\n\https://kakaomames.github.io/turbowarp/* fix some styles that can be messed up by scratch-gui https://kakaomames.github.io/turbowarp/\n\n.studioview_studioview-root_1OP-i * {\n  box-sizing: content-box !important;\n}\n\n.studioview_studioview-root_1OP-i {\n  height: 100%;\n}\n\n.studioview_studioview-list_2hIxk {\n  width: 100%;\n  height: 100%;\n  overflow-y: scroll;\n  overflow-anchor: none;\n}\n\n.studioview_studioview-project_IDotv, .studioview_studioview-placeholder_KKHo9 {\n  display: inline-block;\n  width: 144px;\n  padding: 3px;\n  margin-bottom: 1px;\n  margin-right: 1px;\n}\n\n.studioview_studioview-root_1OP-i .studioview_studioview-project_IDotv {\n  color: inherit;\n  position: relative;\n  text-decoration: none;\n}\n\n.studioview_studioview-loaded_3UCil:hover::before, .studioview_studioview-loaded_3UCil:active::before {\n  content: '';\n  pointer-events: none;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: currentColor;\n  opacity: 0.1;\n}\n\n.studioview_studioview-root_1OP-i .studioview_studioview-loaded_3UCil:active::before {\n  opacity: 0.2;\n}\n\n.studioview_studioview-root_1OP-i .studioview_studioview-title_2ROWB,\n.studioview_studioview-root_1OP-i .studioview_studioview-author_2P0Hj {\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  color: inherit;\n  text-decoration: none;\n}\n\n.studioview_studioview-title_2ROWB {\n  font-size: 0.8em;\n  font-weight: bold;\n}\n\n.studioview_studioview-author_2P0Hj {\n  font-size: 0.75em;\n}\n\n.studioview_studioview-error_3XWai {\n  width: 100%;\n}\n\n.studioview_studioview-thumbnail_1HYJO, .studioview_studioview-placeholder-thumbnail_TUdop {\n  position: relative;\n  width: 144px;\n  height: 108px;\n}\n\n.studioview_studioview-thumbnail_1HYJO::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: currentColor;\n  opacity: 0.1;\n}\n\n.studioview_studioview-thumbnail_1HYJO img {\n  width: 100%;\n  height: 100%;\n}\n\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-thumbnail_1HYJO,\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-title_2ROWB,\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-author_2P0Hj {\n  background-color: currentColor;\n  opacity: 0.1;\n}\n\n.studioview_studioview-title_2ROWB {\n  height: 20px;\n  margin-top: 2px;\n}\n\n.studioview_studioview-author_2P0Hj {\n  height: 18px;\n}\n\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-title_2ROWB {\n  border-radius: 2px 2px 2px 0;\n  width: 100%;\n}\n\n.studioview_studioview-placeholder_KKHo9 .studioview_studioview-author_2P0Hj {\n  border-radius: 0 0 2px 2px;\n  width: 50%;\n}\n",
       "",
     ]),
       (t.locals = {
@@ -1752,7 +1752,7 @@ var GUI = (function (e) {
   },
   266: function (e, t, n) {
     var o = n(267),
-      r = /[\\^$.*+?()[\]{}|]/g,
+      r =https://kakaomames.github.io/turbowarp/[\\^$.*+?()[\]{}|https://kakaomames.github.io/turbowarp/g,
       a = RegExp(r.source);
     e.exports = function (e) {
       return (e = o(e)) && a.test(e) ? e.replace(r, "\\$&") : e;
@@ -1776,7 +1776,7 @@ var GUI = (function (e) {
       if (a(t)) return r(t, e) + "";
       if (i(t)) return c ? c.call(t) : "";
       var n = t + "";
-      return "0" == n && 1 / t == -1 / 0 ? "-0" : n;
+      return "0" == n && 1https://kakaomames.github.io/turbowarp/ t == -1https://kakaomames.github.io/turbowarp/ 0 ? "-0" : n;
     };
   },
   269: function (e, t) {
@@ -1868,7 +1868,7 @@ var GUI = (function (e) {
   278: function (e, t, n) {
     ((t = e.exports = n(9)(!1)).push([
       e.i,
-      '/* #E5F0FF */ /* #E9F1FC */ /* #D9E3F2 */ /* 90% transparent version of motion-primary */ /* #FFFFFF */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 15% transparent version of black */ /* #575E75 */ /* 35% transparent version of motion-primary */ /* 15% transparent version of motion-primary */ /* opt-in theme overrides */ /* #FF661A */ /* #E64D00 */ /* #CF63CF */ /* #BD42BD */ /* #FFAB19 */ /* #FF8C1A */ /* #0FBD8C */ /* #0FBD8C */ /* #FF8C1A */ /* #FFB366 */ /* #FF8C1A */ /* 35% transparent version of extensions-primary */ /* opaque version of extensions-transparent, on white bg */ /* lighter than motion-primary */ .cloud-variable-badge_badge_2kZVK {\n    padding: 0.5rem;\n    margin: 5px 0 8px 0;\n    border: 1px solid #b9d6ff;\n    background-color: #dbebff;\n    display: flex;\n    flex-direction: column;\n    gap: 0.5rem;\n    border-radius: 0.5rem;\n} [theme="dark"] .cloud-variable-badge_badge_2kZVK {\n    border-color: #203652;\n    background-color: #16202c;\n} .cloud-variable-badge_title_2xJoL {\n    display: flex;\n    align-items: center;\n    gap: 0.5rem;\n    font-weight: bold;\n} [theme="dark"] .cloud-variable-badge_cloud-icon_1JP1e {\n    filter: invert(100%);\n} .cloud-variable-badge_servers_1fLAL {\n    display: flex;\n    gap: 0.5rem;\n    align-items: center;\n} .cloud-variable-badge_server_3s9y9 {\n    border: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    padding: 0.25rem 0.5rem;\n    margin: 0;\n    background: none;\n    border-radius: 1rem;\n} .cloud-variable-badge_server_3s9y9.cloud-variable-badge_selected_3ZyWW {\n    background-color: hsla(0, 100%, 65%, 1);\n    color: hsla(0, 100%, 100%, 1);\n}\n',
+      https://kakaomames.github.io/turbowarp/* #E5F0FF https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #E9F1FC https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #D9E3F2 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 90% transparent version of motion-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FFFFFF https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 25% transparent version of ui-white https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 25% transparent version of ui-white https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 25% transparent version of ui-white https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 15% transparent version of black https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #575E75 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 35% transparent version of motion-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 15% transparent version of motion-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* opt-in theme overrides https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FF661A https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #E64D00 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #CF63CF https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #BD42BD https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FFAB19 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FF8C1A https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #0FBD8C https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #0FBD8C https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FF8C1A https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FFB366 https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* #FF8C1A https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* 35% transparent version of extensions-primary https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* opaque version of extensions-transparent, on white bg https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/* lighter than motion-primary https://kakaomames.github.io/turbowarp/ .cloud-variable-badge_badge_2kZVK {\n    padding: 0.5rem;\n    margin: 5px 0 8px 0;\n    border: 1px solid #b9d6ff;\n    background-color: #dbebff;\n    display: flex;\n    flex-direction: column;\n    gap: 0.5rem;\n    border-radius: 0.5rem;\n} [theme="dark"] .cloud-variable-badge_badge_2kZVK {\n    border-color: #203652;\n    background-color: #16202c;\n} .cloud-variable-badge_title_2xJoL {\n    display: flex;\n    align-items: center;\n    gap: 0.5rem;\n    font-weight: bold;\n} [theme="dark"] .cloud-variable-badge_cloud-icon_1JP1e {\n    filter: invert(100%);\n} .cloud-variable-badge_servers_1fLAL {\n    display: flex;\n    gap: 0.5rem;\n    align-items: center;\n} .cloud-variable-badge_server_3s9y9 {\n    border: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    padding: 0.25rem 0.5rem;\n    margin: 0;\n    background: none;\n    border-radius: 1rem;\n} .cloud-variable-badge_server_3s9y9.cloud-variable-badge_selected_3ZyWW {\n    background-color: hsla(0, 100%, 65%, 1);\n    color: hsla(0, 100%, 100%, 1);\n}\n',
       "",
     ]),
       (t.locals = {
@@ -1884,7 +1884,7 @@ var GUI = (function (e) {
   279: function (e, t, n) {
     ((t = e.exports = n(9)(!1)).push([
       e.i,
-      '/* Base styles used by Scratch https://github.com/LLK/scratch-www/blob/develop/src/main.scss */\nh1,\nh2,\nh3,\nh4,\nh5,\np {\n    margin: 0;\n    padding: 0;\n    border: 0;\n}\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-weight: bold;\n    line-height: 1.7em;\n}\nh1 {\n    font-weight: 2.5rem;\n}\nh2 {\n    font-weight: 2rem;\n}\nh3 {\n    font-size: 1.4rem;\n}\nh4 {\n    font-size: 1rem;\n}\na {\n    color: #25d;\n    cursor: pointer;\n    text-decoration: underline;\n}\n.interface_container_2nBns {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n}\n.interface_editor_3jGyG {\n    min-width: 1024px;\n    min-height: 640px;\n    height: 100%;\n}\n.interface_editor_3jGyG .interface_center_2d9_b {\n    height: 100%;\n}\n.interface_player-only_38SyA .interface_center_2d9_b {\n    margin: auto;\n}\n.interface_menu_3K-Q2 {\n    margin-bottom: 8px;\n}\n.interface_section_3pFkT {\n    margin: 8px 0 8px 0;\n}\n.interface_footer_3JeCN {\n    padding: 10px 0;\n    margin-top: 10px;\n    border-top: 2px solid #ddd;\n}\n.interface_footer_3JeCN a {\n    font-weight: bold;\n    text-decoration: none;\n}\n[theme="dark"] .interface_footer_3JeCN {\n    border-color: #1a1a1a;\n}\n.interface_footer-content_1aIC- {\n    max-width: 600px;\n    margin: auto;\n}\n.interface_footer-text_IgwDU {\n    text-align: center;\n    margin: 5px 0 10px 0;\n}\n.interface_footer-columns_1SUSg {\n    display: flex;\n    justify-content: center;\n    justify-items: center;\n    flex-wrap: wrap;\n}\n.interface_footer-section_11lCO {\n    display: flex;\n    flex-direction: column;\n    width: 200px;\n    margin-bottom: 10px;\n}\n.interface_footer-section_11lCO > * {\n    margin-bottom: 10px;\n}\n[theme="dark"] .interface_container_2nBns {\n    background-color: #111;\n}\n[theme="dark"] .interface_player-only_38SyA {\n    color: #ddd;\n}\n[theme="dark"] a {\n    color: #4af;\n}\n.interface_infobox_1B2Hp {\n    line-height: 1.5em;\n    padding: 0.5rem;\n    margin: 5px 0 8px 0;\n    border-radius: 0.5rem;\n    border: 1px solid #b9d6ff;\n    background-color: #dbebff;\n}\n[theme="dark"] .interface_infobox_1B2Hp {\n    border-color: #203652;\n    background-color: #16202c;\n}\n.interface_infobox_1B2Hp p {\n    margin: 4px 0;\n}\n.interface_infobox_1B2Hp a {\n    font-weight: bold;\n    text-decoration: none;\n}\n.interface_unshared-update_i7deb {\n    border-color: #ffb9b9;\n    background-color: #ffdbdb;\n}\n[theme="dark"] .interface_unshared-update_i7deb {\n    border-color: #6a2929;\n    background-color: #452222;\n}\n',
+      https://kakaomames.github.io/turbowarp/* Base styles used by Scratch httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/LLhttps://kakaomames.github.io/turbowarp/scratch-wwhttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/develohttps://kakaomames.github.io/turbowarp/srhttps://kakaomames.github.io/turbowarp/main.scss https://kakaomames.github.io/turbowarp/\nh1,\nh2,\nh3,\nh4,\nh5,\np {\n    margin: 0;\n    padding: 0;\n    border: 0;\n}\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-weight: bold;\n    line-height: 1.7em;\n}\nh1 {\n    font-weight: 2.5rem;\n}\nh2 {\n    font-weight: 2rem;\n}\nh3 {\n    font-size: 1.4rem;\n}\nh4 {\n    font-size: 1rem;\n}\na {\n    color: #25d;\n    cursor: pointer;\n    text-decoration: underline;\n}\n.interface_container_2nBns {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n}\n.interface_editor_3jGyG {\n    min-width: 1024px;\n    min-height: 640px;\n    height: 100%;\n}\n.interface_editor_3jGyG .interface_center_2d9_b {\n    height: 100%;\n}\n.interface_player-only_38SyA .interface_center_2d9_b {\n    margin: auto;\n}\n.interface_menu_3K-Q2 {\n    margin-bottom: 8px;\n}\n.interface_section_3pFkT {\n    margin: 8px 0 8px 0;\n}\n.interface_footer_3JeCN {\n    padding: 10px 0;\n    margin-top: 10px;\n    border-top: 2px solid #ddd;\n}\n.interface_footer_3JeCN a {\n    font-weight: bold;\n    text-decoration: none;\n}\n[theme="dark"] .interface_footer_3JeCN {\n    border-color: #1a1a1a;\n}\n.interface_footer-content_1aIC- {\n    max-width: 600px;\n    margin: auto;\n}\n.interface_footer-text_IgwDU {\n    text-align: center;\n    margin: 5px 0 10px 0;\n}\n.interface_footer-columns_1SUSg {\n    display: flex;\n    justify-content: center;\n    justify-items: center;\n    flex-wrap: wrap;\n}\n.interface_footer-section_11lCO {\n    display: flex;\n    flex-direction: column;\n    width: 200px;\n    margin-bottom: 10px;\n}\n.interface_footer-section_11lCO > * {\n    margin-bottom: 10px;\n}\n[theme="dark"] .interface_container_2nBns {\n    background-color: #111;\n}\n[theme="dark"] .interface_player-only_38SyA {\n    color: #ddd;\n}\n[theme="dark"] a {\n    color: #4af;\n}\n.interface_infobox_1B2Hp {\n    line-height: 1.5em;\n    padding: 0.5rem;\n    margin: 5px 0 8px 0;\n    border-radius: 0.5rem;\n    border: 1px solid #b9d6ff;\n    background-color: #dbebff;\n}\n[theme="dark"] .interface_infobox_1B2Hp {\n    border-color: #203652;\n    background-color: #16202c;\n}\n.interface_infobox_1B2Hp p {\n    margin: 4px 0;\n}\n.interface_infobox_1B2Hp a {\n    font-weight: bold;\n    text-decoration: none;\n}\n.interface_unshared-update_i7deb {\n    border-color: #ffb9b9;\n    background-color: #ffdbdb;\n}\n[theme="dark"] .interface_unshared-update_i7deb {\n    border-color: #6a2929;\n    background-color: #452222;\n}\n',
       "",
     ]),
       (t.locals = {
@@ -2064,6 +2064,6 @@ var GUI = (function (e) {
   },
   97: function (e, t) {
     e.exports =
-      '/* GUI */\n:root {\n    background: #111;\n    color: #eee;\n    color-scheme: dark;\n    /* see colors.csss */\n    --ui-primary: rgb(17, 17, 17);\n    --ui-secondary: rgb(30, 30, 30);\n    --ui-tertiary: rgb(46, 46, 46);\n    --ui-modal-overlay: #333a;\n    --ui-black-transparent: rgba(255, 255, 255, 0.15);\n    --text-primary: #eee;\n    /* scratch-paint */\n    --paint-ui-pane-border: var(--ui-black-transparent);\n    --paint-text-primary: #eee;\n    --paint-form-border: var(--ui-black-transparent);\n}\n\n/* Blockly */\n.blocklySvg {\n    background-color: var(--ui-secondary) !important;\n    color-scheme: light;\n}\n[id^="blocklyGridPattern"] > line {\n    stroke: #484848;\n}\n.blocklyFlyoutBackground {\n    fill: #111;\n}\n.blocklyFlyoutLabelText {\n    fill: #ccc;\n}\n.blocklyFlyoutButton .blocklyText {\n    fill: #ccc;\n}\n.blocklyFlyoutButton:hover {\n    fill: #111;\n}\n/* blocklyFlyoutCheckboxPath stroke and blocklyFlyoutCheckbox fill must match */\n.blocklyFlyoutCheckboxPath {\n    stroke: #111;\n}\n.blocklyFlyoutCheckbox {\n    fill: #111;\n}\n.checked > .blocklyFlyoutCheckbox {\n    stroke: #a1c6fa;\n}\n.checked > .blocklyFlyoutCheckboxPath {\n    stroke: white;\n}\n.scratchCategoryMenu {\n    color: #ccc;\n}\n.blocklyToolboxDiv,\n.scratchCategoryMenu {\n    background: #111 !important;\n}\n.blocklyScrollbarHandle {\n    fill: #666;\n}\n.blocklyZoom {\n    filter: invert(100%);\n}\n.scratchCategoryMenuItem.categorySelected {\n    background: var(--ui-secondary);\n}\n.valueReportBox {\n    color: black;\n}\n.blocklyWidgetDiv {\n    color-scheme: light;\n}\n.blocklyWidgetDiv .goog-menu {\n    background: var(--ui-primary);\n    border-color: var(--ui-black-transparent);\n}\n.blocklyWidgetDiv .goog-menuitem {\n    color: var(--text-primary);\n}\n.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-content {\n    color: #666 !important;\n}\n.sa-blockly-menu-item-border {\n    border-top-color: var(--ui-black-transparent) !important;\n}\n.blocklyWidgetDiv .goog-menuitem.goog-menuitem-highlight {\n    background-color: var(--ui-tertiary);\n    border-color: transparent; /* remove border */\n}\n.scratchCommentText {\n    color: black;\n}\n.blocklyInsertionMarker > .blocklyPath {\n    fill: #ccc;\n}\n\n/* Other / Multipurpose */\n.Popover {\n    /* weird Chrome bug displays white bar above popovers with color-scheme: dark */\n    color-scheme: light;\n}\n.Popover-body {\n    background: var(--ui-secondary);\n    border-color: var(--ui-black-transparent);\n    color: var(--text-primary);\n}\n.Popover-tipShape {\n    fill: var(--ui-secondary);\n    stroke: var(--ui-black-transparent);\n}\n';
+      https://kakaomames.github.io/turbowarp/* GUI https://kakaomames.github.io/turbowarp/\n:root {\n    background: #111;\n    color: #eee;\n    color-scheme: dark;\n   https://kakaomames.github.io/turbowarp/* see colors.csss https://kakaomames.github.io/turbowarp/\n    --ui-primary: rgb(17, 17, 17);\n    --ui-secondary: rgb(30, 30, 30);\n    --ui-tertiary: rgb(46, 46, 46);\n    --ui-modal-overlay: #333a;\n    --ui-black-transparent: rgba(255, 255, 255, 0.15);\n    --text-primary: #eee;\n   https://kakaomames.github.io/turbowarp/* scratch-paint https://kakaomames.github.io/turbowarp/\n    --paint-ui-pane-border: var(--ui-black-transparent);\n    --paint-text-primary: #eee;\n    --paint-form-border: var(--ui-black-transparent);\n}\n\https://kakaomames.github.io/turbowarp/* Blockly https://kakaomames.github.io/turbowarp/\n.blocklySvg {\n    background-color: var(--ui-secondary) !important;\n    color-scheme: light;\n}\n[id^="blocklyGridPattern"] > line {\n    stroke: #484848;\n}\n.blocklyFlyoutBackground {\n    fill: #111;\n}\n.blocklyFlyoutLabelText {\n    fill: #ccc;\n}\n.blocklyFlyoutButton .blocklyText {\n    fill: #ccc;\n}\n.blocklyFlyoutButton:hover {\n    fill: #111;\n}\https://kakaomames.github.io/turbowarp/* blocklyFlyoutCheckboxPath stroke and blocklyFlyoutCheckbox fill must match https://kakaomames.github.io/turbowarp/\n.blocklyFlyoutCheckboxPath {\n    stroke: #111;\n}\n.blocklyFlyoutCheckbox {\n    fill: #111;\n}\n.checked > .blocklyFlyoutCheckbox {\n    stroke: #a1c6fa;\n}\n.checked > .blocklyFlyoutCheckboxPath {\n    stroke: white;\n}\n.scratchCategoryMenu {\n    color: #ccc;\n}\n.blocklyToolboxDiv,\n.scratchCategoryMenu {\n    background: #111 !important;\n}\n.blocklyScrollbarHandle {\n    fill: #666;\n}\n.blocklyZoom {\n    filter: invert(100%);\n}\n.scratchCategoryMenuItem.categorySelected {\n    background: var(--ui-secondary);\n}\n.valueReportBox {\n    color: black;\n}\n.blocklyWidgetDiv {\n    color-scheme: light;\n}\n.blocklyWidgetDiv .goog-menu {\n    background: var(--ui-primary);\n    border-color: var(--ui-black-transparent);\n}\n.blocklyWidgetDiv .goog-menuitem {\n    color: var(--text-primary);\n}\n.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-content {\n    color: #666 !important;\n}\n.sa-blockly-menu-item-border {\n    border-top-color: var(--ui-black-transparent) !important;\n}\n.blocklyWidgetDiv .goog-menuitem.goog-menuitem-highlight {\n    background-color: var(--ui-tertiary);\n    border-color: transparent;https://kakaomames.github.io/turbowarp/* remove border https://kakaomames.github.io/turbowarp/\n}\n.scratchCommentText {\n    color: black;\n}\n.blocklyInsertionMarker > .blocklyPath {\n    fill: #ccc;\n}\n\https://kakaomames.github.io/turbowarp/* Otherhttps://kakaomames.github.io/turbowarp/ Multipurpose https://kakaomames.github.io/turbowarp/\n.Popover {\n   https://kakaomames.github.io/turbowarp/* weird Chrome bug displays white bar above popovers with color-scheme: dark https://kakaomames.github.io/turbowarp/\n    color-scheme: light;\n}\n.Popover-body {\n    background: var(--ui-secondary);\n    border-color: var(--ui-black-transparent);\n    color: var(--text-primary);\n}\n.Popover-tipShape {\n    fill: var(--ui-secondary);\n    stroke: var(--ui-black-transparent);\n}\n';
   },
 });

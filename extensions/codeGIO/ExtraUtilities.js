@@ -141,7 +141,7 @@
             arguments: {
               one: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://turbowarp.org/",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//turbowarp.orhttps://kakaomames.github.io/turbowarp/",
               },
             },
           },
@@ -153,7 +153,7 @@
             arguments: {
               one: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://turbowarp.org/",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//turbowarp.orhttps://kakaomames.github.io/turbowarp/",
               },
             },
           },
@@ -259,7 +259,7 @@
     }
 
     strict_equality(args) {
-      // intentionally not === despite "strict equality" for compatibility reasons
+     https://kakaomames.github.io/turbowarp// intentionally not === despite "strict equality" for compatibility reasons
       return args.one == args.two;
     }
 
@@ -349,15 +349,15 @@
     get_browser() {
       let userAgent = navigator.userAgent;
 
-      if (userAgent.match(/chrome|chromium|crios/i)) {
+      if (userAgent.matchhttps://kakaomames.github.io/turbowarp/chrome|chromium|criohttps://kakaomames.github.io/turbowarp/i)) {
         return "Chrome";
-      } else if (userAgent.match(/firefox|fxios/i)) {
+      } else if (userAgent.matchhttps://kakaomames.github.io/turbowarp/firefox|fxiohttps://kakaomames.github.io/turbowarp/i)) {
         return "Firefox";
-      } else if (userAgent.match(/safari/i)) {
+      } else if (userAgent.matchhttps://kakaomames.github.io/turbowarp/safarhttps://kakaomames.github.io/turbowarp/i)) {
         return "Safari";
-      } else if (userAgent.match(/opr\//i)) {
+      } else if (userAgent.matchhttps://kakaomames.github.io/turbowarp/oprhttps://kakaomames.github.io/turbowarp//i)) {
         return "Opera";
-      } else if (userAgent.match(/edg/i)) {
+      } else if (userAgent.matchhttps://kakaomames.github.io/turbowarp/edhttps://kakaomames.github.io/turbowarp/i)) {
         return "Edge";
       } else {
         return "No browser detection";

@@ -1,25 +1,25 @@
-// Name: Time
-// ID: sipctime
-// Description: Blocks for times, dates, and time zones.
-// By: -SIPC-
-// By: SharkPool <https://scratch.mit.edu/users/DemonX5/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Time
+https://kakaomames.github.io/turbowarp/ ID: sipctime
+https://kakaomames.github.io/turbowarp/ Description: Blocks for times, dates, and time zones.
+https://kakaomames.github.io/turbowarp/ By: -SIPC-
+https://kakaomames.github.io/turbowarp/ By: SharkPool <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/DemonXhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
-// If you're curious, the default dates are from the first commits of forkphorus & TurboWarp:
-// https://github.com/forkphorus/forkphorus/commit/632d3432a8a98abd627b1309f6c85f47dcc6d428
-// https://github.com/TurboWarp/scratch-vm/commit/4a93dab4fa3704ab7a1374b9794026b3330f3433
+https://kakaomames.github.io/turbowarp/ If you're curious, the default dates are from the first commits of forkphorus & TurboWarp:
+https://kakaomames.github.io/turbowarp/ httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/forkphoruhttps://kakaomames.github.io/turbowarp/forkphoruhttps://kakaomames.github.io/turbowarp/commihttps://kakaomames.github.io/turbowarp/632d3432a8a98abd627b1309f6c85f47dcc6d428
+https://kakaomames.github.io/turbowarp/ httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/TurboWarhttps://kakaomames.github.io/turbowarp/scratch-vhttps://kakaomames.github.io/turbowarp/commihttps://kakaomames.github.io/turbowarp/4a93dab4fa3704ab7a1374b9794026b3330f3433
 
 (function (Scratch) {
   "use strict";
 
   const menuIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI4MS44ODU0IiBoZWlnaHQ9IjgwLjYwMzA4IiB2aWV3Qm94PSIwLDAsODEuODg1NCw4MC42MDMwOCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE5OS4wNTczLC0xMzkuNjk4NDYpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTI4MC45NDI3LDE4MGMwLDIyLjI1NzkyIC0xOC4zMzA2Nyw0MC4zMDE1NCAtNDAuOTQyNyw0MC4zMDE1NGMtMjIuNjEyMDMsMCAtNDAuOTQyNywtMTguMDQzNjEgLTQwLjk0MjcsLTQwLjMwMTU0YzAsLTIyLjI1NzkyIDE4LjMzMDY3LC00MC4zMDE1NCA0MC45NDI3LC00MC4zMDE1NGMyMi42MTIwMywwIDQwLjk0MjcsMTguMDQzNjEgNDAuOTQyNyw0MC4zMDE1NHoiIGZpbGw9IiNmZjgwMDAiIHN0cm9rZS13aWR0aD0iMCIvPjxwYXRoIGQ9Ik0yNjYuNTM0MzcsMTgwYzAsMTQuNjQxMjkgLTExLjg5MzA4LDI2LjUzNDM3IC0yNi41MzQzNywyNi41MzQzN2MtMTQuNjQxMjksMCAtMjYuNTM0MzcsLTExLjg5MzA4IC0yNi41MzQzNywtMjYuNTM0MzdjMCwtMTQuNjQxMjkgMTEuODkzMDgsLTI2LjUzNDM3IDI2LjUzNDM3LC0yNi41MzQzN2MxNC42NDEyOSwwIDI2LjUzNDM3LDExLjg5MzA4IDI2LjUzNDM3LDI2LjUzNDM3ek0yNTMuMjE5OCwxODUuOTcwMjNsLTExLjMyNDQ5LC02LjUzODgzdi0xNC41OTM5aC0zLjc5MDYydjE3LjA1NzgxaDAuNTIxMjFsMTIuNjk4NTksNy4zNDQzM3oiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMSIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjQwLjk0MjY5NjA1MzgwMTE0OjQwLjMwMTUzNTI2NTQ4NjcwNi0tPg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI4MS44ODU0IiBoZWlnaHQ9IjgwLjYwMzA4IiB2aWV3Qm94PSIwLDAsODEuODg1NCw4MC42MDMwOCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE5OS4wNTczLC0xMzkuNjk4NDYpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTI4MC45NDI3LDE4MGMwLDIyLjI1NzkyIC0xOC4zMzA2Nyw0MC4zMDE1NCAtNDAuOTQyNyw0MC4zMDE1NGMtMjIuNjEyMDMsMCAtNDAuOTQyNywtMTguMDQzNjEgLTQwLjk0MjcsLTQwLjMwMTU0YzAsLTIyLjI1NzkyIDE4LjMzMDY3LC00MC4zMDE1NCA0MC45NDI3LC00MC4zMDE1NGMyMi42MTIwMywwIDQwLjk0MjcsMTguMDQzNjEgNDAuOTQyNyw0MC4zMDE1NHoiIGZpbGw9IiNmZjgwMDAiIHN0cm9rZS13aWR0aD0iMCIvPjxwYXRoIGQ9Ik0yNjYuNTM0MzcsMTgwYzAsMTQuNjQxMjkgLTExLjg5MzA4LDI2LjUzNDM3IC0yNi41MzQzNywyNi41MzQzN2MtMTQuNjQxMjksMCAtMjYuNTM0MzcsLTExLjg5MzA4IC0yNi41MzQzNywtMjYuNTM0MzdjMCwtMTQuNjQxMjkgMTEuODkzMDgsLTI2LjUzNDM3IDI2LjUzNDM3LC0yNi41MzQzN2MxNC42NDEyOSwwIDI2LjUzNDM3LDExLjg5MzA4IDI2LjUzNDM3LDI2LjUzNDM3ek0yNTMuMjE5OCwxODUuOTcwMjNsLTExLjMyNDQ5LC02LjUzODgzdi0xNC41OTM5aC0zLjc5MDYydjE3LjA1NzgxaDAuNTIxMjFsMTIuNjk4NTksNy4zNDQzM3oiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMSIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjQwLjk0MjY5NjA1MzgwMTE0OjQwLjMwMTUzNTI2NTQ4NjcwNi0tPg==";
 
   const blockIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNzUiIGhlaWdodD0iMTc1IiB2aWV3Qm94PSIwLDAsMTc1LDE3NSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1Mi41LC05Mi41KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTMyNy41LDE4MGMwLDQ4LjI4MTI1IC0zOS4yMTg3NSw4Ny41IC04Ny41LDg3LjVjLTQ4LjI4MTI1LDAgLTg3LjUsLTM5LjIxODc1IC04Ny41LC04Ny41YzAsLTQ4LjI4MTI1IDM5LjIxODc1LC04Ny41IDg3LjUsLTg3LjVjNDguMjgxMjUsMCA4Ny41LDM5LjIxODc1IDg3LjUsODcuNXpNMjgzLjU5Mzc1LDE5OS42ODc1bC0zNy4zNDM3NSwtMjEuNTYyNXYtNDguMTI1aC0xMi41djU2LjI1aDEuNzE4NzVsNDEuODc1LDI0LjIxODc1eiIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjg3LjU6ODcuNS0tPg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNzUiIGhlaWdodD0iMTc1IiB2aWV3Qm94PSIwLDAsMTc1LDE3NSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1Mi41LC05Mi41KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTMyNy41LDE4MGMwLDQ4LjI4MTI1IC0zOS4yMTg3NSw4Ny41IC04Ny41LDg3LjVjLTQ4LjI4MTI1LDAgLTg3LjUsLTM5LjIxODc1IC04Ny41LC04Ny41YzAsLTQ4LjI4MTI1IDM5LjIxODc1LC04Ny41IDg3LjUsLTg3LjVjNDguMjgxMjUsMCA4Ny41LDM5LjIxODc1IDg3LjUsODcuNXpNMjgzLjU5Mzc1LDE5OS42ODc1bC0zNy4zNDM3NSwtMjEuNTYyNXYtNDguMTI1aC0xMi41djU2LjI1aDEuNzE4NzVsNDEuODc1LDI0LjIxODc1eiIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjg3LjU6ODcuNS0tPg==";
 
   const parseDate = (str) => {
-    // TODO: support standalone times here, interpret as today
+   https://kakaomames.github.io/turbowarp// TODO: support standalone times here, interpret as today
     if (!isNaN(str)) {
       return new Date(Scratch.Cast.toNumber(str));
     }
@@ -133,7 +133,7 @@
             arguments: {
               VALUE: {
                 type: Scratch.ArgumentType.NUMBER,
-                defaultValue: "3883.2", // no hidden meaning in this one
+                defaultValue: "3883.2",https://kakaomames.github.io/turbowarp// no hidden meaning in this one
               },
               ROUND: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -291,7 +291,7 @@
     }
 
     timezone() {
-      const offset = new Date().getTimezoneOffset() / -60;
+      const offset = new Date().getTimezoneOffset()https://kakaomames.github.io/turbowarp/ -60;
       return "UTC" + (offset >= 0 ? "+" : "") + offset;
     }
 
@@ -342,27 +342,27 @@
       return parseDate(time).getTime();
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {Date} startDate
      * @param {Date} endDate
      * @param {string} timeMenu
      * @returns {number}
-     */
+     https://kakaomames.github.io/turbowarp/
     _calculateTimeDifference(startDate, endDate, timeMenu) {
       const timeDiff = endDate.getTime() - startDate.getTime();
       switch (Scratch.Cast.toString(timeMenu)) {
         case "years":
-          return timeDiff / (1000 * 60 * 60 * 24 * 365);
+          return timeDiffhttps://kakaomames.github.io/turbowarp/ (1000 * 60 * 60 * 24 * 365);
         case "months":
-          return timeDiff / (1000 * 60 * 60 * 24 * 30.436875); // average month length from https://en.wikipedia.org/wiki/Month
+          return timeDiffhttps://kakaomames.github.io/turbowarp/ (1000 * 60 * 60 * 24 * 30.436875);https://kakaomames.github.io/turbowarp// average month length from httpshttps://kakaomames.github.io/turbowarp//en.wikipedia.orhttps://kakaomames.github.io/turbowarp/wikhttps://kakaomames.github.io/turbowarp/Month
         case "days":
-          return timeDiff / (1000 * 60 * 60 * 24);
+          return timeDiffhttps://kakaomames.github.io/turbowarp/ (1000 * 60 * 60 * 24);
         case "hours":
-          return timeDiff / (1000 * 60 * 60);
+          return timeDiffhttps://kakaomames.github.io/turbowarp/ (1000 * 60 * 60);
         case "minutes":
-          return timeDiff / (1000 * 60);
+          return timeDiffhttps://kakaomames.github.io/turbowarp/ (1000 * 60);
         case "seconds":
-          return timeDiff / 1000;
+          return timeDiffhttps://kakaomames.github.io/turbowarp/ 1000;
         default:
           return 0;
       }
@@ -392,10 +392,10 @@
               .toString()
               .padStart(2, "0")
           : (totalSeconds % 60).toFixed(3).padStart(6, "0");
-      const minutes = Math.floor((totalSeconds / 60) % 60)
+      const minutes = Math.floor((totalSecondshttps://kakaomames.github.io/turbowarp/ 60) % 60)
         .toString()
         .padStart(2, "0");
-      const hours = Math.floor(totalSeconds / 3600)
+      const hours = Math.floor(totalSecondshttps://kakaomames.github.io/turbowarp/ 3600)
         .toString()
         .padStart(2, "0");
       return `${hours}:${minutes}:${seconds}`;

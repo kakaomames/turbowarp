@@ -1,10 +1,10 @@
-// Name: Camera V2
-// ID: SPcamera
-// Description: Move the visible part of the stage.
-// By: SharkPool
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Camera V2
+https://kakaomames.github.io/turbowarp/ ID: SPcamera
+https://kakaomames.github.io/turbowarp/ Description: Move the visible part of the stage.
+https://kakaomames.github.io/turbowarp/ By: SharkPool
+https://kakaomames.github.io/turbowarp/ License: MIT
 
-// Version V.1.0.2
+https://kakaomames.github.io/turbowarp/ Version V.1.0.2
 
 (function (Scratch) {
   "use strict";
@@ -13,11 +13,11 @@
     throw new Error("Camera V2 must run unsandboxed!");
 
   const menuIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MSIgaGVpZ2h0PSI0MSIgdmlld0JveD0iMCAwIDQxIDQxIj48ZyBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTAgMjAuNUMwIDkuMTc4IDkuMTc4IDAgMjAuNSAwUzQxIDkuMTc4IDQxIDIwLjUgMzEuODIyIDQxIDIwLjUgNDEgMCAzMS44MjIgMCAyMC41IiBmaWxsPSIjMjg1MWM5Ii8+PHBhdGggZD0iTTIuMzc4IDIwLjVjMC0xMC4wMDkgOC4xMTMtMTguMTIyIDE4LjEyMi0xOC4xMjJTMzguNjIyIDEwLjQ5MSAzOC42MjIgMjAuNSAzMC41MDkgMzguNjIyIDIwLjUgMzguNjIyIDIuMzc4IDMwLjUwOSAyLjM3OCAyMC41IiBmaWxsPSIjNTE3YWY1Ii8+PHBhdGggZD0iTTMxLjg3MSAxNS4wMDdjLjA3My4xNDkuMTI5LjI4LjEyOS4yNDN2MTAuM2MwIC4yODMtLjIzMy41LS41LjVhLjMuMyAwIDAgMS0uMTQ2LS4wNTRsLS4wOTctLjA3NUwyNSAyMi4xNjd2Mi4yODNjMCAxLjk0Ny0xLjU5OCAzLjYtMy41IDMuNmgtOC45Yy0yLjAxNS0uMDg4LTMuNi0xLjY3My0zLjYtMy42di03LjljMC0yLjAyNCAxLjU3Ni0zLjYgMy42LTMuNmg4LjljMS45MzcgMCAzLjUgMS41OSAzLjUgMy42djIuMzJsNi4xNzItNGMuMjctLjE2Mi41NTQtLjEwNS43LjEzN3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MSIgaGVpZ2h0PSI0MSIgdmlld0JveD0iMCAwIDQxIDQxIj48ZyBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTAgMjAuNUMwIDkuMTc4IDkuMTc4IDAgMjAuNSAwUzQxIDkuMTc4IDQxIDIwLjUgMzEuODIyIDQxIDIwLjUgNDEgMCAzMS44MjIgMCAyMC41IiBmaWxsPSIjMjg1MWM5Ii8+PHBhdGggZD0iTTIuMzc4IDIwLjVjMC0xMC4wMDkgOC4xMTMtMTguMTIyIDE4LjEyMi0xOC4xMjJTMzguNjIyIDEwLjQ5MSAzOC42MjIgMjAuNSAzMC41MDkgMzguNjIyIDIwLjUgMzguNjIyIDIuMzc4IDMwLjUwOSAyLjM3OCAyMC41IiBmaWxsPSIjNTE3YWY1Ii8+PHBhdGggZD0iTTMxLjg3MSAxNS4wMDdjLjA3My4xNDkuMTI5LjI4LjEyOS4yNDN2MTAuM2MwIC4yODMtLjIzMy41LS41LjVhLjMuMyAwIDAgMS0uMTQ2LS4wNTRsLS4wOTctLjA3NUwyNSAyMi4xNjd2Mi4yODNjMCAxLjk0Ny0xLjU5OCAzLjYtMy41IDMuNmgtOC45Yy0yLjAxNS0uMDg4LTMuNi0xLjY3My0zLjYtMy42di03LjljMC0yLjAyNCAxLjU3Ni0zLjYgMy42LTMuNmg4LjljMS45MzcgMCAzLjUgMS41OSAzLjUgMy42djIuMzJsNi4xNzItNGMuMjctLjE2Mi41NTQtLjEwNS43LjEzN3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+";
   const rightArrow =
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIyLjY4IDEyLjJhMS42IDEuNiAwIDAgMS0xLjI3LjYzaC03LjY5YTEuNTkgMS41OSAwIDAgMS0xLjE2LTIuNThsMS4xMi0xLjQxYTQuODIgNC44MiAwIDAgMC0zLjE0LS43NyA0LjMgNC4zIDAgMCAwLTIgLjhBNC4yNSA0LjI1IDAgMCAwIDcuMiAxMC42YTUuMDYgNS4wNiAwIDAgMCAuNTQgNC42MkE1LjU4IDUuNTggMCAwIDAgMTIgMTcuNzRhMi4yNiAyLjI2IDAgMCAxLS4xNiA0LjUyQTEwLjI1IDEwLjI1IDAgMCAxIDMuNzQgMThhMTAuMTQgMTAuMTQgMCAwIDEtMS40OS05LjIyIDkuNyA5LjcgMCAwIDEgMi44My00LjE0QTkuOSA5LjkgMCAwIDEgOS42NiAyLjVhMTAuNjYgMTAuNjYgMCAwIDEgNy43MiAxLjY4bDEuMDgtMS4zNWExLjU3IDEuNTcgMCAwIDEgMS4yNC0uNiAxLjYgMS42IDAgMCAxIDEuNTQgMS4yMWwxLjcgNy4zN2ExLjU3IDEuNTcgMCAwIDEtLjI2IDEuMzkiIHN0eWxlPSJmaWxsOiMwMDA7b3BhY2l0eTouMiIvPjxwYXRoIGQ9Ik0yMS4zOCAxMS44M2gtNy42MWEuNTkuNTkgMCAwIDEtLjQzLTFsMS43NS0yLjE5YTUuOSA1LjkgMCAwIDAtNC43LTEuNTggNS4wNyA1LjA3IDAgMCAwLTQuMTEgMy4xN0E2IDYgMCAwIDAgNyAxNS43N2E2LjUxIDYuNTEgMCAwIDAgNSAyLjkyIDEuMzEgMS4zMSAwIDAgMS0uMDggMi42MiA5LjMgOS4zIDAgMCAxLTcuMzUtMy44MiA5LjE2IDkuMTYgMCAwIDEtMS40LTguMzdBOC41IDguNSAwIDAgMSA1LjcxIDUuNGE4Ljc2IDguNzYgMCAwIDEgNC4xMS0xLjkyIDkuNyA5LjcgMCAwIDEgNy43NSAyLjA3bDEuNjctMi4xYS41OS41OSAwIDAgMSAxIC4yMUwyMiAxMS4wOGEuNTkuNTkgMCAwIDEtLjYyLjc1IiBzdHlsZT0iZmlsbDojZmZmIi8+PC9zdmc+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIyLjY4IDEyLjJhMS42IDEuNiAwIDAgMS0xLjI3LjYzaC03LjY5YTEuNTkgMS41OSAwIDAgMS0xLjE2LTIuNThsMS4xMi0xLjQxYTQuODIgNC44MiAwIDAgMC0zLjE0LS43NyA0LjMgNC4zIDAgMCAwLTIgLjhBNC4yNSA0LjI1IDAgMCAwIDcuMiAxMC42YTUuMDYgNS4wNiAwIDAgMCAuNTQgNC42MkE1LjU4IDUuNTggMCAwIDAgMTIgMTcuNzRhMi4yNiAyLjI2IDAgMCAxLS4xNiA0LjUyQTEwLjI1IDEwLjI1IDAgMCAxIDMuNzQgMThhMTAuMTQgMTAuMTQgMCAwIDEtMS40OS05LjIyIDkuNyA5LjcgMCAwIDEgMi44My00LjE0QTkuOSA5LjkgMCAwIDEgOS42NiAyLjVhMTAuNjYgMTAuNjYgMCAwIDEgNy43MiAxLjY4bDEuMDgtMS4zNWExLjU3IDEuNTcgMCAwIDEgMS4yNC0uNiAxLjYgMS42IDAgMCAxIDEuNTQgMS4yMWwxLjcgNy4zN2ExLjU3IDEuNTcgMCAwIDEtLjI2IDEuMzkiIHN0eWxlPSJmaWxsOiMwMDA7b3BhY2l0eTouMiIvPjxwYXRoIGQ9Ik0yMS4zOCAxMS44M2gtNy42MWEuNTkuNTkgMCAwIDEtLjQzLTFsMS43NS0yLjE5YTUuOSA1LjkgMCAwIDAtNC43LTEuNTggNS4wNyA1LjA3IDAgMCAwLTQuMTEgMy4xN0E2IDYgMCAwIDAgNyAxNS43N2E2LjUxIDYuNTEgMCAwIDAgNSAyLjkyIDEuMzEgMS4zMSAwIDAgMS0uMDggMi42MiA5LjMgOS4zIDAgMCAxLTcuMzUtMy44MiA5LjE2IDkuMTYgMCAwIDEtMS40LTguMzdBOC41IDguNSAwIDAgMSA1LjcxIDUuNGE4Ljc2IDguNzYgMCAwIDEgNC4xMS0xLjkyIDkuNyA5LjcgMCAwIDEgNy43NSAyLjA3bDEuNjctMi4xYS41OS41OSAwIDAgMSAxIC4yMUwyMiAxMS4wOGEuNTkuNTkgMCAwIDEtLjYyLjc1IiBzdHlsZT0iZmlsbDojZmZmIi8+PC9zdmc+";
   const leftArrow =
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIwLjM0IDE4LjIxYTEwLjI0IDEwLjI0IDAgMCAxLTguMSA0LjIyIDIuMjYgMi4yNiAwIDAgMS0uMTYtNC41MiA1LjU4IDUuNTggMCAwIDAgNC4yNS0yLjUzIDUuMDYgNS4wNiAwIDAgMCAuNTQtNC42MkE0LjI1IDQuMjUgMCAwIDAgMTUuNTUgOWE0LjMgNC4zIDAgMCAwLTItLjggNC44MiA0LjgyIDAgMCAwLTMuMTUuOGwxLjEyIDEuNDFBMS41OSAxLjU5IDAgMCAxIDEwLjM2IDEzSDIuNjdhMS41NiAxLjU2IDAgMCAxLTEuMjYtLjYzQTEuNTQgMS41NCAwIDAgMSAxLjEzIDExbDEuNzItNy40M0ExLjU5IDEuNTkgMCAwIDEgNC4zOCAyLjRhMS41NyAxLjU3IDAgMCAxIDEuMjQuNkw2LjcgNC4zNWExMC42NiAxMC42NiAwIDAgMSA3LjcyLTEuNjhBOS45IDkuOSAwIDAgMSAxOSA0LjgxIDkuNiA5LjYgMCAwIDEgMjEuODMgOWExMC4wOCAxMC4wOCAwIDAgMS0xLjQ5IDkuMjEiIHN0eWxlPSJmaWxsOiMwMDA7b3BhY2l0eTouMiIvPjxwYXRoIGQ9Ik0xOS41NiAxNy42NWE5LjI5IDkuMjkgMCAwIDEtNy4zNSAzLjgzIDEuMzEgMS4zMSAwIDAgMS0uMDgtMi42MiA2LjUzIDYuNTMgMCAwIDAgNS0yLjkyIDYuMDUgNi4wNSAwIDAgMCAuNjctNS41MSA1LjMgNS4zIDAgMCAwLTEuNjQtMi4xNiA1LjIgNS4yIDAgMCAwLTIuNDgtMUE1Ljg2IDUuODYgMCAwIDAgOSA4Ljg0TDEwLjc0IDExYS41OS41OSAwIDAgMS0uNDMgMUgyLjdhLjYuNiAwIDAgMS0uNi0uNzVsMS43MS03LjQyYS41OS41OSAwIDAgMSAxLS4yMWwxLjY3IDIuMWE5LjcgOS43IDAgMCAxIDcuNzUtMi4wNyA4Ljg0IDguODQgMCAwIDEgNC4xMiAxLjkyIDguNyA4LjcgMCAwIDEgMi41NCAzLjcyIDkuMTQgOS4xNCAwIDAgMS0xLjMzIDguMzYiIHN0eWxlPSJmaWxsOiNmZmYiLz48L3N2Zz4=";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIwLjM0IDE4LjIxYTEwLjI0IDEwLjI0IDAgMCAxLTguMSA0LjIyIDIuMjYgMi4yNiAwIDAgMS0uMTYtNC41MiA1LjU4IDUuNTggMCAwIDAgNC4yNS0yLjUzIDUuMDYgNS4wNiAwIDAgMCAuNTQtNC42MkE0LjI1IDQuMjUgMCAwIDAgMTUuNTUgOWE0LjMgNC4zIDAgMCAwLTItLjggNC44MiA0LjgyIDAgMCAwLTMuMTUuOGwxLjEyIDEuNDFBMS41OSAxLjU5IDAgMCAxIDEwLjM2IDEzSDIuNjdhMS41NiAxLjU2IDAgMCAxLTEuMjYtLjYzQTEuNTQgMS41NCAwIDAgMSAxLjEzIDExbDEuNzItNy40M0ExLjU5IDEuNTkgMCAwIDEgNC4zOCAyLjRhMS41NyAxLjU3IDAgMCAxIDEuMjQuNkw2LjcgNC4zNWExMC42NiAxMC42NiAwIDAgMSA3LjcyLTEuNjhBOS45IDkuOSAwIDAgMSAxOSA0LjgxIDkuNiA5LjYgMCAwIDEgMjEuODMgOWExMC4wOCAxMC4wOCAwIDAgMS0xLjQ5IDkuMjEiIHN0eWxlPSJmaWxsOiMwMDA7b3BhY2l0eTouMiIvPjxwYXRoIGQ9Ik0xOS41NiAxNy42NWE5LjI5IDkuMjkgMCAwIDEtNy4zNSAzLjgzIDEuMzEgMS4zMSAwIDAgMS0uMDgtMi42MiA2LjUzIDYuNTMgMCAwIDAgNS0yLjkyIDYuMDUgNi4wNSAwIDAgMCAuNjctNS41MSA1LjMgNS4zIDAgMCAwLTEuNjQtMi4xNiA1LjIgNS4yIDAgMCAwLTIuNDgtMUE1Ljg2IDUuODYgMCAwIDAgOSA4Ljg0TDEwLjc0IDExYS41OS41OSAwIDAgMS0uNDMgMUgyLjdhLjYuNiAwIDAgMS0uNi0uNzVsMS43MS03LjQyYS41OS41OSAwIDAgMSAxLS4yMWwxLjY3IDIuMWE5LjcgOS43IDAgMCAxIDcuNzUtMi4wNyA4Ljg0IDguODQgMCAwIDEgNC4xMiAxLjkyIDguNyA4LjcgMCAwIDEgMi41NCAzLjcyIDkuMTQgOS4xNCAwIDAgMS0xLjMzIDguMzYiIHN0eWxlPSJmaWxsOiNmZmYiLz48L3N2Zz4=";
 
   const Cast = Scratch.Cast;
   const vm = Scratch.vm;
@@ -34,15 +34,15 @@
     precisionMode: false,
   };
 
-  // TODO add support for interpolation at some point
-  // we need a api to allow pushing interpolation data
+ https://kakaomames.github.io/turbowarp// TODO add support for interpolation at some point
+ https://kakaomames.github.io/turbowarp// we need a api to allow pushing interpolation data
   runtime.setInterpolation(false);
   runtime.runtimeOptions.fencing = false;
   render.offscreenTouching = true;
 
-  // custom gui
+ https://kakaomames.github.io/turbowarp// custom gui
   function openModal(titleName, func) {
-    // in a Button Context, ScratchBlocks always exists
+   https://kakaomames.github.io/turbowarp// in a Button Context, ScratchBlocks always exists
     ScratchBlocks.prompt(
       titleName,
       "",
@@ -52,8 +52,8 @@
     );
   }
 
-  // camera utils
-  const DEG_TO_RADIAN = Math.PI / 180;
+ https://kakaomames.github.io/turbowarp// camera utils
+  const DEG_TO_RADIAN = Math.PIhttps://kakaomames.github.io/turbowarp/ 180;
   const EPSILON = 1e-10;
 
   const applyEpsilon = (value) => (Math.abs(value) < EPSILON ? 0 : value);
@@ -85,7 +85,7 @@
       ogDir: 0,
       unalteredPosition: [drawable._position[0], drawable._position[1]],
       unalteredScale: {
-        // must be an object to prevent mutability
+       https://kakaomames.github.io/turbowarp// must be an object to prevent mutability
         x: drawable._scale[0],
         y: drawable._scale[1],
       },
@@ -98,8 +98,8 @@
       const invSin = Math.sin(invRads);
       const invCos = Math.cos(invRads);
 
-      const scaledX = xy[0] / applyEpsilon(camData.ogSZ);
-      const scaledY = xy[1] / applyEpsilon(camData.ogSZ);
+      const scaledX = xy[0]https://kakaomames.github.io/turbowarp/ applyEpsilon(camData.ogSZ);
+      const scaledY = xy[1]https://kakaomames.github.io/turbowarp/ applyEpsilon(camData.ogSZ);
 
       const invOffX = scaledX * invCos + scaledY * invSin;
       const invOffY = -scaledX * invSin + scaledY * invCos;
@@ -136,7 +136,7 @@
       unalteredScale: camSystem.unalteredScale,
     };
 
-    // invert camera transformations
+   https://kakaomames.github.io/turbowarp// invert camera transformations
     drawable.updateScale([
       camSystem.unalteredScale.x,
       camSystem.unalteredScale.y,
@@ -169,7 +169,7 @@
     runtime.requestRedraw();
   }
 
-  // camera system patches
+ https://kakaomames.github.io/turbowarp// camera system patches
   const ogPostSpriteInfo = vm.postSpriteInfo;
   vm.postSpriteInfo = function (data) {
     if (this._dragTarget && data.x !== undefined) {
@@ -184,8 +184,8 @@
 
   const ogPositionBubble = runtime.ext_scratch3_looks._positionBubble;
   runtime.ext_scratch3_looks._positionBubble = function (target) {
-    // Expand the Bubble Limits to a Infinite Stage size if the camera
-    // goes beyond the set stage size
+   https://kakaomames.github.io/turbowarp// Expand the Bubble Limits to a Infinite Stage size if the camera
+   https://kakaomames.github.io/turbowarp// goes beyond the set stage size
     const drawable = render._allDrawables[target.drawableID];
     if (!drawable[cameraSymbol]) setupState(drawable);
     const camSystem = allCameras[drawable[cameraSymbol].name];
@@ -233,7 +233,7 @@
     const thisCam = allCameras[camSystem.name];
     let shouldEmit = false;
     if (camSystem.needsRefresh) {
-      // invert camera transformations
+     https://kakaomames.github.io/turbowarp// invert camera transformations
       position[0] = camSystem.unalteredPosition[0];
       position[1] = camSystem.unalteredPosition[1];
     } else {
@@ -274,7 +274,7 @@
     const camSystem = this[cameraSymbol];
     const thisCam = allCameras[camSystem.name];
     if (camSystem.needsRefresh) {
-      // invert camera transformations
+     https://kakaomames.github.io/turbowarp// invert camera transformations
       direction += camSystem.ogDir;
     }
 
@@ -290,7 +290,7 @@
     const thisCam = allCameras[camSystem.name];
     let shouldEmit = false;
     if (camSystem.needsRefresh) {
-      // invert camera transformations
+     https://kakaomames.github.io/turbowarp// invert camera transformations
       scale[0] = camSystem.unalteredScale.x;
       scale[1] = camSystem.unalteredScale.y;
 
@@ -300,7 +300,7 @@
       camSystem.unalteredScale.y = scale[1];
     }
 
-    // avoid dividing 0 by 0
+   https://kakaomames.github.io/turbowarp// avoid dividing 0 by 0
     camSystem.ogSZ = thisCam.zoom;
     const safeZoom = thisCam.zoom || EPSILON;
     scale[0] *= safeZoom;
@@ -323,9 +323,9 @@
     if (isVisible && this._visible !== isVisible) {
       const camSystem = this[cameraSymbol];
 
-      // save some renderer calls, packing this all into one
-      // while running only when isVisible is true combines this
-      // into a single renderer call
+     https://kakaomames.github.io/turbowarp// save some renderer calls, packing this all into one
+     https://kakaomames.github.io/turbowarp// while running only when isVisible is true combines this
+     https://kakaomames.github.io/turbowarp// into a single renderer call
       this.updateProperties({
         position: camSystem.unalteredPosition,
         direction: this._direction + camSystem.ogDir,
@@ -335,8 +335,8 @@
     ogUpdateVisible.call(this, isVisible);
   };
 
-  // For certain projects that heavily rely on collisions, different camera zooms
-  // and transforms will cause buggy behaviour. Fix this with 'precisionMode'
+ https://kakaomames.github.io/turbowarp// For certain projects that heavily rely on collisions, different camera zooms
+ https://kakaomames.github.io/turbowarp// and transforms will cause buggy behaviour. Fix this with 'precisionMode'
   const ogTouchingDrawables = render.isTouchingDrawables;
   render.isTouchingDrawables = function (targetId, candidateIds) {
     const target = this._allDrawables[targetId];
@@ -351,7 +351,7 @@
 
     const modified = [];
 
-    // Normalize all requested drawables to a default state
+   https://kakaomames.github.io/turbowarp// Normalize all requested drawables to a default state
     const normalize = (drawable) => {
       const cam = drawable[cameraSymbol];
       if (!cam) return;
@@ -385,7 +385,7 @@
     try {
       return ogTouchingDrawables.call(this, targetId, candidateIds);
     } finally {
-      // Restore requested drawables back to their camera states
+     https://kakaomames.github.io/turbowarp// Restore requested drawables back to their camera states
       for (let i = 0; i < modified.length; i++) {
         const m = modified[i];
         const d = m.drawable;
@@ -403,13 +403,13 @@
     }
   };
 
-  // Clones should inherit the parents camera
+ https://kakaomames.github.io/turbowarp// Clones should inherit the parents camera
   const ogInitDrawable = vm.exports.RenderedTarget.prototype.initDrawable;
   vm.exports.RenderedTarget.prototype.initDrawable = function (layerGroup) {
     ogInitDrawable.call(this, layerGroup);
     if (this.isOriginal) return;
 
-    const parentSprite = this.sprite.clones[0]; // clone[0] is always the original
+    const parentSprite = this.sprite.clones[0];https://kakaomames.github.io/turbowarp// clone[0] is always the original
     const parentDrawable = render._allDrawables[parentSprite.drawableID];
     const name = parentDrawable[cameraSymbol]?.name ?? "default";
 
@@ -417,7 +417,7 @@
     bindDrawable(drawable, name);
   };
 
-  // Turbowarp Extension Storage
+ https://kakaomames.github.io/turbowarp// Turbowarp Extension Storage
   runtime.on("PROJECT_LOADED", () => {
     const stored = runtime.extensionStorage["SPcamera"];
     if (stored) {
@@ -467,7 +467,7 @@
             opcode: "unbindTarget",
             blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate("unbind [TARGET] from camera [CAMERA]"),
-            hideFromPalette: true, // deprecated, needed for compatibility
+            hideFromPalette: true,https://kakaomames.github.io/turbowarp// deprecated, needed for compatibility
             arguments: {
               TARGET: { type: Scratch.ArgumentType.STRING, menu: "OBJECTS" },
               CAMERA: { type: Scratch.ArgumentType.STRING, menu: "CAMERAS" },
@@ -600,7 +600,7 @@
             opcode: "setDirection",
             blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate("set [CAMERA] camera direction to [NUM]"),
-            hideFromPalette: true, // deprecated, needed for compatibility
+            hideFromPalette: true,https://kakaomames.github.io/turbowarp// deprecated, needed for compatibility
             arguments: {
               CAMERA: { type: Scratch.ArgumentType.STRING, menu: "CAMERAS" },
               NUM: { type: Scratch.ArgumentType.ANGLE, defaultValue: 90 },
@@ -649,7 +649,7 @@
             opcode: "getDirection",
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate("[CAMERA] camera direction"),
-            hideFromPalette: true, // deprecated, needed for compatibility
+            hideFromPalette: true,https://kakaomames.github.io/turbowarp// deprecated, needed for compatibility
             disableMonitor: true,
             arguments: {
               CAMERA: { type: Scratch.ArgumentType.STRING, menu: "CAMERAS" },
@@ -781,7 +781,7 @@
       };
     }
 
-    // Helper Funcs
+   https://kakaomames.github.io/turbowarp// Helper Funcs
     getObjects(includeAll) {
       const objectNames = [
         { text: Scratch.translate("myself"), value: "_myself_" },
@@ -804,7 +804,7 @@
           value: "_pen_",
         });
 
-      // Custom Drawable Layer (CST's 3D or Simple3D Exts for Example)
+     https://kakaomames.github.io/turbowarp// Custom Drawable Layer (CST's 3D or Simple3D Exts for Example)
       for (var i = 0; i < render._drawList.length; i++) {
         const drawableId = render._drawList[i];
         const drawable = render._allDrawables[drawableId];
@@ -816,7 +816,7 @@
         }
       }
 
-      // Sprites
+     https://kakaomames.github.io/turbowarp// Sprites
       const targets = runtime.targets;
       for (let i = 1; i < targets.length; i++) {
         const target = targets[i];
@@ -875,7 +875,7 @@
     removeCamera() {
       openModal(Scratch.translate("Remove Camera named:"), (name) => {
         if (name) {
-          if (name === "default") return; // never delete the placeholder
+          if (name === "default") return;https://kakaomames.github.io/turbowarp// never delete the placeholder
           delete allCameras[name];
           this.refreshBlocks();
         }
@@ -915,7 +915,7 @@
       ];
     }
 
-    // Block Funcs
+   https://kakaomames.github.io/turbowarp// Block Funcs
     bindTarget(args, util) {
       if (!allCameras[args.CAMERA]) return;
       const target = this.getTarget(args.TARGET, util);
@@ -931,11 +931,11 @@
     }
 
     unbindTarget(args, util) {
-      /* Deprecated, leave as is */
-      /*
+     https://kakaomames.github.io/turbowarp/* Deprecated, leave as is https://kakaomames.github.io/turbowarp/
+     https://kakaomames.github.io/turbowarp/*
         We cant unbind a target from the default camera,
         so this just becomes a duplicate bind block
-      */
+      https://kakaomames.github.io/turbowarp/
       this.bindTarget(
         {
           ...args,
@@ -957,15 +957,15 @@
       let color = args.COLOR;
       let alpha = 1;
 
-      // since cast doesnt handle alpha, we do it ourselves.
+     https://kakaomames.github.io/turbowarp// since cast doesnt handle alpha, we do it ourselves.
       if (typeof color === "string" && color.startsWith("#")) {
         if (color.length > 7) {
-          alpha = parseInt(color.substring(7), 16) / 255;
+          alpha = parseInt(color.substring(7), 16)https://kakaomames.github.io/turbowarp/ 255;
           color = color.substring(0, 7);
         }
       }
 
-      const rgb = Cast.toRgbColorList(color).map((c) => c / 255);
+      const rgb = Cast.toRgbColorList(color).map((c) => chttps://kakaomames.github.io/turbowarp/ 255);
       rgb.push(alpha);
 
       render.setBackgroundColor(...rgb);
@@ -981,7 +981,7 @@
       const decimal = (r << 16) + (g << 8) + b;
       let hex = decimal.toString(16).padStart(6, "0");
 
-      // If alpha is used, add it to the hex
+     https://kakaomames.github.io/turbowarp// If alpha is used, add it to the hex
       if (rgba[3] < 1) {
         const alpha = Math.round(rgba[3] * 255);
         hex += alpha.toString(16).padStart(2, "0");
@@ -1100,7 +1100,7 @@
       }
     }
     setDirection(args) {
-      /* Deprecated, leave as is */
+     https://kakaomames.github.io/turbowarp/* Deprecated, leave as is https://kakaomames.github.io/turbowarp/
       if (!allCameras[args.CAMERA]) return;
       allCameras[args.CAMERA].dir = Cast.toNumber(args.NUM) - 90;
       updateCamera(args.CAMERA);
@@ -1143,7 +1143,7 @@
       return 90 - allCameras[args.CAMERA].dir;
     }
     getDirection(args) {
-      /* Deprecated leave as is */
+     https://kakaomames.github.io/turbowarp/* Deprecated leave as is https://kakaomames.github.io/turbowarp/
       if (!allCameras[args.CAMERA]) return 0;
       return allCameras[args.CAMERA].dir + 90;
     }
@@ -1152,7 +1152,7 @@
       const camera = allCameras[args.CAMERA];
       if (!camera) return;
 
-      const zoom = Cast.toNumber(args.NUM) / 100;
+      const zoom = Cast.toNumber(args.NUM)https://kakaomames.github.io/turbowarp/ 100;
       if (isDirty(camera.zoom, zoom)) {
         camera.zoom = zoom;
         updateCamera(args.CAMERA);
@@ -1163,7 +1163,7 @@
       const camera = allCameras[args.CAMERA];
       if (!camera) return;
 
-      const zoom = Cast.toNumber(args.NUM) / 100;
+      const zoom = Cast.toNumber(args.NUM)https://kakaomames.github.io/turbowarp/ 100;
       if (zoom) {
         camera.zoom += zoom;
         updateCamera(args.CAMERA);

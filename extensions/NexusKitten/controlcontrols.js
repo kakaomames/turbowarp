@@ -1,8 +1,8 @@
-// Name: Control Controls
-// ID: nkcontrols
-// Description: Show and hide the project's controls.
-// By: NamelessCat <https://scratch.mit.edu/users/NexusKitten/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Control Controls
+https://kakaomames.github.io/turbowarp/ ID: nkcontrols
+https://kakaomames.github.io/turbowarp/ Description: Show and hide the project's controls.
+https://kakaomames.github.io/turbowarp/ By: NamelessCat <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/NexusKittehttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";

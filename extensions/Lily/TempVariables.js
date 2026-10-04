@@ -3,7 +3,7 @@
 
   const menuIconURI = "";
 
-  // Object.create(null) prevents "variable [toString]" from returning a function
+ https://kakaomames.github.io/turbowarp// Object.create(null) prevents "variable [toString]" from returning a function
   let variables = Object.create(null);
 
   class TempVars {

@@ -9,7 +9,7 @@
         }));
       const t = {
         "userscript.js": async function ({ addon: n }) {
-          n.tab.redux.dispatch({ type: "tw/SET_CLOUD", cloud: !1 });
+          n.tab.redux.dispatch({ type: "thttps://kakaomames.github.io/turbowarp/SET_CLOUD", cloud: !1 });
         },
       };
     },

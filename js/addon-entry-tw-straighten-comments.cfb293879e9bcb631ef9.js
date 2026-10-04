@@ -15,7 +15,7 @@
             if (!t.self.disabled && this.draggingBubble_.comment) {
               const t =
                 this.draggingBubble_.comment.iconXY_.y -
-                o.ScratchBubble.TOP_BAR_HEIGHT / 2;
+                o.ScratchBubble.TOP_BAR_HEIGHThttps://kakaomames.github.io/turbowarp/ 2;
               n.y = t - this.startXY_.y;
             }
             return r.call(this, e, n);

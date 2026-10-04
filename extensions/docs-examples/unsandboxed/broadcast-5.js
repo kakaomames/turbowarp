@@ -1,4 +1,4 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';
@@ -45,12 +45,12 @@
       };
     }
     broadcast({EVENT, TARGET}, util) {
-      // highlight-start
+     https://kakaomames.github.io/turbowarp// highlight-start
       const threads = util.startHats('broadcast5example_whenReceived', {
         EVENT_OPTION: EVENT
       });
       return `Started ${threads.length} new threads!`;
-      // highlight-end
+     https://kakaomames.github.io/turbowarp// highlight-end
     }
   }
   Scratch.extensions.register(new Broadcast5());

@@ -1,8 +1,8 @@
-// Name: More Events
-// ID: lmsMoreEvents
-// Description: Start your scripts in new ways.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: More Events
+https://kakaomames.github.io/turbowarp/ ID: lmsMoreEvents
+https://kakaomames.github.io/turbowarp/ Description: Start your scripts in new ways.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 (function (Scratch) {
   "use strict";
@@ -11,20 +11,20 @@
   const runtime = vm.runtime;
 
   const stopIcon =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAQlBMVEUAAAC/UFC8Q0OzTU24SEi4SEi3SEi4R0e4SEi4SEi4SEi4SEi7SUm8SUnMTk7MT0/OT0/PT0/gVVXiVVXsWVn///+CoOd2AAAAC3RSTlMAEBMUu7zLz9D8/dIXnJwAAAABYktHRBXl2PmjAAAAxklEQVRIx+3WwRKDIBAD0JWqVEOtWv7/W3twOqKwELzW3N9wYhORMMYiztgZUZMUAKxqmh5Kno/MG256nzI59Z2mB+BWH+XzUt5RhWoyQjFZkTQFkTBFERlCnAwlDoYUgaHFblpaeL86AK0MvNjMIABmT2cGIAAWniw3ucm/k9ovduEjXzgXtUfJmtrTt9VZzYH9FSB/xvfKZMsiLFmuko61zBTfucjL9RpXf6nEU2MhPxXS86J+kORmjz6V6seViOnG8oT7ApMcjsYZwhXCAAAAAElFTkSuQmCC";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAQlBMVEUAAAhttps://kakaomames.github.io/turbowarp/UFC8Q0OzTU24SEi4SEi3SEi4R0e4SEi4SEi4SEi4SEi7SUm8SUnMTk7MThttps://kakaomames.github.io/turbowarp/OThttps://kakaomames.github.io/turbowarp/PThttps://kakaomames.github.io/turbowarp/gVVXiVVXsWVhttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/+CoOd2AAAAC3RSTlMAEBMUu7zLz9Dhttps://kakaomames.github.io/turbowarp/dIXnJwAAAABYktHRBXl2PmjAAAAxklEQVRIx+3WwRKDIBAD0JWqVEOtWvhttps://kakaomames.github.io/turbowarp/W3twOqKwELzW3N9wYhORMMYiztgZUZMUAKxqmh5Knhttps://kakaomames.github.io/turbowarp/MG256nzI59Z2mB+BWH+XzUt5RhWoyQjFZkTQFkTBFERlCnAwlDoYUgaHFblpaeL86AK0MvNjMIABmT2cGIAAWniw3uchttps://kakaomames.github.io/turbowarp/k9ovduEjXzgXtUfJmtrTt9VZzYH9FShttps://kakaomames.github.io/turbowarp/xvfKZMsiLFmuko61zBTfucjL9RpXf6nEU2MhPxXS86J+kORmjz6V6seViOnG8oT7ApMcjsYZwhXCAAAAAElFTkSuQmCC";
 
-  // Source:
-  // https://github.com/TurboWarp/scratch-vm/blob/develop/src/io/keyboard.js
-  // https://github.com/TurboWarp/scratch-blocks/blob/develop/blocks_vertical/event.js
+ https://kakaomames.github.io/turbowarp// Source:
+ https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/TurboWarhttps://kakaomames.github.io/turbowarp/scratch-vhttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/develohttps://kakaomames.github.io/turbowarp/srhttps://kakaomames.github.io/turbowarp/ihttps://kakaomames.github.io/turbowarp/keyboard.js
+ https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/TurboWarhttps://kakaomames.github.io/turbowarp/scratch-blockhttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/develohttps://kakaomames.github.io/turbowarp/blocks_verticahttps://kakaomames.github.io/turbowarp/event.js
   const validKeyboardInputs = [
-    // Special Inputs
+   https://kakaomames.github.io/turbowarp// Special Inputs
     { text: "space", value: "space" },
     { text: "up arrow", value: "up arrow" },
     { text: "down arrow", value: "down arrow" },
     { text: "right arrow", value: "right arrow" },
     { text: "left arrow", value: "left arrow" },
     { text: "enter", value: "enter" },
-    // TW: Extra Special Inputs
+   https://kakaomames.github.io/turbowarp// TW: Extra Special Inputs
     { text: "backspace", value: "backspace" },
     { text: "delete", value: "delete" },
     { text: "shift", value: "shift" },
@@ -37,7 +37,7 @@
     { text: "end", value: "end" },
     { text: "page up", value: "page up" },
     { text: "page down", value: "page down" },
-    // Letter Keyboard Inputs
+   https://kakaomames.github.io/turbowarp// Letter Keyboard Inputs
     { text: "a", value: "a" },
     { text: "b", value: "b" },
     { text: "c", value: "c" },
@@ -64,7 +64,7 @@
     { text: "x", value: "x" },
     { text: "y", value: "y" },
     { text: "z", value: "z" },
-    // Number Keyboard Inputs
+   https://kakaomames.github.io/turbowarp// Number Keyboard Inputs
     { text: "0", value: "0" },
     { text: "1", value: "1" },
     { text: "2", value: "2" },
@@ -106,8 +106,8 @@
     });
 
   const afterSave = () => {
-    // Wait until the next frame actually starts so that the actual file
-    // saving routine has a chance to finish before we starting running blocks.
+   https://kakaomames.github.io/turbowarp// Wait until the next frame actually starts so that the actual file
+   https://kakaomames.github.io/turbowarp// saving routine has a chance to finish before we starting running blocks.
     vm.runtime.once("BEFORE_EXECUTE", () => {
       vm.runtime.startHats("lmsMoreEvents_afterSave");
     });
@@ -123,7 +123,7 @@
 
   const originalSaveProjectSb3Stream = vm.saveProjectSb3Stream;
   vm.saveProjectSb3Stream = function (...args) {
-    // This is complicated because we need to return a stream object syncronously...
+   https://kakaomames.github.io/turbowarp// This is complicated because we need to return a stream object syncronously...
 
     let realStream = null;
     const queuedCalls = [];
@@ -153,8 +153,8 @@
       realStream = originalSaveProjectSb3Stream.apply(this, args);
 
       realStream.on("end", () => {
-        // Not sure how JSZip handles errors here, so we'll make sure not to break anything if
-        // afterSave somehow throws
+       https://kakaomames.github.io/turbowarp// Not sure how JSZip handles errors here, so we'll make sure not to break anything if
+       https://kakaomames.github.io/turbowarp// afterSave somehow throws
         try {
           afterSave();
         } catch (e) {
@@ -175,7 +175,7 @@
 
   class MoreEvents {
     constructor() {
-      // Stop Sign Clicked contributed by @CST1229
+     https://kakaomames.github.io/turbowarp// Stop Sign Clicked contributed by @CST1229
       runtime.shouldExecuteStopClicked = true;
       runtime.on("BEFORE_EXECUTE", () => {
         runTimer++;
@@ -280,9 +280,9 @@
             isEdgeActivated: false,
             arguments: {
               INPUT: {
-                // Intentional:
-                // Encourages people to place a block
-                // (as opposed to typing a value)
+               https://kakaomames.github.io/turbowarp// Intentional:
+               https://kakaomames.github.io/turbowarp// Encourages people to place a block
+               https://kakaomames.github.io/turbowarp// (as opposed to typing a value)
                 type: null,
               },
             },
@@ -412,7 +412,7 @@
           },
           {
             blockType: Scratch.BlockType.XML,
-            xml: '<block type="lmsMoreEvents_broadcastToTarget"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="lmsMoreEvents_menu_targetMenu"></shadow></value></block><block type="lmsMoreEvents_broadcastToTargetAndWait"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="lmsMoreEvents_menu_targetMenu"></shadow></value></block><sep gap="36"/><block type="lmsMoreEvents_broadcastData"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="DATA"><shadow type="text"></shadow></value></block><block type="lmsMoreEvents_broadcastDataAndWait"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="DATA"><shadow type="text"></shadow></value></block>',
+            xml: '<block type="lmsMoreEvents_broadcastToTarget"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="lmsMoreEvents_menu_targetMenu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="lmsMoreEvents_broadcastToTargetAndWait"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="lmsMoreEvents_menu_targetMenu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><sep gap="36https://kakaomames.github.io/turbowarp/><block type="lmsMoreEvents_broadcastData"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="DATA"><shadow type="text">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="lmsMoreEvents_broadcastDataAndWait"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="DATA"><shadow type="text">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>',
           },
           {
             opcode: "receivedData",
@@ -471,7 +471,7 @@
           },
           {
             blockType: Scratch.BlockType.XML,
-            xml: '<block type="lmsMoreEvents_broadcastDataToTarget"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="lmsMoreEvents_menu_targetMenu"></shadow></value><value name="DATA"><shadow type="text"></shadow></value></block><block type="lmsMoreEvents_broadcastDataToTargetAndWait"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="lmsMoreEvents_menu_targetMenu"></shadow></value><value name="DATA"><shadow type="text"></shadow></value></block>',
+            xml: '<block type="lmsMoreEvents_broadcastDataToTarget"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="lmsMoreEvents_menu_targetMenu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="DATA"><shadow type="text">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="lmsMoreEvents_broadcastDataToTargetAndWait"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="lmsMoreEvents_menu_targetMenu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="DATA"><shadow type="text">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>',
           },
           "---",
           {
@@ -492,7 +492,7 @@
           },
         ],
         menus: {
-          // Targets have acceptReporters: true
+         https://kakaomames.github.io/turbowarp// Targets have acceptReporters: true
           targetMenu: {
             acceptReporters: true,
             items: "_getTargets",
@@ -501,7 +501,7 @@
             acceptReporters: true,
             items: validKeyboardInputs,
           },
-          // Attributes have acceptReporters: false
+         https://kakaomames.github.io/turbowarp// Attributes have acceptReporters: false
           action: {
             acceptReporters: false,
             items: [
@@ -528,12 +528,12 @@
               },
             ],
           },
-          // This menu is unused, however we can't remove it as that could break projects
-          // that use the menu through the All Menus extension.
+         https://kakaomames.github.io/turbowarp// This menu is unused, however we can't remove it as that could break projects
+         https://kakaomames.github.io/turbowarp// that use the menu through the All Menus extension.
           state: {
             acceptReporters: false,
             items: [
-              // Unused, so don't bother translating
+             https://kakaomames.github.io/turbowarp// Unused, so don't bother translating
               "enabled",
               "disabled",
             ],
@@ -747,7 +747,7 @@
       if (spriteNames.length > 0) {
         return spriteNames;
       } else {
-        return [{ text: "", value: 0 }]; //this should never happen but it's a failsafe
+        return [{ text: "", value: 0 }];https://kakaomames.github.io/turbowarp//this should never happen but it's a failsafe
       }
     }
   }

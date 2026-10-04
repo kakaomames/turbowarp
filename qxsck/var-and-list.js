@@ -1,8 +1,8 @@
-// Name: Variable and list
-// ID: qxsckvarandlist
-// Description: More blocks related to variables and lists.
-// By: qxsck <https://scratch.mit.edu/users/qxsck/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Variable and list
+https://kakaomames.github.io/turbowarp/ ID: qxsckvarandlist
+https://kakaomames.github.io/turbowarp/ Description: More blocks related to variables and lists.
+https://kakaomames.github.io/turbowarp/ By: qxsck <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/qxschttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -361,7 +361,7 @@
       return JSON.stringify(serialized);
     }
     clearList(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const variable = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST),
         "list"
@@ -371,7 +371,7 @@
       }
     }
     deleteOfList(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const variable = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST),
         "list"
@@ -391,7 +391,7 @@
       }
     }
     addValueInList(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const variable = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST),
         "list"
@@ -402,7 +402,7 @@
       }
     }
     replaceOfList(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const variable = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST),
         "list"
@@ -420,7 +420,7 @@
       }
     }
     getIndexOfList(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const variable = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST),
         "list"
@@ -435,7 +435,7 @@
       return 0;
     }
     getIndexesOfList(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const variable = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST),
         "list"
@@ -452,7 +452,7 @@
       return "0";
     }
     length(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const variable = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST),
         "list"
@@ -463,7 +463,7 @@
       return 0;
     }
     listContains(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const variable = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST),
         "list"
@@ -477,7 +477,7 @@
       return false;
     }
     copyList(args, util) {
-      /** @type {VM.ListVariable} */
+     https://kakaomames.github.io/turbowarp/** @type {VM.ListVariable} https://kakaomames.github.io/turbowarp/
       const list1 = util.target.lookupVariableByNameAndType(
         Scratch.Cast.toString(args.LIST1),
         "list"

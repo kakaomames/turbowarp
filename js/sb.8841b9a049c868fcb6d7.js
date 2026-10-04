@@ -157,7 +157,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "иарбанзаалакь %1 -и %2 -и рыбжьара  ",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -240,7 +240,7 @@
           SOUND_CHANGEEFFECTBY: "иԥсахтәуп  %1 аеффект %2 ала  ",
           SOUND_CLEAREFFECTS: "иқәгатәуп абжьы аеффектқәа",
           SOUND_EFFECTS_PITCH: "атемп",
-          SOUND_EFFECTS_PAN: "абжьгара армарахь/арӷьарахь",
+          SOUND_EFFECTS_PAN: "абжьгара армарахhttps://kakaomames.github.io/turbowarp/арӷьарахь",
           SOUND_CHANGEVOLUMEBY: "иԥсахтәуп абжьы %1 ала ",
           SOUND_SETVOLUMETO: "иқәыргылатәуп абжьы адура %1%",
           SOUND_VOLUME: "абжьы адура",
@@ -446,7 +446,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "kies ewekansige %1 tot %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -529,7 +529,7 @@
           SOUND_CHANGEEFFECTBY: "verander %1 effek met %2",
           SOUND_CLEAREFFECTS: "verwyder klank effekte",
           SOUND_EFFECTS_PITCH: "toonhoogte",
-          SOUND_EFFECTS_PAN: "swenk links/regs",
+          SOUND_EFFECTS_PAN: "swenk linkhttps://kakaomames.github.io/turbowarp/regs",
           SOUND_CHANGEVOLUMEBY: "verander volume met %1",
           SOUND_SETVOLUMETO: "stel volume op %1%",
           SOUND_VOLUME: "volume",
@@ -819,7 +819,7 @@
           SOUND_CHANGEEFFECTBY: "غيِّر مؤثر %1 بمقدار %2",
           SOUND_CLEAREFFECTS: "أزل المؤثرات الصوتية",
           SOUND_EFFECTS_PITCH: "طبقة الصوت",
-          SOUND_EFFECTS_PAN: "توزيع الصوت يسار/يمين",
+          SOUND_EFFECTS_PAN: "توزيع الصوت يساhttps://kakaomames.github.io/turbowarp/يمين",
           SOUND_CHANGEVOLUMEBY: "غيِّر شدة الصوت بمقدار %1",
           SOUND_SETVOLUMETO: "اجعل شدّة الصوت مساويةً %1%",
           SOUND_VOLUME: "شدة الصوت",
@@ -1024,7 +1024,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 እስከ %2 በራንደም ምረጥ",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -1107,7 +1107,7 @@
           SOUND_CHANGEEFFECTBY: "%1ን ተጽኖ በ%2 ለውጥ",
           SOUND_CLEAREFFECTS: "የድምጽ ተጽኖዎች አጽዳ",
           SOUND_EFFECTS_PITCH: "ፒች",
-          SOUND_EFFECTS_PAN: "ሸብልል ወደ ግራ/ቀኝ",
+          SOUND_EFFECTS_PAN: "ሸብልል ወደ ግhttps://kakaomames.github.io/turbowarp/ቀኝ",
           SOUND_CHANGEVOLUMEBY: "ድምጽ ቀይር በ%1",
           SOUND_SETVOLUMETO: "ድምጽ ወደ %1% ለውጥ",
           SOUND_VOLUME: "የድምጽ መጠን",
@@ -1312,7 +1312,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "numero aleatorio entre %1 y %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -1395,7 +1395,7 @@
           SOUND_CHANGEEFFECTBY: "sumar %2 a l'efecto %1",
           SOUND_CLEAREFFECTS: "sacar efectos de son",
           SOUND_EFFECTS_PITCH: "tono",
-          SOUND_EFFECTS_PAN: "balanz zurda/dreita",
+          SOUND_EFFECTS_PAN: "balanz zurdhttps://kakaomames.github.io/turbowarp/dreita",
           SOUND_CHANGEVOLUMEBY: "cambiar volumen per %1",
           SOUND_SETVOLUMETO: "fixar volumen a %1%",
           SOUND_VOLUME: "volumen",
@@ -1601,7 +1601,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "al debalu de %1 a %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -1684,7 +1684,7 @@
           SOUND_CHANGEEFFECTBY: "cambiar l'efectu %1 por %2",
           SOUND_CLEAREFFECTS: "esborrar efeutos de soníu",
           SOUND_EFFECTS_PITCH: "tonu",
-          SOUND_EFFECTS_PAN: "panéu izquierda/drecha",
+          SOUND_EFFECTS_PAN: "panéu izquierdhttps://kakaomames.github.io/turbowarp/drecha",
           SOUND_CHANGEVOLUMEBY: "cambiar volume por %1",
           SOUND_SETVOLUMETO: "poner volume a %1%",
           SOUND_VOLUME: "volume",
@@ -1891,7 +1891,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 və %2 arasında təsadüfi seç",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -1974,7 +1974,7 @@
           SOUND_CHANGEEFFECTBY: "%1 effektini %2 qədər dəyiş",
           SOUND_CLEAREFFECTS: "səs effektlərini təmizlə",
           SOUND_EFFECTS_PITCH: "kökləmək",
-          SOUND_EFFECTS_PAN: "tas sol/sağ",
+          SOUND_EFFECTS_PAN: "tas sohttps://kakaomames.github.io/turbowarp/sağ",
           SOUND_CHANGEVOLUMEBY: "səs ucalığını %1 qədər dəyiş",
           SOUND_SETVOLUMETO: "səs ucalığını %1% təyin et",
           SOUND_VOLUME: "səsin yüksəkliyi",
@@ -2180,7 +2180,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "pilih acak dari %1 hingga %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -2263,7 +2263,7 @@
           SOUND_CHANGEEFFECTBY: "ubah efek %1 sebesar %2",
           SOUND_CLEAREFFECTS: "hapus semua efek suara",
           SOUND_EFFECTS_PITCH: "nada",
-          SOUND_EFFECTS_PAN: "pan kiri/kanan",
+          SOUND_EFFECTS_PAN: "pan kirhttps://kakaomames.github.io/turbowarp/kanan",
           SOUND_CHANGEVOLUMEBY: "ubah volume sebesar %1",
           SOUND_SETVOLUMETO: "atur volume ke %1%",
           SOUND_VOLUME: "volume",
@@ -2470,7 +2470,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 থেকে %2 এর মধ্যে যেকোনটি বাছাই কর",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -2553,7 +2553,7 @@
           SOUND_CHANGEEFFECTBY: "%1 এর ইফেক্ট %2 পরিবর্তন কর",
           SOUND_CLEAREFFECTS: "শব্দ ইফেক্ট মুছে ফেল",
           SOUND_EFFECTS_PITCH: "pitch",
-          SOUND_EFFECTS_PAN: "pan left/right",
+          SOUND_EFFECTS_PAN: "pan lefhttps://kakaomames.github.io/turbowarp/right",
           SOUND_CHANGEVOLUMEBY: "শব্দের মাত্রা %1 পরিবর্তন কর",
           SOUND_SETVOLUMETO: "শব্দের মাত্রা %1% নির্ধারণ কর",
           SOUND_VOLUME: "শব্দের মাত্রা",
@@ -2760,7 +2760,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "выдаць выпадковы лік ад %1 да %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -2843,7 +2843,7 @@
           SOUND_CHANGEEFFECTBY: "змяніць %1 эфект на %2",
           SOUND_CLEAREFFECTS: "прыбраць гукавыя эфекты",
           SOUND_EFFECTS_PITCH: "вышыня гуку",
-          SOUND_EFFECTS_PAN: "рух налева/направа",
+          SOUND_EFFECTS_PAN: "рух налевhttps://kakaomames.github.io/turbowarp/направа",
           SOUND_CHANGEVOLUMEBY: "змяніць гучнасць на %1",
           SOUND_SETVOLUMETO: "устанавіць гучнасць %1%",
           SOUND_VOLUME: "гучнасць",
@@ -2996,7 +2996,7 @@
           LOOKS_GOTOFRONTBACK: "отиди до слой %1",
           LOOKS_GOTOFRONTBACK_FRONT: "отпред",
           LOOKS_GOTOFRONTBACK_BACK: "отзад",
-          LOOKS_GOFORWARDBACKWARDLAYERS: "премини %1 с %2 слой/я",
+          LOOKS_GOFORWARDBACKWARDLAYERS: "премини %1 с %2 слоhttps://kakaomames.github.io/turbowarp/я",
           LOOKS_GOFORWARDBACKWARDLAYERS_FORWARD: "напред",
           LOOKS_GOFORWARDBACKWARDLAYERS_BACKWARD: "назад",
           LOOKS_BACKDROPNUMBERNAME: "декор %1",
@@ -3049,7 +3049,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "избери случайно от %1 до %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -3064,7 +3064,7 @@
           OPERATORS_LETTEROF_APPLE: "а",
           OPERATORS_LENGTH: "дължина на %1",
           OPERATORS_CONTAINS: "%1 съдържа %2?",
-          OPERATORS_MOD: "остатък от %1 / %2",
+          OPERATORS_MOD: "остатък от %1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_ROUND: "закръгли %1",
           OPERATORS_MATHOP: "%1 от %2",
           OPERATORS_MATHOP_ABS: "абсолютна стойност",
@@ -3114,7 +3114,7 @@
           SENSING_OF_BACKDROPNUMBER: "декор #",
           SENSING_OF_BACKDROPNAME: "име на декор",
           SENSING_OF_STAGE: "Сцена",
-          SENSING_CURRENT: "текущ/а %1",
+          SENSING_CURRENT: "текуhttps://kakaomames.github.io/turbowarp/а %1",
           SENSING_CURRENT_YEAR: "година",
           SENSING_CURRENT_MONTH: "месец",
           SENSING_CURRENT_DATE: "дата",
@@ -3132,7 +3132,7 @@
           SOUND_CHANGEEFFECTBY: "промени ефект %1  с %2",
           SOUND_CLEAREFFECTS: "премахни звуковите ефекти",
           SOUND_EFFECTS_PITCH: "промяна на тона",
-          SOUND_EFFECTS_PAN: "ляво/дясно",
+          SOUND_EFFECTS_PAN: "лявhttps://kakaomames.github.io/turbowarp/дясно",
           SOUND_CHANGEVOLUMEBY: "промени силата на звука с %1",
           SOUND_SETVOLUMETO: "задай сила на звука %1%",
           SOUND_VOLUME: "сила на звука",
@@ -3339,7 +3339,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "nombre a l'atzar entre %1 i %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -3422,7 +3422,7 @@
           SOUND_CHANGEEFFECTBY: "augmenta l'efecte %1 en %2",
           SOUND_CLEAREFFECTS: "treu els efectes sonors",
           SOUND_EFFECTS_PITCH: "pitch",
-          SOUND_EFFECTS_PAN: "pan esquerra/dreta",
+          SOUND_EFFECTS_PAN: "pan esquerrhttps://kakaomames.github.io/turbowarp/dreta",
           SOUND_CHANGEVOLUMEBY: "puja %1 el volum",
           SOUND_SETVOLUMETO: "fixa el volum a %1%",
           SOUND_VOLUME: "volum",
@@ -3628,7 +3628,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "náhodné číslo od %1 do %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -3711,7 +3711,7 @@
           SOUND_CHANGEEFFECTBY: "změň efekt %1 o %2",
           SOUND_CLEAREFFECTS: "zruš zvukové efekty",
           SOUND_EFFECTS_PITCH: "poloha",
-          SOUND_EFFECTS_PAN: "stereo vlevo/vpravo",
+          SOUND_EFFECTS_PAN: "stereo vlevhttps://kakaomames.github.io/turbowarp/vpravo",
           SOUND_CHANGEVOLUMEBY: "změň hlasitost o %1",
           SOUND_SETVOLUMETO: "nastav hlasitost na %1%",
           SOUND_VOLUME: "hlasitost",
@@ -3916,7 +3916,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "dewis ar hap %1 i %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -3999,7 +3999,7 @@
           SOUND_CHANGEEFFECTBY: "newid effaith %1 gan %2",
           SOUND_CLEAREFFECTS: "clirio effeithiau sain",
           SOUND_EFFECTS_PITCH: "traw",
-          SOUND_EFFECTS_PAN: "troi chwith/de",
+          SOUND_EFFECTS_PAN: "troi chwithttps://kakaomames.github.io/turbowarp/de",
           SOUND_CHANGEVOLUMEBY: "newid uchder sain gan %1",
           SOUND_SETVOLUMETO: "gosod lefel sain i %1%",
           SOUND_VOLUME: "lefel sain",
@@ -4206,7 +4206,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "vælg tilfældigt mellem %1 og %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -4289,7 +4289,7 @@
           SOUND_CHANGEEFFECTBY: "ændre effekt %1 med %2",
           SOUND_CLEAREFFECTS: "fjern lydeffekter",
           SOUND_EFFECTS_PITCH: "tonehøjde",
-          SOUND_EFFECTS_PAN: "balance venstre/højre",
+          SOUND_EFFECTS_PAN: "balance venstrhttps://kakaomames.github.io/turbowarp/højre",
           SOUND_CHANGEVOLUMEBY: "ændre lydstyrke med %1",
           SOUND_SETVOLUMETO: "sæt lydstyrke til %1%",
           SOUND_VOLUME: "lydstyrke",
@@ -4498,7 +4498,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "Zufallszahl von %1 bis %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -4581,7 +4581,7 @@
           SOUND_CHANGEEFFECTBY: "ändere Effekt %1 um %2",
           SOUND_CLEAREFFECTS: "schalte Klangeffekte aus",
           SOUND_EFFECTS_PITCH: "Höhe",
-          SOUND_EFFECTS_PAN: "Aussteuern links/rechts",
+          SOUND_EFFECTS_PAN: "Aussteuern linkhttps://kakaomames.github.io/turbowarp/rechts",
           SOUND_CHANGEVOLUMEBY: "ändere Lautstärke um %1",
           SOUND_SETVOLUMETO: "setze Lautstärke auf %1%",
           SOUND_VOLUME: "Lautstärke",
@@ -4790,7 +4790,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "juhuarv %1 kuni %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -4873,7 +4873,7 @@
           SOUND_CHANGEEFFECTBY: "muuda efekti %1 %2 võrra",
           SOUND_CLEAREFFECTS: "vaigista heliefektid",
           SOUND_EFFECTS_PITCH: "helikõrgus",
-          SOUND_EFFECTS_PAN: "heli vasakul/paremal",
+          SOUND_EFFECTS_PAN: "heli vasakuhttps://kakaomames.github.io/turbowarp/paremal",
           SOUND_CHANGEVOLUMEBY: "muuda helitugevust %1 võrra",
           SOUND_SETVOLUMETO: "võta helitugevuseks %1%",
           SOUND_VOLUME: "helitugevus",
@@ -5078,7 +5078,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "επίλεξε τυχαίο %1 εώς %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -5161,7 +5161,7 @@
           SOUND_CHANGEEFFECTBY: "άλλαξε εφέ %1 κατά %2",
           SOUND_CLEAREFFECTS: "καθάρισε ηχητικά εφέ",
           SOUND_EFFECTS_PITCH: "τόνος",
-          SOUND_EFFECTS_PAN: "μετατόπιση αριστερά/δεξιά",
+          SOUND_EFFECTS_PAN: "μετατόπιση αριστερhttps://kakaomames.github.io/turbowarp/δεξιά",
           SOUND_CHANGEVOLUMEBY: "άλλαξε ένταση κατά %1",
           SOUND_SETVOLUMETO: "όρισε ένταση σε %1%",
           SOUND_VOLUME: "ένταση",
@@ -5367,7 +5367,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "pick random %1 to %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -5450,7 +5450,7 @@
           SOUND_CHANGEEFFECTBY: "change %1 effect by %2",
           SOUND_CLEAREFFECTS: "clear sound effects",
           SOUND_EFFECTS_PITCH: "pitch",
-          SOUND_EFFECTS_PAN: "pan left/right",
+          SOUND_EFFECTS_PAN: "pan lefhttps://kakaomames.github.io/turbowarp/right",
           SOUND_CHANGEVOLUMEBY: "change volume by %1",
           SOUND_SETVOLUMETO: "set volume to %1%",
           SOUND_VOLUME: "volume",
@@ -5656,7 +5656,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "número aleatorio entre %1 y %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -5739,7 +5739,7 @@
           SOUND_CHANGEEFFECTBY: "sumar al efecto %1 %2",
           SOUND_CLEAREFFECTS: "quitar efectos de sonido",
           SOUND_EFFECTS_PITCH: "altura",
-          SOUND_EFFECTS_PAN: "balance izquierda/derecha",
+          SOUND_EFFECTS_PAN: "balance izquierdhttps://kakaomames.github.io/turbowarp/derecha",
           SOUND_CHANGEVOLUMEBY: "cambiar volumen por %1",
           SOUND_SETVOLUMETO: "fijar volumen al %1%",
           SOUND_VOLUME: "volumen",
@@ -5946,7 +5946,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "elegir número al azar entre %1 y %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -6029,7 +6029,7 @@
           SOUND_CHANGEEFFECTBY: "cambiar efecto %1 en %2",
           SOUND_CLEAREFFECTS: "quitar efectos de sonido",
           SOUND_EFFECTS_PITCH: "tono",
-          SOUND_EFFECTS_PAN: "paneo izquierda/derecha",
+          SOUND_EFFECTS_PAN: "paneo izquierdhttps://kakaomames.github.io/turbowarp/derecha",
           SOUND_CHANGEVOLUMEBY: "cambiar volumen en %1",
           SOUND_SETVOLUMETO: "fijar volumen a %1%",
           SOUND_VOLUME: "volumen",
@@ -6235,7 +6235,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "hazarda numero inter %1 kaj %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -6318,7 +6318,7 @@
           SOUND_CHANGEEFFECTBY: "ŝanĝi efikon %1 je %2",
           SOUND_CLEAREFFECTS: "forigi sonojn",
           SOUND_EFFECTS_PITCH: "tonalto",
-          SOUND_EFFECTS_PAN: "aŭdigi maldekstre/dekstre",
+          SOUND_EFFECTS_PAN: "aŭdigi maldekstrhttps://kakaomames.github.io/turbowarp/dekstre",
           SOUND_CHANGEVOLUMEBY: "ŝanĝi laŭtecon je %1",
           SOUND_SETVOLUMETO: "agordi laŭtecon al %1%",
           SOUND_VOLUME: "laŭteco",
@@ -6526,7 +6526,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 eta %2 arteko ausazko balioa",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -6609,7 +6609,7 @@
           SOUND_CHANGEEFFECTBY: "aldatu %1 efektua %2 unitate",
           SOUND_CLEAREFFECTS: "kendu soinu-efektuak",
           SOUND_EFFECTS_PITCH: "tonua",
-          SOUND_EFFECTS_PAN: "ezker/eskuin balantzea",
+          SOUND_EFFECTS_PAN: "ezkehttps://kakaomames.github.io/turbowarp/eskuin balantzea",
           SOUND_CHANGEVOLUMEBY: "aldatu bolumena %1 unitate",
           SOUND_SETVOLUMETO: "ezarri bolumena: %1%",
           SOUND_VOLUME: "bolumena",
@@ -6815,7 +6815,7 @@
           OPERATORS_ADD: "%2 + %1",
           OPERATORS_SUBTRACT: "%2 - %1",
           OPERATORS_MULTIPLY: "%2 * %1",
-          OPERATORS_DIVIDE: "%2 / %1",
+          OPERATORS_DIVIDE: "%2https://kakaomames.github.io/turbowarp/ %1",
           OPERATORS_RANDOM: "انتخاب تصادفی بین %1 تا %2",
           OPERATORS_GT: "%2 < %1",
           OPERATORS_LT: "%2 > %1",
@@ -6898,7 +6898,7 @@
           SOUND_CHANGEEFFECTBY: "تغییر افکت %1 به اندازه %2 تا",
           SOUND_CLEAREFFECTS: "افکت‌های صدا را پاک کن",
           SOUND_EFFECTS_PITCH: "زیری یا بمی",
-          SOUND_EFFECTS_PAN: "پخش صدا از چپ/راست",
+          SOUND_EFFECTS_PAN: "پخش صدا از چhttps://kakaomames.github.io/turbowarp/راست",
           SOUND_CHANGEVOLUMEBY: "تغییر بلندی صدا به اندازه %1 تا",
           SOUND_SETVOLUMETO: "بلندی صدا % %1 شود",
           SOUND_VOLUME: "بلندی صدا",
@@ -7105,7 +7105,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "pumili ng kahit ano mula %1 hanggang %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -7188,7 +7188,7 @@
           SOUND_CHANGEEFFECTBY: "baguhin ang epektong %1 nang %2",
           SOUND_CLEAREFFECTS: "tanggalin lahat ng sound effects",
           SOUND_EFFECTS_PITCH: "tinis",
-          SOUND_EFFECTS_PAN: "i-pan kaliwa/kanan",
+          SOUND_EFFECTS_PAN: "i-pan kaliwhttps://kakaomames.github.io/turbowarp/kanan",
           SOUND_CHANGEVOLUMEBY: "palitan ang volume nang %1",
           SOUND_SETVOLUMETO: "itakda ang volume bilang %1%",
           SOUND_VOLUME: "volume",
@@ -7397,7 +7397,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "nombre aléatoire entre %1 et %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -7480,7 +7480,7 @@
           SOUND_CHANGEEFFECTBY: "ajouter %2 à l'effet %1",
           SOUND_CLEAREFFECTS: "annuler tous les effets sonores",
           SOUND_EFFECTS_PITCH: "hauteur",
-          SOUND_EFFECTS_PAN: "stéréo gauche/droite",
+          SOUND_EFFECTS_PAN: "stéréo gauchhttps://kakaomames.github.io/turbowarp/droite",
           SOUND_CHANGEVOLUMEBY: "ajouter %1 au volume",
           SOUND_SETVOLUMETO: "mettre le volume à %1%",
           SOUND_VOLUME: "volume",
@@ -7686,7 +7686,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "kies willekeurich %1 oant %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -7769,7 +7769,7 @@
           SOUND_CHANGEEFFECTBY: "feroarje %1 effekt mei %2",
           SOUND_CLEAREFFECTS: "opskjinje lûdseffekten",
           SOUND_EFFECTS_PITCH: "toanhichte",
-          SOUND_EFFECTS_PAN: "ferskowe links/rjochts",
+          SOUND_EFFECTS_PAN: "ferskowe linkhttps://kakaomames.github.io/turbowarp/rjochts",
           SOUND_CHANGEVOLUMEBY: "feroarje folume mei %1",
           SOUND_SETVOLUMETO: "stel folume yn op %1%",
           SOUND_VOLUME: "folume",
@@ -7977,7 +7977,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "uimhir randamach idir %1 agus %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -8060,7 +8060,7 @@
           SOUND_CHANGEEFFECTBY: "athraigh maisíocht %1 de %2",
           SOUND_CLEAREFFECTS: "glan na maisíochtaí fuaime",
           SOUND_EFFECTS_PITCH: "tuinairde",
-          SOUND_EFFECTS_PAN: "peanáil ar chlé/ar dheis",
+          SOUND_EFFECTS_PAN: "peanáil ar chlhttps://kakaomames.github.io/turbowarp/ar dheis",
           SOUND_CHANGEVOLUMEBY: "athraigh airde na fuaime de %1",
           SOUND_SETVOLUMETO: "socraigh airde na fuaime: %1%",
           SOUND_VOLUME: "airde",
@@ -8267,7 +8267,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 × %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "luach tuaireamach eadar %1 is %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -8350,7 +8350,7 @@
           SOUND_CHANGEEFFECTBY: "atharraich èifeachd %1 le %2",
           SOUND_CLEAREFFECTS: "falamhaich èifeachdan na fuaime",
           SOUND_EFFECTS_PITCH: "gleusa",
-          SOUND_EFFECTS_PAN: "panachaidh gu clì/deas",
+          SOUND_EFFECTS_PAN: "panachaidh gu clhttps://kakaomames.github.io/turbowarp/deas",
           SOUND_CHANGEVOLUMEBY: "atharraich àirde na fuaime le %1",
           SOUND_SETVOLUMETO: "suidhich àirde na fuaime air %1%",
           SOUND_VOLUME: "àirde na fuaime",
@@ -8394,7 +8394,7 @@
           VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE:
             "Tha caochladair air a bheil “%1” ann mu thràth airson caochladair eile dhen t-seòrsa “%2”.",
           DELETE_VARIABLE_CONFIRMATION:
-            "A bheil thu airson a sguabadh às dha %1 chleachdadh/cleachdaidhean dhen chaochladair “%2”?",
+            "A bheil thu airson a sguabadh às dha %1 chleachdadhttps://kakaomames.github.io/turbowarp/cleachdaidhean dhen chaochladair “%2”?",
           CANNOT_DELETE_VARIABLE_PROCEDURE:
             "Chan urrainn dhuinn an caochladair “%1” a sguabadh às on a e am broinn mìneachadh an fhoincsein “%2”",
           DELETE_VARIABLE: "Sguab às dha “%1”",
@@ -8559,7 +8559,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 – %2",
           OPERATORS_MULTIPLY: "%1 × %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "número ao chou entre %1 e %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -8642,7 +8642,7 @@
           SOUND_CHANGEEFFECTBY: "sumar ao efecto %1 o valor %2",
           SOUND_CLEAREFFECTS: "limpar os efectos de son",
           SOUND_EFFECTS_PITCH: "ton",
-          SOUND_EFFECTS_PAN: "canle esquerda/dereita",
+          SOUND_EFFECTS_PAN: "canle esquerdhttps://kakaomames.github.io/turbowarp/dereita",
           SOUND_CHANGEVOLUMEBY: "subir o volume en %1",
           SOUND_SETVOLUMETO: "pór o volume no %1%",
           SOUND_VOLUME: "volume",
@@ -8847,7 +8847,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 부터 %2 사이의 난수",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -8930,7 +8930,7 @@
           SOUND_CHANGEEFFECTBY: "%1 효과를 %2 만큼 바꾸기",
           SOUND_CLEAREFFECTS: "소리 효과 지우기",
           SOUND_EFFECTS_PITCH: "음 높이",
-          SOUND_EFFECTS_PAN: "음향 위치 왼쪽/오른쪽",
+          SOUND_EFFECTS_PAN: "음향 위치 왼https://kakaomames.github.io/turbowarp/오른쪽",
           SOUND_CHANGEVOLUMEBY: "음량을 %1 만큼 바꾸기",
           SOUND_SETVOLUMETO: "음량을 %1%로 정하기",
           SOUND_VOLUME: "음량",
@@ -9136,7 +9136,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2 ",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2 ",
           OPERATORS_RANDOM: "zaɓa a hargitse %1 zuwa %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -9219,7 +9219,7 @@
           SOUND_CHANGEEFFECTBY: "canza tsarin %1 da %2",
           SOUND_CLEAREFFECTS: "share tsarin sauti",
           SOUND_EFFECTS_PITCH: "tsarin sauti",
-          SOUND_EFFECTS_PAN: "fitar da sauti a hagu/dama",
+          SOUND_EFFECTS_PAN: "fitar da sauti a haghttps://kakaomames.github.io/turbowarp/dama",
           SOUND_CHANGEVOLUMEBY: "canza ƙarfin sauti da %1",
           SOUND_SETVOLUMETO: "saita ƙarfin sauti zuwa %1% ",
           SOUND_VOLUME: "ƙarfin sauti",
@@ -9427,7 +9427,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "պատահական թիվ՝ %1 -ից %2 -ը",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -9510,7 +9510,7 @@
           SOUND_CHANGEEFFECTBY: "փոխել %1 էֆեկտը %2 -ով",
           SOUND_CLEAREFFECTS: "մաքրել ձայնային էֆեկտները",
           SOUND_EFFECTS_PITCH: "խոսք",
-          SOUND_EFFECTS_PAN: "տարածում ձախ/աջ",
+          SOUND_EFFECTS_PAN: "տարածում ձաhttps://kakaomames.github.io/turbowarp/աջ",
           SOUND_CHANGEVOLUMEBY: "փոխել ձայնի բարձրությունը %1 -ով",
           SOUND_SETVOLUMETO: "ձայնը բարձրությունը՝ %1% ",
           SOUND_VOLUME: "ձայնը",
@@ -9717,7 +9717,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%2 - %1",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%2 / %1",
+          OPERATORS_DIVIDE: "%2https://kakaomames.github.io/turbowarp/ %1",
           OPERATORS_RANDOM: "בחר מספר אקראי בין %1 ל %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -9800,7 +9800,7 @@
           SOUND_CHANGEEFFECTBY: "שנה אפקט %1 ב %2",
           SOUND_CLEAREFFECTS: "נקה אפקטים קוליים",
           SOUND_EFFECTS_PITCH: "גובה צליל",
-          SOUND_EFFECTS_PAN: "ערוץ שמע שמאלי/ימני",
+          SOUND_EFFECTS_PAN: "ערוץ שמע שמאלhttps://kakaomames.github.io/turbowarp/ימני",
           SOUND_CHANGEVOLUMEBY: "שנה עוצמת קול ב %1",
           SOUND_SETVOLUMETO: "קבע עוצמת קול ל %1%",
           SOUND_VOLUME: "עוצמת קול",
@@ -10007,7 +10007,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "slučajan broj od %1 do %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -10090,7 +10090,7 @@
           SOUND_CHANGEEFFECTBY: "promijeni efekt %1 za %2",
           SOUND_CLEAREFFECTS: "očisti sve efekte zvuka",
           SOUND_EFFECTS_PITCH: "visina tona",
-          SOUND_EFFECTS_PAN: "kretanje lijevo/desno",
+          SOUND_EFFECTS_PAN: "kretanje lijevhttps://kakaomames.github.io/turbowarp/desno",
           SOUND_CHANGEVOLUMEBY: "promijeni glasnoću za %1",
           SOUND_SETVOLUMETO: "postavi glasnoću na %1%",
           SOUND_VOLUME: "glasnoća",
@@ -10296,7 +10296,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "khetha ngokungacwangciswanga %1 ku %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -10379,7 +10379,7 @@
           SOUND_CHANGEEFFECTBY: "tshintsha %1 ifuthe ngo %2",
           SOUND_CLEAREFFECTS: "ifuthe lesandi esicacileyo",
           SOUND_EFFECTS_PITCH: "inqanaba",
-          SOUND_EFFECTS_PAN: "bhala ekhohlo/ekunene",
+          SOUND_EFFECTS_PAN: "bhala ekhohlhttps://kakaomames.github.io/turbowarp/ekunene",
           SOUND_CHANGEVOLUMEBY: "guqula ubungakanani besandingo %1",
           SOUND_SETVOLUMETO: "lungiselela ubungakanani besandi ku %1%",
           SOUND_VOLUME: "ubungakanani besandi",
@@ -10522,7 +10522,7 @@
           LOOKS_CLEARGRAPHICEFFECTS: "sula imiphumela yokuqhafaza ",
           LOOKS_CHANGESIZEBY: "shintsha ubukhulu nge %1",
           LOOKS_SETSIZETO: "Lungisa ubukhulu ubuyise ku %1",
-          LOOKS_SIZE: "Isisindo / Ubukhulu ",
+          LOOKS_SIZE: "Isisindohttps://kakaomames.github.io/turbowarp/ Ubukhulu ",
           LOOKS_CHANGESTRETCHBY: "shinthsa ukwelula ngo %1",
           LOOKS_SETSTRETCHTO: "lungisa ukwelula ngo%1",
           LOOKS_SWITCHCOSTUMETO: "shintsha impahla iyeku %1",
@@ -10586,7 +10586,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "khetha noma ikuphi %1 kuya %2 ",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -10594,7 +10594,7 @@
           OPERATORS_AND: "%1 futhi %2",
           OPERATORS_OR: "%1 noma %2",
           OPERATORS_NOT: "hhayi %1",
-          OPERATORS_JOIN: "hlanganisa %1 %2 / xhuma/ bandakanya",
+          OPERATORS_JOIN: "hlanganisa %1 %2https://kakaomames.github.io/turbowarp/ xhumhttps://kakaomames.github.io/turbowarp/ bandakanya",
           OPERATORS_JOIN_APPLE: "aphula",
           OPERATORS_JOIN_BANANA: "bhanana ",
           OPERATORS_LETTEROF: "usonhlamvu %1  ka %2 ",
@@ -10621,14 +10621,14 @@
           PROCEDURES_DEFINITION: "chaza %1",
           SENSING_TOUCHINGOBJECT: "ethinta%1?",
           SENSING_TOUCHINGOBJECT_POINTER: "isikhombi se mouse",
-          SENSING_TOUCHINGOBJECT_EDGE: "umphetho / icele",
+          SENSING_TOUCHINGOBJECT_EDGE: "umphethohttps://kakaomames.github.io/turbowarp/ icele",
           SENSING_TOUCHINGCOLOR: "kuthinta umbala %1 ?",
           SENSING_COLORISTOUCHINGCOLOR: "umbala %1 uthinta %2?  ",
           SENSING_DISTANCETO: "ibanga eliya %1",
           SENSING_DISTANCETO_POINTER: "isikhombi se mouse",
           SENSING_ASKANDWAIT: "buza %1 futhi linda",
           SENSING_ASK_TEXT: "Ubani igama lakho?",
-          SENSING_ANSWER: "phendula / Impendulo ",
+          SENSING_ANSWER: "phendulahttps://kakaomames.github.io/turbowarp/ Impendulo ",
           SENSING_KEYPRESSED: "ukhiye %1 ucindezelwe?",
           SENSING_MOUSEDOWN: " phansi i mouse",
           SENSING_MOUSEX: "mouse x",
@@ -10637,7 +10637,7 @@
           SENSING_SETDRAGMODE_DRAGGABLE: "kuyahuduleka",
           SENSING_SETDRAGMODE_NOTDRAGGABLE: "akuhuduleki",
           SENSING_LOUDNESS: "ubukhulu bomsindo",
-          SENSING_LOUD: "kukhulu umsindo? / Umsindo uphezulu? ",
+          SENSING_LOUD: "kukhulu umsindo?https://kakaomames.github.io/turbowarp/ Umsindo uphezulu? ",
           SENSING_TIMER: "Isibali sikhathi",
           SENSING_RESETTIMER: "qalakabusha isibali sikhathi",
           SENSING_OF: "%1 kwa%2",
@@ -10668,7 +10668,7 @@
           SOUND_SETEFFECTO: "Lungisa %1 umthelela ngo %2",
           SOUND_CHANGEEFFECTBY: "Shintsha %1 womthelela ngo %2",
           SOUND_CLEAREFFECTS: "susa umthelela womsindo",
-          SOUND_EFFECTS_PITCH: "izinga elidlulele / iphimbo",
+          SOUND_EFFECTS_PITCH: "izinga elidlulelehttps://kakaomames.github.io/turbowarp/ iphimbo",
           SOUND_EFFECTS_PAN: "jikisa isinxele-nangakwesokudla",
           SOUND_CHANGEVOLUMEBY: "shintsha umsindo ngokuthi %1",
           SOUND_SETVOLUMETO: "lungisa inani lo msindo ukuze %1%",
@@ -10876,7 +10876,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "velja tölu á milli %1 og %2 af handahófi",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -10959,7 +10959,7 @@
           SOUND_CHANGEEFFECTBY: "breyta %1 áhrifunum um %2",
           SOUND_CLEAREFFECTS: "fjarlægja hljóðbreytingar",
           SOUND_EFFECTS_PITCH: "tónhæð",
-          SOUND_EFFECTS_PAN: "skima til vinstri/hægri",
+          SOUND_EFFECTS_PAN: "skima til vinstrhttps://kakaomames.github.io/turbowarp/hægri",
           SOUND_CHANGEVOLUMEBY: "breyta hljóðstyrk um %1",
           SOUND_SETVOLUMETO: "setja hljóðstyrk í  %1%",
           SOUND_VOLUME: "hljóðstyrkur",
@@ -11167,7 +11167,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "numero a caso tra %1 e %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -11251,7 +11251,7 @@
           SOUND_CHANGEEFFECTBY: "cambia effetto %1 di %2",
           SOUND_CLEAREFFECTS: "rimuovi effetti audio",
           SOUND_EFFECTS_PITCH: "frequenza",
-          SOUND_EFFECTS_PAN: "panning sinistra/destra",
+          SOUND_EFFECTS_PAN: "panning sinistrhttps://kakaomames.github.io/turbowarp/destra",
           SOUND_CHANGEVOLUMEBY: "cambia volume di %1",
           SOUND_SETVOLUMETO: "porta volume a %1%",
           SOUND_VOLUME: "volume",
@@ -11459,7 +11459,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1-%2",
           OPERATORS_MULTIPLY: "%1*%2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "შემთხვევითი %1დან %2მდე",
           OPERATORS_GT: "%1>%2",
           OPERATORS_LT: "%1<%2",
@@ -11542,7 +11542,7 @@
           SOUND_CHANGEEFFECTBY: "შეცვალე%1ეფექტი%2ით",
           SOUND_CLEAREFFECTS: "ხმის ეფექტების მოხსნა",
           SOUND_EFFECTS_PITCH: "ბგერის სიმაღლე",
-          SOUND_EFFECTS_PAN: "ხმა მარცხნიდან/მარჯვნიდან",
+          SOUND_EFFECTS_PAN: "ხმა მარცხნიდაhttps://kakaomames.github.io/turbowarp/მარჯვნიდან",
           SOUND_CHANGEVOLUMEBY: "შეცვლე ხმის სიმაღლე %1ით",
           SOUND_SETVOLUMETO: "ხმის სიმაღლე %1%",
           SOUND_VOLUME: "ხმის სიმაღლე",
@@ -11747,7 +11747,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 мен %2 аралығындағы кездейсоқ санды таңда",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -11830,7 +11830,7 @@
           SOUND_CHANGEEFFECTBY: "%1 әсерін %2ге өзерту",
           SOUND_CLEAREFFECTS: "дыбыс эффектерін жою",
           SOUND_EFFECTS_PITCH: "лақтыру",
-          SOUND_EFFECTS_PAN: "оң/сол қыздыру",
+          SOUND_EFFECTS_PAN: "оhttps://kakaomames.github.io/turbowarp/сол қыздыру",
           SOUND_CHANGEVOLUMEBY: "мәнін %1-ге өзгерту",
           SOUND_SETVOLUMETO: "дыбыс күштілігін %1% орнату",
           SOUND_VOLUME: "Дыбыс",
@@ -12037,7 +12037,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%2 - %1",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%2 / %1",
+          OPERATORS_DIVIDE: "%2https://kakaomames.github.io/turbowarp/ %1",
           OPERATORS_RANDOM: "mayqintapas akllay %1 kayman %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -12120,7 +12120,7 @@
           SOUND_CHANGEEFFECTBY: "tikray %1 imayna rikuriqninta kaywan %2",
           SOUND_CLEAREFFECTS: "pichay llapa tukachkaqta",
           SOUND_EFFECTS_PITCH: "luqyay",
-          SOUND_EFFECTS_PAN: "paniyay alliqman / ichuqman",
+          SOUND_EFFECTS_PAN: "paniyay alliqmanhttps://kakaomames.github.io/turbowarp/ ichuqman",
           SOUND_CHANGEVOLUMEBY: "tikray uyarinata %1",
           SOUND_SETVOLUMETO: "churay uyarinata %1%",
           SOUND_VOLUME: "ancha uyarina",
@@ -12330,7 +12330,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "chagua %1  yoyote hadi %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -12413,7 +12413,7 @@
           SOUND_CHANGEEFFECTBY: "badilisha athari ya %1 kwa %2",
           SOUND_CLEAREFFECTS: "futa athari zote za sauti",
           SOUND_EFFECTS_PITCH: "uzito wa sauti",
-          SOUND_EFFECTS_PAN: "peleka sauti kushoto/kulia",
+          SOUND_EFFECTS_PAN: "peleka sauti kushothttps://kakaomames.github.io/turbowarp/kulia",
           SOUND_CHANGEVOLUMEBY: "badilisha kiasi ya sauti kwa %1",
           SOUND_SETVOLUMETO: "weka kiasi ya sauti kuwa %1%",
           SOUND_VOLUME: "kiasi ya sauti",
@@ -12620,7 +12620,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "chwazi pa aza soti %1 rive %2 ",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -12703,7 +12703,7 @@
           SOUND_CHANGEEFFECTBY: "chanje efè %1 pa %2",
           SOUND_CLEAREFFECTS: "efase tout efè son yo",
           SOUND_EFFECTS_PITCH: "ton",
-          SOUND_EFFECTS_PAN: "voye sou bò goch/dwat",
+          SOUND_EFFECTS_PAN: "voye sou bò gochttps://kakaomames.github.io/turbowarp/dwat",
           SOUND_CHANGEVOLUMEBY: "chanje volim lan pa %1",
           SOUND_SETVOLUMETO: "fikse volim lan a %1%",
           SOUND_VOLUME: "volim",
@@ -12909,7 +12909,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM:
             "hejmareke ketoberî di navbera %1 - %2an de hilbijêre",
           OPERATORS_GT: "%1 > %2",
@@ -13199,7 +13199,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "هەڵبژاردنی هەڕەمەکی %1 بۆ %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -13282,7 +13282,7 @@
           SOUND_CHANGEEFFECTBY: "گۆڕینی %1 کاریگەری بە %2",
           SOUND_CLEAREFFECTS: "سڕینەوەی کاریگەرییەکانی دەنگ",
           SOUND_EFFECTS_PITCH: "بەرزی دەنگ",
-          SOUND_EFFECTS_PAN: "سوڕانەوە چەپ/ڕاست",
+          SOUND_EFFECTS_PAN: "سوڕانەوە چەhttps://kakaomames.github.io/turbowarp/ڕاست",
           SOUND_CHANGEVOLUMEBY: "گۆڕینی دەنگ بە %1",
           SOUND_SETVOLUMETO: "دانانی دانگ بە %1%",
           SOUND_VOLUME: "قەبارە",
@@ -13487,7 +13487,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "izvēlēties nejauši no %1 līdz %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -13570,7 +13570,7 @@
           SOUND_CHANGEEFFECTBY: "mainīt efektu %1 par %2",
           SOUND_CLEAREFFECTS: "notīrīt skaņas efektus",
           SOUND_EFFECTS_PITCH: "augstums",
-          SOUND_EFFECTS_PAN: "bīdīt pa labi/pa kreisi",
+          SOUND_EFFECTS_PAN: "bīdīt pa labhttps://kakaomames.github.io/turbowarp/pa kreisi",
           SOUND_CHANGEVOLUMEBY: "mainīt skaļumu par %1",
           SOUND_SETVOLUMETO: "iestatīt skaļumu uz %1%",
           SOUND_VOLUME: "skaļums",
@@ -13775,7 +13775,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "atsitiktinis sk. tarp %1 ir %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -13790,7 +13790,7 @@
           OPERATORS_LETTEROF_APPLE: "o",
           OPERATORS_LENGTH: "%1 ilgis",
           OPERATORS_CONTAINS: "ar %1 turi %2?",
-          OPERATORS_MOD: "%1 / %2 liekana",
+          OPERATORS_MOD: "%1https://kakaomames.github.io/turbowarp/ %2 liekana",
           OPERATORS_ROUND: "suapvalinta %1",
           OPERATORS_MATHOP: "%1 ( %2 )",
           OPERATORS_MATHOP_ABS: "teigiama reikšmė",
@@ -13858,7 +13858,7 @@
           SOUND_CHANGEEFFECTBY: "efektą %1 padidink %2",
           SOUND_CLEAREFFECTS: "pašalink garso efektus",
           SOUND_EFFECTS_PITCH: "garso aukštis",
-          SOUND_EFFECTS_PAN: "kairiau/dešiniau",
+          SOUND_EFFECTS_PAN: "kairiahttps://kakaomames.github.io/turbowarp/dešiniau",
           SOUND_CHANGEVOLUMEBY: "garsą padidink %1",
           SOUND_SETVOLUMETO: "garsumas = %1%",
           SOUND_VOLUME: "garsumas",
@@ -14064,7 +14064,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "véletlen %1 és %2 között",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -14079,7 +14079,7 @@
           OPERATORS_LETTEROF_APPLE: "a",
           OPERATORS_LENGTH: "%1 hossza",
           OPERATORS_CONTAINS: "%1 tartalmazza %2?",
-          OPERATORS_MOD: "%1 / %2 maradéka",
+          OPERATORS_MOD: "%1https://kakaomames.github.io/turbowarp/ %2 maradéka",
           OPERATORS_ROUND: "%1 kerekítve",
           OPERATORS_MATHOP: "%2 %1 értéke",
           OPERATORS_MATHOP_ABS: "abszolut értéke",
@@ -14147,7 +14147,7 @@
           SOUND_CHANGEEFFECTBY: "%1 hatás változzon %2",
           SOUND_CLEAREFFECTS: "hanghatások törlése",
           SOUND_EFFECTS_PITCH: "hangmagasság",
-          SOUND_EFFECTS_PAN: "pásztázás balra/jobbra",
+          SOUND_EFFECTS_PAN: "pásztázás balrhttps://kakaomames.github.io/turbowarp/jobbra",
           SOUND_CHANGEVOLUMEBY: "hangerő változzon %1",
           SOUND_SETVOLUMETO: "hangerő legyen %1%",
           SOUND_VOLUME: "hangerő",
@@ -14354,7 +14354,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "kōwhiria matapōkere %1 ki te %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -14437,7 +14437,7 @@
           SOUND_CHANGEEFFECTBY: "panonitia te rākeitanga %1 mā te %2",
           SOUND_CLEAREFFECTS: "ūkui rākeitanga orotaunaki",
           SOUND_EFFECTS_PITCH: "hauoro",
-          SOUND_EFFECTS_PAN: "huri whakatemauī/whakatekatau",
+          SOUND_EFFECTS_PAN: "huri whakatemauhttps://kakaomames.github.io/turbowarp/whakatekatau",
           SOUND_CHANGEVOLUMEBY: "panonitia te kahaoro mā te %1",
           SOUND_SETVOLUMETO: "tautuhia te kahaoro kia %1%",
           SOUND_VOLUME: "kahaoro",
@@ -14647,7 +14647,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1-ээс %2 хооронд санамсаргүй сонго",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -14730,7 +14730,7 @@
           SOUND_CHANGEEFFECTBY: "%1 эффектийг %2 нэгжээр өөрчил",
           SOUND_CLEAREFFECTS: "дууны нөлөөг арилга",
           SOUND_EFFECTS_PITCH: "авиа",
-          SOUND_EFFECTS_PAN: "pan зүүн/баруун",
+          SOUND_EFFECTS_PAN: "pan зүүhttps://kakaomames.github.io/turbowarp/баруун",
           SOUND_CHANGEVOLUMEBY: "дууны эрчийг %1 нэгжээр өөрчил",
           SOUND_SETVOLUMETO: "дууны эрчийг %1% болго",
           SOUND_VOLUME: "дууны эрч",
@@ -14939,7 +14939,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "willekeurig getal tussen %1 en %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -15022,7 +15022,7 @@
           SOUND_CHANGEEFFECTBY: "verander %1-effect met %2",
           SOUND_CLEAREFFECTS: "zet alle effecten uit",
           SOUND_EFFECTS_PITCH: "toonhoogte",
-          SOUND_EFFECTS_PAN: "kanaal links/rechts",
+          SOUND_EFFECTS_PAN: "kanaal linkhttps://kakaomames.github.io/turbowarp/rechts",
           SOUND_CHANGEVOLUMEBY: "verander volume met %1",
           SOUND_SETVOLUMETO: "zet volume op %1%",
           SOUND_VOLUME: "volume",
@@ -15231,7 +15231,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 から %2 までの乱数",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -15522,7 +15522,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 から %2 までのらんすう",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -15812,7 +15812,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "tilfeldig tall fra %1 til %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -16395,7 +16395,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "causida aleatòria de %1 de %2 ",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -16478,7 +16478,7 @@
           SOUND_CHANGEEFFECTBY: "cambiar %1 efièch per %2",
           SOUND_CLEAREFFECTS: "purgar los efièches de son",
           SOUND_EFFECTS_PITCH: "ton",
-          SOUND_EFFECTS_PAN: "equilibrar drecha/esquèrra",
+          SOUND_EFFECTS_PAN: "equilibrar drechhttps://kakaomames.github.io/turbowarp/esquèrra",
           SOUND_CHANGEVOLUMEBY: "cambiar volum per %1",
           SOUND_SETVOLUMETO: "reglar volum a %1%",
           SOUND_VOLUME: "volum",
@@ -16685,7 +16685,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 ରୁ %2 ପର୍ଯନ୍ତ ଯେକୌଣସି ସଂଖ୍ୟା ବାଛ",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -16819,12 +16819,12 @@
           PROCEDURE_DEFAULT_NAME: "ବ୍ଲକ ର ନାମ",
           PROCEDURE_USED:
             "ବ୍ଲକ ର ସଂଜ୍ଞା ବଦଳାଇବା ପାଇଁ ପ୍ରଥମେ ବ୍ଲକ ର ସବୁ ବ୍ୟବହାର ହଟାଅ",
-          NEW_LIST: "ସୂଚୀ ତିଆରି କର/",
-          NEW_LIST_TITLE: "ନୂଆ ସୂଚୀ ର ନାମ/",
+          NEW_LIST: "ସୂଚୀ ତିଆରି କhttps://kakaomames.github.io/turbowarp/",
+          NEW_LIST_TITLE: "ନୂଆ ସୂଚୀ ର ନାhttps://kakaomames.github.io/turbowarp/",
           LIST_MODAL_TITLE: "ନୂଆ ସୂଚୀ",
           LIST_ALREADY_EXISTS: '"%1" ନାମକ ଗୋଟିଏ ତାଲିକା ପୂର୍ବରୁ ଅବସ୍ଥିତ ଅଛି।',
           RENAME_LIST_TITLE: 'ସମସ୍ତ "%1" ତାଲିକାକୁ ପୁନଃନାମକରଣ କରନ୍ତୁ:',
-          RENAME_LIST_MODAL_TITLE: "ସୂଚୀ  ର ନାମ ବଦଳାଅ/",
+          RENAME_LIST_MODAL_TITLE: "ସୂଚୀ  ର ନାମ ବଦଳାhttps://kakaomames.github.io/turbowarp/",
           DEFAULT_LIST_ITEM: "ବସ୍ତୁ ",
           DELETE_LIST: '"%1" ତାଲିକାକୁ ଅପସାରଣ କରନ୍ତୁ',
           RENAME_LIST: "ସୂଚୀ  ର ନାମ ବଦଳାଅ",
@@ -16975,7 +16975,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 dan %2 gacha taxminiy",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -17264,7 +17264,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "เลือกสุ่มจาก %1 ถึง %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -17347,7 +17347,7 @@
           SOUND_CHANGEEFFECTBY: "เปลี่ยนเอฟเฟกต์ %1 ทีละ %2",
           SOUND_CLEAREFFECTS: "ล้างเอฟเฟกต์เสียง",
           SOUND_EFFECTS_PITCH: "เสียงสูงต่ำ",
-          SOUND_EFFECTS_PAN: "แพนเสียงซ้าย/ขวา",
+          SOUND_EFFECTS_PAN: "แพนเสียงซ้าhttps://kakaomames.github.io/turbowarp/ขวา",
           SOUND_CHANGEVOLUMEBY: "เปลี่ยนระดับเสียงทีละ %1",
           SOUND_SETVOLUMETO: "ตั้งระดับเสียงเป็น %1%",
           SOUND_VOLUME: "ระดับเสียง",
@@ -17553,7 +17553,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "យកតម្លៃចៃដន្យពី %1 ទៅ %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -17842,7 +17842,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "losuj liczbę od %1 do %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -17925,7 +17925,7 @@
           SOUND_CHANGEEFFECTBY: "zmień efekt %1 o %2",
           SOUND_CLEAREFFECTS: "usuń efekty dźwiękowe",
           SOUND_EFFECTS_PITCH: "płynność dźwięku",
-          SOUND_EFFECTS_PAN: "przesuń w lewo/prawo",
+          SOUND_EFFECTS_PAN: "przesuń w lewhttps://kakaomames.github.io/turbowarp/prawo",
           SOUND_CHANGEVOLUMEBY: "zmień głośność o %1",
           SOUND_SETVOLUMETO: "ustaw głośność na %1%",
           SOUND_VOLUME: "głośność",
@@ -18132,7 +18132,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 − %2",
           OPERATORS_MULTIPLY: "%1 × %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "um valor ao acaso entre %1 e %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -18215,7 +18215,7 @@
           SOUND_CHANGEEFFECTBY: "adiciona ao teu efeito %1 o valor %2",
           SOUND_CLEAREFFECTS: "cancela todos os teus efeitos sonoros",
           SOUND_EFFECTS_PITCH: "tom",
-          SOUND_EFFECTS_PAN: "canal esquerdo/direito",
+          SOUND_EFFECTS_PAN: "canal esquerdhttps://kakaomames.github.io/turbowarp/direito",
           SOUND_CHANGEVOLUMEBY: "adiciona %1 % ao teu volume",
           SOUND_SETVOLUMETO: "altera o teu volume para %1%",
           SOUND_VOLUME: "o volume",
@@ -18422,7 +18422,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "número aleatório entre %1 e %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -18505,7 +18505,7 @@
           SOUND_CHANGEEFFECTBY: "mude  %2 no efeito %1",
           SOUND_CLEAREFFECTS: "remova os efeitos sonoros ",
           SOUND_EFFECTS_PITCH: "tom",
-          SOUND_EFFECTS_PAN: "balanço esquerda/direita",
+          SOUND_EFFECTS_PAN: "balanço esquerdhttps://kakaomames.github.io/turbowarp/direita",
           SOUND_CHANGEVOLUMEBY: "mude volume em %1",
           SOUND_SETVOLUMETO: "mude o volume para %1%",
           SOUND_VOLUME: "volume",
@@ -18711,7 +18711,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "numera aleatorio i a %1 e %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -19000,7 +19000,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1  - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "alege aleator între %1 și %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -19083,7 +19083,7 @@
           SOUND_CHANGEEFFECTBY: "modifică efectul %1 cu %2",
           SOUND_CLEAREFFECTS: "șterge efectele audio",
           SOUND_EFFECTS_PITCH: "înălțimea sunetului",
-          SOUND_EFFECTS_PAN: "deplasare la stânga/dreapta",
+          SOUND_EFFECTS_PAN: "deplasare la stânghttps://kakaomames.github.io/turbowarp/dreapta",
           SOUND_CHANGEVOLUMEBY: "modifică volumul cu %1",
           SOUND_SETVOLUMETO: "setează volumul la %1%",
           SOUND_VOLUME: "volum",
@@ -19289,7 +19289,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "выдать случайное от %1 до %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -19372,7 +19372,7 @@
           SOUND_CHANGEEFFECTBY: "изменить %1 эффект на %2",
           SOUND_CLEAREFFECTS: "убрать звуковые эффекты",
           SOUND_EFFECTS_PITCH: "высота тона",
-          SOUND_EFFECTS_PAN: "звучание слева/справа",
+          SOUND_EFFECTS_PAN: "звучание слевhttps://kakaomames.github.io/turbowarp/справа",
           SOUND_CHANGEVOLUMEBY: "изменить громкость на %1",
           SOUND_SETVOLUMETO: "установить громкость %1%",
           SOUND_VOLUME: "громкость звука",
@@ -19579,7 +19579,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "kgetha ka go se hlaole %1 go ya go %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -19662,7 +19662,7 @@
           SOUND_CHANGEEFFECTBY: "fetola %1 khuetšo ka %2",
           SOUND_CLEAREFFECTS: "tloša khuetšo ya modumo",
           SOUND_EFFECTS_PITCH: "tlhabelelo",
-          SOUND_EFFECTS_PAN: "hwidinyetša go la nngele/la go ja",
+          SOUND_EFFECTS_PAN: "hwidinyetša go la nngelhttps://kakaomames.github.io/turbowarp/la go ja",
           SOUND_CHANGEVOLUMEBY: "fetola volume ka %1",
           SOUND_SETVOLUMETO: "bea volume go %1%",
           SOUND_VOLUME: "volume",
@@ -19874,7 +19874,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "tlhopha gongwe le gongwe %1 go %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -19957,7 +19957,7 @@
           SOUND_CHANGEEFFECTBY: "fetola %1 go simolola ka %2",
           SOUND_CLEAREFFECTS: "tlosa medumo e e simololang",
           SOUND_EFFECTS_PITCH: "segalo",
-          SOUND_EFFECTS_PAN: "letswela la molema/moja",
+          SOUND_EFFECTS_PAN: "letswela la molemhttps://kakaomames.github.io/turbowarp/moja",
           SOUND_CHANGEVOLUMEBY: "fetola maemo a modumo ka %1",
           SOUND_SETVOLUMETO: "dira maemo a modumo go %1%",
           SOUND_VOLUME: "maemo a modumo",
@@ -20167,7 +20167,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "náhodne od %1 do %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -20182,7 +20182,7 @@
           OPERATORS_LETTEROF_APPLE: "a",
           OPERATORS_LENGTH: "dĺžka %1",
           OPERATORS_CONTAINS: "%1 obsahuje %2?",
-          OPERATORS_MOD: "zvyšok %1 / %2",
+          OPERATORS_MOD: "zvyšok %1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_ROUND: "zaokrúhli %1",
           OPERATORS_MATHOP: "%1 z %2",
           OPERATORS_MATHOP_ABS: "abs",
@@ -20456,7 +20456,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "naključno število med %1 in %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -20539,7 +20539,7 @@
           SOUND_CHANGEEFFECTBY: "spremeni učinek %1 za %2",
           SOUND_CLEAREFFECTS: "izbriši zvočne učinke",
           SOUND_EFFECTS_PITCH: "višina tona",
-          SOUND_EFFECTS_PAN: "premik levo/desno",
+          SOUND_EFFECTS_PAN: "premik levhttps://kakaomames.github.io/turbowarp/desno",
           SOUND_CHANGEVOLUMEBY: "spremeni glasnost za %1",
           SOUND_SETVOLUMETO: "nastavi glasnost na %1%",
           SOUND_VOLUME: "glasnost",
@@ -20746,7 +20746,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "случајан број од %1 до %2 ",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -20829,7 +20829,7 @@
           SOUND_CHANGEEFFECTBY: "промени ефекат %1 за %2",
           SOUND_CLEAREFFECTS: "уклони звучне ефекте",
           SOUND_EFFECTS_PITCH: "висина тона",
-          SOUND_EFFECTS_PAN: "померање лево/десно",
+          SOUND_EFFECTS_PAN: "померање левhttps://kakaomames.github.io/turbowarp/десно",
           SOUND_CHANGEVOLUMEBY: "промени јачину звука за %1",
           SOUND_SETVOLUMETO: "нека јачина звука буде %1%",
           SOUND_VOLUME: "јачина звука",
@@ -21034,7 +21034,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "valitse satunnaisluku väliltä %1 – %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -21117,7 +21117,7 @@
           SOUND_CHANGEEFFECTBY: " lisää tehosteeseen %1 arvo %2",
           SOUND_CLEAREFFECTS: "poista ääniefektit",
           SOUND_EFFECTS_PITCH: "sävelkorkeus",
-          SOUND_EFFECTS_PAN: "panoroi vasen/oikea",
+          SOUND_EFFECTS_PAN: "panoroi vasehttps://kakaomames.github.io/turbowarp/oikea",
           SOUND_CHANGEVOLUMEBY: "lisää äänenvoimakkuutta arvolla %1",
           SOUND_SETVOLUMETO: "aseta äänenvoimakkuudeksi %1%",
           SOUND_VOLUME: "äänenvoimakkuus",
@@ -21323,7 +21323,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "slumptal %1 till %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -21406,7 +21406,7 @@
           SOUND_CHANGEEFFECTBY: "ändra %1 effekten med %2",
           SOUND_CLEAREFFECTS: "ta bort ljudeffekter",
           SOUND_EFFECTS_PITCH: "tonhöjd",
-          SOUND_EFFECTS_PAN: "panorera vänster/höger",
+          SOUND_EFFECTS_PAN: "panorera vänstehttps://kakaomames.github.io/turbowarp/höger",
           SOUND_CHANGEVOLUMEBY: "ändra volymen med %1",
           SOUND_SETVOLUMETO: "sätt volymen till %1%",
           SOUND_VOLUME: "volym ",
@@ -21614,7 +21614,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "lấy ngẫu nhiên từ %1 đến %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -21697,7 +21697,7 @@
           SOUND_CHANGEEFFECTBY: "thay đổi hiệu ứng %1 một lượng %2",
           SOUND_CLEAREFFECTS: "xóa hiệu ứng âm thanh",
           SOUND_EFFECTS_PITCH: "cao độ",
-          SOUND_EFFECTS_PAN: "pan trái/phải",
+          SOUND_EFFECTS_PAN: "pan tráhttps://kakaomames.github.io/turbowarp/phải",
           SOUND_CHANGEVOLUMEBY: "thay đổi âm lượng một lượng %1",
           SOUND_SETVOLUMETO: "đặt âm lượng %1%",
           SOUND_VOLUME: "âm lượng",
@@ -21902,7 +21902,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "%1 ile %2 arasında rastgele bir sayı seç",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -22191,7 +22191,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "випадкове від %1 до %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -22480,7 +22480,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "在 %1 和 %2 之间取随机数",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -22768,7 +22768,7 @@
           OPERATORS_ADD: "%1 + %2",
           OPERATORS_SUBTRACT: "%1 - %2",
           OPERATORS_MULTIPLY: "%1 * %2",
-          OPERATORS_DIVIDE: "%1 / %2",
+          OPERATORS_DIVIDE: "%1https://kakaomames.github.io/turbowarp/ %2",
           OPERATORS_RANDOM: "隨機取數 %1 到 %2",
           OPERATORS_GT: "%1 > %2",
           OPERATORS_LT: "%1 < %2",
@@ -22851,7 +22851,7 @@
           SOUND_CHANGEEFFECTBY: "聲音效果 %1 改變 %2",
           SOUND_CLEAREFFECTS: "聲音效果清除",
           SOUND_EFFECTS_PITCH: "音高",
-          SOUND_EFFECTS_PAN: "聲道左/右",
+          SOUND_EFFECTS_PAN: "聲道https://kakaomames.github.io/turbowarp/右",
           SOUND_CHANGEVOLUMEBY: "音量改變 %1",
           SOUND_SETVOLUMETO: "音量設為 %1%",
           SOUND_VOLUME: "音量",
@@ -23066,7 +23066,7 @@
         (i.Msg.OPERATORS_ADD = "%1 + %2"),
         (i.Msg.OPERATORS_SUBTRACT = "%1 - %2"),
         (i.Msg.OPERATORS_MULTIPLY = "%1 * %2"),
-        (i.Msg.OPERATORS_DIVIDE = "%1 / %2"),
+        (i.Msg.OPERATORS_DIVIDE = "%1https://kakaomames.github.io/turbowarp/ %2"),
         (i.Msg.OPERATORS_RANDOM = "pick random %1 to %2"),
         (i.Msg.OPERATORS_GT = "%1 > %2"),
         (i.Msg.OPERATORS_LT = "%1 < %2"),
@@ -23153,7 +23153,7 @@
         (i.Msg.SOUND_CHANGEEFFECTBY = "change %1 effect by %2"),
         (i.Msg.SOUND_CLEAREFFECTS = "clear sound effects"),
         (i.Msg.SOUND_EFFECTS_PITCH = "pitch"),
-        (i.Msg.SOUND_EFFECTS_PAN = "pan left/right"),
+        (i.Msg.SOUND_EFFECTS_PAN = "pan lefhttps://kakaomames.github.io/turbowarp/right"),
         (i.Msg.SOUND_CHANGEVOLUMEBY = "change volume by %1"),
         (i.Msg.SOUND_SETVOLUMETO = "set volume to %1%"),
         (i.Msg.SOUND_VOLUME = "volume"),
@@ -23328,8 +23328,8 @@
         (n.HSV_SATURATION = 0.45),
         (n.HSV_VALUE = 0.65),
         (n.SPRITE = { width: 96, height: 124, url: "sprites.png" }),
-        (n.SVG_NS = "http://www.w3.org/2000/svg"),
-        (n.HTML_NS = "http://www.w3.org/1999/xhtml"),
+        (n.SVG_NS = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg"),
+        (n.HTML_NS = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xhtml"),
         (n.INPUT_VALUE = 1),
         (n.OUTPUT_VALUE = 2),
         (n.NEXT_STATEMENT = 3),
@@ -24304,7 +24304,7 @@
           };
         }),
         (n.Blocks.defaultToolbox =
-          '<xml id="toolbox-categories" style="display: none"><category name="%{BKY_CATEGORY_MOTION}" id="motion" colour="#4C97FF" secondaryColour="#3373CC"><block type="motion_movesteps" id="motion_movesteps"><value name="STEPS"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="motion_turnright" id="motion_turnright"><value name="DEGREES"><shadow type="math_number"><field name="NUM">15</field></shadow></value></block><block type="motion_turnleft" id="motion_turnleft"><value name="DEGREES"><shadow type="math_number"><field name="NUM">15</field></shadow></value></block><block type="motion_pointindirection" id="motion_pointindirection"><value name="DIRECTION"><shadow type="math_angle"><field name="NUM">90</field></shadow></value></block><block type="motion_pointtowards" id="motion_pointtowards"><value name="TOWARDS"><shadow type="motion_pointtowards_menu"></shadow></value></block><block type="motion_gotoxy" id="motion_gotoxy"><value name="X"><shadow id="movex" type="math_number"><field name="NUM">0</field></shadow></value><value name="Y"><shadow id="movey" type="math_number"><field name="NUM">0</field></shadow></value></block><block type="motion_goto" id="motion_goto"><value name="TO"><shadow type="motion_goto_menu"></shadow></value></block><block type="motion_glidesecstoxy" id="motion_glidesecstoxy"><value name="SECS"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="X"><shadow id="glidex" type="math_number"><field name="NUM">0</field></shadow></value><value name="Y"><shadow id="glidey" type="math_number"><field name="NUM">0</field></shadow></value></block><block type="motion_glideto" id="motion_glideto"><value name="SECS"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="TO"><shadow type="motion_glideto_menu"></shadow></value></block><block type="motion_changexby" id="motion_changexby"><value name="DX"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="motion_setx" id="motion_setx"><value name="X"><shadow id="setx" type="math_number"><field name="NUM">0</field></shadow></value></block><block type="motion_changeyby" id="motion_changeyby"><value name="DY"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="motion_sety" id="motion_sety"><value name="Y"><shadow id="sety" type="math_number"><field name="NUM">0</field></shadow></value></block><block type="motion_ifonedgebounce" id="motion_ifonedgebounce"></block><block type="motion_setrotationstyle" id="motion_setrotationstyle"></block><block type="motion_xposition" id="motion_xposition"></block><block type="motion_yposition" id="motion_yposition"></block><block type="motion_direction" id="motion_direction"></block></category><category name="%{BKY_CATEGORY_LOOKS}" id="looks" colour="#9966FF" secondaryColour="#774DCB"><block type="looks_show" id="looks_show"></block><block type="looks_hide" id="looks_hide"></block><block type="looks_switchcostumeto" id="looks_switchcostumeto"><value name="COSTUME"><shadow type="looks_costume"></shadow></value></block><block type="looks_nextcostume" id="looks_nextcostume"></block><block type="looks_nextbackdrop" id="looks_nextbackdrop"></block><block type="looks_switchbackdropto" id="looks_switchbackdropto"><value name="BACKDROP"><shadow type="looks_backdrops"></shadow></value></block><block type="looks_switchbackdroptoandwait" id="looks_switchbackdroptoandwait"><value name="BACKDROP"><shadow type="looks_backdrops"></shadow></value></block><block type="looks_changeeffectby" id="looks_changeeffectby"><value name="CHANGE"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="looks_seteffectto" id="looks_seteffectto"><value name="VALUE"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="looks_cleargraphiceffects" id="looks_cleargraphiceffects"></block><block type="looks_changesizeby" id="looks_changesizeby"><value name="CHANGE"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="looks_setsizeto" id="looks_setsizeto"><value name="SIZE"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block><block type="looks_gotofrontback" id="looks_gotofrontback"></block><block type="looks_goforwardbackwardlayers" id="looks_goforwardbackwardlayers"><value name="NUM"><shadow type="math_integer"><field name="NUM">1</field></shadow></value></block><block type="looks_costumenumbername" id="looks_costumenumbername"></block><block type="looks_backdropnumbername" id="looks_backdropnumbername"></block><block type="looks_size" id="looks_size"></block></category><category name="%{BKY_CATEGORY_SOUND}" id="sound" colour="#D65CD6" secondaryColour="#BD42BD"><block type="sound_play" id="sound_play"><value name="SOUND_MENU"><shadow type="sound_sounds_menu"></shadow></value></block><block type="sound_playuntildone" id="sound_playuntildone"><value name="SOUND_MENU"><shadow type="sound_sounds_menu"></shadow></value></block><block type="sound_stopallsounds" id="sound_stopallsounds"></block><block type="sound_changeeffectby" id="sound_changeeffectby"><value name="VALUE"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="sound_seteffectto" id="sound_seteffectto"><value name="VALUE"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block><block type="sound_cleareffects" id="sound_cleareffects"></block><block type="sound_changevolumeby" id="sound_changevolumeby"><value name="VOLUME"><shadow type="math_number"><field name="NUM">-10</field></shadow></value></block><block type="sound_setvolumeto" id="sound_setvolumeto"><value name="VOLUME"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block><block type="sound_volume" id="sound_volume"></block></category><category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900"><block type="event_whenflagclicked" id="event_whenflagclicked"></block><block type="event_whenkeypressed" id="event_whenkeypressed"></block><block type="event_whenthisspriteclicked" id="event_whenthisspriteclicked"></block><block type="event_whenbackdropswitchesto" id="event_whenbackdropswitchesto"></block><block type="event_whengreaterthan" id="event_whengreaterthan"><value name="VALUE"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="event_whenbroadcastreceived" id="event_whenbroadcastreceived"></block><block type="event_broadcast" id="event_broadcast"><value name="BROADCAST_INPUT"><shadow type="event_broadcast_menu"></shadow></value></block><block type="event_broadcastandwait" id="event_broadcastandwait"><value name="BROADCAST_INPUT"><shadow type="event_broadcast_menu"></shadow></value></block></category><category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17"><block type="control_wait" id="control_wait"><value name="DURATION"><shadow type="math_positive_number"><field name="NUM">1</field></shadow></value></block><block type="control_repeat" id="control_repeat"><value name="TIMES"><shadow type="math_whole_number"><field name="NUM">10</field></shadow></value></block><block type="control_forever" id="control_forever"></block><block type="control_if" id="control_if"></block><block type="control_if_else" id="control_if_else"></block><block type="control_wait_until" id="control_wait_until"></block><block type="control_repeat_until" id="control_repeat_until"></block><block type="control_stop" id="control_stop"></block><block type="control_start_as_clone" id="control_start_as_clone"></block><block type="control_create_clone_of" id="control_create_clone_of"><value name="CLONE_OPTION"><shadow type="control_create_clone_of_menu"></shadow></value></block><block type="control_delete_this_clone" id="control_delete_this_clone"></block></category><category name="%{BKY_CATEGORY_SENSING}" id="sensing" colour="#4CBFE6" secondaryColour="#2E8EB8"><block type="sensing_touchingobject" id="sensing_touchingobject"><value name="TOUCHINGOBJECTMENU"><shadow type="sensing_touchingobjectmenu"></shadow></value></block><block type="sensing_touchingcolor" id="sensing_touchingcolor"><value name="COLOR"><shadow type="colour_picker"></shadow></value></block><block type="sensing_coloristouchingcolor" id="sensing_coloristouchingcolor"><value name="COLOR"><shadow type="colour_picker"></shadow></value><value name="COLOR2"><shadow type="colour_picker"></shadow></value></block><block type="sensing_distanceto" id="sensing_distanceto"><value name="DISTANCETOMENU"><shadow type="sensing_distancetomenu"></shadow></value></block><block type="sensing_keypressed" id="sensing_keypressed"><value name="KEY_OPTION"><shadow type="sensing_keyoptions"></shadow></value></block><block type="sensing_mousedown" id="sensing_mousedown"></block><block type="sensing_mousex" id="sensing_mousex"></block><block type="sensing_mousey" id="sensing_mousey"></block><block type="sensing_setdragmode" id="sensing_setdragmode"></block><block type="sensing_loudness" id="sensing_loudness"></block><block type="sensing_timer" id="sensing_timer"></block><block type="sensing_resettimer" id="sensing_resettimer"></block><block type="sensing_of" id="sensing_of"><value name="OBJECT"><shadow type="sensing_of_object_menu"></shadow></value></block><block type="sensing_current" id="sensing_current"></block><block type="sensing_dayssince2000" id="sensing_dayssince2000"></block></category><category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#40BF4A" secondaryColour="#389438"><block type="operator_add" id="operator_add"><value name="NUM1"><shadow type="math_number"><field name="NUM"></field></shadow></value><value name="NUM2"><shadow type="math_number"><field name="NUM"></field></shadow></value></block><block type="operator_subtract" id="operator_subtract"><value name="NUM1"><shadow type="math_number"><field name="NUM"></field></shadow></value><value name="NUM2"><shadow type="math_number"><field name="NUM"></field></shadow></value></block><block type="operator_multiply" id="operator_multiply"><value name="NUM1"><shadow type="math_number"><field name="NUM"></field></shadow></value><value name="NUM2"><shadow type="math_number"><field name="NUM"></field></shadow></value></block><block type="operator_divide" id="operator_divide"><value name="NUM1"><shadow type="math_number"><field name="NUM"></field></shadow></value><value name="NUM2"><shadow type="math_number"><field name="NUM"></field></shadow></value></block><block type="operator_random" id="operator_random"><value name="FROM"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="TO"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block><block type="operator_lt" id="operator_lt"><value name="OPERAND1"><shadow type="text"><field name="TEXT"></field></shadow></value><value name="OPERAND2"><shadow type="text"><field name="TEXT"></field></shadow></value></block><block type="operator_equals" id="operator_equals"><value name="OPERAND1"><shadow type="text"><field name="TEXT"></field></shadow></value><value name="OPERAND2"><shadow type="text"><field name="TEXT"></field></shadow></value></block><block type="operator_gt" id="operator_gt"><value name="OPERAND1"><shadow type="text"><field name="TEXT"></field></shadow></value><value name="OPERAND2"><shadow type="text"><field name="TEXT"></field></shadow></value></block><block type="operator_and" id="operator_and"></block><block type="operator_or" id="operator_or"></block><block type="operator_not" id="operator_not"></block><block type="operator_join" id="operator_join"><value name="STRING1"><shadow type="text"><field name="TEXT">hello</field></shadow></value><value name="STRING2"><shadow type="text"><field name="TEXT">world</field></shadow></value></block><block type="operator_letter_of" id="operator_letter_of"><value name="LETTER"><shadow type="math_whole_number"><field name="NUM">1</field></shadow></value><value name="STRING"><shadow type="text"><field name="TEXT">world</field></shadow></value></block><block type="operator_length" id="operator_length"><value name="STRING"><shadow type="text"><field name="TEXT">world</field></shadow></value></block><block type="operator_contains" id="operator_contains"><value name="STRING1"><shadow type="text"><field name="TEXT">hello</field></shadow></value><value name="STRING2"><shadow type="text"><field name="TEXT">world</field></shadow></value></block><block type="operator_mod" id="operator_mod"><value name="NUM1"><shadow type="math_number"><field name="NUM"></field></shadow></value><value name="NUM2"><shadow type="math_number"><field name="NUM"></field></shadow></value></block><block type="operator_round" id="operator_round"><value name="NUM"><shadow type="math_number"><field name="NUM"></field></shadow></value></block><block type="operator_mathop" id="operator_mathop"><value name="NUM"><shadow type="math_number"><field name="NUM"></field></shadow></value></block></category><category name="%{BKY_CATEGORY_VARIABLES}" id="data" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE"></category><category name="%{BKY_CATEGORY_MYBLOCKS}" id="more" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE"></category><category name="Extensions" id="extensions" colour="#FF6680" secondaryColour="#FF4D6A" iconURI="../media/extensions/wedo2-block-icon.svg" showStatusButton="true"><block type="extension_pen_down" id="extension_pen_down"></block><block type="extension_music_drum" id="extension_music_drum"><value name="NUMBER"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block><block type="extension_wedo_motor" id="extension_wedo_motor"></block><block type="extension_wedo_hat" id="extension_wedo_hat"></block><block type="extension_wedo_boolean" id="extension_wedo_boolean"></block><block type="extension_wedo_tilt_reporter" id="extension_wedo_reporter"><value name="TILT"><shadow type="extension_wedo_tilt_menu"></shadow></value></block><block type="extension_music_reporter" id="extension_music_reporter"></block><block type="extension_microbit_display" id="extension_microbit_display"><value name="MATRIX"><shadow type="matrix"><field name="MATRIX">0101010101100010101000100</field></shadow></value></block><block type="extension_music_play_note" id="extension_music_play_note"><value name="NOTE"><shadow type="note"><field name="NOTE">60</field></shadow></value><value name="BEATS"><shadow type="math_number"><field name="NUM">0.25</field></shadow></value></block></category></xml>'),
+          '<xml id="toolbox-categories" style="display: none"><category name="%{BKY_CATEGORY_MOTION}" id="motion" colour="#4C97FF" secondaryColour="#3373CC"><block type="motion_movesteps" id="motion_movesteps"><value name="STEPS"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_turnright" id="motion_turnright"><value name="DEGREES"><shadow type="math_number"><field name="NUM">15https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_turnleft" id="motion_turnleft"><value name="DEGREES"><shadow type="math_number"><field name="NUM">15https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_pointindirection" id="motion_pointindirection"><value name="DIRECTION"><shadow type="math_angle"><field name="NUM">90https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_pointtowards" id="motion_pointtowards"><value name="TOWARDS"><shadow type="motion_pointtowards_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_gotoxy" id="motion_gotoxy"><value name="X"><shadow id="movex" type="math_number"><field name="NUM">0https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="Y"><shadow id="movey" type="math_number"><field name="NUM">0https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_goto" id="motion_goto"><value name="TO"><shadow type="motion_goto_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_glidesecstoxy" id="motion_glidesecstoxy"><value name="SECS"><shadow type="math_number"><field name="NUM">1https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="X"><shadow id="glidex" type="math_number"><field name="NUM">0https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="Y"><shadow id="glidey" type="math_number"><field name="NUM">0https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_glideto" id="motion_glideto"><value name="SECS"><shadow type="math_number"><field name="NUM">1https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TO"><shadow type="motion_glideto_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_changexby" id="motion_changexby"><value name="DX"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_setx" id="motion_setx"><value name="X"><shadow id="setx" type="math_number"><field name="NUM">0https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_changeyby" id="motion_changeyby"><value name="DY"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_sety" id="motion_sety"><value name="Y"><shadow id="sety" type="math_number"><field name="NUM">0https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="motion_ifonedgebounce" id="motion_ifonedgebounce">https://kakaomames.github.io/turbowarp/block><block type="motion_setrotationstyle" id="motion_setrotationstyle">https://kakaomames.github.io/turbowarp/block><block type="motion_xposition" id="motion_xposition">https://kakaomames.github.io/turbowarp/block><block type="motion_yposition" id="motion_yposition">https://kakaomames.github.io/turbowarp/block><block type="motion_direction" id="motion_direction">https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/category><category name="%{BKY_CATEGORY_LOOKS}" id="looks" colour="#9966FF" secondaryColour="#774DCB"><block type="looks_show" id="looks_show">https://kakaomames.github.io/turbowarp/block><block type="looks_hide" id="looks_hide">https://kakaomames.github.io/turbowarp/block><block type="looks_switchcostumeto" id="looks_switchcostumeto"><value name="COSTUME"><shadow type="looks_costume">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="looks_nextcostume" id="looks_nextcostume">https://kakaomames.github.io/turbowarp/block><block type="looks_nextbackdrop" id="looks_nextbackdrop">https://kakaomames.github.io/turbowarp/block><block type="looks_switchbackdropto" id="looks_switchbackdropto"><value name="BACKDROP"><shadow type="looks_backdrops">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="looks_switchbackdroptoandwait" id="looks_switchbackdroptoandwait"><value name="BACKDROP"><shadow type="looks_backdrops">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="looks_changeeffectby" id="looks_changeeffectby"><value name="CHANGE"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="looks_seteffectto" id="looks_seteffectto"><value name="VALUE"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="looks_cleargraphiceffects" id="looks_cleargraphiceffects">https://kakaomames.github.io/turbowarp/block><block type="looks_changesizeby" id="looks_changesizeby"><value name="CHANGE"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="looks_setsizeto" id="looks_setsizeto"><value name="SIZE"><shadow type="math_number"><field name="NUM">100https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="looks_gotofrontback" id="looks_gotofrontback">https://kakaomames.github.io/turbowarp/block><block type="looks_goforwardbackwardlayers" id="looks_goforwardbackwardlayers"><value name="NUM"><shadow type="math_integer"><field name="NUM">1https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="looks_costumenumbername" id="looks_costumenumbername">https://kakaomames.github.io/turbowarp/block><block type="looks_backdropnumbername" id="looks_backdropnumbername">https://kakaomames.github.io/turbowarp/block><block type="looks_size" id="looks_size">https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/category><category name="%{BKY_CATEGORY_SOUND}" id="sound" colour="#D65CD6" secondaryColour="#BD42BD"><block type="sound_play" id="sound_play"><value name="SOUND_MENU"><shadow type="sound_sounds_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sound_playuntildone" id="sound_playuntildone"><value name="SOUND_MENU"><shadow type="sound_sounds_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sound_stopallsounds" id="sound_stopallsounds">https://kakaomames.github.io/turbowarp/block><block type="sound_changeeffectby" id="sound_changeeffectby"><value name="VALUE"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sound_seteffectto" id="sound_seteffectto"><value name="VALUE"><shadow type="math_number"><field name="NUM">100https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sound_cleareffects" id="sound_cleareffects">https://kakaomames.github.io/turbowarp/block><block type="sound_changevolumeby" id="sound_changevolumeby"><value name="VOLUME"><shadow type="math_number"><field name="NUM">-10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sound_setvolumeto" id="sound_setvolumeto"><value name="VOLUME"><shadow type="math_number"><field name="NUM">100https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sound_volume" id="sound_volume">https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/category><category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900"><block type="event_whenflagclicked" id="event_whenflagclicked">https://kakaomames.github.io/turbowarp/block><block type="event_whenkeypressed" id="event_whenkeypressed">https://kakaomames.github.io/turbowarp/block><block type="event_whenthisspriteclicked" id="event_whenthisspriteclicked">https://kakaomames.github.io/turbowarp/block><block type="event_whenbackdropswitchesto" id="event_whenbackdropswitchesto">https://kakaomames.github.io/turbowarp/block><block type="event_whengreaterthan" id="event_whengreaterthan"><value name="VALUE"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="event_whenbroadcastreceived" id="event_whenbroadcastreceived">https://kakaomames.github.io/turbowarp/block><block type="event_broadcast" id="event_broadcast"><value name="BROADCAST_INPUT"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="event_broadcastandwait" id="event_broadcastandwait"><value name="BROADCAST_INPUT"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/category><category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17"><block type="control_wait" id="control_wait"><value name="DURATION"><shadow type="math_positive_number"><field name="NUM">1https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="control_repeat" id="control_repeat"><value name="TIMES"><shadow type="math_whole_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="control_forever" id="control_forever">https://kakaomames.github.io/turbowarp/block><block type="control_if" id="control_if">https://kakaomames.github.io/turbowarp/block><block type="control_if_else" id="control_if_else">https://kakaomames.github.io/turbowarp/block><block type="control_wait_until" id="control_wait_until">https://kakaomames.github.io/turbowarp/block><block type="control_repeat_until" id="control_repeat_until">https://kakaomames.github.io/turbowarp/block><block type="control_stop" id="control_stop">https://kakaomames.github.io/turbowarp/block><block type="control_start_as_clone" id="control_start_as_clone">https://kakaomames.github.io/turbowarp/block><block type="control_create_clone_of" id="control_create_clone_of"><value name="CLONE_OPTION"><shadow type="control_create_clone_of_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="control_delete_this_clone" id="control_delete_this_clone">https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/category><category name="%{BKY_CATEGORY_SENSING}" id="sensing" colour="#4CBFE6" secondaryColour="#2E8EB8"><block type="sensing_touchingobject" id="sensing_touchingobject"><value name="TOUCHINGOBJECTMENU"><shadow type="sensing_touchingobjectmenu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sensing_touchingcolor" id="sensing_touchingcolor"><value name="COLOR"><shadow type="colour_picker">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sensing_coloristouchingcolor" id="sensing_coloristouchingcolor"><value name="COLOR"><shadow type="colour_picker">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="COLOR2"><shadow type="colour_picker">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sensing_distanceto" id="sensing_distanceto"><value name="DISTANCETOMENU"><shadow type="sensing_distancetomenu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sensing_keypressed" id="sensing_keypressed"><value name="KEY_OPTION"><shadow type="sensing_keyoptions">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sensing_mousedown" id="sensing_mousedown">https://kakaomames.github.io/turbowarp/block><block type="sensing_mousex" id="sensing_mousex">https://kakaomames.github.io/turbowarp/block><block type="sensing_mousey" id="sensing_mousey">https://kakaomames.github.io/turbowarp/block><block type="sensing_setdragmode" id="sensing_setdragmode">https://kakaomames.github.io/turbowarp/block><block type="sensing_loudness" id="sensing_loudness">https://kakaomames.github.io/turbowarp/block><block type="sensing_timer" id="sensing_timer">https://kakaomames.github.io/turbowarp/block><block type="sensing_resettimer" id="sensing_resettimer">https://kakaomames.github.io/turbowarp/block><block type="sensing_of" id="sensing_of"><value name="OBJECT"><shadow type="sensing_of_object_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="sensing_current" id="sensing_current">https://kakaomames.github.io/turbowarp/block><block type="sensing_dayssince2000" id="sensing_dayssince2000">https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/category><category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#40BF4A" secondaryColour="#389438"><block type="operator_add" id="operator_add"><value name="NUM1"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="NUM2"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_subtract" id="operator_subtract"><value name="NUM1"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="NUM2"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_multiply" id="operator_multiply"><value name="NUM1"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="NUM2"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_divide" id="operator_divide"><value name="NUM1"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="NUM2"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_random" id="operator_random"><value name="FROM"><shadow type="math_number"><field name="NUM">1https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TO"><shadow type="math_number"><field name="NUM">10https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_lt" id="operator_lt"><value name="OPERAND1"><shadow type="text"><field name="TEXT">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="OPERAND2"><shadow type="text"><field name="TEXT">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_equals" id="operator_equals"><value name="OPERAND1"><shadow type="text"><field name="TEXT">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="OPERAND2"><shadow type="text"><field name="TEXT">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_gt" id="operator_gt"><value name="OPERAND1"><shadow type="text"><field name="TEXT">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="OPERAND2"><shadow type="text"><field name="TEXT">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_and" id="operator_and">https://kakaomames.github.io/turbowarp/block><block type="operator_or" id="operator_or">https://kakaomames.github.io/turbowarp/block><block type="operator_not" id="operator_not">https://kakaomames.github.io/turbowarp/block><block type="operator_join" id="operator_join"><value name="STRING1"><shadow type="text"><field name="TEXT">hellohttps://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="STRING2"><shadow type="text"><field name="TEXT">worldhttps://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_letter_of" id="operator_letter_of"><value name="LETTER"><shadow type="math_whole_number"><field name="NUM">1https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="STRING"><shadow type="text"><field name="TEXT">worldhttps://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_length" id="operator_length"><value name="STRING"><shadow type="text"><field name="TEXT">worldhttps://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_contains" id="operator_contains"><value name="STRING1"><shadow type="text"><field name="TEXT">hellohttps://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="STRING2"><shadow type="text"><field name="TEXT">worldhttps://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_mod" id="operator_mod"><value name="NUM1"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="NUM2"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_round" id="operator_round"><value name="NUM"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="operator_mathop" id="operator_mathop"><value name="NUM"><shadow type="math_number"><field name="NUM">https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/category><category name="%{BKY_CATEGORY_VARIABLES}" id="data" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE">https://kakaomames.github.io/turbowarp/category><category name="%{BKY_CATEGORY_MYBLOCKS}" id="more" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE">https://kakaomames.github.io/turbowarp/category><category name="Extensions" id="extensions" colour="#FF6680" secondaryColour="#FF4D6A" iconURI=".https://kakaomames.github.io/turbowarp/medihttps://kakaomames.github.io/turbowarp/extensionhttps://kakaomames.github.io/turbowarp/wedo2-block-icon.svg" showStatusButton="true"><block type="extension_pen_down" id="extension_pen_down">https://kakaomames.github.io/turbowarp/block><block type="extension_music_drum" id="extension_music_drum"><value name="NUMBER"><shadow type="math_number"><field name="NUM">1https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="extension_wedo_motor" id="extension_wedo_motor">https://kakaomames.github.io/turbowarp/block><block type="extension_wedo_hat" id="extension_wedo_hat">https://kakaomames.github.io/turbowarp/block><block type="extension_wedo_boolean" id="extension_wedo_boolean">https://kakaomames.github.io/turbowarp/block><block type="extension_wedo_tilt_reporter" id="extension_wedo_reporter"><value name="TILT"><shadow type="extension_wedo_tilt_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="extension_music_reporter" id="extension_music_reporter">https://kakaomames.github.io/turbowarp/block><block type="extension_microbit_display" id="extension_microbit_display"><value name="MATRIX"><shadow type="matrix"><field name="MATRIX">0101010101100010101000100https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block><block type="extension_music_play_note" id="extension_music_play_note"><value name="NOTE"><shadow type="note"><field name="NOTE">60https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="BEATS"><shadow type="math_number"><field name="NUM">0.25https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/category>https://kakaomames.github.io/turbowarp/xml>'),
         (n.Blocks.event = {}),
         (n.Blocks.event_whentouchingobject = {
           init: function () {
@@ -24535,7 +24535,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/pen-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/pen-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -24559,7 +24559,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/music-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/music-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -24584,7 +24584,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/wedo2-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/wedo2-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -24614,7 +24614,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/wedo2-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/wedo2-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -24634,7 +24634,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/wedo2-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/wedo2-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -24658,7 +24658,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/wedo2-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/wedo2-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -24703,7 +24703,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/music-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/music-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -24727,7 +24727,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/microbit-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/microbit-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -24752,7 +24752,7 @@
                   type: "field_image",
                   src:
                     n.mainWorkspace.options.pathToMedia +
-                    "extensions/music-block-icon.svg",
+                    "extensionhttps://kakaomames.github.io/turbowarp/music-block-icon.svg",
                   width: 40,
                   height: 40,
                 },
@@ -25812,7 +25812,7 @@
           this.inputList = [];
         }),
         (n.ScratchBlocks.ProcedureUtils.createAllInputs_ = function (e) {
-          var t = this.procCode_.split(/(?=[^\\]%[nbs])/);
+          var t = this.procCode_.splithttps://kakaomames.github.io/turbowarp/(?=[^\\]%[nbs]https://kakaomames.github.io/turbowarp/);
           t = t.map(function (e) {
             return e.trim();
           });
@@ -25830,7 +25830,7 @@
                 (n = !0),
                 i++);
             } else o = o.trim();
-            (o = o.replace(/\\%/, "%")) &&
+            (o = o.replacehttps://kakaomames.github.io/turbowarp/\\https://kakaomames.github.io/turbowarp/, "%")) &&
               (this.addProcedureLabel_(o), (n = !0));
           }
           n || this.addProcedureLabel_(" ");
@@ -26838,7 +26838,7 @@
                   (goog.cspNonce_ = goog.getScriptNonce_(goog.global.document)),
                 goog.cspNonce_);
           }),
-          (goog.NONCE_PATTERN_ = /^[\w+/_-]+[=]{0,2}$/),
+          (goog.NONCE_PATTERN_ =https://kakaomames.github.io/turbowarp/^[\whttps://kakaomames.github.io/turbowarp/_-]+[=]{0,2}https://kakaomames.github.io/turbowarp/),
           (goog.cspNonce_ = null),
           (goog.getScriptNonce_ = function (e) {
             return (e = e.querySelector && e.querySelector("script[nonce]")) &&
@@ -26847,7 +26847,7 @@
               ? e
               : "";
           }),
-          (goog.VALID_MODULE_RE_ = /^[a-zA-Z_$][a-zA-Z0-9._$]*$/),
+          (goog.VALID_MODULE_RE_ =https://kakaomames.github.io/turbowarp/^[a-zA-Z_$][a-zA-Z0-9._$]*https://kakaomames.github.io/turbowarp/),
           (goog.module = function (e) {
             if (
               !goog.isString(e) ||
@@ -26859,7 +26859,7 @@
               throw Error(
                 "Module " +
                   e +
-                  " has been loaded incorrectly. Note, modules cannot be loaded as normal scripts. They require some kind of pre-processing step. You're likely trying to load a module via a script tag or as a part of a concatenated bundle without rewriting the module. For more info see: https://github.com/google/closure-library/wiki/goog.module:-an-ES6-module-like-alternative-to-goog.provide.",
+                  " has been loaded incorrectly. Note, modules cannot be loaded as normal scripts. They require some kind of pre-processing step. You're likely trying to load a module via a script tag or as a part of a concatenated bundle without rewriting the module. For more info see: httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/googlhttps://kakaomames.github.io/turbowarp/closure-librarhttps://kakaomames.github.io/turbowarp/wikhttps://kakaomames.github.io/turbowarp/goog.module:-an-ES6-module-like-alternative-to-goog.provide.",
               );
             if (goog.moduleLoaderState_.moduleName)
               throw Error("goog.module may only be called once per module.");
@@ -27094,14 +27094,14 @@
             return (eval(a), {});
           }),
           (goog.normalizePath_ = function (e) {
-            e = e.split("/");
+            e = e.split(https://kakaomames.github.io/turbowarp/");
             for (var t = 0; t < e.length;)
               "." == e[t]
                 ? e.splice(t, 1)
                 : t && ".." == e[t] && e[t - 1] && ".." != e[t - 1]
                   ? e.splice(--t, 2)
                   : t++;
-            return e.join("/");
+            return e.join(https://kakaomames.github.io/turbowarp/");
           }),
           (goog.loadFileSync_ = function (e) {
             if (goog.global.CLOSURE_LOAD_FILE_SYNC)
@@ -27127,7 +27127,7 @@
               if (g) {
                 if (
                   (function () {
-                    eval(g + "\n//# sourceURL=" + f);
+                    eval(g + "\https://kakaomames.github.io/turbowarp//# sourceURL=" + f);
                   }.call(goog.global),
                   goog.global.$gwtExport &&
                     goog.global.$gwtExport.$jscomp &&
@@ -27300,7 +27300,7 @@
               else {
                 var t = goog.global.document,
                   o = t.createElement("SCRIPT");
-                ((o.type = "text/javascript"),
+                ((o.type = "texhttps://kakaomames.github.io/turbowarp/javascript"),
                   (o.defer = !1),
                   o.appendChild(t.createTextNode(e)),
                   t.head.appendChild(o),
@@ -27346,7 +27346,7 @@
           (goog.getMsg = function (e, t) {
             return (
               t &&
-                (e = e.replace(/\{\$([^}]+)}/g, function (e, o) {
+                (e = e.replacehttps://kakaomames.github.io/turbowarp/\{\$([^}]+)https://kakaomames.github.io/turbowarp/g, function (e, o) {
                   return null != t && o in t ? t[o] : e;
                 })),
               e
@@ -27381,7 +27381,7 @@
             var i = arguments.callee.caller;
             if (goog.STRICT_MODE_COMPATIBLE || (goog.DEBUG && !i))
               throw Error(
-                "arguments.caller not defined.  goog.base() cannot be used with strict mode code. See http://www.ecma-international.org/ecma-262/5.1/#sec-C",
+                "arguments.caller not defined.  goog.base() cannot be used with strict mode code. See httphttps://kakaomames.github.io/turbowarp//www.ecma-international.orhttps://kakaomames.github.io/turbowarp/ecma-26https://kakaomames.github.io/turbowarp/5.https://kakaomames.github.io/turbowarp/#sec-C",
               );
             if (void 0 !== i.superClass_) {
               for (
@@ -27562,7 +27562,7 @@
                   }),
                   a("es6", function () {
                     return (
-                      !f.match(/Edge\/(\d+)(\.\d)*/i) &&
+                      !f.matchhttps://kakaomames.github.io/turbowarp/Edgehttps://kakaomames.github.io/turbowarp/(\d+)(\.\d)https://kakaomames.github.io/turbowarp/i) &&
                       b(
                         '(()=>{"use strict";class X{constructor(){if(new.target!=String)throw 1;this.x=42}}let q=Reflect.construct(X,[],String);if(q.x!=42||!(q instanceof String))throw 1;for(const a of[2,3]){if(a==2)continue;function f(z={a}){let a=0;return z.a}{function f(){return 0;}}return f()==3}})()',
                       )
@@ -27611,7 +27611,7 @@
             }),
             (goog.transpiler_ = new goog.Transpiler()),
             (goog.protectScriptTag_ = function (e) {
-              return e.replace(/<\/(SCRIPT)/gi, "\\x3c/$1");
+              return e.replacehttps://kakaomames.github.io/turbowarp/<https://kakaomames.github.io/turbowarp/(SCRIPThttps://kakaomames.github.io/turbowarp/gi, "\\x3https://kakaomames.github.io/turbowarp/$1");
             }),
             (goog.DebugLoader_ = function () {
               ((this.dependencies_ = {}),
@@ -27843,10 +27843,10 @@
             }),
             (goog.Dependency.prototype.getPathName = function () {
               var e = this.path,
-                t = e.indexOf("://");
+                t = e.indexOf("https://kakaomames.github.io/turbowarp//");
               return (
                 0 <= t &&
-                  0 <= (t = (e = e.substring(t + 3)).indexOf("/")) &&
+                  0 <= (t = (e = e.substring(t + 3)).indexOf(https://kakaomames.github.io/turbowarp/")) &&
                   (e = e.substring(t + 1)),
                 e
               );
@@ -27895,7 +27895,7 @@
                   "complete" == t.readyState &&
                   !goog.ENABLE_CHROME_APP_SAFE_SCRIPT_LOADING
                 ) {
-                  if (/\bdeps.js$/.test(this.path)) return void e.loaded();
+                  if https://kakaomames.github.io/turbowarp/\bdeps.jshttps://kakaomames.github.io/turbowarp/.test(this.path)) return void e.loaded();
                   throw Error(
                     'Cannot write "' + this.path + '" after document load',
                   );
@@ -27922,16 +27922,16 @@
                         : "onload") +
                       "=\"goog.Dependency.callback_('" +
                       o +
-                      '\', this)" type="text/javascript" ' +
+                      '\', this)" type="texhttps://kakaomames.github.io/turbowarp/javascript" ' +
                       (goog.Dependency.defer_ ? "defer" : "") +
                       i +
-                      "><\/script>",
+                      "><https://kakaomames.github.io/turbowarp/script>",
                   );
                 } else {
                   var n = t.createElement("script");
                   ((n.defer = goog.Dependency.defer_),
                     (n.async = !1),
-                    (n.type = "text/javascript"),
+                    (n.type = "texhttps://kakaomames.github.io/turbowarp/javascript"),
                     (i = goog.getScriptNonce()) && n.setAttribute("nonce", i),
                     goog.DebugLoader_.IS_OLD_IE_
                       ? (e.pause(),
@@ -27975,12 +27975,12 @@
                       ? t.write(
                           '<script type="module" crossorigin>' +
                             o +
-                            "<\/script>",
+                            "<https://kakaomames.github.io/turbowarp/script>",
                         )
                       : t.write(
                           '<script type="module" crossorigin src="' +
                             e +
-                            '"><\/script>',
+                            '"><https://kakaomames.github.io/turbowarp/script>',
                         );
                   };
                   goog.Dependency.defer_ = !0;
@@ -28046,7 +28046,7 @@
                   i.contents_ &&
                     ((i.contents_ = i.transform(i.contents_)),
                     i.contents_ &&
-                      (i.contents_ += "\n//# sourceURL=" + i.path)));
+                      (i.contents_ += "\https://kakaomames.github.io/turbowarp//# sourceURL=" + i.path)));
               }
               function o() {
                 if ((i.lazyFetch_ && t(), i.contents_)) {
@@ -28119,11 +28119,11 @@
                               (goog.Dependency.unregisterCallback_(t), o());
                             });
                           e.write(
-                            '<script type="text/javascript">' +
+                            '<script type="texhttps://kakaomames.github.io/turbowarp/javascript">' +
                               goog.protectScriptTag_(
                                 'goog.Dependency.callback_("' + t + '");',
                               ) +
-                              "<\/script>",
+                              "<https://kakaomames.github.io/turbowarp/script>",
                           );
                         })()
                       : o();
@@ -28169,12 +28169,12 @@
                 goog.LOAD_MODULE_USING_EVAL && goog.isDef(goog.global.JSON)
                   ? "goog.loadModule(" +
                     goog.global.JSON.stringify(
-                      e + "\n//# sourceURL=" + this.path + "\n",
+                      e + "\https://kakaomames.github.io/turbowarp//# sourceURL=" + this.path + "\n",
                     ) +
                     ");"
                   : 'goog.loadModule(function(exports) {"use strict";' +
                     e +
-                    "\n;return exports});\n//# sourceURL=" +
+                    "\n;return exports});\https://kakaomames.github.io/turbowarp//# sourceURL=" +
                     this.path +
                     "\n"
               );
@@ -28185,7 +28185,7 @@
               !goog.global.document.all
             )),
             (goog.DebugLoader_.prototype.addDependency = function (e, t, o, i) {
-              ((t = t || []), (e = e.replace(/\\/g, "/")));
+              ((t = t || []), (e = e.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, https://kakaomames.github.io/turbowarp/")));
               var n = goog.normalizePath_(goog.basePath + e);
               for (
                 (i && "boolean" != typeof i) ||
@@ -29213,7 +29213,7 @@
             return e.toLowerCase() == t.toLowerCase();
           }),
           (goog.string.internal.isEmptyOrWhitespace = function (e) {
-            return /^[\s\xa0]*$/.test(e);
+            returnhttps://kakaomames.github.io/turbowarp/^[\s\xa0]*https://kakaomames.github.io/turbowarp/.test(e);
           }),
           (goog.string.internal.trim =
             goog.TRUSTED_SITE && String.prototype.trim
@@ -29221,7 +29221,7 @@
                   return e.trim();
                 }
               : function (e) {
-                  return /^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(e)[1];
+                  returnhttps://kakaomames.github.io/turbowarp/^[\s\xa0]*([\s\S]*?)[\s\xa0]*https://kakaomames.github.io/turbowarp/.exec(e)[1];
                 }),
           (goog.string.internal.caseInsensitiveCompare = function (e, t) {
             return (e = String(e).toLowerCase()) < (t = String(t).toLowerCase())
@@ -29231,7 +29231,7 @@
                 : 1;
           }),
           (goog.string.internal.newLineToBr = function (e, t) {
-            return e.replace(/(\r\n|\r|\n)/g, t ? "<br />" : "<br>");
+            return e.replacehttps://kakaomames.github.io/turbowarp/(\r\n|\r|\nhttps://kakaomames.github.io/turbowarp/g, t ? "<brhttps://kakaomames.github.io/turbowarp/>" : "<br>");
           }),
           (goog.string.internal.htmlEscape = function (e, t) {
             if (t)
@@ -29262,16 +29262,16 @@
             }
             return e;
           }),
-          (goog.string.internal.AMP_RE_ = /&/g),
-          (goog.string.internal.LT_RE_ = /</g),
-          (goog.string.internal.GT_RE_ = />/g),
-          (goog.string.internal.QUOT_RE_ = /"/g),
-          (goog.string.internal.SINGLE_QUOTE_RE_ = /'/g),
-          (goog.string.internal.NULL_RE_ = /\x00/g),
-          (goog.string.internal.ALL_RE_ = /[\x00&<>"']/),
+          (goog.string.internal.AMP_RE_ =https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g),
+          (goog.string.internal.LT_RE_ =https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g),
+          (goog.string.internal.GT_RE_ =https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g),
+          (goog.string.internal.QUOT_RE_ =https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g),
+          (goog.string.internal.SINGLE_QUOTE_RE_ =https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g),
+          (goog.string.internal.NULL_RE_ =https://kakaomames.github.io/turbowarp/\x0https://kakaomames.github.io/turbowarp/g),
+          (goog.string.internal.ALL_RE_ =https://kakaomames.github.io/turbowarp/[\x00&<>"'https://kakaomames.github.io/turbowarp/),
           (goog.string.internal.whitespaceEscape = function (e, t) {
             return goog.string.internal.newLineToBr(
-              e.replace(/  /g, " &#160;"),
+              e.replacehttps://kakaomames.github.io/turbowarp/ https://kakaomames.github.io/turbowarp/g, " &#160;"),
               t,
             );
           }),
@@ -29297,8 +29297,8 @@
                 E = t[n] || "";
               do {
                 if (
-                  ((a = /(\d*)(\D*)(.*)/.exec(a) || ["", "", "", ""]),
-                  (E = /(\d*)(\D*)(.*)/.exec(E) || ["", "", "", ""]),
+                  ((a =https://kakaomames.github.io/turbowarp/(\d*)(\D*)(.*https://kakaomames.github.io/turbowarp/.exec(a) || ["", "", "", ""]),
+                  (E =https://kakaomames.github.io/turbowarp/(\d*)(\D*)(.*https://kakaomames.github.io/turbowarp/.exec(E) || ["", "", "", ""]),
                   0 == a[0].length && 0 == E[0].length)
                 )
                   break;
@@ -29349,7 +29349,7 @@
           }),
           (goog.labs.userAgent.util.extractVersionTuples = function (e) {
             for (
-              var t, o = /(\w[\w ]+)\/([^\s]+)\s*(?:\((.*?)\))?/g, i = [];
+              var t, o =https://kakaomames.github.io/turbowarp/(\w[\w ]+)https://kakaomames.github.io/turbowarp/([^\s]+)\s*(?:\((.*?)\))https://kakaomames.github.io/turbowarp/g, i = [];
               (t = o.exec(e));
             )
               i.push([t[1], t[2], t[3] || void 0]);
@@ -29357,7 +29357,7 @@
           }),
           (goog.object = {}),
           (goog.object.is = function (e, t) {
-            return e === t ? 0 !== e || 1 / e == 1 / t : e != e && t != t;
+            return e === t ? 0 !== e || 1https://kakaomames.github.io/turbowarp/ e == 1https://kakaomames.github.io/turbowarp/ t : e != e && t != t;
           }),
           (goog.object.forEach = function (e, t, o) {
             for (var i in e) t.call(o, e[i], i, e);
@@ -29665,12 +29665,12 @@
             );
           }),
           (goog.labs.userAgent.browser.getIEVersion_ = function (e) {
-            var t = /rv: *([\d\.]*)/.exec(e);
+            var t =https://kakaomames.github.io/turbowarp/rv: *([\d\.]*https://kakaomames.github.io/turbowarp/.exec(e);
             if (t && t[1]) return t[1];
             t = "";
-            var o = /MSIE +([\d\.]+)/.exec(e);
+            var o =https://kakaomames.github.io/turbowarp/MSIE +([\d\.]+https://kakaomames.github.io/turbowarp/.exec(e);
             if (o && o[1])
-              if (((e = /Trident\/(\d.\d)/.exec(e)), "7.0" == o[1]))
+              if (((e =https://kakaomames.github.io/turbowarp/Tridenthttps://kakaomames.github.io/turbowarp/(\d.\dhttps://kakaomames.github.io/turbowarp/.exec(e)), "7.0" == o[1]))
                 if (e && e[1])
                   switch (e[1]) {
                     case "4.0":
@@ -29711,7 +29711,7 @@
             return i + o.join("%s");
           }),
           (goog.string.collapseWhitespace = function (e) {
-            return e.replace(/[\s\xa0]+/g, " ").replace(/^\s+|\s+$/g, "");
+            return e.replacehttps://kakaomames.github.io/turbowarp/[\s\xa0]https://kakaomames.github.io/turbowarp/g, " ").replacehttps://kakaomames.github.io/turbowarp/^\s+|\s+https://kakaomames.github.io/turbowarp/g, "");
           }),
           (goog.string.isEmptyOrWhitespace =
             goog.string.internal.isEmptyOrWhitespace),
@@ -29724,16 +29724,16 @@
           }),
           (goog.string.isEmptySafe = goog.string.isEmptyOrWhitespaceSafe),
           (goog.string.isBreakingWhitespace = function (e) {
-            return !/[^\t\n\r ]/.test(e);
+            return https://kakaomames.github.io/turbowarp/[^\t\n\r https://kakaomames.github.io/turbowarp/.test(e);
           }),
           (goog.string.isAlpha = function (e) {
-            return !/[^a-zA-Z]/.test(e);
+            return https://kakaomames.github.io/turbowarp/[^a-zA-Zhttps://kakaomames.github.io/turbowarp/.test(e);
           }),
           (goog.string.isNumeric = function (e) {
-            return !/[^0-9]/.test(e);
+            return https://kakaomames.github.io/turbowarp/[^0-9https://kakaomames.github.io/turbowarp/.test(e);
           }),
           (goog.string.isAlphaNumeric = function (e) {
-            return !/[^a-zA-Z0-9]/.test(e);
+            return https://kakaomames.github.io/turbowarp/[^a-zA-Z0-9https://kakaomames.github.io/turbowarp/.test(e);
           }),
           (goog.string.isSpace = function (e) {
             return " " == e;
@@ -29744,28 +29744,28 @@
             );
           }),
           (goog.string.stripNewlines = function (e) {
-            return e.replace(/(\r\n|\r|\n)+/g, " ");
+            return e.replacehttps://kakaomames.github.io/turbowarp/(\r\n|\r|\n)https://kakaomames.github.io/turbowarp/g, " ");
           }),
           (goog.string.canonicalizeNewlines = function (e) {
-            return e.replace(/(\r\n|\r|\n)/g, "\n");
+            return e.replacehttps://kakaomames.github.io/turbowarp/(\r\n|\r|\nhttps://kakaomames.github.io/turbowarp/g, "\n");
           }),
           (goog.string.normalizeWhitespace = function (e) {
-            return e.replace(/\xa0|\s/g, " ");
+            return e.replacehttps://kakaomames.github.io/turbowarp/\xa0|\https://kakaomames.github.io/turbowarp/g, " ");
           }),
           (goog.string.normalizeSpaces = function (e) {
-            return e.replace(/\xa0|[ \t]+/g, " ");
+            return e.replacehttps://kakaomames.github.io/turbowarp/\xa0|[ \t]https://kakaomames.github.io/turbowarp/g, " ");
           }),
           (goog.string.collapseBreakingSpaces = function (e) {
             return e
-              .replace(/[\t\r\n ]+/g, " ")
-              .replace(/^[\t\r\n ]+|[\t\r\n ]+$/g, "");
+              .replacehttps://kakaomames.github.io/turbowarp/[\t\r\n ]https://kakaomames.github.io/turbowarp/g, " ")
+              .replacehttps://kakaomames.github.io/turbowarp/^[\t\r\n ]+|[\t\r\n ]+https://kakaomames.github.io/turbowarp/g, "");
           }),
           (goog.string.trim = goog.string.internal.trim),
           (goog.string.trimLeft = function (e) {
-            return e.replace(/^[\s\xa0]+/, "");
+            return e.replacehttps://kakaomames.github.io/turbowarp/^[\s\xa0]https://kakaomames.github.io/turbowarp/, "");
           }),
           (goog.string.trimRight = function (e) {
-            return e.replace(/[\s\xa0]+$/, "");
+            return e.replacehttps://kakaomames.github.io/turbowarp/[\s\xa0]+https://kakaomames.github.io/turbowarp/, "");
           }),
           (goog.string.caseInsensitiveCompare =
             goog.string.internal.caseInsensitiveCompare),
@@ -29796,17 +29796,17 @@
             return i.length != n.length ? i.length - n.length : e < t ? -1 : 1;
           }),
           (goog.string.intAwareCompare = function (e, t) {
-            return goog.string.numberAwareCompare_(e, t, /\d+|\D+/g);
+            return goog.string.numberAwareCompare_(e, t,https://kakaomames.github.io/turbowarp/\d+|\Dhttps://kakaomames.github.io/turbowarp/g);
           }),
           (goog.string.floatAwareCompare = function (e, t) {
-            return goog.string.numberAwareCompare_(e, t, /\d+|\.\d+|\D+/g);
+            return goog.string.numberAwareCompare_(e, t,https://kakaomames.github.io/turbowarp/\d+|\.\d+|\Dhttps://kakaomames.github.io/turbowarp/g);
           }),
           (goog.string.numerateCompare = goog.string.floatAwareCompare),
           (goog.string.urlEncode = function (e) {
             return encodeURIComponent(String(e));
           }),
           (goog.string.urlDecode = function (e) {
-            return decodeURIComponent(e.replace(/\+/g, " "));
+            return decodeURIComponent(e.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, " "));
           }),
           (goog.string.newLineToBr = goog.string.internal.newLineToBr),
           (goog.string.htmlEscape = function (e, t) {
@@ -29817,7 +29817,7 @@
               e
             );
           }),
-          (goog.string.E_RE_ = /e/g),
+          (goog.string.E_RE_ =https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g),
           (goog.string.unescapeEntities = function (e) {
             return goog.string.contains(e, "&")
               ? !goog.string.FORCE_NON_DOM_HTML_UNESCAPING &&
@@ -29851,7 +29851,7 @@
             });
           }),
           (goog.string.unescapePureXmlEntities_ = function (e) {
-            return e.replace(/&([^;]+);/g, function (e, t) {
+            return e.replacehttps://kakaomames.github.io/turbowarp/&([^;]+)https://kakaomames.github.io/turbowarp/g, function (e, t) {
               switch (t) {
                 case "amp":
                   return "&";
@@ -29869,12 +29869,12 @@
               }
             });
           }),
-          (goog.string.HTML_ENTITY_PATTERN_ = /&([^;\s<&]+);?/g),
+          (goog.string.HTML_ENTITY_PATTERN_ =https://kakaomames.github.io/turbowarp/&([^;\s<&]+);https://kakaomames.github.io/turbowarp/g),
           (goog.string.whitespaceEscape = function (e, t) {
-            return goog.string.newLineToBr(e.replace(/  /g, " &#160;"), t);
+            return goog.string.newLineToBr(e.replacehttps://kakaomames.github.io/turbowarp/ https://kakaomames.github.io/turbowarp/g, " &#160;"), t);
           }),
           (goog.string.preserveSpaces = function (e) {
-            return e.replace(/(^|[\n ]) /g, "$1" + goog.string.Unicode.NBSP);
+            return e.replacehttps://kakaomames.github.io/turbowarp/(^|[\n ])https://kakaomames.github.io/turbowarp/g, "$1" + goog.string.Unicode.NBSP);
           }),
           (goog.string.stripQuotes = function (e, t) {
             for (var o = t.length, i = 0; i < o; i++) {
@@ -29901,7 +29901,7 @@
               e = e.substring(0, t - i) + "..." + e.substring(n);
             } else
               e.length > t &&
-                ((i = Math.floor(t / 2)),
+                ((i = Math.floor(thttps://kakaomames.github.io/turbowarp/ 2)),
                 (n = e.length - i),
                 (e = e.substring(0, i + (t % 2)) + "..." + e.substring(n)));
             return (o && (e = goog.string.htmlEscape(e)), e);
@@ -29978,13 +29978,13 @@
           (goog.string.replaceAll = function (e, t, o) {
             return (
               (t = new RegExp(goog.string.regExpEscape(t), "g")),
-              e.replace(t, o.replace(/\$/g, "$$$$"))
+              e.replace(t, o.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "$$$$"))
             );
           }),
           (goog.string.regExpEscape = function (e) {
             return String(e)
-              .replace(/([-()\[\]{}+?*.$\^|,:#<!\\])/g, "\\$1")
-              .replace(/\x08/g, "\\x08");
+              .replacehttps://kakaomames.github.io/turbowarp/([-()\[\]{}+?*.$\^|,:#<!\\]https://kakaomames.github.io/turbowarp/g, "\\$1")
+              .replacehttps://kakaomames.github.io/turbowarp/\x0https://kakaomames.github.io/turbowarp/g, "\\x08");
           }),
           (goog.string.repeat = String.prototype.repeat
             ? function (e, t) {
@@ -30031,19 +30031,19 @@
             return 0 == t && goog.string.isEmptyOrWhitespace(e) ? NaN : t;
           }),
           (goog.string.isLowerCamelCase = function (e) {
-            return /^[a-z]+([A-Z][a-z]*)*$/.test(e);
+            returnhttps://kakaomames.github.io/turbowarp/^[a-z]+([A-Z][a-z]*)*https://kakaomames.github.io/turbowarp/.test(e);
           }),
           (goog.string.isUpperCamelCase = function (e) {
-            return /^([A-Z][a-z]*)+$/.test(e);
+            returnhttps://kakaomames.github.io/turbowarp/^([A-Z][a-z]*)+https://kakaomames.github.io/turbowarp/.test(e);
           }),
           (goog.string.toCamelCase = function (e) {
-            return String(e).replace(/\-([a-z])/g, function (e, t) {
+            return String(e).replacehttps://kakaomames.github.io/turbowarp/\-([a-z]https://kakaomames.github.io/turbowarp/g, function (e, t) {
               return t.toUpperCase();
             });
           }),
           (goog.string.toSelectorCase = function (e) {
             return String(e)
-              .replace(/([A-Z])/g, "-$1")
+              .replacehttps://kakaomames.github.io/turbowarp/([A-Z]https://kakaomames.github.io/turbowarp/g, "-$1")
               .toLowerCase();
           }),
           (goog.string.toTitleCase = function (e, t) {
@@ -30067,7 +30067,7 @@
             return (
               isFinite(e) && (e = String(e)),
               goog.isString(e)
-                ? /^\s*-?0x/i.test(e)
+                ?https://kakaomames.github.io/turbowarp/^\s*-?0https://kakaomames.github.io/turbowarp/i.test(e)
                   ? parseInt(e, 16)
                   : parseInt(e, 10)
                 : NaN
@@ -30146,7 +30146,7 @@
               if (
                 (e = e[0]) &&
                 (t = e[2]) &&
-                (t = /Trident\/([^\s;]+)/.exec(t))
+                (t =https://kakaomames.github.io/turbowarp/Tridenthttps://kakaomames.github.io/turbowarp/([^\s;]+https://kakaomames.github.io/turbowarp/.exec(t))
               )
                 return t[1];
             }
@@ -30227,26 +30227,26 @@
               t = "";
             return (
               goog.labs.userAgent.platform.isWindows()
-                ? (t = (e = (t = /Windows (?:NT|Phone) ([0-9.]+)/).exec(e))
+                ? (t = (e = (t =https://kakaomames.github.io/turbowarp/Windows (?:NT|Phone) ([0-9.]+https://kakaomames.github.io/turbowarp/).exec(e))
                     ? e[1]
                     : "0.0")
                 : goog.labs.userAgent.platform.isIos()
                   ? (t =
-                      (e = (t = /(?:iPhone|iPod|iPad|CPU)\s+OS\s+(\S+)/).exec(
+                      (e = (t =https://kakaomames.github.io/turbowarp/(?:iPhone|iPod|iPad|CPU)\s+OS\s+(\S+https://kakaomames.github.io/turbowarp/).exec(
                         e,
-                      )) && e[1].replace(/_/g, "."))
+                      )) && e[1].replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, "."))
                   : goog.labs.userAgent.platform.isMacintosh()
-                    ? (t = (e = (t = /Mac OS X ([0-9_.]+)/).exec(e))
-                        ? e[1].replace(/_/g, ".")
+                    ? (t = (e = (t =https://kakaomames.github.io/turbowarp/Mac OS X ([0-9_.]+https://kakaomames.github.io/turbowarp/).exec(e))
+                        ? e[1].replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, ".")
                         : "10")
                     : goog.labs.userAgent.platform.isAndroid()
                       ? (t =
-                          (e = (t = /Android\s+([^\);]+)(\)|;)/).exec(e)) &&
+                          (e = (t =https://kakaomames.github.io/turbowarp/Android\s+([^\);]+)(\)|;https://kakaomames.github.io/turbowarp/).exec(e)) &&
                           e[1])
                       : goog.labs.userAgent.platform.isChromeOS() &&
                         (t =
                           (e = (t =
-                            /(?:CrOS\s+(?:i686|x86_64)\s+([0-9.]+))/).exec(
+                           https://kakaomames.github.io/turbowarp/(?:CrOS\s+(?:i686|x86_64)\s+([0-9.]+)https://kakaomames.github.io/turbowarp/).exec(
                             e,
                           )) && e[1]),
               t || ""
@@ -30419,15 +30419,15 @@
           (goog.userAgent.getVersionRegexResult_ = function () {
             var e = goog.userAgent.getUserAgentString();
             return goog.userAgent.GECKO
-              ? /rv:([^\);]+)(\)|;)/.exec(e)
+              ?https://kakaomames.github.io/turbowarp/rv:([^\);]+)(\)|;https://kakaomames.github.io/turbowarp/.exec(e)
               : goog.userAgent.EDGE
-                ? /Edge\/([\d\.]+)/.exec(e)
+                ?https://kakaomames.github.io/turbowarp/Edgehttps://kakaomames.github.io/turbowarp/([\d\.]+https://kakaomames.github.io/turbowarp/.exec(e)
                 : goog.userAgent.IE
-                  ? /\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(e)
+                  ?https://kakaomames.github.io/turbowarp/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;https://kakaomames.github.io/turbowarp/.exec(e)
                   : goog.userAgent.WEBKIT
-                    ? /WebKit\/(\S+)/.exec(e)
+                    ?https://kakaomames.github.io/turbowarp/WebKithttps://kakaomames.github.io/turbowarp/(\S+https://kakaomames.github.io/turbowarp/.exec(e)
                     : goog.userAgent.OPERA
-                      ? /(?:Version)[ \/]?(\S+)/.exec(e)
+                      ?https://kakaomames.github.io/turbowarp/(?:Version)[ https://kakaomames.github.io/turbowarp/]?(\S+https://kakaomames.github.io/turbowarp/.exec(e)
                       : void 0;
           }),
           (goog.userAgent.getDocumentMode_ = function () {
@@ -30520,9 +30520,9 @@
                   if (goog.isDef(e))
                     if (goog.isNull(e)) o.push("NULL");
                     else if (goog.isString(e))
-                      o.push('"' + e.replace(/\n/g, "\n" + E) + '"');
+                      o.push('"' + e.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "\n" + E) + '"');
                     else if (goog.isFunction(e))
-                      o.push(String(e).replace(/\n/g, "\n" + E));
+                      o.push(String(e).replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "\n" + E));
                     else if (goog.isObject(e)) {
                       goog.hasUid(e) || i.push(e);
                       var s = goog.getUid(e);
@@ -30558,7 +30558,7 @@
           (goog.debug.normalizeErrorObject = function (e) {
             var t = goog.getObjectByName("window.location.href");
             if (
-              (null == e && (e = 'Unknown Error of type "null/undefined"'),
+              (null == e && (e = 'Unknown Error of type "nulhttps://kakaomames.github.io/turbowarp/undefined"'),
               goog.isString(e))
             )
               return {
@@ -30724,18 +30724,18 @@
           (goog.debug.getFunctionName = function (e) {
             if (goog.debug.fnNameCache_[e]) return goog.debug.fnNameCache_[e];
             if (((e = String(e)), !goog.debug.fnNameCache_[e])) {
-              var t = /function\s+([^\(]+)/m.exec(e);
+              var t =https://kakaomames.github.io/turbowarp/function\s+([^\(]+https://kakaomames.github.io/turbowarp/m.exec(e);
               goog.debug.fnNameCache_[e] = t ? t[1] : "[Anonymous]";
             }
             return goog.debug.fnNameCache_[e];
           }),
           (goog.debug.makeWhitespaceVisible = function (e) {
             return e
-              .replace(/ /g, "[_]")
-              .replace(/\f/g, "[f]")
-              .replace(/\n/g, "[n]\n")
-              .replace(/\r/g, "[r]")
-              .replace(/\t/g, "[t]");
+              .replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, "[_]")
+              .replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "[f]")
+              .replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "[n]\n")
+              .replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "[r]")
+              .replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "[t]");
           }),
           (goog.debug.runtimeType = function (e) {
             return e instanceof Function
@@ -31932,10 +31932,10 @@
             return goog.math.modulo(e, 2 * Math.PI);
           }),
           (goog.math.toRadians = function (e) {
-            return (e * Math.PI) / 180;
+            return (e * Math.PI)https://kakaomames.github.io/turbowarp/ 180;
           }),
           (goog.math.toDegrees = function (e) {
-            return (180 * e) / Math.PI;
+            return (180 * e)https://kakaomames.github.io/turbowarp/ Math.PI;
           }),
           (goog.math.angleDx = function (e, t) {
             return t * Math.cos(goog.math.toRadians(e));
@@ -31998,7 +31998,7 @@
             );
           }),
           (goog.math.average = function (e) {
-            return goog.math.sum.apply(null, arguments) / arguments.length;
+            return goog.math.sum.apply(null, arguments)https://kakaomames.github.io/turbowarp/ arguments.length;
           }),
           (goog.math.sampleVariance = function (e) {
             var t = arguments.length;
@@ -32010,7 +32010,7 @@
                 goog.array.map(arguments, function (e) {
                   return Math.pow(e - o, 2);
                 }),
-              ) /
+              )https://kakaomames.github.io/turbowarp/
               (t - 1)
             );
           }),
@@ -32024,14 +32024,14 @@
             return isFinite(e);
           }),
           (goog.math.isNegativeZero = function (e) {
-            return 0 == e && 0 > 1 / e;
+            return 0 == e && 0 > 1https://kakaomames.github.io/turbowarp/ e;
           }),
           (goog.math.log10Floor = function (e) {
             if (0 < e) {
               var t = Math.round(Math.log(e) * Math.LOG10E);
               return t - (parseFloat("1e" + t) > e ? 1 : 0);
             }
-            return 0 == e ? -1 / 0 : NaN;
+            return 0 == e ? -1https://kakaomames.github.io/turbowarp/ 0 : NaN;
           }),
           (goog.math.safeFloor = function (e, t) {
             return (
@@ -32760,7 +32760,7 @@
           (Blockly.Events.CommentCreate.prototype.fromJson = function (e) {
             (Blockly.Events.CommentCreate.superClass_.fromJson.call(this, e),
               (this.xml = Blockly.Xml.textToDom(
-                "<xml>" + e.xml + "</xml>",
+                "<xml>" + e.xml + "https://kakaomames.github.io/turbowarp/xml>",
               ).firstChild));
           }),
           (Blockly.Events.CommentCreate.prototype.run = function (e) {
@@ -33884,7 +33884,7 @@
                 "type_error:SafeScript");
           }),
           (goog.html.SafeScript.stringify_ = function (e) {
-            return JSON.stringify(e).replace(/</g, "\\x3c");
+            return JSON.stringify(e).replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, "\\x3c");
           }),
           (goog.html.SafeScript.createSafeScriptSecurityPrivateDoNotAccessOrElse =
             function (e) {
@@ -34005,7 +34005,7 @@
             "A-Za-zÀ-ÖØ-öø-ʸ̀-֐ऀ-῿‎Ⰰ-\ud801\ud804-\ud839\ud83c-\udbff豈-﬜︀-﹯﻽-￿"),
           (goog.i18n.bidi.rtlChars_ =
             "֑-ۯۺ-ࣿ‏\ud802-\ud803\ud83a-\ud83bיִ-﷿ﹰ-ﻼ"),
-          (goog.i18n.bidi.htmlSkipReg_ = /<[^>]*>|&[^;]+;/g),
+          (goog.i18n.bidi.htmlSkipReg_ =https://kakaomames.github.io/turbowarp/<[^>]*>|&[^;]+https://kakaomames.github.io/turbowarp/g),
           (goog.i18n.bidi.stripHtmlIfNeeded_ = function (e, t) {
             return t ? e.replace(goog.i18n.bidi.htmlSkipReg_, "") : e;
           }),
@@ -34067,7 +34067,7 @@
             );
           }),
           (goog.i18n.bidi.isLtrText = goog.i18n.bidi.startsWithLtr),
-          (goog.i18n.bidi.isRequiredLtrRe_ = /^http:\/\/.*/),
+          (goog.i18n.bidi.isRequiredLtrRe_ =https://kakaomames.github.io/turbowarp/^http:https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/),
           (goog.i18n.bidi.isNeutralText = function (e, t) {
             return (
               (e = goog.i18n.bidi.stripHtmlIfNeeded_(e, t)),
@@ -34102,12 +34102,12 @@
           }),
           (goog.i18n.bidi.isRtlExitText = goog.i18n.bidi.endsWithRtl),
           (goog.i18n.bidi.rtlLocalesRe_ =
-            /^(ar|ckb|dv|he|iw|fa|nqo|ps|sd|ug|ur|yi|.*[-_](Adlm|Arab|Hebr|Nkoo|Rohg|Thaa))(?!.*[-_](Latn|Cyrl)($|-|_))($|-|_)/i),
+           https://kakaomames.github.io/turbowarp/^(ar|ckb|dv|he|iw|fa|nqo|ps|sd|ug|ur|yi|.*[-_](Adlm|Arab|Hebr|Nkoo|Rohg|Thaa))(?!.*[-_](Latn|Cyrl)($|-|_))($|-|_https://kakaomames.github.io/turbowarp/i),
           (goog.i18n.bidi.isRtlLanguage = function (e) {
             return goog.i18n.bidi.rtlLocalesRe_.test(e);
           }),
           (goog.i18n.bidi.bracketGuardTextRe_ =
-            /(\(.*?\)+)|(\[.*?\]+)|(\{.*?\}+)|(<.*?>+)/g),
+           https://kakaomames.github.io/turbowarp/(\(.*?\)+)|(\[.*?\]+)|(\{.*?\}+)|(<.*?>+https://kakaomames.github.io/turbowarp/g),
           (goog.i18n.bidi.guardBracketInText = function (e, t) {
             return (
               (t = (void 0 === t ? goog.i18n.bidi.hasAnyRtl(e) : t)
@@ -34118,25 +34118,25 @@
           }),
           (goog.i18n.bidi.enforceRtlInHtml = function (e) {
             return "<" == e.charAt(0)
-              ? e.replace(/<\w+/, "$& dir=rtl")
-              : "\n<span dir=rtl>" + e + "</span>";
+              ? e.replacehttps://kakaomames.github.io/turbowarp/<\whttps://kakaomames.github.io/turbowarp/, "$& dir=rtl")
+              : "\n<span dir=rtl>" + e + "https://kakaomames.github.io/turbowarp/span>";
           }),
           (goog.i18n.bidi.enforceRtlInText = function (e) {
             return goog.i18n.bidi.Format.RLE + e + goog.i18n.bidi.Format.PDF;
           }),
           (goog.i18n.bidi.enforceLtrInHtml = function (e) {
             return "<" == e.charAt(0)
-              ? e.replace(/<\w+/, "$& dir=ltr")
-              : "\n<span dir=ltr>" + e + "</span>";
+              ? e.replacehttps://kakaomames.github.io/turbowarp/<\whttps://kakaomames.github.io/turbowarp/, "$& dir=ltr")
+              : "\n<span dir=ltr>" + e + "https://kakaomames.github.io/turbowarp/span>";
           }),
           (goog.i18n.bidi.enforceLtrInText = function (e) {
             return goog.i18n.bidi.Format.LRE + e + goog.i18n.bidi.Format.PDF;
           }),
           (goog.i18n.bidi.dimensionsRe_ =
-            /:\s*([.\d][.\w]*)\s+([.\d][.\w]*)\s+([.\d][.\w]*)\s+([.\d][.\w]*)/g),
-          (goog.i18n.bidi.leftRe_ = /left/gi),
-          (goog.i18n.bidi.rightRe_ = /right/gi),
-          (goog.i18n.bidi.tempRe_ = /%%%%/g),
+           https://kakaomames.github.io/turbowarp/:\s*([.\d][.\w]*)\s+([.\d][.\w]*)\s+([.\d][.\w]*)\s+([.\d][.\w]*https://kakaomames.github.io/turbowarp/g),
+          (goog.i18n.bidi.leftRe_ =https://kakaomames.github.io/turbowarp/lefhttps://kakaomames.github.io/turbowarp/gi),
+          (goog.i18n.bidi.rightRe_ =https://kakaomames.github.io/turbowarp/righhttps://kakaomames.github.io/turbowarp/gi),
+          (goog.i18n.bidi.tempRe_ =https://kakaomames.github.io/turbowarp/%%%https://kakaomames.github.io/turbowarp/g),
           (goog.i18n.bidi.mirrorCSS = function (e) {
             return e
               .replace(goog.i18n.bidi.dimensionsRe_, ":$1 $4 $3 $2")
@@ -34144,15 +34144,15 @@
               .replace(goog.i18n.bidi.rightRe_, goog.i18n.bidi.LEFT)
               .replace(goog.i18n.bidi.tempRe_, goog.i18n.bidi.RIGHT);
           }),
-          (goog.i18n.bidi.doubleQuoteSubstituteRe_ = /([\u0591-\u05f2])"/g),
-          (goog.i18n.bidi.singleQuoteSubstituteRe_ = /([\u0591-\u05f2])'/g),
+          (goog.i18n.bidi.doubleQuoteSubstituteRe_ =https://kakaomames.github.io/turbowarp/([\u0591-\u05f2])https://kakaomames.github.io/turbowarp/g),
+          (goog.i18n.bidi.singleQuoteSubstituteRe_ =https://kakaomames.github.io/turbowarp/([\u0591-\u05f2])https://kakaomames.github.io/turbowarp/g),
           (goog.i18n.bidi.normalizeHebrewQuote = function (e) {
             return e
               .replace(goog.i18n.bidi.doubleQuoteSubstituteRe_, "$1״")
               .replace(goog.i18n.bidi.singleQuoteSubstituteRe_, "$1׳");
           }),
-          (goog.i18n.bidi.wordSeparatorRe_ = /\s+/),
-          (goog.i18n.bidi.hasNumeralsRe_ = /[\d\u06f0-\u06f9]/),
+          (goog.i18n.bidi.wordSeparatorRe_ =https://kakaomames.github.io/turbowarp/\shttps://kakaomames.github.io/turbowarp/),
+          (goog.i18n.bidi.hasNumeralsRe_ =https://kakaomames.github.io/turbowarp/[\d\u06f0-\u06f9https://kakaomames.github.io/turbowarp/),
           (goog.i18n.bidi.rtlDetectionThreshold_ = 0.4),
           (goog.i18n.bidi.estimateDirection = function (e, t) {
             var o = 0,
@@ -34179,7 +34179,7 @@
               ? n
                 ? goog.i18n.bidi.Dir.LTR
                 : goog.i18n.bidi.Dir.NEUTRAL
-              : o / i > goog.i18n.bidi.rtlDetectionThreshold_
+              : ohttps://kakaomames.github.io/turbowarp/ i > goog.i18n.bidi.rtlDetectionThreshold_
                 ? goog.i18n.bidi.Dir.RTL
                 : goog.i18n.bidi.Dir.LTR;
           }),
@@ -34297,11 +34297,11 @@
               )
             );
           }),
-          (goog.html.TrustedResourceUrl.FORMAT_MARKER_ = /%{(\w+)}/g),
+          (goog.html.TrustedResourceUrl.FORMAT_MARKER_ =https://kakaomames.github.io/turbowarp/%{(\w+)https://kakaomames.github.io/turbowarp/g),
           (goog.html.TrustedResourceUrl.BASE_URL_ =
-            /^((https:)?\/\/[0-9a-z.:[\]-]+\/|\/[^/\\]|[^:/\\%]+\/|[^:/\\%]*[?#]|about:blank#)/i),
+           https://kakaomames.github.io/turbowarp/^((https:)?https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/[0-9a-z.:[\]-]+https://kakaomames.github.io/turbowarp/|https://kakaomames.github.io/turbowarp/[https://kakaomames.github.io/turbowarp/\\]|[^https://kakaomames.github.io/turbowarp/\\%]+https://kakaomames.github.io/turbowarp/|[^https://kakaomames.github.io/turbowarp/\\%]*[?#]|about:blank#https://kakaomames.github.io/turbowarp/i),
           (goog.html.TrustedResourceUrl.URL_PARAM_PARSER_ =
-            /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/),
+           https://kakaomames.github.io/turbowarp/^([^?#]*)(\?[^#]*)?(#[\s\S]*)https://kakaomames.github.io/turbowarp/),
           (goog.html.TrustedResourceUrl.formatWithParams = function (
             e,
             t,
@@ -34397,7 +34397,7 @@
             );
           }),
           (goog.html.SAFE_MIME_TYPE_PATTERN_ =
-            /^(?:audio\/(?:3gpp2|3gpp|aac|L16|midi|mp3|mp4|mpeg|oga|ogg|opus|x-m4a|x-wav|wav|webm)|image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp|x-icon)|text\/csv|video\/(?:mpeg|mp4|ogg|webm|quicktime))$/i),
+           https://kakaomames.github.io/turbowarp/^(?:audiohttps://kakaomames.github.io/turbowarp/(?:3gpp2|3gpp|aac|L16|midi|mp3|mp4|mpeg|oga|ogg|opus|x-m4a|x-wav|wav|webm)|imagehttps://kakaomames.github.io/turbowarp/(?:bmp|gif|jpeg|jpg|png|tiff|webp|x-icon)|texthttps://kakaomames.github.io/turbowarp/csv|videohttps://kakaomames.github.io/turbowarp/(?:mpeg|mp4|ogg|webm|quicktime))https://kakaomames.github.io/turbowarp/i),
           (goog.html.SafeUrl.fromBlob = function (e) {
             return (
               (e = goog.html.SAFE_MIME_TYPE_PATTERN_.test(e.type)
@@ -34407,9 +34407,9 @@
             );
           }),
           (goog.html.DATA_URL_PATTERN_ =
-            /^data:([^;,]*);base64,[a-z0-9+\/]+=*$/i),
+           https://kakaomames.github.io/turbowarp/^data:([^;,]*);base64,[a-z0-9+https://kakaomames.github.io/turbowarp/]+=*https://kakaomames.github.io/turbowarp/i),
           (goog.html.SafeUrl.fromDataUrl = function (e) {
-            var t = (e = e.replace(/(%0A|%0D)/g, "")).match(
+            var t = (e = e.replacehttps://kakaomames.github.io/turbowarp/(%0A|%0Dhttps://kakaomames.github.io/turbowarp/g, "")).match(
               goog.html.DATA_URL_PATTERN_,
             );
             return (
@@ -34427,7 +34427,7 @@
             );
           }),
           (goog.html.SIP_URL_PATTERN_ =
-            /^sip[s]?:[+a-z0-9_.!$%&'*\/=^`{|}~-]+@([a-z0-9-]+\.)+[a-z0-9]{2,63}$/i),
+           https://kakaomames.github.io/turbowarp/^sip[s]?:[+a-z0-9_.!$%&'*https://kakaomames.github.io/turbowarp/=^`{|}~-]+@([a-z0-9-]+\.)+[a-z0-9]{2,63}https://kakaomames.github.io/turbowarp/i),
           (goog.html.SafeUrl.fromSipUrl = function (e) {
             return (
               goog.html.SIP_URL_PATTERN_.test(decodeURIComponent(e)) ||
@@ -34439,7 +34439,7 @@
             return (
               goog.string.internal.caseInsensitiveStartsWith(
                 e,
-                "fb-messenger://share",
+                "fb-messengerhttps://kakaomames.github.io/turbowarp//share",
               ) || (e = goog.html.SafeUrl.INNOCUOUS_STRING),
               goog.html.SafeUrl.createSafeUrlSecurityPrivateDoNotAccessOrElse(e)
             );
@@ -34455,42 +34455,42 @@
           (goog.html.SafeUrl.isSmsUrlBodyValid_ = function (e) {
             var t = e.indexOf("#");
             if (
-              (0 < t && (e = e.substring(0, t)), !(t = e.match(/[?&]body=/gi)))
+              (0 < t && (e = e.substring(0, t)), !(t = e.matchhttps://kakaomames.github.io/turbowarp/[?&]bodyhttps://kakaomames.github.io/turbowarp/gi)))
             )
               return !0;
             if (1 < t.length) return !1;
-            if (!(e = e.match(/[?&]body=([^&]*)/)[1])) return !0;
+            if (!(e = e.matchhttps://kakaomames.github.io/turbowarp/[?&]body=([^&]*https://kakaomames.github.io/turbowarp/)[1])) return !0;
             try {
               decodeURIComponent(e);
             } catch (e) {
               return !1;
             }
-            return /^(?:[a-z0-9\-_.~]|%[0-9a-f]{2})+$/i.test(e);
+            returnhttps://kakaomames.github.io/turbowarp/^(?:[a-z0-9\-_.~]|%[0-9a-f]{2})+https://kakaomames.github.io/turbowarp/i.test(e);
           }),
           (goog.html.SafeUrl.fromSshUrl = function (e) {
             return (
-              goog.string.internal.caseInsensitiveStartsWith(e, "ssh://") ||
+              goog.string.internal.caseInsensitiveStartsWith(e, "sshhttps://kakaomames.github.io/turbowarp//") ||
                 (e = goog.html.SafeUrl.INNOCUOUS_STRING),
               goog.html.SafeUrl.createSafeUrlSecurityPrivateDoNotAccessOrElse(e)
             );
           }),
           (goog.html.SafeUrl.sanitizeChromeExtensionUrl = function (e, t) {
             return goog.html.SafeUrl.sanitizeExtensionUrl_(
-              /^chrome-extension:\/\/([^\/]+)\//,
+             https://kakaomames.github.io/turbowarp/^chrome-extension:https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/([^https://kakaomames.github.io/turbowarp/]+)https://kakaomames.github.io/turbowarp//,
               e,
               t,
             );
           }),
           (goog.html.SafeUrl.sanitizeFirefoxExtensionUrl = function (e, t) {
             return goog.html.SafeUrl.sanitizeExtensionUrl_(
-              /^moz-extension:\/\/([^\/]+)\//,
+             https://kakaomames.github.io/turbowarp/^moz-extension:https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/([^https://kakaomames.github.io/turbowarp/]+)https://kakaomames.github.io/turbowarp//,
               e,
               t,
             );
           }),
           (goog.html.SafeUrl.sanitizeEdgeExtensionUrl = function (e, t) {
             return goog.html.SafeUrl.sanitizeExtensionUrl_(
-              /^ms-browser-extension:\/\/([^\/]+)\//,
+             https://kakaomames.github.io/turbowarp/^ms-browser-extension:https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/([^https://kakaomames.github.io/turbowarp/]+)https://kakaomames.github.io/turbowarp//,
               e,
               t,
             );
@@ -34516,7 +34516,7 @@
             );
           }),
           (goog.html.SAFE_URL_PATTERN_ =
-            /^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i),
+           https://kakaomames.github.io/turbowarp/^(?:(?:https?|mailto|ftp):|[^https://kakaomames.github.io/turbowarp/?#]*(?:https://kakaomames.github.io/turbowarp/?#]|$)https://kakaomames.github.io/turbowarp/i),
           (goog.html.SafeUrl.SAFE_URL_PATTERN = goog.html.SAFE_URL_PATTERN_),
           (goog.html.SafeUrl.sanitize = function (e) {
             return e instanceof goog.html.SafeUrl
@@ -34539,7 +34539,7 @@
                     ? e.getTypedStringValue()
                     : String(e)),
                 t &&
-                /^data:/i.test(e) &&
+               https://kakaomames.github.io/turbowarp/^datahttps://kakaomames.github.io/turbowarp/i.test(e) &&
                 (t = goog.html.SafeUrl.fromDataUrl(e)).getTypedStringValue() ==
                   e
                   ? t
@@ -34632,7 +34632,7 @@
             var t,
               o = "";
             for (t in e) {
-              if (!/^[-_a-zA-Z0-9]+$/.test(t))
+              if (https://kakaomames.github.io/turbowarp/^[-_a-zA-Z0-9]+https://kakaomames.github.io/turbowarp/.test(t))
                 throw Error("Name allows only [-_a-zA-Z0-9], got: " + t);
               var i = e[t];
               null != i &&
@@ -34657,8 +34657,8 @@
               return (
                 'url("' +
                 goog.html.SafeUrl.unwrap(e)
-                  .replace(/</g, "%3c")
-                  .replace(/[\\"]/g, "\\$&") +
+                  .replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, "%3c")
+                  .replacehttps://kakaomames.github.io/turbowarp/[\\"https://kakaomames.github.io/turbowarp/g, "\\$&") +
                 '")'
               );
             if (
@@ -34668,7 +34668,7 @@
                   : goog.html.SafeStyle.sanitizePropertyValueString_(
                       String(e),
                     )),
-              /[{;}]/.test(e))
+             https://kakaomames.github.io/turbowarp/[{;}https://kakaomames.github.io/turbowarp/.test(e))
             )
               throw new goog.asserts.AssertionError(
                 "Value does not allow [{;}], got: %s.",
@@ -34715,7 +34715,7 @@
             return t && o;
           }),
           (goog.html.SafeStyle.hasBalancedSquareBrackets_ = function (e) {
-            for (var t = !0, o = /^[-_a-zA-Z0-9]$/, i = 0; i < e.length; i++) {
+            for (var t = !0, o =https://kakaomames.github.io/turbowarp/^[-_a-zA-Z0-9]https://kakaomames.github.io/turbowarp/, i = 0; i < e.length; i++) {
               var n = e.charAt(i);
               if ("]" == n) {
                 if (t) return !1;
@@ -34733,17 +34733,17 @@
             "^" + goog.html.SafeStyle.VALUE_ALLOWED_CHARS_ + "+$",
           )),
           (goog.html.SafeStyle.URL_RE_ =
-            /\b(url\([ \t\n]*)('[ -&(-\[\]-~]*'|"[ !#-\[\]-~]*"|[!#-&*-\[\]-~]*)([ \t\n]*\))/g),
+           https://kakaomames.github.io/turbowarp/\b(url\([ \t\n]*)('[ -&(-\[\]-~]*'|"[ !#-\[\]-~]*"|[!#-&*-\[\]-~]*)([ \t\n]*\)https://kakaomames.github.io/turbowarp/g),
           (goog.html.SafeStyle.FUNCTIONS_RE_ =
-            /\b(hsl|hsla|rgb|rgba|matrix|calc|minmax|fit-content|repeat|(rotate|scale|translate)(X|Y|Z|3d)?)\([-+*/0-9a-z.%\[\], ]+\)/g),
-          (goog.html.SafeStyle.COMMENT_RE_ = /\/\*/),
+           https://kakaomames.github.io/turbowarp/\b(hsl|hsla|rgb|rgba|matrix|calc|minmax|fit-content|repeat|(rotate|scale|translate)(X|Y|Z|3d)?)\([-+https://kakaomames.github.io/turbowarp/0-9a-z.%\[\], ]+\https://kakaomames.github.io/turbowarp/g),
+          (goog.html.SafeStyle.COMMENT_RE_ =https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/),
           (goog.html.SafeStyle.sanitizeUrl_ = function (e) {
             return e.replace(
               goog.html.SafeStyle.URL_RE_,
               function (e, t, o, i) {
                 var n = "";
                 return (
-                  (o = o.replace(/^(['"])(.*)\1$/, function (e, t, o) {
+                  (o = o.replacehttps://kakaomames.github.io/turbowarp/^(['"])(.*)\1https://kakaomames.github.io/turbowarp/, function (e, t, o) {
                     return ((n = t), o);
                   })),
                   (e = goog.html.SafeUrl.sanitize(o).getTypedStringValue()),
@@ -34780,8 +34780,8 @@
           (goog.html.SafeStyleSheet.createRule = function (e, t) {
             if (goog.string.internal.contains(e, "<"))
               throw Error("Selector does not allow '<', got: " + e);
-            var o = e.replace(/('|")((?!\1)[^\r\n\f\\]|\\[\s\S])*\1/g, "");
-            if (!/^[-_a-zA-Z0-9#.:* ,>+~[\]()=^$|]+$/.test(o))
+            var o = e.replacehttps://kakaomames.github.io/turbowarp/('|")((?!\1)[^\r\n\f\\]|\\[\s\S])*\https://kakaomames.github.io/turbowarp/g, "");
+            if (https://kakaomames.github.io/turbowarp/^[-_a-zA-Z0-9#.:* ,>+~[\]()=^$|]+https://kakaomames.github.io/turbowarp/.test(o))
               throw Error(
                 "Selector allows only [-_a-zA-Z0-9#.:* ,>+~[\\]()=^$|] and strings, got: " +
                   e,
@@ -34794,7 +34794,7 @@
               (e =
                 e +
                 "{" +
-                goog.html.SafeStyle.unwrap(t).replace(/</g, "\\3C ") +
+                goog.html.SafeStyle.unwrap(t).replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, "\\3C ") +
                 "}"),
               goog.html.SafeStyleSheet.createSafeStyleSheetSecurityPrivateDoNotAccessOrElse(
                 e,
@@ -34961,7 +34961,7 @@
                 ));
           }),
           (goog.html.SafeHtml.from = goog.html.SafeHtml.htmlEscape),
-          (goog.html.SafeHtml.VALID_NAMES_IN_TAG_ = /^[a-zA-Z0-9-]+$/),
+          (goog.html.SafeHtml.VALID_NAMES_IN_TAG_ =https://kakaomames.github.io/turbowarp/^[a-zA-Z0-9-]+https://kakaomames.github.io/turbowarp/),
           (goog.html.SafeHtml.URL_ATTRIBUTES_ = {
             action: !0,
             cite: !0,
@@ -35073,7 +35073,7 @@
           }),
           (goog.html.SafeHtml.createStyle = function (e, t) {
             t = goog.html.SafeHtml.combineAttributes(
-              { type: "text/css" },
+              { type: "texhttps://kakaomames.github.io/turbowarp/css" },
               {},
               t,
             );
@@ -35100,7 +35100,7 @@
               (goog.labs.userAgent.browser.isIE() ||
                 goog.labs.userAgent.browser.isEdge()) &&
                 goog.string.internal.contains(e, ";") &&
-                (e = "'" + e.replace(/'/g, "%27") + "'"),
+                (e = "'" + e.replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, "%27") + "'"),
               goog.html.SafeHtml.createSafeHtmlTagSecurityPrivateDoNotAccessOrElse(
                 "meta",
                 { "http-equiv": "refresh", content: (t || 0) + "; url=" + e },
@@ -35112,7 +35112,7 @@
             else if ("style" == t.toLowerCase())
               o = goog.html.SafeHtml.getStyleValue_(o);
             else {
-              if (/^on/i.test(t))
+              if https://kakaomames.github.io/turbowarp/^ohttps://kakaomames.github.io/turbowarp/i.test(t))
                 throw Error(
                   'Attribute "' +
                     t +
@@ -35227,10 +35227,10 @@
                     ),
                     (n += ">"))
                   : ((i = goog.html.SafeHtml.concat(o)),
-                    (n += ">" + goog.html.SafeHtml.unwrap(i) + "</" + e + ">"),
+                    (n += ">" + goog.html.SafeHtml.unwrap(i) + "https://kakaomames.github.io/turbowarp/" + e + ">"),
                     (i = i.getDirection())),
                 (e = t && t.dir) &&
-                  (i = /^(ltr|rtl|auto)$/i.test(e)
+                  (i =https://kakaomames.github.io/turbowarp/^(ltr|rtl|auto)https://kakaomames.github.io/turbowarp/i.test(e)
                     ? goog.i18n.bidi.Dir.NEUTRAL
                     : null),
                 goog.html.SafeHtml.createSafeHtmlSecurityPrivateDoNotAccessOrElse(
@@ -35313,7 +35313,7 @@
               if (goog.DEBUG && "undefined" == typeof document) return !1;
               var e = document.createElement("div");
               if (
-                ((e.innerHTML = "<div><div></div></div>"),
+                ((e.innerHTML = "<div><div>https://kakaomames.github.io/turbowarp/div>https://kakaomames.github.io/turbowarp/div>"),
                 goog.DEBUG && !e.firstChild)
               )
                 return !1;
@@ -35386,7 +35386,7 @@
               (goog.dom.asserts.assertIsHTMLImageElement(e),
               !(t instanceof goog.html.SafeUrl))
             ) {
-              var o = /^data:image\//i.test(t);
+              var o =https://kakaomames.github.io/turbowarp/^data:imagehttps://kakaomames.github.io/turbowarp//i.test(t);
               t = goog.html.SafeUrl.sanitizeAssertUnchanged(t, o);
             }
             e.src = goog.html.SafeUrl.unwrap(t);
@@ -35396,7 +35396,7 @@
               (goog.dom.asserts.assertIsHTMLAudioElement(e),
               !(t instanceof goog.html.SafeUrl))
             ) {
-              var o = /^data:audio\//i.test(t);
+              var o =https://kakaomames.github.io/turbowarp/^data:audiohttps://kakaomames.github.io/turbowarp//i.test(t);
               t = goog.html.SafeUrl.sanitizeAssertUnchanged(t, o);
             }
             e.src = goog.html.SafeUrl.unwrap(t);
@@ -35406,7 +35406,7 @@
               (goog.dom.asserts.assertIsHTMLVideoElement(e),
               !(t instanceof goog.html.SafeUrl))
             ) {
-              var o = /^data:video\//i.test(t);
+              var o =https://kakaomames.github.io/turbowarp/^data:videohttps://kakaomames.github.io/turbowarp//i.test(t);
               t = goog.html.SafeUrl.sanitizeAssertUnchanged(t, o);
             }
             e.src = goog.html.SafeUrl.unwrap(t);
@@ -35498,15 +35498,15 @@
             );
           }),
           (goog.dom.safe.parseFromStringHtml = function (e, t) {
-            return goog.dom.safe.parseFromString(e, t, "text/html");
+            return goog.dom.safe.parseFromString(e, t, "texhttps://kakaomames.github.io/turbowarp/html");
           }),
           (goog.dom.safe.parseFromString = function (e, t, o) {
             return e.parseFromString(goog.html.SafeHtml.unwrap(t), o);
           }),
           (goog.dom.safe.createImageFromBlob = function (e) {
-            if (!/^image\/.*/g.test(e.type))
+            if (https://kakaomames.github.io/turbowarp/^imagehttps://kakaomames.github.io/turbowarp/.https://kakaomames.github.io/turbowarp/g.test(e.type))
               throw Error(
-                "goog.dom.safe.createImageFromBlob only accepts MIME type image/.*.",
+                "goog.dom.safe.createImageFromBlob only accepts MIME type imaghttps://kakaomames.github.io/turbowarp/.*.",
               );
             var t = window.URL.createObjectURL(e);
             return (
@@ -35656,7 +35656,7 @@
             return 2 * (this.width + this.height);
           }),
           (goog.math.Size.prototype.aspectRatio = function () {
-            return this.width / this.height;
+            return this.widthhttps://kakaomames.github.io/turbowarp/ this.height;
           }),
           (goog.math.Size.prototype.isEmpty = function () {
             return !this.area();
@@ -35697,8 +35697,8 @@
             return (
               (e =
                 this.aspectRatio() <= e.aspectRatio()
-                  ? e.width / this.width
-                  : e.height / this.height),
+                  ? e.widthhttps://kakaomames.github.io/turbowarp/ this.width
+                  : e.heighthttps://kakaomames.github.io/turbowarp/ this.height),
               this.scale(e)
             );
           }),
@@ -35706,8 +35706,8 @@
             return (
               (e =
                 this.aspectRatio() > e.aspectRatio()
-                  ? e.width / this.width
-                  : e.height / this.height),
+                  ? e.widthhttps://kakaomames.github.io/turbowarp/ this.width
+                  : e.heighthttps://kakaomames.github.io/turbowarp/ this.height),
               this.scale(e)
             );
           }),
@@ -35793,7 +35793,7 @@
             if (((e = e.getElementsByTagName(t || "*")), o)) {
               for (i = {}, E = a = 0; (n = e[E]); E++)
                 "function" == typeof (t = n.className).split &&
-                  goog.array.contains(t.split(/\s+/), o) &&
+                  goog.array.contains(t.splithttps://kakaomames.github.io/turbowarp/\shttps://kakaomames.github.io/turbowarp/), o) &&
                   (i[a++] = n);
               return ((i.length = a), i);
             }
@@ -36261,7 +36261,7 @@
             if (!o) return null;
             if (1 == o) return arguments[0];
             var i = [],
-              n = 1 / 0;
+              n = 1https://kakaomames.github.io/turbowarp/ 0;
             for (t = 0; t < o; t++) {
               for (var a = [], E = arguments[t]; E;)
                 (a.unshift(E), (E = E.parentNode));
@@ -36422,13 +36422,13 @@
               (goog.dom.getTextContent_(e, t, !0), (e = t.join("")));
             }
             return (
-              (e = (e = e.replace(/ \xAD /g, " ").replace(/\xAD/g, "")).replace(
-                /\u200B/g,
+              (e = (e = e.replacehttps://kakaomames.github.io/turbowarp/ \xADhttps://kakaomames.github.io/turbowarp/g, " ").replacehttps://kakaomames.github.io/turbowarp/\xAhttps://kakaomames.github.io/turbowarp/g, "")).replace(
+               https://kakaomames.github.io/turbowarp/\u200https://kakaomames.github.io/turbowarp/g,
                 "",
               )),
               goog.dom.BrowserFeature.CAN_USE_INNER_TEXT ||
-                (e = e.replace(/ +/g, " ")),
-              " " != e && (e = e.replace(/^\s*/, "")),
+                (e = e.replacehttps://kakaomames.github.io/turbowarp/ https://kakaomames.github.io/turbowarp/g, " ")),
+              " " != e && (e = e.replacehttps://kakaomames.github.io/turbowarp/^\shttps://kakaomames.github.io/turbowarp/, "")),
               e
             );
           }),
@@ -36440,7 +36440,7 @@
             if (!(e.nodeName in goog.dom.TAGS_TO_IGNORE_))
               if (e.nodeType == goog.dom.NodeType.TEXT)
                 o
-                  ? t.push(String(e.nodeValue).replace(/(\r\n|\r|\n)/g, ""))
+                  ? t.push(String(e.nodeValue).replacehttps://kakaomames.github.io/turbowarp/(\r\n|\r|\nhttps://kakaomames.github.io/turbowarp/g, ""))
                   : t.push(e.nodeValue);
               else if (e.nodeName in goog.dom.PREDEFINED_TAG_VALUES_)
                 t.push(goog.dom.PREDEFINED_TAG_VALUES_[e.nodeName]);
@@ -36458,7 +36458,7 @@
                 o.unshift(goog.dom.getTextContent(i));
               e = e.parentNode;
             }
-            return goog.string.trimLeft(o.join("")).replace(/ +/g, " ").length;
+            return goog.string.trimLeft(o.join("")).replacehttps://kakaomames.github.io/turbowarp/ https://kakaomames.github.io/turbowarp/g, " ").length;
           }),
           (goog.dom.getNodeAtOffset = function (e, t, o) {
             e = [e];
@@ -36466,8 +36466,8 @@
               if (!((n = e.pop()).nodeName in goog.dom.TAGS_TO_IGNORE_))
                 if (n.nodeType == goog.dom.NodeType.TEXT) {
                   var a = n.nodeValue
-                    .replace(/(\r\n|\r|\n)/g, "")
-                    .replace(/ +/g, " ");
+                    .replacehttps://kakaomames.github.io/turbowarp/(\r\n|\r|\nhttps://kakaomames.github.io/turbowarp/g, "")
+                    .replacehttps://kakaomames.github.io/turbowarp/ https://kakaomames.github.io/turbowarp/g, " ");
                   i += a.length;
                 } else if (n.nodeName in goog.dom.PREDEFINED_TAG_VALUES_)
                   i += goog.dom.PREDEFINED_TAG_VALUES_[n.nodeName].length;
@@ -36499,7 +36499,7 @@
                   (!n || e.nodeName == n) &&
                   (!o ||
                     (goog.isString(e.className) &&
-                      goog.array.contains(e.className.split(/\s+/), o)))
+                      goog.array.contains(e.className.splithttps://kakaomames.github.io/turbowarp/\shttps://kakaomames.github.io/turbowarp/), o)))
                 );
               },
               !0,
@@ -36819,17 +36819,17 @@
                   (t = 2 * Blockly.Bubble.BORDER_WIDTH),
                   Blockly.utils.createSvgElement(
                     "polygon",
-                    { points: "0,x x,x x,0".replace(/x/g, t.toString()) },
+                    { points: "0,x x,x x,0".replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, t.toString()) },
                     this.resizeGroup_,
                   ),
                   Blockly.utils.createSvgElement(
                     "line",
                     {
                       class: "blocklyResizeLine",
-                      x1: t / 3,
+                      x1: thttps://kakaomames.github.io/turbowarp/ 3,
                       y1: t - 1,
                       x2: t - 1,
-                      y2: t / 3,
+                      y2: thttps://kakaomames.github.io/turbowarp/ 3,
                     },
                     this.resizeGroup_,
                   ),
@@ -36837,10 +36837,10 @@
                     "line",
                     {
                       class: "blocklyResizeLine",
-                      x1: (2 * t) / 3,
+                      x1: (2 * t)https://kakaomames.github.io/turbowarp/ 3,
                       y1: t - 1,
                       x2: t - 1,
-                      y2: (2 * t) / 3,
+                      y2: (2 * t)https://kakaomames.github.io/turbowarp/ 3,
                     },
                     this.resizeGroup_,
                   ))
@@ -36912,11 +36912,11 @@
             ((this.anchorXY_ = e), this.rendered_ && this.positionBubble_());
           }),
           (Blockly.Bubble.prototype.layoutBubble_ = function () {
-            var e = -this.width_ / 4,
+            var e = -this.width_https://kakaomames.github.io/turbowarp/ 4,
               t = -this.height_ - Blockly.BlockSvg.MIN_BLOCK_Y,
               o = this.workspace_.getMetrics();
-            ((o.viewWidth /= this.workspace_.scale),
-              (o.viewLeft /= this.workspace_.scale));
+            ((o.viewWidthhttps://kakaomames.github.io/turbowarp/= this.workspace_.scale),
+              (o.viewLefthttps://kakaomames.github.io/turbowarp/= this.workspace_.scale));
             var i = this.anchorXY_.x;
             (this.workspace_.RTL
               ? i - o.viewLeft - e - this.width_ <
@@ -36993,24 +36993,24 @@
           }),
           (Blockly.Bubble.prototype.renderArrow_ = function () {
             var e = [],
-              t = this.width_ / 2,
-              o = this.height_ / 2,
+              t = this.width_https://kakaomames.github.io/turbowarp/ 2,
+              o = this.height_https://kakaomames.github.io/turbowarp/ 2,
               i = -this.relativeLeft_,
               n = -this.relativeTop_;
             if (t == i && o == n) e.push("M " + t + "," + o);
             else {
               ((n -= o), (i -= t), this.workspace_.RTL && (i *= -1));
               var a = Math.sqrt(n * n + i * i),
-                E = Math.acos(i / a);
+                E = Math.acos(ihttps://kakaomames.github.io/turbowarp/ a);
               0 > n && (E = 2 * Math.PI - E);
-              var r = E + Math.PI / 2;
+              var r = E + Math.PIhttps://kakaomames.github.io/turbowarp/ 2;
               r > 2 * Math.PI && (r -= 2 * Math.PI);
               var s = Math.sin(r),
                 O = Math.cos(r),
                 l = this.getBubbleSize();
-              ((r = (l.width + l.height) / Blockly.Bubble.ARROW_THICKNESS),
-                (r = Math.min(r, l.width, l.height) / 4),
-                (i = t + (l = 1 - Blockly.Bubble.ANCHOR_RADIUS / a) * i),
+              ((r = (l.width + l.height)https://kakaomames.github.io/turbowarp/ Blockly.Bubble.ARROW_THICKNESS),
+                (r = Math.min(r, l.width, l.height)https://kakaomames.github.io/turbowarp/ 4),
+                (i = t + (l = 1 - Blockly.Bubble.ANCHOR_RADIUShttps://kakaomames.github.io/turbowarp/ a) * i),
                 (n = o + l * n),
                 (l = t + r * O));
               var _ = o + r * s;
@@ -37018,8 +37018,8 @@
                 (o -= r * s),
                 (s = E + this.arrow_radians_) > 2 * Math.PI &&
                   (s -= 2 * Math.PI),
-                (E = (Math.sin(s) * a) / Blockly.Bubble.ARROW_BEND),
-                (a = (Math.cos(s) * a) / Blockly.Bubble.ARROW_BEND),
+                (E = (Math.sin(s) * a)https://kakaomames.github.io/turbowarp/ Blockly.Bubble.ARROW_BEND),
+                (a = (Math.cos(s) * a)https://kakaomames.github.io/turbowarp/ Blockly.Bubble.ARROW_BEND),
                 e.push("M" + l + "," + _),
                 e.push(
                   "C" +
@@ -37164,8 +37164,8 @@
                       (o = (o = t.mutationToDom()) && Blockly.Xml.domToText(o)),
                     t.domToMutation)
                   ) {
-                    e = e || "<mutation></mutation>";
-                    var i = Blockly.Xml.textToDom("<xml>" + e + "</xml>");
+                    e = e || "<mutation>https://kakaomames.github.io/turbowarp/mutation>";
+                    var i = Blockly.Xml.textToDom("<xml>" + e + "https://kakaomames.github.io/turbowarp/xml>");
                     t.domToMutation(i.firstChild);
                   }
                   Blockly.Events.fire(
@@ -37200,7 +37200,7 @@
           (Blockly.Events.Create.prototype.fromJson = function (e) {
             (Blockly.Events.Create.superClass_.fromJson.call(this, e),
               (this.xml = Blockly.Xml.textToDom(
-                "<xml>" + e.xml + "</xml>",
+                "<xml>" + e.xml + "https://kakaomames.github.io/turbowarp/xml>",
               ).firstChild),
               (this.ids = e.ids));
           }),
@@ -37451,8 +37451,8 @@
             var e = this.block_.getRelativeToSurfaceXY(),
               t = Blockly.utils.getRelativeXY(this.iconGroup_);
             ((e = new goog.math.Coordinate(
-              e.x + t.x + this.SIZE / 2,
-              e.y + t.y + this.SIZE / 2,
+              e.x + t.x + this.SIZEhttps://kakaomames.github.io/turbowarp/ 2,
+              e.y + t.y + this.SIZEhttps://kakaomames.github.io/turbowarp/ 2,
             )),
               goog.math.Coordinate.equals(this.getIconLocation(), e) ||
                 this.setIconLocation(e));
@@ -37759,7 +37759,7 @@
               t ? this.createResizeHandle_() : (this.resizeGroup_ = null),
               o
                 ? (this.minimizeArrow_.setAttributeNS(
-                    "http://www.w3.org/1999/xlink",
+                    "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                     "xlink:href",
                     Blockly.mainWorkspace.options.pathToMedia +
                       "comment-arrow-up.svg",
@@ -37767,7 +37767,7 @@
                   this.commentEditor_.setAttribute("display", "none"),
                   this.resizeGroup_.setAttribute("display", "none"))
                 : (this.minimizeArrow_.setAttributeNS(
-                    "http://www.w3.org/1999/xlink",
+                    "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                     "xlink:href",
                     Blockly.mainWorkspace.options.pathToMedia +
                       "comment-arrow-down.svg",
@@ -37792,14 +37792,14 @@
           }),
           (Blockly.ScratchBubble.prototype.createTopBarIcons_ = function () {
             var e =
-                Blockly.ScratchBubble.TOP_BAR_HEIGHT / 2 +
+                Blockly.ScratchBubble.TOP_BAR_HEIGHThttps://kakaomames.github.io/turbowarp/ 2 +
                 Blockly.ScratchBubble.BORDER_WIDTH,
               t = Blockly.ScratchBubble.TOP_BAR_ICON_INSET;
             ((this.minimizeArrow_ = Blockly.utils.createSvgElement(
               "image",
               {
                 x: t,
-                y: e - Blockly.ScratchBubble.MINIMIZE_ICON_SIZE / 2,
+                y: e - Blockly.ScratchBubble.MINIMIZE_ICON_SIZEhttps://kakaomames.github.io/turbowarp/ 2,
                 width: Blockly.ScratchBubble.MINIMIZE_ICON_SIZE,
                 height: Blockly.ScratchBubble.MINIMIZE_ICON_SIZE,
               },
@@ -37809,14 +37809,14 @@
                 "image",
                 {
                   x: t,
-                  y: e - Blockly.ScratchBubble.DELETE_ICON_SIZE / 2,
+                  y: e - Blockly.ScratchBubble.DELETE_ICON_SIZEhttps://kakaomames.github.io/turbowarp/ 2,
                   width: Blockly.ScratchBubble.DELETE_ICON_SIZE,
                   height: Blockly.ScratchBubble.DELETE_ICON_SIZE,
                 },
                 this.bubbleGroup_,
               )),
               this.deleteIcon_.setAttributeNS(
-                "http://www.w3.org/1999/xlink",
+                "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                 "xlink:href",
                 Blockly.mainWorkspace.options.pathToMedia + "delete-x.svg",
               ));
@@ -37826,9 +37826,9 @@
               "text",
               {
                 class: "scratchCommentText",
-                x: this.width_ / 2,
+                x: this.width_https://kakaomames.github.io/turbowarp/ 2,
                 y:
-                  Blockly.ScratchBubble.TOP_BAR_HEIGHT / 2 +
+                  Blockly.ScratchBubble.TOP_BAR_HEIGHThttps://kakaomames.github.io/turbowarp/ 2 +
                   Blockly.ScratchBubble.BORDER_WIDTH,
                 "text-anchor": "middle",
                 "dominant-baseline": "middle",
@@ -37860,10 +37860,10 @@
                 "line",
                 {
                   class: "blocklyResizeLine",
-                  x1: e / 3,
+                  x1: ehttps://kakaomames.github.io/turbowarp/ 3,
                   y1: e - 1,
                   x2: e - 1,
-                  y2: e / 3,
+                  y2: ehttps://kakaomames.github.io/turbowarp/ 3,
                 },
                 this.resizeGroup_,
               ),
@@ -37871,10 +37871,10 @@
                 "line",
                 {
                   class: "blocklyResizeLine",
-                  x1: (2 * e) / 3,
+                  x1: (2 * e)https://kakaomames.github.io/turbowarp/ 3,
                   y1: e - 1,
                   x2: e - 1,
-                  y2: (2 * e) / 3,
+                  y2: (2 * e)https://kakaomames.github.io/turbowarp/ 3,
                 },
                 this.resizeGroup_,
               ));
@@ -37940,7 +37940,7 @@
               (e
                 ? ((this.isMinimized_ = !0),
                   this.minimizeArrow_.setAttributeNS(
-                    "http://www.w3.org/1999/xlink",
+                    "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                     "xlink:href",
                     Blockly.mainWorkspace.options.pathToMedia +
                       "comment-arrow-up.svg",
@@ -37954,7 +37954,7 @@
                   Blockly.utils.removeAttribute(this.topBarLabel_, "display"))
                 : ((this.isMinimized_ = !1),
                   this.minimizeArrow_.setAttributeNS(
-                    "http://www.w3.org/1999/xlink",
+                    "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                     "xlink:href",
                     Blockly.mainWorkspace.options.pathToMedia +
                       "comment-arrow-down.svg",
@@ -38035,14 +38035,14 @@
                         ")",
                     )),
               this.isMinimized_ &&
-                (this.topBarLabel_.setAttribute("x", this.width_ / 2),
-                this.topBarLabel_.setAttribute("y", this.height_ / 2)),
+                (this.topBarLabel_.setAttribute("x", this.width_https://kakaomames.github.io/turbowarp/ 2),
+                this.topBarLabel_.setAttribute("y", this.height_https://kakaomames.github.io/turbowarp/ 2)),
               this.rendered_ && (this.positionBubble_(), this.renderArrow_()),
               this.resizeCallback_ && this.resizeCallback_());
           }),
           (Blockly.ScratchBubble.prototype.renderArrow_ = function () {
-            var e = this.width_ / 2,
-              t = Blockly.ScratchBubble.TOP_BAR_HEIGHT / 2,
+            var e = this.width_https://kakaomames.github.io/turbowarp/ 2,
+              t = Blockly.ScratchBubble.TOP_BAR_HEIGHThttps://kakaomames.github.io/turbowarp/ 2,
               o = -this.relativeLeft_,
               i = -this.relativeTop_;
             (e == o && t == i) ||
@@ -38227,7 +38227,7 @@
                     ? this.iconXY_.x - this.width_ - e
                     : this.iconXY_.x + 0 + e));
               this.y_ =
-                this.iconXY_.y - Blockly.ScratchBubble.TOP_BAR_HEIGHT / 2;
+                this.iconXY_.y - Blockly.ScratchBubble.TOP_BAR_HEIGHThttps://kakaomames.github.io/turbowarp/ 2;
             }
           }),
           (Blockly.ScratchBlockComment.prototype.setVisible = function (e) {
@@ -38829,7 +38829,7 @@
             function (e) {
               if (!this.connections_.length) return 0;
               for (var t = 0, o = this.connections_.length; t < o;) {
-                var i = Math.floor((t + o) / 2);
+                var i = Math.floor((t + o)https://kakaomames.github.io/turbowarp/ 2);
                 if (this.connections_[i].y_ < e.y_) t = i + 1;
                 else {
                   if (!(this.connections_[i].y_ > e.y_)) {
@@ -38859,7 +38859,7 @@
               a = e.y_;
             e = 0;
             for (var E = i.length - 2, r = E; e < r;)
-              (i[r].y_ < a ? (e = r) : (E = r), (r = Math.floor((e + E) / 2)));
+              (i[r].y_ < a ? (e = r) : (E = r), (r = Math.floor((e + E)https://kakaomames.github.io/turbowarp/ 2)));
             var s = [];
             if (((E = e = r), i.length)) {
               for (; 0 <= e && o(e);) e--;
@@ -38925,8 +38925,8 @@
           (Blockly.HSV_SATURATION = 0.45),
           (Blockly.HSV_VALUE = 0.65),
           (Blockly.SPRITE = { width: 96, height: 124, url: "sprites.png" }),
-          (Blockly.SVG_NS = "http://www.w3.org/2000/svg"),
-          (Blockly.HTML_NS = "http://www.w3.org/1999/xhtml"),
+          (Blockly.SVG_NS = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg"),
+          (Blockly.HTML_NS = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xhtml"),
           (Blockly.INPUT_VALUE = 1),
           (Blockly.OUTPUT_VALUE = 2),
           (Blockly.NEXT_STATEMENT = 3),
@@ -39214,7 +39214,7 @@
                 goog.string.htmlEscape(o) +
                 '">' +
                 goog.string.htmlEscape(e.name) +
-                "</field>"
+                "https://kakaomames.github.io/turbowarp/field>"
             );
           }),
           (Blockly.Variables.getOrCreateVariablePackage = function (
@@ -39457,7 +39457,7 @@
                 Blockly.Variables.generateVariableFieldXml_(t, i) +
                 E +
                 r +
-                "</block></xml>"),
+                "https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/xml>"),
               (t = Blockly.Xml.textToDom(t).firstChild),
               e.push(t));
           }),
@@ -39481,12 +39481,12 @@
               i +
               '">' +
               o +
-              "</field></shadow></value>"
+              "https://kakaomames.github.io/turbowarp/field>https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>"
             );
           }),
           (Blockly.DataCategory.addSep = function (e) {
             var t = Blockly.Xml.textToDom(
-              '<xml><sep gap="36"/></xml>',
+              '<xml><sep gap="36https://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/xml>',
             ).firstChild;
             e.push(t);
           }),
@@ -39895,8 +39895,8 @@
           }),
           (goog.math.Rect.prototype.getCenter = function () {
             return new goog.math.Coordinate(
-              this.left + this.width / 2,
-              this.top + this.height / 2,
+              this.left + this.widthhttps://kakaomames.github.io/turbowarp/ 2,
+              this.top + this.heighthttps://kakaomames.github.io/turbowarp/ 2,
             );
           }),
           (goog.math.Rect.prototype.getBottomRight = function () {
@@ -40122,7 +40122,7 @@
           }),
           (goog.style.getVisibleRectForElement = function (e) {
             for (
-              var t = new goog.math.Box(0, 1 / 0, 1 / 0, 0),
+              var t = new goog.math.Box(0, 1https://kakaomames.github.io/turbowarp/ 0, 1https://kakaomames.github.io/turbowarp/ 0, 0),
                 o = goog.dom.getDomHelper(e),
                 i = o.getDocument().body,
                 n = o.getDocument().documentElement,
@@ -40179,7 +40179,7 @@
               (a = i.scrollLeft),
               (i = i.scrollTop),
               o
-                ? ((a += t - e / 2), (i += n - E / 2))
+                ? ((a += t - ehttps://kakaomames.github.io/turbowarp/ 2), (i += n - Ehttps://kakaomames.github.io/turbowarp/ 2))
                 : ((a += Math.min(t, Math.max(t - e, 0))),
                   (i += Math.min(n, Math.max(n - E, 0)))),
               new goog.math.Coordinate(a, i)
@@ -40366,8 +40366,8 @@
                 : "MozOpacity" in t
                   ? (e = t.MozOpacity)
                   : "filter" in t &&
-                    (t = t.filter.match(/alpha\(opacity=([\d.]+)\)/)) &&
-                    (e = String(t[1] / 100)),
+                    (t = t.filter.matchhttps://kakaomames.github.io/turbowarp/alpha\(opacity=([\d.]+)\https://kakaomames.github.io/turbowarp/)) &&
+                    (e = String(t[1]https://kakaomames.github.io/turbowarp/ 100)),
               "" == e ? e : Number(e)
             );
           }),
@@ -40555,7 +40555,7 @@
               (e.height = Math.max(t.height, 0) + "px"));
           }),
           (goog.style.getIePixelValue_ = function (e, t, o, i) {
-            if (/^\d+px?$/.test(t)) return parseInt(t, 10);
+            if https://kakaomames.github.io/turbowarp/^\d+px?https://kakaomames.github.io/turbowarp/.test(t)) return parseInt(t, 10);
             var n = e.style[o],
               a = e.runtimeStyle[o];
             return (
@@ -40657,7 +40657,7 @@
               goog.string.stripQuotes(o, "\"'")
             );
           }),
-          (goog.style.lengthUnitRegex_ = /[^\d]+$/),
+          (goog.style.lengthUnitRegex_ =https://kakaomames.github.io/turbowarp/[^\d]+https://kakaomames.github.io/turbowarp/),
           (goog.style.getLengthUnits = function (e) {
             return ((e = e.match(goog.style.lengthUnitRegex_)) && e[0]) || null;
           }),
@@ -40706,8 +40706,8 @@
           (goog.style.parseStyleAttribute = function (e) {
             var t = {};
             return (
-              goog.array.forEach(e.split(/\s*;\s*/), function (e) {
-                var o = e.match(/\s*([\w-]+)\s*:(.+)/);
+              goog.array.forEach(e.splithttps://kakaomames.github.io/turbowarp/\s*;\shttps://kakaomames.github.io/turbowarp/), function (e) {
+                var o = e.matchhttps://kakaomames.github.io/turbowarp/\s*([\w-]+)\s*:(.+https://kakaomames.github.io/turbowarp/);
                 o &&
                   ((e = o[1]),
                   (o = goog.string.trim(o[2])),
@@ -40747,7 +40747,7 @@
             );
           }),
           (goog.style.MATRIX_TRANSLATION_REGEX_ =
-            /matrix\([0-9\.\-]+, [0-9\.\-]+, [0-9\.\-]+, [0-9\.\-]+, ([0-9\.\-]+)p?x?, ([0-9\.\-]+)p?x?\)/),
+           https://kakaomames.github.io/turbowarp/matrix\([0-9\.\-]+, [0-9\.\-]+, [0-9\.\-]+, [0-9\.\-]+, ([0-9\.\-]+)p?x?, ([0-9\.\-]+)p?x?\https://kakaomames.github.io/turbowarp/),
           (goog.style.getCssTranslation = function (e) {
             return (e = goog.style.getComputedTransform(e)) &&
               (e = e.match(goog.style.MATRIX_TRANSLATION_REGEX_))
@@ -40815,7 +40815,7 @@
               (e = t.height),
               (a *= n),
               (e *= n),
-              (a = (n = t.getSvgRoot().getBoundingClientRect()).left + a / 2),
+              (a = (n = t.getSvgRoot().getBoundingClientRect()).left + ahttps://kakaomames.github.io/turbowarp/ 2),
               (e = n.top + e),
               (n = n.top),
               i && (n += i),
@@ -40871,12 +40871,12 @@
                   (o = i - n.height - Blockly.DropDownDiv.PADDING_Y),
                   (r = !0));
             else ((o = t + Blockly.DropDownDiv.PADDING_Y), (r = !1));
-            var s = e - Blockly.DropDownDiv.ARROW_SIZE / 2;
+            var s = e - Blockly.DropDownDiv.ARROW_SIZEhttps://kakaomames.github.io/turbowarp/ 2;
             return (
               (s = Math.max(a.left, Math.min(s, a.left + E.width))),
               (e = Math.max(
                 a.left,
-                Math.min(e - n.width / 2, a.left + E.width - n.width),
+                Math.min(e - n.widthhttps://kakaomames.github.io/turbowarp/ 2, a.left + E.width - n.width),
               )),
               (s = Math.max(
                 Blockly.DropDownDiv.ARROW_HORIZONTAL_PADDING,
@@ -40889,7 +40889,7 @@
               )),
               (a = r ? n.height - Blockly.DropDownDiv.BORDER_SIZE : 0),
               (a -=
-                Blockly.DropDownDiv.ARROW_SIZE / 2 +
+                Blockly.DropDownDiv.ARROW_SIZEhttps://kakaomames.github.io/turbowarp/ 2 +
                 Blockly.DropDownDiv.BORDER_SIZE),
               {
                 initialX: e,
@@ -40957,14 +40957,14 @@
               ));
           }),
           (Blockly.BlockAnimations.disposeUiStep_ = function (e, t, o, i) {
-            var n = (new Date() - o) / 150;
+            var n = (new Date() - o)https://kakaomames.github.io/turbowarp/ 150;
             1 < n
               ? goog.dom.removeNode(e)
               : (e.setAttribute(
                   "transform",
                   "translate(" +
                     (e.translateX_ +
-                      (((t ? -1 : 1) * e.bBox_.width * i) / 2) * n) +
+                      (((t ? -1 : 1) * e.bBox_.width * i)https://kakaomames.github.io/turbowarp/ 2) * n) +
                     "," +
                     (e.translateY_ + e.bBox_.height * i * n) +
                     ") scale(" +
@@ -41681,12 +41681,12 @@
           ) {
             return (
               (e = new goog.math.Coordinate(
-                e.x / this.workspace_.scale,
-                e.y / this.workspace_.scale,
+                e.xhttps://kakaomames.github.io/turbowarp/ this.workspace_.scale,
+                e.yhttps://kakaomames.github.io/turbowarp/ this.workspace_.scale,
               )),
               this.workspace_.isMutator &&
                 (e = e.scale(
-                  1 / this.workspace_.options.parentWorkspace.scale,
+                  1https://kakaomames.github.io/turbowarp/ this.workspace_.options.parentWorkspace.scale,
                 )),
               e
             );
@@ -42094,12 +42094,12 @@
           ) {
             return (
               (e = new goog.math.Coordinate(
-                e.x / this.workspace_.scale,
-                e.y / this.workspace_.scale,
+                e.xhttps://kakaomames.github.io/turbowarp/ this.workspace_.scale,
+                e.yhttps://kakaomames.github.io/turbowarp/ this.workspace_.scale,
               )),
               this.workspace_.isMutator &&
                 (e = e.scale(
-                  1 / this.workspace_.options.parentWorkspace.scale,
+                  1https://kakaomames.github.io/turbowarp/ this.workspace_.options.parentWorkspace.scale,
                 )),
               e
             );
@@ -42854,7 +42854,7 @@
           (Blockly.utils.removeClass = function (e, t) {
             var o = e.getAttribute("class");
             if (-1 == (" " + o + " ").indexOf(" " + t + " ")) return !1;
-            o = o.split(/\s+/);
+            o = o.splithttps://kakaomames.github.io/turbowarp/\shttps://kakaomames.github.io/turbowarp/);
             for (var i = 0; i < o.length; i++)
               (o[i] && o[i] != t) || (o.splice(i, 1), i--);
             return (
@@ -42930,10 +42930,10 @@
             );
           }),
           (Blockly.utils.getRelativeXY.XY_REGEX_ =
-            /translate\(\s*([-+\d.e]+)([ ,]\s*([-+\d.e]+)\s*)?/),
-          (Blockly.utils.getScale_REGEXP_ = /scale\(\s*([-+\d.e]+)\s*\)/),
+           https://kakaomames.github.io/turbowarp/translate\(\s*([-+\d.e]+)([ ,]\s*([-+\d.e]+)\s*)https://kakaomames.github.io/turbowarp/),
+          (Blockly.utils.getScale_REGEXP_ =https://kakaomames.github.io/turbowarp/scale\(\s*([-+\d.e]+)\s*\https://kakaomames.github.io/turbowarp/),
           (Blockly.utils.getRelativeXY.XY_STYLE_REGEX_ =
-            /transform:\s*translate(?:3d)?\(\s*([-+\d.e]+)\s*px([ ,]\s*([-+\d.e]+)\s*px)?/),
+           https://kakaomames.github.io/turbowarp/transform:\s*translate(?:3d)?\(\s*([-+\d.e]+)\s*px([ ,]\s*([-+\d.e]+)\s*px)https://kakaomames.github.io/turbowarp/),
           (Blockly.utils.createSvgElement = function (e, t, o) {
             for (var i in ((e = document.createElementNS(Blockly.SVG_NS, e)),
             t))
@@ -42969,7 +42969,7 @@
           }),
           (Blockly.utils.checkMessageReferences = function (e) {
             for (
-              var t = !0, o = /%{BKY_([a-zA-Z][a-zA-Z0-9_]*)}/g, i = o.exec(e);
+              var t = !0, o =https://kakaomames.github.io/turbowarp/%{BKY_([a-zA-Z][a-zA-Z0-9_]*)https://kakaomames.github.io/turbowarp/g, i = o.exec(e);
               i;
             ) {
               var n = i[1];
@@ -43016,7 +43016,7 @@
                         : "}" != r
                           ? e.push(r)
                           : ((n = e.join("")),
-                            /[a-zA-Z][a-zA-Z0-9_]*/.test(n)
+                           https://kakaomames.github.io/turbowarp/[a-zA-Z][a-zA-Z0-9_]https://kakaomames.github.io/turbowarp/.test(n)
                               ? ((r = n.toUpperCase()),
                                 (r = goog.string.startsWith(r, "BKY_")
                                   ? r.substring(4)
@@ -43056,7 +43056,7 @@
             return t.join("");
           }),
           (Blockly.utils.genUid.soup_ =
-            "!#$%()*+,-./:;=?@[]^_`{|}~ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"),
+            "!#$%()*+,-https://kakaomames.github.io/turbowarp/:;=?@[]^_`{|}~ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"),
           (Blockly.utils.wrap = function (e, t) {
             e = e.split("\n");
             for (var o = 0; o < e.length; o++)
@@ -43065,18 +43065,18 @@
           }),
           (Blockly.utils.wrapLine_ = function (e, t) {
             if (e.length <= t) return e;
-            for (var o = e.trim().split(/\s+/), i = 0; i < o.length; i++)
+            for (var o = e.trim().splithttps://kakaomames.github.io/turbowarp/\shttps://kakaomames.github.io/turbowarp/), i = 0; i < o.length; i++)
               o[i].length > t && (t = o[i].length);
-            i = -1 / 0;
+            i = -1https://kakaomames.github.io/turbowarp/ 0;
             var n = 1;
             do {
               var a = i,
                 E = e;
               e = [];
-              var r = o.length / n,
+              var r = o.lengthhttps://kakaomames.github.io/turbowarp/ n,
                 s = 1;
               for (i = 0; i < o.length - 1; i++)
-                s < (i + 1.5) / r ? (s++, (e[i] = !0)) : (e[i] = !1);
+                s < (i + 1.5)https://kakaomames.github.io/turbowarp/ r ? (s++, (e[i] = !0)) : (e[i] = !1);
               ((e = Blockly.utils.wrapMutate_(o, e, t)),
                 (i = Blockly.utils.wrapScore_(o, e, t)),
                 (e = Blockly.utils.wrapToText_(o, e)),
@@ -43094,8 +43094,8 @@
               ((t -= 2 * Math.pow(Math.abs(o - i[a]), 1.5)),
                 (t -= Math.pow(e - i[a], 1.5)),
                 -1 != ".?!".indexOf(n[a])
-                  ? (t += o / 3)
-                  : -1 != ",;)]}".indexOf(n[a]) && (t += o / 4));
+                  ? (t += ohttps://kakaomames.github.io/turbowarp/ 3)
+                  : -1 != ",;)]}".indexOf(n[a]) && (t += ohttps://kakaomames.github.io/turbowarp/ 4));
             return (
               1 < i.length && i[i.length - 1] <= i[i.length - 2] && (t += 0.5),
               t
@@ -43156,7 +43156,7 @@
             return 0 == e.lastIndexOf(t, 0);
           }),
           (Blockly.utils.toRadians = function (e) {
-            return (e * Math.PI) / 180;
+            return (e * Math.PI)https://kakaomames.github.io/turbowarp/ 180;
           }),
           (Blockly.Grid = function (e, t) {
             ((this.gridPattern_ = e),
@@ -43185,8 +43185,8 @@
             (this.gridPattern_.setAttribute("width", t),
               this.gridPattern_.setAttribute("height", t));
             var o =
-                (t = Math.floor(this.spacing_ / 2) + 0.5) - this.length_ / 2,
-              i = t + this.length_ / 2;
+                (t = Math.floor(this.spacing_https://kakaomames.github.io/turbowarp/ 2) + 0.5) - this.length_https://kakaomames.github.io/turbowarp/ 2,
+              i = t + this.length_https://kakaomames.github.io/turbowarp/ 2;
             ((t *= e),
               (o *= e),
               (i *= e),
@@ -43255,7 +43255,7 @@
                 Blockly.Blocks.defaultToolbox &&
                 ((o = new DOMParser().parseFromString(
                   Blockly.Blocks.defaultToolbox,
-                  "text/xml",
+                  "texhttps://kakaomames.github.io/turbowarp/xml",
                 )),
                 (e.toolbox = o.documentElement)),
                 (i = !(
@@ -43283,8 +43283,8 @@
             void 0 === T && (T = i);
             var S = e.css;
             void 0 === S && (S = !0);
-            var g = "https://blockly-demo.appspot.com/static/media/";
-            e.media ? (g = e.media) : e.path && (g = e.path + "media/");
+            var g = "httpshttps://kakaomames.github.io/turbowarp//blockly-demo.appspot.cohttps://kakaomames.github.io/turbowarp/statihttps://kakaomames.github.io/turbowarp/medihttps://kakaomames.github.io/turbowarp/";
+            e.media ? (g = e.media) : e.path && (g = e.path + "medihttps://kakaomames.github.io/turbowarp/");
             var N = void 0 === e.oneBasedIndex || !!e.oneBasedIndex;
             (Blockly.Colours.overrideColours(e.colours),
               (this.RTL = O),
@@ -43426,7 +43426,7 @@
               this.vScroll.setHandlePosition(t));
           }),
           (Blockly.ScrollbarPair.prototype.getRatio_ = function (e, t) {
-            return ((e /= t), isNaN(e) ? 0 : e);
+            return ((ehttps://kakaomames.github.io/turbowarp/= t), isNaN(e) ? 0 : e);
           }),
           (Blockly.Scrollbar = function (e, t, o, i) {
             ((this.workspace_ = e),
@@ -43583,9 +43583,9 @@
           (Blockly.Scrollbar.prototype.resizeContentHorizontal = function (e) {
             (this.pair_ ||
               this.setVisible(this.scrollViewSize_ < e.contentWidth),
-              (this.ratio_ = this.scrollViewSize_ / e.contentWidth),
-              (-1 / 0 == this.ratio_ ||
-                1 / 0 == this.ratio_ ||
+              (this.ratio_ = this.scrollViewSize_https://kakaomames.github.io/turbowarp/ e.contentWidth),
+              (-1https://kakaomames.github.io/turbowarp/ 0 == this.ratio_ ||
+                1https://kakaomames.github.io/turbowarp/ 0 == this.ratio_ ||
                 isNaN(this.ratio_)) &&
                 (this.ratio_ = 0),
               this.setHandleLength_(Math.max(0, e.viewWidth * this.ratio_)),
@@ -43611,9 +43611,9 @@
           (Blockly.Scrollbar.prototype.resizeContentVertical = function (e) {
             (this.pair_ ||
               this.setVisible(this.scrollViewSize_ < e.contentHeight),
-              (this.ratio_ = this.scrollViewSize_ / e.contentHeight),
-              (-1 / 0 == this.ratio_ ||
-                1 / 0 == this.ratio_ ||
+              (this.ratio_ = this.scrollViewSize_https://kakaomames.github.io/turbowarp/ e.contentHeight),
+              (-1https://kakaomames.github.io/turbowarp/ 0 == this.ratio_ ||
+                1https://kakaomames.github.io/turbowarp/ 0 == this.ratio_ ||
                 isNaN(this.ratio_)) &&
                 (this.ratio_ = 0),
               this.setHandleLength_(Math.max(0, e.viewHeight * this.ratio_)),
@@ -43641,7 +43641,7 @@
                 { class: "blocklyScrollbarBackground" },
                 this.svgGroup_,
               )),
-              (e = Math.floor((Blockly.Scrollbar.scrollbarThickness - 5) / 2)),
+              (e = Math.floor((Blockly.Scrollbar.scrollbarThickness - 5)https://kakaomames.github.io/turbowarp/ 2)),
               (this.svgHandle_ = Blockly.utils.createSvgElement(
                 "rect",
                 { class: "blocklyScrollbarHandle", rx: e, ry: e },
@@ -43759,7 +43759,7 @@
               : Math.min(e, this.scrollViewSize_ - this.handleLength_);
           }),
           (Blockly.Scrollbar.prototype.onScroll_ = function () {
-            var e = this.handlePosition_ / this.scrollViewSize_;
+            var e = this.handlePosition_https://kakaomames.github.io/turbowarp/ this.scrollViewSize_;
             isNaN(e) && (e = 0);
             var t = {};
             (this.horizontal_ ? (t.x = e) : (t.y = e),
@@ -43827,7 +43827,7 @@
                   this.svgGroup_,
                 )
                 .setAttributeNS(
-                  "http://www.w3.org/1999/xlink",
+                  "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   "xlink:href",
                   this.workspace_.options.pathToMedia + Blockly.SPRITE.url,
                 ),
@@ -43853,7 +43853,7 @@
                 this.svgGroup_,
               )),
               this.svgLid_.setAttributeNS(
-                "http://www.w3.org/1999/xlink",
+                "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                 "xlink:href",
                 this.workspace_.options.pathToMedia + Blockly.SPRITE.url,
               ),
@@ -43969,8 +43969,8 @@
               }
               for (var i, n = 0; n < e.length; n++) {
                 var a = e[n],
-                  E = a.match(/\.(\w+)$/);
-                if (E && o.canPlayType("audio/" + E[1])) {
+                  E = a.matchhttps://kakaomames.github.io/turbowarp/\.(\w+)https://kakaomames.github.io/turbowarp/);
+                if (E && o.canPlayType("audihttps://kakaomames.github.io/turbowarp/" + E[1])) {
                   i = new window.Audio(a);
                   break;
                 }
@@ -44031,7 +44031,7 @@
                 this.addResizeDom_(),
                 this.isMinimized()
                   ? (this.minimizeArrow_.setAttributeNS(
-                      "http://www.w3.org/1999/xlink",
+                      "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                       "xlink:href",
                       Blockly.mainWorkspace.options.pathToMedia +
                         "comment-arrow-up.svg",
@@ -44039,7 +44039,7 @@
                     this.commentEditor_.setAttribute("display", "none"),
                     this.resizeGroup_.setAttribute("display", "none"))
                   : (this.minimizeArrow_.setAttributeNS(
-                      "http://www.w3.org/1999/xlink",
+                      "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                       "xlink:href",
                       Blockly.mainWorkspace.options.pathToMedia +
                         "comment-arrow-down.svg",
@@ -44181,10 +44181,10 @@
                 "line",
                 {
                   class: "blocklyResizeLine",
-                  x1: e / 3,
+                  x1: ehttps://kakaomames.github.io/turbowarp/ 3,
                   y1: e - 1,
                   x2: e - 1,
-                  y2: e / 3,
+                  y2: ehttps://kakaomames.github.io/turbowarp/ 3,
                 },
                 this.resizeGroup_,
               ),
@@ -44192,10 +44192,10 @@
                 "line",
                 {
                   class: "blocklyResizeLine",
-                  x1: (2 * e) / 3,
+                  x1: (2 * e)https://kakaomames.github.io/turbowarp/ 3,
                   y1: e - 1,
                   x2: e - 1,
-                  y2: (2 * e) / 3,
+                  y2: (2 * e)https://kakaomames.github.io/turbowarp/ 3,
                 },
                 this.resizeGroup_,
               ));
@@ -44221,9 +44221,9 @@
                 "text",
                 {
                   class: "scratchCommentText",
-                  x: this.width_ / 2,
+                  x: this.width_https://kakaomames.github.io/turbowarp/ 2,
                   y:
-                    Blockly.WorkspaceCommentSvg.TOP_BAR_HEIGHT / 2 +
+                    Blockly.WorkspaceCommentSvg.TOP_BAR_HEIGHThttps://kakaomames.github.io/turbowarp/ 2 +
                     Blockly.WorkspaceCommentSvg.BORDER_WIDTH,
                   "text-anchor": "middle",
                   "dominant-baseline": "middle",
@@ -44236,14 +44236,14 @@
           (Blockly.WorkspaceCommentSvg.prototype.createTopBarIcons_ =
             function () {
               var e =
-                  Blockly.WorkspaceCommentSvg.TOP_BAR_HEIGHT / 2 +
+                  Blockly.WorkspaceCommentSvg.TOP_BAR_HEIGHThttps://kakaomames.github.io/turbowarp/ 2 +
                   Blockly.WorkspaceCommentSvg.BORDER_WIDTH,
                 t = Blockly.WorkspaceCommentSvg.TOP_BAR_ICON_INSET;
               ((this.minimizeArrow_ = Blockly.utils.createSvgElement(
                 "image",
                 {
                   x: t,
-                  y: e - Blockly.WorkspaceCommentSvg.MINIMIZE_ICON_SIZE / 2,
+                  y: e - Blockly.WorkspaceCommentSvg.MINIMIZE_ICON_SIZEhttps://kakaomames.github.io/turbowarp/ 2,
                   width: Blockly.WorkspaceCommentSvg.MINIMIZE_ICON_SIZE,
                   height: Blockly.WorkspaceCommentSvg.MINIMIZE_ICON_SIZE,
                 },
@@ -44253,14 +44253,14 @@
                   "image",
                   {
                     x: t,
-                    y: e - Blockly.WorkspaceCommentSvg.DELETE_ICON_SIZE / 2,
+                    y: e - Blockly.WorkspaceCommentSvg.DELETE_ICON_SIZEhttps://kakaomames.github.io/turbowarp/ 2,
                     width: Blockly.WorkspaceCommentSvg.DELETE_ICON_SIZE,
                     height: Blockly.WorkspaceCommentSvg.DELETE_ICON_SIZE,
                   },
                   this.svgGroup_,
                 )),
                 this.deleteIcon_.setAttributeNS(
-                  "http://www.w3.org/1999/xlink",
+                  "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   "xlink:href",
                   Blockly.mainWorkspace.options.pathToMedia + "delete-x.svg",
                 ));
@@ -44328,7 +44328,7 @@
             function (e, t) {
               e
                 ? (this.minimizeArrow_.setAttributeNS(
-                    "http://www.w3.org/1999/xlink",
+                    "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                     "xlink:href",
                     Blockly.mainWorkspace.options.pathToMedia +
                       "comment-arrow-up.svg",
@@ -44341,7 +44341,7 @@
                     (this.topBarLabel_.textContent = t),
                   Blockly.utils.removeAttribute(this.topBarLabel_, "display"))
                 : (this.minimizeArrow_.setAttributeNS(
-                    "http://www.w3.org/1999/xlink",
+                    "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                     "xlink:href",
                     Blockly.mainWorkspace.options.pathToMedia +
                       "comment-arrow-down.svg",
@@ -44478,8 +44478,8 @@
                       "translate(" + (e - n - o) + "," + (t - n - o) + ")",
                     )),
               this.isMinimized_ &&
-                (this.topBarLabel_.setAttribute("x", e / 2),
-                this.topBarLabel_.setAttribute("y", t / 2)),
+                (this.topBarLabel_.setAttribute("x", ehttps://kakaomames.github.io/turbowarp/ 2),
+                this.topBarLabel_.setAttribute("y", thttps://kakaomames.github.io/turbowarp/ 2)),
               this.resizeComment_());
           }),
           (Blockly.WorkspaceComment.prototype.toggleMinimize_ = function () {
@@ -44551,7 +44551,7 @@
                 {
                   xmlns: Blockly.SVG_NS,
                   "xmlns:html": Blockly.HTML_NS,
-                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                  "xmlns:xlink": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   version: "1.1",
                   class: "blocklyWsDragSurface blocklyOverflowVisible",
                 },
@@ -44806,18 +44806,18 @@
             e = Blockly.Xml.domToText(e).split("<");
             for (var t = "", o = 1; o < e.length; o++) {
               var i = e[o];
-              ("/" == i[0] && (t = t.substring(2)),
+              (https://kakaomames.github.io/turbowarp/" == i[0] && (t = t.substring(2)),
                 (e[o] = t + "<" + i),
-                "/" != i[0] && "/>" != i.slice(-2) && (t += "  "));
+                https://kakaomames.github.io/turbowarp/" != i[0] && https://kakaomames.github.io/turbowarp/>" != i.slice(-2) && (t += "  "));
             }
             return (e = (e = e.join("\n")).replace(
-              /(<(\w+)\b[^>]*>[^\n]*)\n *<\/\2>/g,
-              "$1</$2>",
-            )).replace(/^\n/, "");
+             https://kakaomames.github.io/turbowarp/(<(\w+)\b[^>]*>[^\n]*)\n *<https://kakaomames.github.io/turbowarp/\2https://kakaomames.github.io/turbowarp/g,
+              "$1https://kakaomames.github.io/turbowarp/$2>",
+            )).replacehttps://kakaomames.github.io/turbowarp/^\https://kakaomames.github.io/turbowarp/, "");
           }),
           (Blockly.Xml.textToDom = function (e) {
             return (
-              ((e = new DOMParser().parseFromString(e, "text/xml")) &&
+              ((e = new DOMParser().parseFromString(e, "texhttps://kakaomames.github.io/turbowarp/xml")) &&
                 e.firstChild &&
                 "xml" == e.firstChild.nodeName.toLowerCase() &&
                 e.firstChild === e.lastChild) ||
@@ -44917,8 +44917,8 @@
               o = i.y + i.height;
               var n,
                 a = i.x,
-                E = 1 / 0,
-                r = 1 / 0;
+                E = 1https://kakaomames.github.io/turbowarp/ 0,
+                r = 1https://kakaomames.github.io/turbowarp/ 0;
               for (i = 0; i < e.length; i++) {
                 var s = t.getBlockById(e[i]).getRelativeToSurfaceXY();
                 (s.y < r && (r = s.y), s.x < E && (E = s.x));
@@ -45232,7 +45232,7 @@
                 this.svgGroup_,
               );
             (t.setAttributeNS(
-              "http://www.w3.org/1999/xlink",
+              "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
               "xlink:href",
               e.options.pathToMedia + this.ZOOM_OUT_PATH_,
             ),
@@ -45252,7 +45252,7 @@
                 this.svgGroup_,
               );
             (t.setAttributeNS(
-              "http://www.w3.org/1999/xlink",
+              "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
               "xlink:href",
               e.options.pathToMedia + this.ZOOM_IN_PATH_,
             ),
@@ -45276,7 +45276,7 @@
                 this.svgGroup_,
               );
             (t.setAttributeNS(
-              "http://www.w3.org/1999/xlink",
+              "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
               "xlink:href",
               e.options.pathToMedia + this.ZOOM_RESET_PATH_,
             ),
@@ -45756,7 +45756,7 @@
           }),
           (Blockly.WorkspaceSvg.prototype.getWidth = function () {
             var e = this.getMetrics();
-            return e ? e.viewWidth / this.scale : 0;
+            return e ? e.viewWidthhttps://kakaomames.github.io/turbowarp/ this.scale : 0;
           }),
           (Blockly.WorkspaceSvg.prototype.setVisible = function (e) {
             (this.scrollbar && this.scrollbar.setContainerVisible(e),
@@ -45994,8 +45994,8 @@
               e,
               this.getParentSvg(),
               this.getInverseScreenCTM(),
-            )).x /= this.scale),
-              (e.y /= this.scale),
+            )).xhttps://kakaomames.github.io/turbowarp/= this.scale),
+              (e.yhttps://kakaomames.github.io/turbowarp/= this.scale),
               (this.dragDeltaXY_ = goog.math.Coordinate.difference(t, e)));
           }),
           (Blockly.WorkspaceSvg.prototype.moveDrag = function (e) {
@@ -46004,8 +46004,8 @@
                 e,
                 this.getParentSvg(),
                 this.getInverseScreenCTM(),
-              )).x /= this.scale),
-              (e.y /= this.scale),
+              )).xhttps://kakaomames.github.io/turbowarp/= this.scale),
+              (e.yhttps://kakaomames.github.io/turbowarp/= this.scale),
               goog.math.Coordinate.sum(this.dragDeltaXY_, e)
             );
           }),
@@ -46019,7 +46019,7 @@
             this.currentGesture_ && this.currentGesture_.cancel();
             var t = 1 === e.deltaMode ? Blockly.LINE_SCROLL_MULTIPLIER : 1;
             if (e.ctrlKey) {
-              t *= -e.deltaY / 50;
+              t *= -e.deltaYhttps://kakaomames.github.io/turbowarp/ 50;
               var o = Blockly.utils.mouseToSvg(
                 e,
                 this.getParentSvg(),
@@ -46194,9 +46194,9 @@
               (a = this.getCanvas()),
               (i = Math.pow(i, o)),
               (o = this.scale * i) > this.options.zoomOptions.maxScale
-                ? (i = this.options.zoomOptions.maxScale / this.scale)
+                ? (i = this.options.zoomOptions.maxScalehttps://kakaomames.github.io/turbowarp/ this.scale)
                 : o < this.options.zoomOptions.minScale &&
-                  (i = this.options.zoomOptions.minScale / this.scale),
+                  (i = this.options.zoomOptions.minScalehttps://kakaomames.github.io/turbowarp/ this.scale),
               this.scale != o &&
                 (this.scrollbar &&
                   ((e = a
@@ -46211,7 +46211,7 @@
           }),
           (Blockly.WorkspaceSvg.prototype.zoomCenter = function (e) {
             var t = this.getMetrics();
-            this.zoom(t.viewWidth / 2, t.viewHeight / 2, e);
+            this.zoom(t.viewWidthhttps://kakaomames.github.io/turbowarp/ 2, t.viewHeighthttps://kakaomames.github.io/turbowarp/ 2, e);
           }),
           (Blockly.WorkspaceSvg.prototype.zoomToFit = function () {
             var e = this.getMetrics(),
@@ -46222,7 +46222,7 @@
                 n = e.viewHeight;
               (this.flyout_ && (i -= this.flyout_.width_),
                 this.scrollbar || ((o += e.contentLeft), (t += e.contentTop)),
-                this.setScale(Math.min(i / o, n / t)),
+                this.setScale(Math.min(ihttps://kakaomames.github.io/turbowarp/ o, nhttps://kakaomames.github.io/turbowarp/ t)),
                 this.scrollCenter());
             }
           }),
@@ -46232,9 +46232,9 @@
                 Blockly.DropDownDiv.hideWithoutAnimation(),
                 Blockly.hideChaff(!1));
               var e = this.getMetrics(),
-                t = (e.contentWidth - e.viewWidth) / 2;
-              (this.flyout_ && (t -= this.flyout_.width_ / 2),
-                this.scrollbar.set(t, (e.contentHeight - e.viewHeight) / 2));
+                t = (e.contentWidth - e.viewWidth)https://kakaomames.github.io/turbowarp/ 2;
+              (this.flyout_ && (t -= this.flyout_.width_https://kakaomames.github.io/turbowarp/ 2),
+                this.scrollbar.set(t, (e.contentHeight - e.viewHeight)https://kakaomames.github.io/turbowarp/ 2));
             } else console.warn("Tried to scroll a non-scrollable workspace.");
           }),
           (Blockly.WorkspaceSvg.prototype.centerOnBlock = function (e) {
@@ -46243,11 +46243,11 @@
                 var t = e.getRelativeToSurfaceXY(),
                   o = e.getHeightWidth(),
                   i = this.scale;
-                ((e = (t.x + ((this.RTL ? -1 : 1) * o.width) / 2) * i),
-                  (t = (t.y + o.height / 2) * i),
+                ((e = (t.x + ((this.RTL ? -1 : 1) * o.width)https://kakaomames.github.io/turbowarp/ 2) * i),
+                  (t = (t.y + o.heighthttps://kakaomames.github.io/turbowarp/ 2) * i),
                   (e =
-                    e - (o = this.getMetrics()).contentLeft - o.viewWidth / 2),
-                  (t = t - o.contentTop - o.viewHeight / 2),
+                    e - (o = this.getMetrics()).contentLeft - o.viewWidthhttps://kakaomames.github.io/turbowarp/ 2),
+                  (t = t - o.contentTop - o.viewHeighthttps://kakaomames.github.io/turbowarp/ 2),
                   Blockly.hideChaff(),
                   this.scrollbar.set(e, t));
               }
@@ -46283,7 +46283,7 @@
             this.options.stackGlowBlur &&
               this.options.stackGlowBlur.setAttribute(
                 "stdDeviation",
-                Blockly.Colours.stackGlowSize / this.scale,
+                Blockly.Colours.stackGlowSizehttps://kakaomames.github.io/turbowarp/ this.scale,
               );
           }),
           (Blockly.WorkspaceSvg.getDimensionsPx_ = function (e) {
@@ -46317,8 +46317,8 @@
           (Blockly.WorkspaceSvg.getContentDimensionsBounded_ = function (e, t) {
             e = Blockly.WorkspaceSvg.getContentDimensionsExact_(e);
             var o = t.width,
-              i = o / 2,
-              n = (t = t.height) / 2,
+              i = ohttps://kakaomames.github.io/turbowarp/ 2,
+              n = (t = t.height)https://kakaomames.github.io/turbowarp/ 2,
               a = Math.min(e.left - i, e.right - o),
               E = Math.min(e.top - n, e.bottom - t);
             return {
@@ -46981,8 +46981,8 @@
                 "text",
                 {
                   class: this.className_,
-                  x: this.sourceBlock_.RTL ? -e.width / 2 : e.width / 2,
-                  y: e.height / 2 + Blockly.BlockSvg.FIELD_TOP_PADDING,
+                  x: this.sourceBlock_.RTL ? -e.widthhttps://kakaomames.github.io/turbowarp/ 2 : e.widthhttps://kakaomames.github.io/turbowarp/ 2,
+                  y: e.heighthttps://kakaomames.github.io/turbowarp/ 2 + Blockly.BlockSvg.FIELD_TOP_PADDING,
                   "dominant-baseline": "middle",
                   dy: goog.userAgent.EDGE_OR_IE
                     ? Blockly.Field.IE_TEXT_OFFSET
@@ -47075,12 +47075,12 @@
             if (this.visible_ && this.textElement_) {
               ((this.textElement_.textContent = this.getDisplayText_()),
                 this.updateWidth());
-              var e = (this.size_.width - this.arrowWidth_) / 2;
+              var e = (this.size_.width - this.arrowWidth_)https://kakaomames.github.io/turbowarp/ 2;
               if (
                 (this.sourceBlock_.RTL && (e += this.arrowWidth_),
                 this.sourceBlock_.isShadow() && !this.positionArrow)
               ) {
-                var t = Blockly.BlockSvg.FIELD_WIDTH / 2;
+                var t = Blockly.BlockSvg.FIELD_WIDTHhttps://kakaomames.github.io/turbowarp/ 2;
                 e = this.sourceBlock_.RTL
                   ? Math.min(this.size_.width - t, e)
                   : Math.max(t, e);
@@ -47146,7 +47146,7 @@
             return e
               ? (e.length > this.maxDisplayLength &&
                   (e = e.substring(0, this.maxDisplayLength - 2) + "…"),
-                (e = e.replace(/\s/g, Blockly.Field.NBSP)),
+                (e = e.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, Blockly.Field.NBSP)),
                 this.sourceBlock_.RTL &&
                   (e =
                     this.sourceBlock_.editable_ &&
@@ -47182,7 +47182,7 @@
                   ))
                 : this.textElement_.setAttribute("class", this.className_),
                 goog.dom.removeChildren(this.textElement_),
-                (e = e.replace(/\s/g, Blockly.Field.NBSP)),
+                (e = e.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, Blockly.Field.NBSP)),
                 this.sourceBlock_.RTL &&
                   e &&
                   (e =
@@ -47313,8 +47313,8 @@
               var e = document.createTextNode(this.getDisplayText_());
               (this.textElement_.appendChild(e),
                 this.updateWidth(),
-                (e = this.size_.width / 2));
-              var t = Blockly.BlockSvg.FIELD_WIDTH / 2;
+                (e = this.size_.widthhttps://kakaomames.github.io/turbowarp/ 2));
+              var t = Blockly.BlockSvg.FIELD_WIDTHhttps://kakaomames.github.io/turbowarp/ 2;
               ((e = this.sourceBlock_.RTL
                 ? Math.min(this.size_.width - t, e)
                 : Math.max(t, e)),
@@ -47929,7 +47929,7 @@
           (Blockly.Block.prototype.makeColour_ = function (e) {
             var t = Number(e);
             if (isNaN(t)) {
-              if (goog.isString(e) && e.match(/^#[0-9a-fA-F]{6}$/)) return e;
+              if (goog.isString(e) && e.matchhttps://kakaomames.github.io/turbowarp/^#[0-9a-fA-F]{6}https://kakaomames.github.io/turbowarp/)) return e;
               throw "Invalid colour: " + e;
             }
             return Blockly.hueToRgb(t);
@@ -48312,7 +48312,7 @@
                             : console.warn(
                                 "Blockly could not create a field of type " +
                                   n.type +
-                                  ". You may need to register your custom field.  See github.com/google/blockly/issues/1584",
+                                  ". You may need to register your custom field.  See github.cohttps://kakaomames.github.io/turbowarp/googlhttps://kakaomames.github.io/turbowarp/blocklhttps://kakaomames.github.io/turbowarp/issuehttps://kakaomames.github.io/turbowarp/1584",
                               ));
                     }
                 } while (r);
@@ -48479,7 +48479,7 @@
                 {
                   xmlns: Blockly.SVG_NS,
                   "xmlns:html": Blockly.HTML_NS,
-                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                  "xmlns:xlink": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   version: "1.1",
                   class: "blocklyBlockDragSurface",
                 },
@@ -48590,8 +48590,8 @@
             function () {
               var e = Blockly.utils.getRelativeXY(this.SVG_);
               return new goog.math.Coordinate(
-                e.x / this.scale_,
-                e.y / this.scale_,
+                e.xhttps://kakaomames.github.io/turbowarp/ this.scale_,
+                e.yhttps://kakaomames.github.io/turbowarp/ this.scale_,
               );
             }),
           (Blockly.BlockDragSurfaceSvg.prototype.getGroup = function () {
@@ -49074,7 +49074,7 @@
             return (
               goog.asserts.assert(
                 e,
-                "Can not call getElementStrict before rendering/decorating.",
+                "Can not call getElementStrict before renderinhttps://kakaomames.github.io/turbowarp/decorating.",
               ),
               e
             );
@@ -49674,7 +49674,7 @@
                   e +
                   '". The role should be any of "' +
                   t +
-                  '". Check the ARIA specification for more details http://www.w3.org/TR/wai-aria/roles.',
+                  '". Check the ARIA specification for more details httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/Thttps://kakaomames.github.io/turbowarp/wai-arihttps://kakaomames.github.io/turbowarp/roles.',
               ));
           }),
           (goog.a11y.aria.getStateBoolean = function (e, t) {
@@ -49723,7 +49723,7 @@
             );
           }),
           (goog.a11y.aria.splitStringOnWhitespace_ = function (e) {
-            return e ? e.split(/\s+/) : [];
+            return e ? e.splithttps://kakaomames.github.io/turbowarp/\shttps://kakaomames.github.io/turbowarp/) : [];
           }),
           (goog.a11y.aria.getAriaAttributeName_ = function (e) {
             return (
@@ -50265,7 +50265,7 @@
             return goog.dom.classlist.ALWAYS_USE_DOM_TOKEN_LIST || e.classList
               ? e.classList
               : ((e = e.className),
-                (goog.isString(e) && e.match(/\S+/g)) || []);
+                (goog.isString(e) && e.matchhttps://kakaomames.github.io/turbowarp/\Shttps://kakaomames.github.io/turbowarp/g)) || []);
           }),
           (goog.dom.classlist.set = function (e, t) {
             e.className = t;
@@ -52942,7 +52942,7 @@
                   t.clientY - n.top,
                 );
                 var a = e.getOriginOffsetInPixels();
-                ((n = goog.math.Coordinate.difference(n, a).scale(1 / e.scale)),
+                ((n = goog.math.Coordinate.difference(n, a).scale(1https://kakaomames.github.io/turbowarp/ e.scale)),
                   i.moveBy(n.x, n.y),
                   e.rendered && (i.initSvg(), i.render(!1), i.select()),
                   o && Blockly.Events.enable(),
@@ -53085,7 +53085,7 @@
                     i =
                       "file:" == t.location.protocol
                         ? "*"
-                        : t.location.protocol + "//" + t.location.host;
+                        : t.location.protocol + https://kakaomames.github.io/turbowarp//" + t.location.host;
                   ((e = goog.bind(function (e) {
                     ("*" != i && e.origin != i) ||
                       e.data != o ||
@@ -54006,10 +54006,10 @@
               var e = this.workspace.getGrid();
               if (e && e.shouldSnap()) {
                 var t = e.getSpacing(),
-                  o = t / 2,
+                  o = thttps://kakaomames.github.io/turbowarp/ 2,
                   i = this.getRelativeToSurfaceXY();
-                ((e = Math.round((i.x - o) / t) * t + o - i.x),
-                  (t = Math.round((i.y - o) / t) * t + o - i.y),
+                ((e = Math.round((i.x - o)https://kakaomames.github.io/turbowarp/ t) * t + o - i.x),
+                  (t = Math.round((i.y - o)https://kakaomames.github.io/turbowarp/ t) * t + o - i.y),
                   (e = Math.round(e)),
                   (t = Math.round(t)),
                   (0 == e && 0 == t) || this.moveBy(e, t));
@@ -54190,8 +54190,8 @@
             return this.comment
               ? this.comment
                   .getText()
-                  .replace(/\s+$/, "")
-                  .replace(/ +\n/g, "\n")
+                  .replacehttps://kakaomames.github.io/turbowarp/\s+https://kakaomames.github.io/turbowarp/, "")
+                  .replacehttps://kakaomames.github.io/turbowarp/ +\https://kakaomames.github.io/turbowarp/g, "\n")
               : "";
           }),
           (Blockly.BlockSvg.prototype.setCommentText = function (
@@ -54383,7 +54383,7 @@
               (Blockly.Events.setGroup(t),
                 e.snapToGrid(),
                 Blockly.Events.setGroup(!1));
-            }, Blockly.BUMP_DELAY / 2),
+            }, Blockly.BUMP_DELAYhttps://kakaomames.github.io/turbowarp/ 2),
               setTimeout(function () {
                 (Blockly.Events.setGroup(t),
                   e.bumpNeighbours_(),
@@ -54558,7 +54558,7 @@
             2 * Blockly.BlockSvg.GRID_UNIT),
           (Blockly.BlockSvg.FIELD_WIDTH_MIN_EDIT =
             8 * Blockly.BlockSvg.GRID_UNIT),
-          (Blockly.BlockSvg.FIELD_WIDTH_MAX_EDIT = 1 / 0),
+          (Blockly.BlockSvg.FIELD_WIDTH_MAX_EDIT = 1https://kakaomames.github.io/turbowarp/ 0),
           (Blockly.BlockSvg.FIELD_HEIGHT_MAX_EDIT =
             Blockly.BlockSvg.FIELD_HEIGHT),
           (Blockly.BlockSvg.FIELD_TOP_PADDING =
@@ -54569,7 +54569,7 @@
             1 * Blockly.BlockSvg.GRID_UNIT),
           (Blockly.BlockSvg.FIELD_DEFAULT_CORNER_RADIUS =
             4 * Blockly.BlockSvg.GRID_UNIT),
-          (Blockly.BlockSvg.MAX_DISPLAY_LENGTH = 1 / 0),
+          (Blockly.BlockSvg.MAX_DISPLAY_LENGTH = 1https://kakaomames.github.io/turbowarp/ 0),
           (Blockly.BlockSvg.INPUT_AND_FIELD_MIN_X =
             12 * Blockly.BlockSvg.GRID_UNIT),
           (Blockly.BlockSvg.INLINE_PADDING_Y = 1 * Blockly.BlockSvg.GRID_UNIT),
@@ -54725,7 +54725,7 @@
               i &&
                 i.renderIcon(
                   this.RTL ? -o.rightEdge : o.rightEdge,
-                  o[0].height / 2,
+                  o[0].heighthttps://kakaomames.github.io/turbowarp/ 2,
                 ),
               !1 !== e &&
                 ((e = this.getParent())
@@ -54745,7 +54745,7 @@
                   (t = this.RTL
                     ? Math.min(t, -Blockly.BlockSvg.INPUT_AND_FIELD_MIN_X)
                     : Math.max(t, Blockly.BlockSvg.INPUT_AND_FIELD_MIN_X));
-                var E = -i.getSize().height / 2;
+                var E = -i.getSize().heighthttps://kakaomames.github.io/turbowarp/ 2;
                 (this.isScratchExtension &&
                   i === this.inputList[0].fieldRow[0] &&
                   i instanceof Blockly.FieldImage &&
@@ -54972,7 +54972,7 @@
                     i != Blockly.OUTPUT_SHAPE_HEXAGONAL &&
                     ((o =
                       o.renderHeight - Blockly.BlockSvg.MIN_BLOCK_Y_REPORTER),
-                    (e.paddingStart += o / 2)));
+                    (e.paddingStart += ohttps://kakaomames.github.io/turbowarp/ 2)));
               ((e.paddingStart +=
                 Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING[t][i]),
                 (o = e[e.length - 1]).connection
@@ -54983,7 +54983,7 @@
                       i != Blockly.OUTPUT_SHAPE_HEXAGONAL &&
                       ((o =
                         o.renderHeight - Blockly.BlockSvg.MIN_BLOCK_Y_REPORTER),
-                      (e.paddingEnd += o / 2)))
+                      (e.paddingEnd += ohttps://kakaomames.github.io/turbowarp/ 2)))
                   : (i = 0),
                 (e.paddingEnd +=
                   Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING[t][i]));
@@ -55003,7 +55003,7 @@
               var o = this.getOutputShape();
               (o !== Blockly.OUTPUT_SHAPE_HEXAGONAL &&
                 o !== Blockly.OUTPUT_SHAPE_ROUND) ||
-                ((this.edgeShapeWidth_ = t.bottomEdge / 2),
+                ((this.edgeShapeWidth_ = t.bottomEdgehttps://kakaomames.github.io/turbowarp/ 2),
                 (this.edgeShape_ = o),
                 (this.squareTopLeftCorner_ = !0));
             }
@@ -55072,7 +55072,7 @@
               ) {
                 for (var O, l = 0; (O = E[l]); l++)
                   if (
-                    ((n = r + E.height / 2),
+                    ((n = r + E.heighthttps://kakaomames.github.io/turbowarp/ 2),
                     (i = Blockly.BlockSvg.getAlignedCursor_(i, O, t.rightEdge)),
                     (i = this.renderFields_(O.fieldRow, i, n)),
                     O.type == Blockly.INPUT_VALUE)
@@ -55080,7 +55080,7 @@
                     (this.previousConnection &&
                       (i = Math.max(i, Blockly.BlockSvg.INPUT_AND_FIELD_MIN_X)),
                       (n = this.RTL ? -i : i));
-                    var _ = E.height / 2;
+                    var _ = E.heighthttps://kakaomames.github.io/turbowarp/ 2;
                     ((a = r + _),
                       O.connection.setOffsetInBlock(n, a),
                       this.renderInputShape_(O, i, r + _),
@@ -55152,7 +55152,7 @@
                     e.connection.getOutputShape(),
                   )),
                   (t = this.RTL ? -t - e.width : t),
-                  (o -= Blockly.BlockSvg.INPUT_SHAPE_HEIGHT / 2),
+                  (o -= Blockly.BlockSvg.INPUT_SHAPE_HEIGHThttps://kakaomames.github.io/turbowarp/ 2),
                   i.setAttribute("d", e.path),
                   i.setAttribute("transform", "translate(" + t + "," + o + ")"),
                   i.setAttribute("data-argument-type", e.argType),
@@ -55184,7 +55184,7 @@
           }),
           (Blockly.BlockSvg.prototype.renderDrawLeft_ = function (e) {
             (this.outputConnection &&
-              this.outputConnection.setOffsetInBlock(0, this.height / 2),
+              this.outputConnection.setOffsetInBlock(0, this.heighthttps://kakaomames.github.io/turbowarp/ 2),
               this.edgeShape_ &&
                 (this.edgeShape_ === Blockly.OUTPUT_SHAPE_ROUND
                   ? e.push(
@@ -55321,7 +55321,7 @@
               t.align === Blockly.ALIGN_RIGHT
                 ? (e += o - t.fieldWidth - 2 * Blockly.BlockSvg.SEP_SPACE_X)
                 : t.align === Blockly.ALIGN_CENTRE &&
-                  (e = Math.max(e, o / 2 - t.fieldWidth / 2)),
+                  (e = Math.max(e, ohttps://kakaomames.github.io/turbowarp/ 2 - t.fieldWidthhttps://kakaomames.github.io/turbowarp/ 2)),
               e
             );
           }),
@@ -55618,7 +55618,7 @@
             } else i = o;
             ((i = Math.max(i, Blockly.BlockSvg.FIELD_WIDTH_MIN_EDIT * e)),
               (i = Math.min(i, Blockly.BlockSvg.FIELD_WIDTH_MAX_EDIT * e)),
-              (t.style.width = i / e + 1 + "px"),
+              (t.style.width = ihttps://kakaomames.github.io/turbowarp/ e + 1 + "px"),
               (t.style.height = Blockly.BlockSvg.FIELD_HEIGHT + 1 + "px"),
               (t.style.transform = "scale(" + e + ")"),
               (t.style.marginLeft = -0.5 * (i - o) + "px"),
@@ -55627,8 +55627,8 @@
               (Blockly.FieldTextInput.htmlInput_.style.borderRadius = o + "px"),
               (o = this.sourceBlock_.getColourTertiary()),
               (t.style.borderColor = o),
-              ((o = this.getAbsoluteXY_()).x -= e / 2),
-              (o.y -= e / 2),
+              ((o = this.getAbsoluteXY_()).x -= ehttps://kakaomames.github.io/turbowarp/ 2),
+              (o.y -= ehttps://kakaomames.github.io/turbowarp/ 2),
               this.sourceBlock_.RTL &&
                 ((o.x += i), (o.x -= t.offsetWidth * e), (o.x += 1 * e)),
               (o.y += 1 * e),
@@ -55699,8 +55699,8 @@
               ),
               null === e
                 ? null
-                : ((e = (e = (e = String(e)).replace(/O/gi, "0")).replace(
-                    /,/g,
+                : ((e = (e = (e = String(e)).replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/gi, "0")).replace(
+                   https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g,
                     "",
                   )),
                   (e = parseFloat(e || 0)),
@@ -55723,7 +55723,7 @@
                 this,
                 e,
                 t,
-                /[\d]|[\.]|[-]|[eE]/,
+               https://kakaomames.github.io/turbowarp/[\d]|[\.]|[-]|[eEhttps://kakaomames.github.io/turbowarp/,
               ),
               this.addArgType("angle"));
           }),
@@ -55744,7 +55744,7 @@
             Blockly.FieldAngle.HANDLE_RADIUS -
             Blockly.FieldAngle.HANDLE_GLOW_WIDTH),
           (Blockly.FieldAngle.CENTER_RADIUS = 2),
-          (Blockly.FieldAngle.ARROW_SVG_PATH = "icons/arrow.svg"),
+          (Blockly.FieldAngle.ARROW_SVG_PATH = "iconhttps://kakaomames.github.io/turbowarp/arrow.svg"),
           (Blockly.FieldAngle.prototype.dispose_ = function () {
             var e = this;
             return function () {
@@ -55768,9 +55768,9 @@
             ((e = Blockly.utils.createSvgElement(
               "svg",
               {
-                xmlns: "http://www.w3.org/2000/svg",
-                "xmlns:html": "http://www.w3.org/1999/xhtml",
-                "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                xmlns: "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
+                "xmlns:html": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xhtml",
+                "xmlns:xlink": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                 version: "1.1",
                 height: 2 * Blockly.FieldAngle.HALF + "px",
                 width: 2 * Blockly.FieldAngle.HALF + "px",
@@ -55801,7 +55801,7 @@
                 },
                 e,
               )));
-            var t = (Math.PI * Blockly.FieldAngle.OFFSET) / 180;
+            var t = (Math.PI * Blockly.FieldAngle.OFFSET)https://kakaomames.github.io/turbowarp/ 180;
             for (
               Blockly.utils.createSvgElement(
                 "line",
@@ -55867,14 +55867,14 @@
                 {
                   width: Blockly.FieldAngle.ARROW_WIDTH,
                   height: Blockly.FieldAngle.ARROW_WIDTH,
-                  x: -Blockly.FieldAngle.ARROW_WIDTH / 2,
-                  y: -Blockly.FieldAngle.ARROW_WIDTH / 2,
+                  x: -Blockly.FieldAngle.ARROW_WIDTHhttps://kakaomames.github.io/turbowarp/ 2,
+                  y: -Blockly.FieldAngle.ARROW_WIDTHhttps://kakaomames.github.io/turbowarp/ 2,
                   class: "blocklyAngleDragArrow",
                 },
                 this.handle_,
               )),
               this.arrowSvg_.setAttributeNS(
-                "http://www.w3.org/1999/xlink",
+                "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                 "xlink:href",
                 Blockly.mainWorkspace.options.pathToMedia +
                   Blockly.FieldAngle.ARROW_SVG_PATH,
@@ -55921,7 +55921,7 @@
             var t = this.gauge_.ownerSVGElement.getBoundingClientRect(),
               o = e.clientX - t.left - Blockly.FieldAngle.HALF;
             ((e = e.clientY - t.top - Blockly.FieldAngle.HALF),
-              (t = Math.atan(-e / o)),
+              (t = Math.atan(-ehttps://kakaomames.github.io/turbowarp/ o)),
               isNaN(t) ||
                 ((t = goog.math.toDegrees(t)),
                 0 > o ? (t += 180) : 0 < e && (t += 360),
@@ -55930,7 +55930,7 @@
                   : t - Blockly.FieldAngle.OFFSET),
                 Blockly.FieldAngle.ROUND &&
                   (t =
-                    Math.round(t / Blockly.FieldAngle.ROUND) *
+                    Math.round(thttps://kakaomames.github.io/turbowarp/ Blockly.FieldAngle.ROUND) *
                     Blockly.FieldAngle.ROUND),
                 (t = this.callValidator(t)),
                 (Blockly.FieldTextInput.htmlInput_.value = t),
@@ -56253,7 +56253,7 @@
           (goog.color.hexToRgbStyle = function (e) {
             return goog.color.rgbStyle_(goog.color.hexToRgb(e));
           }),
-          (goog.color.hexTripletRe_ = /#(.)(.)(.)/),
+          (goog.color.hexTripletRe_ =https://kakaomames.github.io/turbowarp/#(.)(.)(.https://kakaomames.github.io/turbowarp/),
           (goog.color.normalizeHex = function (e) {
             if (!goog.color.isValidHexColor_(e))
               throw Error("'" + e + "' is not a valid hex color");
@@ -56290,7 +56290,7 @@
             return goog.color.rgbToHex(e[0], e[1], e[2]);
           }),
           (goog.color.rgbToHsl = function (e, t, o) {
-            ((e /= 255), (t /= 255), (o /= 255));
+            ((ehttps://kakaomames.github.io/turbowarp/= 255), (thttps://kakaomames.github.io/turbowarp/= 255), (ohttps://kakaomames.github.io/turbowarp/= 255));
             var i = Math.max(e, t, o),
               n = Math.min(e, t, o),
               a = 0,
@@ -56299,14 +56299,14 @@
             return (
               i != n &&
                 (i == e
-                  ? (a = (60 * (t - o)) / (i - n))
+                  ? (a = (60 * (t - o))https://kakaomames.github.io/turbowarp/ (i - n))
                   : i == t
-                    ? (a = (60 * (o - e)) / (i - n) + 120)
-                    : i == o && (a = (60 * (e - t)) / (i - n) + 240),
+                    ? (a = (60 * (o - e))https://kakaomames.github.io/turbowarp/ (i - n) + 120)
+                    : i == o && (a = (60 * (e - t))https://kakaomames.github.io/turbowarp/ (i - n) + 240),
                 (E =
                   0 < r && 0.5 >= r
-                    ? (i - n) / (2 * r)
-                    : (i - n) / (2 - 2 * r))),
+                    ? (i - n)https://kakaomames.github.io/turbowarp/ (2 * r)
+                    : (i - n)https://kakaomames.github.io/turbowarp/ (2 - 2 * r))),
               [Math.round(a + 360) % 360, E, r]
             );
           }),
@@ -56321,30 +56321,30 @@
                 : 1 > 2 * o
                   ? t
                   : 2 > 3 * o
-                    ? e + (t - e) * (2 / 3 - o) * 6
+                    ? e + (t - e) * (2https://kakaomames.github.io/turbowarp/ 3 - o) * 6
                     : e
             );
           }),
           (goog.color.hslToRgb = function (e, t, o) {
-            if (((e /= 360), 0 == t)) o = t = e = 255 * o;
+            if (((ehttps://kakaomames.github.io/turbowarp/= 360), 0 == t)) o = t = e = 255 * o;
             else {
               var i = 0.5 > o ? o * (1 + t) : o + t - t * o,
                 n = 2 * o - i;
-              ((o = 255 * goog.color.hueToRgb_(n, i, e + 1 / 3)),
+              ((o = 255 * goog.color.hueToRgb_(n, i, e + 1https://kakaomames.github.io/turbowarp/ 3)),
                 (t = 255 * goog.color.hueToRgb_(n, i, e)),
-                (e = 255 * goog.color.hueToRgb_(n, i, e - 1 / 3)));
+                (e = 255 * goog.color.hueToRgb_(n, i, e - 1https://kakaomames.github.io/turbowarp/ 3)));
             }
             return [Math.round(o), Math.round(t), Math.round(e)];
           }),
           (goog.color.hslArrayToRgb = function (e) {
             return goog.color.hslToRgb(e[0], e[1], e[2]);
           }),
-          (goog.color.validHexColorRe_ = /^#(?:[0-9a-f]{3}){1,2}$/i),
+          (goog.color.validHexColorRe_ =https://kakaomames.github.io/turbowarp/^#(?:[0-9a-f]{3}){1,2}https://kakaomames.github.io/turbowarp/i),
           (goog.color.isValidHexColor_ = function (e) {
             return goog.color.validHexColorRe_.test(e);
           }),
           (goog.color.rgbColorRe_ =
-            /^(?:rgb)?\((0|[1-9]\d{0,2}),\s?(0|[1-9]\d{0,2}),\s?(0|[1-9]\d{0,2})\)$/i),
+           https://kakaomames.github.io/turbowarp/^(?:rgb)?\((0|[1-9]\d{0,2}),\s?(0|[1-9]\d{0,2}),\s?(0|[1-9]\d{0,2})\)https://kakaomames.github.io/turbowarp/i),
           (goog.color.isValidRgbColor_ = function (e) {
             var t = e.match(goog.color.rgbColorRe_);
             if (t) {
@@ -56373,8 +56373,8 @@
               a = 0;
             if (0 == t) a = n = i = o;
             else {
-              var E = Math.floor(e / 60),
-                r = e / 60 - E;
+              var E = Math.floor(ehttps://kakaomames.github.io/turbowarp/ 60),
+                r = ehttps://kakaomames.github.io/turbowarp/ 60 - E;
               e = o * (1 - t);
               var s = o * (1 - t * r);
               switch (((t = o * (1 - t * (1 - r))), E)) {
@@ -56406,15 +56406,15 @@
             if (n == i) n = e = 0;
             else {
               var a = i - n;
-              ((n = a / i),
+              ((n = ahttps://kakaomames.github.io/turbowarp/ i),
                 0 >
                   (e =
                     60 *
                     (e == i
-                      ? (t - o) / a
+                      ? (t - o)https://kakaomames.github.io/turbowarp/ a
                       : t == i
-                        ? 2 + (o - e) / a
-                        : 4 + (e - t) / a)) && (e += 360),
+                        ? 2 + (o - e)https://kakaomames.github.io/turbowarp/ a
+                        : 4 + (e - t)https://kakaomames.github.io/turbowarp/ a)) && (e += 360),
                 360 < e && (e -= 360));
             }
             return [e, n, i];
@@ -56455,7 +56455,7 @@
               (e[2] - t[2]) * (e[2] - t[2]) +
               o * o +
               i * i -
-              2 * o * i * Math.cos(2 * (e[0] / 360 - t[0] / 360) * Math.PI)
+              2 * o * i * Math.cos(2 * (e[0]https://kakaomames.github.io/turbowarp/ 360 - t[0]https://kakaomames.github.io/turbowarp/ 360) * Math.PI)
             );
           }),
           (goog.color.blend = function (e, t, o) {
@@ -56490,7 +56490,7 @@
             );
           }),
           (goog.color.yiqBrightness_ = function (e) {
-            return Math.round((299 * e[0] + 587 * e[1] + 114 * e[2]) / 1e3);
+            return Math.round((299 * e[0] + 587 * e[1] + 114 * e[2])https://kakaomames.github.io/turbowarp/ 1e3);
           }),
           (goog.color.yiqBrightnessDiff_ = function (e, t) {
             return Math.abs(
@@ -57154,7 +57154,7 @@
             !goog.labs.userAgent.browser.isSafari()),
           (goog.dom.dataset.PREFIX_ = "data-"),
           (goog.dom.dataset.isValidProperty_ = function (e) {
-            return !/-[a-z]/.test(e);
+            return https://kakaomames.github.io/turbowarp/-[a-zhttps://kakaomames.github.io/turbowarp/.test(e);
           }),
           (goog.dom.dataset.set = function (e, t, o) {
             if (goog.dom.dataset.ALLOWED_ && e.dataset) e.dataset[t] = o;
@@ -57742,7 +57742,7 @@
             var e = this.getContent();
             e
               ? this.size_ && this.size_.width
-                ? ((e = Math.ceil(e.length / this.size_.width)),
+                ? ((e = Math.ceil(e.lengthhttps://kakaomames.github.io/turbowarp/ this.size_.width)),
                   (!goog.isNumber(this.size_.height) ||
                     this.size_.height < e) &&
                     (this.size_.height = e))
@@ -57981,7 +57981,7 @@
           }),
           (Blockly.FieldColour.prototype.getText = function () {
             var e = this.colour_,
-              t = e.match(/^#(.)\1(.)\2(.)\3$/);
+              t = e.matchhttps://kakaomames.github.io/turbowarp/^#(.)\1(.)\2(.)\3https://kakaomames.github.io/turbowarp/);
             return (t && (e = "#" + t[1] + t[2] + t[3]), e);
           }),
           (Blockly.FieldColour.prototype.getSize = function () {
@@ -58105,7 +58105,7 @@
               (goog.userAgent.MAC || goog.userAgent.LINUX) &&
               0 != e % t
               ? e
-              : e / t;
+              : ehttps://kakaomames.github.io/turbowarp/ t;
           }),
           (goog.events.MouseWheelHandler.prototype.disposeInternal =
             function () {
@@ -58491,9 +58491,9 @@
                 ((this.endTime = e + this.endTime - this.startTime),
                 (this.startTime = e)),
               (this.progress =
-                (e - this.startTime) / (this.endTime - this.startTime)),
+                (e - this.startTime)https://kakaomames.github.io/turbowarp/ (this.endTime - this.startTime)),
               1 < this.progress && (this.progress = 1),
-              (this.fps_ = 1e3 / (e - this.lastFrame)),
+              (this.fps_ = 1e3https://kakaomames.github.io/turbowarp/ (e - this.lastFrame)),
               (this.lastFrame = e),
               this.updateCoords_(this.progress),
               1 == this.progress
@@ -58680,19 +58680,19 @@
           (goog.userAgent.platform = {}),
           (goog.userAgent.platform.determineVersion_ = function () {
             if (goog.userAgent.WINDOWS) {
-              var e = /Windows NT ([0-9.]+)/;
+              var e =https://kakaomames.github.io/turbowarp/Windows NT ([0-9.]+https://kakaomames.github.io/turbowarp/;
               return (e = e.exec(goog.userAgent.getUserAgentString()))
                 ? e[1]
                 : "0";
             }
             return goog.userAgent.MAC
-              ? (e = (e = /10[_.][0-9_.]+/).exec(
+              ? (e = (e =https://kakaomames.github.io/turbowarp/10[_.][0-9_.]https://kakaomames.github.io/turbowarp/).exec(
                   goog.userAgent.getUserAgentString(),
                 ))
-                ? e[0].replace(/_/g, ".")
+                ? e[0].replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, ".")
                 : "10"
               : goog.userAgent.ANDROID
-                ? (e = (e = /Android\s+([^\);]+)(\)|;)/).exec(
+                ? (e = (e =https://kakaomames.github.io/turbowarp/Android\s+([^\);]+)(\)|;https://kakaomames.github.io/turbowarp/).exec(
                     goog.userAgent.getUserAgentString(),
                   ))
                   ? e[1]
@@ -58700,10 +58700,10 @@
                 : goog.userAgent.IPHONE ||
                     goog.userAgent.IPAD ||
                     goog.userAgent.IPOD
-                  ? (e = (e = /(?:iPhone|CPU)\s+OS\s+(\S+)/).exec(
+                  ? (e = (e =https://kakaomames.github.io/turbowarp/(?:iPhone|CPU)\s+OS\s+(\S+https://kakaomames.github.io/turbowarp/).exec(
                       goog.userAgent.getUserAgentString(),
                     ))
-                    ? e[1].replace(/_/g, ".")
+                    ? e[1].replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, ".")
                     : ""
                   : "";
           }),
@@ -58718,7 +58718,7 @@
           (goog.userAgent.product.determineVersion_ = function () {
             if (goog.userAgent.product.FIREFOX)
               return goog.userAgent.product.getFirstRegExpGroup_(
-                /Firefox\/([0-9.]+)/,
+               https://kakaomames.github.io/turbowarp/Firefoxhttps://kakaomames.github.io/turbowarp/([0-9.]+https://kakaomames.github.io/turbowarp/,
               );
             if (
               goog.userAgent.product.IE ||
@@ -58729,31 +58729,31 @@
             if (goog.userAgent.product.CHROME)
               return goog.labs.userAgent.platform.isIos()
                 ? goog.userAgent.product.getFirstRegExpGroup_(
-                    /CriOS\/([0-9.]+)/,
+                   https://kakaomames.github.io/turbowarp/CriOShttps://kakaomames.github.io/turbowarp/([0-9.]+https://kakaomames.github.io/turbowarp/,
                   )
                 : goog.userAgent.product.getFirstRegExpGroup_(
-                    /Chrome\/([0-9.]+)/,
+                   https://kakaomames.github.io/turbowarp/Chromehttps://kakaomames.github.io/turbowarp/([0-9.]+https://kakaomames.github.io/turbowarp/,
                   );
             if (
               goog.userAgent.product.SAFARI &&
               !goog.labs.userAgent.platform.isIos()
             )
               return goog.userAgent.product.getFirstRegExpGroup_(
-                /Version\/([0-9.]+)/,
+               https://kakaomames.github.io/turbowarp/Versionhttps://kakaomames.github.io/turbowarp/([0-9.]+https://kakaomames.github.io/turbowarp/,
               );
             if (goog.userAgent.product.IPHONE || goog.userAgent.product.IPAD) {
               var e = goog.userAgent.product.execRegExp_(
-                /Version\/(\S+).*Mobile\/(\S+)/,
+               https://kakaomames.github.io/turbowarp/Versionhttps://kakaomames.github.io/turbowarp/(\S+).*Mobilehttps://kakaomames.github.io/turbowarp/(\S+https://kakaomames.github.io/turbowarp/,
               );
               if (e) return e[1] + "." + e[2];
             } else if (goog.userAgent.product.ANDROID)
               return (e =
                 goog.userAgent.product.getFirstRegExpGroup_(
-                  /Android\s+([0-9.]+)/,
+                 https://kakaomames.github.io/turbowarp/Android\s+([0-9.]+https://kakaomames.github.io/turbowarp/,
                 ))
                 ? e
                 : goog.userAgent.product.getFirstRegExpGroup_(
-                    /Version\/([0-9.]+)/,
+                   https://kakaomames.github.io/turbowarp/Versionhttps://kakaomames.github.io/turbowarp/([0-9.]+https://kakaomames.github.io/turbowarp/,
                   );
             return "";
           }),
@@ -59155,8 +59155,8 @@
             return (
               (t = isNaN(t.width) ? 0 : t.width),
               Math.min(
-                null != o ? o + t : 1 / 0,
-                Math.max(null != o ? o : -1 / 0, e),
+                null != o ? o + t : 1https://kakaomames.github.io/turbowarp/ 0,
+                Math.max(null != o ? o : -1https://kakaomames.github.io/turbowarp/ 0, e),
               )
             );
           }),
@@ -59166,8 +59166,8 @@
             return (
               (t = isNaN(t.height) ? 0 : t.height),
               Math.min(
-                null != o ? o + t : 1 / 0,
-                Math.max(null != o ? o : -1 / 0, e),
+                null != o ? o + t : 1https://kakaomames.github.io/turbowarp/ 0,
+                Math.max(null != o ? o : -1https://kakaomames.github.io/turbowarp/ 0, e),
               )
             );
           }),
@@ -59347,7 +59347,7 @@
             this.lastOpacityUpdate_ = goog.fx.dom.Fade.OPACITY_UNSET_;
           }),
           goog.inherits(goog.fx.dom.Fade, goog.fx.dom.PredefinedEffect),
-          (goog.fx.dom.Fade.TOLERANCE_ = 1 / 1024),
+          (goog.fx.dom.Fade.TOLERANCE_ = 1https://kakaomames.github.io/turbowarp/ 1024),
           (goog.fx.dom.Fade.OPACITY_UNSET_ = -1),
           (goog.fx.dom.Fade.prototype.updateStyle = function () {
             var e = this.coords[0];
@@ -59551,12 +59551,12 @@
             return null == this.step_
               ? e
               : this.minimum_ +
-                  Math.round((e - this.minimum_) / this.step_) * this.step_;
+                  Math.round((e - this.minimum_)https://kakaomames.github.io/turbowarp/ this.step_) * this.step_;
           }),
           (goog.ui.RangeModel.prototype.roundToStep = function (e) {
             return null == this.step_
               ? e
-              : Math.round(e / this.step_) * this.step_;
+              : Math.round(ehttps://kakaomames.github.io/turbowarp/ this.step_) * this.step_;
           }),
           (goog.ui.SliderBase = function (e, t) {
             (goog.ui.Component.call(this, e),
@@ -59750,12 +59750,12 @@
             if (this.orientation_ == goog.ui.SliderBase.Orientation.VERTICAL) {
               var o = this.getElement().clientHeight - t.offsetHeight;
               o =
-                ((o - e.top) / o) * (this.getMaximum() - this.getMinimum()) +
+                ((o - e.top)https://kakaomames.github.io/turbowarp/ o) * (this.getMaximum() - this.getMinimum()) +
                 this.getMinimum();
             } else
               ((o = this.getElement().clientWidth - t.offsetWidth),
                 (o =
-                  (e.left / o) * (this.getMaximum() - this.getMinimum()) +
+                  (e.lefthttps://kakaomames.github.io/turbowarp/ o) * (this.getMaximum() - this.getMinimum()) +
                   this.getMinimum()));
             ((o =
               e.dragger == this.valueDragger_
@@ -59967,7 +59967,7 @@
               var i = this.valueThumb.offsetHeight,
                 n = this.getElement().clientHeight - i;
               return (
-                ((o - t) * (n - (e = this.getRelativeMousePos_(e) - i / 2))) /
+                ((o - t) * (n - (e = this.getRelativeMousePos_(e) - ihttps://kakaomames.github.io/turbowarp/ 2)))https://kakaomames.github.io/turbowarp/
                   n +
                 t
               );
@@ -59975,7 +59975,7 @@
             return (
               (i = this.valueThumb.offsetWidth),
               (n = this.getElement().clientWidth - i),
-              ((o - t) * (e = this.getRelativeMousePos_(e) - i / 2)) / n + t
+              ((o - t) * (e = this.getRelativeMousePos_(e) - ihttps://kakaomames.github.io/turbowarp/ 2))https://kakaomames.github.io/turbowarp/ n + t
             );
           }),
           (goog.ui.SliderBase.prototype.getThumbPosition_ = function (e) {
@@ -60052,7 +60052,7 @@
           }),
           (goog.ui.SliderBase.prototype.getClosestThumb_ = function (e) {
             return e <=
-              this.rangeModel.getValue() + this.rangeModel.getExtent() / 2
+              this.rangeModel.getValue() + this.rangeModel.getExtent()https://kakaomames.github.io/turbowarp/ 2
               ? this.valueThumb
               : this.extentThumb;
           }),
@@ -60098,7 +60098,7 @@
           }),
           (goog.ui.SliderBase.prototype.calculateRangeHighlightPositioning_ =
             function (e, t, o) {
-              var i = Math.ceil(o / 2);
+              var i = Math.ceil(ohttps://kakaomames.github.io/turbowarp/ 2);
               return { offset: e + i, size: Math.max(t - e + o - 2 * i, 0) };
             }),
           (goog.ui.SliderBase.prototype.getThumbCoordinateForValue = function (
@@ -60108,7 +60108,7 @@
             if (this.valueThumb) {
               var o = this.getMinimum(),
                 i = this.getMaximum();
-              ((e = e == o && o == i ? 0 : (e - o) / (i - o)),
+              ((e = e == o && o == i ? 0 : (e - o)https://kakaomames.github.io/turbowarp/ (i - o)),
                 this.orientation_ == goog.ui.SliderBase.Orientation.VERTICAL
                   ? ((o = this.valueThumb.offsetHeight),
                     (o = this.getElement().clientHeight - o),
@@ -60525,7 +60525,7 @@
                   break;
                 case "saturation":
                   t.push(
-                    goog.color.hsvToHex(this.hue_, o / 360, this.brightness_),
+                    goog.color.hsvToHex(this.hue_, ohttps://kakaomames.github.io/turbowarp/ 360, this.brightness_),
                   );
                   break;
                 case "brightness":
@@ -60533,7 +60533,7 @@
                     goog.color.hsvToHex(
                       this.hue_,
                       this.saturation_,
-                      (255 * o) / 360,
+                      (255 * o)https://kakaomames.github.io/turbowarp/ 360,
                     ),
                   );
                   break;
@@ -60582,13 +60582,13 @@
                 "brightness",
               ),
               (this.hueReadout_.textContent = Math.floor(
-                (100 * this.hue_) / 360,
+                (100 * this.hue_)https://kakaomames.github.io/turbowarp/ 360,
               ).toFixed(0)),
               (this.saturationReadout_.textContent = Math.floor(
                 100 * this.saturation_,
               ).toFixed(0)),
               (this.brightnessReadout_.textContent = Math.floor(
-                (100 * this.brightness_) / 255,
+                (100 * this.brightness_)https://kakaomames.github.io/turbowarp/ 255,
               ).toFixed(0)));
           }),
           (Blockly.FieldColourSlider.prototype.updateSliderHandles_ =
@@ -60602,7 +60602,7 @@
             }),
           (Blockly.FieldColourSlider.prototype.getText = function () {
             var e = this.colour_,
-              t = e.match(/^#(.)\1(.)\2(.)\3$/);
+              t = e.matchhttps://kakaomames.github.io/turbowarp/^#(.)\1(.)\2(.)\3https://kakaomames.github.io/turbowarp/);
             return (t && (e = "#" + t[1] + t[2] + t[3]), e);
           }),
           (Blockly.FieldColourSlider.prototype.createLabelDom_ = function (e) {
@@ -60792,7 +60792,7 @@
                   width: this.arrowSize_ + "px",
                 })),
                 this.arrow_.setAttributeNS(
-                  "http://www.w3.org/1999/xlink",
+                  "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   "xlink:href",
                   Blockly.mainWorkspace.options.pathToMedia +
                     "dropdown-arrow.svg",
@@ -60878,7 +60878,7 @@
                 (E *= n),
                 (t *= n),
                 (E =
-                  (n = this.fieldGroup_.getBoundingClientRect()).left + E / 2),
+                  (n = this.fieldGroup_.getBoundingClientRect()).left + Ehttps://kakaomames.github.io/turbowarp/ 2),
                 (t = n.top + t),
                 (n = n.top),
                 Blockly.DropDownDiv.setBoundsElement(
@@ -60992,7 +60992,7 @@
             return this.arrow_
               ? ((this.arrowX_ = this.sourceBlock_.RTL
                   ? this.arrowSize_ - Blockly.BlockSvg.DROPDOWN_ARROW_PADDING
-                  : e + Blockly.BlockSvg.DROPDOWN_ARROW_PADDING / 2),
+                  : e + Blockly.BlockSvg.DROPDOWN_ARROW_PADDINGhttps://kakaomames.github.io/turbowarp/ 2),
                 (e = this.arrowSize_ + Blockly.BlockSvg.DROPDOWN_ARROW_PADDING),
                 this.box_ &&
                   (this.arrowX_ += Blockly.BlockSvg.BOX_FIELD_PADDING),
@@ -61035,7 +61035,7 @@
                   "translate(" + this.arrowX_ + "," + this.arrowY_ + ")",
               })),
               this.arrowIcon_.setAttributeNS(
-                "http://www.w3.org/1999/xlink",
+                "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                 "xlink:href",
                 Blockly.mainWorkspace.options.pathToMedia +
                   "dropdown-arrow.svg",
@@ -61164,10 +61164,10 @@
                     "transform",
                     "translate(" +
                       (this.arrowX_ +
-                        Blockly.DropDownDiv.ARROW_SIZE / 1.5 +
+                        Blockly.DropDownDiv.ARROW_SIZEhttps://kakaomames.github.io/turbowarp/ 1.5 +
                         1) +
                       "," +
-                      (this.arrowY_ + Blockly.DropDownDiv.ARROW_SIZE / 1.5) +
+                      (this.arrowY_ + Blockly.DropDownDiv.ARROW_SIZEhttps://kakaomames.github.io/turbowarp/ 1.5) +
                       ") rotate(180)",
                   ));
             }
@@ -61252,7 +61252,7 @@
               ((this.src_ = e),
               this.imageElement_ &&
                 this.imageElement_.setAttributeNS(
-                  "http://www.w3.org/1999/xlink",
+                  "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   "xlink:href",
                   e || "",
                 ));
@@ -61322,7 +61322,7 @@
           ]),
           (Blockly.FieldNote.MAX_NOTE = 130),
           (Blockly.FieldNote.ANIMATION_FRACTION = 0.2),
-          (Blockly.FieldNote.ARROW_SVG_PATH = "icons/arrow_button.svg"),
+          (Blockly.FieldNote.ARROW_SVG_PATH = "iconhttps://kakaomames.github.io/turbowarp/arrow_button.svg"),
           (Blockly.FieldNote.OCTAVE_BUTTON_SIZE = 32),
           (Blockly.FieldNote.fromJson = function (e) {
             return new Blockly.FieldNote(e.note);
@@ -61366,9 +61366,9 @@
               (e = Blockly.utils.createSvgElement(
                 "svg",
                 {
-                  xmlns: "http://www.w3.org/2000/svg",
-                  "xmlns:html": "http://www.w3.org/1999/xhtml",
-                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                  xmlns: "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
+                  "xmlns:html": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xhtml",
+                  "xmlns:xlink": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   version: "1.1",
                   height: this.fieldEditorHeight_ + "px",
                   width: this.fieldEditorWidth_ + "px",
@@ -61395,15 +61395,15 @@
               (this.noteNameText_ = Blockly.utils.createSvgElement(
                 "text",
                 {
-                  x: this.fieldEditorWidth_ / 2,
-                  y: Blockly.FieldNote.TOP_MENU_HEIGHT / 2,
+                  x: this.fieldEditorWidth_https://kakaomames.github.io/turbowarp/ 2,
+                  y: Blockly.FieldNote.TOP_MENU_HEIGHThttps://kakaomames.github.io/turbowarp/ 2,
                   class: "blocklyText",
                   "text-anchor": "middle",
                   "dominant-baseline": "middle",
                 },
                 e,
               )),
-              (t = Blockly.FieldNote.WHITE_KEY_WIDTH / 2),
+              (t = Blockly.FieldNote.WHITE_KEY_WIDTHhttps://kakaomames.github.io/turbowarp/ 2),
               (this.lowCText_ = this.addCKeyLabel_(t, e)),
               (this.highCText_ = this.addCKeyLabel_(
                 t +
@@ -61472,15 +61472,15 @@
               this.updateSelection_());
           }),
           (Blockly.FieldNote.prototype.addPianoOctave_ = function (e, t, o, i) {
-            e += Blockly.FieldNote.EDGE_PADDING / 2;
+            e += Blockly.FieldNote.EDGE_PADDINGhttps://kakaomames.github.io/turbowarp/ 2;
             for (
               var n = Blockly.FieldNote.TOP_MENU_HEIGHT, a = 0;
               a < Blockly.FieldNote.KEY_INFO.length;
               a++
             ) {
               if (Blockly.FieldNote.KEY_INFO[a].isBlack) {
-                e -= Blockly.FieldNote.BLACK_KEY_WIDTH / 2;
-                var E = Blockly.FieldNote.BLACK_KEY_WIDTH / 2,
+                e -= Blockly.FieldNote.BLACK_KEY_WIDTHhttps://kakaomames.github.io/turbowarp/ 2;
+                var E = Blockly.FieldNote.BLACK_KEY_WIDTHhttps://kakaomames.github.io/turbowarp/ 2,
                   r = Blockly.FieldNote.BLACK_KEY_WIDTH,
                   s = Blockly.FieldNote.BLACK_KEY_HEIGHT,
                   O = Blockly.FieldNote.BLACK_KEY_COLOR,
@@ -61588,7 +61588,7 @@
                   o,
                 )
                 .setAttributeNS(
-                  "http://www.w3.org/1999/xlink",
+                  "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   "xlink:href",
                   Blockly.mainWorkspace.options.pathToMedia +
                     Blockly.FieldNote.ARROW_SVG_PATH,
@@ -61682,7 +61682,7 @@
             if (((this.displayedOctave_ += e), 0 > this.displayedOctave_))
               this.displayedOctave_ = 0;
             else {
-              var t = Math.floor(Blockly.FieldNote.MAX_NOTE / 12);
+              var t = Math.floor(Blockly.FieldNote.MAX_NOTEhttps://kakaomames.github.io/turbowarp/ 12);
               this.displayedOctave_ > t
                 ? (this.displayedOctave_ = t)
                 : ((t = Number(this.getText()) + 12 * e),
@@ -61725,7 +61725,7 @@
             (null == this.displayedOctave_ ||
               e > 12 * this.displayedOctave_ + 12 ||
               e < 12 * this.displayedOctave_) &&
-              (this.displayedOctave_ = Math.floor(e / 12));
+              (this.displayedOctave_ = Math.floor(ehttps://kakaomames.github.io/turbowarp/ 12));
             var t = this.noteNumToKeyIndex_(e);
             (this.keySVGs_.forEach(function (e) {
               "true" === e.getAttribute("data-isBlack")
@@ -61777,7 +61777,7 @@
             var t = goog.dom.createDom("IMG", "blocklyTextRemoveIcon");
             (t.setAttribute(
               "src",
-              Blockly.mainWorkspace.options.pathToMedia + "icons/remove.svg",
+              Blockly.mainWorkspace.options.pathToMedia + "iconhttps://kakaomames.github.io/turbowarp/remove.svg",
             ),
               (this.removeButtonMouseWrapper_ = Blockly.bindEvent_(
                 t,
@@ -61838,7 +61838,7 @@
                   width: this.arrowSize_ + "px",
                 })),
                 this.arrow_.setAttributeNS(
-                  "http://www.w3.org/1999/xlink",
+                  "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   "xlink:href",
                   Blockly.mainWorkspace.options.pathToMedia +
                     "dropdown-arrow-dark.svg",
@@ -61899,9 +61899,9 @@
           (Blockly.FieldNumber.DROPDOWN_WIDTH = 168),
           (Blockly.FieldNumber.NUMPAD_BUTTONS = "789456123.0- ".split("")),
           (Blockly.FieldNumber.NUMPAD_DELETE_ICON =
-            'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M28.89,11.45H16.79a2.86,2.86,0,0,0-2,.84L9.09,18a2.85,2.85,0,0,0,0,4l5.69,5.69a2.86,2.86,0,0,0,2,.84h12.1a2.86,2.86,0,0,0,2.86-2.86V14.31A2.86,2.86,0,0,0,28.89,11.45ZM27.15,22.73a1,1,0,0,1,0,1.41,1,1,0,0,1-.71.3,1,1,0,0,1-.71-0.3L23,21.41l-2.73,2.73a1,1,0,0,1-1.41,0,1,1,0,0,1,0-1.41L21.59,20l-2.73-2.73a1,1,0,0,1,0-1.41,1,1,0,0,1,1.41,0L23,18.59l2.73-2.73a1,1,0,1,1,1.42,1.41L24.42,20Z" fill="' +
+            'data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;utf8,<svg xmlns="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg" viewBox="0 0 40 40"><path d="M28.89,11.45H16.79a2.86,2.86,0,0,0-2,.84L9.09,18a2.85,2.85,0,0,0,0,4l5.69,5.69a2.86,2.86,0,0,0,2,.84h12.1a2.86,2.86,0,0,0,2.86-2.86V14.31A2.86,2.86,0,0,0,28.89,11.45ZM27.15,22.73a1,1,0,0,1,0,1.41,1,1,0,0,1-.71.3,1,1,0,0,1-.71-0.3L23,21.41l-2.73,2.73a1,1,0,0,1-1.41,0,1,1,0,0,1,0-1.41L21.59,20l-2.73-2.73a1,1,0,0,1,0-1.41,1,1,0,0,1,1.41,0L23,18.59l2.73-2.73a1,1,0,1,1,1.42,1.41L24.42,20Z" fill="' +
             Blockly.Colours.numPadText +
-            '"/></svg>'),
+            'https://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/svg>'),
           (Blockly.FieldNumber.activeField_ = null),
           (Blockly.FieldNumber.prototype.getNumRestrictor = function (e, t, o) {
             return (
@@ -61944,7 +61944,7 @@
               t = this.sourceBlock_.getHeightWidth();
             ((t.width *= e), (t.height *= e));
             var o = this.getAbsoluteXY_();
-            ((e = o.x + t.width / 2),
+            ((e = o.x + t.widthhttps://kakaomames.github.io/turbowarp/ 2),
               (t = o.y + t.height),
               (o = o.y),
               Blockly.DropDownDiv.setBoundsElement(
@@ -62130,9 +62130,9 @@
                 {
                   transform:
                     "translate(" +
-                    Blockly.BlockSvg.DROPDOWN_ARROW_PADDING / 2 +
+                    Blockly.BlockSvg.DROPDOWN_ARROW_PADDINGhttps://kakaomames.github.io/turbowarp/ 2 +
                     ", " +
-                    (this.size_.height - Blockly.FieldMatrix.THUMBNAIL_SIZE) /
+                    (this.size_.height - Blockly.FieldMatrix.THUMBNAIL_SIZE)https://kakaomames.github.io/turbowarp/
                       2 +
                     ")",
                   "pointer-events": "bounding-box",
@@ -62176,13 +62176,13 @@
                       (Blockly.FieldMatrix.THUMBNAIL_SIZE +
                         1.5 * Blockly.BlockSvg.DROPDOWN_ARROW_PADDING) +
                       ", " +
-                      (this.size_.height - Blockly.FieldMatrix.ARROW_SIZE) / 2 +
+                      (this.size_.height - Blockly.FieldMatrix.ARROW_SIZE)https://kakaomames.github.io/turbowarp/ 2 +
                       ")",
                   },
                   this.fieldGroup_,
                 )),
                 this.arrow_.setAttributeNS(
-                  "http://www.w3.org/1999/xlink",
+                  "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   "xlink:href",
                   Blockly.mainWorkspace.options.pathToMedia +
                     "dropdown-arrow.svg",
@@ -62228,9 +62228,9 @@
               this.matrixStage_ = Blockly.utils.createSvgElement(
                 "svg",
                 {
-                  xmlns: "http://www.w3.org/2000/svg",
-                  "xmlns:html": "http://www.w3.org/1999/xhtml",
-                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                  xmlns: "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
+                  "xmlns:html": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xhtml",
+                  "xmlns:xlink": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   version: "1.1",
                   height: t + "px",
                   width: t + "px",
@@ -62310,15 +62310,15 @@
           (Blockly.FieldMatrix.prototype.createButton_ = function (e) {
             for (
               var t = Blockly.utils.createSvgElement("svg", {
-                  xmlns: "http://www.w3.org/2000/svg",
-                  "xmlns:html": "http://www.w3.org/1999/xhtml",
-                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                  xmlns: "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
+                  "xmlns:html": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xhtml",
+                  "xmlns:xlink": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   version: "1.1",
                   height: Blockly.FieldMatrix.MATRIX_NODE_SIZE + "px",
                   width: Blockly.FieldMatrix.MATRIX_NODE_SIZE + "px",
                 }),
-                o = Blockly.FieldMatrix.MATRIX_NODE_SIZE / 4,
-                i = Blockly.FieldMatrix.MATRIX_NODE_SIZE / 16,
+                o = Blockly.FieldMatrix.MATRIX_NODE_SIZEhttps://kakaomames.github.io/turbowarp/ 4,
+                i = Blockly.FieldMatrix.MATRIX_NODE_SIZEhttps://kakaomames.github.io/turbowarp/ 16,
                 n = 0;
               3 > n;
               n++
@@ -62423,13 +62423,13 @@
               i = Blockly.FieldMatrix.MATRIX_NODE_PAD,
               n = e.clientX - t.left;
             e = e.clientY - t.top;
-            var a = i / 2;
+            var a = ihttps://kakaomames.github.io/turbowarp/ 2;
             return (
-              (t = t.width - i / 2),
+              (t = t.width - ihttps://kakaomames.github.io/turbowarp/ 2),
               n < a || n > t || e < a || e > t
                 ? -1
-                : Math.trunc((n - i / 2) / (o + i)) +
-                  Math.trunc((e - i / 2) / (o + i)) * i
+                : Math.trunc((n - ihttps://kakaomames.github.io/turbowarp/ 2)https://kakaomames.github.io/turbowarp/ (o + i)) +
+                  Math.trunc((e - ihttps://kakaomames.github.io/turbowarp/ 2)https://kakaomames.github.io/turbowarp/ (o + i)) * i
             );
           }),
           (Blockly.FieldMatrix.prototype.dispose_ = function () {
@@ -62728,14 +62728,14 @@
             }
             return (
               (t = t.join("\n")),
-              (t = (t = (t = this.finish(t)).replace(/^\s+\n/, "")).replace(
-                /\n\s+$/,
+              (t = (t = (t = this.finish(t)).replacehttps://kakaomames.github.io/turbowarp/^\s+\https://kakaomames.github.io/turbowarp/, "")).replace(
+               https://kakaomames.github.io/turbowarp/\n\s+https://kakaomames.github.io/turbowarp/,
                 "\n",
-              )).replace(/[ \t]+\n/g, "\n")
+              )).replacehttps://kakaomames.github.io/turbowarp/[ \t]+\https://kakaomames.github.io/turbowarp/g, "\n")
             );
           }),
           (Blockly.Generator.prototype.prefixLines = function (e, t) {
-            return t + e.replace(/(?!\n$)\n/g, "\n" + t);
+            return t + e.replacehttps://kakaomames.github.io/turbowarp/(?!\n$)\https://kakaomames.github.io/turbowarp/g, "\n" + t);
           }),
           (Blockly.Generator.prototype.allNestedComments = function (e) {
             var t = [];
@@ -62769,10 +62769,10 @@
                 [this.scrub_(e, t[0]), t[1]]
               );
             if (goog.isString(t)) {
-              var o = e.id.replace(/\$/g, "$$$$");
+              var o = e.id.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "$$$$");
               return (
                 this.STATEMENT_PREFIX &&
-                  (t = this.STATEMENT_PREFIX.replace(/%1/g, "'" + o + "'") + t),
+                  (t = this.STATEMENT_PREFIX.replacehttps://kakaomames.github.io/turbowarp/%https://kakaomames.github.io/turbowarp/g, "'" + o + "'") + t),
                 this.scrub_(e, t)
               );
             }
@@ -62833,12 +62833,12 @@
           }),
           (Blockly.Generator.prototype.addLoopTrap = function (e, t) {
             return (
-              (t = t.replace(/\$/g, "$$$$")),
+              (t = t.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "$$$$")),
               this.INFINITE_LOOP_TRAP &&
-                (e = this.INFINITE_LOOP_TRAP.replace(/%1/g, "'" + t + "'") + e),
+                (e = this.INFINITE_LOOP_TRAP.replacehttps://kakaomames.github.io/turbowarp/%https://kakaomames.github.io/turbowarp/g, "'" + t + "'") + e),
               this.STATEMENT_PREFIX &&
                 (e += this.prefixLines(
-                  this.STATEMENT_PREFIX.replace(/%1/g, "'" + t + "'"),
+                  this.STATEMENT_PREFIX.replacehttps://kakaomames.github.io/turbowarp/%https://kakaomames.github.io/turbowarp/g, "'" + t + "'"),
                   this.INDENT,
                 )),
               e
@@ -62864,8 +62864,8 @@
                     .replace(this.FUNCTION_NAME_PLACEHOLDER_REGEXP_, i);
                 o != t;
               )
-                ((o = t), (t = t.replace(/^(( {2})*) {2}/gm, "$1\0")));
-              ((t = t.replace(/\0/g, this.INDENT)), (this.definitions_[e] = t));
+                ((o = t), (t = t.replacehttps://kakaomames.github.io/turbowarp/^(( {2})*) {2https://kakaomames.github.io/turbowarp/gm, "$1\0")));
+              ((t = t.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, this.INDENT)), (this.definitions_[e] = t));
             }
             return this.functionNames_[e];
           }),
@@ -62944,7 +62944,7 @@
           (Blockly.Names.prototype.safeName_ = function (e) {
             return (
               e
-                ? ((e = encodeURI(e.replace(/ /g, "_")).replace(/[^\w]/g, "_")),
+                ? ((e = encodeURI(e.replacehttps://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/g, "_")).replacehttps://kakaomames.github.io/turbowarp/[^\whttps://kakaomames.github.io/turbowarp/g, "_")),
                   -1 != "0123456789".indexOf(e[0]) && (e = "my_" + e))
                 : (e = "unnamed"),
               e
@@ -62995,7 +62995,7 @@
           (Blockly.Procedures.findLegalName = function (e, t) {
             if (t.isInFlyout) return e;
             for (; !Blockly.Procedures.isLegalName_(e, t.workspace, t);) {
-              var o = e.match(/^(.*?)(\d+)$/);
+              var o = e.matchhttps://kakaomames.github.io/turbowarp/^(.*?)(\d+)https://kakaomames.github.io/turbowarp/);
               e = o ? o[1] + (parseInt(o[2], 10) + 1) : e + "2";
             }
             return e;
@@ -63013,7 +63013,7 @@
             return !0;
           }),
           (Blockly.Procedures.rename = function (e) {
-            e = e.replace(/^[\s\xa0]+|[\s\xa0]+$/g, "");
+            e = e.replacehttps://kakaomames.github.io/turbowarp/^[\s\xa0]+|[\s\xa0]+https://kakaomames.github.io/turbowarp/g, "");
             var t = Blockly.Procedures.findLegalName(e, this.sourceBlock_),
               o = this.text_;
             if (o != e && o != t) {
@@ -63134,7 +63134,7 @@
             return Blockly.Xml.textToDom(
               '<xml><mutation proccode="' +
                 Blockly.Msg.PROCEDURE_DEFAULT_NAME +
-                '" argumentids="[]" argumentnames="[]" argumentdefaults="[]" warp="false"></mutation></xml>',
+                '" argumentids="[]" argumentnames="[]" argumentdefaults="[]" warp="false">https://kakaomames.github.io/turbowarp/mutation>https://kakaomames.github.io/turbowarp/xml>',
             ).firstChild;
           }),
           (Blockly.Procedures.createProcedureDefCallback_ = function (e) {
@@ -63149,14 +63149,14 @@
                 ((t =
                   '<xml><block type="procedures_definition"><statement name="custom_block"><shadow type="procedures_prototype">' +
                   Blockly.Xml.domToText(t) +
-                  "</shadow></statement></block></xml>"),
+                  "https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/statement>https://kakaomames.github.io/turbowarp/block>https://kakaomames.github.io/turbowarp/xml>"),
                   (t = Blockly.Xml.textToDom(t).firstChild),
                   Blockly.Events.setGroup(!0),
                   (t = Blockly.Xml.domToBlock(t, e)));
                 var o = e.scale,
                   i = -e.scrollX;
                 ((i = e.RTL ? i + (e.getMetrics().contentWidth - 30) : i + 30),
-                  t.moveBy(i / o, (30 - e.scrollY) / o),
+                  t.moveBy(ihttps://kakaomames.github.io/turbowarp/ o, (30 - e.scrollY)https://kakaomames.github.io/turbowarp/ o),
                   t.scheduleSnapAndBump(),
                   Blockly.Events.setGroup(!1));
               }
@@ -63439,8 +63439,8 @@
                 "dy",
                 goog.userAgent.EDGE_OR_IE ? Blockly.Field.IE_TEXT_OFFSET : "0",
               ),
-              i.setAttribute("x", this.width / 2),
-              i.setAttribute("y", this.height / 2));
+              i.setAttribute("x", this.widthhttps://kakaomames.github.io/turbowarp/ 2),
+              i.setAttribute("y", this.heighthttps://kakaomames.github.io/turbowarp/ 2));
           }),
           (Blockly.FlyoutButton.prototype.show = function () {
             (this.updateTransform_(),
@@ -63506,7 +63506,7 @@
                 this.refreshStatus());
               var e = this.workspace_.RTL
                 ? 20 - this.flyoutWidth_ + 30
-                : (this.flyoutWidth_ - 30 - 20) / this.workspace_.scale;
+                : (this.flyoutWidth_ - 30 - 20)https://kakaomames.github.io/turbowarp/ this.workspace_.scale;
               return (
                 this.imageSrc_ &&
                   ((this.imageElement_ = Blockly.utils.createSvgElement(
@@ -63563,7 +63563,7 @@
                 ((this.imageSrc_ = e),
                 this.imageElement_ &&
                   this.imageElement_.setAttributeNS(
-                    "http://www.w3.org/1999/xlink",
+                    "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                     "xlink:href",
                     this.imageSrc_ || "",
                   ));
@@ -63838,7 +63838,7 @@
             e,
           ) {
             if (!this.scrollTarget) {
-              e = Math.round(e / this.workspace_.scale);
+              e = Math.round(ehttps://kakaomames.github.io/turbowarp/ this.workspace_.scale);
               for (var t = this.categoryScrollPositions.length - 1; 0 <= t; t--)
                 if (e >= this.categoryScrollPositions[t].position) {
                   this.parentToolbox_.selectCategoryById(
@@ -63863,7 +63863,7 @@
                 (this.scrollTarget - this.scrollStart) *
                   Math.pow(
                     this.scrollAnimationFraction,
-                    (e - this.scrollTime) / 60 + 1,
+                    (e - this.scrollTime)https://kakaomames.github.io/turbowarp/ 60 + 1,
                   )),
               1 > Math.abs(this.scrollTarget - e)
                 ? (this.scrollbar_.set(this.scrollTarget),
@@ -63875,7 +63875,7 @@
             return (
               (this.horizontalLayout_
                 ? -this.workspace_.scrollX
-                : -this.workspace_.scrollY) / this.workspace_.scale
+                : -this.workspace_.scrollY)https://kakaomames.github.io/turbowarp/ this.workspace_.scale
             );
           }),
           (Blockly.Flyout.prototype.setScrollPos = function (e) {
@@ -63999,7 +63999,7 @@
             return (
               (e = e.getRelativeToSurfaceXY().scale(this.workspace_.scale)),
               (e = goog.math.Coordinate.sum(n, e)),
-              (t = goog.math.Coordinate.difference(e, i).scale(1 / t.scale)),
+              (t = goog.math.Coordinate.difference(e, i).scale(1https://kakaomames.github.io/turbowarp/ t.scale)),
               o.moveBy(t.x, t.y),
               o
             );
@@ -64180,7 +64180,7 @@
               this.svgBackground_.setAttribute("d", i.join(" ")));
           }),
           (Blockly.HorizontalFlyout.prototype.scrollToStart = function () {
-            this.scrollbar_.set(this.RTL ? 1 / 0 : 0);
+            this.scrollbar_.set(this.RTL ? 1https://kakaomames.github.io/turbowarp/ 0 : 0);
           }),
           (Blockly.HorizontalFlyout.prototype.scrollTo = function (e) {
             ((this.scrollTarget = e * this.workspace_.scale),
@@ -64254,7 +64254,7 @@
           (Blockly.HorizontalFlyout.prototype.isDragTowardWorkspace = function (
             e,
           ) {
-            e = (Math.atan2(e.y, e.x) / Math.PI) * 180;
+            e = (Math.atan2(e.y, e.x)https://kakaomames.github.io/turbowarp/ Math.PI) * 180;
             var t = !1,
               o = this.dragAngleRange_;
             return (
@@ -64320,17 +64320,17 @@
           (Blockly.VerticalFlyout.prototype.CHECKBOX_TOUCH_PADDING = 12),
           (Blockly.VerticalFlyout.prototype.CHECKMARK_PATH =
             "M" +
-            Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE / 4 +
+            Blockly.VerticalFlyout.prototype.CHECKBOX_SIZEhttps://kakaomames.github.io/turbowarp/ 4 +
             " " +
-            Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE / 2 +
+            Blockly.VerticalFlyout.prototype.CHECKBOX_SIZEhttps://kakaomames.github.io/turbowarp/ 2 +
             "L" +
-            (5 * Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE) / 12 +
+            (5 * Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE)https://kakaomames.github.io/turbowarp/ 12 +
             " " +
-            (2 * Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE) / 3 +
+            (2 * Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE)https://kakaomames.github.io/turbowarp/ 3 +
             "L" +
-            (3 * Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE) / 4 +
+            (3 * Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE)https://kakaomames.github.io/turbowarp/ 4 +
             " " +
-            Blockly.VerticalFlyout.prototype.CHECKBOX_SIZE / 3),
+            Blockly.VerticalFlyout.prototype.CHECKBOX_SIZEhttps://kakaomames.github.io/turbowarp/ 3),
           (Blockly.VerticalFlyout.prototype.CHECKBOX_CORNER_RADIUS = 5),
           (Blockly.VerticalFlyout.prototype.CHECKBOX_MARGIN =
             Blockly.Flyout.prototype.MARGIN),
@@ -64564,7 +64564,7 @@
             for (
               var o,
                 i = this.MARGIN,
-                n = this.getWidth() / this.workspace_.scale,
+                n = this.getWidth()https://kakaomames.github.io/turbowarp/ this.workspace_.scale,
                 a = i,
                 E = 0;
               (o = e[E]);
@@ -64655,7 +64655,7 @@
             var n = Blockly.VerticalFlyout.getCheckboxState(e.id),
               a = e.getSvgRoot(),
               E = this.CHECKBOX_SIZE + this.CHECKBOX_MARGIN;
-            ((E = this.RTL ? this.getWidth() / this.workspace_.scale - E : t),
+            ((E = this.RTL ? this.getWidth()https://kakaomames.github.io/turbowarp/ this.workspace_.scale - E : t),
               (t = this.CHECKBOX_TOUCH_PADDING),
               (o = Blockly.utils.createSvgElement(
                 "g",
@@ -64664,7 +64664,7 @@
                     "translate(" +
                     E +
                     ", " +
-                    (o + i.height / 2 - this.CHECKBOX_SIZE / 2) +
+                    (o + i.heighthttps://kakaomames.github.io/turbowarp/ 2 - this.CHECKBOX_SIZEhttps://kakaomames.github.io/turbowarp/ 2) +
                     ")",
                 },
                 null,
@@ -64724,7 +64724,7 @@
           (Blockly.VerticalFlyout.prototype.isDragTowardWorkspace = function (
             e,
           ) {
-            e = (Math.atan2(e.y, e.x) / Math.PI) * 180;
+            e = (Math.atan2(e.y, e.x)https://kakaomames.github.io/turbowarp/ Math.PI) * 180;
             var t = !1,
               o = this.dragAngleRange_;
             return (
@@ -64903,7 +64903,7 @@
           }),
           (goog.debug.Logger.Level.OFF = new goog.debug.Logger.Level(
             "OFF",
-            1 / 0,
+            1https://kakaomames.github.io/turbowarp/ 0,
           )),
           (goog.debug.Logger.Level.SHOUT = new goog.debug.Logger.Level(
             "SHOUT",
@@ -66719,7 +66719,7 @@
                   goog.string.htmlEscape(o.id_) +
                   '" category-label="true" showStatusButton="' +
                   goog.string.htmlEscape(o.showStatusButton_) +
-                  '" web-class="categoryLabel"></label></xml>';
+                  '" web-class="categoryLabel">https://kakaomames.github.io/turbowarp/label>https://kakaomames.github.io/turbowarp/xml>';
               ((i = Blockly.Xml.textToDom(i)),
                 e.push(i.firstChild),
                 (e = e.concat(o.getContents())));
@@ -67018,10 +67018,10 @@
             var t = e.getAttribute("colour");
             ((e = e.getAttribute("secondaryColour")),
               goog.isString(t)
-                ? (t.match(/^#[0-9a-fA-F]{6}$/)
+                ? (t.matchhttps://kakaomames.github.io/turbowarp/^#[0-9a-fA-F]{6}https://kakaomames.github.io/turbowarp/)
                     ? (this.colour_ = t)
                     : (this.colour_ = Blockly.hueToRgb(t)),
-                  e.match(/^#[0-9a-fA-F]{6}$/)
+                  e.matchhttps://kakaomames.github.io/turbowarp/^#[0-9a-fA-F]{6}https://kakaomames.github.io/turbowarp/)
                     ? (this.secondaryColour_ = e)
                     : (this.secondaryColour_ = Blockly.hueToRgb(e)),
                   (this.hasColours_ = !0))
@@ -67042,8 +67042,8 @@
               for (var i in (e &&
                 ((o += Blockly.Css.CONTENT.join("\n")),
                 Blockly.FieldDate && (o += Blockly.FieldDate.CSS.join("\n"))),
-              (Blockly.Css.mediaPath_ = t.replace(/[\\\/]$/, "")),
-              (o = o.replace(/<<<PATH>>>/g, Blockly.Css.mediaPath_)),
+              (Blockly.Css.mediaPath_ = t.replacehttps://kakaomames.github.io/turbowarp/[\\https://kakaomames.github.io/turbowarp/]https://kakaomames.github.io/turbowarp/, "")),
+              (o = o.replacehttps://kakaomames.github.io/turbowarp/<<<PATH>>https://kakaomames.github.io/turbowarp/g, Blockly.Css.mediaPath_)),
               Blockly.Colours))
                 Blockly.Colours.hasOwnProperty(i) &&
                   (o = o.replace(
@@ -67059,7 +67059,7 @@
           }),
           (Blockly.Css.setCursor = function (e) {
             console.warn(
-              "Deprecated call to Blockly.Css.setCursor.See https://github.com/google/blockly/issues/981 for context",
+              "Deprecated call to Blockly.Css.setCursor.See httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/googlhttps://kakaomames.github.io/turbowarp/blocklhttps://kakaomames.github.io/turbowarp/issuehttps://kakaomames.github.io/turbowarp/981 for context",
             );
           }),
           (Blockly.Css.CONTENT = [
@@ -67291,40 +67291,40 @@
             "display: none;",
             "}",
             ".blocklyDraggable {",
-            'cursor: url("<<<PATH>>>/handopen.cur"), auto;',
+            'cursor: url("<<<PATH>>https://kakaomames.github.io/turbowarp/handopen.cur"), auto;',
             "cursor: grab;",
             "cursor: -webkit-grab;",
             "cursor: -moz-grab;",
             "}",
             ".blocklyDragging {",
-            'cursor: url("<<<PATH>>>/handclosed.cur"), auto;',
+            'cursor: url("<<<PATH>>https://kakaomames.github.io/turbowarp/handclosed.cur"), auto;',
             "cursor: grabbing;",
             "cursor: -webkit-grabbing;",
             "cursor: -moz-grabbing;",
             "}",
             ".blocklyDraggable:active {",
-            'cursor: url("<<<PATH>>>/handclosed.cur"), auto;',
+            'cursor: url("<<<PATH>>https://kakaomames.github.io/turbowarp/handclosed.cur"), auto;',
             "cursor: grabbing;",
             "cursor: -webkit-grabbing;",
             "cursor: -moz-grabbing;",
             "}",
             ".blocklyBlockDragSurface .blocklyDraggable {",
-            'cursor: url("<<<PATH>>>/handclosed.cur"), auto;',
+            'cursor: url("<<<PATH>>https://kakaomames.github.io/turbowarp/handclosed.cur"), auto;',
             "cursor: grabbing;",
             "cursor: -webkit-grabbing;",
             "cursor: -moz-grabbing;",
             "}",
             ".blocklyDragging.blocklyDraggingDelete {",
-            'cursor: url("<<<PATH>>>/handdelete.cur"), auto;',
+            'cursor: url("<<<PATH>>https://kakaomames.github.io/turbowarp/handdelete.cur"), auto;',
             "}",
             ".blocklyDragging.blocklyDraggingMouseThrough {",
             "pointer-events: none;",
             "}",
             ".blocklyToolboxDelete {",
-            'cursor: url("<<<PATH>>>/handdelete.cur"), auto;',
+            'cursor: url("<<<PATH>>https://kakaomames.github.io/turbowarp/handdelete.cur"), auto;',
             "}",
             ".blocklyToolboxGrab {",
-            'cursor: url("<<<PATH>>>/handclosed.cur"), auto;',
+            'cursor: url("<<<PATH>>https://kakaomames.github.io/turbowarp/handclosed.cur"), auto;',
             "cursor: grabbing;",
             "cursor: -webkit-grabbing;",
             "}",
@@ -67639,7 +67639,7 @@
             "}",
             ".blocklyWidgetDiv .goog-option-selected .goog-menuitem-checkbox,",
             ".blocklyWidgetDiv .goog-option-selected .goog-menuitem-icon {",
-            "background: url(<<<PATH>>>/sprites.png) no-repeat -48px -16px !important;",
+            "background: url(<<<PATH>>https://kakaomames.github.io/turbowarp/sprites.png) no-repeat -48px -16px !important;",
             "}",
             ".blocklyToolboxDiv {",
             "background-color: $colour_toolbox;",
@@ -67690,7 +67690,7 @@
             "margin: 0 5px;",
             "}",
             ".blocklyTreeIcon {",
-            "background-image: url(<<<PATH>>>/sprites.png);",
+            "background-image: url(<<<PATH>>https://kakaomames.github.io/turbowarp/sprites.png);",
             "height: 16px;",
             "vertical-align: middle;",
             "width: 16px;",
@@ -67725,7 +67725,7 @@
             "vertical-align: middle;",
             "}",
             ".blocklyToolboxDelete .blocklyTreeLabel {",
-            'cursor: url("<<<PATH>>>/handdelete.cur"), auto;',
+            'cursor: url("<<<PATH>>https://kakaomames.github.io/turbowarp/handdelete.cur"), auto;',
             "}",
             ".blocklyTreeSelected .blocklyTreeLabel {",
             "color: #fff;",
@@ -67883,7 +67883,7 @@
             ".blocklyWidgetDiv .goog-option-selected .goog-menuitem-icon,",
             ".blocklyDropDownDiv .goog-option-selected .goog-menuitem-checkbox,",
             ".blocklyDropDownDiv .goog-option-selected .goog-menuitem-icon {",
-            "background: url(<<<PATH>>>/sprites.png) no-repeat -48px -16px !important;",
+            "background: url(<<<PATH>>https://kakaomames.github.io/turbowarp/sprites.png) no-repeat -48px -16px !important;",
             "position: static;",
             "float: left;",
             "margin-left: -24px;",
@@ -68131,9 +68131,9 @@
               (e = Blockly.utils.createSvgElement(
                 "svg",
                 {
-                  xmlns: "http://www.w3.org/2000/svg",
-                  "xmlns:html": "http://www.w3.org/1999/xhtml",
-                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                  xmlns: "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
+                  "xmlns:html": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xhtml",
+                  "xmlns:xlink": "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink",
                   version: "1.1",
                   class: "blocklySvg",
                 },
@@ -68668,7 +68668,7 @@
             return o;
           }),
           (Blockly.isNumber = function (e) {
-            return !!e.match(/^\s*-?\d+(\.\d+)?\s*$/);
+            return !!e.matchhttps://kakaomames.github.io/turbowarp/^\s*-?\d+(\.\d+)?\s*https://kakaomames.github.io/turbowarp/);
           }),
           goog.global.console ||
             (goog.global.console = {
@@ -68701,8 +68701,8 @@
         (i.HSV_SATURATION = 0.45),
         (i.HSV_VALUE = 0.65),
         (i.SPRITE = { width: 96, height: 124, url: "sprites.png" }),
-        (i.SVG_NS = "http://www.w3.org/2000/svg"),
-        (i.HTML_NS = "http://www.w3.org/1999/xhtml"),
+        (i.SVG_NS = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg"),
+        (i.HTML_NS = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xhtml"),
         (i.INPUT_VALUE = 1),
         (i.OUTPUT_VALUE = 2),
         (i.NEXT_STATEMENT = 3),

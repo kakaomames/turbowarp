@@ -1,8 +1,8 @@
-// Name: Vibration
-// ID: pwldevvibration
-// Description: Control the device's vibration. Only works on Chrome for Android.
-// By: PwLDev <https://scratch.mit.edu/users/PwLDev/>
-// License: MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Vibration
+https://kakaomames.github.io/turbowarp/ ID: pwldevvibration
+https://kakaomames.github.io/turbowarp/ Description: Control the device's vibration. Only works on Chrome for Android.
+https://kakaomames.github.io/turbowarp/ By: PwLDev <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/PwLDehttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -64,8 +64,8 @@
     startPattern(args) {
       if (navigator.vibrate) {
         const pattern = Scratch.Cast.toString(args.PATTERN)
-          .match(/[\w\-.]+/g) // Make into array
-          ?.map((val) => Scratch.Cast.toNumber(val) * 1000); // Convert to numbers in milliseconds
+          .matchhttps://kakaomames.github.io/turbowarp/[\w\-.]https://kakaomames.github.io/turbowarp/g)https://kakaomames.github.io/turbowarp// Make into array
+          ?.map((val) => Scratch.Cast.toNumber(val) * 1000);https://kakaomames.github.io/turbowarp// Convert to numbers in milliseconds
         if (pattern) {
           navigator.vibrate(pattern);
         }

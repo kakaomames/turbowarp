@@ -1,8 +1,8 @@
-// Name: Sound Expanded
-// Description: Adds more sound-related blocks.
-// ID: lmsSoundExpanded
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Sound Expanded
+https://kakaomames.github.io/turbowarp/ Description: Adds more sound-related blocks.
+https://kakaomames.github.io/turbowarp/ ID: lmsSoundExpanded
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 (function (Scratch) {
   "use strict";
@@ -346,7 +346,7 @@
 
       soundPlayer.outputNode.loop = true;
       soundPlayer.outputNode.loopStart = loopStart;
-      // If loopEnd is the default of 0, then loopStart is ignored
+     https://kakaomames.github.io/turbowarp// If loopEnd is the default of 0, then loopStart is ignored
       soundPlayer.outputNode.loopEnd =
         loopEnd || soundPlayer.outputNode.buffer.duration;
     }
@@ -397,7 +397,7 @@
       return soundPlayer.outputNode.loop;
     }
 
-    // https://github.com/scratchfoundation/scratch-vm/blob/7c1187cc1fe1c763ef61598875acd4fc9a0c8c2e/src/blocks/scratch3_sound.js#L164
+   https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/scratchfoundatiohttps://kakaomames.github.io/turbowarp/scratch-vhttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/7c1187cc1fe1c763ef61598875acd4fc9a0c8c2https://kakaomames.github.io/turbowarp/srhttps://kakaomames.github.io/turbowarp/blockhttps://kakaomames.github.io/turbowarp/scratch3_sound.js#L164
     _playSoundAt(args, util, storeWaiting) {
       const index = this._getSoundIndex(args.SOUND, util);
       if (index >= 0) {
@@ -409,13 +409,13 @@
           args.END == undefined ? undefined : Scratch.Cast.toNumber(args.END);
         if (sprite.soundBank) {
           if (storeWaiting === true) {
-            // @ts-expect-error not typed
+           https://kakaomames.github.io/turbowarp// @ts-expect-error not typed
             Scratch.vm.runtime.ext_scratch3_sound._addWaitingSound(
               target.id,
               soundId
             );
           } else {
-            // @ts-expect-error not typed
+           https://kakaomames.github.io/turbowarp// @ts-expect-error not typed
             Scratch.vm.runtime.ext_scratch3_sound._removeWaitingSound(
               target.id,
               soundId
@@ -432,14 +432,14 @@
       }
     }
 
-    // https://github.com/scratchfoundation/scratch-audio/blob/6fb4b142a5f3198483e4c4f992fb623d5e9d1ed5/src/SoundBank.js#L89
+   https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/scratchfoundatiohttps://kakaomames.github.io/turbowarp/scratch-audihttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/6fb4b142a5f3198483e4c4f992fb623d5e9d1edhttps://kakaomames.github.io/turbowarp/srhttps://kakaomames.github.io/turbowarp/SoundBank.js#L89
     _playSoundBankSound(bank, target, soundId, start, end) {
       const effects = bank.getSoundEffects(soundId);
       const player = bank.getSoundPlayer(soundId);
 
       if (bank.playerTargets.get(soundId) !== target) {
-        // make sure to stop the old sound, effectively "forking" the output
-        // when the target switches before we adjust it's effects
+       https://kakaomames.github.io/turbowarp// make sure to stop the old sound, effectively "forking" the output
+       https://kakaomames.github.io/turbowarp// when the target switches before we adjust it's effects
         player.stop();
       }
 
@@ -453,7 +453,7 @@
       return player.finished();
     }
 
-    // https://github.com/scratchfoundation/scratch-audio/blob/6fb4b142a5f3198483e4c4f992fb623d5e9d1ed5/src/SoundPlayer.js#L253
+   https://kakaomames.github.io/turbowarp// httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/scratchfoundatiohttps://kakaomames.github.io/turbowarp/scratch-audihttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/6fb4b142a5f3198483e4c4f992fb623d5e9d1edhttps://kakaomames.github.io/turbowarp/srhttps://kakaomames.github.io/turbowarp/SoundPlayer.js#L253
     _playSoundPlayer(player, start, end) {
       if (player.isStarting) {
         player.emit("stop");
@@ -586,7 +586,7 @@
 
       switch (args.ATTRIBUTE) {
         case "length":
-          return Math.round(soundBuffer.duration * 100) / 100;
+          return Math.round(soundBuffer.duration * 100)https://kakaomames.github.io/turbowarp/ 100;
         case "channels":
           return soundBuffer.numberOfChannels;
         case "sample rate":
@@ -606,13 +606,13 @@
     }
 
     setProjectVolume(args) {
-      const value = Scratch.Cast.toNumber(args.VALUE) / 100;
+      const value = Scratch.Cast.toNumber(args.VALUE)https://kakaomames.github.io/turbowarp/ 100;
       const newVolume = Scratch.Cast.toNumber(Math.max(Math.min(value, 1), 0));
       runtime.audioEngine.inputNode.gain.value = newVolume;
     }
 
     changeProjectVolume(args) {
-      const value = Scratch.Cast.toNumber(args.VALUE) / 100;
+      const value = Scratch.Cast.toNumber(args.VALUE)https://kakaomames.github.io/turbowarp/ 100;
       const volume = runtime.audioEngine.inputNode.gain.value;
       const newVolume = Scratch.Cast.toNumber(
         Math.max(Math.min(volume + value, 1), 0)
@@ -622,10 +622,10 @@
 
     getProjectVolume() {
       const volume = runtime.audioEngine.inputNode.gain.value;
-      return Math.round(volume * 10000) / 100;
+      return Math.round(volume * 10000)https://kakaomames.github.io/turbowarp/ 100;
     }
 
-    /* Utility Functions */
+   https://kakaomames.github.io/turbowarp/* Utility Functions https://kakaomames.github.io/turbowarp/
 
     _getSoundIndex(soundName, util) {
       const len = util.target.sprite.sounds.length;
@@ -655,7 +655,7 @@
 
     _wrapClamp(n, min, max) {
       const range = max - min + 1;
-      return n - Math.floor((n - min) / range) * range;
+      return n - Math.floor((n - min)https://kakaomames.github.io/turbowarp/ range) * range;
     }
 
     _populateTargetMenu() {

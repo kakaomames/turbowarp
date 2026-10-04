@@ -110,7 +110,7 @@
           {
             opcode: "constant",
             blockType: Scratch.BlockType.REPORTER,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[constant]",
             arguments: {
               constant: {
@@ -123,19 +123,19 @@
           {
             opcode: "text",
             blockType: Scratch.BlockType.REPORTER,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "a",
           },
           {
             opcode: "pattern",
             blockType: Scratch.BlockType.REPORTER,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "b",
           },
           {
             opcode: "attach",
             blockType: Scratch.BlockType.REPORTER,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "c",
           },
         ],

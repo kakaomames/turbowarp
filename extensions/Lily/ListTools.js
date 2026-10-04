@@ -1,15 +1,15 @@
-// Name: List Tools
-// ID: lmsListTools
-// Description: An assortment of new ways to interact with lists.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: List Tools
+https://kakaomames.github.io/turbowarp/ ID: lmsListTools
+https://kakaomames.github.io/turbowarp/ Description: An assortment of new ways to interact with lists.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
-// (It's getting harder and harder to think of original descriptions now)
+https://kakaomames.github.io/turbowarp/ (It's getting harder and harder to think of original descriptions now)
 
 (function (Scratch) {
   "use strict";
 
-  /* -- SETUP -- */
+ https://kakaomames.github.io/turbowarp/* -- SETUP -- https://kakaomames.github.io/turbowarp/
   const vm = Scratch.vm;
   const runtime = vm.runtime;
 
@@ -709,7 +709,7 @@
     }
 
     _getLists() {
-      // @ts-expect-error - Blockly not typed yet
+     https://kakaomames.github.io/turbowarp// @ts-expect-error - Blockly not typed yet
       const lists =
         typeof Blockly === "undefined"
           ? []

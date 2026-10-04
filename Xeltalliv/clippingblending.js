@@ -1,8 +1,8 @@
-// Name: Clipping & Blending
-// ID: xeltallivclipblend
-// Description: Clipping outside of a specified rectangular area and different color blending modes.
-// By: Vadik1 <https://scratch.mit.edu/users/Vadik1/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Clipping & Blending
+https://kakaomames.github.io/turbowarp/ ID: xeltallivclipblend
+https://kakaomames.github.io/turbowarp/ Description: Clipping outside of a specified rectangular area and different color blending modes.
+https://kakaomames.github.io/turbowarp/ By: Vadik1 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Vadikhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -11,19 +11,19 @@
     throw new Error("Clipping & Blending extension must be run unsandboxed");
   }
 
-  // Simplified remake of an icon by True-Fantom
+ https://kakaomames.github.io/turbowarp// Simplified remake of an icon by True-Fantom
   const icon =
-    "data:image/svg+xml," +
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml," +
     encodeURIComponent(`
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,200,200">
-      <circle r="100" cx="100" cy="100" fill="#9966ff"/>
-      <path d="M122,61v-4a12,12 0,0,0 -12,-12h-4m-17,0h-16m-17,0h-4a12,12 0,0,0 -12,12v4m0,17v16m0,17v4a12,12 0,0,0 12,12h4" stroke="#ffffff" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <svg version="1.1" xmlns="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg" xmlns:xlink="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/199https://kakaomames.github.io/turbowarp/xlink" viewBox="0,0,200,200">
+      <circle r="100" cx="100" cy="100" fill="#9966ffhttps://kakaomames.github.io/turbowarp/>
+      <path d="M122,61v-4a12,12 0,0,0 -12,-12h-4m-17,0h-16m-17,0h-4a12,12 0,0,0 -12,12v4m0,17v16m0,17v4a12,12 0,0,0 12,12h4" stroke="#ffffff" stroke-width="11" stroke-linecap="round" fill="nonehttps://kakaomames.github.io/turbowarp/>
       <g fill="#ffffff" stroke="#9966ff" stroke-width="7.5">
-        <circle r="32" cx="118" cy="102"/>
-        <circle r="32" cx="96" cy="137"/>
-        <circle r="32" cx="140" cy="137"/>
-      </g>
-    </svg>`);
+        <circle r="32" cx="118" cy="102https://kakaomames.github.io/turbowarp/>
+        <circle r="32" cx="96" cy="137https://kakaomames.github.io/turbowarp/>
+        <circle r="32" cx="140" cy="137https://kakaomames.github.io/turbowarp/>
+      https://kakaomames.github.io/turbowarp/g>
+    https://kakaomames.github.io/turbowarp/svg>`);
 
   let toCorrectThing = null;
   let active = false;
@@ -48,7 +48,7 @@
       active = value;
     };
 
-  // prettier-ignore
+ https://kakaomames.github.io/turbowarp// prettier-ignore
   const Blendings = Object.assign(Object.create(null), {
     "default": [gl.ONE, gl.ONE_MINUS_SRC_ALPHA, gl.ONE, gl.ONE_MINUS_SRC_ALPHA, gl.FUNC_ADD],
     "default behind": [gl.ONE_MINUS_DST_ALPHA, gl.ONE, gl.ONE_MINUS_DST_ALPHA, gl.ONE, gl.FUNC_ADD],
@@ -113,14 +113,14 @@
   function setupModes(clipbox, blendMode, flipY) {
     if (clipbox) {
       gl.enable(gl.SCISSOR_TEST);
-      let x = ((clipbox.x_min / scratchUnitWidth + 0.5) * width) | 0;
-      let y = ((clipbox.y_min / scratchUnitHeight + 0.5) * height) | 0;
-      let x2 = ((clipbox.x_max / scratchUnitWidth + 0.5) * width) | 0;
-      let y2 = ((clipbox.y_max / scratchUnitHeight + 0.5) * height) | 0;
+      let x = ((clipbox.x_minhttps://kakaomames.github.io/turbowarp/ scratchUnitWidth + 0.5) * width) | 0;
+      let y = ((clipbox.y_minhttps://kakaomames.github.io/turbowarp/ scratchUnitHeight + 0.5) * height) | 0;
+      let x2 = ((clipbox.x_maxhttps://kakaomames.github.io/turbowarp/ scratchUnitWidth + 0.5) * width) | 0;
+      let y2 = ((clipbox.y_maxhttps://kakaomames.github.io/turbowarp/ scratchUnitHeight + 0.5) * height) | 0;
       let w = x2 - x;
       let h = y2 - y;
       if (flipY) {
-        y = ((-clipbox.y_max / scratchUnitHeight + 0.5) * height) | 0;
+        y = ((-clipbox.y_maxhttps://kakaomames.github.io/turbowarp/ scratchUnitHeight + 0.5) * height) | 0;
       }
       gl.scissor(x, y, w, h);
     } else {
@@ -131,7 +131,7 @@
     gl.blendFuncSeparate(blend[0], blend[1], blend[2], blend[3]);
   }
 
-  // Modifying and expanding Drawable
+ https://kakaomames.github.io/turbowarp// Modifying and expanding Drawable
   const gu = Drawable.prototype.getUniforms;
   Drawable.prototype.getUniforms = function () {
     if (active && toCorrectThing) {
@@ -146,7 +146,7 @@
     this.blendMode = blendMode;
   };
 
-  // Expanding renderer
+ https://kakaomames.github.io/turbowarp// Expanding renderer
   renderer.updateDrawableClipBox = function (drawableID, clipbox) {
     const drawable = this._allDrawables[drawableID];
     if (!drawable) return;
@@ -158,7 +158,7 @@
     drawable.updateBlendMode(blendMode);
   };
 
-  // Reset on stop & clones inherit effects
+ https://kakaomames.github.io/turbowarp// Reset on stop & clones inherit effects
   const regTargetStuff = function (args) {
     if (args.editingTarget) {
       vm.removeListener("targetsUpdate", regTargetStuff);
@@ -204,7 +204,7 @@
   };
   vm.on("targetsUpdate", regTargetStuff);
 
-  // Pen lines support
+ https://kakaomames.github.io/turbowarp// Pen lines support
   let emptyObject = {};
   let lastTarget = emptyObject;
   let lastClipbox = {};
@@ -234,7 +234,7 @@
             clipbox.y_max != lastClipbox.y_max))
       ) {
         if (skin.attribute_index || skin.a_lineColorIndex) {
-          // Supporting both before and after https://github.com/TurboWarp/scratch-render/pull/11
+         https://kakaomames.github.io/turbowarp// Supporting both before and after httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/TurboWarhttps://kakaomames.github.io/turbowarp/scratch-rendehttps://kakaomames.github.io/turbowarp/pulhttps://kakaomames.github.io/turbowarp/11
           skin._flushLines();
         }
         lastTarget = target;
@@ -251,28 +251,28 @@
         lastBlendMode = target.blendMode;
       }
     };
-    // onTargetMoved function of pen draws a line.
-    // When drawing a line it is important to know the target.
-    // This saves target.
+   https://kakaomames.github.io/turbowarp// onTargetMoved function of pen draws a line.
+   https://kakaomames.github.io/turbowarp// When drawing a line it is important to know the target.
+   https://kakaomames.github.io/turbowarp// This saves target.
     const onTargetMoved = ext_pen._onTargetMoved;
     ext_pen._onTargetMoved = function (target, oldX, oldY, isForce) {
       willDrawPenWithTarget(target);
       onTargetMoved.call(this, target, oldX, oldY, isForce);
     };
-    // Existing targets may still have old onTargetMoved
+   https://kakaomames.github.io/turbowarp// Existing targets may still have old onTargetMoved
     for (let target of runtime.targets) {
       if (target.onTargetMoved == onTargetMoved) {
         target.onTargetMoved = ext_pen._onTargetMoved;
       }
     }
-    // When drawing a dot it is important to know the target.
-    // This saves target.
+   https://kakaomames.github.io/turbowarp// When drawing a dot it is important to know the target.
+   https://kakaomames.github.io/turbowarp// This saves target.
     const penDown = ext_pen._penDown;
     ext_pen._penDown = function (target) {
       willDrawPenWithTarget(target);
       penDown.call(this, target);
     };
-    // Set up correct clipping/blending before drawing
+   https://kakaomames.github.io/turbowarp// Set up correct clippinhttps://kakaomames.github.io/turbowarp/blending before drawing
     const flushLines = skin.__proto__._flushLines;
     skin.__proto__._flushLines = function () {
       setupModes(lastClipbox, lastBlendMode, true);
@@ -280,11 +280,11 @@
     };
   }
   if (renderer._allSkins[renderer._penSkinId]) {
-    // If pen skin already exists, things can be patched
+   https://kakaomames.github.io/turbowarp// If pen skin already exists, things can be patched
     patchPen(renderer._allSkins[renderer._penSkinId]);
   } else {
-    // If pen skin does not exist, wait until it will,
-    // trigger code once, and return everything as it was
+   https://kakaomames.github.io/turbowarp// If pen skin does not exist, wait until it will,
+   https://kakaomames.github.io/turbowarp// trigger code once, and return everything as it was
     const createPenSkin = renderer.createPenSkin;
     renderer.createPenSkin = function () {
       let skinId = createPenSkin.call(this);
@@ -433,10 +433,10 @@
             acceptReporters: true,
             items: [
               { text: Scratch.translate("default"), value: "default" },
-              { text: Scratch.translate("additive"), value: "additive" }, // -> additive legacy
-              { text: Scratch.translate("subtract"), value: "subtract" }, // -> subtract legacy
+              { text: Scratch.translate("additive"), value: "additive" },https://kakaomames.github.io/turbowarp// -> additive legacy
+              { text: Scratch.translate("subtract"), value: "subtract" },https://kakaomames.github.io/turbowarp// -> subtract legacy
               { text: Scratch.translate("multiply"), value: "multiply" },
-              { text: Scratch.translate("invert"), value: "invert" }, // -> invert legacy
+              { text: Scratch.translate("invert"), value: "invert" },https://kakaomames.github.io/turbowarp// -> invert legacy
             ],
           },
           blends2: {

@@ -1,4 +1,4 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';
@@ -18,7 +18,7 @@
             opcode: 'whenPressed',
             text: 'when [KEY] key pressed',
             isEdgeActivated: false,
-            // highlight-next-line
+           https://kakaomames.github.io/turbowarp// highlight-next-line
             shouldRestartExistingThreads: true,
             arguments: {
               KEY: {
@@ -39,7 +39,7 @@
               'a',
               'b',
               'c',
-              // ...
+             https://kakaomames.github.io/turbowarp// ...
             ]
           }
         }

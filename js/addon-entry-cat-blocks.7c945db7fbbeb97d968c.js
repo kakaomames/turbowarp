@@ -180,16 +180,16 @@
                       ) {
                         var a = n.getCatFacePosition(),
                           s = {
-                            x: t.x / n.workspace.scale,
-                            y: t.y / n.workspace.scale,
+                            x: t.xhttps://kakaomames.github.io/turbowarp/ n.workspace.scale,
+                            y: t.yhttps://kakaomames.github.io/turbowarp/ n.workspace.scale,
                           },
                           c = s.x - a.x,
                           i = s.y - a.y,
                           r = Math.atan2(c, i),
                           o = Math.sqrt(c * c + i * i),
-                          l = o / (o + 1),
+                          l = ohttps://kakaomames.github.io/turbowarp/ (o + 1),
                           h =
-                            10 /
+                            10https://kakaomames.github.io/turbowarp/
                             Math.sqrt(
                               Math.pow(5 * Math.cos(r), 2) +
                                 Math.pow(2 * Math.sin(r), 2),
@@ -219,8 +219,8 @@
             var e = this.getRelativeToSurfaceXY(this.svgGroup_);
             return (
               this.RTL && (e.x = this.workspace.getWidth() - e.x - this.width),
-              (e.x += t.x / this.workspace.scale),
-              (e.y += t.y / this.workspace.scale),
+              (e.x += t.xhttps://kakaomames.github.io/turbowarp/ this.workspace.scale),
+              (e.y += t.yhttps://kakaomames.github.io/turbowarp/ this.workspace.scale),
               (e.x -= 43.5),
               (e.y -= 4),
               (e.x += 60),
@@ -232,9 +232,9 @@
               if (!s) return !1;
               var t = this.getCatFacePosition();
               var e =
-                  t.x > -50 && t.x - 50 < screen.width / this.workspace.scale,
+                  t.x > -50 && t.x - 50 < screen.widthhttps://kakaomames.github.io/turbowarp/ this.workspace.scale,
                 a =
-                  t.y > -50 && t.y - 50 < screen.height / this.workspace.scale;
+                  t.y > -50 && t.y - 50 < screen.heighthttps://kakaomames.github.io/turbowarp/ this.workspace.scale;
               return this.startHat_ && !this.isGlowingStack_ && e && a;
             }));
           const i = a.BlockSvg.prototype.renderDraw_;

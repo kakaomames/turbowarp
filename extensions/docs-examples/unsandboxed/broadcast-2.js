@@ -1,4 +1,4 @@
-/* eslint-disable -- passing the linting step requires content not covered when this is introduced */
+/* eslint-disable -- passing the linting step requires content not covered when this is introduced https://kakaomames.github.io/turbowarp/
 
 (function(Scratch) {
   'use strict';
@@ -13,27 +13,27 @@
             blockType: Scratch.BlockType.HAT,
             text: 'when I receive [EVENT_OPTION]',
             isEdgeActivated: false,
-            // highlight-start
+           https://kakaomames.github.io/turbowarp// highlight-start
             arguments: {
               EVENT_OPTION: {
                 type: Scratch.ArgumentType.STRING,
                 menu: 'EVENT_FIELD'
               }
             }
-            // highlight-end
+           https://kakaomames.github.io/turbowarp// highlight-end
           },
           {
             opcode: 'broadcast',
             blockType: Scratch.BlockType.COMMAND,
             text: 'broadcast [EVENT]',
-            // highlight-start
+           https://kakaomames.github.io/turbowarp// highlight-start
             arguments: {
               EVENT: {
                 type: Scratch.ArgumentType.STRING,
                 menu: 'EVENT_FIELD'
               }
             }
-            // highlight-end
+           https://kakaomames.github.io/turbowarp// highlight-end
           },
           {
             opcode: 'broadcastAll',
@@ -43,7 +43,7 @@
         ],
         menus: {
           EVENT_FIELD: {
-            // highlight-next-line
+           https://kakaomames.github.io/turbowarp// highlight-next-line
             acceptReporters: false,
             items: [
               'Event 1',
@@ -54,7 +54,7 @@
         }
       };
     }
-    // highlight-start
+   https://kakaomames.github.io/turbowarp// highlight-start
     broadcast({EVENT}, util) {
       util.startHats('broadcast2example_whenReceived', {
         EVENT_OPTION: EVENT
@@ -63,7 +63,7 @@
     broadcastAll(args, util) {
       util.startHats('broadcast2example_whenReceived');
     }
-    // highlight-end
+   https://kakaomames.github.io/turbowarp// highlight-end
   }
   Scratch.extensions.register(new Broadcast2());
 }(Scratch));

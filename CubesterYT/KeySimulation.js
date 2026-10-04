@@ -1,16 +1,16 @@
-// Name: Key Simulation
-// ID: cubesterKeySimulation
-// Description: Simulate key presses and mouse clicks.
-// By: CubesterYT <https://scratch.mit.edu/users/CubesterYT/>
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Key Simulation
+https://kakaomames.github.io/turbowarp/ ID: cubesterKeySimulation
+https://kakaomames.github.io/turbowarp/ Description: Simulate key presses and mouse clicks.
+https://kakaomames.github.io/turbowarp/ By: CubesterYT <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/CubesterYhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
 
-  const icon = `data:image/svg+xml;,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="64.412" height="64.412"><g stroke-miterlimit="10" data-paper-data="{&quot;isPaintingLayer&quot;:true}" style="mix-blend-mode:normal"><path fill="#bf0000" stroke="maroon" stroke-width="3.5" d="M1.75 32.206c0-16.82 13.636-30.456 30.456-30.456s30.456 13.636 30.456 30.456-13.636 30.456-30.456 30.456S1.75 49.026 1.75 32.206z"/><path fill="none" d="M.066 64.346V.066h64.28v64.28z"/><path fill="#fff" d="M17.988 33.804c-2.648 0-4.768-2.03-4.795-4.795-.136-13.804 5.217-13.443 11.823-13.618 2.547-.067 9.038 0 13.68 0 6.427 0 12.15.676 12.523 13.618.05 1.697-2.146 4.795-4.795 4.795zM20.254 49.022c-2.743 0-4.966-2.147-4.966-4.795l-2.096-9.435c0-.368 2.223 2.526 4.965 2.526h28.097c2.743 0 4.966-3.374 4.966-3.126l-2.096 10.035c0 2.648-2.223 4.795-4.966 4.795z"/><path fill="#bf0000" fill-rule="evenodd" d="M25.604 25.55h3.199l1.374-6.151c.148-.705 1.208-1.202 2.36-1.098.93.08 1.655.543 1.768 1.098l1.374 6.15h3.125c.89 0 1.32.66.705 1.04l-6.598 4.116c-.39.231-1.024.231-1.394 0l-6.62-4.115c-.613-.382-.167-1.04.707-1.04"/></g></svg>`)}`;
+  const icon = `data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;,${encodeURIComponent(`<svg xmlns="httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg" width="64.412" height="64.412"><g stroke-miterlimit="10" data-paper-data="{&quot;isPaintingLayer&quot;:true}" style="mix-blend-mode:normal"><path fill="#bf0000" stroke="maroon" stroke-width="3.5" d="M1.75 32.206c0-16.82 13.636-30.456 30.456-30.456s30.456 13.636 30.456 30.456-13.636 30.456-30.456 30.456S1.75 49.026 1.75 32.206zhttps://kakaomames.github.io/turbowarp/><path fill="none" d="M.066 64.346V.066h64.28v64.28zhttps://kakaomames.github.io/turbowarp/><path fill="#fff" d="M17.988 33.804c-2.648 0-4.768-2.03-4.795-4.795-.136-13.804 5.217-13.443 11.823-13.618 2.547-.067 9.038 0 13.68 0 6.427 0 12.15.676 12.523 13.618.05 1.697-2.146 4.795-4.795 4.795zM20.254 49.022c-2.743 0-4.966-2.147-4.966-4.795l-2.096-9.435c0-.368 2.223 2.526 4.965 2.526h28.097c2.743 0 4.966-3.374 4.966-3.126l-2.096 10.035c0 2.648-2.223 4.795-4.966 4.795zhttps://kakaomames.github.io/turbowarp/><path fill="#bf0000" fill-rule="evenodd" d="M25.604 25.55h3.199l1.374-6.151c.148-.705 1.208-1.202 2.36-1.098.93.08 1.655.543 1.768 1.098l1.374 6.15h3.125c.89 0 1.32.66.705 1.04l-6.598 4.116c-.39.231-1.024.231-1.394 0l-6.62-4.115c-.613-.382-.167-1.04.707-1.04https://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/g>https://kakaomames.github.io/turbowarp/svg>`)}`;
 
-  // This is from the Scratch Addons gamepad addon, which normally could be a problem because it is GPLv3,
-  // but I (GarboMuffin) wrote that code so there is no problem.
+ https://kakaomames.github.io/turbowarp// This is from the Scratch Addons gamepad addon, which normally could be a problem because it is GPLv3,
+ https://kakaomames.github.io/turbowarp// but I (GarboMuffin) wrote that code so there is no problem.
   let getCanvasSize;
   if (window.ResizeObserver) {
     let canvasWidth = Scratch.vm.runtime.stageWidth;
@@ -40,20 +40,20 @@
       canvasWidth: rectangleWidth,
       canvasHeight: rectangleHeight,
       x:
-        (simulatedX + Scratch.vm.runtime.stageWidth / 2) *
-        (rectangleWidth / Scratch.vm.runtime.stageWidth),
+        (simulatedX + Scratch.vm.runtime.stageWidthhttps://kakaomames.github.io/turbowarp/ 2) *
+        (rectangleWidthhttps://kakaomames.github.io/turbowarp/ Scratch.vm.runtime.stageWidth),
       y:
-        (Scratch.vm.runtime.stageHeight / 2 - simulatedY) *
-        (rectangleHeight / Scratch.vm.runtime.stageHeight),
+        (Scratch.vm.runtime.stageHeighthttps://kakaomames.github.io/turbowarp/ 2 - simulatedY) *
+        (rectangleHeighthttps://kakaomames.github.io/turbowarp/ Scratch.vm.runtime.stageHeight),
     });
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {unknown} seconds
    * @param {unknown} andWait
    * @param {() => void} callback
    * @returns {Promise<void>|void}
-   */
+   https://kakaomames.github.io/turbowarp/
   const doLater = (seconds, andWait, callback) => {
     const ms = Scratch.Cast.toNumber(seconds) * 1000;
 
@@ -67,7 +67,7 @@
     }
 
     setTimeout(callback, ms);
-    // don't return a Promise at all, otherwise the block waits for 1 frame
+   https://kakaomames.github.io/turbowarp// don't return a Promise at all, otherwise the block waits for 1 frame
   };
 
   class KeySimulation {
@@ -78,7 +78,7 @@
         color1: "#BF0000",
         color2: "#800000",
         menuIconURI: icon,
-        docsURI: "./CubesterYT/KeySimulation",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/CubesterYhttps://kakaomames.github.io/turbowarp/KeySimulation",
 
         blocks: [
           {
@@ -221,7 +221,7 @@
               "\\",
               ";",
               "'",
-              "/",
+              https://kakaomames.github.io/turbowarp/",
               "~",
               "+",
               "!",

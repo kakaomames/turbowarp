@@ -16,12 +16,12 @@
               if (null === t) return null;
               if ("string" == typeof t) {
                 if (t.startsWith("#")) return t.substring(0, 9).toUpperCase();
-                const e = t.match(/^rgb\((\d+)\s*,(\d+)\s*,(\d+)\)$/);
+                const e = t.matchhttps://kakaomames.github.io/turbowarp/^rgb\((\d+)\s*,(\d+)\s*,(\d+)\)https://kakaomames.github.io/turbowarp/);
                 if (e) {
                   const [t, s, i, n] = e;
                   return "#".concat(r(s)).concat(r(i)).concat(r(n));
                 }
-                const s = t.match(/^rgba\((\d+)\s*,(\d+)\s*,(\d+),([\d.]+)\)$/);
+                const s = t.matchhttps://kakaomames.github.io/turbowarp/^rgba\((\d+)\s*,(\d+)\s*,(\d+),([\d.]+)\)https://kakaomames.github.io/turbowarp/);
                 if (s) {
                   const [t, e, i, n, a] = s;
                   return "#"
@@ -34,7 +34,7 @@
               return (e.log("Could not normalize color", t), null);
             },
             n = (t) => (t === a ? a : i(t)),
-            a = "scratch-paint/style-path/mixed",
+            a = "scratch-painhttps://kakaomames.github.io/turbowarp/style-pathttps://kakaomames.github.io/turbowarp/mixed",
             o = i("#9966FF"),
             c = i("#000000"),
             p = Object.assign(Object.create(null), {
@@ -102,15 +102,15 @@
           }
           const u = new d(
               "fillColor",
-              "scratch-paint/fill-style/CHANGE_FILL_COLOR",
-              "scratch-paint/fill-style/CHANGE_FILL_COLOR_2",
-              "scratch-paint/fill-style/CHANGE_FILL_GRADIENT_TYPE",
+              "scratch-painhttps://kakaomames.github.io/turbowarp/fill-stylhttps://kakaomames.github.io/turbowarp/CHANGE_FILL_COLOR",
+              "scratch-painhttps://kakaomames.github.io/turbowarp/fill-stylhttps://kakaomames.github.io/turbowarp/CHANGE_FILL_COLOR_2",
+              "scratch-painhttps://kakaomames.github.io/turbowarp/fill-stylhttps://kakaomames.github.io/turbowarp/CHANGE_FILL_GRADIENT_TYPE",
             ),
             h = new d(
               "strokeColor",
-              "scratch-paint/stroke-style/CHANGE_STROKE_COLOR",
-              "scratch-paint/stroke-style/CHANGE_STROKE_COLOR_2",
-              "scratch-paint/stroke-style/CHANGE_STROKE_GRADIENT_TYPE",
+              "scratch-painhttps://kakaomames.github.io/turbowarp/stroke-stylhttps://kakaomames.github.io/turbowarp/CHANGE_STROKE_COLOR",
+              "scratch-painhttps://kakaomames.github.io/turbowarp/stroke-stylhttps://kakaomames.github.io/turbowarp/CHANGE_STROKE_COLOR_2",
+              "scratch-painhttps://kakaomames.github.io/turbowarp/stroke-stylhttps://kakaomames.github.io/turbowarp/CHANGE_STROKE_GRADIENT_TYPE",
             ),
             y = (t) => ({ primary: t, secondary: null, gradientType: "SOLID" });
           let g, E, T;
@@ -131,7 +131,7 @@
               (0 === s && e && (s = 1),
                 t.tab.redux.state.scratchPaint.color.strokeWidth !== s &&
                   t.tab.redux.dispatch({
-                    type: "scratch-paint/stroke-width/CHANGE_STROKE_WIDTH",
+                    type: "scratch-painhttps://kakaomames.github.io/turbowarp/stroke-widthttps://kakaomames.github.io/turbowarp/CHANGE_STROKE_WIDTH",
                     strokeWidth: s,
                   }));
             };
@@ -153,7 +153,7 @@
                 const r = s.next.scratchPaint.color.strokeWidth;
                 "number" == typeof r && (T = r);
               }
-              "scratch-paint/modes/CHANGE_MODE" === r.type &&
+              "scratch-painhttps://kakaomames.github.io/turbowarp/modehttps://kakaomames.github.io/turbowarp/CHANGE_MODE" === r.type &&
                 ((G = !0),
                 queueMicrotask(() => {
                   if (((G = !1), t.settings.get("persistence"))) {

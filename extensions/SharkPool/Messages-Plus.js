@@ -1,10 +1,10 @@
-// Name: Messages+
-// ID: SPmessagePlus
-// Description: Powerful new message blocks that work with vanilla broadcasts.
-// By: SharkPool
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Messages+
+https://kakaomames.github.io/turbowarp/ ID: SPmessagePlus
+https://kakaomames.github.io/turbowarp/ Description: Powerful new message blocks that work with vanilla broadcasts.
+https://kakaomames.github.io/turbowarp/ By: SharkPool
+https://kakaomames.github.io/turbowarp/ License: MIT
 
-// Version 1.3.2
+https://kakaomames.github.io/turbowarp/ Version 1.3.2
 
 (function (Scratch) {
   "use strict";
@@ -16,18 +16,18 @@
   const vm = Scratch.vm;
   const runtime = vm.runtime;
 
-  const kMessageName = Symbol("kMessageName"); // May be defined on a Thread as a string
-  const kReceivedData = Symbol("kReceivedData"); // May be defined on a Thread as any Scratch-compatible value
-  const kResponseData = Symbol("kResponseData"); // May be defined on a Thread as any Scratch-compatible value
+  const kMessageName = Symbol("kMessageName");https://kakaomames.github.io/turbowarp// May be defined on a Thread as a string
+  const kReceivedData = Symbol("kReceivedData");https://kakaomames.github.io/turbowarp// May be defined on a Thread as any Scratch-compatible value
+  const kResponseData = Symbol("kResponseData");https://kakaomames.github.io/turbowarp// May be defined on a Thread as any Scratch-compatible value
 
-  // TODO: _all_ is not actually a reserved value
+ https://kakaomames.github.io/turbowarp// TODO: _all_ is not actually a reserved value
   const ALL = "_all_",
     STAGE = "_stage_",
     MYSELF = "_myself_",
     MYSELF2 = "_myselfOnly_";
 
-  const ALL_TARGETS = Symbol("ALL_TARGETS"); // broadcast to every sprite
-  const NO_TARGET = Symbol("NO_TARGET"); // the named target does not exist
+  const ALL_TARGETS = Symbol("ALL_TARGETS");https://kakaomames.github.io/turbowarp// broadcast to every sprite
+  const NO_TARGET = Symbol("NO_TARGET");https://kakaomames.github.io/turbowarp// the named target does not exist
 
   const noRestartMsgs = new Set();
   const overlappedMsgs = new Set();
@@ -46,7 +46,7 @@
       runtime.allScriptsByOpcodeDo(
         "SPmessagePlus_whenReceived",
         (script, target) => {
-          // inputs are evaluated in the hat, which makes it slower :(
+         https://kakaomames.github.io/turbowarp// inputs are evaluated in the hat, which makes it slower :(
           const id = script.blockId;
           const existing = runtime.threadMap.get(`${target.id}&${id}`);
           if (existing) threads.push(runtime._restartThread(existing));
@@ -59,7 +59,7 @@
         thread[kMessageName] = name;
       }
 
-      // <is () received?> blocks get stored in this temporary cache.
+     https://kakaomames.github.io/turbowarp// <is () received?> blocks get stored in this temporary cache.
       receivedMsgs.set(name, new WeakMap());
     }
 
@@ -84,14 +84,14 @@
   runtime.on("PROJECT_START", () => receivedMsgs.clear());
 
   const menuIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2My42OCIgaGVpZ2h0PSI2My42OCIgdmlld0JveD0iMCAwIDYzLjY4IDYzLjY4Ij48cGF0aCBkPSJNMiAzMS44NEMyIDE1LjM2IDE1LjM2IDIgMzEuODQgMnMyOS44NCAxMy4zNiAyOS44NCAyOS44NC0xMy4zNiAyOS44NC0yOS44NCAyOS44NFMyIDQ4LjMyIDIgMzEuODR6IiBmaWxsPSIjZmZiZjAwIiBzdHJva2U9IiNjOTAiIHN0cm9rZS13aWR0aD0iNCIvPjxwYXRoIGQ9Ik0xMC44MTIgMzAuNDY1Yy0uMTg1LTkuMDg3IDUuMDMzLTExLjk5NyA4Ljk2NC0xMS45OTcgNC43ODMgMCAxNS4zNy0uMjc2IDIzLjUyMiAwIDMuOTguMTM1IDkuNzYyIDMuMTUzIDkuNTcgMTEuOTk3LS4xODEgOC4zNy02LjY0IDEwLjkxOC05LjYzOCAxMC45MThIMzAuNzYyYy0xLjM3IDAtNS4yMDMgNy4yMjYtMTEuNDU4IDcuMDEtNC40MzYtLjE1MyAyLjUyMi03LjAxLjc0MS03LjAxLTUuMjc5IDAtOS4xMDUtNC41OTQtOS4yMzMtMTAuOTE4IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTM4LjYyNSA0NC44MjR2LTMuMTc2aC0zLjE3NmMtMS41MyAwLTIuNzctMS4xMzQtMi43Ny0yLjUzNHMxLjI0LTIuNTM0IDIuNzctMi41MzRoMy4xNzZ2LTMuMTc2YzAtMS41MyAxLjEzNC0yLjc3IDIuNTM0LTIuNzdzMi41MzMgMS4yNCAyLjUzMyAyLjc3djMuMTc2aDMuMTc2YzEuNTMgMCAyLjc3MSAxLjEzNSAyLjc3MSAyLjUzNCAwIDEuNC0xLjI0IDIuNTM0LTIuNzcgMi41MzRoLTMuMTc3djMuMTc2YzAgMS41My0xLjEzNCAyLjc3LTIuNTMzIDIuNzdzLTIuNTM0LTEuMjQtMi41MzQtMi43N3oiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmYmYwMCIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTM4LjYyNSA0NC44MjR2LTMuMTc2aC0zLjE3NmMtMS41MyAwLTIuNzctMS4xMzQtMi43Ny0yLjUzNHMxLjI0LTIuNTM0IDIuNzctMi41MzRoMy4xNzZ2LTMuMTc2YzAtMS41MyAxLjEzNC0yLjc3IDIuNTM0LTIuNzdzMi41MzMgMS4yNCAyLjUzMyAyLjc3djMuMTc2aDMuMTc2YzEuNTMgMCAyLjc3MSAxLjEzNSAyLjc3MSAyLjUzNCAwIDEuNC0xLjI0IDIuNTM0LTIuNzcgMi41MzRoLTMuMTc3djMuMTc2YzAgMS41My0xLjEzNCAyLjc3LTIuNTMzIDIuNzdzLTIuNTM0LTEuMjQtMi41MzQtMi43NyIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2My42OCIgaGVpZ2h0PSI2My42OCIgdmlld0JveD0iMCAwIDYzLjY4IDYzLjY4Ij48cGF0aCBkPSJNMiAzMS44NEMyIDE1LjM2IDE1LjM2IDIgMzEuODQgMnMyOS44NCAxMy4zNiAyOS44NCAyOS44NC0xMy4zNiAyOS44NC0yOS44NCAyOS44NFMyIDQ4LjMyIDIgMzEuODR6IiBmaWxsPSIjZmZiZjAwIiBzdHJva2U9IiNjOTAiIHN0cm9rZS13aWR0aD0iNCIvPjxwYXRoIGQ9Ik0xMC44MTIgMzAuNDY1Yy0uMTg1LTkuMDg3IDUuMDMzLTExLjk5NyA4Ljk2NC0xMS45OTcgNC43ODMgMCAxNS4zNy0uMjc2IDIzLjUyMiAwIDMuOTguMTM1IDkuNzYyIDMuMTUzIDkuNTcgMTEuOTk3LS4xODEgOC4zNy02LjY0IDEwLjkxOC05LjYzOCAxMC45MThIMzAuNzYyYy0xLjM3IDAtNS4yMDMgNy4yMjYtMTEuNDU4IDcuMDEtNC40MzYtLjE1MyAyLjUyMi03LjAxLjc0MS03LjAxLTUuMjc5IDAtOS4xMDUtNC41OTQtOS4yMzMtMTAuOTE4IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTM4LjYyNSA0NC44MjR2LTMuMTc2aC0zLjE3NmMtMS41MyAwLTIuNzctMS4xMzQtMi43Ny0yLjUzNHMxLjI0LTIuNTM0IDIuNzctMi41MzRoMy4xNzZ2LTMuMTc2YzAtMS41MyAxLjEzNC0yLjc3IDIuNTM0LTIuNzdzMi41MzMgMS4yNCAyLjUzMyAyLjc3djMuMTc2aDMuMTc2YzEuNTMgMCAyLjc3MSAxLjEzNSAyLjc3MSAyLjUzNCAwIDEuNC0xLjI0IDIuNTM0LTIuNzcgMi41MzRoLTMuMTc3djMuMTc2YzAgMS41My0xLjEzNCAyLjc3LTIuNTMzIDIuNzdzLTIuNTM0LTEuMjQtMi41MzQtMi43N3oiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmYmYwMCIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTM4LjYyNSA0NC44MjR2LTMuMTc2aC0zLjE3NmMtMS41MyAwLTIuNzctMS4xMzQtMi43Ny0yLjUzNHMxLjI0LTIuNTM0IDIuNzctMi41MzRoMy4xNzZ2LTMuMTc2YzAtMS41MyAxLjEzNC0yLjc3IDIuNTM0LTIuNzdzMi41MzMgMS4yNCAyLjUzMyAyLjc3djMuMTc2aDMuMTc2YzEuNTMgMCAyLjc3MSAxLjEzNSAyLjc3MSAyLjUzNCAwIDEuNC0xLjI0IDIuNTM0LTIuNzcgMi41MzRoLTMuMTc3djMuMTc2YzAgMS41My0xLjEzNCAyLjc3LTIuNTMzIDIuNzdzLTIuNTM0LTEuMjQtMi41MzQtMi43NyIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==";
 
   class SPmessagePlus {
     getInfo() {
       return {
         id: "SPmessagePlus",
         name: Scratch.translate("Messages+"),
-        docsURI: "./SharkPool/Messages-Plus",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/SharkPoohttps://kakaomames.github.io/turbowarp/Messages-Plus",
         color1: "#FFBF00",
         color2: "#E6AC00",
         color3: "#CC9900",
@@ -146,8 +146,8 @@
           {
             blockType: Scratch.BlockType.XML,
             xml: `
-              <block type="SPmessagePlus_broadcastTarget"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS"></shadow></value><value name="DATA"><shadow type="text"></shadow></value><value name="SHOULD_WAIT"><shadow type="SPmessagePlus_menu_SHOULD_WAIT"></shadow></value></block>
-              <block type="SPmessagePlus_broadcastDataTarget"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS"></shadow></value><value name="DATA"><shadow type="text"></shadow></value><value name="SHOULD_WAIT"><shadow type="SPmessagePlus_menu_SHOULD_WAIT"></shadow></value></block>
+              <block type="SPmessagePlus_broadcastTarget"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="DATA"><shadow type="text">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="SHOULD_WAIT"><shadow type="SPmessagePlus_menu_SHOULD_WAIT">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
+              <block type="SPmessagePlus_broadcastDataTarget"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="DATA"><shadow type="text">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="SHOULD_WAIT"><shadow type="SPmessagePlus_menu_SHOULD_WAIT">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
             `,
           },
           {
@@ -218,10 +218,10 @@
           {
             blockType: Scratch.BlockType.XML,
             xml: `
-              <block type="SPmessagePlus_otherData"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS"></shadow></value></block>
-              <sep gap="36"/>
-              <block type="SPmessagePlus_broadcastReturn"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS"></shadow></value><value name="DATA"><shadow type="text"></shadow></value></block>
-              <block type="SPmessagePlus_broadcastReturnData"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS"></shadow></value><value name="DATA"><shadow type="text"></shadow></value></block>
+              <block type="SPmessagePlus_otherData"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
+              <sep gap="36https://kakaomames.github.io/turbowarp/>
+              <block type="SPmessagePlus_broadcastReturn"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="DATA"><shadow type="text">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
+              <block type="SPmessagePlus_broadcastReturnData"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TARGET"><shadow type="SPmessagePlus_menu_TARGETS">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="DATA"><shadow type="text">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
             `,
           },
           {
@@ -313,13 +313,13 @@
           {
             blockType: Scratch.BlockType.XML,
             xml: `
-              <block type="SPmessagePlus_isReceived"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value></block>
-              <block type="SPmessagePlus_isWaiting"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value></block>
-              <block type="SPmessagePlus_receivers"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value></block>
-              <sep gap="36"/>
-              <block type="SPmessagePlus_toggleRestart"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TOGGLE"><shadow type="SPmessagePlus_TOGGLE_menu"></shadow></value></block>
-              <block type="SPmessagePlus_toggleOverlap"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TOGGLE"><shadow type="SPmessagePlus_TOGGLE_menu"></shadow></value></block>
-              <block type="SPmessagePlus_toggleMultiResponse"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value><value name="TOGGLE"><shadow type="SPmessagePlus_TOGGLE_menu"></shadow></value></block>
+              <block type="SPmessagePlus_isReceived"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
+              <block type="SPmessagePlus_isWaiting"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
+              <block type="SPmessagePlus_receivers"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
+              <sep gap="36https://kakaomames.github.io/turbowarp/>
+              <block type="SPmessagePlus_toggleRestart"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TOGGLE"><shadow type="SPmessagePlus_TOGGLE_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
+              <block type="SPmessagePlus_toggleOverlap"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TOGGLE"><shadow type="SPmessagePlus_TOGGLE_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
+              <block type="SPmessagePlus_toggleMultiResponse"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value><value name="TOGGLE"><shadow type="SPmessagePlus_TOGGLE_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
             `,
           },
           {
@@ -341,7 +341,7 @@
           {
             blockType: Scratch.BlockType.XML,
             xml: `
-              <block type="SPmessagePlus_whenReceived"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu"></shadow></value></block>
+              <block type="SPmessagePlus_whenReceived"><value name="BROADCAST_OPTION"><shadow type="event_broadcast_menu">https://kakaomames.github.io/turbowarp/shadow>https://kakaomames.github.io/turbowarp/value>https://kakaomames.github.io/turbowarp/block>
             `,
           },
         ],
@@ -387,7 +387,7 @@
       };
     }
 
-    // Helper Funcs
+   https://kakaomames.github.io/turbowarp// Helper Funcs
     _getTargets() {
       const spriteNames = [
         { text: Scratch.translate("all sprites"), value: ALL },
@@ -406,11 +406,11 @@
       return spriteNames;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {string} targetName
      * @param {VM.BlockUtility} util
      * @returns {VM.Target|typeof ALL_TARGETS|typeof NO_TARGET}
-     */
+     https://kakaomames.github.io/turbowarp/
     _getTargetFromMenu(targetName, util) {
       if (targetName === ALL) return ALL_TARGETS;
       if (targetName === STAGE) return util.runtime.getTargetForStage();
@@ -418,13 +418,13 @@
       return util.runtime.getSpriteTargetByName(targetName) || NO_TARGET;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {string} broadcastName
      * @param {string} targetName
      * @param {unknown} data
      * @param {VM.BlockUtility} util
      * @returns {VM.Thread[]}
-     */
+     https://kakaomames.github.io/turbowarp/
     _broadcast(broadcastName, targetName, data, util) {
       if (!broadcastName) return [];
       const target = this._getTargetFromMenu(targetName, util);
@@ -436,7 +436,7 @@
           BROADCAST_OPTION: broadcastName,
         });
       } else {
-        // MYSELF2 -> "myself only" is the executors instance
+       https://kakaomames.github.io/turbowarp// MYSELF2 -> "myself only" is the executors instance
         const clones = targetName === MYSELF2 ? [target] : target.sprite.clones;
         for (const clone of clones) {
           newThreads = newThreads.concat(
@@ -453,11 +453,11 @@
       return newThreads;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {string} broadcastName
      * @param {string} type
      * @returns {(string|VM.Target)[]}
-     */
+     https://kakaomames.github.io/turbowarp/
     _getMessageHats(broadcastName, type) {
       broadcastName = Cast.toString(broadcastName).toUpperCase();
 
@@ -475,19 +475,19 @@
       return IDs;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {VM.BlockUtility} util
      * @returns {string}
-     */
+     https://kakaomames.github.io/turbowarp/
     _thisBlockID(util) {
       return util.thread.isCompiled
         ? util.thread.peekStack()
         : util.thread.peekStackFrame().op.id;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {VM.BlockUtility} util
-     */
+     https://kakaomames.github.io/turbowarp/
     _waitForStartedThreads(util) {
       if (
         util.stackFrame.startedThreads.some(
@@ -502,19 +502,19 @@
       }
     }
 
-    // Block Funcs
+   https://kakaomames.github.io/turbowarp// Block Funcs
     messageName(args, util) {
       if (!Object.prototype.hasOwnProperty.call(util.thread, kMessageName)) {
         return "";
       }
 
       const name = util.thread[kMessageName];
-      // The name stored on the thread is toUpperCase(), so lookup the user-facing name
+     https://kakaomames.github.io/turbowarp// The name stored on the thread is toUpperCase(), so lookup the user-facing name
       const variable = util.runtime
         .getTargetForStage()
         .lookupBroadcastByInputValue(name);
       if (variable) return variable.name;
-      return name; // this is a dynamic message
+      return name;https://kakaomames.github.io/turbowarp// this is a dynamic message
     }
 
     broadcastTarget(args, util) {
@@ -621,7 +621,7 @@
       const threads = util.stackFrame.startedThreads;
       if (threads.some((t) => runtime.isActiveThread(t))) {
         util.yield();
-        return; // restart block
+        return;https://kakaomames.github.io/turbowarp// restart block
       }
 
       for (const thread of threads) {
@@ -638,7 +638,7 @@
 
     respondData(args, util) {
       util.thread[kResponseData] = args.DATA;
-      // Delay the deletion of this Thread
+     https://kakaomames.github.io/turbowarp// Delay the deletion of this Thread
       if (util.stackTimerNeedsInit()) {
         util.startStackTimer(0);
         runtime.requestRedraw();

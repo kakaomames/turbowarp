@@ -1,13 +1,13 @@
-// Name: McUtils
-// ID: lmsmcutils
-// Description: Helpful utilities for any fast food employee.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// Context: Joke extension based on McDonalds, a fast food chain.
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: McUtils
+https://kakaomames.github.io/turbowarp/ ID: lmsmcutils
+https://kakaomames.github.io/turbowarp/ Description: Helpful utilities for any fast food employee.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ Context: Joke extension based on McDonalds, a fast food chain.
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 /*!
  * Credit to NexusKitten (NamelessCat) for the idea
- */
+ https://kakaomames.github.io/turbowarp/
 
 (function (Scratch) {
   "use strict";
@@ -16,7 +16,7 @@
     getInfo() {
       return {
         id: "lmsmcutils",
-        // eslint-disable-next-line extension/should-translate
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
         name: "McUtils",
         color1: "#ec2020",
         color3: "#ffe427",
@@ -87,7 +87,7 @@
           {
             opcode: "grimaceBlock",
             blockType: Scratch.BlockType.REPORTER,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "🎂",
             extensions: ["colours_looks"],
             hideFromPalette: new Date().getMonth() !== 5,

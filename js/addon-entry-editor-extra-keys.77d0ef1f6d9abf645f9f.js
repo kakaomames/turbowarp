@@ -26,7 +26,7 @@
                     ["\\", "\\"],
                     [";", ";"],
                     ["'", "'"],
-                    ["/", "/"],
+                    [https://kakaomames.github.io/turbowarp/", https://kakaomames.github.io/turbowarp/"],
                   ),
                 o &&
                   e.settings.get("shiftKeys") &&

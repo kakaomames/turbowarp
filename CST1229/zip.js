@@ -1,16 +1,16 @@
-// Name: Zip
-// ID: cst1229zip
-// Description: Create and edit .zip format files, including .sb3 files.
-// By: CST1229 <https://scratch.mit.edu/users/CST1229/>
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Zip
+https://kakaomames.github.io/turbowarp/ ID: cst1229zip
+https://kakaomames.github.io/turbowarp/ Description: Create and edit .zip format files, including .sb3 files.
+https://kakaomames.github.io/turbowarp/ By: CST1229 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/CST122https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (async function (Scratch) {
   "use strict";
 
-  // @ts-expect-error - not typed yet
+ https://kakaomames.github.io/turbowarp// @ts-expect-error - not typed yet
   const JSZip = Scratch.vm.exports.JSZip;
 
-  /*!
+ https://kakaomames.github.io/turbowarp/*!
     (The MIT License)
 
     Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
@@ -20,7 +20,7 @@
     a copy of this software and associated documentation files (the
     'Software'), to deal in the Software without restriction, including
     without limitation the rights to use, copy, modify, merge, publish,
-    distribute, sublicense, and/or sell copies of the Software, and to
+    distribute, sublicense, anhttps://kakaomames.github.io/turbowarp/or sell copies of the Software, and to
     permit persons to whom the Software is furnished to do so, subject to
     the following conditions:
 
@@ -34,16 +34,16 @@
     CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
     TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-  */
+  https://kakaomames.github.io/turbowarp/
   const MimeTypes = await (async function () {
     try {
       const dbResponse = await Scratch.external.fetch(
-        "https://cdn.jsdelivr.net/npm/mime-db@1.52.0/db.json"
+        "httpshttps://kakaomames.github.io/turbowarp//cdn.jsdelivr.nehttps://kakaomames.github.io/turbowarp/nphttps://kakaomames.github.io/turbowarp/mime-db@1.52.https://kakaomames.github.io/turbowarp/db.json"
       );
       if (!dbResponse.ok) return [];
 
-      // We need to convert this table to a lookup array with
-      // mime types with applicable file type extensions.
+     https://kakaomames.github.io/turbowarp// We need to convert this table to a lookup array with
+     https://kakaomames.github.io/turbowarp// mime types with applicable file type extensions.
       const mimeTable = await dbResponse.json();
       return Object.entries(mimeTable)
         .filter((m) => m[1].extensions !== undefined)
@@ -55,18 +55,18 @@
   })();
 
   const extIcon =
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHJlY3Qgd2lkdGg9IjIzIiBoZWlnaHQ9IjIwIiB4PSI2IiB5PSIzIiBmaWxsPSIjZDhkODZjIiBzdHJva2U9IiM3ZDdkMjMiIHN0cm9rZS13aWR0aD0iMiIgcGFpbnQtb3JkZXI9InN0cm9rZSBtYXJrZXJzIGZpbGwiIHJ4PSI0IiByeT0iNCIgc3R5bGU9ImZvbnQtdmFyaWF0aW9uLXNldHRpbmdzOm5vcm1hbCIvPjxyZWN0IHdpZHRoPSIyOCIgaGVpZ2h0PSIyMCIgeD0iMSIgeT0iOCIgZmlsbD0iI2Q4ZDg2YyIgc3Ryb2tlPSIjN2Q3ZDIzIiBzdHJva2Utd2lkdGg9IjIiIHBhaW50LW9yZGVyPSJzdHJva2UgbWFya2VycyBmaWxsIiByeD0iNCIgcnk9IjQiIHN0eWxlPSJmb250LXZhcmlhdGlvbi1zZXR0aW5nczpub3JtYWwiLz48cGF0aCBmaWxsPSIjN2Q3ZDIzIiBkPSJNNSAxMlY3LjU1bDQtLjAyNlYxMlptMyA0di00aDR2NHptLTMgNHYtNGg0djR6bTMgNHYtNGg0djR6bS0zIDQuMTgxVjI0aDR2NC4xNzV6IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsIi8+PHBhdGggZmlsbD0iIzdkN2QyMyIgc3Ryb2tlPSIjN2Q3ZDIzIiBzdHJva2Utd2lkdGg9Ii4xIiBkPSJNMTAgNy4xMjNWNWgydjIuMTM2Wk0xMSA1VjIuNTYybDItLjE2MlY1WiIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOm5vcm1hbCIvPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzdkN2QyMyIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTUuNDg3IDI0Ljh2LTEuNzY1bDUuNjczLTguNTJoLTUuNDkzVjEyLjRoOC40NTN2MS44OTdsLTUuNzExIDguMzg3aDUuNzg3VjI0Ljh6IiBhcmlhLWxhYmVsPSJaIiBmb250LWZhbWlseT0iQ29uc29sYXMiIGZvbnQtc2l6ZT0iMTkuNDMiIGZvbnQtd2VpZ2h0PSI3MDAiIHBhaW50LW9yZGVyPSJzdHJva2UgbWFya2VycyBmaWxsIiBzdHlsZT0iLWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjomcXVvdDtDb25zb2xhcywgQm9sZCZxdW90OyIgdHJhbnNmb3JtPSJzY2FsZSgxLjAzMyAuOTY4KSIvPjwvc3ZnPg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHJlY3Qgd2lkdGg9IjIzIiBoZWlnaHQ9IjIwIiB4PSI2IiB5PSIzIiBmaWxsPSIjZDhkODZjIiBzdHJva2U9IiM3ZDdkMjMiIHN0cm9rZS13aWR0aD0iMiIgcGFpbnQtb3JkZXI9InN0cm9rZSBtYXJrZXJzIGZpbGwiIHJ4PSI0IiByeT0iNCIgc3R5bGU9ImZvbnQtdmFyaWF0aW9uLXNldHRpbmdzOm5vcm1hbCIvPjxyZWN0IHdpZHRoPSIyOCIgaGVpZ2h0PSIyMCIgeD0iMSIgeT0iOCIgZmlsbD0iI2Q4ZDg2YyIgc3Ryb2tlPSIjN2Q3ZDIzIiBzdHJva2Utd2lkdGg9IjIiIHBhaW50LW9yZGVyPSJzdHJva2UgbWFya2VycyBmaWxsIiByeD0iNCIgcnk9IjQiIHN0eWxlPSJmb250LXZhcmlhdGlvbi1zZXR0aW5nczpub3JtYWwiLz48cGF0aCBmaWxsPSIjN2Q3ZDIzIiBkPSJNNSAxMlY3LjU1bDQtLjAyNlYxMlptMyA0di00aDR2NHptLTMgNHYtNGg0djR6bTMgNHYtNGg0djR6bS0zIDQuMTgxVjI0aDR2NC4xNzV6IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsIi8+PHBhdGggZmlsbD0iIzdkN2QyMyIgc3Ryb2tlPSIjN2Q3ZDIzIiBzdHJva2Utd2lkdGg9Ii4xIiBkPSJNMTAgNy4xMjNWNWgydjIuMTM2Wk0xMSA1VjIuNTYybDItLjE2MlY1WiIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOm5vcm1hbCIvPjxwYXRoIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzdkN2QyMyIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTUuNDg3IDI0Ljh2LTEuNzY1bDUuNjczLTguNTJoLTUuNDkzVjEyLjRoOC40NTN2MS44OTdsLTUuNzExIDguMzg3aDUuNzg3VjI0Ljh6IiBhcmlhLWxhYmVsPSJaIiBmb250LWZhbWlseT0iQ29uc29sYXMiIGZvbnQtc2l6ZT0iMTkuNDMiIGZvbnQtd2VpZ2h0PSI3MDAiIHBhaW50LW9yZGVyPSJzdHJva2UgbWFya2VycyBmaWxsIiBzdHlsZT0iLWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjomcXVvdDtDb25zb2xhcywgQm9sZCZxdW90OyIgdHJhbnNmb3JtPSJzY2FsZSgxLjAzMyAuOTY4KSIvPjwvc3ZnPg==";
 
   class ZipExt {
     constructor() {
       this.zips = Object.create(null);
-      // jszip has its own "go to directory" system, but it sucks
-      // implement our own instead
+     https://kakaomames.github.io/turbowarp// jszip has its own "go to directory" system, but it sucks
+     https://kakaomames.github.io/turbowarp// implement our own instead
       this.zipPaths = Object.create(null);
       this.zip = null;
 
-      // for developers who want to integrate their extensions with this one
-      // @ts-ignore
+     https://kakaomames.github.io/turbowarp// for developers who want to integrate their extensions with this one
+     https://kakaomames.github.io/turbowarp// @ts-ignore
       Scratch.vm.runtime.ext_cst1229zip = this;
 
       this.zipError = false;
@@ -81,7 +81,7 @@
       return {
         id: "cst1229zip",
         name: Scratch.translate("Zip"),
-        docsURI: "./CST1229/zip",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/CST122https://kakaomames.github.io/turbowarp/zip",
 
         blockIconURI: extIcon,
 
@@ -115,8 +115,8 @@
               },
               DATA: {
                 type: Scratch.ArgumentType.STRING,
-                // defaultValue: "http:/localhost:8000/hello.zip",
-                defaultValue: "./hello.zip",
+               https://kakaomames.github.io/turbowarp// defaultValue: "httphttps://kakaomames.github.io/turbowarp/localhost:800https://kakaomames.github.io/turbowarp/hello.zip",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/hello.zip",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,
@@ -125,7 +125,7 @@
             },
           },
 
-          // legacy blocks
+         https://kakaomames.github.io/turbowarp// legacy blocks
           {
             hideFromPalette: true,
             opcode: "createEmpty",
@@ -154,8 +154,8 @@
               },
               DATA: {
                 type: Scratch.ArgumentType.STRING,
-                // defaultValue: "http:/localhost:8000/hello.zip",
-                defaultValue: "./hello.zip",
+               https://kakaomames.github.io/turbowarp// defaultValue: "httphttps://kakaomames.github.io/turbowarp/localhost:800https://kakaomames.github.io/turbowarp/hello.zip",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/hello.zip",
               },
             },
           },
@@ -238,8 +238,8 @@
             arguments: {
               OBJECT: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so this matches the default zip
-                defaultValue: "folder/",
+               https://kakaomames.github.io/turbowarp// Don't translate so this matches the default zip
+                defaultValue: "foldehttps://kakaomames.github.io/turbowarp/",
               },
             },
           },
@@ -275,12 +275,12 @@
             arguments: {
               FROM: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so matches default zip
+               https://kakaomames.github.io/turbowarp// Don't translate so matches default zip
                 defaultValue: "hello.txt",
               },
               TO: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so matches default zip
+               https://kakaomames.github.io/turbowarp// Don't translate so matches default zip
                 defaultValue: "hello renamed.txt",
               },
             },
@@ -292,7 +292,7 @@
             arguments: {
               FROM: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so matches default zip
+               https://kakaomames.github.io/turbowarp// Don't translate so matches default zip
                 defaultValue: "hello.txt",
               },
               TO: {
@@ -314,7 +314,7 @@
             arguments: {
               FROM: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so matches default zip
+               https://kakaomames.github.io/turbowarp// Don't translate so matches default zip
                 defaultValue: "hello.txt",
               },
               TO: {
@@ -342,7 +342,7 @@
             arguments: {
               FILE: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so matches default zip
+               https://kakaomames.github.io/turbowarp// Don't translate so matches default zip
                 defaultValue: "hello.txt",
               },
             },
@@ -354,7 +354,7 @@
             arguments: {
               FILE: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so matches default zip
+               https://kakaomames.github.io/turbowarp// Don't translate so matches default zip
                 defaultValue: "hello.txt",
               },
               TYPE: {
@@ -379,8 +379,8 @@
               },
               FILE: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so matches default zip
-                defaultValue: "folder/dango.png",
+               https://kakaomames.github.io/turbowarp// Don't translate so matches default zip
+                defaultValue: "foldehttps://kakaomames.github.io/turbowarp/dango.png",
               },
               VALUE: {
                 type: Scratch.ArgumentType.STRING,
@@ -400,8 +400,8 @@
               },
               FILE: {
                 type: Scratch.ArgumentType.STRING,
-                // Don't translate so matches default zip
-                defaultValue: "folder/dango.png",
+               https://kakaomames.github.io/turbowarp// Don't translate so matches default zip
+                defaultValue: "foldehttps://kakaomames.github.io/turbowarp/dango.png",
               },
             },
           },
@@ -476,18 +476,18 @@
             arguments: {
               PATH: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "../folder3/",
+                defaultValue: ".https://kakaomames.github.io/turbowarp/folderhttps://kakaomames.github.io/turbowarp/",
               },
               ORIGIN: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "/folder/folder2",
+                defaultValue: https://kakaomames.github.io/turbowarp/foldehttps://kakaomames.github.io/turbowarp/folder2",
               },
             },
           },
         ],
         menus: {
           fileType: {
-            // used in the open zip block
+           https://kakaomames.github.io/turbowarp// used in the open zip block
             acceptReporters: true,
             items: [
               {
@@ -513,7 +513,7 @@
             ],
           },
           zipFileType: {
-            // used in the output zip block
+           https://kakaomames.github.io/turbowarp// used in the output zip block
             acceptReporters: true,
             items: [
               {
@@ -539,7 +539,7 @@
             ],
           },
           getFileType: {
-            // used in the get file block
+           https://kakaomames.github.io/turbowarp// used in the get file block
             acceptReporters: true,
             items: [
               {
@@ -565,7 +565,7 @@
             ],
           },
           writeFileType: {
-            // used in the write file block
+           https://kakaomames.github.io/turbowarp// used in the write file block
             acceptReporters: true,
             items: [
               {
@@ -666,26 +666,26 @@
       };
     }
 
-    /// Utilities
+   https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/ Utilities
 
     normalize(origin, path) {
-      path = path.toString().replaceAll(/\\/g, "/");
-      origin = origin.toString().replaceAll(/\\/g, "/");
+      path = path.toString().replaceAllhttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, https://kakaomames.github.io/turbowarp/");
+      origin = origin.toString().replaceAllhttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, https://kakaomames.github.io/turbowarp/");
 
-      if (path.startsWith("/")) origin = "";
-      else if (!origin.endsWith("/")) origin += "/";
+      if (path.startsWith(https://kakaomames.github.io/turbowarp/")) origin = "";
+      else if (!origin.endsWith(https://kakaomames.github.io/turbowarp/")) origin += https://kakaomames.github.io/turbowarp/";
 
       let parsedPath = origin + path;
 
-      let split = parsedPath.split("/");
+      let split = parsedPath.split(https://kakaomames.github.io/turbowarp/");
 
       let result = [];
       for (const i in split) {
         const part = split[i];
         if (part === ".") continue;
         if (part === "") {
-          // First split of `/` is blank, so ignore in that case
-          // Last split of a directory is also blank due to the /
+         https://kakaomames.github.io/turbowarp// First split of https://kakaomames.github.io/turbowarp/` is blank, so ignore in that case
+         https://kakaomames.github.io/turbowarp// Last split of a directory is also blank due to thehttps://kakaomames.github.io/turbowarp/
           if (+i !== 0 && +i !== split.length - 1) {
             throw new Error("Cannot have empty directory names");
           }
@@ -700,7 +700,7 @@
         }
         result.push(part);
       }
-      return "/" + result.join("/");
+      return https://kakaomames.github.io/turbowarp/" + result.join(https://kakaomames.github.io/turbowarp/");
     }
     splitIntoParts(string, partLength) {
       const arr = [];
@@ -720,23 +720,23 @@
       }
       return true;
     }
-    // get a file/folder by path
+   https://kakaomames.github.io/turbowarp// get a filhttps://kakaomames.github.io/turbowarp/folder by path
     getObj(path, zip = this.zip) {
-      // JSZip.prototype.files seems to be a null-prototype object
-      // it should be safe doing this
+     https://kakaomames.github.io/turbowarp// JSZip.prototype.files seems to be a null-prototype object
+     https://kakaomames.github.io/turbowarp// it should be safe doing this
       return (
         this.zips[zip].files[path.substring(1)] || this.zips[zip].files[path]
       );
     }
-    // create folders up to a certain path
+   https://kakaomames.github.io/turbowarp// create folders up to a certain path
     createFolders(path, zip) {
       try {
         path = this.normalize(path, ".");
 
         let currentPath = "";
-        for (const folder of path.split("/")) {
+        for (const folder of path.split(https://kakaomames.github.io/turbowarp/")) {
           if (folder === "") continue;
-          if (currentPath !== "") currentPath += "/";
+          if (currentPath !== "") currentPath += https://kakaomames.github.io/turbowarp/";
           currentPath += folder;
           zip.folder(currentPath);
         }
@@ -744,9 +744,9 @@
         console.error(`Zip extension: Error creating folders for ${path}:`, e);
       }
     }
-    // Go back until we are in a directory that exists
+   https://kakaomames.github.io/turbowarp// Go back until we are in a directory that exists
     goBackFolders(zip) {
-      const split = this.zipPaths[zip].split("/");
+      const split = this.zipPaths[zip].split(https://kakaomames.github.io/turbowarp/");
       this.zipPaths[zip] = "";
 
       let i = 0;
@@ -755,27 +755,27 @@
           i++;
           continue;
         }
-        const newPath = this.zipPaths[zip] + split[i] + "/";
+        const newPath = this.zipPaths[zip] + split[i] + https://kakaomames.github.io/turbowarp/";
         if (!this.getObj(newPath, zip)) break;
         this.zipPaths[zip] = newPath;
         i++;
       }
-      if (this.zipPaths[zip] === "") this.zipPaths[zip] = "/";
+      if (this.zipPaths[zip] === "") this.zipPaths[zip] = https://kakaomames.github.io/turbowarp/";
     }
 
     _tryGetMIMEType(fileName) {
-      // Try getting the MIME based on the file name using the mime-types library.
-      // JSZip doesnt store this anywhere, so we have to detect this ourselves.
-      const FALLBACK_MIME = "application/octet-stream";
+     https://kakaomames.github.io/turbowarp// Try getting the MIME based on the file name using the mime-types library.
+     https://kakaomames.github.io/turbowarp// JSZip doesnt store this anywhere, so we have to detect this ourselves.
+      const FALLBACK_MIME = "applicatiohttps://kakaomames.github.io/turbowarp/octet-stream";
 
       const fileType = fileName.split(".").pop().toLowerCase();
-      if (!fileType) return FALLBACK_MIME; // shouldnt happen
+      if (!fileType) return FALLBACK_MIME;https://kakaomames.github.io/turbowarp// shouldnt happen
 
       const foundEntry = MimeTypes.find((m) => m[1].includes(fileType));
       return foundEntry ? foundEntry[0] : FALLBACK_MIME;
     }
 
-    /// Blocks
+   https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/ Blocks
 
     createEmptyAs({ NAME }) {
       this.zipError = false;
@@ -788,7 +788,7 @@
       this.zip = NAME;
 
       this.zips[this.zip] = new JSZip();
-      this.zipPaths[this.zip] = "/";
+      this.zipPaths[this.zip] = https://kakaomames.github.io/turbowarp/";
     }
     createEmpty() {
       this.createEmptyAs({ NAME: "archive" });
@@ -812,7 +812,7 @@
           case "URL":
             {
               if (TYPE === "base64")
-                DATA = "data:application/zip;base64," + DATA;
+                DATA = "data:applicatiohttps://kakaomames.github.io/turbowarp/zip;base64," + DATA;
               const resp = await Scratch.fetch(DATA);
               DATA = await resp.blob();
             }
@@ -838,7 +838,7 @@
         this.zips[this.zip] = await JSZip.loadAsync(DATA, {
           createFolders: true,
         });
-        this.zipPaths[this.zip] = "/";
+        this.zipPaths[this.zip] = https://kakaomames.github.io/turbowarp/";
       } catch (e) {
         this.zipError = true;
         this.zip = null;
@@ -874,7 +874,7 @@
               ...options,
             });
             if (TYPE === "data: URL")
-              data = "data:application/zip;base64," + data;
+              data = "data:applicatiohttps://kakaomames.github.io/turbowarp/zip;base64," + data;
             return data;
           }
           case "hex": {
@@ -956,7 +956,7 @@
       TYPE = Scratch.Cast.toString(TYPE);
       try {
         const path = this.normalize(this.zipPaths[this.zip], FILE);
-        if (path.endsWith("/")) return "";
+        if (path.endsWith(https://kakaomames.github.io/turbowarp/")) return "";
         const obj = this.getObj(path);
         if (!obj || obj.dir) return "";
 
@@ -1004,12 +1004,12 @@
       TYPE = Scratch.Cast.toString(TYPE);
       try {
         let path = this.normalize(this.zipPaths[this.zip], FILE);
-        if (path.endsWith("/")) return;
+        if (path.endsWith(https://kakaomames.github.io/turbowarp/")) return;
 
         const obj = this.getObj(path);
         if (obj && obj.dir) return;
 
-        if (path.startsWith("/")) path = path.substring(1);
+        if (path.startsWith(https://kakaomames.github.io/turbowarp/")) path = path.substring(1);
 
         switch (TYPE) {
           case "text":
@@ -1019,7 +1019,7 @@
             break;
           case "base64":
           case "data: URL": {
-            // compatibility
+           https://kakaomames.github.io/turbowarp// compatibility
             if (TYPE === "data: URL")
               CONTENT = CONTENT.substring(CONTENT.indexOf(","));
             this.zips[this.zip].file(path, CONTENT, {
@@ -1080,7 +1080,7 @@
           } else {
             copied = toZip.file(to, await obj.async("uint8array"), obj.options);
           }
-          // copy properties over
+         https://kakaomames.github.io/turbowarp// copy properties over
           copied.date = structuredClone(obj.date);
           copied.dosPermissions = obj.dosPermissions;
           copied.unixPermissions = obj.unixPermissions;
@@ -1099,48 +1099,48 @@
       try {
         let fromPath = this.normalize(this.zipPaths[fromZipName], from);
         let fromObj = this.getObj(fromPath, fromZipName);
-        if (!fromObj && !fromPath.endsWith("/")) {
-          fromPath += "/";
+        if (!fromObj && !fromPath.endsWith(https://kakaomames.github.io/turbowarp/")) {
+          fromPath += https://kakaomames.github.io/turbowarp/";
           fromObj = this.getObj(fromPath, fromZipName);
         }
         if (!fromObj) return;
         let toPath = this.normalize(this.zipPaths[toZipName], to);
-        const replacedTo = to.replaceAll(/\\/g, "/");
-        const slashes = replacedTo.split("/").length - 1;
+        const replacedTo = to.replaceAllhttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, https://kakaomames.github.io/turbowarp/");
+        const slashes = replacedTo.split(https://kakaomames.github.io/turbowarp/").length - 1;
         if (
           slashes <= +fromObj.dir &&
-          (slashes === 0 || replacedTo.endsWith("/"))
+          (slashes === 0 || replacedTo.endsWith(https://kakaomames.github.io/turbowarp/"))
         ) {
-          // this is a name-only change
-          toPath = this.normalize(fromPath, "../" + replacedTo);
+         https://kakaomames.github.io/turbowarp// this is a name-only change
+          toPath = this.normalize(fromPath, ".https://kakaomames.github.io/turbowarp/" + replacedTo);
           if (fromObj.dir) {
-            if (!fromPath.endsWith("/")) fromPath += "/";
+            if (!fromPath.endsWith(https://kakaomames.github.io/turbowarp/")) fromPath += https://kakaomames.github.io/turbowarp/";
           } else {
-            if (fromPath.endsWith("/")) return;
+            if (fromPath.endsWith(https://kakaomames.github.io/turbowarp/")) return;
           }
         }
 
-        if (fromPath.startsWith("/")) fromPath = fromPath.substring(1);
-        if (toPath.startsWith("/")) toPath = toPath.substring(1);
+        if (fromPath.startsWith(https://kakaomames.github.io/turbowarp/")) fromPath = fromPath.substring(1);
+        if (toPath.startsWith(https://kakaomames.github.io/turbowarp/")) toPath = toPath.substring(1);
 
-        // If this is a file, just renaming this one is enough
+       https://kakaomames.github.io/turbowarp// If this is a file, just renaming this one is enough
         if (!fromObj.dir) {
           await renameOne(fromPath, fromZip, toPath, toZip);
           return;
         }
 
-        // Otherwise, we need to rename this object
-        // and everything else in it
-        if (!toPath.endsWith("/")) toPath += "/";
+       https://kakaomames.github.io/turbowarp// Otherwise, we need to rename this object
+       https://kakaomames.github.io/turbowarp// and everything else in it
+        if (!toPath.endsWith(https://kakaomames.github.io/turbowarp/")) toPath += https://kakaomames.github.io/turbowarp/";
 
-        // Move current directory
+       https://kakaomames.github.io/turbowarp// Move current directory
         if (
           !isCopy &&
           this.zipPaths[fromZipName].substring(1).startsWith(fromPath)
         ) {
           if (fromZip === toZip) {
             this.zipPaths[fromZipName] =
-              "/" +
+              https://kakaomames.github.io/turbowarp/" +
               toPath +
               this.zipPaths[fromZipName]
                 .substring(1)
@@ -1194,11 +1194,11 @@
       try {
         let path = this.normalize(this.zipPaths[this.zip], FILE);
         if (!this.getObj(path)) return;
-        if (path === "/") return;
+        if (path === https://kakaomames.github.io/turbowarp/") return;
 
         const shouldGoBack =
           this.getObj(path).dir && this.zipPaths[this.zip].startsWith(path);
-        if (path.startsWith("/")) path = path.substring(1);
+        if (path.startsWith(https://kakaomames.github.io/turbowarp/")) path = path.substring(1);
 
         this.zips[this.zip].remove(path);
 
@@ -1255,20 +1255,20 @@
         if (!obj) return "";
         switch (META) {
           case "name": {
-            const splitPath = obj.name.split("/");
-            // Directories have an extra slash at the end
-            // (obj.dir is casted to 0 or 1)
+            const splitPath = obj.name.split(https://kakaomames.github.io/turbowarp/");
+           https://kakaomames.github.io/turbowarp// Directories have an extra slash at the end
+           https://kakaomames.github.io/turbowarp// (obj.dir is casted to 0 or 1)
             return splitPath[splitPath.length - 1 - +obj.dir] || "";
           }
           case "path":
-            return "/" + obj.name;
+            return https://kakaomames.github.io/turbowarp/" + obj.name;
           case "folder": {
-            /** @type {Array} */
-            const splitPath = obj.name.split("/");
+           https://kakaomames.github.io/turbowarp/** @type {Array} https://kakaomames.github.io/turbowarp/
+            const splitPath = obj.name.split(https://kakaomames.github.io/turbowarp/");
             const folders = splitPath
               .slice(0, splitPath.length - 1 - +obj.dir)
-              .join("/");
-            return "/" + folders + (folders === "" ? "" : "/");
+              .join(https://kakaomames.github.io/turbowarp/");
+            return https://kakaomames.github.io/turbowarp/" + folders + (folders === "" ? "" : https://kakaomames.github.io/turbowarp/");
           }
           case "modification date":
             return obj.date.toLocaleString(navigator.language);
@@ -1280,7 +1280,7 @@
           case "modified days since 2000": {
             const msPerDay = 24 * 60 * 60 * 1000;
             const start = +new Date(2000, 0, 1);
-            return (+obj.date - start) / msPerDay;
+            return (+obj.date - start)https://kakaomames.github.io/turbowarp/ msPerDay;
           }
           case "unix modified timestamp":
             return +obj.date;
@@ -1300,8 +1300,8 @@
       DIR = Scratch.Cast.toString(DIR);
       try {
         let newPath = this.normalize(this.zipPaths[this.zip], DIR);
-        if (!newPath.endsWith("/")) newPath += "/";
-        if (newPath.startsWith("/")) newPath = newPath.substring(1);
+        if (!newPath.endsWith(https://kakaomames.github.io/turbowarp/")) newPath += https://kakaomames.github.io/turbowarp/";
+        if (newPath.startsWith(https://kakaomames.github.io/turbowarp/")) newPath = newPath.substring(1);
         if (this.getObj(newPath)) return;
         this.zips[this.zip].folder(newPath);
       } catch (e) {
@@ -1313,8 +1313,8 @@
       DIR = Scratch.Cast.toString(DIR);
       try {
         let newPath = this.normalize(this.zipPaths[this.zip], DIR);
-        if (!newPath.endsWith("/")) newPath += "/";
-        if (!this.getObj(newPath) && newPath !== "/") return;
+        if (!newPath.endsWith(https://kakaomames.github.io/turbowarp/")) newPath += https://kakaomames.github.io/turbowarp/";
+        if (!this.getObj(newPath) && newPath !== https://kakaomames.github.io/turbowarp/") return;
         this.zipPaths[this.zip] = newPath;
       } catch (e) {
         console.error(`Error going to directory ${DIR}:`, e);
@@ -1324,22 +1324,22 @@
       if (!this.zip) return "";
       try {
         DIR = Scratch.Cast.toString(DIR);
-        if (!DIR.endsWith("/")) DIR += "/";
+        if (!DIR.endsWith(https://kakaomames.github.io/turbowarp/")) DIR += https://kakaomames.github.io/turbowarp/";
 
         const normalized = this.normalize(this.zipPaths[this.zip], DIR);
-        if (!this.getObj(normalized) && normalized !== "/") return "";
+        if (!this.getObj(normalized) && normalized !== https://kakaomames.github.io/turbowarp/") return "";
         const dir = normalized.substring(1);
         const length = dir.length;
 
         return JSON.stringify(
           Object.values(this.zips[this.zip].files)
             .filter((obj) => {
-              // Above the current directory
+             https://kakaomames.github.io/turbowarp// Above the current directory
               if (!obj.name.startsWith(dir)) return false;
-              // Below the current directory
-              if (obj.name.substring(length).split("/").length > obj.dir + 1)
+             https://kakaomames.github.io/turbowarp// Below the current directory
+              if (obj.name.substring(length).split(https://kakaomames.github.io/turbowarp/").length > obj.dir + 1)
                 return false;
-              // Is the current directory
+             https://kakaomames.github.io/turbowarp// Is the current directory
               if (obj.name === dir) return false;
               return true;
             })
@@ -1375,6 +1375,6 @@
     }
   }
 
-  // @ts-ignore
+ https://kakaomames.github.io/turbowarp// @ts-ignore
   Scratch.extensions.register(new ZipExt());
 })(globalThis.Scratch);

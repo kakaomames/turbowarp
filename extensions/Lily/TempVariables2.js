@@ -1,14 +1,14 @@
-// Name: Temporary Variables
-// ID: lmsTempVars2
-// Description: Create disposable runtime or thread variables.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// By: Mio <https://scratch.mit.edu/users/0znzw/>
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Temporary Variables
+https://kakaomames.github.io/turbowarp/ ID: lmsTempVars2
+https://kakaomames.github.io/turbowarp/ Description: Create disposable runtime or thread variables.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ By: Mio <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/0znzhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
 (function (Scratch) {
   "use strict";
 
-  // Credit to skyhigh173 for the idea of this.
+ https://kakaomames.github.io/turbowarp// Credit to skyhigh173 for the idea of this.
   const label = (name, hidden) => ({
     blockType: Scratch.BlockType.LABEL,
     text: name,
@@ -17,11 +17,11 @@
 
   class TempVars {
     constructor() {
-      // this.resetRuntimeVariables would be preferable but,
-      // its easier on TS when defined in the constructor,
-      // and not abstracted out.
-      //
-      // Object.create(null) prevents "variable [toString]" from returning a function.
+     https://kakaomames.github.io/turbowarp// this.resetRuntimeVariables would be preferable but,
+     https://kakaomames.github.io/turbowarp// its easier on TS when defined in the constructor,
+     https://kakaomames.github.io/turbowarp// and not abstracted out.
+     https://kakaomames.github.io/turbowarp//
+     https://kakaomames.github.io/turbowarp// Object.create(null) prevents "variable [toString]" from returning a function.
       this.runtimeVariables = Object.create(null);
 
       Scratch.vm.runtime.on("PROJECT_START", () => {
@@ -214,7 +214,7 @@
       };
     }
 
-    /* THREAD VARIABLES */
+   https://kakaomames.github.io/turbowarp/* THREAD VARIABLES https://kakaomames.github.io/turbowarp/
 
     setThreadVariable(args, util) {
       const thread = util.thread;
@@ -275,7 +275,7 @@
       return Object.keys(thread.variables).join(",");
     }
 
-    /* RUNTIME VARIABLES */
+   https://kakaomames.github.io/turbowarp/* RUNTIME VARIABLES https://kakaomames.github.io/turbowarp/
 
     setRuntimeVariable(args) {
       this.runtimeVariables[args.VAR] = args.STRING;
@@ -310,8 +310,8 @@
       this.runtimeVariables = Object.create(null);
     }
   }
-  // The expose format follows TurboWarp's convention of `ext_${extensionId}`.
-  // Expose the extension on runtime for others to use.
+ https://kakaomames.github.io/turbowarp// The expose format follows TurboWarp's convention of `ext_${extensionId}`.
+ https://kakaomames.github.io/turbowarp// Expose the extension on runtime for others to use.
   const extension = new TempVars();
   Scratch.vm.runtime.ext_lmsTempVars2 = extension;
   Scratch.extensions.register(extension);

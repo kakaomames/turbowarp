@@ -1,8 +1,8 @@
-// Name: Runtime Options
-// ID: runtimeoptions
-// Description: Get and modify turbo mode, framerate, interpolation, clone limit, stage size, and more.
-// By: GarboMuffin
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Runtime Options
+https://kakaomames.github.io/turbowarp/ ID: runtimeoptions
+https://kakaomames.github.io/turbowarp/ Description: Get and modify turbo mode, framerate, interpolation, clone limit, stage size, and more.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -12,7 +12,7 @@
   }
 
   const greenFlagURI =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABFFBMVEUAAACAgABVqlVJkklAn0BNmTNLljxGlzpDmzdFmjpGmzxHmz9Fmj1FmT5Emj1GmT1GmD1EmDxGmTxEmT1GmjxGmT1FmDxEmT5EmTxGmT5FmD1GmT5FmT1Gmj1EmT5FmT1FmT1FmDxGmT1FmjxLs09LtE9Jr0xJsk1Js05JtVBKtU5KtVBKtlBJrkpJsE1KtlFIrEpIsExLt1FLuFJKuVNIqkhLulNIp0VJqkhKtlJLvVRMvFNFmT5GpUVFmT1HpEVHokNMvlVFmT1Ho0NFmTxLvlVGoUFMvlVLvlVGn0BFmT1Nv1ZEmz5FmTxFmTxFmT1NvlZFmz9FmT5FnT9FnD5GnT9Mv1ZMv1ZMv1ZFmT1Mv1b////70P2GAAAAWXRSTlMAAgMHCAoRFhcwMz0/RkdQVGFmaWpxcnh7gIGEhZKZo6eprLq/v8DAwMDAwMDBwcHCwsPDxcbIysrLzM3Pz9DQ1NTV1dfZ29vg4uXm5+jp6ens7fDx9Pv8/nPb5aAAAAABYktHRFt0vJU0AAAAsUlEQVQoz2NgwA3YhNiwS4hHykoou9goCrKiSUhGhqhZe7gbm3rxQwQ4BJihEupRYODooMDFyMAu6uMsgyoRFW5kHxjkqeuhL4cmAQM4JXRwSWjjktDEJaGFS0IVIeFtZuIaAZdQgUmY2/oqyTu5WcEkNGAS/kJMQJrbySAAJBxmGSoIlYAoYGCR8rPVM7QItuNlQJVgYGDlE5MU5kSErhz2+KCihEikNHYJJh5mBhIAADBcR/r5OJzCAAAAAElFTkSuQmCC";
+    "data:imaghttps://kakaomames.github.io/turbowarp/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABFFBMVEUAAACAgABVqlVJkklAn0BNmTNLljxGlzpDmzdFmjpGmzxHmz9Fmj1FmT5Emj1GmT1GmD1EmDxGmTxEmT1GmjxGmT1FmDxEmT5EmTxGmT5FmD1GmT5FmT1Gmj1EmT5FmT1FmT1FmDxGmT1FmjxLs09LtE9Jr0xJsk1Js05JtVBKtU5KtVBKtlBJrkpJsE1KtlFIrEpIsExLt1FLuFJKuVNIqkhLulNIp0VJqkhKtlJLvVRMvFNFmT5GpUVFmT1HpEVHokNMvlVFmT1Ho0NFmTxLvlVGoUFMvlVLvlVGn0BFmT1Nv1ZEmz5FmTxFmTxFmT1NvlZFmz9FmT5FnT9FnD5GnT9Mv1ZMv1ZMv1ZFmT1Mv1https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp//70P2GAAAAWXRSTlMAAgMHCAoRFhcwMzhttps://kakaomames.github.io/turbowarp/RkdQVGFmaWpxcnh7gIGEhZKZo6eprLhttps://kakaomames.github.io/turbowarp/v8DAwMDAwMDBwcHCwsPDxcbIysrLzM3Pz9DQ1NTV1dfZ29vg4uXm5+jp6ens7fDx9Pvhttps://kakaomames.github.io/turbowarp/nPb5aAAAAABYktHRFt0vJU0AAAAsUlEQVQoz2NgwA3YhNiwS4hHykoou9goCrKiSUhGhqhZe7gbm3rxQwQ4BJihEupRYODooMDFyMAu6uMsgyoRFW5kHxjkqeuhL4cmAQM4JXRwSWjjktDEJaGFS0IVIeFtZuIaAZdQgUmYhttps://kakaomames.github.io/turbowarp/oqyTu5WcEkNGAhttps://kakaomames.github.io/turbowarp/kJMQJrbySAAJBxmGSoIlYAoYGCR8rPVM7QItuNlQJVgYGDlE5MU5kSErhz2+KCihEikNHYJJh5mBhIAADBchttps://kakaomames.github.io/turbowarp/r5OJzCAAAAAElFTkSuQmCC";
   const TURBO_MODE = "turbo mode";
   const INTERPOLATION = "interpolation";
   const REMOVE_FENCING = "remove fencing";
@@ -23,17 +23,17 @@
   const STAGE_SIZE = "stage size";
   const USERNAME = "username";
 
-  /** @param {string} what */
+ https://kakaomames.github.io/turbowarp/** @param {string} what https://kakaomames.github.io/turbowarp/
   const emitChanged = (what) =>
     Scratch.vm.runtime.startHats("runtimeoptions_whenChange", {
       WHAT: what,
     });
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @template T
    * @param {T} obj
    * @returns {T}
-   */
+   https://kakaomames.github.io/turbowarp/
   const shallowCopy = (obj) => Object.assign({}, obj);
 
   let previousRuntimeOptions = shallowCopy(Scratch.vm.runtime.runtimeOptions);

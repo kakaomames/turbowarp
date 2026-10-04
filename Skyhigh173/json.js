@@ -1,16 +1,16 @@
-// Name: JSON
-// ID: skyhigh173JSON
-// Description: Handle JSON strings and arrays.
-// By: Skyhigh173 <https://scratch.mit.edu/users/Skyhigh173/>
-// By: Mio <https://scratch.mit.edu/users/0znzw/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: JSON
+https://kakaomames.github.io/turbowarp/ ID: skyhigh173JSON
+https://kakaomames.github.io/turbowarp/ Description: Handle JSON strings and arrays.
+https://kakaomames.github.io/turbowarp/ By: Skyhigh173 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/Skyhigh17https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ By: Mio <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/0znzhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
-  /*
+ https://kakaomames.github.io/turbowarp/*
    * JSON extension v2.6 by skyhigh173 (English Version)
    * Do not remove this comment
-   */
+   https://kakaomames.github.io/turbowarp/
 
   const vm = Scratch.vm;
   const hasOwn = (obj, property) =>
@@ -25,7 +25,7 @@
     getInfo() {
       return {
         id: "skyhigh173JSON",
-        // eslint-disable-next-line extension/should-translate
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
         name: "JSON",
         color1: "#3271D0",
         blocks: [
@@ -669,7 +669,7 @@
       }
     }
 
-    // return object if its json else string
+   https://kakaomames.github.io/turbowarp// return object if its json else string
     json_valid_return(json) {
       if (typeof json != "string") {
         return json;
@@ -758,7 +758,7 @@
         if (equal === "=") return result;
         if (equal === "≠") return !result;
       } catch {
-        // ignore
+       https://kakaomames.github.io/turbowarp// ignore
       }
       return false;
     }
@@ -797,17 +797,17 @@
           }
         }
       } catch {
-        // ignore
+       https://kakaomames.github.io/turbowarp// ignore
       }
       return "";
     }
 
     _fixInvalidJSONValues(value) {
-      // JSON does not support these values, so convert to string.
+     https://kakaomames.github.io/turbowarp// JSON does not support these values, so convert to string.
       if (Number.isNaN(value)) return "NaN";
       if (value === Infinity) return "Infinity";
       if (value === -Infinity) return "-Infinity";
-      // null and undefined -> empty
+     https://kakaomames.github.io/turbowarp// null and undefined -> empty
       return value ?? "";
     }
 
@@ -834,12 +834,12 @@
     }
 
     json_jlength({ json }) {
-      // same function
+     https://kakaomames.github.io/turbowarp// same function
       return this.json_length({ json: json });
     }
 
     json_array_get({ item, json }) {
-      // 1...length : array content, -1...-length : reverse array content, 0 : ERROR
+     https://kakaomames.github.io/turbowarp// 1...length : array content, -1...-length : reverse array content, 0 : ERROR
       try {
         item = Scratch.Cast.toNumber(item);
         if (item == 0) return "";
@@ -1025,7 +1025,7 @@
           return JSON.stringify(listVariable.value);
         }
       } catch (e) {
-        // ignore
+       https://kakaomames.github.io/turbowarp// ignore
       }
       return "";
     }
@@ -1043,7 +1043,7 @@
           }
         }
       } catch (e) {
-        // ignore
+       https://kakaomames.github.io/turbowarp// ignore
       }
       return "";
     }
@@ -1090,18 +1090,18 @@
         case "sum":
           return list.reduce((a, b) => a + b, 0);
         case "average":
-          return list.reduce((a, b) => a + b, 0) / listLength;
+          return list.reduce((a, b) => a + b, 0)https://kakaomames.github.io/turbowarp/ listLength;
         case "median": {
           const list2 = list.sort(Scratch.Cast.compare);
           const list2Length = list2.length;
-          const c = Math.floor(list2Length / 2);
+          const c = Math.floor(list2Lengthhttps://kakaomames.github.io/turbowarp/ 2);
           const e = list2Length % 2 === 0;
-          if (e) return (list2[c - 1] + list2[c]) / 2;
+          if (e) return (list2[c - 1] + list2[c])https://kakaomames.github.io/turbowarp/ 2;
           return list2[c];
         }
         case "mode": {
           const freqMap = new Map(),
-            mode = [0, 0]; // current mode, max
+            mode = [0, 0];https://kakaomames.github.io/turbowarp// current mode, max
           for (
             let i = 0, num = list[0], count = null;
             i < listLength;
@@ -1115,9 +1115,9 @@
           return mode[0];
         }
         case "variance": {
-          const average = list.reduce((a, b) => a + b, 0) / listLength;
+          const average = list.reduce((a, b) => a + b, 0)https://kakaomames.github.io/turbowarp/ listLength;
           const list2 = list.map((a) => (a - average) ** 2);
-          return list2.reduce((a, b) => a + b, 0) / listLength;
+          return list2.reduce((a, b) => a + b, 0)https://kakaomames.github.io/turbowarp/ listLength;
         }
       }
       return 0;

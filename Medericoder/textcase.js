@@ -5,14 +5,14 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *   http://www.apache.org/licenses/LICENSE-2.0
+ *   httphttps://kakaomames.github.io/turbowarp//www.apache.orhttps://kakaomames.github.io/turbowarp/licensehttps://kakaomames.github.io/turbowarp/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ https://kakaomames.github.io/turbowarp/
 
 (function (Scratch) {
   "use strict";
@@ -133,7 +133,7 @@
         }
       }
       return x;
-    } else if (format === "1/2 up") {
+    } else if (format === "https://kakaomames.github.io/turbowarp/2 up") {
       let x = "";
       for (let i = 0; i < text.length; i++) {
         if (i % 2 == 0) {
@@ -143,7 +143,7 @@
         }
       }
       return x;
-    } else if (format === "1/2 low") {
+    } else if (format === "https://kakaomames.github.io/turbowarp/2 low") {
       let x = "";
       for (let i = 0; i < text.length; i++) {
         if (i % 2 == 1) {
@@ -153,7 +153,7 @@
         }
       }
       return x;
-    } else if (format === "1/2 up letters only") {
+    } else if (format === "https://kakaomames.github.io/turbowarp/2 up letters only") {
       let x = "";
       let noletters = 0;
       for (let i = 0; i < text.length; i++) {
@@ -169,7 +169,7 @@
         }
       }
       return x;
-    } else if (format === "1/2 low letters only") {
+    } else if (format === "https://kakaomames.github.io/turbowarp/2 low letters only") {
       let x = "";
       let noletters = 0;
       for (let i = 0; i < text.length; i++) {
@@ -244,7 +244,7 @@
           {
             opcode: "strictlyequal",
             blockType: Scratch.BlockType.BOOLEAN,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[TEXT1] ≡ [TEXT2]",
             arguments: {
               TEXT1: {
@@ -260,7 +260,7 @@
           {
             opcode: "quasiequal",
             blockType: Scratch.BlockType.BOOLEAN,
-            // eslint-disable-next-line extension/should-translate
+           https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
             text: "[TEXT1] ≈ [TEXT2]",
             arguments: {
               TEXT1: {
@@ -356,15 +356,15 @@
                 text: Scratch.translate("begin sentences only"),
                 value: "begin sentences only",
               },
-              { text: Scratch.translate("1/2 up"), value: "1/2 up" },
-              { text: Scratch.translate("1/2 low"), value: "1/2 low" },
+              { text: Scratch.translate("https://kakaomames.github.io/turbowarp/2 up"), value: "https://kakaomames.github.io/turbowarp/2 up" },
+              { text: Scratch.translate("https://kakaomames.github.io/turbowarp/2 low"), value: "https://kakaomames.github.io/turbowarp/2 low" },
               {
-                text: Scratch.translate("1/2 up letters only"),
-                value: "1/2 up letters only",
+                text: Scratch.translate("https://kakaomames.github.io/turbowarp/2 up letters only"),
+                value: "https://kakaomames.github.io/turbowarp/2 up letters only",
               },
               {
-                text: Scratch.translate("1/2 low letters only"),
-                value: "1/2 low letters only",
+                text: Scratch.translate("https://kakaomames.github.io/turbowarp/2 low letters only"),
+                value: "https://kakaomames.github.io/turbowarp/2 low letters only",
               },
               { text: Scratch.translate("random"), value: "random" },
               { text: Scratch.translate("identity"), value: "identity" },

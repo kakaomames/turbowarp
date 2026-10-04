@@ -1,9 +1,9 @@
-// Name: All Menus
-// ID: lmsAllMenus
-// Description: Special category with every menu from every Scratch category and extensions.
-// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>
-// License: MIT AND LGPL-3.0
-// Scratch-compatible: true
+https://kakaomames.github.io/turbowarp/ Name: All Menus
+https://kakaomames.github.io/turbowarp/ ID: lmsAllMenus
+https://kakaomames.github.io/turbowarp/ Description: Special category with every menu from every Scratch category and extensions.
+https://kakaomames.github.io/turbowarp/ By: LilyMakesThings <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/LilyMakesThinghttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Scratch-compatible: true
 
 (function (Scratch) {
   "use strict";
@@ -14,12 +14,12 @@
     "looks_costumenumbername",
     "extension_wedo_tilt_menu",
 
-    // Unused menu in More Events that won't be translated
+   https://kakaomames.github.io/turbowarp// Unused menu in More Events that won't be translated
     "lmsMoreEvents_menu_state",
   ];
 
   const escapeXML = (text) =>
-    text.replace(/["'&<>]/g, (i) => {
+    text.replacehttps://kakaomames.github.io/turbowarp/["'&<>https://kakaomames.github.io/turbowarp/g, (i) => {
       switch (i) {
         case "&":
           return "&amp;";
@@ -47,7 +47,7 @@
 
     const menuBlocks = allBlocks.map(
       (item) =>
-        '<block id="' + escapeXML(item) + '" type="' + escapeXML(item) + '"/>'
+        '<block id="' + escapeXML(item) + '" type="' + escapeXML(item) + 'https://kakaomames.github.io/turbowarp/>'
     );
 
     blockXML = menuBlocks.join("");

@@ -1,8 +1,8 @@
-// Name: WebSocket
-// ID: gsaWebsocket
-// Description: Manually connect to WebSocket servers.
-// By: RedMan13 <https://scratch.mit.edu/users/RedMan13/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: WebSocket
+https://kakaomames.github.io/turbowarp/ ID: gsaWebsocket
+https://kakaomames.github.io/turbowarp/ Description: Manually connect to WebSocket servers.
+https://kakaomames.github.io/turbowarp/ By: RedMan13 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/RedMan1https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -20,12 +20,12 @@
       fr.readAsDataURL(blob);
     });
 
-  /* ------- BLOCKS -------- */
+ https://kakaomames.github.io/turbowarp/* ------- BLOCKS -------- https://kakaomames.github.io/turbowarp/
   const { BlockType, Cast, ArgumentType } = Scratch;
   const vm = Scratch.vm;
   const runtime = vm.runtime;
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @typedef WebSocketInfo
    * @property {boolean} destroyed
    * @property {boolean} errored
@@ -38,36 +38,36 @@
    * @property {boolean} messageThreadsRunning
    * @property {VM.Thread[]} messageThreads
    * @property {object[]} sendOnceConnected
-   */
+   https://kakaomames.github.io/turbowarp/
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {unknown} exitCode
    * @return {number} a valid code that won't throw an error in WebSocket#close()
-   */
+   https://kakaomames.github.io/turbowarp/
   const toCloseCode = (exitCode) => {
     const casted = Cast.toNumber(exitCode);
-    // Only valid values are 1000 or the range 3000-4999
+   https://kakaomames.github.io/turbowarp// Only valid values are 1000 or the range 3000-4999
     if (casted === 1000 || (casted >= 3000 && casted <= 4999)) {
       return casted;
     }
     return 1000;
   };
 
-  /**
+ https://kakaomames.github.io/turbowarp/**
    * @param {unknown} reason
    * @returns {string} a valid reason that won't throw an error in WebSocket#close()
-   */
+   https://kakaomames.github.io/turbowarp/
   const toCloseReason = (reason) => {
     const casted = Cast.toString(reason);
 
-    // Reason can't be longer than 123 UTF-8 bytes
-    // We can't just truncate by reason.length as that would not work for eg. emoji
+   https://kakaomames.github.io/turbowarp// Reason can't be longer than 123 UTF-8 bytes
+   https://kakaomames.github.io/turbowarp// We can't just truncate by reason.length as that would not work for eg. emoji
     const encoder = new TextEncoder();
     let encoded = encoder.encode(casted);
     encoded = encoded.slice(0, 123);
 
-    // Now we have another problem: If the 123 byte cut-off produced invalid UTF-8, we
-    // need to keep cutting off bytes until it's valid.
+   https://kakaomames.github.io/turbowarp// Now we have another problem: If the 123 byte cut-off produced invalid UTF-8, we
+   https://kakaomames.github.io/turbowarp// need to keep cutting off bytes until it's valid.
     const decoder = new TextDecoder();
     while (encoded.byteLength > 0) {
       try {
@@ -82,11 +82,11 @@
   };
 
   class WebSocketExtension {
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * no need to install runtime as it comes with Scratch var
-     */
+     https://kakaomames.github.io/turbowarp/
     constructor() {
-      /** @type {Record<string, WebSocketInfo>} */
+     https://kakaomames.github.io/turbowarp/** @type {Record<string, WebSocketInfo>} https://kakaomames.github.io/turbowarp/
       this.instances = {};
 
       runtime.on("targetWasRemoved", (target) => {
@@ -103,9 +103,9 @@
     getInfo() {
       return {
         id: "gsaWebsocket",
-        // eslint-disable-next-line extension/should-translate
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
         name: "WebSocket",
-        docsURI: "./godslayerakp/ws",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/godslayerakhttps://kakaomames.github.io/turbowarp/ws",
         color1: "#307eff",
         color2: "#2c5eb0",
         blocks: [
@@ -115,7 +115,7 @@
             arguments: {
               URL: {
                 type: ArgumentType.STRING,
-                defaultValue: "wss://echo.websocket.org/",
+                defaultValue: "wsshttps://kakaomames.github.io/turbowarp//echo.websocket.orhttps://kakaomames.github.io/turbowarp/",
               },
             },
             text: Scratch.translate("connect to [URL]"),
@@ -241,17 +241,17 @@
       const target = util.target;
 
       let url = Cast.toString(args.URL);
-      if (!/^(ws|wss):/is.test(url)) {
-        // url doesnt start with a valid connection type
-        // so we just assume its formated without it
-        if (/^(?!(ws|http)s?:\/\/).*$/is.test(url)) {
-          url = `wss://${url}`;
-        } else if (/^(http|https):/is.test(url)) {
+      if (https://kakaomames.github.io/turbowarp/^(ws|wss)https://kakaomames.github.io/turbowarp/is.test(url)) {
+       https://kakaomames.github.io/turbowarp// url doesnt start with a valid connection type
+       https://kakaomames.github.io/turbowarp// so we just assume its formated without it
+        if https://kakaomames.github.io/turbowarp/^(?!(ws|http)s?:https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp/).*https://kakaomames.github.io/turbowarp/is.test(url)) {
+          url = `wsshttps://kakaomames.github.io/turbowarp//${url}`;
+        } else if https://kakaomames.github.io/turbowarp/^(http|https)https://kakaomames.github.io/turbowarp/is.test(url)) {
           const urlParts = url.split(":");
           urlParts[0] = url.toLowerCase().startsWith("https") ? "wss" : "ws";
           url = urlParts.join(":");
         } else {
-          // we couldnt fix the url...
+         https://kakaomames.github.io/turbowarp// we couldnt fix the url...
           return;
         }
       }
@@ -264,7 +264,7 @@
         }
       }
 
-      /** @type {WebSocketInfo} */
+     https://kakaomames.github.io/turbowarp/** @type {WebSocketInfo} https://kakaomames.github.io/turbowarp/
       const instance = {
         destroyed: false,
         errored: false,
@@ -293,8 +293,8 @@
                 return;
               }
 
-              // canFetch() checked above
-              // eslint-disable-next-line extension/check-can-fetch
+             https://kakaomames.github.io/turbowarp// canFetch() checked above
+             https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
               const websocket = new WebSocket(url);
               instance.websocket = websocket;
 
@@ -333,7 +333,7 @@
                 vm.runtime.off("PROJECT_STOP_ALL", onStopAll);
 
                 for (const thread of instance.connectThreads) {
-                  thread.status = 4; // STATUS_DONE
+                  thread.status = 4;https://kakaomames.github.io/turbowarp// STATUS_DONE
                 }
 
                 resolve();
@@ -388,8 +388,8 @@
 
                 let data = e.data;
 
-                // Convert binary messages to a data: uri
-                // TODO: doing this right now might break order?
+               https://kakaomames.github.io/turbowarp// Convert binary messages to a data: uri
+               https://kakaomames.github.io/turbowarp// TODO: doing this right now might break order?
                 if (data instanceof Blob) {
                   data = await blobToDataURL(data);
                 }
@@ -465,10 +465,10 @@
         !instance.websocket ||
         instance.websocket.readyState === WebSocket.CONNECTING
       ) {
-        // Trying to send now will throw an error. Send it once we get connected.
+       https://kakaomames.github.io/turbowarp// Trying to send now will throw an error. Send it once we get connected.
         instance.sendOnceConnected.push(PAYLOAD);
       } else {
-        // CLOSING and CLOSED states won't throw an error, just silently ignore
+       https://kakaomames.github.io/turbowarp// CLOSING and CLOSED states won't throw an error, just silently ignore
         instance.websocket.send(PAYLOAD);
       }
     }
@@ -504,6 +504,6 @@
     }
   }
 
-  // @ts-ignore
+ https://kakaomames.github.io/turbowarp// @ts-ignore
   Scratch.extensions.register(new WebSocketExtension());
 })(Scratch);

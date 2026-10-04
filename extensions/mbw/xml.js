@@ -1,8 +1,8 @@
-// Name: XML
-// ID: mbwxml
-// Description: Create and extract values from XML.
-// By: mybearworld <https://scratch.mit.edu/users/mybearworld/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: XML
+https://kakaomames.github.io/turbowarp/ ID: mbwxml
+https://kakaomames.github.io/turbowarp/ Description: Create and extract values from XML.
+https://kakaomames.github.io/turbowarp/ By: mybearworld <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/mybearworlhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -11,12 +11,12 @@
     constructor() {
       this.domParser = new DOMParser();
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {string} string
      * @returns {{xml: null; error: string} | {xml: HTMLElement; error: null}}
-     */
+     https://kakaomames.github.io/turbowarp/
     stringToXml(string) {
-      const doc = this.domParser.parseFromString(string, "application/xml");
+      const doc = this.domParser.parseFromString(string, "applicatiohttps://kakaomames.github.io/turbowarp/xml");
       const error = doc.querySelector("parsererror");
       if (error) {
         console.error(error.textContent);
@@ -24,21 +24,21 @@
       }
       return { xml: doc.documentElement, error: null };
     }
-    /** @param {Element} element */
+   https://kakaomames.github.io/turbowarp/** @param {Element} element https://kakaomames.github.io/turbowarp/
     xmlToString(element) {
       return element.outerHTML;
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {Element} element
      * @param {string} query
-     */
+     https://kakaomames.github.io/turbowarp/
     resolveQuery(element, query) {
       return element.matches(query) ? element : element.querySelector(query);
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {Element} element
      * @param {string} query
-     */
+     https://kakaomames.github.io/turbowarp/
     resolveQueryAll(element, query) {
       const response = [...element.querySelectorAll(query)];
       if (element.matches(query)) {
@@ -47,18 +47,18 @@
       return response;
     }
 
-    /** @returns {Scratch.Info} */
+   https://kakaomames.github.io/turbowarp/** @returns {Scratch.Info} https://kakaomames.github.io/turbowarp/
     getInfo() {
       return {
         id: "mbwxml",
-        // eslint-disable-next-line extension/should-translate
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
         name: "XML",
         color1: "#6c2b5f",
         blocks: [
-          // For translations:
-          //  - Block text should be translated
-          //  - Default XML and attributes should NOT be translated because we can't expect translators
-          //    to know how to write valid XML in their language.
+         https://kakaomames.github.io/turbowarp// For translations:
+         https://kakaomames.github.io/turbowarp//  - Block text should be translated
+         https://kakaomames.github.io/turbowarp//  - Default XML and attributes should NOT be translated because we can't expect translators
+         https://kakaomames.github.io/turbowarp//    to know how to write valid XML in their language.
           {
             opcode: "isValid",
             blockType: Scratch.BlockType.BOOLEAN,
@@ -66,7 +66,7 @@
             arguments: {
               MAYBE_XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello apple="banana" />',
+                defaultValue: '<hello apple="banana"https://kakaomames.github.io/turbowarp/>',
               },
             },
           },
@@ -89,7 +89,7 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello apple="banana" />',
+                defaultValue: '<hello apple="banana"https://kakaomames.github.io/turbowarp/>',
               },
             },
           },
@@ -100,7 +100,7 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<hello>world</hello>",
+                defaultValue: "<hello>worldhttps://kakaomames.github.io/turbowarp/hello>",
               },
             },
           },
@@ -111,7 +111,7 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<hello>world</hello>",
+                defaultValue: "<hello>worldhttps://kakaomames.github.io/turbowarp/hello>",
               },
               VALUE: {
                 type: Scratch.ArgumentType.STRING,
@@ -126,7 +126,7 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello><planet name="world" /></hello>',
+                defaultValue: '<hello><planet name="world"https://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/hello>',
               },
             },
           },
@@ -137,11 +137,11 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello><planet name="world" /></hello>',
+                defaultValue: '<hello><planet name="world"https://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/hello>',
               },
               VALUE: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<planet name="mars" />',
+                defaultValue: '<planet name="mars"https://kakaomames.github.io/turbowarp/>',
               },
             },
           },
@@ -153,7 +153,7 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello apple="banana" />',
+                defaultValue: '<hello apple="banana"https://kakaomames.github.io/turbowarp/>',
               },
             },
           },
@@ -164,7 +164,7 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello apple="banana" />',
+                defaultValue: '<hello apple="banana"https://kakaomames.github.io/turbowarp/>',
               },
               ATTR: {
                 type: Scratch.ArgumentType.STRING,
@@ -183,7 +183,7 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello apple="banana" />',
+                defaultValue: '<hello apple="banana"https://kakaomames.github.io/turbowarp/>',
               },
               VALUE: {
                 type: Scratch.ArgumentType.STRING,
@@ -202,7 +202,7 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello apple="banana" />',
+                defaultValue: '<hello apple="banana"https://kakaomames.github.io/turbowarp/>',
               },
             },
           },
@@ -217,7 +217,7 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<hello apple="banana" />',
+                defaultValue: '<hello apple="banana"https://kakaomames.github.io/turbowarp/>',
               },
             },
           },
@@ -229,7 +229,7 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<a><b /><c /></a>",
+                defaultValue: "<a><bhttps://kakaomames.github.io/turbowarp/><chttps://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>",
               },
             },
           },
@@ -240,7 +240,7 @@
             arguments: {
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<a><b /><c /></a>",
+                defaultValue: "<a><bhttps://kakaomames.github.io/turbowarp/><chttps://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>",
               },
             },
           },
@@ -251,11 +251,11 @@
             arguments: {
               CHILD: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<d />",
+                defaultValue: "<dhttps://kakaomames.github.io/turbowarp/>",
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<a><b /><c /></a>",
+                defaultValue: "<a><bhttps://kakaomames.github.io/turbowarp/><chttps://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>",
               },
             },
           },
@@ -272,11 +272,11 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<a><b /><c /></a>",
+                defaultValue: "<a><bhttps://kakaomames.github.io/turbowarp/><chttps://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>",
               },
               CHILD: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<d />",
+                defaultValue: "<dhttps://kakaomames.github.io/turbowarp/>",
               },
             },
           },
@@ -291,7 +291,7 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<a><b /><c /></a>",
+                defaultValue: "<a><bhttps://kakaomames.github.io/turbowarp/><chttps://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>",
               },
             },
           },
@@ -306,7 +306,7 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "<a><b /><c /></a>",
+                defaultValue: "<a><bhttps://kakaomames.github.io/turbowarp/><chttps://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>",
               },
             },
           },
@@ -322,7 +322,7 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<a><b /><c class="foo" /></a>',
+                defaultValue: '<a><bhttps://kakaomames.github.io/turbowarp/><c class="foo"https://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>',
               },
             },
           },
@@ -337,7 +337,7 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<a><b /><c class="foo" /></a>',
+                defaultValue: '<a><bhttps://kakaomames.github.io/turbowarp/><c class="foo"https://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>',
               },
             },
           },
@@ -352,7 +352,7 @@
               },
               XML: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: '<a><b class="foo"/><c class="foo" /></a>',
+                defaultValue: '<a><b class="foohttps://kakaomames.github.io/turbowarp/><c class="foo"https://kakaomames.github.io/turbowarp/>https://kakaomames.github.io/turbowarp/a>',
               },
             },
           },
@@ -360,28 +360,28 @@
       };
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.MAYBE_XML
-     */
+     https://kakaomames.github.io/turbowarp/
     isValid({ MAYBE_XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(MAYBE_XML));
       return xml !== null;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.MAYBE_XML
-     */
+     https://kakaomames.github.io/turbowarp/
     errorMessage({ MAYBE_XML }) {
       const { xml, error } = this.stringToXml(Scratch.Cast.toString(MAYBE_XML));
       return xml === null ? error : "";
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     tagName({ XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -390,10 +390,10 @@
       return xml.tagName;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     textContent({ XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -402,11 +402,11 @@
       return xml.textContent;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
      * @param {unknown} args.VALUE
-     */
+     https://kakaomames.github.io/turbowarp/
     setTextContent({ XML, VALUE }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -416,10 +416,10 @@
       return this.xmlToString(xml);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     innerHTML({ XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -428,20 +428,20 @@
       return xml.innerHTML;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
      * @param {unknown} args.VALUE
-     */
+     https://kakaomames.github.io/turbowarp/
     setInnerHTML({ XML, VALUE }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
         return "";
       }
       const value = Scratch.Cast.toString(VALUE);
-      // there needs to be exactly one parent element
+     https://kakaomames.github.io/turbowarp// there needs to be exactly one parent element
       const { xml: newXML } = this.stringToXml(
-        "<testElement>" + value + "</testElement>"
+        "<testElement>" + value + "https://kakaomames.github.io/turbowarp/testElement>"
       );
       if (newXML === null) {
         return "";
@@ -450,10 +450,10 @@
       return this.xmlToString(xml);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     attributes({ XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -462,23 +462,23 @@
       return JSON.stringify([...xml.attributes].map((attr) => attr.name));
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
      * @param {unknown} args.ATTR
-     */
+     https://kakaomames.github.io/turbowarp/
     hasAttribute({ XML, ATTR }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) return false;
       return xml.hasAttribute(Scratch.Cast.toString(ATTR));
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.ATTR
      * @param {unknown} args.XML
      * @param {unknown} args.VALUE
-     */
+     https://kakaomames.github.io/turbowarp/
     setAttribute({ ATTR, XML, VALUE }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -491,11 +491,11 @@
       return this.xmlToString(xml);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.ATTR
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     getAttribute({ ATTR, XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -504,11 +504,11 @@
       return xml.getAttribute(Scratch.Cast.toString(ATTR)) ?? "";
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.ATTR
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     removeAttribute({ ATTR, XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -518,18 +518,18 @@
       return this.xmlToString(xml);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     hasChildren({ XML }) {
       return this.childrenAmount({ XML }) !== 0;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     childrenAmount({ XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -538,11 +538,11 @@
       return xml.childElementCount;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.CHILD
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     addChild({ CHILD, XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -556,12 +556,12 @@
       return this.xmlToString(xml);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.NO
      * @param {unknown} args.XML
      * @param {unknown} args.CHILD
-     */
+     https://kakaomames.github.io/turbowarp/
     replaceChild({ NO, XML, CHILD }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -580,11 +580,11 @@
       return this.xmlToString(xml);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.NO
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     getChild({ NO, XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -597,11 +597,11 @@
       return this.xmlToString(child);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.NO
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     removeChild({ NO, XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -615,11 +615,11 @@
       return this.xmlToString(xml);
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.QUERY
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     querySuccessful({ QUERY, XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -629,11 +629,11 @@
       return child !== null;
     }
 
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.QUERY
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     querySelector({ QUERY, XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {
@@ -645,11 +645,11 @@
       }
       return this.xmlToString(child);
     }
-    /**
+   https://kakaomames.github.io/turbowarp/**
      * @param {object} args
      * @param {unknown} args.QUERY
      * @param {unknown} args.XML
-     */
+     https://kakaomames.github.io/turbowarp/
     querySelectorAll({ QUERY, XML }) {
       const { xml } = this.stringToXml(Scratch.Cast.toString(XML));
       if (xml === null) {

@@ -1,7 +1,7 @@
 (function (Scratch) {
   "use strict";
 
-  // eslint-disable-next-line no-unused-vars
+ https://kakaomames.github.io/turbowarp// eslint-disable-next-line no-unused-vars
   const encode = (str) =>
     btoa(str)
       .split("")
@@ -15,10 +15,10 @@
         .join("")
     );
 
-  // A forewarning for the reader:
-  // This list contains some very bad naughty words, so we've encoded it in a way that
-  // it requires a tiny bit of work to read. Most of these words will get you banned from
-  // Scratch. You have been warned.
+ https://kakaomames.github.io/turbowarp// A forewarning for the reader:
+ https://kakaomames.github.io/turbowarp// This list contains some very bad naughty words, so we've encoded it in a way that
+ https://kakaomames.github.io/turbowarp// it requires a tiny bit of work to read. Most of these words will get you banned from
+ https://kakaomames.github.io/turbowarp// Scratch. You have been warned.
   const NAUGHTY_WORDS = [
     "[oWkbx>>",
     "ZYK{[R>>",
@@ -228,8 +228,8 @@
     "e3:x",
   ].map(decode);
 
-  // Put the longest words first so that if "test" and "tests" are in the word list in
-  // that order, redacting "tests" will give "***" instead of "***s"
+ https://kakaomames.github.io/turbowarp// Put the longest words first so that if "test" and "tests" are in the word list in
+ https://kakaomames.github.io/turbowarp// that order, redacting "tests" will give "***" instead of "***s"
   NAUGHTY_WORDS.sort((a, b) => b.length - a.length);
 
   const regex = new RegExp(NAUGHTY_WORDS.join("|"), "gi");
@@ -265,8 +265,8 @@
     }
 
     checkProfanity({ TEXT, REPLACEMENT }) {
-      // Use a function as the second argument so that replacing with "$&" does not allow
-      // bypass.
+     https://kakaomames.github.io/turbowarp// Use a function as the second argument so that replacing with "$&" does not allow
+     https://kakaomames.github.io/turbowarp// bypass.
       return Scratch.Cast.toString(TEXT).replace(regex, () => REPLACEMENT);
     }
   }

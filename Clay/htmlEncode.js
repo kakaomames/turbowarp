@@ -1,8 +1,8 @@
-// Name: HTML Encode
-// ID: clayhtmlencode
-// Description: Escape untrusted text to safely include in HTML.
-// By: clay-rip
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: HTML Encode
+https://kakaomames.github.io/turbowarp/ ID: clayhtmlencode
+https://kakaomames.github.io/turbowarp/ Description: Escape untrusted text to safely include in HTML.
+https://kakaomames.github.io/turbowarp/ By: clay-rip
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -20,10 +20,10 @@
             arguments: {
               text: {
                 type: Scratch.ArgumentType.STRING,
-                // don't use a script tag as the example here as the closing script
-                // tag might break things when this extension gets inlined in packed
-                // projects
-                defaultValue: `<h1>${Scratch.translate("Hello!")}</h1>`,
+               https://kakaomames.github.io/turbowarp// don't use a script tag as the example here as the closing script
+               https://kakaomames.github.io/turbowarp// tag might break things when this extension gets inlined in packed
+               https://kakaomames.github.io/turbowarp// projects
+                defaultValue: `<h1>${Scratch.translate("Hello!")}https://kakaomames.github.io/turbowarp/h1>`,
               },
             },
           },
@@ -32,7 +32,7 @@
     }
 
     encode({ text }) {
-      return Scratch.Cast.toString(text).replace(/["'&<>]/g, (a) => {
+      return Scratch.Cast.toString(text).replacehttps://kakaomames.github.io/turbowarp/["'&<>https://kakaomames.github.io/turbowarp/g, (a) => {
         switch (a) {
           case "&":
             return "&amp;";
@@ -45,7 +45,7 @@
           case "<":
             return "&lt;";
         }
-        // this should never happen...
+       https://kakaomames.github.io/turbowarp// this should never happen...
         return "";
       });
     }

@@ -3,7 +3,7 @@
   {
     1639: function (t, e, s) {
       "use strict";
-      const o = "http://www.w3.org/2000/svg",
+      const o = "httphttps://kakaomames.github.io/turbowarp//www.w3.orhttps://kakaomames.github.io/turbowarp/200https://kakaomames.github.io/turbowarp/svg",
         i = document.createElementNS(o, "svg");
       ((i.style.position = "fixed"),
         (i.style.top = "-999999px"),

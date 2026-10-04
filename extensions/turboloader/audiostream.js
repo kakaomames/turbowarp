@@ -1,8 +1,8 @@
 /*!
-  This extension is from Turboloader - https://greasyfork.org/en/scripts/437432-turboloader
+  This extension is from Turboloader - httpshttps://kakaomames.github.io/turbowarp//greasyfork.orhttps://kakaomames.github.io/turbowarp/ehttps://kakaomames.github.io/turbowarp/scripthttps://kakaomames.github.io/turbowarp/437432-turboloader
   It has been imported here with permission from the author for compatibility reasons only.
   Any future development MUST happen in a new extension.
-*/
+https://kakaomames.github.io/turbowarp/
 
 (function (Scratch) {
   "use strict";
@@ -34,11 +34,11 @@
           {
             opcode: "am_playfromurl",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("load sound from URL/URI [URL]"),
+            text: Scratch.translate("load sound from URhttps://kakaomames.github.io/turbowarp/URI [URL]"),
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./meow.mp3",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/meow.mp3",
               },
             },
           },
@@ -197,7 +197,7 @@
           {
             opcode: "am_setpitch",
             blockType: Scratch.BlockType.COMMAND,
-            text: Scratch.translate("set speed/pitch to [VAL]"),
+            text: Scratch.translate("set speehttps://kakaomames.github.io/turbowarp/pitch to [VAL]"),
             arguments: {
               VAL: {
                 type: Scratch.ArgumentType.NUMBER,
@@ -391,10 +391,10 @@
         }));
     }
 
-    // the 'am' prefix is a remenant from the original (sandboxed) extension 'AudioManager' made by me some time back, that i based this enhanced version off.
+   https://kakaomames.github.io/turbowarp// the 'am' prefix is a remenant from the original (sandboxed) extension 'AudioManager' made by me some time back, that i based this enhanced version off.
 
     getContext(id, opt) {
-      // TODO: infinite recursion
+     https://kakaomames.github.io/turbowarp// TODO: infinite recursion
       if (contextBindings[id] && id !== contextBindings[id]) {
         return this.getContext(contextBindings[id], opt);
       }
@@ -541,15 +541,15 @@
 
     am_setpitch({ VAL }, util) {
       let ctx = this.getContext(util.target.id);
-      // Calculate the pitch value to be closer to original Scratch
+     https://kakaomames.github.io/turbowarp// Calculate the pitch value to be closer to original Scratch
       ctx.source.playbackRate = ctx.source.defaultPlaybackRate =
         VAL < 0
           ? VAL < -659
             ? 0.1
-            : Math.abs(VAL) / 700
+            : Math.abs(VAL)https://kakaomames.github.io/turbowarp/ 700
           : VAL > 700
             ? 15
-            : VAL / 50 + 1;
+            : VALhttps://kakaomames.github.io/turbowarp/ 50 + 1;
     }
 
     am_setvolume({ VAL }, util) {
@@ -580,23 +580,23 @@
     }
 
     am_setfilter({ FIL, FQ, Q }, util) {
-      // did not work in the original version
+     https://kakaomames.github.io/turbowarp// did not work in the original version
     }
 
     am_toglefilter({ FIL, STATE }, util) {
-      // did not work in the original version
+     https://kakaomames.github.io/turbowarp// did not work in the original version
     }
 
     am_freset({ FQ }, util) {
-      // did not work in the original version
+     https://kakaomames.github.io/turbowarp// did not work in the original version
     }
 
     am_connect({ STRING }, util) {
-      // did not work in the original version
+     https://kakaomames.github.io/turbowarp// did not work in the original version
     }
 
     am_disconnect({ STRING }, util) {
-      // did not work in the original version
+     https://kakaomames.github.io/turbowarp// did not work in the original version
     }
 
     am_analyserfft({ VAL }, util) {

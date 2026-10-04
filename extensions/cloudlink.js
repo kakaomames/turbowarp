@@ -1,13 +1,13 @@
-// Name: CloudLink V4
-// ID: cloudlink
-// Description: A powerful WebSocket extension for Scratch.
-// By: MikeDEV
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: CloudLink V4
+https://kakaomames.github.io/turbowarp/ ID: cloudlink
+https://kakaomames.github.io/turbowarp/ Description: A powerful WebSocket extension for Scratch.
+https://kakaomames.github.io/turbowarp/ By: MikeDEV
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
-  /*
+ https://kakaomames.github.io/turbowarp/*
   
-  Based on https://github.com/Mistium/extensions.mistium/blob/main/files%2FCloudlink4_Improved.js. 
+  Based on httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/Mistiuhttps://kakaomames.github.io/turbowarp/extensions.mistiuhttps://kakaomames.github.io/turbowarp/blohttps://kakaomames.github.io/turbowarp/maihttps://kakaomames.github.io/turbowarp/files%2FCloudlink4_Improved.js. 
   Copyright (c) Mistium 2025.
   
   CloudLink Extension for TurboWarp v0.1.2.
@@ -23,10 +23,10 @@
   - CL4 0.2.0 (latest)
 
   MIT License
-  Copyright 2023 Mike J. Renaker / "MikeDEV".
+  Copyright 2023 Mike J. Renakerhttps://kakaomames.github.io/turbowarp/ "MikeDEV".
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
   to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
-  and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  anhttps://kakaomames.github.io/turbowarp/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
@@ -35,26 +35,26 @@
   FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-  */
+  https://kakaomames.github.io/turbowarp/
 
-  // Require extension to be unsandboxed.
+ https://kakaomames.github.io/turbowarp// Require extension to be unsandboxed.
   "use strict";
   if (!Scratch.extensions.unsandboxed) {
     throw new Error("The CloudLink extension must run unsandboxed.");
   }
 
-  // Declare icons as static SVG URIs
+ https://kakaomames.github.io/turbowarp// Declare icons as static SVG URIs
   const cl_icon =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMjUuMzU0OCIgaGVpZ2h0PSIyMjUuMzU0OCIgdmlld0JveD0iMCwwLDIyNS4zNTQ4LDIyNS4zNTQ4Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTI3LjMyMjYsLTY3LjMyMjYpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0xMjcuMzIyNiwxODBjMCwtNjIuMjMwMDEgNTAuNDQ3MzksLTExMi42Nzc0IDExMi42Nzc0LC0xMTIuNjc3NGM2Mi4yMzAwMSwwIDExMi42Nzc0LDUwLjQ0NzM5IDExMi42Nzc0LDExMi42Nzc0YzAsNjIuMjMwMDEgLTUwLjQ0NzM5LDExMi42Nzc0IC0xMTIuNjc3NCwxMTIuNjc3NGMtNjIuMjMwMDEsMCAtMTEyLjY3NzQsLTUwLjQ0NzM5IC0xMTIuNjc3NCwtMTEyLjY3NzR6IiBmaWxsPSIjMDBjMjhjIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZS13aWR0aD0iMCIvPjxnIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLXdpZHRoPSIxIj48cGF0aCBkPSJNMjg2LjEyMDM3LDE1MC41NTc5NWMyMy4yNDA4NiwwIDQyLjA3ODksMTguODM5NDYgNDIuMDc4OSw0Mi4wNzg5YzAsMjMuMjM5NDQgLTE4LjgzODAzLDQyLjA3ODkgLTQyLjA3ODksNDIuMDc4OWgtOTIuMjQwNzRjLTIzLjI0MDg2LDAgLTQyLjA3ODksLTE4LjgzOTQ2IC00Mi4wNzg5LC00Mi4wNzg5YzAsLTIzLjIzOTQ0IDE4LjgzODAzLC00Mi4wNzg5IDQyLjA3ODksLTQyLjA3ODloNC4xODg4N2MxLjgxMTUzLC0yMS41NzA1NSAxOS44OTM1NywtMzguNTEyODkgNDEuOTMxNSwtMzguNTEyODljMjIuMDM3OTMsMCA0MC4xMTk5NywxNi45NDIzNCA0MS45MzE1LDM4LjUxMjg5eiIgZmlsbD0iI2ZmZmZmZiIvPjxwYXRoIGQ9Ik0yODkuMDg2NTUsMjEwLjM0MTE0djkuMDQ2NjdoLTI2LjkxNjYzaC05LjA0NjY3di05LjA0NjY3di01NC41MDMzOWg5LjA0NjY3djU0LjUwMzM5eiIgZmlsbD0iIzAwYzI4YyIvPjxwYXRoIGQ9Ik0yMjIuNDA5MjUsMjE5LjM4NzgxYy04LjM1MzIsMCAtMTYuMzY0MzEsLTMuMzE4MzQgLTIyLjI3MDksLTkuMjI0OTJjLTUuOTA2NjEsLTUuOTA2NTggLTkuMjI0OTEsLTEzLjkxNzY4IC05LjIyNDkxLC0yMi4yNzA4OWMwLC04LjM1MzIgMy4zMTgyOSwtMTYuMzY0MzEgOS4yMjQ5MSwtMjIuMjcwOWM1LjkwNjU5LC01LjkwNjYxIDEzLjkxNzcsLTkuMjI0OTEgMjIuMjcwOSwtOS4yMjQ5MWgyMS4xMDg5djguOTM0OThoLTIxLjEwODl2MC4xMDI1N2MtNS45NTYyOCwwIC0xMS42Njg2NCwyLjM2NjE2IC0xNS44ODAzNyw2LjU3Nzg5Yy00LjIxMTczLDQuMjExNzMgLTYuNTc3ODksOS45MjQwOCAtNi41Nzc4OSwxNS44ODAzN2MwLDUuOTU2MjggMi4zNjYxNiwxMS42Njg2NCA2LjU3Nzg5LDE1Ljg4MDM3YzQuMjExNzMsNC4yMTE3MyA5LjkyNDA4LDYuNTc3OTMgMTUuODgwMzcsNi41Nzc5M3YwLjEwMjUzaDIxLjEwODl2OC45MzQ5OHoiIGZpbGw9IiMwMGMyOGMiLz48L2c+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTEyLjY3NzQwNDA4NDA4MzkyOjExMi42Nzc0MDQwODQwODQwMy0tPg==";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMjUuMzU0OCIgaGVpZ2h0PSIyMjUuMzU0OCIgdmlld0JveD0iMCwwLDIyNS4zNTQ4LDIyNS4zNTQ4Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTI3LjMyMjYsLTY3LjMyMjYpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0xMjcuMzIyNiwxODBjMCwtNjIuMjMwMDEgNTAuNDQ3MzksLTExMi42Nzc0IDExMi42Nzc0LC0xMTIuNjc3NGM2Mi4yMzAwMSwwIDExMi42Nzc0LDUwLjQ0NzM5IDExMi42Nzc0LDExMi42Nzc0YzAsNjIuMjMwMDEgLTUwLjQ0NzM5LDExMi42Nzc0IC0xMTIuNjc3NCwxMTIuNjc3NGMtNjIuMjMwMDEsMCAtMTEyLjY3NzQsLTUwLjQ0NzM5IC0xMTIuNjc3NCwtMTEyLjY3NzR6IiBmaWxsPSIjMDBjMjhjIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZS13aWR0aD0iMCIvPjxnIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLXdpZHRoPSIxIj48cGF0aCBkPSJNMjg2LjEyMDM3LDE1MC41NTc5NWMyMy4yNDA4NiwwIDQyLjA3ODksMTguODM5NDYgNDIuMDc4OSw0Mi4wNzg5YzAsMjMuMjM5NDQgLTE4LjgzODAzLDQyLjA3ODkgLTQyLjA3ODksNDIuMDc4OWgtOTIuMjQwNzRjLTIzLjI0MDg2LDAgLTQyLjA3ODksLTE4LjgzOTQ2IC00Mi4wNzg5LC00Mi4wNzg5YzAsLTIzLjIzOTQ0IDE4LjgzODAzLC00Mi4wNzg5IDQyLjA3ODksLTQyLjA3ODloNC4xODg4N2MxLjgxMTUzLC0yMS41NzA1NSAxOS44OTM1NywtMzguNTEyODkgNDEuOTMxNSwtMzguNTEyODljMjIuMDM3OTMsMCA0MC4xMTk5NywxNi45NDIzNCA0MS45MzE1LDM4LjUxMjg5eiIgZmlsbD0iI2ZmZmZmZiIvPjxwYXRoIGQ9Ik0yODkuMDg2NTUsMjEwLjM0MTE0djkuMDQ2NjdoLTI2LjkxNjYzaC05LjA0NjY3di05LjA0NjY3di01NC41MDMzOWg5LjA0NjY3djU0LjUwMzM5eiIgZmlsbD0iIzAwYzI4YyIvPjxwYXRoIGQ9Ik0yMjIuNDA5MjUsMjE5LjM4NzgxYy04LjM1MzIsMCAtMTYuMzY0MzEsLTMuMzE4MzQgLTIyLjI3MDksLTkuMjI0OTJjLTUuOTA2NjEsLTUuOTA2NTggLTkuMjI0OTEsLTEzLjkxNzY4IC05LjIyNDkxLC0yMi4yNzA4OWMwLC04LjM1MzIgMy4zMTgyOSwtMTYuMzY0MzEgOS4yMjQ5MSwtMjIuMjcwOWM1LjkwNjU5LC01LjkwNjYxIDEzLjkxNzcsLTkuMjI0OTEgMjIuMjcwOSwtOS4yMjQ5MWgyMS4xMDg5djguOTM0OThoLTIxLjEwODl2MC4xMDI1N2MtNS45NTYyOCwwIC0xMS42Njg2NCwyLjM2NjE2IC0xNS44ODAzNyw2LjU3Nzg5Yy00LjIxMTczLDQuMjExNzMgLTYuNTc3ODksOS45MjQwOCAtNi41Nzc4OSwxNS44ODAzN2MwLDUuOTU2MjggMi4zNjYxNiwxMS42Njg2NCA2LjU3Nzg5LDE1Ljg4MDM3YzQuMjExNzMsNC4yMTE3MyA5LjkyNDA4LDYuNTc3OTMgMTUuODgwMzcsNi41Nzc5M3YwLjEwMjUzaDIxLjEwODl2OC45MzQ5OHoiIGZpbGw9IiMwMGMyOGMiLz48L2c+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTEyLjY3NzQwNDA4NDA4MzkyOjExMi42Nzc0MDQwODQwODQwMy0tPg==";
   const cl_block =
-    "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNzYuMzk4NTQiIGhlaWdodD0iMTIyLjY3MDY5IiB2aWV3Qm94PSIwLDAsMTc2LjM5ODU0LDEyMi42NzA2OSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1MS44MDA3MywtMTE4LjY2NDY2KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PGc+PHBhdGggZD0iTTI4Ni4xMjAzNywxNTcuMTc3NTVjMjMuMjQwODYsMCA0Mi4wNzg5LDE4LjgzOTQ2IDQyLjA3ODksNDIuMDc4OWMwLDIzLjIzOTQ0IC0xOC44MzgwMyw0Mi4wNzg5IC00Mi4wNzg5LDQyLjA3ODloLTkyLjI0MDc0Yy0yMy4yNDA4NiwwIC00Mi4wNzg5LC0xOC44Mzk0NiAtNDIuMDc4OSwtNDIuMDc4OWMwLC0yMy4yMzk0NCAxOC44MzgwMywtNDIuMDc4OSA0Mi4wNzg5LC00Mi4wNzg5aDQuMTg4ODdjMS44MTE1MywtMjEuNTcwNTUgMTkuODkzNTcsLTM4LjUxMjg5IDQxLjkzMTUsLTM4LjUxMjg5YzIyLjAzNzkzLDAgNDAuMTE5OTcsMTYuOTQyMzQgNDEuOTMxNSwzOC41MTI4OXoiIGZpbGw9IiNmZmZmZmYiLz48cGF0aCBkPSJNMjg5LjA4NjU1LDIxNi45NjA3NHY5LjA0NjY3aC0yNi45MTY2M2gtOS4wNDY2N3YtOS4wNDY2N3YtNTQuNTAzMzloOS4wNDY2N3Y1NC41MDMzOXoiIGZpbGw9IiMwMGMyOGMiLz48cGF0aCBkPSJNMjIyLjQwOTI1LDIyNi4wMDc0MWMtOC4zNTMyLDAgLTE2LjM2NDMxLC0zLjMxODM0IC0yMi4yNzA5LC05LjIyNDkyYy01LjkwNjYxLC01LjkwNjU4IC05LjIyNDkxLC0xMy45MTc2OCAtOS4yMjQ5MSwtMjIuMjcwODljMCwtOC4zNTMyIDMuMzE4MjksLTE2LjM2NDMxIDkuMjI0OTEsLTIyLjI3MDljNS45MDY1OSwtNS45MDY2MSAxMy45MTc3LC05LjIyNDkxIDIyLjI3MDksLTkuMjI0OTFoMjEuMTA4OXY4LjkzNDk4aC0yMS4xMDg5djAuMTAyNTdjLTUuOTU2MjgsMCAtMTEuNjY4NjQsMi4zNjYxNiAtMTUuODgwMzcsNi41Nzc4OWMtNC4yMTE3Myw0LjIxMTczIC02LjU3Nzg5LDkuOTI0MDggLTYuNTc3ODksMTUuODgwMzdjMCw1Ljk1NjI4IDIuMzY2MTYsMTEuNjY4NjQgNi41Nzc4OSwxNS44ODAzN2M0LjIxMTczLDQuMjExNzMgOS45MjQwOCw2LjU3NzkzIDE1Ljg4MDM3LDYuNTc3OTN2MC4xMDI1M2gyMS4xMDg5djguOTM0OTh6IiBmaWxsPSIjMDBjMjhjIi8+PC9nPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjg4LjE5OTI2OTk5OTk5OTk4OjYxLjMzNTM0NDk5OTk5OTk5LS0+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNzYuMzk4NTQiIGhlaWdodD0iMTIyLjY3MDY5IiB2aWV3Qm94PSIwLDAsMTc2LjM5ODU0LDEyMi42NzA2OSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1MS44MDA3MywtMTE4LjY2NDY2KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PGc+PHBhdGggZD0iTTI4Ni4xMjAzNywxNTcuMTc3NTVjMjMuMjQwODYsMCA0Mi4wNzg5LDE4LjgzOTQ2IDQyLjA3ODksNDIuMDc4OWMwLDIzLjIzOTQ0IC0xOC44MzgwMyw0Mi4wNzg5IC00Mi4wNzg5LDQyLjA3ODloLTkyLjI0MDc0Yy0yMy4yNDA4NiwwIC00Mi4wNzg5LC0xOC44Mzk0NiAtNDIuMDc4OSwtNDIuMDc4OWMwLC0yMy4yMzk0NCAxOC44MzgwMywtNDIuMDc4OSA0Mi4wNzg5LC00Mi4wNzg5aDQuMTg4ODdjMS44MTE1MywtMjEuNTcwNTUgMTkuODkzNTcsLTM4LjUxMjg5IDQxLjkzMTUsLTM4LjUxMjg5YzIyLjAzNzkzLDAgNDAuMTE5OTcsMTYuOTQyMzQgNDEuOTMxNSwzOC41MTI4OXoiIGZpbGw9IiNmZmZmZmYiLz48cGF0aCBkPSJNMjg5LjA4NjU1LDIxNi45NjA3NHY5LjA0NjY3aC0yNi45MTY2M2gtOS4wNDY2N3YtOS4wNDY2N3YtNTQuNTAzMzloOS4wNDY2N3Y1NC41MDMzOXoiIGZpbGw9IiMwMGMyOGMiLz48cGF0aCBkPSJNMjIyLjQwOTI1LDIyNi4wMDc0MWMtOC4zNTMyLDAgLTE2LjM2NDMxLC0zLjMxODM0IC0yMi4yNzA5LC05LjIyNDkyYy01LjkwNjYxLC01LjkwNjU4IC05LjIyNDkxLC0xMy45MTc2OCAtOS4yMjQ5MSwtMjIuMjcwODljMCwtOC4zNTMyIDMuMzE4MjksLTE2LjM2NDMxIDkuMjI0OTEsLTIyLjI3MDljNS45MDY1OSwtNS45MDY2MSAxMy45MTc3LC05LjIyNDkxIDIyLjI3MDksLTkuMjI0OTFoMjEuMTA4OXY4LjkzNDk4aC0yMS4xMDg5djAuMTAyNTdjLTUuOTU2MjgsMCAtMTEuNjY4NjQsMi4zNjYxNiAtMTUuODgwMzcsNi41Nzc4OWMtNC4yMTE3Myw0LjIxMTczIC02LjU3Nzg5LDkuOTI0MDggLTYuNTc3ODksMTUuODgwMzdjMCw1Ljk1NjI4IDIuMzY2MTYsMTEuNjY4NjQgNi41Nzc4OSwxNS44ODAzN2M0LjIxMTczLDQuMjExNzMgOS45MjQwOCw2LjU3NzkzIDE1Ljg4MDM3LDYuNTc3OTN2MC4xMDI1M2gyMS4xMDg5djguOTM0OTh6IiBmaWxsPSIjMDBjMjhjIi8+PC9nPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjg4LjE5OTI2OTk5OTk5OTk4OjYxLjMzNTM0NDk5OTk5OTk5LS0+";
 
-  // Declare VM
+ https://kakaomames.github.io/turbowarp// Declare VM
   const Cast = Scratch.Cast;
   const vm = Scratch.vm;
   const runtime = vm.runtime;
 
-  /*
+ https://kakaomames.github.io/turbowarp/*
   This versioning system is intended for future use with CloudLink.
 
   When the client sends the handshake request, it will provide the server with the following details:
@@ -74,28 +74,28 @@
   version.versionString - Semantic Versioning string. Intended for source-code versioning only.
 
   The extension will auto-generate a version string by using generateVersionString().
-  */
+  https://kakaomames.github.io/turbowarp/
   const version = {
     editorType: "TurboWarp",
     versionNumber: 2,
-    versionString: "0.1.3", // Styling/Parity and Translation Strings Update
+    versionString: "0.1.3",https://kakaomames.github.io/turbowarp// Stylinhttps://kakaomames.github.io/turbowarp/Parity and Translation Strings Update
   };
 
-  // Store extension state
+ https://kakaomames.github.io/turbowarp// Store extension state
   var clVars = {
-    // Editor-specific variable for hiding old, legacy-support blocks.
+   https://kakaomames.github.io/turbowarp// Editor-specific variable for hiding old, legacy-support blocks.
     hideCLDeprecatedBlocks: true,
 
-    // WebSocket object.
+   https://kakaomames.github.io/turbowarp// WebSocket object.
     socket: null,
 
-    // Disable nags about old servers.
+   https://kakaomames.github.io/turbowarp// Disable nags about old servers.
     currentServerUrl: "",
     lastServerUrl: "",
 
-    // gmsg.queue - An array of all currently queued gmsg values.
-    // gmsg.varState - The value of the most recently received gmsg message.
-    // gmsg.hasNew - Returns true if a new gmsg value has been received.
+   https://kakaomames.github.io/turbowarp// gmsg.queue - An array of all currently queued gmsg values.
+   https://kakaomames.github.io/turbowarp// gmsg.varState - The value of the most recently received gmsg message.
+   https://kakaomames.github.io/turbowarp// gmsg.hasNew - Returns true if a new gmsg value has been received.
     gmsg: {
       queue: [],
       varState: "",
@@ -103,9 +103,9 @@
       eventHatTick: false,
     },
 
-    // pmsg.queue - An array of all currently queued pmsg values.
-    // pmsg.varState - The value of the most recently received pmsg message.
-    // pmsg.hasNew - Returns true if a new pmsg value has been received.
+   https://kakaomames.github.io/turbowarp// pmsg.queue - An array of all currently queued pmsg values.
+   https://kakaomames.github.io/turbowarp// pmsg.varState - The value of the most recently received pmsg message.
+   https://kakaomames.github.io/turbowarp// pmsg.hasNew - Returns true if a new pmsg value has been received.
     pmsg: {
       queue: [],
       varState: "",
@@ -113,25 +113,25 @@
       eventHatTick: false,
     },
 
-    // gvar.queue - An array of all currently queued gvar values.
-    // gvar.varStates - A dictionary storing each gvar variable.
+   https://kakaomames.github.io/turbowarp// gvar.queue - An array of all currently queued gvar values.
+   https://kakaomames.github.io/turbowarp// gvar.varStates - A dictionary storing each gvar variable.
     gvar: {
       queue: [],
       varStates: {},
       eventHatTick: false,
     },
 
-    // pvar.queue - An array of all currently queued pvar values.
-    // pvar.varStates - A dictionary storing each pvar variable.
+   https://kakaomames.github.io/turbowarp// pvar.queue - An array of all currently queued pvar values.
+   https://kakaomames.github.io/turbowarp// pvar.varStates - A dictionary storing each pvar variable.
     pvar: {
       queue: [],
       varStates: {},
       eventHatTick: false,
     },
 
-    // direct.queue - An array of all currently queued direct values.
-    // direct.varState - The value of the most recently received direct message.
-    // direct.hasNew - Returns true if a new direct value has been received.
+   https://kakaomames.github.io/turbowarp// direct.queue - An array of all currently queued direct values.
+   https://kakaomames.github.io/turbowarp// direct.varState - The value of the most recently received direct message.
+   https://kakaomames.github.io/turbowarp// direct.hasNew - Returns true if a new direct value has been received.
     direct: {
       queue: [],
       varState: "",
@@ -139,9 +139,9 @@
       eventHatTick: false,
     },
 
-    // statuscode.queue - An array of all currently queued statuscode values.
-    // statuscode.varState - The value of the most recently received statuscode message.
-    // statuscode.hasNew - Returns true if a new statuscode value has been received.
+   https://kakaomames.github.io/turbowarp// statuscode.queue - An array of all currently queued statuscode values.
+   https://kakaomames.github.io/turbowarp// statuscode.varState - The value of the most recently received statuscode message.
+   https://kakaomames.github.io/turbowarp// statuscode.hasNew - Returns true if a new statuscode value has been received.
     statuscode: {
       queue: [],
       varState: "",
@@ -149,22 +149,22 @@
       eventHatTick: false,
     },
 
-    // ulist stores all currently connected client objects in the server/all subscribed room(s).
+   https://kakaomames.github.io/turbowarp// ulist stores all currently connected client objects in the servehttps://kakaomames.github.io/turbowarp/all subscribed room(s).
     ulist: [],
 
-    // Message-Of-The-Day
+   https://kakaomames.github.io/turbowarp// Message-Of-The-Day
     motd: "",
 
-    // Client IP address
+   https://kakaomames.github.io/turbowarp// Client IP address
     client_ip: "",
 
-    // Server version string
+   https://kakaomames.github.io/turbowarp// Server version string
     server_version: "",
 
-    // listeners.enablerState - Set to true when "createListener" is used.
-    // listeners.enablerValue - Set to a new listener ID when "createListener" is used.
-    // listeners.current - Keeps track of all current listener IDs being awaited.
-    // listeners.varStates - Storage for all successfully awaited messages from specific listener IDs.
+   https://kakaomames.github.io/turbowarp// listeners.enablerState - Set to true when "createListener" is used.
+   https://kakaomames.github.io/turbowarp// listeners.enablerValue - Set to a new listener ID when "createListener" is used.
+   https://kakaomames.github.io/turbowarp// listeners.current - Keeps track of all current listener IDs being awaited.
+   https://kakaomames.github.io/turbowarp// listeners.varStates - Storage for all successfully awaited messages from specific listener IDs.
     listeners: {
       enablerState: false,
       enablerValue: "",
@@ -172,13 +172,13 @@
       varStates: {},
     },
 
-    // rooms.enablerState - Set to true when "selectRoomsInNextPacket" is used.
-    // rooms.enablerValue - Set to a new list of rooms when "selectRoomsInNextPacket" is used.
-    // rooms.current - Keeps track of all current rooms being used.
-    // rooms.varStates - Storage for all per-room messages.
-    // rooms.isLinked - Set to true when a room link request is successful. False when unlinked.
-    // rooms.isAttemptingLink - Set to true when running "linkToRooms()".
-    // rooms.isAttemptingUnlink - Set to true when running "unlinkFromRooms()".
+   https://kakaomames.github.io/turbowarp// rooms.enablerState - Set to true when "selectRoomsInNextPacket" is used.
+   https://kakaomames.github.io/turbowarp// rooms.enablerValue - Set to a new list of rooms when "selectRoomsInNextPacket" is used.
+   https://kakaomames.github.io/turbowarp// rooms.current - Keeps track of all current rooms being used.
+   https://kakaomames.github.io/turbowarp// rooms.varStates - Storage for all per-room messages.
+   https://kakaomames.github.io/turbowarp// rooms.isLinked - Set to true when a room link request is successful. False when unlinked.
+   https://kakaomames.github.io/turbowarp// rooms.isAttemptingLink - Set to true when running "linkToRooms()".
+   https://kakaomames.github.io/turbowarp// rooms.isAttemptingUnlink - Set to true when running "unlinkFromRooms()".
     rooms: {
       enablerState: false,
       enablerValue: "",
@@ -189,7 +189,7 @@
       varStates: {},
     },
 
-    // Username state
+   https://kakaomames.github.io/turbowarp// Username state
     username: {
       attempted: false,
       accepted: false,
@@ -197,16 +197,16 @@
       value: "",
     },
 
-    // Store user_obj messages.
+   https://kakaomames.github.io/turbowarp// Store user_obj messages.
     myUserObject: {},
 
-    /* 
+   https://kakaomames.github.io/turbowarp/* 
     linkState.status - Current state of the connection.
       0 - Ready
       1 - Connecting
       2 - Connected
       3 - Disconnected, gracefully (OK)
-      4 - Disconnected, abruptly (Connection failed / dropped)
+      4 - Disconnected, abruptly (Connection failedhttps://kakaomames.github.io/turbowarp/ dropped)
     
     linkState.isAttemptingGracefulDisconnect - Boolean used to ignore websocket codes when disconnecting.
 
@@ -221,7 +221,7 @@
       2 - CL4 0.1.8.x - First version to support listeners, and modern server_version support. First version to implement rooms support.
       3 - CL4 0.1.9.x - First version to implement the handshake command and better ulist events.
       4 - CL4 0.2.0 - Latest version. First version to implement client_obj and enhanced ulists.
-    */
+    https://kakaomames.github.io/turbowarp/
     linkState: {
       status: 0,
       isAttemptingGracefulDisconnect: false,
@@ -229,21 +229,21 @@
       identifiedProtocol: 0,
     },
 
-    // Timeout of 500ms upon connection to try and handshake. Automatically aborted if server_version is received within that timespan.
+   https://kakaomames.github.io/turbowarp// Timeout of 500ms upon connection to try and handshake. Automatically aborted if server_version is received within that timespan.
     handshakeTimeout: null,
 
-    // Prevent accidentally sending the handshake command more than once per connection.
+   https://kakaomames.github.io/turbowarp// Prevent accidentally sending the handshake command more than once per connection.
     handshakeAttempted: false,
 
-    // Storage for the publically available CloudLink instances.
+   https://kakaomames.github.io/turbowarp// Storage for the publically available CloudLink instances.
     serverList: {
       0: {
         id: "Localhost",
-        url: "ws://127.0.0.1:3000/",
+        url: "wshttps://kakaomames.github.io/turbowarp//127.0.0.1:300https://kakaomames.github.io/turbowarp/",
       },
       7: {
         id: "MikeDEV's Spare CL 0.2.0 Server",
-        url: "wss://cl.mikedev101.cc/",
+        url: "wsshttps://kakaomames.github.io/turbowarp//cl.mikedev101.chttps://kakaomames.github.io/turbowarp/",
       },
     },
   };
@@ -252,7 +252,7 @@
     return `${version.editorType} ${version.versionString}`;
   }
 
-  // Makes values safe for Scratch to represent.
+ https://kakaomames.github.io/turbowarp// Makes values safe for Scratch to represent.
   function makeValueScratchSafe(data) {
     if (typeof data == "object") {
       try {
@@ -265,7 +265,7 @@
     }
   }
 
-  // Clears out and resets the various values of clVars upon disconnect.
+ https://kakaomames.github.io/turbowarp// Clears out and resets the various values of clVars upon disconnect.
   function resetOnClose() {
     window.clearTimeout(clVars.handshakeTimeout);
     clVars.handshakeAttempted = false;
@@ -334,67 +334,67 @@
     };
   }
 
-  // CL-specific netcode needed for sending messages
+ https://kakaomames.github.io/turbowarp// CL-specific netcode needed for sending messages
   function sendMessage(message) {
-    // Prevent running this while disconnected
+   https://kakaomames.github.io/turbowarp// Prevent running this while disconnected
     if (clVars.socket == null) {
-      //console.warn("[CloudLink] Ignoring attempt to send a packet while disconnected.");
+     https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Ignoring attempt to send a packet while disconnected.");
       return;
     }
 
-    // See if the outgoing val argument can be converted into JSON
+   https://kakaomames.github.io/turbowarp// See if the outgoing val argument can be converted into JSON
     if (Object.prototype.hasOwnProperty.call(message, "val")) {
       try {
         message.val = JSON.parse(message.val);
       } catch {}
     }
 
-    // Attach listeners
+   https://kakaomames.github.io/turbowarp// Attach listeners
     if (clVars.listeners.enablerState) {
-      // 0.1.8.x was the first server version to support listeners.
+     https://kakaomames.github.io/turbowarp// 0.1.8.x was the first server version to support listeners.
       if (clVars.linkState.identifiedProtocol >= 2) {
         message.listener = clVars.listeners.enablerValue;
 
-        // Create listener
+       https://kakaomames.github.io/turbowarp// Create listener
         clVars.listeners.varStates[message.listener] = {
           hasNew: false,
           varState: {},
           eventHatTick: false,
         };
       } else {
-        //console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support listeners.");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support listeners.");
       }
       clVars.listeners.enablerState = false;
     }
 
-    // Check if server supports rooms
+   https://kakaomames.github.io/turbowarp// Check if server supports rooms
     if (
       (message.cmd == "link" || message.cmd == "unlink") &&
       clVars.linkState.identifiedProtocol < 2
     ) {
-      // 0.1.8.x was the first server version to support rooms.
-      //console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support room linking/unlinking.");
+     https://kakaomames.github.io/turbowarp// 0.1.8.x was the first server version to support rooms.
+     https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support room linkinhttps://kakaomames.github.io/turbowarp/unlinking.");
       return;
     }
 
-    // Convert the outgoing message to JSON
+   https://kakaomames.github.io/turbowarp// Convert the outgoing message to JSON
     let outgoing = "";
     try {
       outgoing = JSON.stringify(message);
     } catch (SyntaxError) {
-      //console.warn("[CloudLink] Failed to send a packet, invalid syntax:", message);
+     https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Failed to send a packet, invalid syntax:", message);
       return;
     }
 
-    // Send the message
-    //console.log("[CloudLink] TX:", message);
+   https://kakaomames.github.io/turbowarp// Send the message
+   https://kakaomames.github.io/turbowarp//console.log("[CloudLink] TX:", message);
     clVars.socket.send(outgoing);
   }
 
-  // Only sends the handshake command.
+ https://kakaomames.github.io/turbowarp// Only sends the handshake command.
   function sendHandshake() {
     if (clVars.handshakeAttempted) return;
-    //console.log("[CloudLink] Sending handshake...");
+   https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Sending handshake...");
     sendMessage({
       cmd: "handshake",
       val: {
@@ -409,59 +409,59 @@
     clVars.handshakeAttempted = true;
   }
 
-  // Compare the version string of the server to known compatible variants to configure clVars.linkState.identifiedProtocol.
+ https://kakaomames.github.io/turbowarp// Compare the version string of the server to known compatible variants to configure clVars.linkState.identifiedProtocol.
   function setServerVersion(version) {
-    //console.log(`[CloudLink] Server version: ${Cast.toString(version)}`);
+   https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Server version: ${Cast.toString(version)}`);
     clVars.server_version = version;
 
-    // Auto-detect versions
+   https://kakaomames.github.io/turbowarp// Auto-detect versions
     const versions = {
       "0.2.": 4,
       "0.1.9": 3,
       "0.1.8": 2,
       "0.1.7": 1,
       "0.1.5": 0,
-      "S2.2": 0, // 0.1.5
-      "0.1.": 0, // 0.1.5 or legacy
-      "S2.": 0, // Legacy
-      "S1.": -1, // Obsolete
+      "S2.2": 0,https://kakaomames.github.io/turbowarp// 0.1.5
+      "0.1.": 0,https://kakaomames.github.io/turbowarp// 0.1.5 or legacy
+      "S2.": 0,https://kakaomames.github.io/turbowarp// Legacy
+      "S1.": -1,https://kakaomames.github.io/turbowarp// Obsolete
     };
 
     for (const [key, value] of Object.entries(versions)) {
       if (version.includes(key)) {
         if (clVars.linkState.identifiedProtocol < value) {
-          // Disconnect if protcol is too old
+         https://kakaomames.github.io/turbowarp// Disconnect if protcol is too old
           if (value == -1) {
-            //console.warn(`[CloudLink] Server is too old to enable leagacy support. Disconnecting.`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Server is too old to enable leagacy support. Disconnecting.`);
             return clVars.socket.close(1000, "");
           }
 
-          // Set the identified protocol variant
+         https://kakaomames.github.io/turbowarp// Set the identified protocol variant
           clVars.linkState.identifiedProtocol = value;
         }
       }
     }
 
-    // Log configured spec version
-    // // ////console.log(`[CloudLink] Configured protocol spec to v${clVars.linkState.identifiedProtocol}.`);
+   https://kakaomames.github.io/turbowarp// Log configured spec version
+   https://kakaomames.github.io/turbowarp//https://kakaomames.github.io/turbowarp//https://kakaomames.github.io/turbowarp/https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Configured protocol spec to v${clVars.linkState.identifiedProtocol}.`);
 
-    // Fix timing bug
+   https://kakaomames.github.io/turbowarp// Fix timing bug
     clVars.linkState.status = 2;
 
-    // Fire event hats (only one not broken)
+   https://kakaomames.github.io/turbowarp// Fire event hats (only one not broken)
     runtime.startHats("cloudlink_onConnect");
 
-    // Don't nag user if they already trusted this server
+   https://kakaomames.github.io/turbowarp// Don't nag user if they already trusted this server
     if (clVars.currentServerUrl === clVars.lastServerUrl) return;
 
-    // Ask user if they wish to stay connected if the server is unsupported
+   https://kakaomames.github.io/turbowarp// Ask user if they wish to stay connected if the server is unsupported
     if (
       clVars.linkState.identifiedProtocol < 4 &&
       !confirm(
-        `You have connected to an old CloudLink server, running version ${clVars.server_version}.\n\nFor your security and privacy, we recommend you disconnect from this server and connect to an up-to-date server.\n\nClick/tap "OK" to stay connected.`
+        `You have connected to an old CloudLink server, running version ${clVars.server_version}.\n\nFor your security and privacy, we recommend you disconnect from this server and connect to an up-to-date server.\n\nClichttps://kakaomames.github.io/turbowarp/tap "OK" to stay connected.`
       )
     ) {
-      // Close the connection if they choose "Cancel"
+     https://kakaomames.github.io/turbowarp// Close the connection if they choose "Cancel"
       clVars.linkState.isAttemptingGracefulDisconnect = true;
       clVars.socket.close(
         1000,
@@ -470,27 +470,27 @@
       return;
     }
 
-    // Don't nag user the next time they connect to this server
+   https://kakaomames.github.io/turbowarp// Don't nag user the next time they connect to this server
     clVars.lastServerUrl = clVars.currentServerUrl;
   }
 
-  // CL-specific netcode needed to make the extension work
+ https://kakaomames.github.io/turbowarp// CL-specific netcode needed to make the extension work
   function handleMessage(data) {
-    // Parse the message JSON
+   https://kakaomames.github.io/turbowarp// Parse the message JSON
     let packet = {};
     try {
       packet = JSON.parse(data);
     } catch (SyntaxError) {
-      //console.error("[CloudLink] Incoming message parse failure! Is this really a CloudLink server?", data);
+     https://kakaomames.github.io/turbowarp//console.error("[CloudLink] Incoming message parse failure! Is this really a CloudLink server?", data);
       return;
     }
 
-    // Handle packet commands
+   https://kakaomames.github.io/turbowarp// Handle packet commands
     if (!Object.prototype.hasOwnProperty.call(packet, "cmd")) {
-      //console.error("[CloudLink] Incoming message read failure! This message doesn't contain the required \"cmd\" key. Is this really a CloudLink server?", packet);
+     https://kakaomames.github.io/turbowarp//console.error("[CloudLink] Incoming message read failure! This message doesn't contain the required \"cmd\" key. Is this really a CloudLink server?", packet);
       return;
     }
-    //console.log("[CloudLink] RX:", packet);
+   https://kakaomames.github.io/turbowarp//console.log("[CloudLink] RX:", packet);
     switch (packet.cmd) {
       case "gmsg":
         clVars.gmsg.varState = packet.val;
@@ -527,24 +527,24 @@
         break;
 
       case "direct":
-        // Handle events from older server versions
+       https://kakaomames.github.io/turbowarp// Handle events from older server versions
         if (Object.prototype.hasOwnProperty.call(packet.val, "cmd")) {
           switch (packet.val.cmd) {
-            // Server 0.1.5 (at least)
+           https://kakaomames.github.io/turbowarp// Server 0.1.5 (at least)
             case "vers":
               window.clearTimeout(clVars.handshakeTimeout);
               setServerVersion(packet.val.val);
               return;
 
-            // Server 0.1.7 (at least)
+           https://kakaomames.github.io/turbowarp// Server 0.1.7 (at least)
             case "motd":
-              //console.log(`[CloudLink] Message of the day: \"${packet.val.val}\"`);
+             https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Message of the day: \"${packet.val.val}\"`);
               clVars.motd = packet.val.val;
               return;
           }
         }
 
-        // Store direct value
+       https://kakaomames.github.io/turbowarp// Store direct value
         clVars.direct.varState = packet.val;
         clVars.direct.hasNew = true;
         clVars.direct.queue.push(packet);
@@ -552,124 +552,124 @@
         break;
 
       case "client_obj":
-        //console.log("[CloudLink] Client object for this session:", packet.val);
+       https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Client object for this session:", packet.val);
         clVars.myUserObject = packet.val;
         break;
 
       case "statuscode":
-        // Store direct value
-        // Protocol v0 (0.1.5 and legacy) don't implement status codes.
+       https://kakaomames.github.io/turbowarp// Store direct value
+       https://kakaomames.github.io/turbowarp// Protocol v0 (0.1.5 and legacy) don't implement status codes.
         if (clVars.linkState.identifiedProtocol == 0) {
-          //console.warn("[CloudLink] Received a statuscode message while using protocol v0. This event shouldn't happen. It's likely that this server is modified (did MikeDEV overlook some unexpected behavior?).");
+         https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Received a statuscode message while using protocol v0. This event shouldn't happen. It's likely that this server is modified (did MikeDEV overlook some unexpected behavior?).");
           return;
         }
 
-        // Protocol v1 (0.1.7) uses "val" to represent the code.
+       https://kakaomames.github.io/turbowarp// Protocol v1 (0.1.7) uses "val" to represent the code.
         else if (clVars.linkState.identifiedProtocol == 1) {
           clVars.statuscode.varState = packet.val;
         }
 
-        // Protocol v2 (0.1.8.x) uses "code" instead.
-        // Protocol v3-v4 (0.1.9.x - latest, 0.2.0) adds "code_id" to the payload. Ignored by Scratch clients.
+       https://kakaomames.github.io/turbowarp// Protocol v2 (0.1.8.x) uses "code" instead.
+       https://kakaomames.github.io/turbowarp// Protocol v3-v4 (0.1.9.x - latest, 0.2.0) adds "code_id" to the payload. Ignored by Scratch clients.
         else {
-          // Handle setup listeners
+         https://kakaomames.github.io/turbowarp// Handle setup listeners
           if (Object.prototype.hasOwnProperty.call(packet, "listener")) {
             switch (packet.listener) {
               case "username_cfg":
-                // Username accepted
+               https://kakaomames.github.io/turbowarp// Username accepted
                 if (packet.code.includes("I:100")) {
                   clVars.myUserObject = packet.val;
                   clVars.username.value = packet.val.username;
                   clVars.username.accepted = true;
-                  //console.log(`[CloudLink] Username has been set to \"${clVars.username.value}\" successfully!`);
+                 https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Username has been set to \"${clVars.username.value}\" successfully!`);
 
-                  // Username rejected / error
+                 https://kakaomames.github.io/turbowarp// Username rejectedhttps://kakaomames.github.io/turbowarp/ error
                 } else {
-                  //console.log(`[CloudLink] Username rejected by the server! Error code ${packet.code}.}`);
+                 https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Username rejected by the server! Error code ${packet.code}.}`);
                 }
                 return;
 
               case "handshake_cfg":
-                // Prevent handshake responses being stored in the statuscode variables
-                //console.log("[CloudLink] Server responded to our handshake!");
+               https://kakaomames.github.io/turbowarp// Prevent handshake responses being stored in the statuscode variables
+               https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Server responded to our handshake!");
                 return;
 
               case "link":
-                // Room link accepted
+               https://kakaomames.github.io/turbowarp// Room link accepted
                 if (!clVars.rooms.isAttemptingLink) return;
                 if (packet.code.includes("I:100")) {
                   clVars.rooms.isAttemptingLink = false;
                   clVars.rooms.isLinked = true;
-                  //console.log("[CloudLink] Room linked successfully!");
+                 https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Room linked successfully!");
 
-                  // Room link rejected / error
+                 https://kakaomames.github.io/turbowarp// Room link rejectedhttps://kakaomames.github.io/turbowarp/ error
                 } else {
-                  //console.log(`[CloudLink] Room link rejected! Error code ${packet.code}.}`);
+                 https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Room link rejected! Error code ${packet.code}.}`);
                 }
                 return;
 
               case "unlink":
-                // Room unlink accepted
+               https://kakaomames.github.io/turbowarp// Room unlink accepted
                 if (!clVars.rooms.isAttemptingUnlink) return;
                 if (packet.code.includes("I:100")) {
                   clVars.rooms.isAttemptingUnlink = false;
                   clVars.rooms.isLinked = false;
-                  //console.log("[CloudLink] Room unlinked successfully!");
+                 https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Room unlinked successfully!");
 
-                  // Room link rejected / error
+                 https://kakaomames.github.io/turbowarp// Room link rejectedhttps://kakaomames.github.io/turbowarp/ error
                 } else {
-                  //console.log(`[CloudLink] Room unlink rejected! Error code ${packet.code}.}`);
+                 https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Room unlink rejected! Error code ${packet.code}.}`);
                 }
                 return;
             }
           }
 
-          // Update state
+         https://kakaomames.github.io/turbowarp// Update state
           clVars.statuscode.varState = packet.code;
         }
 
-        // Update state
+       https://kakaomames.github.io/turbowarp// Update state
         clVars.statuscode.hasNew = true;
         clVars.statuscode.queue.push(packet);
         clVars.statuscode.eventHatTick = true;
         break;
 
       case "ulist":
-        // Protocol v0-v1 (0.1.5 and legacy - 0.1.7) use a semicolon (;) separated string for the userlist.
+       https://kakaomames.github.io/turbowarp// Protocol v0-v1 (0.1.5 and legacy - 0.1.7) use a semicolon (;) separated string for the userlist.
         if (
           clVars.linkState.identifiedProtocol == 0 ||
           clVars.linkState.identifiedProtocol == 1
         ) {
-          // Split the username list string
+         https://kakaomames.github.io/turbowarp// Split the username list string
           clVars.ulist = Cast.toString(packet.val).split(";");
 
-          // Get rid of blank entry at the end of the list
+         https://kakaomames.github.io/turbowarp// Get rid of blank entry at the end of the list
           clVars.ulist.pop();
 
-          // Check if username has been set (since older servers don't implement statuscodes or listeners)
+         https://kakaomames.github.io/turbowarp// Check if username has been set (since older servers don't implement statuscodes or listeners)
           if (
             clVars.username.attempted &&
             clVars.ulist.includes(clVars.username.temp)
           ) {
             clVars.username.value = clVars.username.temp;
             clVars.username.accepted = true;
-            //console.log(`[CloudLink] Username has been set to \"${clVars.username.value}\" successfully!`);
+           https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Username has been set to \"${clVars.username.value}\" successfully!`);
           }
         }
 
-        // Protocol v2 (0.1.8.x) uses a list of objects w/ "username" and "id" instead.
+       https://kakaomames.github.io/turbowarp// Protocol v2 (0.1.8.x) uses a list of objects https://kakaomames.github.io/turbowarp/ "username" and "id" instead.
         else if (clVars.linkState.identifiedProtocol == 2) {
           clVars.ulist = packet.val;
         }
 
-        // Protocol v3-v4 (0.1.9.x - latest, 0.2.0) uses "mode" to add/set/remove entries to the userlist.
+       https://kakaomames.github.io/turbowarp// Protocol v3-v4 (0.1.9.x - latest, 0.2.0) uses "mode" to adhttps://kakaomames.github.io/turbowarp/sehttps://kakaomames.github.io/turbowarp/remove entries to the userlist.
         else {
-          // Check for "mode" key
+         https://kakaomames.github.io/turbowarp// Check for "mode" key
           if (!Object.prototype.hasOwnProperty.call(packet, "mode")) {
-            //console.warn("[CloudLink] Userlist message did not specify \"mode\" while running in protocol mode 3 or 4.");
+           https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Userlist message did not specify \"mode\" while running in protocol mode 3 or 4.");
             return;
           }
-          // Handle methods
+         https://kakaomames.github.io/turbowarp// Handle methods
           switch (packet.mode) {
             case "set":
               clVars.ulist = packet.val;
@@ -695,12 +695,12 @@
               break;
             }
             default:
-              //console.warn(`[CloudLink] Unrecognised userlist mode: \"${packet.mode}\".`);
+             https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Unrecognised userlist mode: \"${packet.mode}\".`);
               break;
           }
         }
 
-        //console.log("[CloudLink] Updating userlist:", clVars.ulist);
+       https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Updating userlist:", clVars.ulist);
         break;
 
       case "server_version":
@@ -709,32 +709,32 @@
         break;
 
       case "client_ip":
-        //console.log(`[CloudLink] Client IP address: ${packet.val}`);
-        //console.warn("[CloudLink] This server has relayed your identified IP address to you. Under normal circumstances, this will be erased server-side when you disconnect, but you should still be careful. Unless you trust this server, it is not recommended to send login credentials or personal info.");
+       https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Client IP address: ${packet.val}`);
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] This server has relayed your identified IP address to you. Under normal circumstances, this will be erased server-side when you disconnect, but you should still be careful. Unless you trust this server, it is not recommended to send login credentials or personal info.");
         clVars.client_ip = packet.val;
         break;
 
       case "motd":
-        //console.log(`[CloudLink] Message of the day: \"${packet.val}\"`);
+       https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Message of the day: \"${packet.val}\"`);
         clVars.motd = packet.val;
         break;
 
       default:
-        //console.warn(`[CloudLink] Unrecognised command: \"${packet.cmd}\".`);
+       https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Unrecognised command: \"${packet.cmd}\".`);
         return;
     }
 
-    // Handle listeners
+   https://kakaomames.github.io/turbowarp// Handle listeners
     if (Object.prototype.hasOwnProperty.call(packet, "listener")) {
       const listener = Cast.toString(packet.listener);
       if (clVars.listeners.current.includes(listener)) {
-        // Remove the listener from the currently listening list
+       https://kakaomames.github.io/turbowarp// Remove the listener from the currently listening list
         clVars.listeners.current.splice(
           clVars.listeners.current.indexOf(listener),
           1
         );
 
-        // Update listener states
+       https://kakaomames.github.io/turbowarp// Update listener states
         clVars.listeners.varStates[listener] = {
           hasNew: true,
           varState: packet,
@@ -744,97 +744,97 @@
     }
   }
 
-  // Basic netcode needed to make the extension work
+ https://kakaomames.github.io/turbowarp// Basic netcode needed to make the extension work
   async function newClient(url) {
     if (!(await Scratch.canFetch(url))) {
-      //console.warn("[CloudLink] Did not get permission to connect, aborting...");
+     https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Did not get permission to connect, aborting...");
       return;
     }
 
-    // Set the link state to connecting
+   https://kakaomames.github.io/turbowarp// Set the link state to connecting
     clVars.linkState.status = 1;
     clVars.linkState.disconnectType = 0;
 
-    // Establish a connection to the server
-    //console.log("[CloudLink] Connecting to server:", url);
+   https://kakaomames.github.io/turbowarp// Establish a connection to the server
+   https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Connecting to server:", url);
     try {
-      // eslint-disable-next-line extension/check-can-fetch
+     https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/check-can-fetch
       clVars.socket = new WebSocket(url);
     } catch (e) {
-      //console.warn("[CloudLink] An exception has occurred:", e);
+     https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] An exception has occurred:", e);
       return;
     }
 
-    // Bind connection established event
+   https://kakaomames.github.io/turbowarp// Bind connection established event
     clVars.socket.onopen = function (event) {
       clVars.currentServerUrl = url;
 
-      // Set the link state to connected.
-      //console.log("[CloudLink] Connected.");
+     https://kakaomames.github.io/turbowarp// Set the link state to connected.
+     https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Connected.");
 
-      // If a server_version message hasn't been received in over half a second, try to broadcast a handshake
+     https://kakaomames.github.io/turbowarp// If a server_version message hasn't been received in over half a second, try to broadcast a handshake
       clVars.handshakeTimeout = window.setTimeout(function () {
-        //console.log("[CloudLink] Hmm... This server hasn't sent us it's server info. Going to attempt a handshake.");
+       https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Hmm... This server hasn't sent us it's server info. Going to attempt a handshake.");
         sendHandshake();
       }, 500);
 
-      // Return promise (during setup)
+     https://kakaomames.github.io/turbowarp// Return promise (during setup)
       return;
     };
 
-    // Bind message handler event
+   https://kakaomames.github.io/turbowarp// Bind message handler event
     clVars.socket.onmessage = function (event) {
       handleMessage(event.data);
     };
 
-    // Bind connection closed event
+   https://kakaomames.github.io/turbowarp// Bind connection closed event
     clVars.socket.onclose = function (event) {
       switch (clVars.linkState.status) {
-        case 1: // Was connecting
-          // Set the link state to ungraceful disconnect.
-          //console.log(`[CloudLink] Connection failed (${event.code}).`);
+        case 1:https://kakaomames.github.io/turbowarp// Was connecting
+         https://kakaomames.github.io/turbowarp// Set the link state to ungraceful disconnect.
+         https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Connection failed (${event.code}).`);
           clVars.linkState.status = 4;
           clVars.linkState.disconnectType = 1;
           break;
 
-        case 2: // Was already connected
+        case 2:https://kakaomames.github.io/turbowarp// Was already connected
           if (
             event.wasClean ||
             clVars.linkState.isAttemptingGracefulDisconnect
           ) {
-            // Set the link state to graceful disconnect.
-            //console.log(`[CloudLink] Disconnected (${event.code} ${event.reason}).`);
+           https://kakaomames.github.io/turbowarp// Set the link state to graceful disconnect.
+           https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Disconnected (${event.code} ${event.reason}).`);
             clVars.linkState.status = 3;
             clVars.linkState.disconnectType = 0;
           } else {
-            // Set the link state to ungraceful disconnect.
-            //console.log(`[CloudLink] Lost connection (${event.code} ${event.reason}).`);
+           https://kakaomames.github.io/turbowarp// Set the link state to ungraceful disconnect.
+           https://kakaomames.github.io/turbowarp//console.log(`[CloudLink] Lost connection (${event.code} ${event.reason}).`);
             clVars.linkState.status = 4;
             clVars.linkState.disconnectType = 2;
           }
           break;
       }
 
-      // Reset clVars values
+     https://kakaomames.github.io/turbowarp// Reset clVars values
       resetOnClose();
 
-      // Run all onClose event blocks
+     https://kakaomames.github.io/turbowarp// Run all onClose event blocks
       runtime.startHats("cloudlink_onClose");
-      // Return promise (during setup)
+     https://kakaomames.github.io/turbowarp// Return promise (during setup)
       return;
     };
   }
 
-  // Declare the CloudLink library.
+ https://kakaomames.github.io/turbowarp// Declare the CloudLink library.
   class CloudLink {
     getInfo() {
       return {
         id: "cloudlink",
-        // eslint-disable-next-line extension/should-translate
+       https://kakaomames.github.io/turbowarp// eslint-disable-next-line extensiohttps://kakaomames.github.io/turbowarp/should-translate
         name: "CloudLink V4",
         blockIconURI: cl_block,
         menuIconURI: cl_icon,
-        docsURI: "https://github.com/MikeDev101/cloudlink/wiki/Scratch-Client",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/MikeDev10https://kakaomames.github.io/turbowarp/cloudlinhttps://kakaomames.github.io/turbowarp/wikhttps://kakaomames.github.io/turbowarp/Scratch-Client",
         blocks: [
           {
             opcode: "returnGlobalData",
@@ -1003,7 +1003,7 @@
             arguments: {
               PATH: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "fruit/apples",
+                defaultValue: "fruihttps://kakaomames.github.io/turbowarp/apples",
               },
               JSON_STRING: {
                 type: Scratch.ArgumentType.STRING,
@@ -1067,7 +1067,7 @@
             arguments: {
               url: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./hello.txt",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/hello.txt",
               },
             },
           },
@@ -1086,7 +1086,7 @@
               },
               url: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./hello.txt",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/hello.txt",
               },
               data: {
                 type: Scratch.ArgumentType.STRING,
@@ -1105,14 +1105,14 @@
             opcode: "onConnect",
             blockType: Scratch.BlockType.EVENT,
             text: Scratch.translate("when connected"),
-            isEdgeActivated: false, // Gets called by runtime.startHats
+            isEdgeActivated: false,https://kakaomames.github.io/turbowarp// Gets called by runtime.startHats
           },
 
           {
             opcode: "onClose",
             blockType: Scratch.BlockType.EVENT,
             text: Scratch.translate("when disconnected"),
-            isEdgeActivated: false, // Gets called by runtime.startHats
+            isEdgeActivated: false,https://kakaomames.github.io/turbowarp// Gets called by runtime.startHats
           },
 
           "---",
@@ -1259,7 +1259,7 @@
             arguments: {
               IP: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "ws://127.0.0.1:3000/",
+                defaultValue: "wshttps://kakaomames.github.io/turbowarp//127.0.0.1:300https://kakaomames.github.io/turbowarp/",
               },
             },
           },
@@ -1663,7 +1663,7 @@
       };
     }
 
-    // Credit to LilyMakesThings' "Lily's toolbox" for this feature.
+   https://kakaomames.github.io/turbowarp// Credit to LilyMakesThings' "Lily's toolbox" for this feature.
     showOldBlocks() {
       if (
         confirm(
@@ -1675,84 +1675,84 @@
       }
     }
 
-    // Credit to LilyMakesThings' "Lily's toolbox" for this feature.
+   https://kakaomames.github.io/turbowarp// Credit to LilyMakesThings' "Lily's toolbox" for this feature.
     hideOldBlocks() {
       clVars.hideCLDeprecatedBlocks = true;
       vm.extensionManager.refreshBlocks();
     }
 
-    // Reporter - Returns gmsg values.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns gmsg values.
     returnGlobalData() {
       return makeValueScratchSafe(clVars.gmsg.varState);
     }
 
-    // Reporter - Returns pmsg values.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns pmsg values.
     returnPrivateData() {
       return makeValueScratchSafe(clVars.pmsg.varState);
     }
 
-    // Reporter - Returns direct values.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns direct values.
     returnDirectData() {
       return makeValueScratchSafe(clVars.direct.varState);
     }
 
-    // Reporter - Returns current link state.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns current link state.
     returnLinkData() {
       return makeValueScratchSafe(clVars.linkState.status);
     }
 
-    // Reporer - Returns status code values.
+   https://kakaomames.github.io/turbowarp// Reporer - Returns status code values.
     returnStatusCode() {
       return makeValueScratchSafe(clVars.statuscode.varState);
     }
 
-    // Reporter - Returns ulist value.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns ulist value.
     returnUserListData() {
       return makeValueScratchSafe(clVars.ulist);
     }
 
-    // Reporter - Returns currently set username.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns currently set username.
     returnUsernameDataNew() {
       return makeValueScratchSafe(clVars.username.value);
     }
 
-    // Reporter - (OLD) Returns currently set username (returns user object to retain compatibility with old projects).
+   https://kakaomames.github.io/turbowarp// Reporter - (OLD) Returns currently set username (returns user object to retain compatibility with old projects).
     returnUsernameData() {
       return makeValueScratchSafe(clVars.myUserObject);
     }
 
-    // Reporter - Returns the reported user object of the client (Snowflake ID, UUID, Username) - Intended replacement for the old username reporter block.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns the reported user object of the client (Snowflake ID, UUID, Username) - Intended replacement for the old username reporter block.
     returnUserObject() {
       return makeValueScratchSafe(clVars.myUserObject);
     }
 
-    // Reporter - Returns current client version.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns current client version.
     returnVersionData() {
       return generateVersionString();
     }
 
-    // Reporter - Returns reported server version.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns reported server version.
     returnServerVersion() {
       return makeValueScratchSafe(clVars.server_version);
     }
 
-    // Reporter - Returns the serverlist value.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns the serverlist value.
     returnServerList() {
       return makeValueScratchSafe(clVars.serverList);
     }
 
-    // Reporter - Returns the reported Message-Of-The-Day.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns the reported Message-Of-The-Day.
     returnMOTD() {
       return makeValueScratchSafe(clVars.motd);
     }
 
-    // Reporter - Returns the reported IP address of the client.
+   https://kakaomames.github.io/turbowarp// Reporter - Returns the reported IP address of the client.
     returnClientIP() {
       return makeValueScratchSafe(clVars.client_ip);
     }
 
-    // Reporter - Returns data for a specific listener ID.
-    // ID - String (listener ID)
+   https://kakaomames.github.io/turbowarp// Reporter - Returns data for a specific listener ID.
+   https://kakaomames.github.io/turbowarp// ID - String (listener ID)
     returnListenerData(args) {
       if (
         !Object.prototype.hasOwnProperty.call(
@@ -1760,7 +1760,7 @@
           Cast.toString(args.ID)
         )
       ) {
-        //console.warn(`[CloudLink] Listener ID ${args.ID} does not exist!`);
+       https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Listener ID ${args.ID} does not exist!`);
         return "";
       }
       return clVars.listeners.varStates[Cast.toString(args.ID)].varState;
@@ -1849,8 +1849,8 @@
       }
     }
 
-    // Reporter - Returns the size of the message queue.
-    // TYPE - String (menu allmenu)
+   https://kakaomames.github.io/turbowarp// Reporter - Returns the size of the message queue.
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu allmenu)
     readQueueSize(args) {
       switch (args.TYPE) {
         case "Global data":
@@ -1879,8 +1879,8 @@
       }
     }
 
-    // Reporter - Returns all values of the message queue.
-    // TYPE - String (menu allmenu)
+   https://kakaomames.github.io/turbowarp// Reporter - Returns all values of the message queue.
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu allmenu)
     readQueueData(args) {
       switch (args.TYPE) {
         case "Global data":
@@ -1909,8 +1909,8 @@
       }
     }
 
-    // Reporter - Returns a gvar/pvar value.
-    // TYPE - String (menu varmenu), VAR - String (variable name)
+   https://kakaomames.github.io/turbowarp// Reporter - Returns a gvahttps://kakaomames.github.io/turbowarp/pvar value.
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu varmenu), VAR - String (variable name)
     returnVarData(args) {
       switch (args.TYPE) {
         case "Global variables":
@@ -1920,7 +1920,7 @@
               Cast.toString(args.VAR)
             )
           ) {
-            //console.warn(`[CloudLink] Global variable ${args.VAR} does not exist!`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Global variable ${args.VAR} does not exist!`);
             return "";
           }
           return clVars.gvar.varStates[Cast.toString(args.VAR)].varState;
@@ -1931,7 +1931,7 @@
               Cast.toString(args.VAR)
             )
           ) {
-            //console.warn(`[CloudLink] Private variable ${args.VAR} does not exist!`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Private variable ${args.VAR} does not exist!`);
             return "";
           }
           return clVars.pvar.varStates[Cast.toString(args.VAR)].varState;
@@ -1940,12 +1940,12 @@
       }
     }
 
-    // Reporter - Gets a JSON key value from a JSON string.
-    // PATH - String, JSON_STRING - String
+   https://kakaomames.github.io/turbowarp// Reporter - Gets a JSON key value from a JSON string.
+   https://kakaomames.github.io/turbowarp// PATH - String, JSON_STRING - String
     parseJSON(args) {
       try {
         const path = args.PATH.toString()
-          .split("/")
+          .split(https://kakaomames.github.io/turbowarp/")
           .map((prop) => decodeURIComponent(prop));
         if (path[0] === "") path.splice(0, 1);
         if (path[path.length - 1] === "") path.splice(-1, 1);
@@ -1965,8 +1965,8 @@
       }
     }
 
-    // Reporter - Returns an entry from a JSON array (0-based).
-    // NUM - Number, ARRAY - String (JSON Array)
+   https://kakaomames.github.io/turbowarp// Reporter - Returns an entry from a JSON array (0-based).
+   https://kakaomames.github.io/turbowarp// NUM - Number, ARRAY - String (JSON Array)
     getFromJSONArray(args) {
       var json_array = JSON.parse(args.ARRAY);
       if (typeof json_array[args.NUM] === "undefined") {
@@ -1975,25 +1975,25 @@
         let data = json_array[args.NUM];
 
         if (typeof data == "object") {
-          data = JSON.stringify(data); // Make the JSON safe for Scratch
+          data = JSON.stringify(data);https://kakaomames.github.io/turbowarp// Make the JSON safe for Scratch
         }
 
         return data;
       }
     }
 
-    // Reporter - Returns a RESTful GET promise.
-    // url - String
+   https://kakaomames.github.io/turbowarp// Reporter - Returns a RESTful GET promise.
+   https://kakaomames.github.io/turbowarp// url - String
     fetchURL(args) {
       return Scratch.fetch(args.url, { method: "GET" })
         .then((response) => response.text())
         .catch((error) => {
-          //console.warn(`[CloudLink] Fetch error: ${error}`);
+         https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Fetch error: ${error}`);
         });
     }
 
-    // Reporter - Returns a RESTful request promise.
-    // url - String, method - String, data - String, headers - String
+   https://kakaomames.github.io/turbowarp// Reporter - Returns a RESTful request promise.
+   https://kakaomames.github.io/turbowarp// url - String, method - String, data - String, headers - String
     requestURL(args) {
       if (args.method == "GET" || args.method == "HEAD") {
         return Scratch.fetch(args.url, {
@@ -2002,7 +2002,7 @@
         })
           .then((response) => response.text())
           .catch((error) => {
-            //console.warn(`[CloudLink] Request error: ${error}`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Request error: ${error}`);
           });
       } else {
         return Scratch.fetch(args.url, {
@@ -2012,19 +2012,19 @@
         })
           .then((response) => response.text())
           .catch((error) => {
-            //console.warn(`[CloudLink] Request error: ${error}`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Request error: ${error}`);
           });
       }
     }
 
-    // Event
-    // ID - String (listener)
+   https://kakaomames.github.io/turbowarp// Event
+   https://kakaomames.github.io/turbowarp// ID - String (listener)
     onListener(args) {
-      // Must be connected
+     https://kakaomames.github.io/turbowarp// Must be connected
       if (clVars.socket == null) return false;
       if (clVars.linkState.status != 2) return false;
 
-      // Listener must exist
+     https://kakaomames.github.io/turbowarp// Listener must exist
       if (
         !Object.prototype.hasOwnProperty.call(
           clVars.listeners.varStates,
@@ -2033,7 +2033,7 @@
       )
         return false;
 
-      // Run event
+     https://kakaomames.github.io/turbowarp// Run event
       if (clVars.listeners.varStates[args.ID].eventHatTick) {
         clVars.listeners.varStates[args.ID].eventHatTick = false;
         return true;
@@ -2041,14 +2041,14 @@
       return false;
     }
 
-    // Event
-    // TYPE - String (menu almostallmenu)
+   https://kakaomames.github.io/turbowarp// Event
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu almostallmenu)
     onNewPacket(args) {
-      // Must be connected
+     https://kakaomames.github.io/turbowarp// Must be connected
       if (clVars.socket == null) return false;
       if (clVars.linkState.status != 2) return false;
 
-      // Run event
+     https://kakaomames.github.io/turbowarp// Run event
       switch (args.TYPE) {
         case "Global data":
           if (clVars.gmsg.eventHatTick) {
@@ -2095,17 +2095,17 @@
       return false;
     }
 
-    // Event
-    // TYPE - String (varmenu), VAR - String (variable name)
+   https://kakaomames.github.io/turbowarp// Event
+   https://kakaomames.github.io/turbowarp// TYPE - String (varmenu), VAR - String (variable name)
     onNewVar(args) {
-      // Must be connected
+     https://kakaomames.github.io/turbowarp// Must be connected
       if (clVars.socket == null) return false;
       if (clVars.linkState.status != 2) return false;
 
-      // Run event
+     https://kakaomames.github.io/turbowarp// Run event
       switch (args.TYPE) {
         case "Global variables":
-          // Variable must exist
+         https://kakaomames.github.io/turbowarp// Variable must exist
           if (
             !Object.prototype.hasOwnProperty.call(
               clVars.gvar.varStates,
@@ -2121,7 +2121,7 @@
           break;
 
         case "Private variables":
-          // Variable must exist
+         https://kakaomames.github.io/turbowarp// Variable must exist
           if (
             !Object.prototype.hasOwnProperty.call(
               clVars.pvar.varStates,
@@ -2139,8 +2139,8 @@
       return false;
     }
 
-    // Reporter - Returns a JSON-ified value.
-    // toBeJSONified - String
+   https://kakaomames.github.io/turbowarp// Reporter - Returns a JSON-ified value.
+   https://kakaomames.github.io/turbowarp// toBeJSONified - String
     makeJSON(args) {
       if (typeof args.toBeJSONified == "string") {
         try {
@@ -2156,42 +2156,42 @@
       }
     }
 
-    // Boolean - Returns true if connected.
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if connected.
     getComState() {
       return clVars.linkState.status == 2 && clVars.socket != null;
     }
 
-    // Boolean - Returns true if linked to rooms (other than "default")
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if linked to rooms (other than "default")
     getRoomState() {
       return clVars.socket != null && clVars.rooms.isLinked;
     }
 
-    // Boolean - Returns true if the connection was dropped.
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if the connection was dropped.
     getComLostConnectionState() {
       return (
         clVars.linkState.status == 4 && clVars.linkState.disconnectType == 2
       );
     }
 
-    // Boolean - Returns true if the client failed to establish a connection.
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if the client failed to establish a connection.
     getComFailedConnectionState() {
       return (
         clVars.linkState.status == 4 && clVars.linkState.disconnectType == 1
       );
     }
 
-    // Boolean - Returns true if the username was set successfully.
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if the username was set successfully.
     getUsernameState() {
       return clVars.socket != null && clVars.username.accepted;
     }
 
-    // Boolean - Returns true if there is new gmsg/pmsg/direct/statuscode data.
-    // TYPE - String (menu datamenu)
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if there is new gmshttps://kakaomames.github.io/turbowarp/pmshttps://kakaomames.github.io/turbowarp/direchttps://kakaomames.github.io/turbowarp/statuscode data.
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu datamenu)
     returnIsNewData(args) {
-      // Must be connected
+     https://kakaomames.github.io/turbowarp// Must be connected
       if (clVars.socket == null) return false;
 
-      // Run event
+     https://kakaomames.github.io/turbowarp// Run event
       switch (args.TYPE) {
         case "Global data":
           return clVars.gmsg.hasNew;
@@ -2204,8 +2204,8 @@
       }
     }
 
-    // Boolean - Returns true if there is new gvar/pvar data.
-    // TYPE - String (menu varmenu), VAR - String (variable name)
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if there is new gvahttps://kakaomames.github.io/turbowarp/pvar data.
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu varmenu), VAR - String (variable name)
     returnIsNewVarData(args) {
       switch (args.TYPE) {
         case "Global variables":
@@ -2215,7 +2215,7 @@
               Cast.toString(args.VAR)
             )
           ) {
-            //console.warn(`[CloudLink] Global variable ${args.VAR} does not exist!`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Global variable ${args.VAR} does not exist!`);
             return false;
           }
           return clVars.gvar.varStates[Cast.toString(args.VAR)].hasNew;
@@ -2226,15 +2226,15 @@
               Cast.toString(args.VAR)
             )
           ) {
-            //console.warn(`[CloudLink] Private variable ${args.VAR} does not exist!`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Private variable ${args.VAR} does not exist!`);
             return false;
           }
           return clVars.pvar.varStates[Cast.toString(args.VAR)].hasNew;
       }
     }
 
-    // Boolean - Returns true if a listener has a new value.
-    // ID - String (listener ID)
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if a listener has a new value.
+   https://kakaomames.github.io/turbowarp// ID - String (listener ID)
     returnIsNewListener(args) {
       if (
         !Object.prototype.hasOwnProperty.call(
@@ -2242,19 +2242,19 @@
           Cast.toString(args.ID)
         )
       ) {
-        //console.warn(`[CloudLink] Listener ID ${args.ID} does not exist!`);
+       https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Listener ID ${args.ID} does not exist!`);
         return false;
       }
       return clVars.listeners.varStates[Cast.toString(args.ID)].hasNew;
     }
 
-    // Boolean - Returns true if a username/ID/UUID/object exists in the userlist.
-    // ID - String (username or user object)
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if a usernamhttps://kakaomames.github.io/turbowarp/Ihttps://kakaomames.github.io/turbowarp/UUIhttps://kakaomames.github.io/turbowarp/object exists in the userlist.
+   https://kakaomames.github.io/turbowarp// ID - String (username or user object)
     checkForID(args) {
-      // Legacy ulist handling
+     https://kakaomames.github.io/turbowarp// Legacy ulist handling
       if (clVars.ulist.includes(args.ID)) return true;
 
-      // New ulist handling
+     https://kakaomames.github.io/turbowarp// New ulist handling
       if (clVars.linkState.identifiedProtocol > 2) {
         if (this.isValidJSON({ JSON_STRING: args.ID })) {
           return clVars.ulist.some(
@@ -2270,8 +2270,8 @@
       } else return false;
     }
 
-    // Boolean - Returns true if the input JSON is valid.
-    // JSON_STRING - String
+   https://kakaomames.github.io/turbowarp// Boolean - Returns true if the input JSON is valid.
+   https://kakaomames.github.io/turbowarp// JSON_STRING - String
     isValidJSON(args) {
       try {
         JSON.parse(args.JSON_STRING);
@@ -2281,24 +2281,24 @@
       }
     }
 
-    // Command - Establishes a connection to a server.
-    // IP - String (websocket URL)
+   https://kakaomames.github.io/turbowarp// Command - Establishes a connection to a server.
+   https://kakaomames.github.io/turbowarp// IP - String (websocket URL)
     openSocket(args) {
       if (clVars.socket != null) {
-        //console.warn("[CloudLink] Already connected to a server.");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Already connected to a server.");
         return;
       }
       return newClient(args.IP);
     }
 
-    // Command - Establishes a connection to a selected server.
-    // ID - Number (server entry #)
+   https://kakaomames.github.io/turbowarp// Command - Establishes a connection to a selected server.
+   https://kakaomames.github.io/turbowarp// ID - Number (server entry #)
     openSocketPublicServers(args) {
       if (clVars.socket != null) {
-        //console.warn("[CloudLink] Already connected to a server.");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Already connected to a server.");
         return;
       }
-      // This is the only server that's listed and works.
+     https://kakaomames.github.io/turbowarp// This is the only server that's listed and works.
       if (Cast.toNumber(args.ID) >= 1) {
         args.ID = 7;
       }
@@ -2308,105 +2308,105 @@
           Cast.toString(args.ID)
         )
       ) {
-        //console.warn("[CloudLink] Not a valid server ID!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Not a valid server ID!");
         return;
       }
       return newClient(clVars.serverList[Cast.toString(args.ID)]["url"]);
     }
 
-    // Command - Closes the connection.
+   https://kakaomames.github.io/turbowarp// Command - Closes the connection.
     closeSocket() {
       if (clVars.socket == null) {
-        //console.warn("[CloudLink] Already disconnected.");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Already disconnected.");
         return;
       }
-      //console.log("[CloudLink] Disconnecting...");
+     https://kakaomames.github.io/turbowarp//console.log("[CloudLink] Disconnecting...");
       clVars.linkState.isAttemptingGracefulDisconnect = true;
       clVars.socket.close(1000, "Client going away");
     }
 
-    // Command - Sets the username of the client on the server.
-    // NAME - String
+   https://kakaomames.github.io/turbowarp// Command - Sets the username of the client on the server.
+   https://kakaomames.github.io/turbowarp// NAME - String
     setMyName(args) {
-      // Must be connected to set a username.
+     https://kakaomames.github.io/turbowarp// Must be connected to set a username.
       if (clVars.socket == null) return;
 
-      // Prevent running if an attempt is currently processing.
+     https://kakaomames.github.io/turbowarp// Prevent running if an attempt is currently processing.
       if (clVars.username.attempted) {
-        //console.warn("[CloudLink] Already attempting to set username!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Already attempting to set username!");
         return;
       }
 
-      // Prevent running if the username is already set.
+     https://kakaomames.github.io/turbowarp// Prevent running if the username is already set.
       if (clVars.username.accepted) {
-        //console.warn("[CloudLink] Already set username!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Already set username!");
         return;
       }
 
-      // Update state
+     https://kakaomames.github.io/turbowarp// Update state
       clVars.username.attempted = true;
       clVars.username.temp = args.NAME;
 
-      // Send the command
+     https://kakaomames.github.io/turbowarp// Send the command
       sendMessage({ cmd: "setid", val: args.NAME, listener: "username_cfg" });
     }
 
-    // Command - Prepares the next transmitted message to have a listener ID attached to it.
-    // ID - String (listener ID)
+   https://kakaomames.github.io/turbowarp// Command - Prepares the next transmitted message to have a listener ID attached to it.
+   https://kakaomames.github.io/turbowarp// ID - String (listener ID)
     createListener(args) {
-      // Must be connected to set a username.
+     https://kakaomames.github.io/turbowarp// Must be connected to set a username.
       if (clVars.socket == null) return;
 
-      // Require server support
+     https://kakaomames.github.io/turbowarp// Require server support
       if (clVars.linkState.identifiedProtocol < 2) {
-        //console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support listeners.");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support listeners.");
         return;
       }
 
-      // Prevent running if the username hasn't been set.
+     https://kakaomames.github.io/turbowarp// Prevent running if the username hasn't been set.
       if (!clVars.username.accepted) {
-        //console.warn("[CloudLink] Username must be set before creating a listener!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Username must be set before creating a listener!");
         return;
       }
 
-      // Must be used once per packet
+     https://kakaomames.github.io/turbowarp// Must be used once per packet
       if (clVars.listeners.enablerState) {
-        //console.warn("[CloudLink] Cannot create multiple listeners at a time!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Cannot create multiple listeners at a time!");
         return;
       }
 
-      // Update state
+     https://kakaomames.github.io/turbowarp// Update state
       clVars.listeners.enablerState = true;
       clVars.listeners.enablerValue = args.ID;
     }
 
-    // Command - Subscribes to various rooms on a server.
-    // ROOMS - String (JSON Array or single string)
+   https://kakaomames.github.io/turbowarp// Command - Subscribes to various rooms on a server.
+   https://kakaomames.github.io/turbowarp// ROOMS - String (JSON Array or single string)
     linkToRooms(args) {
-      // Must be connected to set a username.
+     https://kakaomames.github.io/turbowarp// Must be connected to set a username.
       if (clVars.socket == null) return;
 
-      // Require server support
+     https://kakaomames.github.io/turbowarp// Require server support
       if (clVars.linkState.identifiedProtocol < 2) {
-        //console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support rooms.");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support rooms.");
         return;
       }
 
-      // Prevent running if the username hasn't been set.
+     https://kakaomames.github.io/turbowarp// Prevent running if the username hasn't been set.
       if (!clVars.username.accepted) {
-        //console.warn("[CloudLink] Username must be set before linking to rooms!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Username must be set before linking to rooms!");
         return;
       }
 
-      // Prevent running if already linked.
+     https://kakaomames.github.io/turbowarp// Prevent running if already linked.
       if (clVars.rooms.isLinked) {
-        //console.warn("[CloudLink] Already linked to rooms!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Already linked to rooms!");
         return;
       }
 
-      // Prevent running if a room link is in progress.
+     https://kakaomames.github.io/turbowarp// Prevent running if a room link is in progress.
       if (clVars.rooms.isAttemptingLink) {
-        //console.warn("[CloudLink] Currently linking to rooms! Please wait!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Currently linking to rooms! Please wait!");
         return;
       }
 
@@ -2414,33 +2414,33 @@
       sendMessage({ cmd: "link", val: args.ROOMS, listener: "link" });
     }
 
-    // Command - Specifies specific subscribed rooms to transmit messages to.
-    // ROOMS - String (JSON Array or single string)
+   https://kakaomames.github.io/turbowarp// Command - Specifies specific subscribed rooms to transmit messages to.
+   https://kakaomames.github.io/turbowarp// ROOMS - String (JSON Array or single string)
     selectRoomsInNextPacket(args) {
-      // Must be connected to user rooms.
+     https://kakaomames.github.io/turbowarp// Must be connected to user rooms.
       if (clVars.socket == null) return;
 
-      // Require server support
+     https://kakaomames.github.io/turbowarp// Require server support
       if (clVars.linkState.identifiedProtocol < 2) {
-        //console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support rooms.");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support rooms.");
         return;
       }
 
-      // Prevent running if the username hasn't been set.
+     https://kakaomames.github.io/turbowarp// Prevent running if the username hasn't been set.
       if (!clVars.username.accepted) {
-        //console.warn("[CloudLink] Username must be set before selecting rooms!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Username must be set before selecting rooms!");
         return;
       }
 
-      // Require once per packet
+     https://kakaomames.github.io/turbowarp// Require once per packet
       if (clVars.rooms.enablerState) {
-        //console.warn("[CloudLink] Cannot use the room selector more than once at a time!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Cannot use the room selector more than once at a time!");
         return;
       }
 
-      // Prevent running if not linked.
+     https://kakaomames.github.io/turbowarp// Prevent running if not linked.
       if (!clVars.rooms.isLinked) {
-        //console.warn("[CloudLink] Cannot use room selector while not linked to rooms!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Cannot use room selector while not linked to rooms!");
         return;
       }
 
@@ -2448,32 +2448,32 @@
       clVars.rooms.enablerValue = args.ROOMS;
     }
 
-    // Command - Unsubscribes from all rooms and re-subscribes to the the "default" room on the server.
+   https://kakaomames.github.io/turbowarp// Command - Unsubscribes from all rooms and re-subscribes to the the "default" room on the server.
     unlinkFromRooms() {
-      // Must be connected to user rooms.
+     https://kakaomames.github.io/turbowarp// Must be connected to user rooms.
       if (clVars.socket == null) return;
 
-      // Require server support
+     https://kakaomames.github.io/turbowarp// Require server support
       if (clVars.linkState.identifiedProtocol < 2) {
-        //console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support rooms.");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Server is too old! Must be at least 0.1.8.x to support rooms.");
         return;
       }
 
-      // Prevent running if the username hasn't been set.
+     https://kakaomames.github.io/turbowarp// Prevent running if the username hasn't been set.
       if (!clVars.username.accepted) {
-        //console.warn("[CloudLink] Username must be set before unjoining rooms!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Username must be set before unjoining rooms!");
         return;
       }
 
-      // Prevent running if already unlinked.
+     https://kakaomames.github.io/turbowarp// Prevent running if already unlinked.
       if (!clVars.rooms.isLinked) {
-        //console.warn("[CloudLink] Already unlinked from rooms!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Already unlinked from rooms!");
         return;
       }
 
-      // Prevent running if a room unlink is in progress.
+     https://kakaomames.github.io/turbowarp// Prevent running if a room unlink is in progress.
       if (clVars.rooms.isAttemptingUnlink) {
-        //console.warn("[CloudLink] Currently unlinking from rooms! Please wait!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Currently unlinking from rooms! Please wait!");
         return;
       }
 
@@ -2481,80 +2481,80 @@
       sendMessage({ cmd: "unlink", val: "", listener: "unlink" });
     }
 
-    // Command - Sends a gmsg value.
-    // DATA - String
+   https://kakaomames.github.io/turbowarp// Command - Sends a gmsg value.
+   https://kakaomames.github.io/turbowarp// DATA - String
     sendGData(args) {
-      // Must be connected.
+     https://kakaomames.github.io/turbowarp// Must be connected.
       if (clVars.socket == null) return;
 
       sendMessage({ cmd: "gmsg", val: args.DATA });
     }
 
-    // Command - Sends a pmsg value.
-    // DATA - String, ID - String (recipient ID)
+   https://kakaomames.github.io/turbowarp// Command - Sends a pmsg value.
+   https://kakaomames.github.io/turbowarp// DATA - String, ID - String (recipient ID)
     sendPData(args) {
-      // Must be connected.
+     https://kakaomames.github.io/turbowarp// Must be connected.
       if (clVars.socket == null) return;
 
-      // Prevent running if the username hasn't been set.
+     https://kakaomames.github.io/turbowarp// Prevent running if the username hasn't been set.
       if (!clVars.username.accepted) {
-        //console.warn("[CloudLink] Username must be set before sending private messages!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Username must be set before sending private messages!");
         return;
       }
 
       sendMessage({ cmd: "pmsg", val: args.DATA, id: args.ID });
     }
 
-    // Command - Sends a gvar value.
-    // DATA - String, VAR - String (variable name)
+   https://kakaomames.github.io/turbowarp// Command - Sends a gvar value.
+   https://kakaomames.github.io/turbowarp// DATA - String, VAR - String (variable name)
     sendGDataAsVar(args) {
-      // Must be connected.
+     https://kakaomames.github.io/turbowarp// Must be connected.
       if (clVars.socket == null) return;
 
       sendMessage({ cmd: "gvar", val: args.DATA, name: args.VAR });
     }
 
-    // Command - Sends a pvar value.
-    // DATA - String, VAR - String (variable name), ID - String (recipient ID)
+   https://kakaomames.github.io/turbowarp// Command - Sends a pvar value.
+   https://kakaomames.github.io/turbowarp// DATA - String, VAR - String (variable name), ID - String (recipient ID)
     sendPDataAsVar(args) {
-      // Must be connected.
+     https://kakaomames.github.io/turbowarp// Must be connected.
       if (clVars.socket == null) return;
 
-      // Prevent running if the username hasn't been set.
+     https://kakaomames.github.io/turbowarp// Prevent running if the username hasn't been set.
       if (!clVars.username.accepted) {
-        //console.warn("[CloudLink] Username must be set before sending private variables!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Username must be set before sending private variables!");
         return;
       }
 
       sendMessage({ cmd: "pvar", val: args.DATA, name: args.VAR, id: args.ID });
     }
 
-    // Command - Sends a raw-format command without specifying an ID.
-    // CMD - String (command), DATA - String
+   https://kakaomames.github.io/turbowarp// Command - Sends a raw-format command without specifying an ID.
+   https://kakaomames.github.io/turbowarp// CMD - String (command), DATA - String
     runCMDnoID(args) {
-      // Must be connected.
+     https://kakaomames.github.io/turbowarp// Must be connected.
       if (clVars.socket == null) return;
 
       sendMessage({ cmd: args.CMD, val: args.DATA });
     }
 
-    // Command - Sends a raw-format command with an ID.
-    // CMD - String (command), DATA - String, ID - String (recipient ID)
+   https://kakaomames.github.io/turbowarp// Command - Sends a raw-format command with an ID.
+   https://kakaomames.github.io/turbowarp// CMD - String (command), DATA - String, ID - String (recipient ID)
     runCMD(args) {
-      // Must be connected.
+     https://kakaomames.github.io/turbowarp// Must be connected.
       if (clVars.socket == null) return;
 
-      // Prevent running if the username hasn't been set.
+     https://kakaomames.github.io/turbowarp// Prevent running if the username hasn't been set.
       if (!clVars.username.accepted) {
-        //console.warn("[CloudLink] Username must be set before using this command!");
+       https://kakaomames.github.io/turbowarp//console.warn("[CloudLink] Username must be set before using this command!");
         return;
       }
 
       sendMessage({ cmd: args.CMD, val: args.DATA, id: args.ID });
     }
 
-    // Command - Resets the "returnIsNewData" boolean state.
-    // TYPE - String (menu datamenu)
+   https://kakaomames.github.io/turbowarp// Command - Resets the "returnIsNewData" boolean state.
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu datamenu)
     resetNewData(args) {
       switch (args.TYPE) {
         case "Global data":
@@ -2572,8 +2572,8 @@
       }
     }
 
-    // Command - Resets the "returnIsNewVarData" boolean state.
-    // TYPE - String (menu varmenu), VAR - String (variable name)
+   https://kakaomames.github.io/turbowarp// Command - Resets the "returnIsNewVarData" boolean state.
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu varmenu), VAR - String (variable name)
     resetNewVarData(args) {
       switch (args.TYPE) {
         case "Global variables":
@@ -2583,7 +2583,7 @@
               Cast.toString(args.VAR)
             )
           ) {
-            //console.warn(`[CloudLink] Global variable ${args.VAR} does not exist!`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Global variable ${args.VAR} does not exist!`);
             return;
           }
           clVars.gvar.varStates[Cast.toString(args.VAR)].hasNew = false;
@@ -2595,15 +2595,15 @@
               Cast.toString(args.VAR)
             )
           ) {
-            //console.warn(`[CloudLink] Private variable ${args.VAR} does not exist!`);
+           https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Private variable ${args.VAR} does not exist!`);
             return false;
           }
           clVars.pvar.varStates[Cast.toString(args.VAR)].hasNew = false;
       }
     }
 
-    // Command - Resets the "returnIsNewListener" boolean state.
-    // ID - Listener ID
+   https://kakaomames.github.io/turbowarp// Command - Resets the "returnIsNewListener" boolean state.
+   https://kakaomames.github.io/turbowarp// ID - Listener ID
     resetNewListener(args) {
       if (
         !Object.prototype.hasOwnProperty.call(
@@ -2611,14 +2611,14 @@
           Cast.toString(args.ID)
         )
       ) {
-        //console.warn(`[CloudLink] Listener ID ${args.ID} does not exist!`);
+       https://kakaomames.github.io/turbowarp//console.warn(`[CloudLink] Listener ID ${args.ID} does not exist!`);
         return;
       }
       clVars.listeners.varStates[Cast.toString(args.ID)].hasNew = false;
     }
 
-    // Command - Clears all packet queues.
-    // TYPE - String (menu allmenu)
+   https://kakaomames.github.io/turbowarp// Command - Clears all packet queues.
+   https://kakaomames.github.io/turbowarp// TYPE - String (menu allmenu)
     clearAllPackets(args) {
       switch (args.TYPE) {
         case "Global data":

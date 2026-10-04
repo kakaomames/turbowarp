@@ -1,9 +1,9 @@
-// Name: Canvas Effects
-// ID: theshovelcanvaseffects
-// Description: Apply visual effects to the entire stage.
-// By: TheShovel
-// By: SharkPool <https://scratch.mit.edu/users/DemonX5/>
-// License: MIT
+https://kakaomames.github.io/turbowarp/ Name: Canvas Effects
+https://kakaomames.github.io/turbowarp/ ID: theshovelcanvaseffects
+https://kakaomames.github.io/turbowarp/ Description: Apply visual effects to the entire stage.
+https://kakaomames.github.io/turbowarp/ By: TheShovel
+https://kakaomames.github.io/turbowarp/ By: SharkPool <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/DemonXhttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT
 
 (function (Scratch) {
   "use strict";
@@ -14,7 +14,7 @@
   const canvas = Scratch.renderer.canvas;
 
   const updateStyle = () => {
-    // Gotta keep the translation to % because of the stage size, window size and so on
+   https://kakaomames.github.io/turbowarp// Gotta keep the translation to % because of the stage size, window size and so on
     const transform = `rotate(${rotation}deg) scale(${scaleX}%, ${scaleY}%) skew(${skewX}deg, ${skewY}deg) translate(${offsetX}%, ${
       0 - offsetY
     }%)`;
@@ -22,7 +22,7 @@
       canvas.style.transform = transform;
     }
     const filter = `blur(${blur}px) contrast(${
-      contrast / 100
+      contrasthttps://kakaomames.github.io/turbowarp/ 100
     }) saturate(${saturation}%) hue-rotate(${color}deg) brightness(${brightness}%) invert(${invert}%) sepia(${sepia}%) opacity(${
       100 - transparency
     }%)`;
@@ -50,7 +50,7 @@
     }
   };
 
-  // scratch-gui may reset canvas styles when resizing the window or going in/out of fullscreen
+ https://kakaomames.github.io/turbowarp// scratch-gui may reset canvas styles when resizing the window or going ihttps://kakaomames.github.io/turbowarp/out of fullscreen
   new MutationObserver(updateStyle).observe(canvas, {
     attributeFilter: ["style"],
     attributes: true,
@@ -64,7 +64,7 @@
   let skewX = 0;
   let scaleX = 100;
   let scaleY = 100;
-  // Thanks SharkPool for telling me about these
+ https://kakaomames.github.io/turbowarp// Thanks SharkPool for telling me about these
   let transparency = 0;
   let sepia = 0;
   let blur = 0;
@@ -329,7 +329,7 @@
               {
                 text: Scratch.translate({
                   default: "scale",
-                  description: "Scale as in upscale/downscale",
+                  description: "Scale as in upscalhttps://kakaomames.github.io/turbowarp/downscale",
                 }),
                 value: "scale",
               },
@@ -409,7 +409,7 @@
       } else if (EFFECT === "transparency") {
         return transparency;
       } else if (EFFECT === "scale") {
-        // old extension compatibility
+       https://kakaomames.github.io/turbowarp// old extension compatibility
         return scaleX;
       } else if (EFFECT === "scale X") {
         return scaleX;
@@ -479,7 +479,7 @@
       updateStyle();
     }
     changeEffect(args) {
-      // Scale needs some special treatment to change x & y separately
+     https://kakaomames.github.io/turbowarp// Scale needs some special treatment to change x & y separately
       if (args.EFFECT === "scale") {
         scaleX = scaleX + Scratch.Cast.toNumber(args.NUMBER);
         scaleY = scaleY + Scratch.Cast.toNumber(args.NUMBER);
@@ -487,7 +487,7 @@
         return;
       }
 
-      // Everything else is really generic
+     https://kakaomames.github.io/turbowarp// Everything else is really generic
       const currentEffect = Scratch.Cast.toNumber(this.geteffect(args));
       const newValue = Scratch.Cast.toNumber(args.NUMBER) + currentEffect;
       this.seteffect({
@@ -503,22 +503,22 @@
       updateStyle();
     }
     renderscale({ X, Y }) {
-      // The function normally expects a stage size and therefore scales by DPI.
-      // However, this block is meant for a fixed pixel size
-      // (usually used in conjunction with the pixelated resize rendering mode).
-      // Therefore, scale it back according to the devicePixelRatio.
+     https://kakaomames.github.io/turbowarp// The function normally expects a stage size and therefore scales by DPI.
+     https://kakaomames.github.io/turbowarp// However, this block is meant for a fixed pixel size
+     https://kakaomames.github.io/turbowarp// (usually used in conjunction with the pixelated resize rendering mode).
+     https://kakaomames.github.io/turbowarp// Therefore, scale it back according to the devicePixelRatio.
       const pixelRatio = window.devicePixelRatio || 1;
-      Scratch.vm.renderer.resize(X / pixelRatio, Y / pixelRatio);
+      Scratch.vm.renderer.resize(Xhttps://kakaomames.github.io/turbowarp/ pixelRatio, Yhttps://kakaomames.github.io/turbowarp/ pixelRatio);
     }
     setBorder(args) {
       borderWidth = Scratch.Cast.toNumber(args.WIDTH);
-      borderStyle = Scratch.Cast.toString(args.STYLE).replace(/[^a-z]/gi, "");
+      borderStyle = Scratch.Cast.toString(args.STYLE).replacehttps://kakaomames.github.io/turbowarp/[^a-zhttps://kakaomames.github.io/turbowarp/gi, "");
       borderColor = Scratch.Cast.toString(args.COLOR1).replace(
-        /[^#0-9a-z]/gi,
+       https://kakaomames.github.io/turbowarp/[^#0-9a-zhttps://kakaomames.github.io/turbowarp/gi,
         ""
       );
       backgroundColor = Scratch.Cast.toString(args.COLOR2).replace(
-        /[^#0-9a-z]/gi,
+       https://kakaomames.github.io/turbowarp/[^#0-9a-zhttps://kakaomames.github.io/turbowarp/gi,
         ""
       );
       updateStyle();

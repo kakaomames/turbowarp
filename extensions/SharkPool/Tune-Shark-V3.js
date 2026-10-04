@@ -1,10 +1,10 @@
-// Name: Tune Shark V3
-// ID: SPtuneShark3
-// Description: An advanced audio engine, providing complex sound control.
-// By: SharkPool
-// License: MIT AND LGPL-3.0
+https://kakaomames.github.io/turbowarp/ Name: Tune Shark V3
+https://kakaomames.github.io/turbowarp/ ID: SPtuneShark3
+https://kakaomames.github.io/turbowarp/ Description: An advanced audio engine, providing complex sound control.
+https://kakaomames.github.io/turbowarp/ By: SharkPool
+https://kakaomames.github.io/turbowarp/ License: MIT AND LGPL-3.0
 
-// Version V.3.5.23
+https://kakaomames.github.io/turbowarp/ Version V.3.5.23
 
 (async function (Scratch) {
   "use strict";
@@ -12,9 +12,9 @@
     throw new Error(Scratch.translate("Tune Shark V3 must be run unsandboxed"));
 
   const menuIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDIuMTg1IiBoZWlnaHQ9IjEwMi4xODUiIHZpZXdCb3g9IjAgMCAxMDIuMTg1IDEwMi4xODUiPjxnIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTAgNTEuMDkzQzAgMjIuODc1IDIyLjg3NSAwIDUxLjA5MyAwczUxLjA5MyAyMi44NzUgNTEuMDkzIDUxLjA5My0yMi44NzUgNTEuMDkzLTUxLjA5MyA1MS4wOTNTMCA3OS4zMTEgMCA1MS4wOTMiIGZpbGw9IiM0MDQwNDAiLz48cGF0aCBkPSJNNC44NiA1MS4wOTNjMC0yNS41MzQgMjAuNy00Ni4yMzMgNDYuMjMzLTQ2LjIzMyAyNS41MzQgMCA0Ni4yMzMgMjAuNyA0Ni4yMzMgNDYuMjMzIDAgMjUuNTM0LTIwLjcgNDYuMjMzLTQ2LjIzMyA0Ni4yMzMtMjUuNTM0IDAtNDYuMjMzLTIwLjctNDYuMjMzLTQ2LjIzMyIgZmlsbD0iIzY2NiIvPjxwYXRoIGQ9Ik03Mi44MzcgODYuNjQzdi0uMDAzYy0xLjI1NCAyLjUzNi00LjY2OCAzLjkzNS04LjI2NCAzLjE5Ny00LjExOC0uODQ0LTYuOTE1LTQuMTctNi4yNDYtNy40MjguNjY4LTMuMjYgNC41NDgtNS4yMTYgOC42NjYtNC4zNzEgMS44NzUuMzg0IDMuNDc0IDEuMjg0IDQuNiAyLjQ1N2w2LjY4My0xNC4xNzhjLTEwLjU2Ni00LjEzNS0xOS43Ni01LjA5Ni0xOS43Ni01LjA5NmwtOC45ODcgMTkuMDYxYy0uOTY2IDIuOTI3LTQuNjM2IDQuNjIyLTguNTIgMy44MjYtNC4xMTctLjg0NC02LjkxNC00LjE3LTYuMjQ2LTcuNDMuNjY5LTMuMjU4IDQuNTQ4LTUuMjE0IDguNjY3LTQuMzcgMS45MS4zOTEgMy41MzYgMS4zMTcgNC42NjQgMi41MjJsMTIuMDM1LTI1LjUwN3MxMy41MzIuMjM2IDI2Ljk0NyA3LjExNHoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJtMjguMzA5IDMwLjgzMSA0LjA0MyAyMy42ODQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PHBhdGggZD0iTTM0LjAzMyA1NS4yMTljMS4zOCAyLjYwNi0uNzcyIDYuMDQtNC44MDggNy42Ny00LjAzNyAxLjYzLTguNDI5LjgzNy05LjgxLTEuNzctMS4zOC0yLjYwNi43NzItNi4wNCA0LjgwOS03LjY3IDQuMDM2LTEuNjI5IDguNDI4LS44MzcgOS44MDkgMS43N20tNy45NS0yNy4wNjhzOS43MDUtMS43MDQgMTIuMzYzIDIuNzdjMi4zNzUgNCAuMDcxIDguNjk1LjIxMiAxMC4xMjguMTQgMS40MzMgMi4xNzUgMS4xMDkgMi4xNzUgMS4xMDlsLS4wMTQgMS42NzRzLTIuODY0LjY2OS0zLjQxMi0xLjMyYy0uNTQ3LTEuOTg4LS41Ni01Ljk3OC0yLjgyMy04LjIyNy0yLjI2NS0yLjI1LTcuNTM3LS43NTktNy41MzctLjc1OSIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik02MC40MzYgMzUuMzcxYy0uMzMzIDIuMTE4LTIuMzUzIDMuMzA5LTQuMTg5IDQuMDAyLTEuNjUuNzI2LTMuNTUgMS4wMDgtNS4yNzYuMzctMS42MzEtLjM4MS0zLjE4OC0xLjgwNy0yLjk5NC0zLjU5OC4xNTQtMi4wODUgMS44OTYtMy44MjIgMy44NDItNC40MDUgMS45NC0uNzk5IDQuMjUzLS43MyA2LjEwNS4yNi45MTMuNDIxIDIuMTg5LTE0LjE0MiAzLjAzNS0yMC41ODMuMS0uNjQyIDIuNTg0LS40NyAyLjUxMy4xNTEgMCAwLTEuODU0IDE1LjUyMi0zLjAzNiAyMy44MDMiIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDIuMTg1IiBoZWlnaHQ9IjEwMi4xODUiIHZpZXdCb3g9IjAgMCAxMDIuMTg1IDEwMi4xODUiPjxnIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTAgNTEuMDkzQzAgMjIuODc1IDIyLjg3NSAwIDUxLjA5MyAwczUxLjA5MyAyMi44NzUgNTEuMDkzIDUxLjA5My0yMi44NzUgNTEuMDkzLTUxLjA5MyA1MS4wOTNTMCA3OS4zMTEgMCA1MS4wOTMiIGZpbGw9IiM0MDQwNDAiLz48cGF0aCBkPSJNNC44NiA1MS4wOTNjMC0yNS41MzQgMjAuNy00Ni4yMzMgNDYuMjMzLTQ2LjIzMyAyNS41MzQgMCA0Ni4yMzMgMjAuNyA0Ni4yMzMgNDYuMjMzIDAgMjUuNTM0LTIwLjcgNDYuMjMzLTQ2LjIzMyA0Ni4yMzMtMjUuNTM0IDAtNDYuMjMzLTIwLjctNDYuMjMzLTQ2LjIzMyIgZmlsbD0iIzY2NiIvPjxwYXRoIGQ9Ik03Mi44MzcgODYuNjQzdi0uMDAzYy0xLjI1NCAyLjUzNi00LjY2OCAzLjkzNS04LjI2NCAzLjE5Ny00LjExOC0uODQ0LTYuOTE1LTQuMTctNi4yNDYtNy40MjguNjY4LTMuMjYgNC41NDgtNS4yMTYgOC42NjYtNC4zNzEgMS44NzUuMzg0IDMuNDc0IDEuMjg0IDQuNiAyLjQ1N2w2LjY4My0xNC4xNzhjLTEwLjU2Ni00LjEzNS0xOS43Ni01LjA5Ni0xOS43Ni01LjA5NmwtOC45ODcgMTkuMDYxYy0uOTY2IDIuOTI3LTQuNjM2IDQuNjIyLTguNTIgMy44MjYtNC4xMTctLjg0NC02LjkxNC00LjE3LTYuMjQ2LTcuNDMuNjY5LTMuMjU4IDQuNTQ4LTUuMjE0IDguNjY3LTQuMzcgMS45MS4zOTEgMy41MzYgMS4zMTcgNC42NjQgMi41MjJsMTIuMDM1LTI1LjUwN3MxMy41MzIuMjM2IDI2Ljk0NyA3LjExNHoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJtMjguMzA5IDMwLjgzMSA0LjA0MyAyMy42ODQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PHBhdGggZD0iTTM0LjAzMyA1NS4yMTljMS4zOCAyLjYwNi0uNzcyIDYuMDQtNC44MDggNy42Ny00LjAzNyAxLjYzLTguNDI5LjgzNy05LjgxLTEuNzctMS4zOC0yLjYwNi43NzItNi4wNCA0LjgwOS03LjY3IDQuMDM2LTEuNjI5IDguNDI4LS44MzcgOS44MDkgMS43N20tNy45NS0yNy4wNjhzOS43MDUtMS43MDQgMTIuMzYzIDIuNzdjMi4zNzUgNCAuMDcxIDguNjk1LjIxMiAxMC4xMjguMTQgMS40MzMgMi4xNzUgMS4xMDkgMi4xNzUgMS4xMDlsLS4wMTQgMS42NzRzLTIuODY0LjY2OS0zLjQxMi0xLjMyYy0uNTQ3LTEuOTg4LS41Ni01Ljk3OC0yLjgyMy04LjIyNy0yLjI2NS0yLjI1LTcuNTM3LS43NTktNy41MzctLjc1OSIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik02MC40MzYgMzUuMzcxYy0uMzMzIDIuMTE4LTIuMzUzIDMuMzA5LTQuMTg5IDQuMDAyLTEuNjUuNzI2LTMuNTUgMS4wMDgtNS4yNzYuMzctMS42MzEtLjM4MS0zLjE4OC0xLjgwNy0yLjk5NC0zLjU5OC4xNTQtMi4wODUgMS44OTYtMy44MjIgMy44NDItNC40MDUgMS45NC0uNzk5IDQuMjUzLS43MyA2LjEwNS4yNi45MTMuNDIxIDIuMTg5LTE0LjE0MiAzLjAzNS0yMC41ODMuMS0uNjQyIDIuNTg0LS40NyAyLjUxMy4xNTEgMCAwLTEuODU0IDE1LjUyMi0zLjAzNiAyMy44MDMiIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=";
   const blockIconURI =
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3OC45NzQiIGhlaWdodD0iNzguOTc0IiB2aWV3Qm94PSIwIDAgNzguOTc0IDc4Ljk3NCI+PGcgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMCA3OC45NzRWMGg3OC45NzR2NzguOTc0eiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Im02MS4yMDIgNTMuODM2LS4wMDItLjAwM2MtLjA2OCAzLjcxLTMuMzM3IDcuMjgtOC4wMTYgOC40MTYtNS4zNTkgMS4zMDItMTAuNTM4LTEuMDgtMTEuNTY4LTUuMzJzMi40OC04LjczMyA3LjgzOS0xMC4wMzVjMi40NC0uNTkzIDQuODQtLjQyIDYuODMxLjM0MnYtMjAuNTZjLTE0Ljg1IDEuMDAzLTI2LjI5OCA1LjAwNi0yNi4yOTggNS4wMDZ2MjcuNjQ0Yy40OSA0LjAxNC0yLjkxNiA4LjA3OC03Ljk3IDkuMzA2LTUuMzU4IDEuMzAxLTEwLjUzNy0xLjA4MS0xMS41NjctNS4zMjFzMi40OC04LjczMyA3LjgzOC0xMC4wMzVjMi40ODYtLjYwNCA0LjkzMy0uNDE0IDYuOTQ2LjM4NGwuMDEyLTM2Ljk5OHMxNi4xOS03LjI5IDM1Ljk1NS02LjYzM3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+";
+    "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3OC45NzQiIGhlaWdodD0iNzguOTc0IiB2aWV3Qm94PSIwIDAgNzguOTc0IDc4Ljk3NCI+PGcgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMCA3OC45NzRWMGg3OC45NzR2NzguOTc0eiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Im02MS4yMDIgNTMuODM2LS4wMDItLjAwM2MtLjA2OCAzLjcxLTMuMzM3IDcuMjgtOC4wMTYgOC40MTYtNS4zNTkgMS4zMDItMTAuNTM4LTEuMDgtMTEuNTY4LTUuMzJzMi40OC04LjczMyA3LjgzOS0xMC4wMzVjMi40NC0uNTkzIDQuODQtLjQyIDYuODMxLjM0MnYtMjAuNTZjLTE0Ljg1IDEuMDAzLTI2LjI5OCA1LjAwNi0yNi4yOTggNS4wMDZ2MjcuNjQ0Yy40OSA0LjAxNC0yLjkxNiA4LjA3OC03Ljk3IDkuMzA2LTUuMzU4IDEuMzAxLTEwLjUzNy0xLjA4MS0xMS41NjctNS4zMjFzMi40OC04LjczMyA3LjgzOC0xMC4wMzVjMi40ODYtLjYwNCA0LjkzMy0uNDE0IDYuOTQ2LjM4NGwuMDEyLTM2Ljk5OHMxNi4xOS03LjI5IDM1Ljk1NS02LjYzM3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+";
 
   const extraIcons = {
     set: "dpZHRoPSI3OC45NzQiIGhlaWdodD0iNzguOTc0IiB2aWV3Qm94PSIwIDAgNzguOTc0IDc4Ljk3NCI+PGcgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiID48cGF0aCBkPSJtNjQuNTMzIDQyLjYxIDIuMDQyLjg1NWE1LjAyIDUuMDIgMCAwIDEgMi42OSA2LjU3bC0xLjM3IDMuMjc0YTUuMDIgNS4wMiAwIDAgMS02LjU3IDIuNjlsLTIuMDQyLS44NTVhMjUgMjUgMCAwIDEtNC4yOTUgNC4yNmwuODQgMi4wNWE1LjAyIDUuMDIgMCAwIDEtMi43NDIgNi41NDhsLTMuMjg1IDEuMzQ1YTUuMDIgNS4wMiAwIDAgMS02LjU0OC0yLjc0MmwtLjg0LTIuMDVhMjUgMjUgMCAwIDEtNi4wNDktLjAyMmwtLjg1NSAyLjA0MmE1LjAyIDUuMDIgMCAwIDEtNi41NyAyLjY5bC0zLjI3NC0xLjM3YTUuMDIgNS4wMiAwIDAgMS0yLjY5LTYuNTdsLjg1NS0yLjA0MmEyNSAyNSAwIDAgMS00LjI2LTQuMjk1bC0yLjA1Ljg0YTUuMDIgNS4wMiAwIDAgMS02LjU0OC0yLjc0MmwtMS4zNDUtMy4yODVhNS4wMiA1LjAyIDAgMCAxIDIuNzQyLTYuNTQ4bDIuMDUtLjg0YTI1IDI1IDAgMCAxIC4wMjItNi4wNDlsLTIuMDQyLS44NTVhNS4wMiA1LjAyIDAgMCAxLTIuNjktNi41N2wxLjM3LTMuMjc0YTUuMDIgNS4wMiAwIDAgMSA2LjU3LTIuNjlsMi4wNDIuODU1YTI1IDI1IDAgMCAxIDQuMjk1LTQuMjZsLS44NC0yLjA1YTUuMDIgNS4wMiAwIDAgMSAyLjc0Mi02LjU0OGwzLjI4NS0xLjM0NWE1LjAyIDUuMDIgMCAwIDEgNi41NDggMi43NDJsLjg0IDIuMDVhMjUgMjUgMCAwIDEgNi4wNDkuMDIybC44NTUtMi4wNDJhNS4wMiA1LjAyIDAgMCAxIDYuNTctMi42OWwzLjI3NCAxLjM3YTUuMDIgNS4wMiAwIDAgMSAyLjY5IDYuNTdsLS44NTUgMi4wNDJhMjUgMjUgMCAwIDEgNC4yNiA0LjI5NWwyLjA1LS44NGE1LjAyIDUuMDIgMCAwIDEgNi41NDggMi43NDJsMS4zNDUgMy4yODVhNS4wMiA1LjAyIDAgMCAxLTIuNzQyIDYuNTQ4bC0yLjA1Ljg0YTI1IDI1IDAgMCAxLS4wMjIgNi4wNDltLTM3LjQ5OC04LjMzOGMtMi44OCA2Ljg3Ny4zNiAxNC43ODcgNy4yMzcgMTcuNjY3czE0Ljc4Ny0uMzYgMTcuNjY3LTcuMjM3LS4zNi0xNC43ODctNy4yMzctMTcuNjY3LTE0Ljc4Ny4zNi0xNy42NjcgNy4yMzciIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMCA3OC45NzRWMGg3OC45NzR2NzguOTc0eiIgZmlsbD0ibm9uZSIvPjwvZz48L3N2Zz4=",
@@ -24,14 +24,14 @@
   };
   for (const key in extraIcons) {
     extraIcons[key] =
-      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIH" +
+      "data:imaghttps://kakaomames.github.io/turbowarp/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIH" +
       extraIcons[key];
   }
 
-  // Pizzicato (Library to simplify the way you create and manipulate sounds with the Web Audio API.)
-  // Original: https://github.com/alemangui/pizzicato
-  // Modified Version: https://github.com/SharkPool-SP/pizzicato/
-  /*
+ https://kakaomames.github.io/turbowarp// Pizzicato (Library to simplify the way you create and manipulate sounds with the Web Audio API.)
+ https://kakaomames.github.io/turbowarp// Original: httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/alemanguhttps://kakaomames.github.io/turbowarp/pizzicato
+ https://kakaomames.github.io/turbowarp// Modified Version: httpshttps://kakaomames.github.io/turbowarp//github.cohttps://kakaomames.github.io/turbowarp/SharkPool-Shttps://kakaomames.github.io/turbowarp/pizzicathttps://kakaomames.github.io/turbowarp/
+ https://kakaomames.github.io/turbowarp/*
     MIT License
 
     Copyright (c) 2016 Alejandro Mantecon Guillen
@@ -39,7 +39,7 @@
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
     in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    to use, copy, modify, merge, publish, distribute, sublicense, anhttps://kakaomames.github.io/turbowarp/or sell
     copies of the Software, and to permit persons to whom the Software is
     furnished to do so, subject to the following conditions:
 
@@ -52,16 +52,16 @@
     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
     WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
     CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-  */
+  https://kakaomames.github.io/turbowarp/
   const PzInitializer = await Scratch.external.evalAndReturn(
-    "https://raw.githubusercontent.com/SharkPool-SP/pizzicato/5c6ef4e1caa37ca4a3e579d6444188617460e214/distr/Pizzicato.min.js",
+    "httpshttps://kakaomames.github.io/turbowarp//raw.githubusercontent.cohttps://kakaomames.github.io/turbowarp/SharkPool-Shttps://kakaomames.github.io/turbowarp/pizzicathttps://kakaomames.github.io/turbowarp/5c6ef4e1caa37ca4a3e579d6444188617460e21https://kakaomames.github.io/turbowarp/disthttps://kakaomames.github.io/turbowarp/Pizzicato.min.js",
     "Pizzicato"
   );
 
   const { vm, Cast } = Scratch;
   const runtime = vm.runtime;
 
-  // initialize engine
+ https://kakaomames.github.io/turbowarp// initialize engine
   const Pizzicato = PzInitializer(runtime.audioEngine.audioContext);
   Pizzicato.masterGainNode.disconnect();
   Pizzicato.masterGainNode.connect(runtime.audioEngine.inputNode);
@@ -131,7 +131,7 @@
           if (bank.loaded) {
             const sound = bank.context;
             if (sound.playing) {
-              // Increment Current Time
+             https://kakaomames.github.io/turbowarp// Increment Current Time
               const leng =
                 sound.loop && bank.loopParm[1]
                   ? bank.loopParm[1]
@@ -148,7 +148,7 @@
               }
               bank.currentTime = time;
 
-              // Apply Speed Changes
+             https://kakaomames.github.io/turbowarp// Apply Speed Changes
               if (bank.speed !== 1) {
                 const lastTime = bank.currentTime;
                 sound.release = speedBuffer;
@@ -167,7 +167,7 @@
       return {
         id: "SPtuneShark3",
         name: Scratch.translate("Tune Shark V3"),
-        docsURI: "./SharkPool/Tune-Shark-V3",
+        docsURI: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/SharkPoohttps://kakaomames.github.io/turbowarp/Tune-Shark-V3",
         color1: "#666666",
         menuIconURI,
         blockIconURI,
@@ -180,7 +180,7 @@
             arguments: {
               URL: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "./meow.mp3",
+                defaultValue: "httpshttps://kakaomames.github.io/turbowarp//extensions.turbowarp.orhttps://kakaomames.github.io/turbowarp/meow.mp3",
               },
               NAME: {
                 type: Scratch.ArgumentType.STRING,
@@ -815,7 +815,7 @@
       };
     }
 
-    // Helper Funcs
+   https://kakaomames.github.io/turbowarp// Helper Funcs
     startDataHats(data) {
       let newThreads = [];
       runtime.allScriptsByOpcodeDo(
@@ -863,7 +863,7 @@
         if (data[i] > max) max = data[i];
       }
       for (let i = 0; i < data.length; i++) {
-        if (data[i] > max - 0.1 && i - lastPeakIndex > sampleRate / 4) {
+        if (data[i] > max - 0.1 && i - lastPeakIndex > sampleRatehttps://kakaomames.github.io/turbowarp/ 4) {
           peaks.push(i);
           lastPeakIndex = i;
         }
@@ -874,8 +874,8 @@
       }
 
       const avgInterval =
-        intervals.reduce((a, b) => a + b, 0) / intervals.length;
-      const value = Math.round((sampleRate / avgInterval) * 60);
+        intervals.reduce((a, b) => a + b, 0)https://kakaomames.github.io/turbowarp/ intervals.length;
+      const value = Math.round((sampleRatehttps://kakaomames.github.io/turbowarp/ avgInterval) * 60);
       return isNaN(value) ? 0 : value;
     }
 
@@ -901,7 +901,7 @@
         REVERB: "Reverb",
         DELAY: "Delay",
         FUZZ: "Quadrafuzz",
-        BITCRUSH: "Bitcrusher", // NOTE: this uses 'ScriptProcessorNode' which though deprecated are still widely supported
+        BITCRUSH: "Bitcrusher",https://kakaomames.github.io/turbowarp// NOTE: this uses 'ScriptProcessorNode' which though deprecated are still widely supported
         PAN3D: "Panner3D",
         TREMOLO: "Tremolo",
         HIGHPASS: "HighPassFilter",
@@ -930,8 +930,8 @@
         return;
       }
 
-      // Dont remove and re-init the effect, this causes lag and audio glitches.
-      // Simply just change each effect node value
+     https://kakaomames.github.io/turbowarp// Dont remove and re-init the effect, this causes lag and audio glitches.
+     https://kakaomames.github.io/turbowarp// Simply just change each effect node value
       const isParamsStatic = compareObjects(values, effect.params);
       if (isParamsStatic) return;
 
@@ -996,7 +996,7 @@
       const context = sound.context;
       try {
         if (context.playing && sound.overlap) {
-          // Clone context to soundBank for 'audioControlDo'
+         https://kakaomames.github.io/turbowarp// Clone context to soundBank for 'audioControlDo'
           const clone = context.clone();
           const newName = `${sound.name}_COPY_${Math.random()}`;
           soundBank[newName] = {
@@ -1049,7 +1049,7 @@
         this.startDataHats({ name: sound.name, type: "starts" });
       } catch {
         console.warn(Scratch.translate("Audio has not loaded yet!"));
-        context.stop(); // Reset
+        context.stop();https://kakaomames.github.io/turbowarp// Reset
       }
     }
 
@@ -1099,7 +1099,7 @@
     }
 
     bufferToWavBlob(buffer) {
-      // building WAVs are a pain
+     https://kakaomames.github.io/turbowarp// building WAVs are a pain
       const numberOfChannels = buffer.numberOfChannels;
       const sampleRate = buffer.sampleRate;
       const numFrames = buffer.length;
@@ -1117,21 +1117,21 @@
         }
       };
 
-      setUint(true, false, 0x52494646); // "RIFF" header
-      setUint(true, true, 36 + numSamples * 2); // File size
-      setUint(true, false, 0x57415645); // "WAVE" header
-      setUint(true, false, 0x666d7420); // "fmt " chunk
-      setUint(true, true, 16); // Chunk size
-      setUint(false, true, 1); // Audio format (PCM)
+      setUint(true, false, 0x52494646);https://kakaomames.github.io/turbowarp// "RIFF" header
+      setUint(true, true, 36 + numSamples * 2);https://kakaomames.github.io/turbowarp// File size
+      setUint(true, false, 0x57415645);https://kakaomames.github.io/turbowarp// "WAVE" header
+      setUint(true, false, 0x666d7420);https://kakaomames.github.io/turbowarp// "fmt " chunk
+      setUint(true, true, 16);https://kakaomames.github.io/turbowarp// Chunk size
+      setUint(false, true, 1);https://kakaomames.github.io/turbowarp// Audio format (PCM)
       setUint(false, true, numberOfChannels);
       setUint(true, true, sampleRate);
-      setUint(true, true, sampleRate * numberOfChannels * 2); // Byte rate
-      setUint(false, true, numberOfChannels * 2); // Block align
-      setUint(false, true, 16); // Bits per sample
-      setUint(true, false, 0x64617461); // "data" chunk
-      setUint(true, true, numSamples * 2); // Subchunk2Size
+      setUint(true, true, sampleRate * numberOfChannels * 2);https://kakaomames.github.io/turbowarp// Byte rate
+      setUint(false, true, numberOfChannels * 2);https://kakaomames.github.io/turbowarp// Block align
+      setUint(false, true, 16);https://kakaomames.github.io/turbowarp// Bits per sample
+      setUint(true, false, 0x64617461);https://kakaomames.github.io/turbowarp// "data" chunk
+      setUint(true, true, numSamples * 2);https://kakaomames.github.io/turbowarp// Subchunk2Size
 
-      // Audio data
+     https://kakaomames.github.io/turbowarp// Audio data
       for (let i = 0; i < numFrames; i++) {
         for (let channel = 0; channel < numberOfChannels; channel++) {
           const sample = clamp(-1, 1, buffer.getChannelData(channel)[i]);
@@ -1143,10 +1143,10 @@
           offset += 2;
         }
       }
-      return new Blob([dataView], { type: "audio/wav" });
+      return new Blob([dataView], { type: "audihttps://kakaomames.github.io/turbowarp/wav" });
     }
 
-    // Block Funcs
+   https://kakaomames.github.io/turbowarp// Block Funcs
     importURL(args) {
       const url = Cast.toString(args.URL);
       if (!url) return;
@@ -1200,7 +1200,7 @@
 
       if (sound) {
         this.deleteSound(args);
-        const sourceURL = `/${target.name.replaceAll("/", "")}/${sound.name.replaceAll("/", "")}.${sound.dataFormat}`;
+        const sourceURL = https://kakaomames.github.io/turbowarp/${target.name.replaceAll(https://kakaomames.github.io/turbowarp/", "")https://kakaomames.github.io/turbowarp/${sound.name.replaceAll(https://kakaomames.github.io/turbowarp/", "")}.${sound.dataFormat}`;
         const buffer = target.soundBank.soundPlayers[sound.soundId].buffer;
         const engine = new Pizzicato.Sound({
           source: "buffer",
@@ -1270,7 +1270,7 @@
         const ctx = sound.context;
         if (
           sound.currentTime >= Cast.toNumber(args.MAX) ||
-          // If the sound is shorter than MAX, current time will never reach MAX, so we should abort early at that point
+         https://kakaomames.github.io/turbowarp// If the sound is shorter than MAX, current time will never reach MAX, so we should abort early at that point
           (!ctx.playing && !ctx.paused)
         ) {
           this.audioControlDo(sound, "stop");
@@ -1341,8 +1341,8 @@
       const ctx = sound.context;
       const src = ctx.sourceNode.buffer;
 
-      // Reverse a private copy -- never mutate the source buffer, it may be
-      // shared with the project's Scratch sound or another Tune Shark sound
+     https://kakaomames.github.io/turbowarp// Reverse a private copy -- never mutate the source buffer, it may be
+     https://kakaomames.github.io/turbowarp// shared with the project's Scratch sound or another Tune Shark sound
       const reversed = Pizzicato.context.createBuffer(
         src.numberOfChannels,
         src.length,
@@ -1354,8 +1354,8 @@
         channel.reverse();
       }
 
-      // Pizzicato keeps the buffer in a closure with no setter, so point
-      // its source-node factory at the reversed copy
+     https://kakaomames.github.io/turbowarp// Pizzicato keeps the buffer in a closure with no setter, so point
+     https://kakaomames.github.io/turbowarp// its source-node factory at the reversed copy
       ctx.getRawSourceNode = function () {
         const node = Pizzicato.context.createBufferSource();
         node.loop = this.loop;
@@ -1467,7 +1467,7 @@
         case "pitch":
           return Math.round((sound.pitch - 1) * 100);
         case "detune":
-          return sound.detune / 10;
+          return sound.detunehttps://kakaomames.github.io/turbowarp/ 10;
         case "speed":
           return sound.speed * 100;
         case "gain":
@@ -1517,13 +1517,13 @@
         const channelData = buffer.getChannelData(chan);
         const sampleIndex = Math.floor(sampleRate * time);
         const windowSize = sampleRate * 0.1;
-        const startSample = Math.max(0, sampleIndex - windowSize / 2);
+        const startSample = Math.max(0, sampleIndex - windowSizehttps://kakaomames.github.io/turbowarp/ 2);
         const endSample = Math.min(
           channelData.length,
-          sampleIndex + windowSize / 2
+          sampleIndex + windowSizehttps://kakaomames.github.io/turbowarp/ 2
         );
 
-        // no need to cache raw noise, no work is done
+       https://kakaomames.github.io/turbowarp// no need to cache raw noise, no work is done
         if (args.TYPE === "raw noise") value = channelData[endSample];
         else if (args.TYPE === "tone") {
           const data = channelData.slice(startSample, endSample);
@@ -1539,7 +1539,7 @@
           }
           for (let tau = 1; tau < size; tau++) {
             value += tauArray[tau];
-            tauArray[tau] *= tau / value;
+            tauArray[tau] *= tauhttps://kakaomames.github.io/turbowarp/ value;
           }
 
           let bestTau = -1;
@@ -1550,7 +1550,7 @@
             }
           }
 
-          value = bestTau > 0 ? sampleRate / bestTau : 0;
+          value = bestTau > 0 ? sampleRatehttps://kakaomames.github.io/turbowarp/ bestTau : 0;
           sound._cache["tone"][cacheKey] = value;
           return value;
         } else if (args.TYPE === "loudness") {
@@ -1558,9 +1558,9 @@
             value += channelData[i] * channelData[i];
           }
 
-          const rms = Math.sqrt(value / (endSample - startSample));
+          const rms = Math.sqrt(valuehttps://kakaomames.github.io/turbowarp/ (endSample - startSample));
           const dB = 20 * Math.log10(rms);
-          value = clamp(0, 1, (dB + 50) / 50) * 100;
+          value = clamp(0, 1, (dB + 50)https://kakaomames.github.io/turbowarp/ 50) * 100;
           sound._cache["loudness"][cacheKey] = value;
         } else {
           return "";
@@ -1640,7 +1640,7 @@
     setVol(args) {
       const sound = soundBank[args.NAME];
       if (sound) {
-        sound.context.volume = clamp(0, 1, Cast.toNumber(args.NUM) / 100);
+        sound.context.volume = clamp(0, 1, Cast.toNumber(args.NUM)https://kakaomames.github.io/turbowarp/ 100);
       }
     }
 
@@ -1672,7 +1672,7 @@
         ctx.removeEffect(sound.effects[name]);
         delete sound.effects[name];
       }
-      sound.rate = sound.pitch * sound.speed * Math.pow(2, sound.detune / 1200);
+      sound.rate = sound.pitch * sound.speed * Math.pow(2, sound.detunehttps://kakaomames.github.io/turbowarp/ 1200);
       this.updateAudioNodes(ctx.sourceNode, sound);
     }
 
@@ -1680,7 +1680,7 @@
       const sound = soundBank[args.NAME];
       if (sound === undefined) return;
       const ctx = sound.context;
-      const value = Cast.toNumber(args.VALUE) / 100;
+      const value = Cast.toNumber(args.VALUE)https://kakaomames.github.io/turbowarp/ 100;
 
       if (args.TYPE === "gain") sound.gain = value;
       else if (args.TYPE === "pitch") sound.pitch = Math.max(0, value + 1);
@@ -1695,7 +1695,7 @@
         this.handleEffect(sound, "DISTORTION", args, { gain: value });
         return;
       }
-      sound.rate = sound.pitch * sound.speed * Math.pow(2, sound.detune / 1200);
+      sound.rate = sound.pitch * sound.speed * Math.pow(2, sound.detunehttps://kakaomames.github.io/turbowarp/ 1200);
       this.updateAudioNodes(ctx.sourceNode, sound);
     }
 
@@ -1703,9 +1703,9 @@
       const sound = soundBank[args.NAME];
       if (sound) {
         this.handleEffect(sound, "REVERB", args, {
-          time: Cast.toNumber(args.TIME) / 10,
-          decay: Cast.toNumber(args.DECAY) / 10,
-          mix: Cast.toNumber(args.MIX) / 100,
+          time: Cast.toNumber(args.TIME)https://kakaomames.github.io/turbowarp/ 10,
+          decay: Cast.toNumber(args.DECAY)https://kakaomames.github.io/turbowarp/ 10,
+          mix: Cast.toNumber(args.MIX)https://kakaomames.github.io/turbowarp/ 100,
         });
       }
     }
@@ -1714,9 +1714,9 @@
       const sound = soundBank[args.NAME];
       if (sound) {
         this.handleEffect(sound, "DELAY", args, {
-          time: clamp(0, 1, Cast.toNumber(args.TIME) / 100),
-          feedback: Cast.toNumber(args.FEED) / 100,
-          mix: Cast.toNumber(args.MIX) / 100,
+          time: clamp(0, 1, Cast.toNumber(args.TIME)https://kakaomames.github.io/turbowarp/ 100),
+          feedback: Cast.toNumber(args.FEED)https://kakaomames.github.io/turbowarp/ 100,
+          mix: Cast.toNumber(args.MIX)https://kakaomames.github.io/turbowarp/ 100,
         });
       }
     }
@@ -1725,11 +1725,11 @@
       const sound = soundBank[args.NAME];
       if (sound) {
         this.handleEffect(sound, "FUZZ", args, {
-          lowGain: clamp(0, 1, Cast.toNumber(args.LOW) / 100),
-          midLowGain: clamp(0, 1, Cast.toNumber(args.MED1) / 100),
-          midHighGain: clamp(0, 1, Cast.toNumber(args.MED2) / 100),
-          highGain: clamp(0, 1, Cast.toNumber(args.HIGH) / 100),
-          mix: Cast.toNumber(args.MIX) / 100,
+          lowGain: clamp(0, 1, Cast.toNumber(args.LOW)https://kakaomames.github.io/turbowarp/ 100),
+          midLowGain: clamp(0, 1, Cast.toNumber(args.MED1)https://kakaomames.github.io/turbowarp/ 100),
+          midHighGain: clamp(0, 1, Cast.toNumber(args.MED2)https://kakaomames.github.io/turbowarp/ 100),
+          highGain: clamp(0, 1, Cast.toNumber(args.HIGH)https://kakaomames.github.io/turbowarp/ 100),
+          mix: Cast.toNumber(args.MIX)https://kakaomames.github.io/turbowarp/ 100,
         });
       }
     }
@@ -1738,7 +1738,7 @@
       const sound = soundBank[args.NAME];
       if (sound) {
         this.handleEffect(sound, "BITCRUSH", args, {
-          bits: Math.max(10, Cast.toNumber(args.BITS)) / 10,
+          bits: Math.max(10, Cast.toNumber(args.BITS))https://kakaomames.github.io/turbowarp/ 10,
           frequency: Math.max(30000, Cast.toNumber(args.FREQ)),
         });
       }
@@ -1759,9 +1759,9 @@
       const sound = soundBank[args.NAME];
       if (sound) {
         this.handleEffect(sound, "TREMOLO", args, {
-          speed: Cast.toNumber(args.SPEED) / 5,
-          depth: clamp(0, 1, Cast.toNumber(args.DEPTH) / 100),
-          mix: Cast.toNumber(args.MIX) / 100,
+          speed: Cast.toNumber(args.SPEED)https://kakaomames.github.io/turbowarp/ 5,
+          depth: clamp(0, 1, Cast.toNumber(args.DEPTH)https://kakaomames.github.io/turbowarp/ 100),
+          mix: Cast.toNumber(args.MIX)https://kakaomames.github.io/turbowarp/ 100,
         });
       }
     }
@@ -1775,7 +1775,7 @@
           args,
           {
             frequency: Cast.toNumber(args.FREQ),
-            peak: Cast.toNumber(args.PEAK) / 5,
+            peak: Cast.toNumber(args.PEAK)https://kakaomames.github.io/turbowarp/ 5,
           }
         );
       }
@@ -1785,11 +1785,11 @@
       const sound = soundBank[args.NAME];
       if (sound) {
         this.handleEffect(sound, "FLANGER", args, {
-          time: Cast.toNumber(args.TIME) / 100,
-          speed: Cast.toNumber(args.SPEED) / 100,
-          depth: Cast.toNumber(args.DEPTH) / 100,
-          feedback: Cast.toNumber(args.FEED) / 100,
-          mix: Cast.toNumber(args.MIX) / 100,
+          time: Cast.toNumber(args.TIME)https://kakaomames.github.io/turbowarp/ 100,
+          speed: Cast.toNumber(args.SPEED)https://kakaomames.github.io/turbowarp/ 100,
+          depth: Cast.toNumber(args.DEPTH)https://kakaomames.github.io/turbowarp/ 100,
+          feedback: Cast.toNumber(args.FEED)https://kakaomames.github.io/turbowarp/ 100,
+          mix: Cast.toNumber(args.MIX)https://kakaomames.github.io/turbowarp/ 100,
         });
       }
     }
@@ -1799,10 +1799,10 @@
       if (sound) {
         this.handleEffect(sound, "COMPRESSOR", args, {
           threshold: clamp(-100, 0, Cast.toNumber(args.THRESH) * -1),
-          ratio: Cast.toNumber(args.RATIO) / 5,
-          attack: clamp(0, 1, Cast.toNumber(args.ATTACK) / 100),
-          release: clamp(0, 1, Cast.toNumber(args.RELEASE) / 100),
-          knee: Cast.toNumber(args.KNEE) / 2.5,
+          ratio: Cast.toNumber(args.RATIO)https://kakaomames.github.io/turbowarp/ 5,
+          attack: clamp(0, 1, Cast.toNumber(args.ATTACK)https://kakaomames.github.io/turbowarp/ 100),
+          release: clamp(0, 1, Cast.toNumber(args.RELEASE)https://kakaomames.github.io/turbowarp/ 100),
+          knee: Cast.toNumber(args.KNEE)https://kakaomames.github.io/turbowarp/ 2.5,
         });
       }
     }
@@ -1813,9 +1813,9 @@
         this.handleEffect(sound, "EQUALIZER", args, {
           cutoff_frequency_high: 120 * (Cast.toNumber(args.CUT_HIGH) + 100),
           cutoff_frequency_low: 120 * (Cast.toNumber(args.CUT_LOW) + 100),
-          low_band_gain: Cast.toNumber(args.LOW) / 10,
-          mid_band_gain: Cast.toNumber(args.MID) / 10,
-          high_band_gain: Cast.toNumber(args.HIGH) / 10,
+          low_band_gain: Cast.toNumber(args.LOW)https://kakaomames.github.io/turbowarp/ 10,
+          mid_band_gain: Cast.toNumber(args.MID)https://kakaomames.github.io/turbowarp/ 10,
+          high_band_gain: Cast.toNumber(args.HIGH)https://kakaomames.github.io/turbowarp/ 10,
         });
       }
     }

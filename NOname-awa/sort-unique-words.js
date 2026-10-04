@@ -2,14 +2,14 @@
   "use strict";
 
   const parseEnglish = (text) => {
-    const words = text.toLowerCase().match(/\b\w+\b/g) || [];
+    const words = text.toLowerCase().matchhttps://kakaomames.github.io/turbowarp/\b\w+\https://kakaomames.github.io/turbowarp/g) || [];
     const uniques = Array.from(new Set(words));
     uniques.sort();
     return uniques;
   };
 
   const parseChinese = (text) => {
-    const words = text.match(/[^\u4e00-\u9fa5]+|[\u4e00-\u9fa5]+/g) || [];
+    const words = text.matchhttps://kakaomames.github.io/turbowarp/[^\u4e00-\u9fa5]+|[\u4e00-\u9fa5]https://kakaomames.github.io/turbowarp/g) || [];
     const uniques = Array.from(new Set(words));
     uniques.sort(function (a, b) {
       return a.localeCompare(b, "zh-Hans-CN", { sensitivity: "accent" });

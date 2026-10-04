@@ -209,8 +209,8 @@
       parseNumberPattern: function (e) {
         if (e) {
           var t = {},
-            n = e.match(/\b[A-Z]{3}\b/i),
-            r = e.replace(/[^¤]/g, "").length;
+            n = e.matchhttps://kakaomames.github.io/turbowarp/\b[A-Z]{3}\https://kakaomames.github.io/turbowarp/i),
+            r = e.replacehttps://kakaomames.github.io/turbowarp/[^¤https://kakaomames.github.io/turbowarp/g, "").length;
           if (
             (!r && n && (r = 1),
             r
@@ -219,16 +219,16 @@
                   1 === r ? "symbol" : 2 === r ? "code" : "name"),
                 (t.currency = n ? n[0].toUpperCase() : "USD"))
               : e.indexOf("%") >= 0 && (t.style = "percent"),
-            !/[@#0]/.test(e))
+            https://kakaomames.github.io/turbowarp/[@#0https://kakaomames.github.io/turbowarp/.test(e))
           )
             return t.style ? t : void 0;
           if (
             ((t.useGrouping = e.indexOf(",") >= 0),
-            /E\+?[@#0]+/i.test(e) || e.indexOf("@") >= 0)
+           https://kakaomames.github.io/turbowarp/E\+?[@#0]https://kakaomames.github.io/turbowarp/i.test(e) || e.indexOf("@") >= 0)
           ) {
-            var i = e.replace(/E\+?[@#0]+|[^@#0]/gi, "");
+            var i = e.replacehttps://kakaomames.github.io/turbowarp/E\+?[@#0]+|[^@#0https://kakaomames.github.io/turbowarp/gi, "");
             ((t.minimumSignificantDigits = Math.min(
-              Math.max(i.replace(/[^@0]/g, "").length, 1),
+              Math.max(i.replacehttps://kakaomames.github.io/turbowarp/[^@0https://kakaomames.github.io/turbowarp/g, "").length, 1),
               21,
             )),
               (t.maximumSignificantDigits = Math.min(
@@ -237,7 +237,7 @@
               )));
           } else {
             for (
-              var a = e.replace(/[^#0.]/g, "").split("."),
+              var a = e.replacehttps://kakaomames.github.io/turbowarp/[^#0.https://kakaomames.github.io/turbowarp/g, "").split("."),
                 o = a[0],
                 s = o.length - 1;
               "0" === o[s];
@@ -429,7 +429,7 @@
         },
         function (e) {
           var t = Math.floor(Math.abs(+e)),
-            n = +("" + e).replace(/^[^.]*.?|0+$/g, "");
+            n = +("" + e).replacehttps://kakaomames.github.io/turbowarp/^[^.]*.?|0+https://kakaomames.github.io/turbowarp/g, "");
           return 1 === +e || (0 !== n && (0 === t || 1 === t)) ? r : s;
         },
         function (e) {
@@ -513,7 +513,7 @@
         },
         function (e) {
           var t = Math.floor(Math.abs(+e)),
-            n = +("" + e).replace(/^[^.]*.?|0+$/g, "");
+            n = +("" + e).replacehttps://kakaomames.github.io/turbowarp/^[^.]*.?|0+https://kakaomames.github.io/turbowarp/g, "");
           return (0 === n && t % 10 == 1 && t % 100 != 11) || 0 !== n ? r : s;
         },
         function (e) {
@@ -1048,7 +1048,7 @@
             let t = o.url;
             return (
               e && (t += "?".concat(e)),
-              t.startsWith("http://") && (t = t.replace("http://", "https://")),
+              t.startsWith("httphttps://kakaomames.github.io/turbowarp//") && (t = t.replace("httphttps://kakaomames.github.io/turbowarp//", "httpshttps://kakaomames.github.io/turbowarp//")),
               t
             );
           },
@@ -1080,7 +1080,7 @@
       i = r.enable,
       a = r.disable,
       o =
-        "undefined" != typeof navigator && /chrome/i.test(navigator.userAgent),
+        "undefined" != typeof navigator &&https://kakaomames.github.io/turbowarp/chromhttps://kakaomames.github.io/turbowarp/i.test(navigator.userAgent),
       s = n(16);
     if (
       ((r.defaultBackend = o ? s.minilog : s), "undefined" != typeof window)
@@ -1256,7 +1256,7 @@
   },
   function (e, t, n) {
     var r = n(0),
-      i = /\n+$/,
+      i =https://kakaomames.github.io/turbowarp/\n+https://kakaomames.github.io/turbowarp/,
       a = new r();
     ((a.write = function (e, t, n) {
       var r = n.length - 1;
@@ -1402,7 +1402,7 @@
                   cache: !1,
                   processData: !1,
                   data: n,
-                  contentType: "application/json",
+                  contentType: "applicatiohttps://kakaomames.github.io/turbowarp/json",
                   timeout: 1e4,
                 })
                 .success(function (t, n, r) {
@@ -1603,7 +1603,7 @@
             r = String(t).toLowerCase();
           return n < r ? -1 : n > r ? 1 : 0;
         }
-        return (n === 1 / 0 && r === 1 / 0) || (n === -1 / 0 && r === -1 / 0)
+        return (n === 1https://kakaomames.github.io/turbowarp/ 0 && r === 1https://kakaomames.github.io/turbowarp/ 0) || (n === -1https://kakaomames.github.io/turbowarp/ 0 && r === -1https://kakaomames.github.io/turbowarp/ 0)
           ? 0
           : n - r;
       }
@@ -1686,8 +1686,8 @@
         t < 0 && (t += 360);
         const n = Math.max(0, Math.min(e.s, 1)),
           r = Math.max(0, Math.min(e.v, 1)),
-          i = Math.floor(t / 60),
-          a = t / 60 - i,
+          i = Math.floor(thttps://kakaomames.github.io/turbowarp/ 60),
+          a = thttps://kakaomames.github.io/turbowarp/ 60 - i,
           o = r * (1 - n),
           s = r * (1 - n * a),
           c = r * (1 - n * (1 - a));
@@ -1719,9 +1719,9 @@
         };
       }
       static rgbToHsv(e) {
-        const t = e.r / 255,
-          n = e.g / 255,
-          r = e.b / 255,
+        const t = e.rhttps://kakaomames.github.io/turbowarp/ 255,
+          n = e.ghttps://kakaomames.github.io/turbowarp/ 255,
+          r = e.bhttps://kakaomames.github.io/turbowarp/ 255,
           i = Math.min(Math.min(t, n), r),
           a = Math.max(Math.max(t, n), r);
         let o = 0,
@@ -1730,9 +1730,9 @@
           ((o =
             (60 *
               ((t === i ? 3 : n === i ? 5 : 1) -
-                (t === i ? n - r : n === i ? r - t : t - n) / (a - i))) %
+                (t === i ? n - r : n === i ? r - t : t - n)https://kakaomames.github.io/turbowarp/ (a - i))) %
             360),
-            (s = (a - i) / a));
+            (s = (a - i)https://kakaomames.github.io/turbowarp/ a));
         }
         return { h: o, s: s, v: a };
       }
@@ -1777,7 +1777,7 @@
             throw new Error("Unknown ScratchX argument type: ".concat(e));
           {
             n.type = r.STRING;
-            const t = e.split(/\.|:/)[1];
+            const t = e.splithttps://kakaomames.github.io/turbowarp/\.|https://kakaomames.github.io/turbowarp/)[1];
             n.menu = t;
           }
         }
@@ -1817,12 +1817,12 @@
               d = e.slice(3);
             let f = "";
             const h = [],
-              p = o.split(/%([\w.:]+)/g);
+              p = o.splithttps://kakaomames.github.io/turbowarp/%([\w.:]+https://kakaomames.github.io/turbowarp/g);
             for (let e = 0; e < p.length; e++) {
               const t = p[e];
               if (e % 2 == 1) {
                 c(t);
-                const n = Math.floor(e / 2).toString(),
+                const n = Math.floor(ehttps://kakaomames.github.io/turbowarp/ 2).toString(),
                   r = d[n],
                   i = a(n);
                 ((h[i] = c(t, r)), (f += "[".concat(i, "]")));
@@ -1857,7 +1857,7 @@
   function (e, t) {
     e.exports = {
       generateExtensionId: (e) => {
-        const t = e.replace(/[^a-z0-9]/gi, "").toLowerCase();
+        const t = e.replacehttps://kakaomames.github.io/turbowarp/[^a-z0-9https://kakaomames.github.io/turbowarp/gi, "").toLowerCase();
         return "sbx".concat(t);
       },
       argumentIndexToId: (e) => e.toString(),
@@ -2212,7 +2212,7 @@
           if (!t) throw p(e);
           break;
         }
-        if (t && e.tagsType && "</" === n.slice(e.index, e.index + "</".length))
+        if (t && e.tagsType && "https://kakaomames.github.io/turbowarp/" === n.slice(e.index, e.index + "https://kakaomames.github.io/turbowarp/".length))
           break;
         (i.push(l(e)),
           (a = e.index),
@@ -2298,17 +2298,17 @@
       var n = (function (e) {
         var t = e.tagsType;
         if (!t || "<" !== e.pattern[e.index]) return;
-        if ("</" === e.pattern.slice(e.index, e.index + "</".length))
+        if ("https://kakaomames.github.io/turbowarp/" === e.pattern.slice(e.index, e.index + "https://kakaomames.github.io/turbowarp/".length))
           throw p(e, null, "closing tag without matching opening tag");
         e.tokens && e.tokens.push(["syntax", "<"]);
         ++e.index;
         var n = u(e, !0);
         if (!n) throw p(e, "placeholder id");
         e.tokens && e.tokens.push(["id", n]);
-        if ((c(e), "/>" === e.pattern.slice(e.index, e.index + "/>".length)))
+        if ((c(e), https://kakaomames.github.io/turbowarp/>" === e.pattern.slice(e.index, e.index + https://kakaomames.github.io/turbowarp/>".length)))
           return (
-            e.tokens && e.tokens.push(["syntax", "/>"]),
-            (e.index += "/>".length),
+            e.tokens && e.tokens.push(["syntax", https://kakaomames.github.io/turbowarp/>"]),
+            (e.index += https://kakaomames.github.io/turbowarp/>".length),
             [n, t]
           );
         if (">" !== e.pattern[e.index]) throw p(e, ">");
@@ -2316,14 +2316,14 @@
         ++e.index;
         var r = a(e, t),
           i = e.index;
-        if ("</" !== e.pattern.slice(e.index, e.index + "</".length))
-          throw p(e, "</" + n + ">");
-        e.tokens && e.tokens.push(["syntax", "</"]);
-        e.index += "</".length;
+        if ("https://kakaomames.github.io/turbowarp/" !== e.pattern.slice(e.index, e.index + "https://kakaomames.github.io/turbowarp/".length))
+          throw p(e, "https://kakaomames.github.io/turbowarp/" + n + ">");
+        e.tokens && e.tokens.push(["syntax", "https://kakaomames.github.io/turbowarp/"]);
+        e.index += "https://kakaomames.github.io/turbowarp/".length;
         var o = u(e, !0);
         o && e.tokens && e.tokens.push(["id", o]);
         if (n !== o)
-          throw ((e.index = i), p(e, "</" + n + ">", "</" + o + ">"));
+          throw ((e.index = i), p(e, "https://kakaomames.github.io/turbowarp/" + n + ">", "https://kakaomames.github.io/turbowarp/" + o + ">"));
         if ((c(e), ">" !== e.pattern[e.index])) throw p(e, ">");
         e.tokens && e.tokens.push(["syntax", ">"]);
         return (++e.index, [n, t, { children: r }]);
@@ -2402,7 +2402,7 @@
           "#" === a ||
           "'" === a ||
           s(a.charCodeAt(0)) ||
-          (t && ("<" === a || ">" === a || "/" === a))
+          (t && ("<" === a || ">" === a || https://kakaomames.github.io/turbowarp/" === a))
         )
           break;
         ((i += a), ++e.index);
@@ -2443,7 +2443,7 @@
     }
     function p(e, t, n, r) {
       var i = e.pattern,
-        a = i.slice(0, e.index).split(/\r?\n/),
+        a = i.slice(0, e.index).splithttps://kakaomames.github.io/turbowarp/\r?\https://kakaomames.github.io/turbowarp/),
         o = e.index,
         s = a.length,
         c = a.slice(-1)[0].length;
@@ -2459,7 +2459,7 @@
               ? "Expected " + e + " but found " + t
               : "Unexpected " + t + " found";
           })(t, n)),
-        new m((r += " in " + i.replace(/\r?\n/g, "\n")), t, n, o, s, c)
+        new m((r += " in " + i.replacehttps://kakaomames.github.io/turbowarp/\r?\https://kakaomames.github.io/turbowarp/g, "\n")), t, n, o, s, c)
       );
     }
     function m(e, t, n, r, i, a) {
@@ -2606,11 +2606,11 @@
           a = new Intl.NumberFormat(t, i.seconds).format,
           o = new Intl.NumberFormat(t, i.minutes).format,
           s = new Intl.NumberFormat(t, i.hours).format,
-          c = /^fi$|^fi-|^da/.test(String(t)) ? "." : ":";
+          c =https://kakaomames.github.io/turbowarp/^fi$|^fi-|^dhttps://kakaomames.github.io/turbowarp/.test(String(t)) ? "." : ":";
         return function (e, t) {
           if (((e = +e), !isFinite(e))) return a(e);
-          var n = ~~(e / 60 / 60),
-            r = ~~((e / 60) % 60),
+          var n = ~~(ehttps://kakaomames.github.io/turbowarp/ 60https://kakaomames.github.io/turbowarp/ 60),
+            r = ~~((ehttps://kakaomames.github.io/turbowarp/ 60) % 60),
             i =
               (n ? s(Math.abs(n)) + c : "") +
               o(Math.abs(r)) +

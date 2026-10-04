@@ -1,22 +1,22 @@
-// Name: Battery
-// ID: battery
-// Description: Access information about the battery of phones or laptops. May not work on all devices and browsers.
-// By: GarboMuffin
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Battery
+https://kakaomames.github.io/turbowarp/ ID: battery
+https://kakaomames.github.io/turbowarp/ Description: Access information about the battery of phones or laptops. May not work on all devices and browsers.
+https://kakaomames.github.io/turbowarp/ By: GarboMuffin
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
 
-  /** @type {Promise<BatteryManager>|null} */
+ https://kakaomames.github.io/turbowarp/** @type {Promise<BatteryManager>|null} https://kakaomames.github.io/turbowarp/
   let getBatteryPromise = null;
-  /** @type {BatteryManager|null} */
+ https://kakaomames.github.io/turbowarp/** @type {BatteryManager|null} https://kakaomames.github.io/turbowarp/
   let cachedBattery = null;
-  /** @type {boolean} */
+ https://kakaomames.github.io/turbowarp/** @type {boolean} https://kakaomames.github.io/turbowarp/
   let batteryError = false;
   const withBattery = (callback) => {
-    // Getting the BatteryManager is async the first time. Usually it's very fast, but we shouldn't assume that it is.
-    // All the logic here lets us return values immediately when we have already got the battery instead of forcing
-    // a delay by returning a promise.
+   https://kakaomames.github.io/turbowarp// Getting the BatteryManager is async the first time. Usually it's very fast, but we shouldn't assume that it is.
+   https://kakaomames.github.io/turbowarp// All the logic here lets us return values immediately when we have already got the battery instead of forcing
+   https://kakaomames.github.io/turbowarp// a delay by returning a promise.
     if (!navigator.getBattery || batteryError) {
       return callback(null);
     }
@@ -57,7 +57,7 @@
     });
   };
 
-  // Try to get the battery immediately so that event blocks work.
+ https://kakaomames.github.io/turbowarp// Try to get the battery immediately so that event blocks work.
   withBattery(() => {});
 
   class BatteryExtension {

@@ -1,10 +1,10 @@
-// Name: Text
-// ID: strings
-// Description: Manipulate characters and text.
-// By: CST1229 <https://scratch.mit.edu/users/CST1229/>
-// By: BludIsAnLemon <https://scratch.mit.edu/users/BludIsAnLemon/>
-// By: Man-o-Valor <https://scratch.mit.edu/users/man-o-valor/>
-// License: MIT AND MPL-2.0
+https://kakaomames.github.io/turbowarp/ Name: Text
+https://kakaomames.github.io/turbowarp/ ID: strings
+https://kakaomames.github.io/turbowarp/ Description: Manipulate characters and text.
+https://kakaomames.github.io/turbowarp/ By: CST1229 <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/CST122https://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ By: BludIsAnLemon <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/BludIsAnLemohttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ By: Man-o-Valor <httpshttps://kakaomames.github.io/turbowarp//scratch.mit.edhttps://kakaomames.github.io/turbowarp/userhttps://kakaomames.github.io/turbowarp/man-o-valohttps://kakaomames.github.io/turbowarp/>
+https://kakaomames.github.io/turbowarp/ License: MIT AND MPL-2.0
 
 (function (Scratch) {
   "use strict";
@@ -97,7 +97,7 @@
 
     getInfo() {
       return {
-        // id "text" would conflict with Scratch Lab's Animated Text (lab/text.js)
+       https://kakaomames.github.io/turbowarp// id "text" would conflict with Scratch Lab's Animated Text (lahttps://kakaomames.github.io/turbowarp/text.js)
         id: "strings",
         name: Scratch.translate("Text"),
         blocks: [
@@ -248,7 +248,7 @@
             opcode: "replaceRegex",
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate(
-              "replace regex /[REGEX]/[FLAGS] in [STRING] with [REPLACE]"
+              "replace regexhttps://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/[FLAGS] in [STRING] with [REPLACE]"
             ),
             arguments: {
               REGEX: {
@@ -274,9 +274,9 @@
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate({
               default:
-                "item [ITEM] of [STRING] matched by regex /[REGEX]/[FLAGS]",
+                "item [ITEM] of [STRING] matched by regexhttps://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/[FLAGS]",
               description:
-                "/[REGEX]/ is supposed to match the syntax that some actual programming languages used for regular expressions.",
+                https://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/ is supposed to match the syntax that some actual programming languages used for regular expressions.",
             }),
             arguments: {
               ITEM: {
@@ -302,9 +302,9 @@
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate({
               default:
-                "matches of [STRING] using regex /[REGEX]/[FLAGS] as array",
+                "matches of [STRING] using regexhttps://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/[FLAGS] as array",
               description:
-                "/[REGEX]/ is supposed to match the syntax that some actual programming languages used for regular expressions.",
+                https://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/ is supposed to match the syntax that some actual programming languages used for regular expressions.",
             }),
             arguments: {
               STRING: {
@@ -325,9 +325,9 @@
             opcode: "testRegex",
             blockType: Scratch.BlockType.BOOLEAN,
             text: Scratch.translate({
-              default: "[STRING] matches regex /[REGEX]/[FLAGS]?",
+              default: "[STRING] matches regexhttps://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/[FLAGS]?",
               description:
-                "/[REGEX]/ is supposed to match the syntax that some actual programming languages used for regular expressions.",
+                https://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/ is supposed to match the syntax that some actual programming languages used for regular expressions.",
             }),
             arguments: {
               STRING: {
@@ -348,9 +348,9 @@
             opcode: "countRegex",
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate({
-              default: "count regex /[REGEX]/[FLAGS] in [STRING]",
+              default: "count regexhttps://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/[FLAGS] in [STRING]",
               description:
-                "/[REGEX]/ is supposed to match the syntax that some actual programming languages used for regular expressions.",
+                https://kakaomames.github.io/turbowarp/[REGEXhttps://kakaomames.github.io/turbowarp/ is supposed to match the syntax that some actual programming languages used for regular expressions.",
             }),
             arguments: {
               STRING: {
@@ -525,8 +525,8 @@
     }
 
     identical(args, util) {
-      // Purposefully no casting, because
-      // types ARE differentiated in this block
+     https://kakaomames.github.io/turbowarp// Purposefully no casting, because
+     https://kakaomames.github.io/turbowarp// types ARE differentiated in this block
       return args.OPERAND1 === args.OPERAND2;
     }
 
@@ -547,7 +547,7 @@
     }
 
     _caseInsensitiveRegex(str) {
-      return new RegExp(str.replaceAll(/[^a-zA-Z0-9]/g, "\\$&"), "gi");
+      return new RegExp(str.replaceAllhttps://kakaomames.github.io/turbowarp/[^a-zA-Z0-9https://kakaomames.github.io/turbowarp/g, "\\$&"), "gi");
     }
 
     split(args, util) {
@@ -555,7 +555,7 @@
       const split = Cast.toString(args.SPLIT);
       const item = Cast.toNumber(args.ITEM);
 
-      // Cache the last split
+     https://kakaomames.github.io/turbowarp// Cache the last split
       if (
         !(
           splitCache &&
@@ -575,7 +575,7 @@
     }
 
     count(args, util) {
-      // Fill cache
+     https://kakaomames.github.io/turbowarp// Fill cache
       this.split(
         {
           SPLIT: args.SUBSTRING,
@@ -598,16 +598,16 @@
     }
 
     indexof(args, util) {
-      // .toLowerCase() for case insensitivity
+     https://kakaomames.github.io/turbowarp// .toLowerCase() for case insensitivity
       const string = Cast.toString(args.STRING).toLowerCase();
       const substring = Cast.toString(args.SUBSTRING).toLowerCase();
 
-      // Since both arguments are casted to strings beforehand,
-      // we don't have to worry about type differences
-      // like in the item number of in list block
+     https://kakaomames.github.io/turbowarp// Since both arguments are casted to strings beforehand,
+     https://kakaomames.github.io/turbowarp// we don't have to worry about type differences
+     https://kakaomames.github.io/turbowarp// like in the item number of in list block
       const found = string.indexOf(substring);
 
-      // indexOf returns -1 when no matches are found, we can just +1
+     https://kakaomames.github.io/turbowarp// indexOf returns -1 when no matches are found, we can just +1
       return found + 1;
     }
 
@@ -641,7 +641,7 @@
         const flags = Cast.toString(args.FLAGS);
         const item = Cast.toNumber(args.ITEM);
 
-        // Cache the last matched string
+       https://kakaomames.github.io/turbowarp// Cache the last matched string
         if (
           !(
             matchCache &&
@@ -667,13 +667,13 @@
       }
     }
     matchRegexJSON(args, util) {
-      // matchRegex but it returns an array
+     https://kakaomames.github.io/turbowarp// matchRegex but it returns an array
       try {
         const string = Cast.toString(args.STRING);
         const uncleanRegex = Cast.toString(args.REGEX);
         const flags = Cast.toString(args.FLAGS);
 
-        // Cache the last matched string
+       https://kakaomames.github.io/turbowarp// Cache the last matched string
         if (
           !(
             matchCache &&
@@ -700,9 +700,9 @@
     }
 
     countRegex(args, util) {
-      // Fill cache
-      // (ITEM is casted into 0,
-      // but we don't care about the return value)
+     https://kakaomames.github.io/turbowarp// Fill cache
+     https://kakaomames.github.io/turbowarp// (ITEM is casted into 0,
+     https://kakaomames.github.io/turbowarp// but we don't care about the return value)
       this.matchRegex(args, util);
       return matchCache.arr.length || 0;
     }
@@ -733,24 +733,24 @@
             string.toUpperCase() === string || string.toLowerCase() === string
           );
         case CaseParam.TITLECASE:
-          return string.split(/\b/g).every((word) => {
+          return string.splithttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g).every((word) => {
             if (!word) return true;
             const titleCased = word[0].toUpperCase() + word.substring(1);
             return word === titleCased;
           });
         case CaseParam.EXACTTITLECASE:
-          return string.split(/\b/g).every((word) => {
+          return string.splithttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g).every((word) => {
             if (!word) return true;
             const titleCased =
               word[0].toUpperCase() + word.substring(1).toLowerCase();
             return word === titleCased;
           });
         case CaseParam.CAMELCASE:
-          return /^[^A-Z\s][^\s]*$/.test(string);
+          returnhttps://kakaomames.github.io/turbowarp/^[^A-Z\s][^\s]*https://kakaomames.github.io/turbowarp/.test(string);
         case CaseParam.RANDOMCASE:
           return true;
         case CaseParam.SENTENCECASE:
-          return /^[A-Z][^?.!]*(?:[?.!]\s+[A-Z][^?.!]*)*$/.test(string);
+          returnhttps://kakaomames.github.io/turbowarp/^[A-Z][^?.!]*(?:[?.!]\s+[A-Z][^?.!]*)*https://kakaomames.github.io/turbowarp/.test(string);
         default:
           return false;
       }
@@ -774,7 +774,7 @@
             .join("");
         case CaseParam.TITLECASE:
           return string
-            .split(/\b/g)
+            .splithttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g)
             .map((word) => {
               if (!word) return "";
               return word[0].toUpperCase() + word.substring(1);
@@ -782,7 +782,7 @@
             .join("");
         case CaseParam.EXACTTITLECASE:
           return string
-            .split(/\b/g)
+            .splithttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g)
             .map((word) => {
               if (!word) return "";
               return word[0].toUpperCase() + word.substring(1).toLowerCase();
@@ -791,7 +791,7 @@
         case CaseParam.SENTENCECASE:
           for (let i = 0; i < string.length; i++) {
             if (
-              /^\s*$/.test(string[i - 1] ?? " ") &&
+             https://kakaomames.github.io/turbowarp/^\s*https://kakaomames.github.io/turbowarp/.test(string[i - 1] ?? " ") &&
               !sentenceCapitalFlag &&
               string[i].toUpperCase() != string[i].toLowerCase()
             ) {
@@ -816,13 +816,13 @@
           return workingText;
         case CaseParam.CAMELCASE:
           for (let i = 0; i < string.length; i++) {
-            if (/^\s*$/.test(string[i - 1] ?? "x")) {
+            if https://kakaomames.github.io/turbowarp/^\s*https://kakaomames.github.io/turbowarp/.test(string[i - 1] ?? "x")) {
               workingText += string[i].toUpperCase();
             } else {
               workingText += string[i].toLowerCase();
             }
           }
-          return workingText.replace(/\s/g, "");
+          return workingText.replacehttps://kakaomames.github.io/turbowarp/\https://kakaomames.github.io/turbowarp/g, "");
         default:
           return string;
       }
