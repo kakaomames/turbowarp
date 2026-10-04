@@ -1335,7 +1335,7 @@ var GUI = (function (e) {
               ),
               c.a.createElement(
                 "a",
-                { href: "https://packager.turbowarp.org/" },
+                { href: "https://kakaomames.github.io/Scratch-packager/" },
                 "TurboWarp Packager",
               ),
               c.a.createElement(
