@@ -1,0 +1,27 @@
+name: Search for TurboWarp URL
+
+on:
+  # 手動でGitHubの「Actions」タブから実行できるようにします
+  workflow_dispatch:
+  # コードがpushされたときにも自動実行したい場合はコメントアウトを解除してください
+  # push:
+  #   branches: [ main, master ]
+
+jobs:
+  grep-search:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. リポジトリのコードをチェックアウト（取得）
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. すべてのファイルから対象のURLを検索
+      - name: Search for specific URL
+        run: |
+          echo "=== 検索を開始します ==="
+          
+          # -r: 再帰的検索, -n: 行番号を表示
+          # 末尾の || true により、URLが見つからなくてもビルドがエラー（赤）になりません
+          grep -rn "https://extensions\.turbowarp\.org/generated-metadata/extensions-v0\.json" . || true
+          
+          echo "=== 検索が完了しました ==="
