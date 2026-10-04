@@ -8751,11 +8751,11 @@
                 name: e.name,
                 description: e.description,
                 extensionId: e.id,
-                extensionURL: "https://extensions.turbowarp.org/".concat(
+                extensionURL: "./".concat(
                   e.slug,
                   ".js",
                 ),
-                iconURL: "https://extensions.turbowarp.org/".concat(
+                iconURL: "./".concat(
                   e.image || "images/unknown.svg",
                 ),
                 tags: ["tw"],
@@ -8769,14 +8769,14 @@
                     : e.name,
                 ),
                 docsURI: e.docs
-                  ? "https://extensions.turbowarp.org/".concat(e.slug)
+                  ? "./".concat(e.slug)
                   : null,
                 samples: e.samples
                   ? e.samples.map((e) => ({
                       href: ""
                         .concat(
                           "",
-                          "editor?project_url=https://extensions.turbowarp.org/samples/",
+                          "editor?project_url=./samples/",
                         )
                         .concat(encodeURIComponent(e), ".sb3"),
                       text: e,
