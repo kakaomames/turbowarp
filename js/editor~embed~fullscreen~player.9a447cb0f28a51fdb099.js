@@ -8559,27 +8559,25 @@
                   o.a.createElement(
                     "div",
                     { className: Xn.a.tagWrapper },
-                    ta
-                      .concat(this.props.tags)
-                      .map((e, t) =>
-                        o.a.createElement(
-                          qn,
-                          Qn(
-                            {
-                              active:
-                                this.state.selectedTag === e.tag.toLowerCase(),
-                              className: qe()(
-                                Xn.a.filterBarItem,
-                                Xn.a.tagButton,
-                                e.className,
-                              ),
-                              key: "tag-button-".concat(t),
-                              onClick: this.handleTagClick,
-                            },
-                            e,
-                          ),
+                    ta.concat(this.props.tags).map((e, t) =>
+                      o.a.createElement(
+                        qn,
+                        Qn(
+                          {
+                            active:
+                              this.state.selectedTag === e.tag.toLowerCase(),
+                            className: qe()(
+                              Xn.a.filterBarItem,
+                              Xn.a.tagButton,
+                              e.className,
+                            ),
+                            key: "tag-button-".concat(t),
+                            onClick: this.handleTagClick,
+                          },
+                          e,
                         ),
                       ),
+                    ),
                   ),
               ),
             o.a.createElement(
@@ -8747,9 +8745,7 @@
               this.setState({ galleryTimedOut: !0 });
             }, 750);
             (async () => {
-              const e = await fetch(
-                "./extensions-v0.json",
-              );
+              const e = await fetch("./extensions-v0.json");
               if (!e.ok) throw new Error("HTTP status ".concat(e.status));
               return (await e.json()).extensions.map((e) => ({
                 name: e.name,
@@ -22403,28 +22399,26 @@
           o.a.createElement(
             "div",
             { className: jg.a.decks },
-            e
-              .slice(0, 2)
-              .map((e) =>
+            e.slice(0, 2).map((e) =>
+              o.a.createElement(
+                "div",
+                {
+                  className: jg.a.deck,
+                  key: "deck-preview-".concat(e),
+                  onClick: n(e),
+                },
+                o.a.createElement("img", {
+                  className: jg.a.deckImage,
+                  draggable: !1,
+                  src: t[e].img,
+                }),
                 o.a.createElement(
                   "div",
-                  {
-                    className: jg.a.deck,
-                    key: "deck-preview-".concat(e),
-                    onClick: n(e),
-                  },
-                  o.a.createElement("img", {
-                    className: jg.a.deckImage,
-                    draggable: !1,
-                    src: t[e].img,
-                  }),
-                  o.a.createElement(
-                    "div",
-                    { className: jg.a.deckName },
-                    t[e].name,
-                  ),
+                  { className: jg.a.deckName },
+                  t[e].name,
                 ),
               ),
+            ),
           ),
           o.a.createElement(
             "div",

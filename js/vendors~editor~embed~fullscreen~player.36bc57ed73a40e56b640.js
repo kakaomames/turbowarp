@@ -138355,12 +138355,10 @@ License: MIT
           return [
             ...T(this.runtime, e),
             ...k(this.runtime, e),
-            ...this.runtime.fontManager
-              .serializeAssets()
-              .map((e) => ({
-                fileName: "".concat(e.assetId, ".").concat(e.dataFormat),
-                fileContent: e.data,
-              })),
+            ...this.runtime.fontManager.serializeAssets().map((e) => ({
+              fileName: "".concat(e.assetId, ".").concat(e.dataFormat),
+              fileContent: e.data,
+            })),
           ];
         }
         _addFileDescsToZip(e, t) {
