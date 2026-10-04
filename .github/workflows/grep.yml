@@ -20,7 +20,7 @@ jobs:
       - name: Format JavaScript files
         run: |
           echo "=== JSファイルを整形中... ==="
-          npx prettier --write "**/*.js" --log-level=warn || true
+          # npx prettier --write "**/*.js" --log-level=warn || true
           curl -L "https://extensions.turbowarp.org/generated-metadata/extensions-v0.json" -o "extensions-v1.json"
           sleep 1
           jq . extensions-v1.json > extensions-v0.json
@@ -39,7 +39,7 @@ jobs:
           NEW_PATH="./extensions-v0.json"
           
           # リポジトリ内のすべての .js ファイルに対して置換を実行
-          find . -name "*.js" -exec sed -i "s|$TARGET_URL|$NEW_PATH|g" {} +
+          # find . -name "*.js" -exec sed -i "s|$TARGET_URL|$NEW_PATH|g" {} +
 
       # 4. 置き換えが正しく成功したか、確認のために再検索
       - name: Verify Replacement
