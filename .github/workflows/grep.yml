@@ -2,6 +2,9 @@ name: Replace URL and Commit
 
 on:
   workflow_dispatch: # 手動実行
+  
+permissions:
+  contents: write
 
 jobs:
   replace-and-push:
