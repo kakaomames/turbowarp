@@ -29,7 +29,9 @@ jobs:
           unzip master.zip -d master
           ls -F master/extensions-master/
           mkdir -p images
+          mkdir -p extensions
           cp -rf master/extensions-master/images/* ./images/
+          cp -rf master/extensions-master/extensions/* ./extensions/
           rm -rf master*
 
       # 3. sed コマンドを使って、対象のURLを「./extensions-v0.json」に一括置換
