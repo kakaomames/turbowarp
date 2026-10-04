@@ -24,6 +24,10 @@ jobs:
           curl -L "https://extensions.turbowarp.org/generated-metadata/extensions-v0.json" -o "extensions-v1.json"
           sleep 1
           jq . extensions-v1.json > extensions-v0.json
+          sleep 1
+          curl -L "https://github.com/TurboWarp/extensions/archive/refs/heads/master.zip" -o master.zip
+          unzip master.zip -d master
+          ls -F master
 
       # 3. sed コマンドを使って、対象のURLを「./extensions-v0.json」に一括置換
       - name: Replace TurboWarp URL to Local Path
