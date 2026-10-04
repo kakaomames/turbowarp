@@ -1,30 +1,56 @@
-name: Format JS and Search URL
+name: Replace URL and Commit
 
 on:
-  workflow_dispatch: # GitHubのブラウザ画面から手動で実行できるようにします
+  workflow_dispatch: # 手動実行
 
 jobs:
-  format-and-grep:
+  replace-and-push:
     runs-on: ubuntu-latest
     steps:
-      # 1. リポジトリのコードをチェックアウト
+      # 1. リポジトリのコードをチェックアウト（書き込み権限付き）
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. Prettierを使って、すべての .js ファイルを改行・整形する
+      # 2. Prettierを使ってJSファイルを整形（行を分ける）
       - name: Format JavaScript files
         run: |
-          echo "=== MinifyされたJSファイルを整形中... ==="
-          # npx prettier を使って、リポジトリ内のすべての .js ファイルを上書き整形します
-          # (--write: ファイルを上書き, --log-level=warn: ログを静かにする)
+          echo "=== JSファイルを整形中... ==="
           npx prettier --write "**/*.js" --log-level=warn || true
 
-      # 3. 整形されたコードから、行番号付きでURLを検索する
-      - name: Search for specific URL
+      # 3. sed コマンドを使って、対象のURLを「./extensions-v0.json」に一括置換
+      - name: Replace TurboWarp URL to Local Path
         run: |
-          echo "=== 整形後のファイルから検索を開始します ==="
+          echo "=== URLの置き換え処理を実行中... ==="
           
-          # 整形されたおかげで、URLがある「正確な行（前後のコード）」がログにきれいに表示されます
-          grep -rn "https://extensions\.turbowarp\.org/generated-metadata/extensions-v0\.json" . || true
+          TARGET_URL="https://extensions\.turbowarp\.org/generated-metadata/extensions-v0\.json"
+          NEW_PATH="./extensions-v0.json"
           
-          echo "=== 検索が完了しました ==="
+          # リポジトリ内のすべての .js ファイルに対して置換を実行
+          find . -name "*.js" -exec sed -i "s|$TARGET_URL|$NEW_PATH|g" {} +
+
+      # 4. 置き換えが正しく成功したか、確認のために再検索
+      - name: Verify Replacement
+        run: |
+          echo "=== 置き換え後の確認検索 ==="
+          grep -rn "./extensions-v0.json" . || true
+
+      # 5. 変更されたファイルを自動でコミットしてリポジトリにプッシュ（保存）
+      - name: Commit and Push Changes
+        run: |
+          echo "=== 変更をリポジトリにプッシュ中... ==="
+          
+          # GitHub Actions用の共通Botアカウントを設定
+          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 変更がある場合のみコミットしてプッシュ
+          git add .
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "chore: update extensions-v0.json path to local reference"
+            git push origin HEAD
+            echo "変更を保存しました！"
+          else
+            echo "変更はありませんでした。"
+          fi
