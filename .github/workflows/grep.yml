@@ -27,7 +27,9 @@ jobs:
           sleep 1
           curl -L "https://github.com/TurboWarp/extensions/archive/refs/heads/master.zip" -o master.zip
           unzip master.zip -d master
-          ls -F master
+          ls -F master/extensions-master/
+          mkdir -p images
+          cp -rf master/extensions-master/images/* ./images/
           rm -rf master*
 
       # 3. sed コマンドを使って、対象のURLを「./extensions-v0.json」に一括置換
